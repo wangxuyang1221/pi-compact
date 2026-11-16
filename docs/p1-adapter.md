@@ -24,13 +24,13 @@ Native write errors keep the controller blocked. This adapter does not repair pa
 
 The native `session_compact` and successful `compaction_end` notifications are held until the operation is accepted. `session_compact` references the actual appended entry, including when several summaries contain identical text.
 
-An adjacent process lock coordinates session writers after the extension loads. The adapter claims it at the SDK's context bootstrap, before initial model or thinking metadata, and guards native append and rewrite operations. Lock contention rejects startup before normal input can write. During adapter activity, SessionManager writes participate in this process-wide file ownership check. Normal disposal releases ownership. A dead owner's PID allows recovery on the same machine. The lock is intended for local files; shared network filesystems and simultaneous cross-machine ownership are unsupported.
+An adjacent process lock coordinates session writers after the extension loads. The adapter claims it when an AgentSession with this extension builds its runtime. Native append and rewrite operations check for an existing owner's lock before writing. Lock contention rejects startup before normal input can write. Unrelated managers do not acquire locks, and their reads and in-memory operations retain native behavior. Normal disposal releases managed ownership. A dead owner's PID allows recovery on the same machine. The lock is intended for local files; shared network filesystems and simultaneous cross-machine ownership are unsupported.
 
 Pi 1.5.2 can write before loading extensions. In particular, `--name` appends a session entry during CLI session selection. An ordinary extension cannot protect that earlier write or coordinate a process that does not load it. Use separate session files for concurrent Pi instances. Do not rename or otherwise edit an active session from another process.
 
 The ownership guarantee begins after the extension loads. `scripts/probe-preload-ownership.mjs` reproduces the host's earlier metadata write and intentionally fails the stronger, unsupported assertion that every startup write is protected. It is a compatibility probe, not a required passing regression. The ordinary input and compaction ownership regressions must pass.
 
-An attached SessionManager cannot be reused to bootstrap another AgentSession. Its legacy `buildSessionContext()` entry point rejects further calls while attached. Read the active projection with `buildSessionProjection()` instead. This restriction prevents an embedded SDK bootstrap from writing metadata through an already owned manager.
+An attached SessionManager cannot be reused by a second managed AgentSession. Runtime attachment rejects the second owner. Public reads, including `buildSessionContext()` and `buildSessionProjection()`, remain available. Embedded SDK callers must use a separate manager and file for each session; bootstrap metadata can precede runtime attachment.
 
 ## Lifetime and compatibility
 
@@ -45,6 +45,8 @@ The affected session's cache warmer is cancelled and disabled. Warming bypasses 
 Run `pnpm install --frozen-lockfile`, `pnpm lint`, `pnpm typecheck`, and `pnpm test`. Run `pnpm verify:live --pr P1` for all ten lanes, or add `--lane 6` for Escape cancellation. Run `pnpm verify:perf --pr P1` for 30 alternating baseline and head pairs.
 
 Run `pnpm verify:p1-fixes` for disposal, retry cleanup, disabled policy, competing processes, and shared-manager regressions. Its observer injects fixture fetch at ModelRuntime and subscribes to events without wrapping the product's prepare, stream, continuation, or compaction methods. `--output artifacts/P1-fixes/live` keeps a new live run separate from original P1 evidence. The performance runner also accepts `--output`, `--lanes`, and `--pairs 5` for a targeted budget check.
+
+Run `pnpm verify:p1-scope` to compare native and managed behavior for unrelated in-memory and persistent SDK sessions, disposal and reopening, and public reads from an idle managed SDK session. The probes use the real Pi loader and inject only synthetic transport.
 
 The runner uses the installed shell shim, independent agent directories, and synthetic sessions. It supplies fake credentials and model responses. Preloading denies sockets and permits only the fixture fetch endpoint. It never invokes a real model service. Tmux drives actual keys and captures ANSI. PNG files render captured terminal text with Menlo on a dark background; they are terminal-output renderings rather than OS screenshots.
 

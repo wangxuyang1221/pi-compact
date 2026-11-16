@@ -36,6 +36,20 @@ export function confirmEntry(file: string, entry: { id: string }): void {
   } finally { closeSync(fd); }
 }
 
+export function assertSessionFileAvailable(journal: string): void {
+  let contents: string;
+  try { contents = readFileSync(journal + '.lock', 'utf8'); } catch (error) {
+    if (error && typeof error === 'object' && 'code' in error && error.code === 'ENOENT') return;
+    throw error;
+  }
+  const owner: unknown = JSON.parse(contents);
+  if (!owner || typeof owner !== 'object' || !('pid' in owner) || !Number.isSafeInteger(owner.pid) || Number(owner.pid) <= 0) throw new Error('Invalid session lock.');
+  try { process.kill(Number(owner.pid), 0); } catch (error) {
+    if (error && typeof error === 'object' && 'code' in error && error.code === 'ESRCH') return;
+  }
+  throw new Error('Another process already owns this session file.');
+}
+
 export function claimSessionFile(journal: string): () => void {
   const file = journal + '.lock';
   const identity = JSON.stringify({ pid: process.pid, nonce: randomUUID() });
@@ -45,13 +59,7 @@ export function claimSessionFile(journal: string): () => void {
   };
   try { create(); } catch (error) {
     if (!error || typeof error !== 'object' || !('code' in error) || error.code !== 'EEXIST') throw error;
-    const owner: unknown = JSON.parse(readFileSync(file, 'utf8'));
-    if (!owner || typeof owner !== 'object' || !('pid' in owner) || !Number.isSafeInteger(owner.pid) || Number(owner.pid) <= 0) throw new Error('Invalid session lock.');
-    let alive = true;
-    try { process.kill(Number(owner.pid), 0); } catch (probe) {
-      if (probe && typeof probe === 'object' && 'code' in probe && probe.code === 'ESRCH') alive = false;
-    }
-    if (alive) throw new Error('Another process already owns this session file.');
+    assertSessionFileAvailable(journal);
     unlinkSync(file);
     create();
   }

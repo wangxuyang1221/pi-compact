@@ -4,7 +4,7 @@ import { fileURLToPath } from 'node:url';
 import type * as Pi from '@earendil-works/pi-coding-agent';
 import { CompactionController, type Operation } from '../state.ts';
 import { checkHost } from './compatibility.ts';
-import { claimSessionFile, confirmEntry, readJournal, writeJournal } from './journal.ts';
+import { assertSessionFileAvailable, claimSessionFile, confirmEntry, readJournal, writeJournal } from './journal.ts';
 
 type Model = NonNullable<Pi.AgentSession['model']>;
 type Agent = Pi.AgentSession['agent'];
@@ -351,16 +351,14 @@ export function install(host: typeof Pi, pi: Pi.ExtensionAPI): void {
     for (const key of ['_appendEntry', '_rewriteFile'] as const) {
       const native = managerPrototype[key];
       active.restore.push(replace(managerPrototype, key, function (this: Manager, entry: Pi.SessionEntry) {
-        ownFile(active, this);
+        if (active.files.has(this)) ownFile(active, this);
+        else {
+          const file = this.getSessionFile();
+          if (file && this.isPersisted()) assertSessionFileAvailable(file + '.pi-compact-state.json');
+        }
         return native.call(this, entry);
       }));
     }
-    const context = managerPrototype.buildSessionContext;
-    active.restore.push(replace(managerPrototype, 'buildSessionContext', function (this: Manager) {
-      const owner = ownFile(active, this);
-      if (owner.session) throw new Error('SessionManager is already attached. Use buildSessionProjection for reads; create another manager for a new session.');
-      return context.call(this);
-    }));
     const mode = host.InteractiveMode.prototype as unknown as Mode;
     const bindMode = mode.bindCurrentSessionExtensions;
     active.restore.push(replace(mode, 'bindCurrentSessionExtensions', async function (this: Mode) {
