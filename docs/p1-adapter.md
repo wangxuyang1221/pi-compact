@@ -26,7 +26,9 @@ The native `session_compact` and successful `compaction_end` notifications are h
 
 An adjacent process lock coordinates session writers after the extension loads. The adapter claims it at the SDK's context bootstrap, before initial model or thinking metadata, and guards native append and rewrite operations. Lock contention rejects startup before normal input can write. During adapter activity, SessionManager writes participate in this process-wide file ownership check. Normal disposal releases ownership. A dead owner's PID allows recovery on the same machine. The lock is intended for local files; shared network filesystems and simultaneous cross-machine ownership are unsupported.
 
-Pi 1.5.2 can write before loading extensions. In particular, `--name` appends a session entry during CLI session selection. An ordinary extension cannot protect that earlier write. The reproducible `scripts/probe-preload-ownership.mjs` checks the stronger ownership contract and currently fails. Full startup ownership therefore remains an open P1 issue.
+Pi 1.5.2 can write before loading extensions. In particular, `--name` appends a session entry during CLI session selection. An ordinary extension cannot protect that earlier write or coordinate a process that does not load it. Use separate session files for concurrent Pi instances. Do not rename or otherwise edit an active session from another process.
+
+The ownership guarantee begins after the extension loads. `scripts/probe-preload-ownership.mjs` reproduces the host's earlier metadata write and intentionally fails the stronger, unsupported assertion that every startup write is protected. It is a compatibility probe, not a required passing regression. The ordinary input and compaction ownership regressions must pass.
 
 An attached SessionManager cannot be reused to bootstrap another AgentSession. Its legacy `buildSessionContext()` entry point rejects further calls while attached. Read the active projection with `buildSessionProjection()` instead. This restriction prevents an embedded SDK bootstrap from writing metadata through an already owned manager.
 
