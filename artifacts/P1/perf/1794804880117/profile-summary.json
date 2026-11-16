@@ -1,0 +1,122 @@
+[
+  {
+    "us": 19500,
+    "functionName": "compileSourceTextModule",
+    "scriptId": "70",
+    "url": "node:internal/modules/esm/utils",
+    "lineNumber": 343,
+    "columnNumber": 32
+  },
+  {
+    "us": 15084,
+    "functionName": "",
+    "scriptId": "194",
+    "url": "file:///Users/wangxuyang/Library/pnpm/store/v11/links/@earendil-works/pi-coding-agent/1.5.2/643b01c0aa78c8ef11bcca81208b3bcdf7c0b473aa9432569290180e541a3aca/node_modules/@earendil-works/pi-coding-agent/dist/bundle/chunks/chunk-FF6XOTWB.js",
+    "lineNumber": 0,
+    "columnNumber": 0
+  },
+  {
+    "us": 14164,
+    "functionName": "(garbage collector)",
+    "scriptId": "0",
+    "url": "",
+    "lineNumber": -1,
+    "columnNumber": -1
+  },
+  {
+    "us": 10500,
+    "functionName": "compileSourceTextModule",
+    "scriptId": "70",
+    "url": "node:internal/modules/esm/utils",
+    "lineNumber": 343,
+    "columnNumber": 32
+  },
+  {
+    "us": 10500,
+    "functionName": "wrapSafe",
+    "scriptId": "67",
+    "url": "node:internal/modules/cjs/loader",
+    "lineNumber": 1594,
+    "columnNumber": 17
+  },
+  {
+    "us": 9084,
+    "functionName": "compileSourceTextModule",
+    "scriptId": "70",
+    "url": "node:internal/modules/esm/utils",
+    "lineNumber": 343,
+    "columnNumber": 32
+  },
+  {
+    "us": 6000,
+    "functionName": "ModuleWrap",
+    "scriptId": "0",
+    "url": "",
+    "lineNumber": -1,
+    "columnNumber": -1
+  },
+  {
+    "us": 6000,
+    "functionName": "",
+    "scriptId": "214",
+    "url": "file:///Users/wangxuyang/Library/pnpm/store/v11/links/@earendil-works/pi-coding-agent/1.5.2/643b01c0aa78c8ef11bcca81208b3bcdf7c0b473aa9432569290180e541a3aca/node_modules/@earendil-works/pi-coding-agent/dist/bundle/chunks/chunk-MMDXLZVS.js",
+    "lineNumber": 0,
+    "columnNumber": 0
+  },
+  {
+    "us": 6000,
+    "functionName": "setupCli",
+    "scriptId": "191",
+    "url": "file:///Users/wangxuyang/Library/pnpm/store/v11/links/@earendil-works/pi-coding-agent/1.5.2/643b01c0aa78c8ef11bcca81208b3bcdf7c0b473aa9432569290180e541a3aca/node_modules/@earendil-works/pi-coding-agent/dist/bundle/cli-runtime.js",
+    "lineNumber": 2,
+    "columnNumber": 800
+  },
+  {
+    "us": 5584,
+    "functionName": "(program)",
+    "scriptId": "0",
+    "url": "",
+    "lineNumber": -1,
+    "columnNumber": -1
+  },
+  {
+    "us": 5583,
+    "functionName": "(idle)",
+    "scriptId": "0",
+    "url": "",
+    "lineNumber": -1,
+    "columnNumber": -1
+  },
+  {
+    "us": 3000,
+    "functionName": "ModuleWrap",
+    "scriptId": "0",
+    "url": "",
+    "lineNumber": -1,
+    "columnNumber": -1
+  },
+  {
+    "us": 3000,
+    "functionName": "ModuleWrap",
+    "scriptId": "0",
+    "url": "",
+    "lineNumber": -1,
+    "columnNumber": -1
+  },
+  {
+    "us": 3000,
+    "functionName": "getRegex",
+    "scriptId": "194",
+    "url": "file:///Users/wangxuyang/Library/pnpm/store/v11/links/@earendil-works/pi-coding-agent/1.5.2/643b01c0aa78c8ef11bcca81208b3bcdf7c0b473aa9432569290180e541a3aca/node_modules/@earendil-works/pi-coding-agent/dist/bundle/chunks/chunk-FF6XOTWB.js",
+    "lineNumber": 5,
+    "columnNumber": 12698
+  },
+  {
+    "us": 2958,
+    "functionName": "compileSourceTextModule",
+    "scriptId": "70",
+    "url": "node:internal/modules/esm/utils",
+    "lineNumber": 343,
+    "columnNumber": 32
+  }
+]

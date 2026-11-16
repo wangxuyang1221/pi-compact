@@ -1,0 +1,9 @@
+{"at":19.192542,"event":"preload","pid":38906,"version":"v22.22.2","network":"fetch fixture.invalid only; sockets denied"}
+{"at":292.925042,"event":"session-start","reason":"startup"}
+{"at":293.298917,"event":"ready","session":"01a1e2b4-f886-7268-9358-d0f5f868f56f","version":"1.5.2","managed":true,"identity":true,"extensions":["/Users/wangxuyang/.t3/worktrees/compact/t3-ffc0cc73-3dfcde48e9a1b862/scripts/fixture/observer.ts","/Users/wangxuyang/.t3/worktrees/compact/t3-ffc0cc73-3dfcde48e9a1b862/src/index.ts"]}
+{"at":862.18575,"event":"write-failure-armed"}
+{"at":918.538417,"event":"compaction_start","success":false,"outcome":"stop","checkpoints":0}
+{"at":920.269875,"event":"stream-duration","ms":0.25716699999998127}
+{"at":929.738125,"event":"payload-duration","ms":0.10266699999999673}
+{"at":931.467959,"event":"native-request","count":1,"currentInput":false,"instructions":false}
+{"at":945.082334,"event":"compaction_end","success":false,"aborted":false,"error":"pi-compact paused: Compaction failed: Synthetic native disk failure Use /compact to retry.","outcome":"stop","checkpoints":0}

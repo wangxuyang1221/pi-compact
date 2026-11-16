@@ -1,0 +1,9 @@
+{
+  "code": 0,
+  "pid": 35403,
+  "entry": "/Users/wangxuyang/.t3/worktrees/compact/t3-ffc0cc73-3dfcde48e9a1b862/artifacts/P1/package/extracted/package/src/index.ts",
+  "tarball": "/Users/wangxuyang/.t3/worktrees/compact/t3-ffc0cc73-3dfcde48e9a1b862/artifacts/P1/package/pi-compact-0.1.0.tgz",
+  "sha256": "687cb8264d7c84006b292b4366b7019070367cedba65c703705ee783e0a43529",
+  "ordinaryLoader": true,
+  "realServiceRequests": 0
+}

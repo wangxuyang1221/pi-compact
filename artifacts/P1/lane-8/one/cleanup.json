@@ -1,0 +1,14 @@
+{
+  "panePids": [
+    38060,
+    38072
+  ],
+  "listenerCheck": {
+    "exitCode": 1,
+    "stdout": "",
+    "stderr": ""
+  },
+  "alive": [],
+  "exitCode": "0",
+  "socketExists": false
+}

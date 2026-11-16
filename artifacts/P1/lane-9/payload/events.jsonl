@@ -1,0 +1,9 @@
+{"at":20.599875,"event":"preload","pid":39180,"version":"v22.22.2","network":"fetch fixture.invalid only; sockets denied"}
+{"at":297.255334,"event":"session-start","reason":"startup"}
+{"at":297.633542,"event":"ready","session":"01a1e2b4-feeb-72d8-83bd-8fcc9c83d0b0","version":"1.5.2","managed":true,"identity":true,"extensions":["/Users/wangxuyang/.t3/worktrees/compact/t3-ffc0cc73-3dfcde48e9a1b862/scripts/fixture/observer.ts","/Users/wangxuyang/.t3/worktrees/compact/t3-ffc0cc73-3dfcde48e9a1b862/src/index.ts"]}
+{"at":906.049709,"event":"prepare-input","currentInput":true,"messages":5}
+{"at":906.185584,"event":"prepare-duration","ms":0.15720900000007987}
+{"at":906.730709,"event":"stream-duration","ms":0.2772909999999911}
+{"at":923.817292,"event":"payload-duration","ms":8.908457999999996}
+{"at":925.28525,"event":"agent_settled","success":false,"aborted":false,"outcome":"error","checkpoints":0}
+{"at":946.669959,"event":"state","state":"blocked","checkpoints":0,"control":{"mode":"success","mutatePayload":true}}
