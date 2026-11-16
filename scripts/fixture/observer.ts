@@ -13,6 +13,27 @@ if (!proto[marker]) {
     const result = await bind.apply(this, args);
     if (!this.agent[marker]) {
       this.agent[marker] = true;
+      const stream = this.agent.streamFunction;
+      this.agent.streamFunction = async (...args) => {
+        const start = performance.now();
+        try { return await stream.apply(this.agent, args); }
+        finally { note('stream-duration', { ms: performance.now() - start }); }
+      };
+      const runtime = this.modelRuntime;
+      if (!runtime[marker]) {
+        runtime[marker] = true;
+        const prepareModel = runtime.prepareRequest;
+        runtime.prepareRequest = async (...args) => {
+          const prepared = await prepareModel.apply(runtime, args);
+          const payload = prepared.options.onPayload;
+          if (payload) prepared.options.onPayload = async (...args) => {
+            const start = performance.now();
+            try { return await payload(...args); }
+            finally { note('payload-duration', { ms: performance.now() - start }); }
+          };
+          return prepared;
+        };
+      }
       const prepare = this.agent.prepareRequest;
       this.agent.prepareRequest = async (...args) => {
         const start = performance.now();

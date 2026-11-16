@@ -5,7 +5,11 @@
   "description": "Session-scoped native compaction safety for Pi 1.5.2",
   "files": [
     "src",
-    "README.md"
+    "README.md",
+    "docs/p1-adapter.md",
+    "docs/design.md",
+    "docs/roadmap.md",
+    "GLOSSARY.md"
   ],
   "pi": {
     "extensions": [

@@ -9,7 +9,7 @@ const method = {
   claim: 'Under a fixed synthetic workload, head adds at most 10 ms p95 at the request boundary and 150 ms p95 until the real TUI editor is ready.',
   workload: '100 repeats of synthetic old history, one retained user turn, then one short prompt; no compaction; zero real network.',
   start: 'Parent spawn of isolated tmux server through actual shim until screen contains editor border and selected model.',
-  prepare: 'Await the complete installed prepareRequest chain; same observer logging on both sides.',
+  prepare: 'Sum the awaited prepareRequest chain, stream invocation, and final provider onPayload callback. The same observer measures both sides; provider transport and response time are excluded.',
   count: 30, order: 'baseline then head, alternating on the same machine',
   baseline: 'Pi 1.5.2 without pi-compact; fixture observer only',
   cache: 'JITI disk cache disabled for both sides; OS and Node compile caches not flushed; same setting on both.',
@@ -38,7 +38,9 @@ for (let index = 0; index < 30; index++) {
       assert.equal(events.filter(event => event.event === 'native-request').length, 0);
       assert.equal(events.filter(event => event.event === 'network-blocked').length, 0);
       assert.equal(events.find(event => event.event === 'agent_settled').outcome, 'stop');
-      const duration = events.find(event => event.event === 'prepare-duration').ms;
+      const boundaries = ['prepare-duration', 'stream-duration', 'payload-duration'];
+      for (const event of boundaries) assert.equal(events.filter(item => item.event === event).length, 1);
+      const duration = events.filter(event => boundaries.includes(event.event)).reduce((sum, event) => sum + event.ms, 0);
       pair[variant] = { startupMs: t.readyMs, prepareMs: duration,
         requestToSettledMs: events.find(event => event.event === 'agent_settled').at - events.find(event => event.event === 'normal-request').at,
         normalRequests: 1, errors: 0 };

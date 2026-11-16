@@ -62,6 +62,17 @@ const lanes = {
     } finally { await t.stop(); }
   },
   async 5(dir) {
+    const automatic = await tui(join(dir, 'automatic'), { seed: 800, mode: 'failure' });
+    try {
+      await automatic.text('CURRENT_INPUT_MARKER ' + 'x'.repeat(35200));
+      await settled(automatic); blocked(automatic);
+      assert.equal(count(automatic, 'native-request'), 1);
+      assert.equal(count(automatic, 'normal-request'), 0);
+      await automatic.text('/fixture-probe');
+      await waitFor(() => count(automatic, 'probe-complete'), 'automatic failure entry probes');
+      assert.equal(count(automatic, 'normal-request'), 0);
+      await automatic.capture('automatic-failure');
+    } finally { await automatic.stop(); }
     const t = await tui(dir, { seed: 800, mode: 'failure' });
     try {
       t.control({ mode: 'failure', retryFromFailureHook: true });
