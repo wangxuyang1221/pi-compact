@@ -21,6 +21,7 @@
     "typecheck": "tsc --noEmit",
     "test": "tsx --test tests/*.test.ts",
     "verify:live": "node scripts/verify-live.mjs",
+    "verify:p1-fixes": "node scripts/verify-p1-fixes.mjs",
     "verify:perf": "node scripts/verify-perf.mjs"
   },
   "engines": {

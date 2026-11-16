@@ -5,7 +5,7 @@ import { execFileSync } from 'node:child_process';
 import { cli, tui, root, waitFor, provenance } from './fixture/runtime.mjs';
 const flags = process.argv.slice(2);
 const selected = flags.includes('--lane') ? Number(flags[flags.indexOf('--lane') + 1]) : undefined;
-const base = join(root, 'artifacts/P1');
+const base = flags.includes('--output') ? join(root, flags[flags.indexOf('--output') + 1]) : join(root, 'artifacts/P1');
 const count = (t, event) => t.log().filter(item => item.event === event).length;
 const ended = (t, n = 1) => waitFor(() => count(t, 'compaction_end') >= n, 'compaction completion');
 const settled = (t, n = 1) => waitFor(() => count(t, 'agent_settled') >= n, 'agent settled');

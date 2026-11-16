@@ -26,21 +26,21 @@ export async function waitFor(predicate, label, timeout = 20000) {
   }
   throw new Error(`Timed out waiting for ${label}`);
 }
-export function setup(dir, { variant = 'head', seed = 0, mode = 'success', tools = false, unsupported = false, profile = false, sessionFile = join(dir, 'session.jsonl') } = {}) {
+export function setup(dir, { variant = 'head', seed = 0, mode = 'success', tools = false, unsupported = false, profile = false, sessionFile = join(dir, 'session.jsonl'), observer = true, extensions = [], extraEnv = {}, compaction, extraArgs = [] } = {}) {
   mkdirSync(join(dir, 'agent'), { recursive: true });
   mkdirSync(join(dir, 'cwd'), { recursive: true });
   mkdirSync(join(dir, 'tmp'), { recursive: true });
   writeFileSync(join(dir, 'events.jsonl'), '');
   writeFileSync(join(dir, 'control.json'), JSON.stringify({ mode, tools }));
-  writeFileSync(join(dir, 'agent/settings.json'), JSON.stringify({ compaction: { enabled: true, reserveTokens: 1001, keepRecentTokens: 40 }, retry: { enabled: false }, providerRetry: { maxRetries: 0 }, transport: 'sse', cacheWarming: 'off', theme: 'dark', quietStartup: true }));
+  writeFileSync(join(dir, 'agent/settings.json'), JSON.stringify({ compaction: { enabled: true, reserveTokens: 1001, keepRecentTokens: 40, ...compaction }, retry: { enabled: false }, providerRetry: { maxRetries: 0 }, transport: 'sse', cacheWarming: 'off', theme: 'dark', quietStartup: true }));
   writeFileSync(join(dir, 'agent/models.json'), JSON.stringify({ providers: { fixture: { baseUrl: 'https://fixture.invalid/v1', api: 'openai-responses', apiKey: 'fixture-only', models: [{ id: 'fixture-model', name: 'Synthetic fixture', contextWindow: 10000, maxTokens: 1000, reasoning: false, input: ['text'], cost: { input: 0, output: 0, cacheRead: 0, cacheWrite: 0 } }] } } }));
   const env = { PATH: process.env.PATH, HOME: process.env.HOME, USER: process.env.USER, SHELL: '/bin/zsh', TERM: 'xterm-256color', LANG: 'en_US.UTF-8',
     PI_CODING_AGENT_DIR: join(dir, 'agent'), PI_OFFLINE: '1', TMPDIR: join(dir, 'tmp'), JITI_FS_CACHE: 'false',
     NODE_OPTIONS: `--import=${join(root, 'scripts/fixture/preload.mjs')} ${profile ? '--cpu-prof --cpu-prof-dir=' + dir : ''}`, PI_FIXTURE_LOG: join(dir, 'events.jsonl'), PI_FIXTURE_CONTROL: join(dir, 'control.json'),
-    PI_FIXTURE_SEED: String(seed), PI_FIXTURE_UNSUPPORTED: unsupported ? '1' : '0' };
-  const args = ['--approve','--provider', 'fixture', '--model', 'fixture-model', '--thinking', 'off', '--no-extensions', '-e', join(root, 'scripts/fixture/observer.ts'),
-    ...(variant === 'head' ? ['-e', join(root, 'src/index.ts')] : []), '--no-skills', '--no-prompt-templates', '--no-themes', '--no-context-files',
-    '--system-prompt', 'Synthetic fixture only.', '--session', sessionFile, '--tools', tools ? 'alpha,beta,gamma' : ''];
+    PI_FIXTURE_SEED: String(seed), PI_FIXTURE_UNSUPPORTED: unsupported ? '1' : '0', ...extraEnv };
+  const args = ['--approve','--provider', 'fixture', '--model', 'fixture-model', '--thinking', 'off', '--no-extensions', ...(observer ? ['-e', join(root, 'scripts/fixture/observer.ts')] : []),
+    ...(variant === 'head' ? ['-e', join(root, 'src/index.ts')] : []), ...extensions.flatMap(path => ['-e', path]), '--no-skills', '--no-prompt-templates', '--no-themes', '--no-context-files',
+    ...extraArgs, '--system-prompt', 'Synthetic fixture only.', '--session', sessionFile, '--tools', tools ? 'alpha,beta,gamma' : ''];
   return { env, args };
 }
 export async function cli(dir, options = {}, prompt = 'CURRENT_INPUT_MARKER short prompt') {
