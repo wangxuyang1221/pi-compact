@@ -1,13 +1,13 @@
 # Implementation roadmap
 
-The design is approved. All implementation stages below remain open. Each stage requires tests, evidence from a real Pi runtime, and checks for local processing overhead.
+The design is approved. Stage 1 has passed independent acceptance; stages 2 through 6 remain open. Each stage requires tests, evidence from a real Pi runtime, and checks for local processing overhead.
 
 ## 1. Establish the extension integration
 
-- [ ] Create the package, typed operation state, compatibility checks, and isolated test runner.
-- [ ] Prove that an ordinary extension can inspect new input before the first request and coordinate with Pi's native compaction flow.
-- [ ] Stop normal requests after compaction failure or cancellation, including queued input and post-run retries.
-- [ ] Verify explicit retry, reload, cleanup, and unsupported-version behavior through the actual CLI.
+- [x] Create the package, typed operation state, compatibility checks, and isolated test runner.
+- [x] Prove that an ordinary extension can inspect new input before the first request and coordinate with Pi's native compaction flow.
+- [x] Stop normal requests after compaction failure or cancellation, including queued input and post-run retries.
+- [x] Verify explicit retry, reload, cleanup, and unsupported-version behavior through the actual CLI.
 
 Accept this stage when one session has one compaction owner, tool batches stay intact, failed compaction cannot silently continue, and recovery is explicit.
 
@@ -76,4 +76,4 @@ Check local overhead against a measured native baseline. Network completion time
 
 Screenshots and interaction recordings should come from the tested package revision. Temporary processes and listeners must be stopped after verification.
 
-The current repository contains design documents only. Prototype artifacts and local execution records are not part of the published repository.
+The repository contains the P1 extension and reproducible verification runners. Read the [P1 acceptance report](../artifacts/P1-acceptance/REPORT.md) and [adapter boundaries](p1-adapter.md) for the tested revision and supported behavior. Prototype material remains separate from the development package.

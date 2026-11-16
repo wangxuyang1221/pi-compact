@@ -1,0 +1,96 @@
+{
+  "piPids": [
+    62848,
+    62860,
+    62829,
+    62839,
+    63470,
+    62901,
+    62907,
+    62920,
+    62890,
+    63383,
+    62973,
+    63620,
+    64642,
+    64661,
+    64759,
+    64686
+  ],
+  "uniquePids": [
+    62848,
+    62860,
+    62829,
+    62839,
+    63470,
+    62901,
+    62907,
+    62920,
+    62890,
+    63383,
+    62973,
+    63620,
+    64642,
+    64661,
+    64759,
+    64686,
+    63370,
+    62961,
+    64677,
+    64660
+  ],
+  "alive": [],
+  "listeners": {
+    "code": 1,
+    "stdout": "",
+    "stderr": ""
+  },
+  "sockets": [],
+  "cleanups": [
+    {
+      "file": "/Users/wangxuyang/.t3/worktrees/compact/t3-2348152c-86fd991d806623ba/artifacts/P1-fixes/runs/1794809846884/owner/cleanup.json",
+      "panePids": [
+        63370,
+        63383
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "file": "/Users/wangxuyang/.t3/worktrees/compact/t3-2348152c-86fd991d806623ba/artifacts/P1-fixes/runs/1794809846884/retry/cleanup.json",
+      "panePids": [
+        62961,
+        62973
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "file": "/Users/wangxuyang/.t3/worktrees/compact/t3-2348152c-86fd991d806623ba/artifacts/P1-scope-recheck/ownership-bytes/owner/cleanup.json",
+      "panePids": [
+        64677,
+        64686
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    }
+  ]
+}
