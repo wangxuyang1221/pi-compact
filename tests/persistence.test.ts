@@ -44,3 +44,19 @@ for (const begin of [true, false]) {
     } finally { rmSync(dir, { recursive: true, force: true }); }
   });
 }
+
+test('an uncertain idle replacement cannot promise the previous running barrier', () => {
+  let durable: StoredState = { kind: 'idle' };
+  const controller = new CompactionController(state => {
+    if (state.kind === 'blocked') throw new Error('synthetic blocked write fault');
+    durable = structuredClone(state);
+    if (state.kind === 'idle') throw new Error('synthetic failure after idle replacement');
+  }, durable);
+  const operation = controller.begin(false);
+  assert.throws(() => controller.succeed(operation));
+  const outcome = controller.block('persistence', 'completion persistence uncertain');
+  assert.equal(outcome.kind, 'failed');
+  if (outcome.kind !== 'failed') throw new Error('Expected persistence failure');
+  assert.equal(outcome.recoveryBlocked, false);
+  assert.equal(new CompactionController(() => {}, durable).state.kind, 'idle');
+});
