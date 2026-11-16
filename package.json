@@ -1,0 +1,37 @@
+{
+  "name": "pi-compact",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Session-scoped native compaction safety for Pi 1.5.2",
+  "files": [
+    "src",
+    "README.md"
+  ],
+  "pi": {
+    "extensions": [
+      "./src/index.ts"
+    ]
+  },
+  "scripts": {
+    "lint": "eslint src tests scripts",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test tests/*.test.ts",
+    "verify:live": "node scripts/verify-live.mjs",
+    "verify:perf": "node scripts/verify-perf.mjs"
+  },
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "1.5.2"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "1.5.2",
+    "@types/node": "^22.19.0",
+    "typescript": "^5.9.3",
+    "tsx": "^4.20.6",
+    "eslint": "^9.39.1",
+    "typescript-eslint": "^8.46.4"
+  },
+  "packageManager": "pnpm@10.11.0"
+}
