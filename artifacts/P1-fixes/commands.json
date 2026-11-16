@@ -1,0 +1,88 @@
+[
+  {
+    "command": [
+      "pnpm",
+      "lint"
+    ],
+    "exit": 0
+  },
+  {
+    "command": [
+      "pnpm",
+      "typecheck"
+    ],
+    "exit": 0
+  },
+  {
+    "command": [
+      "pnpm",
+      "test"
+    ],
+    "exit": 0
+  },
+  {
+    "command": [
+      "pnpm",
+      "install",
+      "--frozen-lockfile"
+    ],
+    "exit": 0
+  },
+  {
+    "command": [
+      "pnpm",
+      "verify:live",
+      "--pr",
+      "P1",
+      "--output",
+      "artifacts/P1-fixes/live"
+    ],
+    "exit": 0
+  },
+  {
+    "command": [
+      "pnpm",
+      "verify:p1-fixes"
+    ],
+    "exit": 0
+  },
+  {
+    "command": [
+      "node",
+      "scripts/probe-preload-ownership.mjs"
+    ],
+    "exit": 1,
+    "expected": "known unresolved pre-extension write"
+  },
+  {
+    "command": [
+      "pnpm",
+      "verify:perf",
+      "--pr",
+      "P1",
+      "--pairs",
+      "5",
+      "--output",
+      "artifacts/P1-fixes",
+      "--lanes",
+      "artifacts/P1-fixes/live"
+    ],
+    "exit": 0
+  },
+  {
+    "command": [
+      "pnpm",
+      "pack",
+      "--pack-destination",
+      "artifacts/P1-fixes/package"
+    ],
+    "exit": 0
+  },
+  {
+    "command": [
+      "node",
+      "inline package whitelist, bytes and ordinary-loader smoke audit"
+    ],
+    "exit": 0
+  }
+]
