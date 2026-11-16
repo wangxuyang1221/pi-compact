@@ -135,6 +135,7 @@ function bind(host: typeof Pi, registry: Registry, session: Session): void {
     const operation = registry.summary.getStore();
     const generation = controller.state.kind === 'running' ? controller.state.operation.generation : controller.state.generation;
     const check = () => {
+      options?.signal?.throwIfAborted();
       if (operation) controller.assertCurrent(operation);
       else {
         controller.assertIdle();
@@ -249,7 +250,7 @@ function bind(host: typeof Pi, registry: Registry, session: Session): void {
   }
   const dispose = session.dispose;
   restore.push(replace(session, 'dispose', () => {
-    if (controller.state.kind === 'running') controller.block('interrupted', 'Session closed during compaction.');
+    controller.dispose();
     dispose.call(session);
     binding.restoreEvents?.();
     for (const undo of restore.reverse()) undo();

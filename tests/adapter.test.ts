@@ -111,3 +111,14 @@ test('the session file has a single owner and releases on disposal', async () =>
     claimSessionFile(journal)();
   } finally { rmSync(dir, { recursive: true, force: true }); }
 });
+
+test('disposal rejects late requests without blocking a clean restart', () => {
+  const stored: StoredState[] = [];
+  const controller = new CompactionController(state => stored.push(state));
+  const operation = controller.begin(false);
+  controller.succeed(operation);
+  controller.dispose();
+  assert.throws(() => controller.assertIdle(), /disposed/);
+  assert.throws(() => controller.begin(true), /disposed/);
+  new CompactionController(() => {}, stored.at(-1)).assertIdle();
+});

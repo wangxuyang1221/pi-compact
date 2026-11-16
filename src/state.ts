@@ -53,6 +53,12 @@ export class CompactionController {
     this.state = { kind: 'idle', generation: operation.generation };
   }
 
+  dispose(): void {
+    if (this.state.kind === 'running') this.block('interrupted', 'Session closed during compaction.');
+    const generation = this.state.kind === 'running' ? this.state.operation.generation : this.state.generation;
+    this.state = { kind: 'blocked', generation: generation + 1, reason: 'disposed', message: 'Session is disposed.' };
+  }
+
   block(reason: BlockReason, message: string): void {
     const generation = this.state.kind === 'running' ? this.state.operation.generation : this.state.generation;
     if (this.state.kind === 'running') this.state.operation.abort.abort();
