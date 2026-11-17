@@ -1,0 +1,15 @@
+{
+  "pass": true,
+  "files": 2299,
+  "archive": {
+    "path": "artifacts/P4-fixes/evidence.tar.gz",
+    "bytes": 4652230,
+    "sha256": "4a6e6879dd3e7db6055ed9269f90237c23f26b79b421f61ac1d6f8d40f586e33"
+  },
+  "standalone": [
+    {
+      "path": "artifacts/P4-fixes/package-final/pi-compact-0.1.0.tgz",
+      "sha256": "fd8cffab14e4a59b132abd5ddf0ca5d24a559f8ccd580bb129d7417c48a15b0b"
+    }
+  ]
+}

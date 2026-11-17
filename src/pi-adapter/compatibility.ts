@@ -15,7 +15,7 @@ export function checkHost(host: typeof Pi): void {
     if (typeof manager?.[method] !== 'function') throw new Error(`Unsupported Pi capability: SessionManager.${method}`);
   }
   const runtime = host.ModelRuntime?.prototype as unknown as Record<string, unknown>;
-  for (const method of ['getAuth', 'isUsingOAuth', 'streamSimple']) {
+  for (const method of ['getAuth', 'getModel', 'isUsingOAuth', 'streamSimple']) {
     if (typeof runtime?.[method] !== 'function') throw new Error(`Unsupported Pi capability: ModelRuntime.${method}`);
   }
   const mode = host.InteractiveMode?.prototype as unknown as Record<string, unknown>;

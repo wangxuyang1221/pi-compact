@@ -1,0 +1,1 @@
+{"pass": true, "files": 2299, "method": "stream every tar member and verify its SHA-256; no extraction"}

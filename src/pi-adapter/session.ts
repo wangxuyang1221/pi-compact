@@ -12,6 +12,7 @@ import { beginAppend, finishAppend, recoverAppend, type Pending } from './transa
 import { activeCheckpoint, assertSource, checkpoint, coverage, digest, marker, markProjection, readableBranch, replayMessage, replayReference, type Checkpoint, type Message } from '../checkpoint.ts';
 import { codexAccess, remoteCompact } from '../codex/compact.ts';
 import { object, validateRequestWire } from '../codex/wire.ts';
+import { assertSelection, inspectMigration, MigrationInvalidated, readOpaque, sameCapability, selectionKey, sourceReader, type MigrationIntent, type Selection } from '../migration.ts';
 
 type Model = NonNullable<Pi.AgentSession['model']>;
 type Agent = Pi.AgentSession['agent'];
@@ -36,7 +37,7 @@ type Mode = { session: Session; compactionQueuedMessages: { text: string; mode: 
   handleCompactCommand(instructions?: string): Promise<void>; flushCompactionQueue(options?: unknown): Promise<void> };
 type NativeProgress = { kind: 'preparing' } | { kind: 'started' } | { kind: 'committed'; id: string };
 type PolicyBoundary = { entry: string | undefined; model: Model; percent: number };
-type Execution = { branch: Pi.SessionEntry[]; proposal?: Checkpoint; remoteAttempted?: true; progress: NativeProgress; operation: Operation; settled: Promise<void>; finish(): void; compactEvent?: Pi.SessionCompactEvent; completionEvent?: Pi.AgentSessionEvent };
+type Execution = { branch: Pi.SessionEntry[]; sourceRevision: number; selection: Selection; migration?: MigrationIntent; requestSignal?: AbortSignal; proposal?: Checkpoint; remoteAttempted?: true; progress: NativeProgress; operation: Operation; settled: Promise<void>; finish(): void; compactEvent?: Pi.SessionCompactEvent; completionEvent?: Pi.AgentSessionEvent };
 type Binding = { controller: CompactionController; lifecycle: 'active' | 'disposed'; execution?: Execution; ui?: Mode; restoreEvents?: () => void; publishCompact?: (event: Pi.SessionCompactEvent) => Promise<unknown> };
 type FileOwner = { file: string; release(): void; session?: Session };
 type Manager = { [K in keyof Pi.SessionManager]: Pi.SessionManager[K] } & { _appendEntry(entry: Pi.SessionEntry): void; _rewriteFile(): void };
@@ -117,6 +118,16 @@ function bind(host: typeof Pi, registry: Registry, session: Session): void {
   bindEvents(session, binding, registry.execution);
 
   const nativeBranch = manager.getBranch.bind(manager);
+  const hasCheckpointHistory = () => manager.getEntries().some(entry => entry.type === 'compaction' && entry.details && typeof entry.details === 'object' && 'piCompact' in entry.details);
+  let mayHaveOpaqueHistory = hasCheckpointHistory();
+  let selectionEpoch = 0;
+  const selection = (): Selection => ({ epoch: selectionEpoch, model: session.model!, key: selectionKey(session.model!) });
+  const assertExecution = (execution: Execution) => {
+    controller.assertCurrent(execution.operation);
+    execution.requestSignal?.throwIfAborted();
+    assertSelection(execution.selection, selectionEpoch, session.model!);
+    if (sourceRevision !== execution.sourceRevision || manager.getLeafId() !== execution.branch.at(-1)?.id) throw new Error('History changed during compaction. Retry on the active branch.');
+  };
   replace(manager, 'getBranch', (...args) => {
     const branch = nativeBranch(...args);
     const execution = registry.execution.getStore();
@@ -124,12 +135,23 @@ function bind(host: typeof Pi, registry: Registry, session: Session): void {
   });
   const projection = manager.buildSessionProjection;
   replace(manager, 'buildSessionProjection', () => markProjection(projection.call(manager)));
+  let sourceRevision = 0;
+  let verifiedSource: { id: string; leaf: string | null; revision: number; value: Extract<Checkpoint, { kind: 'opaque' }> } | undefined;
+  const reload = manager.setSessionFile;
+  replace(manager, 'setSessionFile', path => {
+    sourceRevision++;
+    reload.call(manager, path);
+    mayHaveOpaqueHistory = hasCheckpointHistory();
+  });
   const opaque = (id: string) => {
+    const leaf = manager.getLeafId();
+    if (verifiedSource?.id === id && verifiedSource.leaf === leaf && verifiedSource.revision === sourceRevision) return verifiedSource.value;
     const entry = manager.getEntry(id);
     const value = entry && checkpoint(entry);
     if (!entry || entry.type !== 'compaction' || value?.kind !== 'opaque') throw new Error('Checkpoint reference is unavailable.');
     if (nativeBranch().findLast(entry => entry.type === 'compaction')?.id !== id) throw new Error('Checkpoint reference is not active.');
     assertSource(host, nativeBranch(), entry, value);
+    verifiedSource = { id, leaf, revision: sourceRevision, value };
     return value;
   };
   const estimate = (messages: Message[]) => {
@@ -139,15 +161,34 @@ function bind(host: typeof Pi, registry: Registry, session: Session): void {
       return sum + (id ? opaque(id).budget.tokens : host.convertToLlm([message]).reduce((tokens, item) => tokens + host.estimateTokens(item), 0));
     }, 0);
   };
-  const convert = (messages: Message[]) => messages.flatMap(message => {
+  const convert = (messages: Message[], model: Model) => messages.flatMap(message => {
     const id = marker(message);
-    return id ? [replayMessage(opaque(id), message.timestamp, id)] : host.convertToLlm([message]);
+    return id ? [{ ...replayMessage(opaque(id), message.timestamp, id), model: model.id }] : host.convertToLlm([message]);
   });
   const compatible = async (messages: Message[], model: Model, signal?: AbortSignal) => {
     if (!messages.some(message => marker(message))) return;
     const ids = messages.map(marker).filter((id): id is string => !!id);
     const access = await codexAccess(session.modelRuntime, model, signal);
-    if (!access || ids.some(id => JSON.stringify(opaque(id).compatibility) !== JSON.stringify(access.compatibility))) throw new Error('Opaque checkpoint is incompatible. Run /compact to rebuild readable history.');
+    if (!access || ids.some(id => !sameCapability(opaque(id).compatibility, access.compatibility))) throw new Error('Opaque checkpoint is incompatible. Run /compact to rebuild readable history.');
+  };
+
+  const migrationIntent = async (signal?: AbortSignal) => {
+    if (!mayHaveOpaqueHistory) return;
+    const intent = inspectMigration(host, nativeBranch(), selection());
+    if (!intent) return;
+    let access;
+    try { access = await codexAccess(session.modelRuntime, intent.target.model, signal); } catch { signal?.throwIfAborted(); }
+    assertSelection(intent.target, selectionEpoch, session.model!);
+    return intent.sourceValid && access && sameCapability(intent.checkpoint.compatibility, access.compatibility) ? undefined : intent;
+  };
+  const migrate = async (signal?: AbortSignal, beforeMigration?: () => void) => {
+    const intent = await migrationIntent(signal);
+    if (!intent) return false;
+    signal?.throwIfAborted();
+    beforeMigration?.();
+    await run(() => auto.call(session, 'threshold', false), false, false, intent, signal);
+    assertAdmission();
+    return true;
   };
 
   let policyBoundary: PolicyBoundary | undefined;
@@ -186,7 +227,8 @@ function bind(host: typeof Pi, registry: Registry, session: Session): void {
   const toLlm = agent.convertToLlm;
   replace(agent, 'convertToLlm', messages => {
     if (!messages.some(message => marker(message))) return toLlm.call(agent, messages);
-    return compatible(messages, session.model!).then(() => convert(messages));
+    const model = session.model!;
+    return compatible(messages, model).then(() => convert(messages, model));
   });
   const assertAlive = () => {
     if (binding.lifecycle === 'disposed') throw new Error('Session is disposed.');
@@ -225,9 +267,12 @@ function bind(host: typeof Pi, registry: Registry, session: Session): void {
     const native = ownedManager[key];
     replace(ownedManager, key, function (entry: Pi.SessionEntry) {
       assertWritable();
+      sourceRevision++;
+      if (entry?.type === 'model_change') selectionEpoch++;
       if (entry?.type === 'compaction') {
         const execution = registry.execution.getStore();
         if (!execution || binding.execution !== execution) throw new Error('Checkpoint write has no operation.');
+        if (execution.proposal?.kind === 'opaque') mayHaveOpaqueHistory = true;
         appendState = { kind: 'pending' };
         appendState.record = beginAppend(file!, execution.operation.id, entry);
       }
@@ -261,13 +306,19 @@ function bind(host: typeof Pi, registry: Registry, session: Session): void {
     if (binding.execution) throw new Error('Native compaction is still finishing.');
   };
   const prepare = agent.prepareRequest;
+  let requestSelection: Selection | undefined;
+  let requestLeaf: string | null | undefined;
   replace(agent, 'prepareRequest', async (request, signal) => {
     assertAdmission();
     ensureModel();
     const config = readSettings(session._cwd);
     if (config.kind === 'invalid') throw new Error(config.error);
+    await migrate(signal);
+    requestSelection = selection();
+    requestLeaf = manager.getLeafId();
     const prepared = await prepare.call(agent, request, signal);
     assertAdmission();
+    assertSelection(requestSelection, selectionEpoch, session.model!);
     return prepared ?? undefined;
   });
   const transform = agent.transformContext;
@@ -279,6 +330,11 @@ function bind(host: typeof Pi, registry: Registry, session: Session): void {
     assertAdmission();
     signal?.throwIfAborted();
     if (before.some(source => marker(source.message)) && transformed.some(message => message.role === 'compactionSummary' && !marker(message))) throw new Error('Opaque checkpoint lost its source reference.');
+    let beforeMigration: Pi.SessionProjection | undefined;
+    if (await migrate(signal, () => { beforeMigration = manager.buildSessionProjection(); })) {
+      transformed = reconstructContext(before, transformed, beforeMigration!, manager.buildSessionProjection());
+      requestLeaf = manager.getLeafId();
+    }
     const current = boundary();
     const tokens = estimate(transformed);
     if (nativeSettings.getCompactionSettings(current.model).enabled && !sameBoundary(current) && (tokens >= thresholdTokens(current.model.contextWindow, current.percent) ||
@@ -288,22 +344,30 @@ function bind(host: typeof Pi, registry: Registry, session: Session): void {
       assertAdmission();
       signal?.throwIfAborted();
       transformed = reconstructContext(before, transformed, original, manager.buildSessionProjection());
+      requestLeaf = manager.getLeafId();
     }
     await compatible(transformed, session.model!, signal);
     return transformed;
   });
   const stream = agent.streamFunction;
-  replace(agent, 'streamFunction', (model, context, options) => {
+  replace(agent, 'streamFunction', async (model, context, options) => {
     const operation = registry.summary.getStore();
+    const execution = operation ? binding.execution : undefined;
+    if (operation && execution?.operation !== operation) throw new Error('Summary belongs to a stale compaction operation.');
+    const selected = execution?.selection ?? requestSelection ?? selection();
     const generation = controller.state.kind === 'running' ? controller.state.operation.generation : controller.state.generation;
     const check = () => {
       options?.signal?.throwIfAborted();
+      assertSelection(selected, selectionEpoch, session.model!);
       if (operation) {
         controller.assertCurrent(operation);
+        if (binding.execution !== execution) throw new Error('Summary belongs to a stale compaction operation.');
+        assertExecution(execution!);
         if (binding.execution && activeCheckpoint(binding.execution.branch)?.kind === 'opaque' && context.messages.reduce((sum, message) => sum + host.estimateTokens(message), 0) > model.contextWindow - model.maxTokens) throw new Error('Readable summary input exceeds model capacity.');
       }
       else {
         assertAdmission();
+        if (requestLeaf !== manager.getLeafId()) throw new Error('Active branch changed before transport. Retry on the active branch.');
         if (controller.state.kind !== 'idle' || controller.state.generation !== generation) throw new Error('Request belongs to a stale compaction generation.');
         ensureModel();
         const tokens = context.messages.reduce((sum, message) => {
@@ -321,8 +385,15 @@ function bind(host: typeof Pi, registry: Registry, session: Session): void {
       }
     };
     check();
+    const hasOpaque = context.messages.some(message => replayReference(message));
+    const access = hasOpaque ? await codexAccess(session.modelRuntime, model, options?.signal) : undefined;
+    if (hasOpaque && (!access || context.messages.some(message => {
+      const id = replayReference(message);
+      return id && !sameCapability(opaque(id).compatibility, access.compatibility);
+    }))) throw new Error('Opaque authorization is incompatible before transport.');
+    check();
     const onPayload = options?.onPayload;
-    return stream(model, context, { ...options, onPayload: async (payload, payloadModel) => {
+    return stream(model, context, { ...options, ...(access ? { apiKey: access.apiKey, headers: access.headers, env: access.env, transport: 'sse' as const } : {}), onPayload: async (payload, payloadModel) => {
       const before = JSON.stringify(payload);
       const transformed = await onPayload?.(payload, payloadModel);
       check();
@@ -331,7 +402,7 @@ function bind(host: typeof Pi, registry: Registry, session: Session): void {
         const access = await codexAccess(session.modelRuntime, model, options?.signal);
         const active = nativeBranch().findLast(entry => checkpoint(entry)?.kind === 'opaque');
         const value = active && checkpoint(active);
-        if (!access || value?.kind !== 'opaque' || JSON.stringify(access.compatibility) !== JSON.stringify(value.compatibility)) throw new Error('Opaque authorization changed before transport.');
+        if (!access || value?.kind !== 'opaque' || !sameCapability(access.compatibility, value.compatibility) || payloadModel.baseUrl.replace(/\/$/, '') !== access.compatibility.endpoint) throw new Error('Opaque authorization changed before transport.');
         const items = validateRequestWire(object(payload).input);
         const expected = value.items;
         const start = items.findIndex(item => JSON.stringify(item) === JSON.stringify(expected[0]));
@@ -351,7 +422,7 @@ function bind(host: typeof Pi, registry: Registry, session: Session): void {
   replace(manager, 'appendCompaction', function (...args) {
     const execution = registry.execution.getStore();
     if (!execution || binding.execution !== execution) throw new Error('Compaction append has no active operation.');
-    controller.assertCurrent(execution.operation);
+    assertExecution(execution);
     if (execution.progress.kind === 'committed') throw new Error('Compaction operation already committed.');
     if (!args[0]?.trim() || (args[1] !== null && !manager.getEntry(args[1]))) throw new Error('Invalid native compaction result.');
     if (!execution.proposal && activeCheckpoint(execution.branch)?.kind === 'opaque') throw new Error('Opaque history requires readable native preparation.');
@@ -382,6 +453,8 @@ function bind(host: typeof Pi, registry: Registry, session: Session): void {
       if (event.result && execution.progress.kind === 'committed' && state.kind === 'running' && state.operation === execution.operation) {
         try {
           controller.assertCurrent(execution.operation);
+          execution.requestSignal?.throwIfAborted();
+          assertSelection(execution.selection, selectionEpoch, session.model!);
           if (pendingTooLarge()) {
             controller.block('oversized', 'Pending input cannot be reduced enough to continue.');
           } else {
@@ -400,16 +473,24 @@ function bind(host: typeof Pi, registry: Registry, session: Session): void {
     }
     return emit.call(session, event);
   });
-  const run = async <T>(native: () => Promise<T>, explicit: boolean, allowNoWork = false): Promise<T> => {
+  const run = async <T>(native: () => Promise<T>, explicit: boolean, allowNoWork = false, migration?: MigrationIntent, requestSignal?: AbortSignal): Promise<T> => {
     ensureModel();
     while (binding.execution) {
       if (!explicit || controller.state.kind !== 'blocked') throw new Error('Native compaction is still finishing.');
       await binding.execution.settled;
     }
     if (explicit && !recoverCheckpoint()) throw new Error(controller.message());
+    migration ??= await migrationIntent();
+    if (migration) assertSelection(migration.target, selectionEpoch, session.model!);
+    const branch = nativeBranch();
+    if (migration) {
+      const current = inspectMigration(host, branch, selection());
+      if (!current || current.checkpointId !== migration.checkpointId) throw new Error('Migration checkpoint changed before compaction.');
+      migration = current;
+    }
     const operation = controller.begin(explicit);
     let finish!: () => void;
-    const execution: Execution = { branch: nativeBranch(), progress: { kind: 'preparing' }, operation, settled: new Promise(resolve => { finish = resolve; }), finish: () => finish() };
+    const execution: Execution = { branch, sourceRevision, selection: selection(), migration, requestSignal, progress: { kind: 'preparing' }, operation, settled: new Promise(resolve => { finish = resolve; }), finish: () => finish() };
     binding.execution = execution;
     try {
       const result = await thresholdScope.run(false, () => registry.execution.run(execution, native));
@@ -458,10 +539,10 @@ function bind(host: typeof Pi, registry: Registry, session: Session): void {
     const execution = registry.execution.getStore();
     if (!execution || binding.execution !== execution || state.kind !== 'running') throw new Error('Summary has no active operation.');
     controller.assertCurrent(execution.operation);
-    const signal = AbortSignal.any([nativeSignal, state.operation.abort.signal]);
+    const signal = AbortSignal.any([nativeSignal, state.operation.abort.signal, ...(execution.requestSignal ? [execution.requestSignal] : [])]);
     const source = coverage(host, execution.branch, preparation.firstKeptEntryId);
     try {
-      const access = await codexAccess(session.modelRuntime, model, signal);
+      const access = execution.migration ? undefined : await codexAccess(session.modelRuntime, model, signal);
       if (access) {
         const projected = markProjection(host.buildSessionProjection(execution.branch));
         const cut = execution.branch.findIndex(entry => entry.id === preparation.firstKeptEntryId);
@@ -470,25 +551,53 @@ function bind(host: typeof Pi, registry: Registry, session: Session): void {
         await compatible(messages, model, signal);
         if (estimate(messages) > model.contextWindow - model.maxTokens) throw new Error('Remote input exceeds capacity.');
         execution.remoteAttempted = true;
-        const remote = await remoteCompact(session.modelRuntime, model, convert(messages), access, signal, instructions);
+        const remote = await remoteCompact(session.modelRuntime, model, convert(messages, model), access, signal, instructions, () => assertExecution(execution));
         if (remote.budget.tokens > model.contextWindow - model.maxTokens) throw new Error('Remote checkpoint exceeds capacity.');
-        controller.assertCurrent(execution.operation);
+        assertExecution(execution);
         execution.proposal = { schemaVersion: 1, kind: 'opaque', source, compatibility: access.compatibility, items: remote.items, budget: remote.budget };
         return { summary: 'Codex remote checkpoint. Readable history remains in the session log.', firstKeptEntryId: preparation.firstKeptEntryId, tokensBefore: preparation.tokensBefore, usage: remote.usage,
           details: { piCompact: execution.proposal, method: 'remote' } };
       }
     } catch {
       signal.throwIfAborted();
-      controller.assertCurrent(execution.operation);
+      assertExecution(execution);
     }
     return registry.summary.run(state.operation, async () => {
+      const segments: Extract<Checkpoint, { kind: 'text' }>['segments'] = [];
+      let method = execution.migration ? 'history' : execution.remoteAttempted ? 'fallback' : 'native';
+      let sourceResult: Awaited<ReturnType<typeof readOpaque>> | undefined;
+      if (execution.migration) {
+        const intent = execution.migration;
+        const oldCut = execution.branch.findIndex(entry => entry.id === intent.checkpoint.source.firstKept);
+        const cut = execution.branch.findIndex(entry => entry.id === preparation.firstKeptEntryId);
+        const reader = cut >= oldCut ? await sourceReader(session.modelRuntime, intent, signal) : undefined;
+        if (reader) {
+          try {
+            sourceResult = await readOpaque(session.modelRuntime, reader, intent, signal, () => assertExecution(execution));
+          } catch (error) {
+            signal.throwIfAborted();
+            assertExecution(execution);
+            if (error instanceof MigrationInvalidated) throw error;
+          }
+          if (sourceResult) {
+            const covered = new Set(intent.checkpoint.source.entries);
+            const prefix = new Set(execution.branch.slice(0, cut).map(entry => entry.id));
+            const remainder = host.buildSessionProjection(readableBranch(execution.branch)).entries
+              .filter(entry => prefix.has(entry.sourceEntry.id) && !covered.has(entry.sourceEntry.id)).flatMap(entry => entry.messages);
+            preparation = { ...preparation, previousSummary: sourceResult.text, messagesToSummarize: remainder, turnPrefixMessages: [], isSplitTurn: false };
+            segments.push({ entries: intent.checkpoint.source.entries, hash: digest(intent.checkpoint.items), start: 0, end: intent.checkpoint.items.length, unit: 'wire' });
+            method = 'source';
+          }
+        }
+      }
       const serialized = host.serializeConversation(host.convertToLlm([...preparation.messagesToSummarize, ...preparation.turnPrefixMessages]));
       const recoveringOpaque = activeCheckpoint(execution.branch)?.kind === 'opaque';
       const chunkChars = recoveringOpaque ? Math.floor((model.contextWindow - model.maxTokens - 4096) / 2) * 4 : Infinity;
       if (recoveringOpaque && chunkChars <= 0) throw new Error('Model has insufficient capacity for readable compaction.');
-      const segments: { entries: string[]; hash: string; start: number; end: number }[] = [];
       let result: Pi.CompactionResult;
-      if (serialized.length <= chunkChars) {
+      if (!serialized.length && sourceResult) {
+        result = { summary: sourceResult.text, firstKeptEntryId: preparation.firstKeptEntryId, tokensBefore: preparation.tokensBefore, usage: sourceResult.usage };
+      } else if (serialized.length <= chunkChars) {
         result = await summarize.call(session, preparation, model, instructions, signal, reason);
         segments.push({ entries: source.entries, hash: digest(serialized), start: 0, end: serialized.length });
       } else {
@@ -504,8 +613,11 @@ function bind(host: typeof Pi, registry: Registry, session: Session): void {
           offset = end;
         }
       }
+      assertExecution(execution);
       execution.proposal = { schemaVersion: 1, kind: 'text', source, text: result!.summary, segments };
-      return { ...result!, details: { ...(result!.details && typeof result!.details === 'object' ? result!.details : {}), piCompact: execution.proposal, method: execution.remoteAttempted ? 'fallback' : 'native', ...(execution.remoteAttempted ? { fallbackReason: 'remote-error' } : {}) } };
+      return { ...result!, details: { ...(result!.details && typeof result!.details === 'object' ? result!.details : {}), piCompact: execution.proposal, method,
+        ...(execution.migration ? { migration: { checkpointId: execution.migration.checkpointId, epoch: execution.selection.epoch, target: { provider: model.provider, model: model.id }, method } } : {}),
+        ...(execution.remoteAttempted ? { fallbackReason: 'remote-error' } : {}) } };
     });
   });
   const abort = session.abortCompaction;

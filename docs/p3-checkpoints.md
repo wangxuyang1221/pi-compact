@@ -1,10 +1,8 @@
 # Checkpoints and readable recovery
 
-P3 adds Codex protocol support to the existing Pi 1.5.2 session controller. Pi still owns manual and automatic preparation, extension cancellation, summary execution, the single checkpoint append, and completion notifications. Normal installation continues to use native text compaction until P4 verifies provider migration.
+P3 adds Codex protocol support to the existing Pi 1.5.2 session controller. Pi still owns manual and automatic preparation, extension cancellation, summary execution, the single checkpoint append, and completion notifications. P4 adds request-time provider migration and enables the bounded remote capability described in [model changes and recovery](p4-migration.md).
 
-## Development isolation
-
-The intermediate remote path requires `PI_COMPACT_P3_DEV=fixture-only`, an active `openai-codex` model using `openai-codex-responses`, model ID `gpt-6-astra`, an effective OAuth account, and the exact synthetic endpoint `https://fixture.invalid/backend-api`. The fixture runner supplies those values in its isolated agent directory. The ordinary package never enables remote requests to real services in P3. P4 must replace this development restriction after migration acceptance. This is an implementation boundary, not a user configuration feature.
+## Authorization
 
 The extension asks the current ModelRuntime for effective authorization. Another provider's credentials do not change the active model. Checkpoints store a SHA-256 account identifier, provider, normalized endpoint, protocol, model, and the tested encoder capability. They never store access tokens, refresh tokens, or headers. Provider error text is not copied into remote fallback metadata.
 
@@ -22,7 +20,7 @@ Remote compaction appends `compaction_trigger` to the actual Pi-encoded input. M
 
 The budget method is `codex-ciphertext-bytes-v1`. It charges the larger of the complete wire JSON's UTF-8 byte length plus 32 per item, or twice the response's positive integer output-token usage. The stored byte count and budget are recomputed on read. Unknown cost is never zero. Wire data is also limited to 8 MiB. Normal requests reserve the model's output capacity and include the opaque charge, retained messages, and current input.
 
-This is a conservative local estimate, not an exact tokenizer result or a proved service-side upper bound. The inspected Codex reference estimates a compaction at approximately one token per twelve ciphertext bytes and explicitly notes possible underestimation for older formats. P3 charges at least one token per complete serialized byte and checks reported usage as additional evidence. Only the isolated, tested capability is enabled. P6 must validate real-service behavior before widening compatibility. Unsupported representations take the readable path or stop with a retry message.
+This is a conservative local estimate, not an exact tokenizer result or a proved service-side upper bound. The inspected Codex reference estimates a compaction at approximately one token per twelve ciphertext bytes and explicitly notes possible underestimation for older formats. P3 charges at least one token per complete serialized byte and checks reported usage as additional evidence. P4 limits opaque traffic to the documented Codex capability and SSE. P6 must validate real-service behavior before widening compatibility. Unsupported representations take the readable path or stop with a retry message.
 
 ## Readable fallback
 
@@ -50,4 +48,4 @@ Run `pnpm lint`, `pnpm typecheck`, and `pnpm test`. Run `pnpm verify:p3` for all
 
 Run `pnpm verify:perf --pr P3` for 30 alternating native/head pairs with 1 MiB synthetic source messages. The local metric excludes fixture fetch work, startup, and seeding. It includes summary input handling, product serialization, and stream parsing. Preparation, commit, fixture success to actual continuation, peak RSS, failures, and source hashes are recorded separately. `P3_PAIRS=1 P3_PROFILE=1` runs a separate CPU profile for diagnosis, not a reported performance sample.
 
-Every provider interaction is a synthetic transport fixture. The preload blocks sockets and real configuration reads. The ordinary launcher, loader, AgentSession, SessionManager, tools, and TUI remain real. The report links actual requests, JSONL, recovery records, terminal captures, package contents, and cleanup evidence. Independent review and P4 remain pending at P3 handoff.
+Every provider interaction is a synthetic transport fixture. The preload blocks sockets and real configuration reads. The ordinary launcher, loader, AgentSession, SessionManager, tools, and TUI remain real. The report links actual requests, JSONL, recovery records, terminal captures, package contents, and cleanup evidence. P3 has independent acceptance. P4 adds its own migration and recovery evidence.

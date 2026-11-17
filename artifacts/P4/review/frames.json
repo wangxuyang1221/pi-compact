@@ -1,0 +1,285 @@
+{
+  "frames": [
+    {
+      "second": 0,
+      "at": 3.5448330000000396,
+      "file": "000.txt"
+    },
+    {
+      "second": 1,
+      "at": 1009.4579160000001,
+      "file": "001.txt"
+    },
+    {
+      "second": 2,
+      "at": 2047.352375,
+      "file": "002.txt"
+    },
+    {
+      "second": 3,
+      "at": 3010.190083,
+      "file": "003.txt"
+    },
+    {
+      "second": 4,
+      "at": 4014.655791,
+      "file": "004.txt"
+    },
+    {
+      "second": 5,
+      "at": 5035.081208,
+      "file": "005.txt"
+    },
+    {
+      "second": 6,
+      "at": 6015.49625,
+      "file": "006.txt"
+    },
+    {
+      "second": 7,
+      "at": 7014.448375,
+      "file": "007.txt"
+    },
+    {
+      "second": 8,
+      "at": 8013.82675,
+      "file": "008.txt"
+    },
+    {
+      "second": 9,
+      "at": 9014.426583,
+      "file": "009.txt"
+    },
+    {
+      "second": 10,
+      "at": 10016.121916,
+      "file": "010.txt"
+    },
+    {
+      "second": 11,
+      "at": 11031.553666,
+      "file": "011.txt"
+    },
+    {
+      "second": 12,
+      "at": 12017.165458,
+      "file": "012.txt"
+    },
+    {
+      "second": 13,
+      "at": 13014.928208,
+      "file": "013.txt"
+    },
+    {
+      "second": 14,
+      "at": 14015.441958,
+      "file": "014.txt"
+    },
+    {
+      "second": 15,
+      "at": 15015.646541,
+      "file": "015.txt"
+    },
+    {
+      "second": 16,
+      "at": 16031.593125,
+      "file": "016.txt"
+    },
+    {
+      "second": 17,
+      "at": 17015.1225,
+      "file": "017.txt"
+    },
+    {
+      "second": 18,
+      "at": 18007.807333,
+      "file": "018.txt"
+    },
+    {
+      "second": 19,
+      "at": 19013.360583,
+      "file": "019.txt"
+    },
+    {
+      "second": 20,
+      "at": 20013.926875,
+      "file": "020.txt"
+    },
+    {
+      "second": 21,
+      "at": 21015.130458,
+      "file": "021.txt"
+    },
+    {
+      "second": 22,
+      "at": 22013.833708,
+      "file": "022.txt"
+    },
+    {
+      "second": 23,
+      "at": 23016.42425,
+      "file": "023.txt"
+    },
+    {
+      "second": 24,
+      "at": 24011.039666,
+      "file": "024.txt"
+    },
+    {
+      "second": 25,
+      "at": 25014.161375,
+      "file": "025.txt"
+    },
+    {
+      "second": 26,
+      "at": 26014.21625,
+      "file": "026.txt"
+    },
+    {
+      "second": 27,
+      "at": 27015.306,
+      "file": "027.txt"
+    },
+    {
+      "second": 28,
+      "at": 28013.355791,
+      "file": "028.txt"
+    },
+    {
+      "second": 29,
+      "at": 29016.248208,
+      "file": "029.txt"
+    },
+    {
+      "second": 30,
+      "at": 30032.133791,
+      "file": "030.txt"
+    },
+    {
+      "second": 31,
+      "at": 31014.1975,
+      "file": "031.txt"
+    },
+    {
+      "second": 32,
+      "at": 32013.730333000003,
+      "file": "032.txt"
+    },
+    {
+      "second": 33,
+      "at": 33014.900291,
+      "file": "033.txt"
+    },
+    {
+      "second": 34,
+      "at": 34032.396416,
+      "file": "034.txt"
+    },
+    {
+      "second": 35,
+      "at": 35013.650291,
+      "file": "035.txt"
+    },
+    {
+      "second": 36,
+      "at": 36016.718708,
+      "file": "036.txt"
+    },
+    {
+      "second": 37,
+      "at": 37014.395875,
+      "file": "037.txt"
+    },
+    {
+      "second": 38,
+      "at": 38012.489416,
+      "file": "038.txt"
+    },
+    {
+      "second": 39,
+      "at": 39011.562957999995,
+      "file": "039.txt"
+    }
+  ],
+  "source": {
+    "src/checkpoint.ts": "cd724555f005ae2d1f939b1d9d9eedcd7db202a76431f866e1dd0d2921b696f9",
+    "src/index.ts": "ca2346f3653f4014ac0726c26bc1da72c63f45c527e04118fecb45ee1db21ee6",
+    "src/migration.ts": "19f81889473a8a37c0be55b0e3ab85f6ae08bfb06462998172ba1424a3e120b8",
+    "src/policy.ts": "6cef2b94edade4ae747a504f64f6a5a087311d8868cd3428cf800f6cebcea8b2",
+    "src/settings.ts": "690cb811c458dfe3af512ab025e18d726b0d75ddea8c97e38cd0155a186b96ad",
+    "src/state.ts": "10c7aad13e9da10bf54bba73edf33d61736f75417f8143c10c20538b3cc749ab",
+    "src/codex/compact.ts": "947a06e1a2d2b13207235c36d4d6db0215f2583cca4b2732264cc723a2635136",
+    "src/codex/wire.ts": "1102a310cafed43f811baf500cdb6d8485dfef500ad5c41bd691edaa44bd63b5",
+    "src/pi-adapter/compatibility.ts": "09c1fff3c7424a041c2b72faab02bb1b34d4e23c29b12ca302027d9556566475",
+    "src/pi-adapter/journal.ts": "0fab09996308920b0757576769849533e9766ce9d99bdaa6b4ac7bee2ec17a67",
+    "src/pi-adapter/reconstruction.ts": "1f98066ed24c2eb82fd24bab0f03528750160c56a74166e6b46b9e894118b55f",
+    "src/pi-adapter/session.ts": "180bc914b66cca726427f00a7a90cff24adcad2857202fea1d8246c39eb9268d",
+    "src/pi-adapter/transaction.ts": "1fb6a89da306aceb5b4857cb73d0344128047282d3a753bee71516a05bf25d73",
+    "scripts/probe-preload-ownership.mjs": "69687ad1279d5a91d9d19facd45cbcd82233e0d81fbf006e397990b430e9fdb0",
+    "scripts/verify-live.mjs": "5100145b99eb358ce0ca2865aa00a0f7932297fcd83b33b3488d392d3a4f01e3",
+    "scripts/verify-p1-fixes.mjs": "217f2301fd98bb39ffb64cda7b2d3bbdb638a68db500940ab313958c4202443d",
+    "scripts/verify-p1-scope.mjs": "070885808a6daf4d0bc14e9fd68987956eb25cd353172ca310fa7d356d552e29",
+    "scripts/verify-p2-config.mjs": "767ccc8b8518064507626d388b6c07fad6f00477597b20a18291f147a245f809",
+    "scripts/verify-p2-fixes.mjs": "629dc862dc34f0a13d9d43aa68fdf2e380ecb8c89147243a9d65e1a8032c72a0",
+    "scripts/verify-p2-perf.mjs": "e4603dc4442be047d8330bc0fa44215234e6c9e035fa356dce72b9b3c4d71e7f",
+    "scripts/verify-p2-persistence.mjs": "7cba947c17c632bbbb008afac2c2c01e3749517e1bf5654bf3fa179ef604af21",
+    "scripts/verify-p2-reconstruction-perf.mjs": "68dc184c8dc6d1c6719bde3e0a157f622eb833a6ee2ca34a97334b1a74f0d875",
+    "scripts/verify-p2-reconstruction.mjs": "c8d964da8196916fd8bf872c0a2f946c9075930fb2956f66f35279a0fbfdef04",
+    "scripts/verify-p2.mjs": "736d0ba91f5472227fe300c6572ee75b5579a3bbfdc1210454e0ef24887fc337",
+    "scripts/verify-p3-fixes.mjs": "0ffc3b5282b2af30aad931eeb4535922c9f07c09f37b0699da33c67513c2671e",
+    "scripts/verify-p3-perf.mjs": "76bcf352a6467849a8b989402e33efa89a22617958c5fc2439c0f9a0f23676a8",
+    "scripts/verify-p3.mjs": "c2a55b31740d324e40ec0a9a302daabf7a759f980848a414fb4f4eea19cba917",
+    "scripts/verify-p4-hotpath.mjs": "98aed706798d1ec91291ffc3ac9d8b652e68546b687d1dbac848873d198926dd",
+    "scripts/verify-p4-perf.mjs": "fb572bf3d3b20e8ec400fd070ce4fbceb8557dccd337ed79f8b5a37dc91fa67d",
+    "scripts/verify-p4.mjs": "a264a9bf965e8fba7cc76c3c7c4da62a785946dae70ca62df38c12b0d415fe63",
+    "scripts/verify-perf.mjs": "73c417628cd6886cab042c59ab47031eeaec6452ed4ed866250ebaa6c95490c6",
+    "scripts/fixture/observer.ts": "fc7b7aff11653f903e5c7a52afa6cc6df20359272d4c646f8edba2af9798897a",
+    "scripts/fixture/preload.mjs": "a5a0ad6ddcaecdd0b4832d2adf344d42e0f22eecb8acf030541bf5cb215de95c",
+    "scripts/fixture/relative-socket.mjs": "b0cb816115016f06a754b5fd3bd49bfebd6fb5b453a9225dad10ee53b8e1cfcf",
+    "scripts/fixture/render-screen.py": "132e997e55674c4fd58a140065f4db122cd855834e5d76ec114e8855a17b731d",
+    "scripts/fixture/runtime.mjs": "313adc65a5969250776afdd7258914eb0b2a4b8a87f6260881d40c6ddcd094a0",
+    "scripts/p2/audit-evidence.mjs": "7bec5730d429bc1656c451d10edf69d92c177cc56104aaea9809a413a0ff73a0",
+    "scripts/p2/common.mjs": "f74998c62c36c12c9ff7ec0647ad344409771c537cf96ddf06d1c5f9f4fd778b",
+    "scripts/p2/config-observer.ts": "61fc71744845bce8903a6f928c1c740f7b860be55890ddfa5dfb4674798fabc9",
+    "scripts/p2/config-trace.mjs": "c01deb957cbf317906a7a7cf152d1f0f7e3a5a4802d63643e0394802183cd510",
+    "scripts/p2/demo.mjs": "88a225fe7f8b8853d271f22bc32fa19c8e6c1c318a452e0f11a67f14a42a5d71",
+    "scripts/p2/hooks.ts": "c563d50b05095207ab2ad75d63a59afbfbc3d376ac29d72bf2d328382c3a05ac",
+    "scripts/p2/observer.ts": "ed77971e6e042003c4391206929bdff5aa4e625d8a7917d5ab3de06cd23f06ea",
+    "scripts/p2/package-smoke.mjs": "b064986fdd8034e839053a7ac7af1ae8a60571c7b9ec0d03318d18b5e67d70c0",
+    "scripts/p2/perf-observer.ts": "cf22fff3f9d59b09f53c5f0663c01e6fefa84276c54664538a8da3c429877dc3",
+    "scripts/p2/persistence-fault.ts": "3b4848d0ff253952ee6f85d3962ee7a4843490df6e5f8a436ec8a6cd16785991",
+    "scripts/p2/reconstruction-hooks.ts": "4008ded4244b6b144f4d2cc897c6e364e89406ce8a5ecc05c3079fcabdc7d6e0",
+    "scripts/p2/render-demo.py": "6519c51976a530157ea1dff203265bd4ae1cbcaa3ca04b818cb9116533f63d69",
+    "scripts/p2/verify-config.mjs": "20eab210201ade20c73bab8ee11f15ffa26a85f135ecdeb8c5f131c896becf12",
+    "scripts/p2/verify-resume.mjs": "a6058a0347d8c080b86de50d5a47c0ef685c146a7a4f2f91c20744b201f8d103",
+    "scripts/p3/archive.mjs": "6ad034e9635442185b394f3454560edb036141e05817895a4eb576408ae1d7ef",
+    "scripts/p3/audit.mjs": "6daab292068a9ecb1607b3ed3707be94123d19892f8e3c0900b1b0641e374c19",
+    "scripts/p3/common.mjs": "70e88b4007895467f7c7ca8a1ce1dfc2a4e442e72b5c44ca2ef49d99c1eb6da1",
+    "scripts/p3/demo.mjs": "b8ba6723c2e54aff8fa9dbac29ceca26aa27223835924ed7dc3a2a29c606bcd2",
+    "scripts/p3/edges.mjs": "e6ce49ced7ead5e72758c8d11c29e1b0661080db9283b9f5733bcef113533e87",
+    "scripts/p3/fault-preload.mjs": "6d9ed380c1e539b8d2294d71795149c1c2e30ae95d96ab51e83b50e73fd2a211",
+    "scripts/p3/faults.mjs": "37d3c5beebb457bcce501feb5a98d2d08ceac820a33807c5215f47e114e13ce9",
+    "scripts/p3/observer.ts": "271a6395f0a7c5fc990cc59805a3c5e42d2471f322b8a1f98d738099c56bc403",
+    "scripts/p3/package-smoke.mjs": "652de0f6a3b36a2914f297ea3556652ce2629c855921a5d3358d3652f80aca43",
+    "scripts/p3/partial-fault.ts": "f91cf5d230f2e92b5743e3d23013344b5f1892b16c7121590ba17454fd8d182d",
+    "scripts/p3/preload.mjs": "e0f059e9d7f6c5c3a6dfb7cc8c835332acb6e61a067a18186b4957124ad9b0da",
+    "scripts/p3/probe-partial.mjs": "c42adfc59b07e8f2732828e85a5cb08d5f38a637ec0eb20bed48debc69234555",
+    "scripts/p3/recall-preload.mjs": "156ee85114f29b01e1f7d6b557d698636d33ae16ea1eec2cb15980042b4f599a",
+    "scripts/p3/recall.mjs": "06f08992e216f8101dca441a6303b62ab98370c288b89b0f08b4756758bfa764",
+    "scripts/p3/recovery-fault.mjs": "b267fc653c570dad4fe9fa27853ef959c617c67626bda098c1f9739bddb2914e",
+    "scripts/p3/recovery-observer.mjs": "8f742a0b6b3a65e1e2d5778d38f8904d702beb23343ea40dc24c3b4e7b275e08",
+    "scripts/p4/audit.mjs": "f3c3a753121508634094047045007a28b832fe81614db7b9d61c7b3f9b2c5c1f",
+    "scripts/p4/common.mjs": "082fc9eae9c341987da0d7b5d7c8fe3cc1ee2ed6771e6d2f5bce64cb5e52e2a2",
+    "scripts/p4/demo.mjs": "cdb530afc5f1bfe398dd558fbd9b503876cbfbfbd9e0a2f8368707bc1cbd308d",
+    "scripts/p4/edges.mjs": "010c9b38a70bc4d5bfe4d9328aad4b302a59ff266e411fe469cab72ffc9ea489",
+    "scripts/p4/observer.ts": "f7b35370bb7d1c76fd42111fefa3812bcc25ec96ebb4c2ce1c32a5f6c31f995f",
+    "scripts/p4/package-smoke.mjs": "2561bc8029e02d29437579af95706e03f31d2889074617ceab8b02a13691063d",
+    "scripts/p4/perf-observer.ts": "609d325602b359e6332298ddafbb8e5771e7dca7f0e8d9dd2cb479d113512a8a",
+    "scripts/p4/performance-audit.mjs": "3c2eb9344dd49be5b2d5cfee284428f5946c85369128757839da932126271829",
+    "scripts/p4/preload.mjs": "d3d9908e4da99ee58b64a607916c33abef12f88184f6b71f1e3c183ead133916",
+    "scripts/p4/regressions.mjs": "2065dad8abc60d8e7ee296fd47fd7d8fae160beb02e1d556020ccacfffcdc41c",
+    "scripts/regressions/managed-read.ts": "443326c8d137d315289afc933109ff0018e7d2635f94d3d614d23a20456f2577",
+    "scripts/regressions/observer.ts": "431a6c892f559c7cd7973fe354df0cf2eaa793e02024752e79710a783f176729",
+    "scripts/regressions/scope.ts": "1b8c8d247ff0f6ddb41675334dbe6986018048a8105046daf1019b0a3fc408bc"
+  }
+}

@@ -1,0 +1,1101 @@
+{
+  "pass": true,
+  "role": "owner evidence audit, not independent acceptance",
+  "run": "/Users/wangxuyang/.t3/worktrees/compact/t3-9e593481-75cd610a8c552e84/artifacts/P4/runs/1794828744945",
+  "edge": "/Users/wangxuyang/.t3/worktrees/compact/t3-9e593481-75cd610a8c552e84/artifacts/P4/edges/1794828768942",
+  "product": {
+    "src/checkpoint.ts": "cd724555f005ae2d1f939b1d9d9eedcd7db202a76431f866e1dd0d2921b696f9",
+    "src/index.ts": "ca2346f3653f4014ac0726c26bc1da72c63f45c527e04118fecb45ee1db21ee6",
+    "src/migration.ts": "19f81889473a8a37c0be55b0e3ab85f6ae08bfb06462998172ba1424a3e120b8",
+    "src/policy.ts": "6cef2b94edade4ae747a504f64f6a5a087311d8868cd3428cf800f6cebcea8b2",
+    "src/settings.ts": "690cb811c458dfe3af512ab025e18d726b0d75ddea8c97e38cd0155a186b96ad",
+    "src/state.ts": "10c7aad13e9da10bf54bba73edf33d61736f75417f8143c10c20538b3cc749ab",
+    "src/codex/compact.ts": "947a06e1a2d2b13207235c36d4d6db0215f2583cca4b2732264cc723a2635136",
+    "src/codex/wire.ts": "1102a310cafed43f811baf500cdb6d8485dfef500ad5c41bd691edaa44bd63b5",
+    "src/pi-adapter/compatibility.ts": "09c1fff3c7424a041c2b72faab02bb1b34d4e23c29b12ca302027d9556566475",
+    "src/pi-adapter/journal.ts": "0fab09996308920b0757576769849533e9766ce9d99bdaa6b4ac7bee2ec17a67",
+    "src/pi-adapter/reconstruction.ts": "1f98066ed24c2eb82fd24bab0f03528750160c56a74166e6b46b9e894118b55f",
+    "src/pi-adapter/session.ts": "180bc914b66cca726427f00a7a90cff24adcad2857202fea1d8246c39eb9268d",
+    "src/pi-adapter/transaction.ts": "1fb6a89da306aceb5b4857cb73d0344128047282d3a753bee71516a05bf25d73"
+  },
+  "audited": [
+    {
+      "lane": 1,
+      "variant": "baseline",
+      "checkpoints": [],
+      "requests": [
+        {
+          "at": 1242.609292,
+          "phase": "native",
+          "model": "gpt-6-astra",
+          "account": "synthetic-account"
+        },
+        {
+          "at": 1333.018959,
+          "phase": "normal",
+          "model": "deepseek-chat",
+          "account": "api-key-fixture"
+        }
+      ]
+    },
+    {
+      "lane": 1,
+      "variant": "head",
+      "checkpoints": [
+        {
+          "id": "9f430fb4",
+          "kind": "opaque",
+          "source": {
+            "sourceLeaf": "8ae5ac9c",
+            "firstKept": "8ae5ac9c",
+            "entries": [
+              "ffe3e76e",
+              "15c7a82a"
+            ],
+            "hash": "acd5e2e54014cabad8430e73043a280311546e63a7bec2064895bf0097349750"
+          }
+        },
+        {
+          "id": "eb1962f8",
+          "kind": "text",
+          "source": {
+            "sourceLeaf": "2d221664",
+            "firstKept": "2d221664",
+            "entries": [
+              "ffe3e76e",
+              "15c7a82a",
+              "8ae5ac9c",
+              "e04962bd"
+            ],
+            "hash": "a8c2239ce03975d1c1d142a7751462680b97840146fd0297f4cfa1f307979b5e"
+          }
+        }
+      ],
+      "requests": [
+        {
+          "at": 1205.92,
+          "phase": "remote",
+          "model": "gpt-6-astra",
+          "account": "synthetic-account"
+        },
+        {
+          "at": 1332.83325,
+          "phase": "source",
+          "model": "gpt-6-astra",
+          "account": "synthetic-account"
+        },
+        {
+          "at": 1346.105333,
+          "phase": "native",
+          "model": "deepseek-chat",
+          "account": "api-key-fixture"
+        },
+        {
+          "at": 1377.831625,
+          "phase": "normal",
+          "model": "deepseek-chat",
+          "account": "api-key-fixture"
+        }
+      ]
+    },
+    {
+      "lane": 2,
+      "variant": "head",
+      "checkpoints": [
+        {
+          "id": "28c974a6",
+          "kind": "opaque",
+          "source": {
+            "sourceLeaf": "b2075963",
+            "firstKept": "b2075963",
+            "entries": [
+              "50df74d6",
+              "aac08974"
+            ],
+            "hash": "8762f27c42bf0891c31f3b0ce27acbad107088430ae55cc88c2d1d9f07961a59"
+          }
+        },
+        {
+          "id": "765b4762",
+          "kind": "text",
+          "source": {
+            "sourceLeaf": "20220df8",
+            "firstKept": "20220df8",
+            "entries": [
+              "50df74d6",
+              "aac08974",
+              "b2075963",
+              "b90ef3ba"
+            ],
+            "hash": "e684179447b74158b3148777625c12672d08cad038db2ddfe47889810265f8f9"
+          }
+        }
+      ],
+      "requests": [
+        {
+          "at": 1012.594959,
+          "phase": "remote",
+          "model": "gpt-6-astra",
+          "account": "synthetic-account"
+        },
+        {
+          "at": 1119.271792,
+          "phase": "source",
+          "model": "gpt-6-astra",
+          "account": "synthetic-account"
+        },
+        {
+          "at": 1129.287917,
+          "phase": "native",
+          "model": "deepseek-chat",
+          "account": "api-key-fixture"
+        },
+        {
+          "at": 1159.230584,
+          "phase": "normal",
+          "model": "deepseek-chat",
+          "account": "api-key-fixture"
+        }
+      ]
+    },
+    {
+      "lane": 3,
+      "variant": "head",
+      "checkpoints": [
+        {
+          "id": "f1274397",
+          "kind": "opaque",
+          "source": {
+            "sourceLeaf": "9fd62dee",
+            "firstKept": "9fd62dee",
+            "entries": [
+              "3f6029ab",
+              "05f4d39d"
+            ],
+            "hash": "80a50853523bfb0f87677677540c659e205fe90a7976ff25abf4d9964bb6c234"
+          }
+        }
+      ],
+      "requests": [
+        {
+          "at": 1035.620625,
+          "phase": "remote",
+          "model": "gpt-6-astra",
+          "account": "synthetic-account"
+        },
+        {
+          "at": 1129.17025,
+          "phase": "normal",
+          "model": "gpt-6.1-sol",
+          "account": "synthetic-account"
+        }
+      ]
+    },
+    {
+      "lane": 4,
+      "variant": "head",
+      "checkpoints": [
+        {
+          "id": "45304bcb",
+          "kind": "opaque",
+          "source": {
+            "sourceLeaf": "823ba54b",
+            "firstKept": "823ba54b",
+            "entries": [
+              "6367fcd4",
+              "424688e0"
+            ],
+            "hash": "b97dfce1eeca37981c38c076ac95d534fdfda505be2068e72b1d9d12d65c534c"
+          }
+        },
+        {
+          "id": "f9de1ae3",
+          "kind": "text",
+          "source": {
+            "sourceLeaf": "6330e6b1",
+            "firstKept": "6330e6b1",
+            "entries": [
+              "6367fcd4",
+              "424688e0",
+              "823ba54b",
+              "c5f2eb10"
+            ],
+            "hash": "b023366d09e9c58119c8950663ddc9391a8456d171fdc1cb10782d351e72598a"
+          }
+        }
+      ],
+      "requests": [
+        {
+          "at": 1023.833584,
+          "phase": "remote",
+          "model": "gpt-6-astra",
+          "account": "synthetic-account"
+        },
+        {
+          "at": 1138.009,
+          "phase": "native",
+          "model": "gpt-6-astra",
+          "account": "changed-account"
+        },
+        {
+          "at": 1166.363959,
+          "phase": "normal",
+          "model": "gpt-6-astra",
+          "account": "changed-account"
+        }
+      ]
+    },
+    {
+      "lane": 5,
+      "variant": "head",
+      "checkpoints": [
+        {
+          "id": "a03f5d5c",
+          "kind": "opaque",
+          "source": {
+            "sourceLeaf": "76607829",
+            "firstKept": "76607829",
+            "entries": [
+              "324ca46b",
+              "b94f2031"
+            ],
+            "hash": "fcf16a5da7fc10c5a9b1ce55ecb617171146ccbc29e61e542053a864d6ce8c05"
+          }
+        },
+        {
+          "id": "ff0d3862",
+          "kind": "text",
+          "source": {
+            "sourceLeaf": "5441fbf0",
+            "firstKept": "5441fbf0",
+            "entries": [
+              "324ca46b",
+              "b94f2031",
+              "76607829",
+              "4ca383fc"
+            ],
+            "hash": "968286b909460799c4d718da8a0e7d576acced49b5b19c4fd8d52a654deea62e"
+          }
+        }
+      ],
+      "requests": [
+        {
+          "at": 1009.856959,
+          "phase": "remote",
+          "model": "gpt-6-astra",
+          "account": "synthetic-account"
+        },
+        {
+          "at": 1169.592917,
+          "phase": "native",
+          "model": "deepseek-chat",
+          "account": "api-key-fixture"
+        },
+        {
+          "at": 1199.868875,
+          "phase": "normal",
+          "model": "deepseek-chat",
+          "account": "api-key-fixture"
+        }
+      ]
+    },
+    {
+      "lane": 6,
+      "serializedUtf16": 93619,
+      "segments": 4,
+      "tools": 12,
+      "coverageEntries": 41
+    },
+    {
+      "lane": 6,
+      "variant": "head",
+      "checkpoints": [
+        {
+          "id": "07680bdd",
+          "kind": "opaque",
+          "source": {
+            "sourceLeaf": "abc82fd7",
+            "firstKept": "abc82fd7",
+            "entries": [
+              "0250964c",
+              "6a5b3a05"
+            ],
+            "hash": "c1072d6dd30ca0ce187fd41fb85ab1c2a873b2bf06c34a9ba6f01c5e377e412b"
+          }
+        },
+        {
+          "id": "ffc3b161",
+          "kind": "text",
+          "source": {
+            "sourceLeaf": "cd8d62cc",
+            "firstKept": "cd8d62cc",
+            "entries": [
+              "0250964c",
+              "6a5b3a05",
+              "abc82fd7",
+              "e0269442",
+              "210b7e52",
+              "9f2355a7",
+              "292b0d58",
+              "9b05ae8d",
+              "04feb897",
+              "44715361",
+              "25cb277d",
+              "673aaa07",
+              "252151d3",
+              "b728f0a1",
+              "13b5c034",
+              "eef040e3",
+              "81f5d35b",
+              "a5742ae8",
+              "bfed8cb1",
+              "653ea2e2",
+              "c15ea948",
+              "e85b55fa",
+              "8970d143",
+              "7c56390d",
+              "d42a4bd0",
+              "28fbdbb2",
+              "c9b8e5e9",
+              "0dade5de",
+              "8b067d35",
+              "0ac4075b",
+              "81b2e086",
+              "50111791",
+              "cb455439",
+              "a94fd14b",
+              "c952aedf",
+              "352aebab",
+              "ff9d120d",
+              "992da049",
+              "9cf845ba",
+              "2a15e5b3",
+              "aa973a86"
+            ],
+            "hash": "808b8ada1bc93a301ade48048513129f08b9ab4f664209e165a350a3713c4532"
+          }
+        }
+      ],
+      "requests": [
+        {
+          "at": 1034.264125,
+          "phase": "remote",
+          "model": "gpt-6-astra",
+          "account": "synthetic-account"
+        },
+        {
+          "at": 1239.201417,
+          "phase": "native",
+          "model": "deepseek-chat",
+          "account": "api-key-fixture"
+        },
+        {
+          "at": 1242.437834,
+          "phase": "native",
+          "model": "deepseek-chat",
+          "account": "api-key-fixture"
+        },
+        {
+          "at": 1244.155792,
+          "phase": "native",
+          "model": "deepseek-chat",
+          "account": "api-key-fixture"
+        },
+        {
+          "at": 1245.587917,
+          "phase": "native",
+          "model": "deepseek-chat",
+          "account": "api-key-fixture"
+        },
+        {
+          "at": 1272.662625,
+          "phase": "normal",
+          "model": "deepseek-chat",
+          "account": "api-key-fixture"
+        }
+      ]
+    },
+    {
+      "lane": 7,
+      "variant": "head",
+      "checkpoints": [
+        {
+          "id": "6e35db6b",
+          "kind": "opaque",
+          "source": {
+            "sourceLeaf": "81fa5a99",
+            "firstKept": "81fa5a99",
+            "entries": [
+              "b6e3c35c",
+              "a25e2bb8"
+            ],
+            "hash": "b98ed58b454060d05299ac116928d07f0749ed1bd6da8e847ca06c3f310d201f"
+          }
+        }
+      ],
+      "requests": [
+        {
+          "at": 994.160333,
+          "phase": "remote",
+          "model": "gpt-6-astra",
+          "account": "synthetic-account"
+        },
+        {
+          "at": 1104.878792,
+          "phase": "source",
+          "model": "gpt-6-astra",
+          "account": "synthetic-account"
+        }
+      ]
+    },
+    {
+      "lane": 8,
+      "variant": "head",
+      "checkpoints": [
+        {
+          "id": "4774d1a3",
+          "kind": "opaque",
+          "source": {
+            "sourceLeaf": "cd198781",
+            "firstKept": "cd198781",
+            "entries": [
+              "9b16cc05",
+              "270d20b1"
+            ],
+            "hash": "13e57d8f828b770a3c4af1f16ee08a5f8d0d2b6ce204c2cc148937f3a63c8041"
+          }
+        },
+        {
+          "id": "1cbb89b5",
+          "kind": "text",
+          "source": {
+            "sourceLeaf": "9e5e242b",
+            "firstKept": "efb2060f",
+            "entries": [
+              "9b16cc05",
+              "270d20b1",
+              "cd198781",
+              "9c786906"
+            ],
+            "hash": "e6e855fe2b7b2dc9fb753f45bea904dfeb0e033a3c6b08dabe9b70b0baa8f0ba"
+          }
+        }
+      ],
+      "requests": [
+        {
+          "at": 1083.078833,
+          "phase": "remote",
+          "model": "gpt-6-astra",
+          "account": "synthetic-account"
+        },
+        {
+          "at": 1207.388041,
+          "phase": "source",
+          "model": "gpt-6-astra",
+          "account": "synthetic-account"
+        },
+        {
+          "at": 1936.135041,
+          "phase": "source",
+          "model": "gpt-6-astra",
+          "account": "synthetic-account"
+        },
+        {
+          "at": 1946.362458,
+          "phase": "native",
+          "model": "deepseek-reasoner",
+          "account": "api-key-fixture"
+        },
+        {
+          "at": 2001.084666,
+          "phase": "normal",
+          "model": "deepseek-reasoner",
+          "account": "api-key-fixture"
+        }
+      ]
+    },
+    {
+      "lane": 9,
+      "variant": "head",
+      "checkpoints": [
+        {
+          "id": "7b79a495",
+          "kind": "opaque",
+          "source": {
+            "sourceLeaf": "bc902698",
+            "firstKept": "bc902698",
+            "entries": [
+              "5d780d28",
+              "245d0a82"
+            ],
+            "hash": "db8582f636dcaf05909ee3d3144e1f6bbbe13407eedfb75b0787bebce0796547"
+          }
+        },
+        {
+          "id": "458c0a0e",
+          "kind": "opaque",
+          "source": {
+            "sourceLeaf": "b5a0264c",
+            "firstKept": "b5a0264c",
+            "entries": [
+              "5d780d28",
+              "245d0a82",
+              "bc902698",
+              "4b2867a1",
+              "4c7fb37c"
+            ],
+            "hash": "7e8197c6f2b2692802f0e88931a1945ac9611a58cf255fd50b24453034dc261f"
+          }
+        }
+      ],
+      "requests": [
+        {
+          "at": 1033.574584,
+          "phase": "remote",
+          "model": "gpt-6-astra",
+          "account": "synthetic-account"
+        },
+        {
+          "at": 1232.025167,
+          "phase": "remote",
+          "model": "gpt-6-astra",
+          "account": "synthetic-account"
+        },
+        {
+          "at": 1382.933792,
+          "phase": "normal",
+          "model": "gpt-6-astra",
+          "account": "synthetic-account"
+        },
+        {
+          "at": 1464.836875,
+          "phase": "normal",
+          "model": "gpt-6-astra",
+          "account": "synthetic-account"
+        },
+        {
+          "at": 1549.739709,
+          "phase": "normal",
+          "model": "gpt-6-astra",
+          "account": "synthetic-account"
+        }
+      ]
+    },
+    {
+      "lane": 10,
+      "variant": "head",
+      "checkpoints": [
+        {
+          "id": "0952984e",
+          "kind": "opaque",
+          "source": {
+            "sourceLeaf": "0a860434",
+            "firstKept": "0a860434",
+            "entries": [
+              "af3779f9",
+              "e12fd610"
+            ],
+            "hash": "8ae0d5bebb7fdac29e87ac4f854238809de4cbfcdb629822e318e014906396e1"
+          }
+        },
+        {
+          "id": "c40ec18f",
+          "kind": "text",
+          "source": {
+            "sourceLeaf": "7bfe6581",
+            "firstKept": "7bfe6581",
+            "entries": [
+              "af3779f9",
+              "e12fd610",
+              "0a860434",
+              "ceca7a0a"
+            ],
+            "hash": "75dac82b16852c784333bf59b899765f31949614f085880e3eae768c2bd382b0"
+          }
+        }
+      ],
+      "requests": [
+        {
+          "at": 917.122583,
+          "phase": "source",
+          "model": "gpt-6-astra",
+          "account": "synthetic-account"
+        },
+        {
+          "at": 933.056291,
+          "phase": "native",
+          "model": "deepseek-chat",
+          "account": "api-key-fixture"
+        },
+        {
+          "at": 981.263833,
+          "phase": "normal",
+          "model": "deepseek-chat",
+          "account": "api-key-fixture"
+        }
+      ]
+    },
+    {
+      "kind": "late-model",
+      "checkpoints": [
+        {
+          "id": "c7e04b85",
+          "kind": "opaque",
+          "source": {
+            "sourceLeaf": "1592a7d1",
+            "firstKept": "1592a7d1",
+            "entries": [
+              "93d477d6",
+              "af15fad7"
+            ],
+            "hash": "4cc78a26ce143a5dde3ba6bd6cf8d998a84942a221b80a43faa551e734aecfab"
+          }
+        }
+      ],
+      "requests": [
+        {
+          "at": 995.467792,
+          "phase": "remote",
+          "model": "gpt-6-astra",
+          "account": "synthetic-account"
+        }
+      ]
+    },
+    {
+      "kind": "late-auth",
+      "checkpoints": [
+        {
+          "id": "d57e5e16",
+          "kind": "opaque",
+          "source": {
+            "sourceLeaf": "3cb267fb",
+            "firstKept": "3cb267fb",
+            "entries": [
+              "313723b3",
+              "43c50214"
+            ],
+            "hash": "0af7be14734844cba3a90d79ce81625e4c179fa7072cf716353dc6cd4209b238"
+          }
+        }
+      ],
+      "requests": [
+        {
+          "at": 999.648458,
+          "phase": "remote",
+          "model": "gpt-6-astra",
+          "account": "synthetic-account"
+        }
+      ]
+    },
+    {
+      "kind": "late-source",
+      "checkpoints": [
+        {
+          "id": "21c8c01f",
+          "kind": "opaque",
+          "source": {
+            "sourceLeaf": "c10e48de",
+            "firstKept": "c10e48de",
+            "entries": [
+              "ff904a8b",
+              "ae76afcc"
+            ],
+            "hash": "81bb070ecf1181a04d19e7c114a463843355f6670ea90b649576f870074c0ed9"
+          }
+        }
+      ],
+      "requests": [
+        {
+          "at": 980.499083,
+          "phase": "remote",
+          "model": "gpt-6-astra",
+          "account": "synthetic-account"
+        }
+      ]
+    },
+    {
+      "kind": "edit",
+      "checkpoints": [
+        {
+          "id": "2377c879",
+          "kind": "opaque",
+          "source": {
+            "sourceLeaf": "400e5f67",
+            "firstKept": "400e5f67",
+            "entries": [
+              "7d84bb54",
+              "399a89a4"
+            ],
+            "hash": "52ea29a2946ca0d391cb234bbf13af17b2e90240875dd6b03219dc5bcabe7890"
+          }
+        },
+        {
+          "id": "e7f8b516",
+          "kind": "text",
+          "source": {
+            "sourceLeaf": "404c0102",
+            "firstKept": "404c0102",
+            "entries": [
+              "7d84bb54",
+              "399a89a4",
+              "400e5f67",
+              "fc3d14dc"
+            ],
+            "hash": "cc6d2f1bb6ee3946098b07c63979507147f2209e0ffca6bec68dbff5a15786ef"
+          }
+        }
+      ],
+      "requests": [
+        {
+          "at": 1033.17175,
+          "phase": "remote",
+          "model": "gpt-6-astra",
+          "account": "synthetic-account"
+        },
+        {
+          "at": 1144.672583,
+          "phase": "native",
+          "model": "gpt-6-astra",
+          "account": "synthetic-account"
+        },
+        {
+          "at": 1172.034083,
+          "phase": "normal",
+          "model": "gpt-6-astra",
+          "account": "synthetic-account"
+        }
+      ]
+    },
+    {
+      "kind": "delete",
+      "checkpoints": [
+        {
+          "id": "74920802",
+          "kind": "opaque",
+          "source": {
+            "sourceLeaf": "bbb4d8a6",
+            "firstKept": "bbb4d8a6",
+            "entries": [
+              "7015e0e3",
+              "8b9aa367"
+            ],
+            "hash": "171e08036b241abaca7b509968776da44743ef82add9d5845b42b71bb9050ad1"
+          }
+        },
+        {
+          "id": "36a2e0bc",
+          "kind": "text",
+          "source": {
+            "sourceLeaf": "32e4198c",
+            "firstKept": "32e4198c",
+            "entries": [
+              "8b9aa367",
+              "bbb4d8a6",
+              "5a6d73f6"
+            ],
+            "hash": "8f14b3e6af545d42aae70dbc2e2f85747ff7a4074142125c960375732a005dfe"
+          }
+        }
+      ],
+      "requests": [
+        {
+          "at": 1016.705166,
+          "phase": "remote",
+          "model": "gpt-6-astra",
+          "account": "synthetic-account"
+        },
+        {
+          "at": 1131.117125,
+          "phase": "native",
+          "model": "gpt-6-astra",
+          "account": "synthetic-account"
+        },
+        {
+          "at": 1158.68925,
+          "phase": "normal",
+          "model": "gpt-6-astra",
+          "account": "synthetic-account"
+        }
+      ]
+    },
+    {
+      "kind": "source-failure",
+      "checkpoints": [
+        {
+          "id": "c092e9f5",
+          "kind": "opaque",
+          "source": {
+            "sourceLeaf": "55ed7d16",
+            "firstKept": "55ed7d16",
+            "entries": [
+              "8dc4b2a3",
+              "c86a4060"
+            ],
+            "hash": "d7ad641f576267fee835c1f236618c26f344a4fb79598fb754001834c4374421"
+          }
+        },
+        {
+          "id": "2bf7f5d3",
+          "kind": "text",
+          "source": {
+            "sourceLeaf": "8cab5ffc",
+            "firstKept": "8cab5ffc",
+            "entries": [
+              "8dc4b2a3",
+              "c86a4060",
+              "55ed7d16",
+              "99c7991b"
+            ],
+            "hash": "4778d33472f2af05206205edef019a97792b5d11b4fe74a769cea255d9d6c2b1"
+          }
+        }
+      ],
+      "requests": [
+        {
+          "at": 1000.207791,
+          "phase": "remote",
+          "model": "gpt-6-astra",
+          "account": "synthetic-account"
+        },
+        {
+          "at": 1108.171458,
+          "phase": "source",
+          "model": "gpt-6-astra",
+          "account": "synthetic-account"
+        },
+        {
+          "at": 1118.083708,
+          "phase": "native",
+          "model": "deepseek-chat",
+          "account": "api-key-fixture"
+        },
+        {
+          "at": 1146.096583,
+          "phase": "normal",
+          "model": "deepseek-chat",
+          "account": "api-key-fixture"
+        }
+      ]
+    },
+    {
+      "kind": "both-fail",
+      "checkpoints": [
+        {
+          "id": "8fbcba36",
+          "kind": "opaque",
+          "source": {
+            "sourceLeaf": "de340474",
+            "firstKept": "de340474",
+            "entries": [
+              "e4d9f4f9",
+              "467a9588"
+            ],
+            "hash": "6922880214ad5f1d0a4c03382bb91b5fbcf082221ccdea4866f222c31c6779b3"
+          }
+        }
+      ],
+      "requests": [
+        {
+          "at": 1044.288209,
+          "phase": "remote",
+          "model": "gpt-6-astra",
+          "account": "synthetic-account"
+        },
+        {
+          "at": 1155.847042,
+          "phase": "source",
+          "model": "gpt-6-astra",
+          "account": "synthetic-account"
+        },
+        {
+          "at": 1165.886792,
+          "phase": "native",
+          "model": "deepseek-chat",
+          "account": "api-key-fixture"
+        }
+      ]
+    },
+    {
+      "kind": "migration-source-change",
+      "checkpoints": [
+        {
+          "id": "013f603a",
+          "kind": "opaque",
+          "source": {
+            "sourceLeaf": "acf4f802",
+            "firstKept": "acf4f802",
+            "entries": [
+              "2642a223",
+              "aa8e5c93"
+            ],
+            "hash": "c7a773b67c3acf15d4de67edaea95f25a1481c94f0b131f1d7a99d2f358fedc4"
+          }
+        }
+      ],
+      "requests": [
+        {
+          "at": 1026.529917,
+          "phase": "remote",
+          "model": "gpt-6-astra",
+          "account": "synthetic-account"
+        },
+        {
+          "at": 1138.262792,
+          "phase": "source",
+          "model": "gpt-6-astra",
+          "account": "synthetic-account"
+        }
+      ]
+    },
+    {
+      "kind": "migration-auth-change",
+      "checkpoints": [
+        {
+          "id": "b9b996d8",
+          "kind": "opaque",
+          "source": {
+            "sourceLeaf": "9459d421",
+            "firstKept": "9459d421",
+            "entries": [
+              "e8b3a4a5",
+              "b83f8ef4"
+            ],
+            "hash": "a12b1827d62aa73ea4b80fc694cce2f8ccb92cce9377e9cf95d74db34dd57e6a"
+          }
+        }
+      ],
+      "requests": [
+        {
+          "at": 987.216542,
+          "phase": "remote",
+          "model": "gpt-6-astra",
+          "account": "synthetic-account"
+        },
+        {
+          "at": 1101.082709,
+          "phase": "source",
+          "model": "gpt-6-astra",
+          "account": "synthetic-account"
+        }
+      ]
+    },
+    {
+      "kind": "schema",
+      "checkpoints": [],
+      "requests": [
+        {
+          "at": 976.716917,
+          "phase": "remote",
+          "model": "gpt-6-astra",
+          "account": "synthetic-account"
+        }
+      ]
+    },
+    {
+      "kind": "inactive-schema",
+      "checkpoints": [],
+      "requests": [
+        {
+          "at": 1008.74425,
+          "phase": "remote",
+          "model": "gpt-6-astra",
+          "account": "synthetic-account"
+        }
+      ]
+    },
+    {
+      "kind": "missing-source",
+      "checkpoints": [],
+      "requests": [
+        {
+          "at": 992.669542,
+          "phase": "remote",
+          "model": "gpt-6-astra",
+          "account": "synthetic-account"
+        }
+      ]
+    },
+    {
+      "kind": "tools",
+      "checkpoints": [
+        {
+          "id": "97c4fea7",
+          "kind": "opaque",
+          "source": {
+            "sourceLeaf": "6ecd32c6",
+            "firstKept": "6ecd32c6",
+            "entries": [
+              "a8309daa",
+              "fc1189fb"
+            ],
+            "hash": "7de84180de7ef2669774f84541ca4eec8db4be66df11819c9505820d7127fa22"
+          }
+        },
+        {
+          "id": "ab6fb9b7",
+          "kind": "text",
+          "source": {
+            "sourceLeaf": "ecb8de62",
+            "firstKept": "e8ff0878",
+            "entries": [
+              "a8309daa",
+              "fc1189fb",
+              "6ecd32c6",
+              "19b7b25b",
+              "da3938c6",
+              "7d235e86",
+              "4f41aed0",
+              "74b3f745",
+              "c2987af7"
+            ],
+            "hash": "9eae7261a339d0469a15679da8611894e3f05a7b540daa3e80c2069d11756e40"
+          }
+        }
+      ],
+      "requests": [
+        {
+          "at": 984.06175,
+          "phase": "remote",
+          "model": "gpt-6-astra",
+          "account": "synthetic-account"
+        },
+        {
+          "at": 1044.615042,
+          "phase": "normal",
+          "model": "gpt-6-astra",
+          "account": "synthetic-account"
+        },
+        {
+          "at": 1290.4275,
+          "phase": "normal",
+          "model": "gpt-6-astra",
+          "account": "synthetic-account"
+        },
+        {
+          "at": 1362.037167,
+          "phase": "source",
+          "model": "gpt-6-astra",
+          "account": "synthetic-account"
+        },
+        {
+          "at": 1372.137125,
+          "phase": "native",
+          "model": "deepseek-chat",
+          "account": "api-key-fixture"
+        },
+        {
+          "at": 1374.559042,
+          "phase": "native",
+          "model": "deepseek-chat",
+          "account": "api-key-fixture"
+        },
+        {
+          "at": 1402.975,
+          "phase": "normal",
+          "model": "deepseek-chat",
+          "account": "api-key-fixture"
+        }
+      ]
+    }
+  ]
+}

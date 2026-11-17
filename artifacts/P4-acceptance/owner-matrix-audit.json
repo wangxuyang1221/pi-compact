@@ -1,0 +1,489 @@
+{
+  "pass": true,
+  "rows": 24,
+  "results": [
+    {
+      "lane": 1,
+      "variant": "baseline",
+      "pass": true,
+      "requests": [
+        {
+          "phase": "native",
+          "model": "gpt-6-astra",
+          "bytes": 9566
+        },
+        {
+          "phase": "normal",
+          "model": "deepseek-chat",
+          "bytes": 1033
+        }
+      ]
+    },
+    {
+      "lane": 1,
+      "variant": "head",
+      "pass": true,
+      "requests": [
+        {
+          "phase": "remote",
+          "model": "gpt-6-astra",
+          "bytes": 8473
+        },
+        {
+          "phase": "source",
+          "model": "gpt-6-astra",
+          "bytes": 1193
+        },
+        {
+          "phase": "native",
+          "model": "deepseek-chat",
+          "bytes": 2367
+        },
+        {
+          "phase": "normal",
+          "model": "deepseek-chat",
+          "bytes": 616
+        }
+      ]
+    },
+    {
+      "lane": 2,
+      "variant": "head",
+      "pass": true,
+      "requests": [
+        {
+          "phase": "remote",
+          "model": "gpt-6-astra",
+          "bytes": 8473
+        },
+        {
+          "phase": "source",
+          "model": "gpt-6-astra",
+          "bytes": 1193
+        },
+        {
+          "phase": "native",
+          "model": "deepseek-chat",
+          "bytes": 2367
+        },
+        {
+          "phase": "normal",
+          "model": "deepseek-chat",
+          "bytes": 616
+        }
+      ]
+    },
+    {
+      "lane": 3,
+      "variant": "head",
+      "pass": true,
+      "requests": [
+        {
+          "phase": "remote",
+          "model": "gpt-6-astra",
+          "bytes": 8473
+        },
+        {
+          "phase": "normal",
+          "model": "gpt-6.1-sol",
+          "bytes": 1615
+        }
+      ]
+    },
+    {
+      "lane": 4,
+      "variant": "head",
+      "pass": true,
+      "requests": [
+        {
+          "phase": "remote",
+          "model": "gpt-6-astra",
+          "bytes": 8473
+        },
+        {
+          "phase": "native",
+          "model": "gpt-6-astra",
+          "bytes": 9962
+        },
+        {
+          "phase": "normal",
+          "model": "gpt-6-astra",
+          "bytes": 741
+        }
+      ]
+    },
+    {
+      "lane": 5,
+      "variant": "head",
+      "pass": true,
+      "requests": [
+        {
+          "phase": "remote",
+          "model": "gpt-6-astra",
+          "bytes": 8473
+        },
+        {
+          "phase": "native",
+          "model": "deepseek-chat",
+          "bytes": 9901
+        },
+        {
+          "phase": "normal",
+          "model": "deepseek-chat",
+          "bytes": 616
+        }
+      ]
+    },
+    {
+      "lane": 6,
+      "variant": "head",
+      "pass": true,
+      "detail": {
+        "serializedUtf16": 93619,
+        "segments": 4,
+        "sourceEntries": 41,
+        "toolPairs": 12
+      },
+      "requests": [
+        {
+          "phase": "remote",
+          "model": "gpt-6-astra",
+          "bytes": 8473
+        },
+        {
+          "phase": "native",
+          "model": "deepseek-chat",
+          "bytes": 31298
+        },
+        {
+          "phase": "native",
+          "model": "deepseek-chat",
+          "bytes": 31938
+        },
+        {
+          "phase": "native",
+          "model": "deepseek-chat",
+          "bytes": 32082
+        },
+        {
+          "phase": "native",
+          "model": "deepseek-chat",
+          "bytes": 6601
+        },
+        {
+          "phase": "normal",
+          "model": "deepseek-chat",
+          "bytes": 1056
+        }
+      ]
+    },
+    {
+      "lane": 7,
+      "variant": "head",
+      "pass": true,
+      "requests": [
+        {
+          "phase": "remote",
+          "model": "gpt-6-astra",
+          "bytes": 8473
+        },
+        {
+          "phase": "source",
+          "model": "gpt-6-astra",
+          "bytes": 1193
+        }
+      ]
+    },
+    {
+      "lane": 8,
+      "variant": "head",
+      "pass": true,
+      "requests": [
+        {
+          "phase": "remote",
+          "model": "gpt-6-astra",
+          "bytes": 8473
+        },
+        {
+          "phase": "source",
+          "model": "gpt-6-astra",
+          "bytes": 1193
+        },
+        {
+          "phase": "source",
+          "model": "gpt-6-astra",
+          "bytes": 1193
+        },
+        {
+          "phase": "native",
+          "model": "deepseek-reasoner",
+          "bytes": 2371
+        },
+        {
+          "phase": "normal",
+          "model": "deepseek-reasoner",
+          "bytes": 704
+        }
+      ]
+    },
+    {
+      "lane": 9,
+      "variant": "head",
+      "pass": true,
+      "requests": [
+        {
+          "phase": "remote",
+          "model": "gpt-6-astra",
+          "bytes": 8473
+        },
+        {
+          "phase": "remote",
+          "model": "gpt-6-astra",
+          "bytes": 16136
+        },
+        {
+          "phase": "normal",
+          "model": "gpt-6-astra",
+          "bytes": 1615
+        },
+        {
+          "phase": "normal",
+          "model": "gpt-6-astra",
+          "bytes": 1615
+        },
+        {
+          "phase": "normal",
+          "model": "gpt-6-astra",
+          "bytes": 1615
+        }
+      ]
+    },
+    {
+      "lane": 10,
+      "variant": "head",
+      "pass": true,
+      "requests": [
+        {
+          "phase": "source",
+          "model": "gpt-6-astra",
+          "bytes": 1193
+        },
+        {
+          "phase": "native",
+          "model": "deepseek-chat",
+          "bytes": 2367
+        },
+        {
+          "phase": "normal",
+          "model": "deepseek-chat",
+          "bytes": 617
+        }
+      ]
+    },
+    {
+      "kind": "late-model",
+      "pass": true,
+      "requests": [
+        {
+          "phase": "remote",
+          "model": "gpt-6-astra",
+          "bytes": 8473
+        }
+      ]
+    },
+    {
+      "kind": "late-auth",
+      "pass": true,
+      "requests": [
+        {
+          "phase": "remote",
+          "model": "gpt-6-astra",
+          "bytes": 8473
+        }
+      ]
+    },
+    {
+      "kind": "late-source",
+      "pass": true,
+      "requests": [
+        {
+          "phase": "remote",
+          "model": "gpt-6-astra",
+          "bytes": 8473
+        }
+      ]
+    },
+    {
+      "kind": "edit",
+      "pass": true,
+      "requests": [
+        {
+          "phase": "remote",
+          "model": "gpt-6-astra",
+          "bytes": 8473
+        },
+        {
+          "phase": "native",
+          "model": "gpt-6-astra",
+          "bytes": 1985
+        },
+        {
+          "phase": "normal",
+          "model": "gpt-6-astra",
+          "bytes": 668
+        }
+      ]
+    },
+    {
+      "kind": "delete",
+      "pass": true,
+      "requests": [
+        {
+          "phase": "remote",
+          "model": "gpt-6-astra",
+          "bytes": 8473
+        },
+        {
+          "phase": "native",
+          "model": "gpt-6-astra",
+          "bytes": 1950
+        },
+        {
+          "phase": "normal",
+          "model": "gpt-6-astra",
+          "bytes": 670
+        }
+      ]
+    },
+    {
+      "kind": "source-failure",
+      "pass": true,
+      "requests": [
+        {
+          "phase": "remote",
+          "model": "gpt-6-astra",
+          "bytes": 8473
+        },
+        {
+          "phase": "source",
+          "model": "gpt-6-astra",
+          "bytes": 1193
+        },
+        {
+          "phase": "native",
+          "model": "deepseek-chat",
+          "bytes": 9901
+        },
+        {
+          "phase": "normal",
+          "model": "deepseek-chat",
+          "bytes": 616
+        }
+      ]
+    },
+    {
+      "kind": "both-fail",
+      "pass": true,
+      "requests": [
+        {
+          "phase": "remote",
+          "model": "gpt-6-astra",
+          "bytes": 8473
+        },
+        {
+          "phase": "source",
+          "model": "gpt-6-astra",
+          "bytes": 1193
+        },
+        {
+          "phase": "native",
+          "model": "deepseek-chat",
+          "bytes": 9901
+        }
+      ]
+    },
+    {
+      "kind": "migration-source-change",
+      "pass": true,
+      "requests": [
+        {
+          "phase": "remote",
+          "model": "gpt-6-astra",
+          "bytes": 8473
+        },
+        {
+          "phase": "source",
+          "model": "gpt-6-astra",
+          "bytes": 1193
+        }
+      ]
+    },
+    {
+      "kind": "migration-auth-change",
+      "pass": true,
+      "requests": [
+        {
+          "phase": "remote",
+          "model": "gpt-6-astra",
+          "bytes": 8473
+        },
+        {
+          "phase": "source",
+          "model": "gpt-6-astra",
+          "bytes": 1193
+        }
+      ]
+    },
+    {
+      "kind": "schema",
+      "special": true,
+      "pass": true
+    },
+    {
+      "kind": "inactive-schema",
+      "special": true,
+      "pass": true
+    },
+    {
+      "kind": "missing-source",
+      "special": true,
+      "pass": true
+    },
+    {
+      "kind": "tools",
+      "pass": true,
+      "requests": [
+        {
+          "phase": "remote",
+          "model": "gpt-6-astra",
+          "bytes": 8473
+        },
+        {
+          "phase": "normal",
+          "model": "gpt-6-astra",
+          "bytes": 1997
+        },
+        {
+          "phase": "normal",
+          "model": "gpt-6-astra",
+          "bytes": 8007
+        },
+        {
+          "phase": "source",
+          "model": "gpt-6-astra",
+          "bytes": 1193
+        },
+        {
+          "phase": "native",
+          "model": "deepseek-chat",
+          "bytes": 8122
+        },
+        {
+          "phase": "normal",
+          "model": "deepseek-chat",
+          "bytes": 1107
+        }
+      ]
+    }
+  ]
+}
