@@ -1,0 +1,7 @@
+PASS cap 1
+PASS no-usage 1
+PASS http 1
+PASS no-opaque 6
+PASS hidden-round 56
+PASS comparison-no-opaque 56
+PASS checkpoint-retry 56

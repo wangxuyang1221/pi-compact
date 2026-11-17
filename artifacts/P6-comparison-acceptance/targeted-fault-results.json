@@ -1,0 +1,194 @@
+[
+  {
+    "fault": "hidden-round",
+    "dispatches": 56,
+    "failureDenominator": 8,
+    "cleanup": {
+      "pids": [
+        73160,
+        73151,
+        73161,
+        73180,
+        73181,
+        73182,
+        73203,
+        73227,
+        73229,
+        73230,
+        73233
+      ],
+      "alive": [],
+      "listenerCount": 0,
+      "trackedSockets": 0,
+      "exitCode": 1
+    },
+    "lanes": [
+      {
+        "id": "pilot-gpt-6.1-terra-pi-native",
+        "status": "passed",
+        "fallback": false
+      },
+      {
+        "id": "pilot-gpt-6.1-terra-pi-compact-remote",
+        "status": "passed",
+        "fallback": false
+      },
+      {
+        "id": "pilot-gpt-6-luna-pi-native",
+        "status": "passed",
+        "fallback": false
+      },
+      {
+        "id": "pilot-gpt-6-luna-pi-compact-remote",
+        "status": "passed",
+        "fallback": false
+      },
+      {
+        "id": "r1-gpt-6.1-terra-settlement-v2-pi-native",
+        "status": "failed",
+        "failure": "CONTINUATION_FAILED",
+        "fallback": false
+      },
+      {
+        "id": "r1-gpt-6.1-terra-settlement-v2-pi-compact-remote",
+        "status": "failed",
+        "failure": "CONTINUATION_FAILED",
+        "fallback": false
+      },
+      {
+        "id": "r1-gpt-6.1-terra-redirect-v2-pi-compact-remote",
+        "status": "failed",
+        "failure": "CONTINUATION_FAILED",
+        "fallback": false
+      },
+      {
+        "id": "r1-gpt-6.1-terra-redirect-v2-pi-native",
+        "status": "failed",
+        "failure": "CONTINUATION_FAILED",
+        "fallback": false
+      },
+      {
+        "id": "r1-gpt-6-luna-settlement-v2-pi-compact-remote",
+        "status": "failed",
+        "failure": "CONTINUATION_FAILED",
+        "fallback": false
+      },
+      {
+        "id": "r1-gpt-6-luna-settlement-v2-pi-native",
+        "status": "failed",
+        "failure": "CONTINUATION_FAILED",
+        "fallback": false
+      },
+      {
+        "id": "r1-gpt-6-luna-redirect-v2-pi-native",
+        "status": "failed",
+        "failure": "CONTINUATION_FAILED",
+        "fallback": false
+      },
+      {
+        "id": "r1-gpt-6-luna-redirect-v2-pi-compact-remote",
+        "status": "failed",
+        "failure": "CONTINUATION_FAILED",
+        "fallback": false
+      }
+    ]
+  },
+  {
+    "fault": "comparison-no-opaque",
+    "dispatches": 56,
+    "failureDenominator": 4,
+    "cleanup": {
+      "pids": [
+        73295,
+        73286,
+        73296,
+        73315,
+        73316,
+        73398,
+        73399,
+        73400,
+        73401,
+        73421,
+        73422,
+        73423,
+        73424,
+        73425,
+        73426
+      ],
+      "alive": [],
+      "listenerCount": 0,
+      "trackedSockets": 0,
+      "exitCode": 1
+    },
+    "lanes": [
+      {
+        "id": "pilot-gpt-6.1-terra-pi-native",
+        "status": "passed",
+        "fallback": false
+      },
+      {
+        "id": "pilot-gpt-6.1-terra-pi-compact-remote",
+        "status": "passed",
+        "fallback": false
+      },
+      {
+        "id": "pilot-gpt-6-luna-pi-native",
+        "status": "passed",
+        "fallback": false
+      },
+      {
+        "id": "pilot-gpt-6-luna-pi-compact-remote",
+        "status": "passed",
+        "fallback": false
+      },
+      {
+        "id": "r1-gpt-6.1-terra-settlement-v2-pi-native",
+        "status": "passed",
+        "strictSuccess": true,
+        "fallback": false
+      },
+      {
+        "id": "r1-gpt-6.1-terra-settlement-v2-pi-compact-remote",
+        "status": "failed",
+        "failure": "CONTINUATION_FAILED",
+        "fallback": true
+      },
+      {
+        "id": "r1-gpt-6.1-terra-redirect-v2-pi-compact-remote",
+        "status": "failed",
+        "failure": "CONTINUATION_FAILED",
+        "fallback": true
+      },
+      {
+        "id": "r1-gpt-6.1-terra-redirect-v2-pi-native",
+        "status": "passed",
+        "strictSuccess": true,
+        "fallback": false
+      },
+      {
+        "id": "r1-gpt-6-luna-settlement-v2-pi-compact-remote",
+        "status": "failed",
+        "failure": "CONTINUATION_FAILED",
+        "fallback": true
+      },
+      {
+        "id": "r1-gpt-6-luna-settlement-v2-pi-native",
+        "status": "passed",
+        "strictSuccess": true,
+        "fallback": false
+      },
+      {
+        "id": "r1-gpt-6-luna-redirect-v2-pi-native",
+        "status": "passed",
+        "strictSuccess": true,
+        "fallback": false
+      },
+      {
+        "id": "r1-gpt-6-luna-redirect-v2-pi-compact-remote",
+        "status": "failed",
+        "failure": "CONTINUATION_FAILED",
+        "fallback": true
+      }
+    ]
+  }
+]

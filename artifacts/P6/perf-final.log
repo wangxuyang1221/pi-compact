@@ -1,0 +1,11 @@
+
+> pi-compact@0.1.0 verify:perf /Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec
+> node scripts/verify-perf.mjs --pr P6
+
+{"name":"hotpath","status":0,"diagnostic":false}
+{"name":"config","status":0,"diagnostic":false}
+{"name":"protocol","status":0,"diagnostic":false}
+{"name":"restore","status":0,"diagnostic":false}
+{"name":"renderer","status":0,"diagnostic":false}
+{"name":"protocol-profile","status":0,"diagnostic":true}
+/Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec/artifacts/P6/perf/1794835691406

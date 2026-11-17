@@ -1,0 +1,77 @@
+{
+  "schema": 2,
+  "mode": "dry-run",
+  "authorized": false,
+  "task": {
+    "id": "ledger-recovery-v2",
+    "turns": 12,
+    "fillerCharactersPerTurn": 7000,
+    "facts": [
+      "database=sqlite",
+      "retry=3",
+      "timezone=Asia/Shanghai"
+    ],
+    "unfinished": "FACT_PENDING=idempotency_test",
+    "files": {
+      "ledger.csv": "id,status\nA1,pending\n"
+    },
+    "toolResult": "FACT_FILE=ledger.csv FACT_ROW=A1_pending",
+    "continuation": "Return all FACT_ markers verbatim, database, retry, timezone, unfinished task, exact ledger.csv row state and tool results. Preserve marker=value syntax. The idempotency test is unfinished. Do not edit files or call tools."
+  },
+  "taskHash": "f4e39518fa0b79fa0954a8e6a9b19d9a02a3c1c1e9a9c9d1db344deab06ddd3a",
+  "networkRequestsThisRun": 0,
+  "authReadsThisRun": 0,
+  "budget": {
+    "maxDispatches": 12,
+    "maxEstimatedInputTokens": 120000,
+    "maxReservedOutputTokens": 12000,
+    "perRequestOutputTokens": 1000,
+    "inputEstimate": "ceil(decoded HTTP body bytes / 4), not server tokens",
+    "outputReservation": "explicit max_output_tokens (Codex, including reasoning) or max_tokens (non-reasoning DeepSeek). Codex host omits cap; executor adds it after host payload hooks. Server acceptance remains pending; rejection stops without uncapped retry.",
+    "monetaryCost": "unknown"
+  },
+  "targets": [
+    {
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "api": "openai-codex-responses",
+      "baseUrl": "https://chatgpt.com/backend-api",
+      "endpoint": "https://chatgpt.com/backend-api/codex/responses",
+      "transport": "sse"
+    },
+    {
+      "provider": "deepseek",
+      "model": "deepseek-chat",
+      "api": "openai-completions",
+      "baseUrl": "https://api.deepseek.com",
+      "endpoint": "https://api.deepseek.com/chat/completions",
+      "transport": "sse"
+    }
+  ],
+  "schedule": [
+    "native-summary",
+    "native-continuation",
+    "remote-summary",
+    "remote-continuation",
+    "repeat-remote",
+    "restore-continuation",
+    "source-to-text",
+    "target-native-summary",
+    "deepseek-continuation"
+  ],
+  "contingencyDispatches": 3,
+  "order": "Native first. Identical twelve-turn source and file bytes. Repeat remote adds only a synthetic tail. Restore uses disk session. Migration invokes installed product setModel/compact. Stop on first failed scenario; no advantage calculation.",
+  "transport": "SSE only. Exact HTTPS POST endpoint and model at final send. No redirects, automatic retries, auth refresh, catalogs, proxies or websocket. Every dispatch reserves before send, including fallback and slices.",
+  "credentials": "Only after valid real grant, existing Pi ModelRuntime reads grant.authPath. No real history or auth is copied. Fixture credentials are generated only in offline-fixture mode. Missing or expired credentials stop; refresh is not permitted.",
+  "evidence": "Grant-bound evidence directory. Public allowlisted ledger/results. Raw synthetic sessions and opaque checkpoints are private 0700/0600 and excluded from packages/public evidence.",
+  "recovery": "Same grant and evidence directory resumes ledger, never resets reservations. One exclusive owner lock. Crash leaves lock and reservations intact; concurrent or crashed owner blocks reopening. Preserve ledger, inspect dead owner before administrative lock removal.",
+  "gate": "Executable adapter is present. Real execution requires a fresh user grant recorded by coordinator after independent review. This plan and template are not grants; exhausted prior authorization cannot be reused.",
+  "pending": [
+    "All real service results",
+    "Codex explicit output-cap acceptance",
+    "Actual server reasoning/output accounting",
+    "Real summary quality and SSE reliability",
+    "User visual gate",
+    "Independent P6 review"
+  ]
+}

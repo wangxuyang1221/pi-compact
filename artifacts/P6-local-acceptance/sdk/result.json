@@ -1,0 +1,1142 @@
+{
+  "status": "pass",
+  "hostVersion": "1.5.2",
+  "hostRuntimeHash": "b17018cb70007a194f10b2aaf5ec3631329db20cf853ddc9ce4088e6b4373ab1",
+  "credentialsOptionEffective": true,
+  "exposedProviders": [
+    "openai-codex",
+    "deepseek"
+  ],
+  "missingAuthPathNotRead": true,
+  "mutationCallbackCalled": false,
+  "authBytesUnchanged": true,
+  "expiredAtUseDenied": true,
+  "refreshNetworkAttempts": 0,
+  "events": [
+    {
+      "method": "read",
+      "provider": "amazon-bedrock",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "ant-ling",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "anthropic",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "azure",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "baseten",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "cerebras",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "cloudflare-ai-gateway",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "cloudflare-workers-ai",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "deepseek",
+      "exposed": true
+    },
+    {
+      "method": "read",
+      "provider": "fireworks",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "github-copilot",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "google",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "google-vertex",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "groq",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "huggingface",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "kimi-coding",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "meta",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "minimax",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "minimax-cn",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "mistral",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "moonshotai",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "moonshotai-cn",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "nvidia",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "openai",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "openai-codex",
+      "exposed": true
+    },
+    {
+      "method": "read",
+      "provider": "opencode",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "opencode-go",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "openrouter",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "qwen-token-plan",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "qwen-token-plan-cn",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "qwen-token-plan-individual",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "qwen-token-plan-individual-cn",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "radius",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "together",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "typesafe",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "vercel-ai-gateway",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "xai",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "xiaomi",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "xiaomi-token-plan-ams",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "xiaomi-token-plan-cn",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "xiaomi-token-plan-sgp",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "zai",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "zai-coding-cn",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "amazon-bedrock",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "ant-ling",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "anthropic",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "azure",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "baseten",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "cerebras",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "cloudflare-ai-gateway",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "cloudflare-workers-ai",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "deepseek",
+      "exposed": true
+    },
+    {
+      "method": "read",
+      "provider": "fireworks",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "github-copilot",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "google",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "google-vertex",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "groq",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "huggingface",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "kimi-coding",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "meta",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "minimax",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "minimax-cn",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "mistral",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "moonshotai",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "moonshotai-cn",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "nvidia",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "openai",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "openai-codex",
+      "exposed": true
+    },
+    {
+      "method": "read",
+      "provider": "opencode",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "opencode-go",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "openrouter",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "qwen-token-plan",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "qwen-token-plan-cn",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "qwen-token-plan-individual",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "qwen-token-plan-individual-cn",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "radius",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "together",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "typesafe",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "vercel-ai-gateway",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "xai",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "xiaomi",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "xiaomi-token-plan-ams",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "xiaomi-token-plan-cn",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "xiaomi-token-plan-sgp",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "zai",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "zai-coding-cn",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "amazon-bedrock",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "ant-ling",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "anthropic",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "azure",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "baseten",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "cerebras",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "cloudflare-ai-gateway",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "cloudflare-workers-ai",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "deepseek",
+      "exposed": true
+    },
+    {
+      "method": "read",
+      "provider": "fireworks",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "github-copilot",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "google",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "google-vertex",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "groq",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "huggingface",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "kimi-coding",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "meta",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "minimax",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "minimax-cn",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "mistral",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "moonshotai",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "moonshotai-cn",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "nvidia",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "openai",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "openai-codex",
+      "exposed": true
+    },
+    {
+      "method": "read",
+      "provider": "opencode",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "opencode-go",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "openrouter",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "qwen-token-plan",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "qwen-token-plan-cn",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "qwen-token-plan-individual",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "qwen-token-plan-individual-cn",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "radius",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "together",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "typesafe",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "vercel-ai-gateway",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "xai",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "xiaomi",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "xiaomi-token-plan-ams",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "xiaomi-token-plan-cn",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "xiaomi-token-plan-sgp",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "zai",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "zai-coding-cn",
+      "exposed": false
+    },
+    {
+      "method": "list",
+      "provider": null,
+      "exposed": true
+    },
+    {
+      "method": "read",
+      "provider": "amazon-bedrock",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "ant-ling",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "anthropic",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "azure",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "baseten",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "cerebras",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "cloudflare-ai-gateway",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "cloudflare-workers-ai",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "deepseek",
+      "exposed": true
+    },
+    {
+      "method": "read",
+      "provider": "fireworks",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "github-copilot",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "google",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "google-vertex",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "groq",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "huggingface",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "kimi-coding",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "meta",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "minimax",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "minimax-cn",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "mistral",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "moonshotai",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "moonshotai-cn",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "nvidia",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "openai",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "opencode",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "opencode-go",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "openrouter",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "qwen-token-plan",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "qwen-token-plan-cn",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "qwen-token-plan-individual",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "qwen-token-plan-individual-cn",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "radius",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "together",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "typesafe",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "vercel-ai-gateway",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "xai",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "xiaomi",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "xiaomi-token-plan-ams",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "xiaomi-token-plan-cn",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "xiaomi-token-plan-sgp",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "zai",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "zai-coding-cn",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "amazon-bedrock",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "ant-ling",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "anthropic",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "azure",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "baseten",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "cerebras",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "cloudflare-ai-gateway",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "cloudflare-workers-ai",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "deepseek",
+      "exposed": true
+    },
+    {
+      "method": "read",
+      "provider": "fireworks",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "github-copilot",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "google",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "google-vertex",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "groq",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "huggingface",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "kimi-coding",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "meta",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "minimax",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "minimax-cn",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "mistral",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "moonshotai",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "moonshotai-cn",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "nvidia",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "openai",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "opencode",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "opencode-go",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "openrouter",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "qwen-token-plan",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "qwen-token-plan-cn",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "qwen-token-plan-individual",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "qwen-token-plan-individual-cn",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "radius",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "together",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "typesafe",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "vercel-ai-gateway",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "xai",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "xiaomi",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "xiaomi-token-plan-ams",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "xiaomi-token-plan-cn",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "xiaomi-token-plan-sgp",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "zai",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "zai-coding-cn",
+      "exposed": false
+    },
+    {
+      "method": "list",
+      "provider": null,
+      "exposed": true
+    },
+    {
+      "method": "read",
+      "provider": "openai",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "anthropic",
+      "exposed": false
+    },
+    {
+      "method": "read",
+      "provider": "deepseek",
+      "exposed": true
+    },
+    {
+      "method": "read",
+      "provider": "deepseek",
+      "exposed": true
+    },
+    {
+      "method": "modify",
+      "provider": "openai-codex",
+      "failure": "AUTH_MUTATION_DENIED"
+    },
+    {
+      "method": "delete",
+      "provider": "deepseek",
+      "failure": "AUTH_MUTATION_DENIED"
+    },
+    {
+      "method": "read",
+      "provider": "openai-codex",
+      "exposed": true
+    },
+    {
+      "method": "read",
+      "provider": "deepseek",
+      "exposed": true
+    },
+    {
+      "method": "read",
+      "provider": "openai-codex",
+      "failure": "AUTH_EXPIRED"
+    }
+  ],
+  "cleanup": {
+    "trackedSockets": 0,
+    "listeners": 0,
+    "deniedNetworkActions": 0
+  }
+}

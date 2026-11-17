@@ -1,0 +1,15 @@
+{
+  "testedHead": "0e26b8552d3e0c20fd0da84851e4e2f60447aba3",
+  "implementationHead": "44b9f33f89aef3cfa710172861d64b31e02b01d6",
+  "productHead": "713acbf87bfa87b3d6eb208fb55bdb3b6651fd49",
+  "packageSha256": "209888cd3f050ffe6d3a8932c15d25636d52d83919de0021cf9ce2c611d22c8d",
+  "verdict": "local technical PASS; R1/R2 closed",
+  "verifiedIndependentManifestMembers": 248,
+  "reviewSource": "/Users/wangxuyang/.t3/worktrees/compact/t3-44f60cc7-a4379b593028145d/artifacts/P6-isolation-independent",
+  "notAccepted": [
+    "real provider capability/quality",
+    "Terra/Luna comparison runner and results",
+    "user visual gate"
+  ],
+  "overallP6": "pending"
+}

@@ -1,0 +1,351 @@
+[
+  {
+    "name": "host-non-sse",
+    "pid": 84239,
+    "exit": 1,
+    "dispatches": 1,
+    "lanes": [
+      {
+        "id": "pilot-gpt-6.1-terra-pi-native",
+        "status": "failed",
+        "failure": "HOST_OR_TRANSPORT_FAILURE",
+        "dispatches": 1
+      },
+      {
+        "id": "pilot-gpt-6.1-terra-pi-compact-remote",
+        "status": "ineligible",
+        "failure": "GLOBAL_AUDIT_STOP"
+      },
+      {
+        "id": "pilot-gpt-6-luna-pi-native",
+        "status": "ineligible",
+        "failure": "GLOBAL_AUDIT_STOP"
+      },
+      {
+        "id": "pilot-gpt-6-luna-pi-compact-remote",
+        "status": "ineligible",
+        "failure": "GLOBAL_AUDIT_STOP"
+      }
+    ],
+    "rows": [
+      {
+        "state": "failed",
+        "failure": "NON_SSE_RESPONSE"
+      }
+    ],
+    "cleanup": {
+      "pids": [
+        84303,
+        84294,
+        84304
+      ],
+      "alive": [],
+      "listenerCount": 0,
+      "trackedSockets": 0,
+      "exitCode": 1
+    },
+    "resume": {
+      "pid": 84320,
+      "exit": 1,
+      "unchangedDispatches": 1,
+      "cleanup": {
+        "pids": [
+          84322,
+          84294,
+          84303,
+          84304,
+          84323
+        ],
+        "alive": [],
+        "listenerCount": 0,
+        "trackedSockets": 0,
+        "exitCode": 1
+      }
+    }
+  },
+  {
+    "name": "host-malformed",
+    "pid": 84340,
+    "exit": 1,
+    "dispatches": 1,
+    "lanes": [
+      {
+        "id": "pilot-gpt-6.1-terra-pi-native",
+        "status": "failed",
+        "failure": "HOST_OR_TRANSPORT_FAILURE",
+        "dispatches": 1
+      },
+      {
+        "id": "pilot-gpt-6.1-terra-pi-compact-remote",
+        "status": "ineligible",
+        "failure": "GLOBAL_AUDIT_STOP"
+      },
+      {
+        "id": "pilot-gpt-6-luna-pi-native",
+        "status": "ineligible",
+        "failure": "GLOBAL_AUDIT_STOP"
+      },
+      {
+        "id": "pilot-gpt-6-luna-pi-compact-remote",
+        "status": "ineligible",
+        "failure": "GLOBAL_AUDIT_STOP"
+      }
+    ],
+    "rows": [
+      {
+        "state": "failed",
+        "failure": "HOST_OR_TRANSPORT_FAILURE"
+      }
+    ],
+    "cleanup": {
+      "pids": [
+        84387,
+        84378,
+        84388
+      ],
+      "alive": [],
+      "listenerCount": 0,
+      "trackedSockets": 0,
+      "exitCode": 1
+    },
+    "resume": {
+      "pid": 84404,
+      "exit": 1,
+      "unchangedDispatches": 1,
+      "cleanup": {
+        "pids": [
+          84406,
+          84378,
+          84387,
+          84388,
+          84407
+        ],
+        "alive": [],
+        "listenerCount": 0,
+        "trackedSockets": 0,
+        "exitCode": 1
+      }
+    }
+  },
+  {
+    "name": "host-http",
+    "pid": 84423,
+    "exit": 1,
+    "dispatches": 1,
+    "lanes": [
+      {
+        "id": "pilot-gpt-6.1-terra-pi-native",
+        "status": "failed",
+        "failure": "HOST_OR_TRANSPORT_FAILURE",
+        "dispatches": 1
+      },
+      {
+        "id": "pilot-gpt-6.1-terra-pi-compact-remote",
+        "status": "ineligible",
+        "failure": "GLOBAL_AUDIT_STOP"
+      },
+      {
+        "id": "pilot-gpt-6-luna-pi-native",
+        "status": "ineligible",
+        "failure": "GLOBAL_AUDIT_STOP"
+      },
+      {
+        "id": "pilot-gpt-6-luna-pi-compact-remote",
+        "status": "ineligible",
+        "failure": "GLOBAL_AUDIT_STOP"
+      }
+    ],
+    "rows": [
+      {
+        "state": "failed",
+        "failure": "HTTP_REJECTED",
+        "auditFailure": "HTTP_REJECTED"
+      }
+    ],
+    "cleanup": {
+      "pids": [
+        84487,
+        84478,
+        84488
+      ],
+      "alive": [],
+      "listenerCount": 0,
+      "trackedSockets": 0,
+      "exitCode": 1
+    },
+    "resume": {
+      "pid": 84504,
+      "exit": 1,
+      "unchangedDispatches": 1,
+      "cleanup": {
+        "pids": [
+          84506,
+          84478,
+          84487,
+          84488,
+          84507
+        ],
+        "alive": [],
+        "listenerCount": 0,
+        "trackedSockets": 0,
+        "exitCode": 1
+      }
+    }
+  },
+  {
+    "name": "host-no-usage",
+    "pid": 84524,
+    "exit": 1,
+    "dispatches": 1,
+    "lanes": [
+      {
+        "id": "pilot-gpt-6.1-terra-pi-native",
+        "status": "failed",
+        "failure": "HOST_OR_TRANSPORT_FAILURE",
+        "dispatches": 1
+      },
+      {
+        "id": "pilot-gpt-6.1-terra-pi-compact-remote",
+        "status": "ineligible",
+        "failure": "GLOBAL_AUDIT_STOP"
+      },
+      {
+        "id": "pilot-gpt-6-luna-pi-native",
+        "status": "ineligible",
+        "failure": "GLOBAL_AUDIT_STOP"
+      },
+      {
+        "id": "pilot-gpt-6-luna-pi-compact-remote",
+        "status": "ineligible",
+        "failure": "GLOBAL_AUDIT_STOP"
+      }
+    ],
+    "rows": [
+      {
+        "state": "failed",
+        "failure": "USAGE_UNAUDITABLE",
+        "auditFailure": "USAGE_UNAUDITABLE"
+      }
+    ],
+    "cleanup": {
+      "pids": [
+        84572,
+        84562,
+        84573
+      ],
+      "alive": [],
+      "listenerCount": 0,
+      "trackedSockets": 0,
+      "exitCode": 1
+    },
+    "resume": {
+      "pid": 84591,
+      "exit": 1,
+      "unchangedDispatches": 1,
+      "cleanup": {
+        "pids": [
+          84594,
+          84562,
+          84572,
+          84573,
+          84595
+        ],
+        "alive": [],
+        "listenerCount": 0,
+        "trackedSockets": 0,
+        "exitCode": 1
+      }
+    }
+  },
+  {
+    "name": "host-normal",
+    "pid": 84613,
+    "exit": 0,
+    "dispatches": 8,
+    "lanes": [
+      {
+        "id": "pilot-gpt-6.1-terra-pi-native",
+        "status": "passed",
+        "dispatches": 2
+      },
+      {
+        "id": "pilot-gpt-6.1-terra-pi-compact-remote",
+        "status": "passed",
+        "dispatches": 2
+      },
+      {
+        "id": "pilot-gpt-6-luna-pi-native",
+        "status": "passed",
+        "dispatches": 2
+      },
+      {
+        "id": "pilot-gpt-6-luna-pi-compact-remote",
+        "status": "passed",
+        "dispatches": 2
+      }
+    ],
+    "rows": [
+      {
+        "state": "completed",
+        "auditFailure": null
+      },
+      {
+        "state": "completed",
+        "auditFailure": null
+      },
+      {
+        "state": "completed",
+        "auditFailure": null
+      },
+      {
+        "state": "completed",
+        "auditFailure": null
+      },
+      {
+        "state": "completed",
+        "auditFailure": null
+      },
+      {
+        "state": "completed",
+        "auditFailure": null
+      },
+      {
+        "state": "completed",
+        "auditFailure": null
+      },
+      {
+        "state": "completed",
+        "auditFailure": null
+      }
+    ],
+    "cleanup": {
+      "pids": [
+        84681,
+        84653,
+        84682
+      ],
+      "alive": [],
+      "listenerCount": 0,
+      "trackedSockets": 0,
+      "exitCode": 0
+    },
+    "resume": {
+      "pid": 84724,
+      "exit": 0,
+      "unchangedDispatches": 8,
+      "cleanup": {
+        "pids": [
+          84726,
+          84653,
+          84681,
+          84682,
+          84727
+        ],
+        "alive": [],
+        "listenerCount": 0,
+        "trackedSockets": 0,
+        "exitCode": 0
+      }
+    }
+  }
+]

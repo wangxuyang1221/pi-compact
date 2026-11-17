@@ -1,0 +1,705 @@
+{
+  "schema": "comparison-boundary-preflight/v1",
+  "realMeasurements": false,
+  "fixture": true,
+  "modelsQueriedAtRealService": false,
+  "providerRequests": 0,
+  "installedPi": "1.5.2",
+  "originalRunBinding": {
+    "plan": "63d414e023a8cea0128c77252a4236519fe0e2d9a20066cdd1380eadcabd4277",
+    "dataset": "85bb0cac0bb00c4f2d8af1aca5665b7993273b5452c7945ed7ae72d1764f0c6a",
+    "scorer": "657a3bb90fd5d0618acb60542b90bacb891876594728b8654ccd375ec3e29755",
+    "toolSchema": "a17ce6423ee16d6fc82a4b35c1ad79b2382e30bd7c2f87dee561df0876243199",
+    "package": "209888cd3f050ffe6d3a8932c15d25636d52d83919de0021cf9ce2c611d22c8d",
+    "host": "43fb6fe411aa082dd471bd7ae668583009b5e80e5f98da6cd2d834fc76f625d8",
+    "schedule": "c03de56cf44f7c262b3ebfae1fcf5ad267c23272d2a91917a3afa8e0ce6bcc70",
+    "runner": "213c29f112647a3b142735850ba852cf7beecef580e03b7996f497ef402df6a7",
+    "boundaryPreflight": "a16d8b6a86f3cb3001956f9485f7646e58b975762aa256fc41d9bab59600edda"
+  },
+  "runEvidenceHash": "72759397e71d945272848886d6d0159e6a068dc9112184412374fdaefee19480",
+  "pairs": [
+    {
+      "model": "gpt-6.1-terra",
+      "task": "settlement-v2",
+      "boundary": {
+        "model": "gpt-6.1-terra",
+        "task": "settlement-v2",
+        "firstKeptEntryId": "e227",
+        "isSplitTurn": false,
+        "prefixEntries": 227,
+        "retainedEntries": 185,
+        "criticalEntries": [
+          "e0",
+          "e1",
+          "e2",
+          "e3",
+          "e4",
+          "e5",
+          "e6",
+          "e7",
+          "e8",
+          "e9",
+          "e10"
+        ],
+        "criticalBeforeCut": true,
+        "rawHistoryHash": "58c247d7f55c0d2c15decc5209fb4ab305aa26ebc425fd49a2fa6e21a4270d3b",
+        "prefixHash": "9eb78f24c5d06981c22d6e426421612548376fdf70f155f70f12ddec4bbdb9fc",
+        "tailHash": "f0d902ac11d67b28d7a4782e4df7b08da411517e4374da18a4cacae4760f57d8",
+        "systemPromptHash": "06f2a3d99f5c185e9e4cd4b4f3d4b61943200129a8ecdbf26548644aef1ac831",
+        "workspacePathHash": "5bcf8c6e9359f6b6c6551ebb7d4396f1b9a3e12e5dde19059aa405a3cbd032f2",
+        "noPriorCheckpoint": true,
+        "managed": false,
+        "extensionPaths": [],
+        "modelSpec": {
+          "contextWindow": 500000,
+          "maxTokens": 128000,
+          "reasoning": true,
+          "thinkingLevelMap": {
+            "off": "none",
+            "minimal": "low",
+            "low": "low",
+            "medium": "medium",
+            "high": "high",
+            "xhigh": "xhigh",
+            "max": "max"
+          },
+          "commonToolEncoding": "top-level-functions",
+          "supportsAdditionalTools": false,
+          "supportsToolSearch": false
+        },
+        "settings": {
+          "enabled": true,
+          "reserveTokens": 16384,
+          "keepRecentTokens": 20000
+        },
+        "customInstructions": null
+      },
+      "remoteDiscovery": [
+        "<installed-package>/src/index.ts"
+      ],
+      "firstNative": {
+        "model": "gpt-6.1-terra",
+        "reasoning": {
+          "effort": "none"
+        },
+        "maxOutputTokens": 1000,
+        "stream": true,
+        "inputHash": "582536a0b7148d5f1cbb22d9148760935a0910f241d81ad66a6c21ae1a39f69b",
+        "instructionsHash": "75357d685f238b6afd7738be9786fdafde641eb6ca9a3be7471939715a68a4de",
+        "systemMessagesHash": "46712c6e44d47b5000647ce443879ab04d5efd37b7e7416f63a9296784a0796a",
+        "toolsHash": "08151f4f9e169a4c589ba2a24c91bf0b9a1e61c21901c8465138d68f9670d47a",
+        "opaqueItems": 0,
+        "compactionTrigger": false,
+        "rawSHA256": "7c1e82ad346ae8f64ac99bcf163d7aacbde2b7aa3e60baf792ba06f779713bad",
+        "toolNames": [
+          "record_checkpoint",
+          "workspace_read",
+          "workspace_write",
+          "workspace_edit",
+          "run_regression"
+        ]
+      },
+      "firstRemote": {
+        "model": "gpt-6.1-terra",
+        "reasoning": {
+          "effort": "none"
+        },
+        "maxOutputTokens": 1000,
+        "stream": true,
+        "inputHash": "e4380efcc88a32f1b12361fa9a0a980975de3454d24baf97b7ae58a5ce9a2fa5",
+        "instructionsHash": "75357d685f238b6afd7738be9786fdafde641eb6ca9a3be7471939715a68a4de",
+        "systemMessagesHash": "46712c6e44d47b5000647ce443879ab04d5efd37b7e7416f63a9296784a0796a",
+        "toolsHash": "08151f4f9e169a4c589ba2a24c91bf0b9a1e61c21901c8465138d68f9670d47a",
+        "opaqueItems": 1,
+        "compactionTrigger": false,
+        "rawSHA256": "8a911022e07ca5e54faf0a398f3283d312358995b48759d15a851f18f15e2e86",
+        "toolNames": [
+          "record_checkpoint",
+          "workspace_read",
+          "workspace_write",
+          "workspace_edit",
+          "run_regression"
+        ]
+      },
+      "compactEncoding": [
+        {
+          "model": "gpt-6.1-terra",
+          "reasoning": {
+            "effort": "none"
+          },
+          "maxOutputTokens": 1000,
+          "stream": true,
+          "inputHash": "9f32f713913bb969cf8ec08ac2944235eea6bdd7c33d6a2291b389d5b4639d18",
+          "instructionsHash": "c464889dcfa60441e642f291445b49523f263e6fb2725d0c25075543a2ec3f8f",
+          "systemMessagesHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "toolsHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "opaqueItems": 0,
+          "compactionTrigger": false,
+          "rawSHA256": "ed86a6a301188fdb1f28a372f050088e61f558964e1f2f633f2ec969a6a2427f",
+          "toolNames": []
+        },
+        {
+          "model": "gpt-6.1-terra",
+          "reasoning": {
+            "effort": "none"
+          },
+          "maxOutputTokens": 1000,
+          "stream": true,
+          "inputHash": "d646818e9afadad83fc586afbf1cdcd2a788172702ccbec605937252aba3e049",
+          "instructionsHash": "75357d685f238b6afd7738be9786fdafde641eb6ca9a3be7471939715a68a4de",
+          "systemMessagesHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "toolsHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "opaqueItems": 0,
+          "compactionTrigger": true,
+          "rawSHA256": "0e1a509cfa927827933433af0c9c2e892265a64754f0b8f706efb6887ece5ebd",
+          "toolNames": []
+        }
+      ],
+      "exactMatchingKeys": [
+        "firstKeptEntryId",
+        "isSplitTurn",
+        "rawHistoryHash",
+        "prefixHash",
+        "tailHash",
+        "systemPromptHash",
+        "settings",
+        "customInstructions",
+        "modelSpec",
+        "workspacePathHash"
+      ],
+      "actualWorkspaceBehavior": [
+        {
+          "passed": 7,
+          "total": 7,
+          "error": null,
+          "pid": 30955,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "passed": 7,
+          "total": 7,
+          "error": null,
+          "pid": 30975,
+          "exitCode": 0,
+          "signal": null
+        }
+      ],
+      "protectedFiles": 102
+    },
+    {
+      "model": "gpt-6.1-terra",
+      "task": "redirect-v2",
+      "boundary": {
+        "model": "gpt-6.1-terra",
+        "task": "redirect-v2",
+        "firstKeptEntryId": "e227",
+        "isSplitTurn": false,
+        "prefixEntries": 227,
+        "retainedEntries": 185,
+        "criticalEntries": [
+          "e0",
+          "e1",
+          "e2",
+          "e3",
+          "e4",
+          "e5",
+          "e6",
+          "e7",
+          "e8",
+          "e9",
+          "e10"
+        ],
+        "criticalBeforeCut": true,
+        "rawHistoryHash": "0968bb6feb27959be8ffcb13ff3e1b7dc602f80269ed33b9a736bff519701545",
+        "prefixHash": "647396f28a58c7b404180a6cb4a621b515edc8948e3a6e1e33c2b014b0e9d376",
+        "tailHash": "f0d902ac11d67b28d7a4782e4df7b08da411517e4374da18a4cacae4760f57d8",
+        "systemPromptHash": "06f2a3d99f5c185e9e4cd4b4f3d4b61943200129a8ecdbf26548644aef1ac831",
+        "workspacePathHash": "5bcf8c6e9359f6b6c6551ebb7d4396f1b9a3e12e5dde19059aa405a3cbd032f2",
+        "noPriorCheckpoint": true,
+        "managed": false,
+        "extensionPaths": [],
+        "modelSpec": {
+          "contextWindow": 500000,
+          "maxTokens": 128000,
+          "reasoning": true,
+          "thinkingLevelMap": {
+            "off": "none",
+            "minimal": "low",
+            "low": "low",
+            "medium": "medium",
+            "high": "high",
+            "xhigh": "xhigh",
+            "max": "max"
+          },
+          "commonToolEncoding": "top-level-functions",
+          "supportsAdditionalTools": false,
+          "supportsToolSearch": false
+        },
+        "settings": {
+          "enabled": true,
+          "reserveTokens": 16384,
+          "keepRecentTokens": 20000
+        },
+        "customInstructions": null
+      },
+      "remoteDiscovery": [
+        "<installed-package>/src/index.ts"
+      ],
+      "firstNative": {
+        "model": "gpt-6.1-terra",
+        "reasoning": {
+          "effort": "none"
+        },
+        "maxOutputTokens": 1000,
+        "stream": true,
+        "inputHash": "8bba3956006a8aaa7e0e3a618ccc352f4d9b52abc2018e5dec0ccf8bd73bad95",
+        "instructionsHash": "75357d685f238b6afd7738be9786fdafde641eb6ca9a3be7471939715a68a4de",
+        "systemMessagesHash": "46712c6e44d47b5000647ce443879ab04d5efd37b7e7416f63a9296784a0796a",
+        "toolsHash": "08151f4f9e169a4c589ba2a24c91bf0b9a1e61c21901c8465138d68f9670d47a",
+        "opaqueItems": 0,
+        "compactionTrigger": false,
+        "rawSHA256": "e1054657282ef96091a6c04c8f935d24a14f8df05af6dcde059921d229c93007",
+        "toolNames": [
+          "record_checkpoint",
+          "workspace_read",
+          "workspace_write",
+          "workspace_edit",
+          "run_regression"
+        ]
+      },
+      "firstRemote": {
+        "model": "gpt-6.1-terra",
+        "reasoning": {
+          "effort": "none"
+        },
+        "maxOutputTokens": 1000,
+        "stream": true,
+        "inputHash": "eebb93defc672b45067eb0479d185a756153a7fac20a6e4b60e76259291184cc",
+        "instructionsHash": "75357d685f238b6afd7738be9786fdafde641eb6ca9a3be7471939715a68a4de",
+        "systemMessagesHash": "46712c6e44d47b5000647ce443879ab04d5efd37b7e7416f63a9296784a0796a",
+        "toolsHash": "08151f4f9e169a4c589ba2a24c91bf0b9a1e61c21901c8465138d68f9670d47a",
+        "opaqueItems": 1,
+        "compactionTrigger": false,
+        "rawSHA256": "ed172eeae069000f2f16b4256b3c4f5dc728d22f2b93503ec9a386f259a1e4b9",
+        "toolNames": [
+          "record_checkpoint",
+          "workspace_read",
+          "workspace_write",
+          "workspace_edit",
+          "run_regression"
+        ]
+      },
+      "compactEncoding": [
+        {
+          "model": "gpt-6.1-terra",
+          "reasoning": {
+            "effort": "none"
+          },
+          "maxOutputTokens": 1000,
+          "stream": true,
+          "inputHash": "2770d1f0f203339c672056107d9c7ea40d206bc792ec4df42a736d49bab40e77",
+          "instructionsHash": "c464889dcfa60441e642f291445b49523f263e6fb2725d0c25075543a2ec3f8f",
+          "systemMessagesHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "toolsHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "opaqueItems": 0,
+          "compactionTrigger": false,
+          "rawSHA256": "3d49ba3bf7e7c7210c98905f8071ea33e09dcfe83defb92ac277403f92fc336f",
+          "toolNames": []
+        },
+        {
+          "model": "gpt-6.1-terra",
+          "reasoning": {
+            "effort": "none"
+          },
+          "maxOutputTokens": 1000,
+          "stream": true,
+          "inputHash": "246e687df61e0b5dc312ba60c11ab2e081159b4710df1f814c923a96e56f880e",
+          "instructionsHash": "75357d685f238b6afd7738be9786fdafde641eb6ca9a3be7471939715a68a4de",
+          "systemMessagesHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "toolsHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "opaqueItems": 0,
+          "compactionTrigger": true,
+          "rawSHA256": "f879c6538b55f01a311c7a949a23127f4e6ca2e033bdb9369c8a000bc0e0f5a1",
+          "toolNames": []
+        }
+      ],
+      "exactMatchingKeys": [
+        "firstKeptEntryId",
+        "isSplitTurn",
+        "rawHistoryHash",
+        "prefixHash",
+        "tailHash",
+        "systemPromptHash",
+        "settings",
+        "customInstructions",
+        "modelSpec",
+        "workspacePathHash"
+      ],
+      "actualWorkspaceBehavior": [
+        {
+          "passed": 8,
+          "total": 8,
+          "error": null,
+          "pid": 30998,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "passed": 8,
+          "total": 8,
+          "error": null,
+          "pid": 30996,
+          "exitCode": 0,
+          "signal": null
+        }
+      ],
+      "protectedFiles": 102
+    },
+    {
+      "model": "gpt-6-luna",
+      "task": "settlement-v2",
+      "boundary": {
+        "model": "gpt-6-luna",
+        "task": "settlement-v2",
+        "firstKeptEntryId": "e227",
+        "isSplitTurn": false,
+        "prefixEntries": 227,
+        "retainedEntries": 185,
+        "criticalEntries": [
+          "e0",
+          "e1",
+          "e2",
+          "e3",
+          "e4",
+          "e5",
+          "e6",
+          "e7",
+          "e8",
+          "e9",
+          "e10"
+        ],
+        "criticalBeforeCut": true,
+        "rawHistoryHash": "d7d361bc0e56eeb2d40d1a49d0e6f4efc55a6fb404c36cf3ef85496ac1ca92de",
+        "prefixHash": "f44bc834de6f43bd52ca15f44a81061646f4b57b8a301ef35e4bbb79df1d5e5b",
+        "tailHash": "2c44a4c7a01552c4483f50c373f4d64ffd88f909063b7128331463e4bbde22bb",
+        "systemPromptHash": "06f2a3d99f5c185e9e4cd4b4f3d4b61943200129a8ecdbf26548644aef1ac831",
+        "workspacePathHash": "5bcf8c6e9359f6b6c6551ebb7d4396f1b9a3e12e5dde19059aa405a3cbd032f2",
+        "noPriorCheckpoint": true,
+        "managed": false,
+        "extensionPaths": [],
+        "modelSpec": {
+          "contextWindow": 272000,
+          "maxTokens": 128000,
+          "reasoning": true,
+          "thinkingLevelMap": {
+            "off": "none",
+            "minimal": "low",
+            "low": "low",
+            "medium": "medium",
+            "high": "high",
+            "xhigh": "xhigh",
+            "max": "max"
+          },
+          "commonToolEncoding": "top-level-functions",
+          "supportsAdditionalTools": false,
+          "supportsToolSearch": false
+        },
+        "settings": {
+          "enabled": true,
+          "reserveTokens": 16384,
+          "keepRecentTokens": 20000
+        },
+        "customInstructions": null
+      },
+      "remoteDiscovery": [
+        "<installed-package>/src/index.ts"
+      ],
+      "firstNative": {
+        "model": "gpt-6-luna",
+        "reasoning": {
+          "effort": "none"
+        },
+        "maxOutputTokens": 1000,
+        "stream": true,
+        "inputHash": "582536a0b7148d5f1cbb22d9148760935a0910f241d81ad66a6c21ae1a39f69b",
+        "instructionsHash": "75357d685f238b6afd7738be9786fdafde641eb6ca9a3be7471939715a68a4de",
+        "systemMessagesHash": "46712c6e44d47b5000647ce443879ab04d5efd37b7e7416f63a9296784a0796a",
+        "toolsHash": "08151f4f9e169a4c589ba2a24c91bf0b9a1e61c21901c8465138d68f9670d47a",
+        "opaqueItems": 0,
+        "compactionTrigger": false,
+        "rawSHA256": "229dc21c59eed8508c862a73c25c5f669b1e644dfd868b0fa39c574324224bc2",
+        "toolNames": [
+          "record_checkpoint",
+          "workspace_read",
+          "workspace_write",
+          "workspace_edit",
+          "run_regression"
+        ]
+      },
+      "firstRemote": {
+        "model": "gpt-6-luna",
+        "reasoning": {
+          "effort": "none"
+        },
+        "maxOutputTokens": 1000,
+        "stream": true,
+        "inputHash": "0e9dd31c44629fdd30e23897ce44d7ad4e2899228c7203450b898aa7b6c2d0c4",
+        "instructionsHash": "75357d685f238b6afd7738be9786fdafde641eb6ca9a3be7471939715a68a4de",
+        "systemMessagesHash": "46712c6e44d47b5000647ce443879ab04d5efd37b7e7416f63a9296784a0796a",
+        "toolsHash": "08151f4f9e169a4c589ba2a24c91bf0b9a1e61c21901c8465138d68f9670d47a",
+        "opaqueItems": 1,
+        "compactionTrigger": false,
+        "rawSHA256": "df330b4857e845b37b7d75230e922d2a7521b0f425dde2af0ed53c7f4a495d43",
+        "toolNames": [
+          "record_checkpoint",
+          "workspace_read",
+          "workspace_write",
+          "workspace_edit",
+          "run_regression"
+        ]
+      },
+      "compactEncoding": [
+        {
+          "model": "gpt-6-luna",
+          "reasoning": {
+            "effort": "none"
+          },
+          "maxOutputTokens": 1000,
+          "stream": true,
+          "inputHash": "9f32f713913bb969cf8ec08ac2944235eea6bdd7c33d6a2291b389d5b4639d18",
+          "instructionsHash": "c464889dcfa60441e642f291445b49523f263e6fb2725d0c25075543a2ec3f8f",
+          "systemMessagesHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "toolsHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "opaqueItems": 0,
+          "compactionTrigger": false,
+          "rawSHA256": "d9fa7b84e0837e8029c92315afa68c1d47febb5f89f177feaac9ef35bd3c6195",
+          "toolNames": []
+        },
+        {
+          "model": "gpt-6-luna",
+          "reasoning": {
+            "effort": "none"
+          },
+          "maxOutputTokens": 1000,
+          "stream": true,
+          "inputHash": "d646818e9afadad83fc586afbf1cdcd2a788172702ccbec605937252aba3e049",
+          "instructionsHash": "75357d685f238b6afd7738be9786fdafde641eb6ca9a3be7471939715a68a4de",
+          "systemMessagesHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "toolsHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "opaqueItems": 0,
+          "compactionTrigger": true,
+          "rawSHA256": "a0fbfdbe18610a8421794e6e6b2c2bb9acc3dc8aa59c3c5f3573e9b390b79043",
+          "toolNames": []
+        }
+      ],
+      "exactMatchingKeys": [
+        "firstKeptEntryId",
+        "isSplitTurn",
+        "rawHistoryHash",
+        "prefixHash",
+        "tailHash",
+        "systemPromptHash",
+        "settings",
+        "customInstructions",
+        "modelSpec",
+        "workspacePathHash"
+      ],
+      "actualWorkspaceBehavior": [
+        {
+          "passed": 7,
+          "total": 7,
+          "error": null,
+          "pid": 31002,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "passed": 7,
+          "total": 7,
+          "error": null,
+          "pid": 31000,
+          "exitCode": 0,
+          "signal": null
+        }
+      ],
+      "protectedFiles": 102
+    },
+    {
+      "model": "gpt-6-luna",
+      "task": "redirect-v2",
+      "boundary": {
+        "model": "gpt-6-luna",
+        "task": "redirect-v2",
+        "firstKeptEntryId": "e227",
+        "isSplitTurn": false,
+        "prefixEntries": 227,
+        "retainedEntries": 185,
+        "criticalEntries": [
+          "e0",
+          "e1",
+          "e2",
+          "e3",
+          "e4",
+          "e5",
+          "e6",
+          "e7",
+          "e8",
+          "e9",
+          "e10"
+        ],
+        "criticalBeforeCut": true,
+        "rawHistoryHash": "972d4cde84b075721855feb5d24d7c8809d81ca2bdc9af518294254f739a1f9c",
+        "prefixHash": "1b516db26467f2282c3090fc74184af5df5263c210ebf9e3add73b21e0125171",
+        "tailHash": "2c44a4c7a01552c4483f50c373f4d64ffd88f909063b7128331463e4bbde22bb",
+        "systemPromptHash": "06f2a3d99f5c185e9e4cd4b4f3d4b61943200129a8ecdbf26548644aef1ac831",
+        "workspacePathHash": "5bcf8c6e9359f6b6c6551ebb7d4396f1b9a3e12e5dde19059aa405a3cbd032f2",
+        "noPriorCheckpoint": true,
+        "managed": false,
+        "extensionPaths": [],
+        "modelSpec": {
+          "contextWindow": 272000,
+          "maxTokens": 128000,
+          "reasoning": true,
+          "thinkingLevelMap": {
+            "off": "none",
+            "minimal": "low",
+            "low": "low",
+            "medium": "medium",
+            "high": "high",
+            "xhigh": "xhigh",
+            "max": "max"
+          },
+          "commonToolEncoding": "top-level-functions",
+          "supportsAdditionalTools": false,
+          "supportsToolSearch": false
+        },
+        "settings": {
+          "enabled": true,
+          "reserveTokens": 16384,
+          "keepRecentTokens": 20000
+        },
+        "customInstructions": null
+      },
+      "remoteDiscovery": [
+        "<installed-package>/src/index.ts"
+      ],
+      "firstNative": {
+        "model": "gpt-6-luna",
+        "reasoning": {
+          "effort": "none"
+        },
+        "maxOutputTokens": 1000,
+        "stream": true,
+        "inputHash": "8bba3956006a8aaa7e0e3a618ccc352f4d9b52abc2018e5dec0ccf8bd73bad95",
+        "instructionsHash": "75357d685f238b6afd7738be9786fdafde641eb6ca9a3be7471939715a68a4de",
+        "systemMessagesHash": "46712c6e44d47b5000647ce443879ab04d5efd37b7e7416f63a9296784a0796a",
+        "toolsHash": "08151f4f9e169a4c589ba2a24c91bf0b9a1e61c21901c8465138d68f9670d47a",
+        "opaqueItems": 0,
+        "compactionTrigger": false,
+        "rawSHA256": "13c56e79adf08fb13e58ca96ad4196a695dcfb9f709653631d2296c99748cf27",
+        "toolNames": [
+          "record_checkpoint",
+          "workspace_read",
+          "workspace_write",
+          "workspace_edit",
+          "run_regression"
+        ]
+      },
+      "firstRemote": {
+        "model": "gpt-6-luna",
+        "reasoning": {
+          "effort": "none"
+        },
+        "maxOutputTokens": 1000,
+        "stream": true,
+        "inputHash": "3e8add9530ffd9c33f30b9f0fc862c13d738c6abe6d620a569745707fc86b0eb",
+        "instructionsHash": "75357d685f238b6afd7738be9786fdafde641eb6ca9a3be7471939715a68a4de",
+        "systemMessagesHash": "46712c6e44d47b5000647ce443879ab04d5efd37b7e7416f63a9296784a0796a",
+        "toolsHash": "08151f4f9e169a4c589ba2a24c91bf0b9a1e61c21901c8465138d68f9670d47a",
+        "opaqueItems": 1,
+        "compactionTrigger": false,
+        "rawSHA256": "c437581f28c7fcd1bc78b7fcae5fe6b50d1583bb53740a556742c66d1f5a4b5a",
+        "toolNames": [
+          "record_checkpoint",
+          "workspace_read",
+          "workspace_write",
+          "workspace_edit",
+          "run_regression"
+        ]
+      },
+      "compactEncoding": [
+        {
+          "model": "gpt-6-luna",
+          "reasoning": {
+            "effort": "none"
+          },
+          "maxOutputTokens": 1000,
+          "stream": true,
+          "inputHash": "2770d1f0f203339c672056107d9c7ea40d206bc792ec4df42a736d49bab40e77",
+          "instructionsHash": "c464889dcfa60441e642f291445b49523f263e6fb2725d0c25075543a2ec3f8f",
+          "systemMessagesHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "toolsHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "opaqueItems": 0,
+          "compactionTrigger": false,
+          "rawSHA256": "6484a234a951dceb8dd4ae5a49e5e8f024362f5e29a4698159dee8e885e0ae87",
+          "toolNames": []
+        },
+        {
+          "model": "gpt-6-luna",
+          "reasoning": {
+            "effort": "none"
+          },
+          "maxOutputTokens": 1000,
+          "stream": true,
+          "inputHash": "246e687df61e0b5dc312ba60c11ab2e081159b4710df1f814c923a96e56f880e",
+          "instructionsHash": "75357d685f238b6afd7738be9786fdafde641eb6ca9a3be7471939715a68a4de",
+          "systemMessagesHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "toolsHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+          "opaqueItems": 0,
+          "compactionTrigger": true,
+          "rawSHA256": "7810d1d041c44ea0d6796d3be387918a1245f83d84902cb989537af2b234964e",
+          "toolNames": []
+        }
+      ],
+      "exactMatchingKeys": [
+        "firstKeptEntryId",
+        "isSplitTurn",
+        "rawHistoryHash",
+        "prefixHash",
+        "tailHash",
+        "systemPromptHash",
+        "settings",
+        "customInstructions",
+        "modelSpec",
+        "workspacePathHash"
+      ],
+      "actualWorkspaceBehavior": [
+        {
+          "passed": 8,
+          "total": 8,
+          "error": null,
+          "pid": 31023,
+          "exitCode": 0,
+          "signal": null
+        },
+        {
+          "passed": 8,
+          "total": 8,
+          "error": null,
+          "pid": 31025,
+          "exitCode": 0,
+          "signal": null
+        }
+      ],
+      "protectedFiles": 102
+    }
+  ],
+  "commonToolEncodingOverride": {
+    "supportsAdditionalTools": false,
+    "supportsToolSearch": false
+  },
+  "outputCapImplementation": "1000 explicitly inserted in shared experiment onPayload because installed Codex encoder ignores maxTokens; verified after actual encoding. No claim of service support.",
+  "normalization": "assistant text -> Pi text blocks; same deterministic message IDs and timestamps; randomized isolated session UUID is routing metadata, never an arm label",
+  "noQualityConclusion": true
+}

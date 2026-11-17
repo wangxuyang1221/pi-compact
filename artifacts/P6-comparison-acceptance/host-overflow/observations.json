@@ -1,0 +1,252 @@
+{
+  "mode": "overflow",
+  "pid": 72740,
+  "observations": [
+    {
+      "lane": "r1-gpt-6.1-terra-settlement-v2-pi-native",
+      "mode": "overflow",
+      "events": [
+        {
+          "type": "compaction_start",
+          "reason": "overflow",
+          "result": false
+        },
+        {
+          "type": "compaction_end",
+          "reason": "overflow",
+          "result": true
+        }
+      ],
+      "checkpointKind": "native",
+      "method": "native",
+      "streamCalls": [
+        {
+          "model": "gpt-6.1-terra",
+          "scope": "compact",
+          "contextHasMarker": false
+        },
+        {
+          "model": "gpt-6.1-terra",
+          "scope": "continuation",
+          "contextHasMarker": true
+        },
+        {
+          "model": "gpt-6.1-terra",
+          "scope": "continuation",
+          "contextHasMarker": false
+        },
+        {
+          "model": "gpt-6.1-terra",
+          "scope": "continuation",
+          "contextHasMarker": false
+        }
+      ],
+      "stages": [
+        "compact",
+        "continuation",
+        "continuation",
+        "continuation"
+      ],
+      "criticalEntries": [
+        "e0",
+        "e1",
+        "e2",
+        "e3",
+        "e4",
+        "e5",
+        "e6",
+        "e7",
+        "e8",
+        "e9",
+        "e10",
+        "e58"
+      ]
+    },
+    {
+      "lane": "r1-gpt-6.1-terra-settlement-v2-pi-compact-remote",
+      "mode": "overflow",
+      "events": [
+        {
+          "type": "compaction_start",
+          "reason": "overflow",
+          "result": false
+        },
+        {
+          "type": "compaction_end",
+          "reason": "overflow",
+          "result": true
+        }
+      ],
+      "checkpointKind": "opaque",
+      "method": "remote",
+      "streamCalls": [
+        {
+          "model": "gpt-6.1-terra",
+          "scope": "compact",
+          "contextHasMarker": false
+        },
+        {
+          "model": "gpt-6.1-terra",
+          "scope": "continuation",
+          "contextHasMarker": true
+        },
+        {
+          "model": "gpt-6.1-terra",
+          "scope": "continuation",
+          "contextHasMarker": false
+        },
+        {
+          "model": "gpt-6.1-terra",
+          "scope": "continuation",
+          "contextHasMarker": false
+        }
+      ],
+      "stages": [
+        "compact",
+        "continuation",
+        "continuation",
+        "continuation"
+      ],
+      "criticalEntries": [
+        "e0",
+        "e1",
+        "e2",
+        "e3",
+        "e4",
+        "e5",
+        "e6",
+        "e7",
+        "e8",
+        "e9",
+        "e10",
+        "e58"
+      ]
+    },
+    {
+      "lane": "r1-gpt-6-luna-settlement-v2-pi-compact-remote",
+      "mode": "overflow",
+      "events": [
+        {
+          "type": "compaction_start",
+          "reason": "overflow",
+          "result": false
+        },
+        {
+          "type": "compaction_end",
+          "reason": "overflow",
+          "result": true
+        }
+      ],
+      "checkpointKind": "opaque",
+      "method": "remote",
+      "streamCalls": [
+        {
+          "model": "gpt-6-luna",
+          "scope": "compact",
+          "contextHasMarker": false
+        },
+        {
+          "model": "gpt-6-luna",
+          "scope": "continuation",
+          "contextHasMarker": true
+        },
+        {
+          "model": "gpt-6-luna",
+          "scope": "continuation",
+          "contextHasMarker": false
+        },
+        {
+          "model": "gpt-6-luna",
+          "scope": "continuation",
+          "contextHasMarker": false
+        }
+      ],
+      "stages": [
+        "compact",
+        "continuation",
+        "continuation",
+        "continuation"
+      ],
+      "criticalEntries": [
+        "e0",
+        "e1",
+        "e2",
+        "e3",
+        "e4",
+        "e5",
+        "e6",
+        "e7",
+        "e8",
+        "e9",
+        "e10",
+        "e58"
+      ]
+    },
+    {
+      "lane": "r1-gpt-6-luna-settlement-v2-pi-native",
+      "mode": "overflow",
+      "events": [
+        {
+          "type": "compaction_start",
+          "reason": "overflow",
+          "result": false
+        },
+        {
+          "type": "compaction_end",
+          "reason": "overflow",
+          "result": true
+        }
+      ],
+      "checkpointKind": "native",
+      "method": "native",
+      "streamCalls": [
+        {
+          "model": "gpt-6-luna",
+          "scope": "compact",
+          "contextHasMarker": false
+        },
+        {
+          "model": "gpt-6-luna",
+          "scope": "continuation",
+          "contextHasMarker": true
+        },
+        {
+          "model": "gpt-6-luna",
+          "scope": "continuation",
+          "contextHasMarker": false
+        },
+        {
+          "model": "gpt-6-luna",
+          "scope": "continuation",
+          "contextHasMarker": false
+        }
+      ],
+      "stages": [
+        "compact",
+        "continuation",
+        "continuation",
+        "continuation"
+      ],
+      "criticalEntries": [
+        "e0",
+        "e1",
+        "e2",
+        "e3",
+        "e4",
+        "e5",
+        "e6",
+        "e7",
+        "e8",
+        "e9",
+        "e10",
+        "e58"
+      ]
+    }
+  ],
+  "dispatches": 16,
+  "cleanup": {
+    "trackedSockets": 0,
+    "listeners": 0,
+    "deniedNetworkActions": 0
+  }
+}

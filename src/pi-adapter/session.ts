@@ -1,3 +1,4 @@
+import { isAbsolute } from 'node:path';
 import { AsyncLocalStorage } from 'node:async_hooks';
 import { realpathSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
@@ -667,7 +668,7 @@ export function install(host: typeof Pi, pi: Pi.ExtensionAPI): void {
     const build = prototype._buildRuntime;
     active.restore.push(replace(prototype, '_buildRuntime', function (this: Session, options) {
       const managed = this._resourceLoader.getExtensions().extensions.some(extension =>
-        active.entrypoints.has(realpathSync(extension.resolvedPath)));
+        isAbsolute(extension.resolvedPath) && active.entrypoints.has(realpathSync(extension.resolvedPath)));
       if (!managed) return build.call(this, options);
       const owner = ownFile(active, this.sessionManager);
       if (owner.session && owner.session !== this) throw new Error('SessionManager is already managed by another session.');

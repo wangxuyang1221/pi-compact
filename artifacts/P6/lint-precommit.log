@@ -1,0 +1,11 @@
+
+> pi-compact@0.1.0 lint /Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec
+> eslint src tests scripts
+
+
+/Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec/scripts/verify-p6-perf.mjs
+  3:10  error  'readFileSync' is defined but never used  @typescript-eslint/no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+ ELIFECYCLE  Command failed with exit code 1.

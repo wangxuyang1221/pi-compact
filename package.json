@@ -2,15 +2,16 @@
   "name": "pi-compact",
   "version": "0.1.0",
   "type": "module",
-  "description": "Session-scoped native compaction safety for Pi 1.5.2",
+  "description": "Percentage-based context compaction, Codex checkpoints and native fallback for Pi 1.5.2",
   "files": [
     "src",
     "README.md",
+    "docs/compatibility.md",
+    "docs/install.md",
+    "docs/recovery.md",
+    "docs/live-acceptance.md",
     "docs/p1-adapter.md",
     "docs/p2-policy.md",
-    "docs/design.md",
-    "docs/roadmap.md",
-    "GLOSSARY.md",
     "docs/p3-checkpoints.md",
     "docs/p4-migration.md",
     "docs/p5-renderer.md"
@@ -23,7 +24,7 @@
   "scripts": {
     "lint": "eslint src tests scripts",
     "typecheck": "tsc --noEmit",
-    "test": "tsx --test tests/*.test.ts",
+    "test": "tsx --test tests/*.test.ts && node --test tests/*.test.mjs",
     "verify:live": "node scripts/verify-live.mjs",
     "verify:p2": "node scripts/verify-p2.mjs",
     "verify:p1-fixes": "node scripts/verify-p1-fixes.mjs",
@@ -37,7 +38,9 @@
     "record:p5-demo": "node scripts/record-p5-demo.mjs",
     "verify:p5-package": "node scripts/verify-p5-package.mjs",
     "verify:p5": "node scripts/verify-p5-development.mjs && node scripts/verify-p5-integrated.mjs",
-    "verify:p5-lifecycle": "node scripts/verify-p5-lifecycle.mjs lifecycle final-dispose"
+    "verify:p5-lifecycle": "node scripts/verify-p5-lifecycle.mjs lifecycle final-dispose",
+    "verify:p6": "node scripts/verify-p6.mjs",
+    "acceptance:plan": "node scripts/live-acceptance.mjs"
   },
   "engines": {
     "node": ">=22.19.0"
@@ -55,5 +58,10 @@
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.46.4"
   },
-  "packageManager": "pnpm@10.11.0"
+  "packageManager": "pnpm@10.11.0",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "compaction"
+  ]
 }

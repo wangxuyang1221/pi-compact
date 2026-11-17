@@ -1,0 +1,10 @@
+{
+  "cases": 7,
+  "priorComparisonRegressions": 3,
+  "lint": "PASS after removing 13 unused imports",
+  "typecheck": "PASS",
+  "currentRealFreeze": "EXECUTION_FREEZE_MISMATCH; live execution remains stopped",
+  "realRequestsDuringFix": 0,
+  "realAuthReadsDuringFix": 0,
+  "packageUnchanged": true
+}

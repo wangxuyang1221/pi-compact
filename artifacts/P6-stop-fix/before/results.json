@@ -1,0 +1,127 @@
+{
+  "fixture": true,
+  "realRequests": 0,
+  "realAuthReads": 0,
+  "results": [
+    {
+      "name": "non-sse",
+      "sends": 2,
+      "errors": [
+        "NON_SSE_RESPONSE",
+        null
+      ],
+      "rows": [
+        {
+          "state": "failed",
+          "failure": "NON_SSE_RESPONSE"
+        },
+        {
+          "state": "completed",
+          "auditFailure": null
+        }
+      ]
+    },
+    {
+      "name": "missing-content-type",
+      "sends": 2,
+      "errors": [
+        "NON_SSE_RESPONSE",
+        null
+      ],
+      "rows": [
+        {
+          "state": "failed",
+          "failure": "NON_SSE_RESPONSE"
+        },
+        {
+          "state": "completed",
+          "auditFailure": null
+        }
+      ]
+    },
+    {
+      "name": "malformed-sse",
+      "sends": 2,
+      "errors": [
+        "HOST_OR_TRANSPORT_FAILURE",
+        null
+      ],
+      "rows": [
+        {
+          "state": "failed",
+          "failure": "HOST_OR_TRANSPORT_FAILURE"
+        },
+        {
+          "state": "completed",
+          "auditFailure": null
+        }
+      ]
+    },
+    {
+      "name": "missing-terminal",
+      "sends": 1,
+      "errors": [
+        "USAGE_UNAUDITABLE",
+        "COMPARISON_AUDIT_STOP"
+      ],
+      "rows": [
+        {
+          "state": "failed",
+          "failure": "USAGE_UNAUDITABLE",
+          "auditFailure": "USAGE_UNAUDITABLE"
+        }
+      ]
+    },
+    {
+      "name": "send-failure",
+      "sends": 2,
+      "errors": [
+        "HOST_OR_TRANSPORT_FAILURE",
+        null
+      ],
+      "rows": [
+        {
+          "state": "failed",
+          "failure": "HOST_OR_TRANSPORT_FAILURE"
+        },
+        {
+          "state": "completed",
+          "auditFailure": null
+        }
+      ]
+    },
+    {
+      "name": "http-rejected",
+      "sends": 1,
+      "errors": [
+        "HTTP_REJECTED",
+        "COMPARISON_AUDIT_STOP"
+      ],
+      "rows": [
+        {
+          "state": "failed",
+          "failure": "HTTP_REJECTED",
+          "auditFailure": "HTTP_REJECTED"
+        }
+      ]
+    },
+    {
+      "name": "valid-sse",
+      "sends": 2,
+      "errors": [
+        null,
+        null
+      ],
+      "rows": [
+        {
+          "state": "completed",
+          "auditFailure": null
+        },
+        {
+          "state": "completed",
+          "auditFailure": null
+        }
+      ]
+    }
+  ]
+}

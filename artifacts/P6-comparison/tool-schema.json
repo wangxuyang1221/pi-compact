@@ -1,0 +1,134 @@
+{
+  "version": "comparison-tools/v2",
+  "tools": [
+    {
+      "name": "record_checkpoint",
+      "description": "First operation, exactly once, before workspace access. Record recalled facts, pending task IDs and state at compaction. Unknown values may be null. No answers returned.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "facts": {
+            "type": "object",
+            "additionalProperties": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "pending": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "state": {
+            "type": "object",
+            "additionalProperties": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "boolean"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "facts",
+          "pending",
+          "state"
+        ]
+      }
+    },
+    {
+      "name": "workspace_read",
+      "description": "Read one existing regular file within this task workspace.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "path"
+        ]
+      }
+    },
+    {
+      "name": "workspace_write",
+      "description": "Replace the business module only, with complete JavaScript module source (maximum 64000 characters).",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string"
+          },
+          "content": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "path",
+          "content"
+        ]
+      }
+    },
+    {
+      "name": "workspace_edit",
+      "description": "Replace one unique exact text span in the business module only.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string"
+          },
+          "oldText": {
+            "type": "string"
+          },
+          "newText": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "path",
+          "oldText",
+          "newText"
+        ]
+      }
+    },
+    {
+      "name": "run_regression",
+      "description": "Fixed host regression runner. No shell command. Executes the current module in an OS sandbox and returns aggregate passed/total only, never test inputs, expected values or oracle source.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false,
+        "required": []
+      }
+    }
+  ]
+}

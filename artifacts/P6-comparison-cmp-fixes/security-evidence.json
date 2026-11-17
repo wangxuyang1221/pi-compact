@@ -1,0 +1,518 @@
+{
+  "kind": "OFFLINE_SECURITY_AND_SCORER_EVIDENCE",
+  "realMeasurements": false,
+  "providerRequests": 0,
+  "tests": [
+    {
+      "name": "default-plan-help-real-have-no-auth-network-or-worker",
+      "passed": true,
+      "evidence": [
+        {
+          "command": "plan",
+          "exitCode": 0,
+          "stdoutBytes": 5529,
+          "stderr": ""
+        },
+        {
+          "command": "help",
+          "exitCode": 0,
+          "stdoutBytes": 297,
+          "stderr": ""
+        },
+        {
+          "command": "real",
+          "exitCode": 1,
+          "stdoutBytes": 0,
+          "stderr": "COMPARISON_GRANT_REQUIRED"
+        },
+        {
+          "command": "invalid-real-unauthorized",
+          "exitCode": 1,
+          "stderr": "COMPARISON_GRANT_REQUIRED"
+        },
+        {
+          "command": "invalid-real-expired",
+          "exitCode": 1,
+          "stderr": "COMPARISON_BINDING_OR_BUDGET_INVALID"
+        },
+        {
+          "command": "invalid-real-budget",
+          "exitCode": 1,
+          "stderr": "COMPARISON_BINDING_OR_BUDGET_INVALID"
+        },
+        {
+          "command": "invalid-real-target",
+          "exitCode": 1,
+          "stderr": "COMPARISON_SCOPE_INVALID"
+        },
+        {
+          "command": "invalid-real-fixture",
+          "exitCode": 1,
+          "stderr": "REAL_AUTHORIZATION_REQUIRED"
+        }
+      ]
+    },
+    {
+      "name": "old-functional-grant-and-real-grants-rejected",
+      "passed": true
+    },
+    {
+      "name": "full-budget-schedule-compatibility-only",
+      "passed": true,
+      "evidence": {
+        "reservations": 8,
+        "outputReserved": 8000,
+        "models": [
+          {
+            "model": "gpt-6.1-terra",
+            "rows": 4
+          },
+          {
+            "model": "gpt-6-luna",
+            "rows": 4
+          }
+        ],
+        "scheduleHash": "5078996e5b6684ba5e1aaac0689e0a4b437e5e78f8be5d011bd6382b6168e5c3"
+      }
+    },
+    {
+      "name": "full-budget-schedule-quality-observation",
+      "passed": true,
+      "evidence": {
+        "reservations": 56,
+        "outputReserved": 56000,
+        "models": [
+          {
+            "model": "gpt-6.1-terra",
+            "rows": 28
+          },
+          {
+            "model": "gpt-6-luna",
+            "rows": 28
+          }
+        ],
+        "scheduleHash": "c03de56cf44f7c262b3ebfae1fcf5ad267c23272d2a91917a3afa8e0ce6bcc70"
+      }
+    },
+    {
+      "name": "full-budget-schedule-paired-five",
+      "passed": true,
+      "evidence": {
+        "reservations": 248,
+        "outputReserved": 248000,
+        "models": [
+          {
+            "model": "gpt-6.1-terra",
+            "rows": 124
+          },
+          {
+            "model": "gpt-6-luna",
+            "rows": 124
+          }
+        ],
+        "scheduleHash": "53296825a1072da9d85a86bbbfd686579ccc25018d1747df0516419d9dc71592"
+      }
+    },
+    {
+      "name": "concurrent-hidden-round-fallback-and-recovery-no-refund",
+      "passed": true,
+      "evidence": {
+        "compactReservations": 2,
+        "continuationReservations": 4,
+        "concurrentRejected": 5,
+        "afterReopen": 6
+      }
+    },
+    {
+      "name": "crashed-owner-recovery-keeps-unsent-reservation",
+      "passed": true,
+      "evidence": {
+        "crashedExitCode": 23,
+        "recoveredReservations": 1,
+        "knownSent": false,
+        "refunded": false
+      }
+    },
+    {
+      "name": "R1-literal-credentials-only-and-R2-private-paths",
+      "passed": true,
+      "evidence": {
+        "unrelatedProviderParsed": false,
+        "helperExecuted": false,
+        "symlinkRejectedBeforeWrite": true,
+        "sentinel": "unchanged"
+      }
+    },
+    {
+      "name": "OS-sandbox-file-network-process-oracle-import-probes",
+      "passed": true,
+      "evidence": {
+        "rawProbe": {
+          "pid": 61535,
+          "exitCode": 0,
+          "signal": null,
+          "outputs": [
+            {
+              "oracle": "EPERM",
+              "credential": "EPERM",
+              "host": "EPERM",
+              "write": "EPERM",
+              "spawn": "EPERM",
+              "import": "ERR_MODULE_NOT_FOUND",
+              "network": "EPERM"
+            }
+          ],
+          "error": null,
+          "elapsedMs": null
+        },
+        "timeout": {
+          "signal": "SIGKILL",
+          "error": "SANDBOX_EXECUTION_FAILED"
+        },
+        "sandboxBinaryHash": "6ac46d7986a3e93c57049a484f41e63aaf48d9442d69d9565518230ca5c1a8d6"
+      }
+    },
+    {
+      "name": "typed-scorer-and-actual-business-settlement-v2",
+      "passed": true,
+      "evidence": {
+        "positive": {
+          "passed": 7,
+          "total": 7,
+          "error": null,
+          "pid": 61578,
+          "exitCode": 0,
+          "signal": null
+        },
+        "stub": {
+          "passed": 2,
+          "total": 7,
+          "error": null,
+          "pid": 61579,
+          "exitCode": 0,
+          "signal": null
+        },
+        "staleRules": [
+          {
+            "passed": 6,
+            "total": 7,
+            "error": null,
+            "pid": 61580,
+            "exitCode": 0,
+            "signal": null
+          },
+          {
+            "passed": 6,
+            "total": 7,
+            "error": null,
+            "pid": 61581,
+            "exitCode": 0,
+            "signal": null
+          },
+          {
+            "passed": 6,
+            "total": 7,
+            "error": null,
+            "pid": 61582,
+            "exitCode": 0,
+            "signal": null
+          }
+        ],
+        "exact": {
+          "facts": {
+            "tp": 6,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1,
+            "recall": 1
+          },
+          "state": {
+            "tp": 5,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1,
+            "recall": 1
+          },
+          "pending": {
+            "tp": 2,
+            "fp": 0,
+            "fn": 0
+          },
+          "stale": {
+            "adopted": 0,
+            "opportunities": 3
+          }
+        },
+        "stale": {
+          "facts": {
+            "tp": 3,
+            "fp": 3,
+            "fn": 3,
+            "precision": 0.5,
+            "recall": 0.5
+          },
+          "state": {
+            "tp": 5,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1,
+            "recall": 1
+          },
+          "pending": {
+            "tp": 2,
+            "fp": 0,
+            "fn": 0
+          },
+          "stale": {
+            "adopted": 3,
+            "opportunities": 3
+          }
+        },
+        "wrongTypes": {
+          "facts": {
+            "tp": 6,
+            "fp": 1,
+            "fn": 0,
+            "precision": 0.8571428571428571,
+            "recall": 1
+          },
+          "state": {
+            "tp": 3,
+            "fp": 2,
+            "fn": 2,
+            "precision": 0.6,
+            "recall": 0.6
+          },
+          "pending": {
+            "tp": 2,
+            "fp": 1,
+            "fn": 0
+          },
+          "stale": {
+            "adopted": 0,
+            "opportunities": 3
+          }
+        },
+        "protectedFiles": 102,
+        "modelToolOutput": {
+          "passed": 7,
+          "total": 7
+        }
+      }
+    },
+    {
+      "name": "typed-scorer-and-actual-business-redirect-v2",
+      "passed": true,
+      "evidence": {
+        "positive": {
+          "passed": 8,
+          "total": 8,
+          "error": null,
+          "pid": 61584,
+          "exitCode": 0,
+          "signal": null
+        },
+        "stub": {
+          "passed": 5,
+          "total": 8,
+          "error": null,
+          "pid": 61602,
+          "exitCode": 0,
+          "signal": null
+        },
+        "staleRules": [
+          {
+            "passed": 5,
+            "total": 8,
+            "error": null,
+            "pid": 61603,
+            "exitCode": 0,
+            "signal": null
+          },
+          {
+            "passed": 7,
+            "total": 8,
+            "error": null,
+            "pid": 61604,
+            "exitCode": 0,
+            "signal": null
+          },
+          {
+            "passed": 6,
+            "total": 8,
+            "error": null,
+            "pid": 61605,
+            "exitCode": 0,
+            "signal": null
+          }
+        ],
+        "exact": {
+          "facts": {
+            "tp": 6,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1,
+            "recall": 1
+          },
+          "state": {
+            "tp": 5,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1,
+            "recall": 1
+          },
+          "pending": {
+            "tp": 2,
+            "fp": 0,
+            "fn": 0
+          },
+          "stale": {
+            "adopted": 0,
+            "opportunities": 3
+          }
+        },
+        "stale": {
+          "facts": {
+            "tp": 3,
+            "fp": 3,
+            "fn": 3,
+            "precision": 0.5,
+            "recall": 0.5
+          },
+          "state": {
+            "tp": 5,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1,
+            "recall": 1
+          },
+          "pending": {
+            "tp": 2,
+            "fp": 0,
+            "fn": 0
+          },
+          "stale": {
+            "adopted": 3,
+            "opportunities": 3
+          }
+        },
+        "wrongTypes": {
+          "facts": {
+            "tp": 6,
+            "fp": 1,
+            "fn": 0,
+            "precision": 0.8571428571428571,
+            "recall": 1
+          },
+          "state": {
+            "tp": 3,
+            "fp": 2,
+            "fn": 2,
+            "precision": 0.6,
+            "recall": 0.6
+          },
+          "pending": {
+            "tp": 2,
+            "fp": 1,
+            "fn": 0
+          },
+          "stale": {
+            "adopted": 0,
+            "opportunities": 3
+          }
+        },
+        "protectedFiles": 102,
+        "modelToolOutput": {
+          "passed": 8,
+          "total": 8
+        }
+      }
+    },
+    {
+      "name": "null-usage-failure-denominator-and-no-fixture-superiority",
+      "passed": true,
+      "evidence": {
+        "kind": "FIXTURE_FLOW_ONLY",
+        "realMeasurements": false,
+        "superiorityVerdict": "不可形成优势结论：fixture 预先提供摘要、checkpoint 和参考实现。",
+        "accounting": {
+          "scheduledLanes": 12,
+          "scheduledComparisonLanes": 8,
+          "startedLanes": 0,
+          "reservedDispatches": 0,
+          "knownSentDispatches": 0,
+          "serverConfirmedDispatches": 0,
+          "failedLanes": 12,
+          "rawComparisonFailuresInDenominator": 8,
+          "stages": {
+            "pilot": {
+              "compact": {
+                "input": null,
+                "cacheRead": null,
+                "cacheWrite": null,
+                "output": null,
+                "reasoning": null,
+                "total": null
+              },
+              "continuation": {
+                "input": null,
+                "cacheRead": null,
+                "cacheWrite": null,
+                "output": null,
+                "reasoning": null,
+                "total": null
+              }
+            },
+            "comparison": {
+              "compact": {
+                "input": null,
+                "cacheRead": null,
+                "cacheWrite": null,
+                "output": null,
+                "reasoning": null,
+                "total": null
+              },
+              "continuation": {
+                "input": null,
+                "cacheRead": null,
+                "cacheWrite": null,
+                "output": null,
+                "reasoning": null,
+                "total": null
+              }
+            }
+          }
+        },
+        "statisticalComparison": null
+      }
+    }
+  ],
+  "processes": [
+    61489,
+    61490,
+    61491,
+    61492,
+    61493,
+    61494,
+    61495,
+    61496,
+    61531,
+    61535,
+    61573,
+    61578,
+    61579,
+    61580,
+    61581,
+    61582,
+    61584,
+    61602,
+    61603,
+    61604,
+    61605
+  ],
+  "cleanup": {
+    "alive": [],
+    "listeners": 0,
+    "networkProbe": "OS denied before connect; no server created"
+  }
+}

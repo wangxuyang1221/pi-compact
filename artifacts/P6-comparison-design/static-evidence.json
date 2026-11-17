@@ -1,0 +1,168 @@
+{
+  "kind": "installed-static-source-only",
+  "piVersion": "1.5.2",
+  "baseCommit": "1c7d88be1104ee55b024620db7227e4fd89ae9b5",
+  "realAvailability": "unknown",
+  "models": [
+    {
+      "id": "gpt-6-luna",
+      "name": "GPT-6 Luna",
+      "api": "openai-codex-responses",
+      "provider": "openai-codex",
+      "baseUrl": "https://chatgpt.com/backend-api",
+      "reasoning": true,
+      "input": [
+        "text",
+        "image"
+      ],
+      "cost": {
+        "input": 0.1,
+        "output": 0.5,
+        "cacheRead": 0.01,
+        "cacheWrite": 0.125,
+        "tiers": [
+          {
+            "inputTokensAbove": 272000,
+            "input": 0.2,
+            "output": 0.75,
+            "cacheRead": 0.02,
+            "cacheWrite": 0.25
+          }
+        ]
+      },
+      "contextWindow": 272000,
+      "maxTokens": 128000,
+      "thinkingLevelMap": {
+        "off": "none",
+        "minimal": "low",
+        "low": "low",
+        "medium": "medium",
+        "high": "high",
+        "xhigh": "xhigh",
+        "max": "max"
+      },
+      "compat": {
+        "supportsOpenAIGrammarTools": true,
+        "supportsAdditionalTools": true,
+        "supportsToolSearch": true,
+        "supportsMidConvoSystemMessages": true
+      },
+      "inputLimits": {
+        "images": {
+          "resize": {
+            "maxWidth": 2000,
+            "maxHeight": 2000,
+            "maxBytes": 4718592,
+            "jpegQuality": 80
+          }
+        }
+      },
+      "type": "chat"
+    },
+    {
+      "id": "gpt-6.1-terra",
+      "name": "GPT-6.1 Terra",
+      "api": "openai-codex-responses",
+      "provider": "openai-codex",
+      "baseUrl": "https://chatgpt.com/backend-api",
+      "reasoning": true,
+      "input": [
+        "text",
+        "image"
+      ],
+      "cost": {
+        "input": 1,
+        "output": 5,
+        "cacheRead": 0.05,
+        "cacheWrite": 1.25,
+        "tiers": [
+          {
+            "inputTokensAbove": 272000,
+            "input": 2,
+            "output": 7.5,
+            "cacheRead": 0.1,
+            "cacheWrite": 2.5
+          }
+        ]
+      },
+      "contextWindow": 500000,
+      "maxTokens": 128000,
+      "thinkingLevelMap": {
+        "off": "none",
+        "minimal": "low",
+        "low": "low",
+        "medium": "medium",
+        "high": "high",
+        "xhigh": "xhigh",
+        "max": "max"
+      },
+      "compat": {
+        "supportsOpenAIGrammarTools": true,
+        "supportsAdditionalTools": true,
+        "supportsToolSearch": true,
+        "supportsMidConvoSystemMessages": true
+      },
+      "inputLimits": {
+        "images": {
+          "resize": {
+            "maxWidth": 2000,
+            "maxHeight": 2000,
+            "maxBytes": 4718592,
+            "jpegQuality": 80
+          }
+        }
+      },
+      "type": "chat"
+    }
+  ],
+  "sources": [
+    {
+      "path": "/Users/wangxuyang/Library/pnpm/store/v11/links/@earendil-works/pi-ai/1.5.2/936659a097ad7387454e0c31387e2820428b6bb6ba34ef18ddecb705f03a983c/node_modules/@earendil-works/pi-ai/dist/providers/data/openai-codex.json",
+      "sha256": "dd30453068f310317abf35d9adc6d841339a1351f0c6925a6aff45d975e0257c"
+    },
+    {
+      "path": "/Users/wangxuyang/Library/pnpm/store/v11/links/@earendil-works/pi-ai/1.5.2/936659a097ad7387454e0c31387e2820428b6bb6ba34ef18ddecb705f03a983c/node_modules/@earendil-works/pi-ai/dist/api/openai-codex-responses.js",
+      "sha256": "4a756bd6c87a6357a811ee512f47d5c3991026bcd213e00a4330be7b0fb4a80d"
+    },
+    {
+      "path": "/Users/wangxuyang/Library/pnpm/store/v11/links/@earendil-works/pi-ai/1.5.2/936659a097ad7387454e0c31387e2820428b6bb6ba34ef18ddecb705f03a983c/node_modules/@earendil-works/pi-ai/dist/api/openai-responses-shared.js",
+      "sha256": "00796997da00cd4cb77ae8c1c4bb92a3d4a4a4dd5bea18524de7173e4f877e4c"
+    },
+    {
+      "path": "/Users/wangxuyang/Library/pnpm/store/v11/links/@earendil-works/pi-ai/1.5.2/936659a097ad7387454e0c31387e2820428b6bb6ba34ef18ddecb705f03a983c/node_modules/@earendil-works/pi-ai/dist/models.js",
+      "sha256": "f23dda9e5a472f9556c9b834d924504b771af8275d17a49496100a4f4b91e2dc"
+    },
+    {
+      "path": "/Users/wangxuyang/Library/pnpm/store/v11/links/@earendil-works/pi-coding-agent/1.5.2/643b01c0aa78c8ef11bcca81208b3bcdf7c0b473aa9432569290180e541a3aca/node_modules/@earendil-works/pi-coding-agent/dist/core/settings-defaults.js",
+      "sha256": "e0567d94626f760007fd3511df8a4556c571d8e882b8fe8c2b69c87dbcb094e0"
+    },
+    {
+      "path": "/Users/wangxuyang/Library/pnpm/store/v11/links/@earendil-works/pi-coding-agent/1.5.2/643b01c0aa78c8ef11bcca81208b3bcdf7c0b473aa9432569290180e541a3aca/node_modules/@earendil-works/pi-coding-agent/dist/core/compaction/compaction.js",
+      "sha256": "f51e78ef1da66b5803fc91e185f07b968f8f989ab9326b7744958416aad3f6f6"
+    },
+    {
+      "path": "/Users/wangxuyang/Library/pnpm/store/v11/links/@earendil-works/pi-coding-agent/1.5.2/643b01c0aa78c8ef11bcca81208b3bcdf7c0b473aa9432569290180e541a3aca/node_modules/@earendil-works/pi-coding-agent/dist/core/compaction/utils.js",
+      "sha256": "68409c9ac824176e86be7a3a922dbc77dae77da8b612039c235eac7de6c6931d"
+    },
+    {
+      "path": "src/codex/compact.ts",
+      "sha256": "947a06e1a2d2b13207235c36d4d6db0215f2583cca4b2732264cc723a2635136"
+    },
+    {
+      "path": "src/pi-adapter/session.ts",
+      "sha256": "d376c3ba49b8daced746790823b908bfaa431056d0fd6e5ef9f6fb55c9a7c4d2"
+    },
+    {
+      "path": "scripts/live/guard.mjs",
+      "sha256": "50dabfee0721e93c275bf007aca8f1f21e7034569fc9cadd4d3861319584558b"
+    },
+    {
+      "path": "scripts/live/executor.mjs",
+      "sha256": "8be85f9f4da40c2ed253e5a4168f52ec3529b7bf34b651b6d0495abfbd0be567"
+    },
+    {
+      "path": "scripts/live/task.mjs",
+      "sha256": "14084d572a38f13f96467b9c51393c1ab2eaf626febd3468972dbb770eface2d"
+    }
+  ]
+}

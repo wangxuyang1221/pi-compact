@@ -1,0 +1,38 @@
+[
+  {
+    "id": "pilot-gpt-6.1-terra-pi-native",
+    "phase": "pilot",
+    "model": "gpt-6.1-terra",
+    "task": "settlement-v2",
+    "arm": "pi-native",
+    "repeat": 0,
+    "maxDispatches": 2
+  },
+  {
+    "id": "pilot-gpt-6.1-terra-pi-compact-remote",
+    "phase": "pilot",
+    "model": "gpt-6.1-terra",
+    "task": "settlement-v2",
+    "arm": "pi-compact-remote",
+    "repeat": 0,
+    "maxDispatches": 2
+  },
+  {
+    "id": "pilot-gpt-6-luna-pi-native",
+    "phase": "pilot",
+    "model": "gpt-6-luna",
+    "task": "settlement-v2",
+    "arm": "pi-native",
+    "repeat": 0,
+    "maxDispatches": 2
+  },
+  {
+    "id": "pilot-gpt-6-luna-pi-compact-remote",
+    "phase": "pilot",
+    "model": "gpt-6-luna",
+    "task": "settlement-v2",
+    "arm": "pi-compact-remote",
+    "repeat": 0,
+    "maxDispatches": 2
+  }
+]

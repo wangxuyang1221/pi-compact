@@ -1,0 +1,474 @@
+{
+  "fixture": true,
+  "realRequests": 0,
+  "results": [
+    {
+      "version": "before",
+      "name": "non-sse",
+      "sends": 2,
+      "errors": [
+        "NON_SSE_RESPONSE",
+        null
+      ],
+      "rows": [
+        {
+          "state": "failed",
+          "failure": "NON_SSE_RESPONSE"
+        },
+        {
+          "state": "completed",
+          "auditFailure": null
+        }
+      ]
+    },
+    {
+      "version": "before",
+      "name": "missing-content-type",
+      "sends": 2,
+      "errors": [
+        "NON_SSE_RESPONSE",
+        null
+      ],
+      "rows": [
+        {
+          "state": "failed",
+          "failure": "NON_SSE_RESPONSE"
+        },
+        {
+          "state": "completed",
+          "auditFailure": null
+        }
+      ]
+    },
+    {
+      "version": "before",
+      "name": "malformed",
+      "sends": 2,
+      "errors": [
+        "HOST_OR_TRANSPORT_FAILURE",
+        null
+      ],
+      "rows": [
+        {
+          "state": "failed",
+          "failure": "HOST_OR_TRANSPORT_FAILURE"
+        },
+        {
+          "state": "completed",
+          "auditFailure": null
+        }
+      ]
+    },
+    {
+      "version": "before",
+      "name": "send-throw",
+      "sends": 2,
+      "errors": [
+        "HOST_OR_TRANSPORT_FAILURE",
+        null
+      ],
+      "rows": [
+        {
+          "state": "failed",
+          "failure": "HOST_OR_TRANSPORT_FAILURE"
+        },
+        {
+          "state": "completed",
+          "auditFailure": null
+        }
+      ]
+    },
+    {
+      "version": "before",
+      "name": "empty-body",
+      "sends": 2,
+      "errors": [
+        "MISSING_SSE_BODY",
+        null
+      ],
+      "rows": [
+        {
+          "state": "failed",
+          "failure": "MISSING_SSE_BODY"
+        },
+        {
+          "state": "completed",
+          "auditFailure": null
+        }
+      ]
+    },
+    {
+      "version": "before",
+      "name": "missing-terminal",
+      "sends": 1,
+      "errors": [
+        "USAGE_UNAUDITABLE",
+        "HOST_OR_TRANSPORT_FAILURE"
+      ],
+      "rows": [
+        {
+          "state": "failed",
+          "failure": "USAGE_UNAUDITABLE",
+          "auditFailure": "USAGE_UNAUDITABLE"
+        }
+      ]
+    },
+    {
+      "version": "before",
+      "name": "read-error",
+      "sends": 2,
+      "errors": [
+        "HOST_OR_TRANSPORT_FAILURE",
+        null
+      ],
+      "rows": [
+        {
+          "state": "failed",
+          "failure": "HOST_OR_TRANSPORT_FAILURE"
+        },
+        {
+          "state": "completed",
+          "auditFailure": null
+        }
+      ]
+    },
+    {
+      "version": "before",
+      "name": "cancel-stream",
+      "sends": 2,
+      "errors": [
+        null,
+        null
+      ],
+      "rows": [
+        {
+          "state": "failed",
+          "failure": "STREAM_CANCELLED"
+        },
+        {
+          "state": "completed",
+          "auditFailure": null
+        }
+      ]
+    },
+    {
+      "version": "before",
+      "name": "http400",
+      "sends": 1,
+      "errors": [
+        "HTTP_REJECTED",
+        "HOST_OR_TRANSPORT_FAILURE"
+      ],
+      "rows": [
+        {
+          "state": "failed",
+          "failure": "HTTP_REJECTED",
+          "auditFailure": "HTTP_REJECTED"
+        }
+      ]
+    },
+    {
+      "version": "before",
+      "name": "http429",
+      "sends": 1,
+      "errors": [
+        "HTTP_REJECTED",
+        "HOST_OR_TRANSPORT_FAILURE"
+      ],
+      "rows": [
+        {
+          "state": "failed",
+          "failure": "HTTP_REJECTED",
+          "auditFailure": "HTTP_REJECTED"
+        }
+      ]
+    },
+    {
+      "version": "before",
+      "name": "incomplete",
+      "sends": 1,
+      "errors": [
+        "OUTPUT_INCOMPLETE",
+        "HOST_OR_TRANSPORT_FAILURE"
+      ],
+      "rows": [
+        {
+          "state": "failed",
+          "failure": "OUTPUT_INCOMPLETE",
+          "auditFailure": "OUTPUT_INCOMPLETE"
+        }
+      ]
+    },
+    {
+      "version": "before",
+      "name": "bad-usage",
+      "sends": 1,
+      "errors": [
+        "USAGE_UNAUDITABLE",
+        "HOST_OR_TRANSPORT_FAILURE"
+      ],
+      "rows": [
+        {
+          "state": "failed",
+          "failure": "USAGE_UNAUDITABLE",
+          "auditFailure": "USAGE_UNAUDITABLE"
+        }
+      ]
+    },
+    {
+      "version": "before",
+      "name": "cap",
+      "sends": 1,
+      "errors": [
+        "SERVER_OUTPUT_CAP_EXCEEDED",
+        "SERVER_OUTPUT_CAP_EXCEEDED"
+      ],
+      "rows": [
+        {
+          "state": "failed",
+          "failure": "SERVER_OUTPUT_CAP_EXCEEDED",
+          "auditFailure": "SERVER_OUTPUT_CAP_EXCEEDED"
+        }
+      ]
+    },
+    {
+      "version": "before",
+      "name": "valid",
+      "sends": 2,
+      "errors": [
+        null,
+        null
+      ],
+      "rows": [
+        {
+          "state": "completed",
+          "auditFailure": null
+        },
+        {
+          "state": "completed",
+          "auditFailure": null
+        }
+      ]
+    },
+    {
+      "version": "after",
+      "name": "non-sse",
+      "sends": 1,
+      "errors": [
+        "NON_SSE_RESPONSE",
+        "COMPARISON_AUDIT_STOP"
+      ],
+      "rows": [
+        {
+          "state": "failed",
+          "failure": "NON_SSE_RESPONSE"
+        }
+      ]
+    },
+    {
+      "version": "after",
+      "name": "missing-content-type",
+      "sends": 1,
+      "errors": [
+        "NON_SSE_RESPONSE",
+        "COMPARISON_AUDIT_STOP"
+      ],
+      "rows": [
+        {
+          "state": "failed",
+          "failure": "NON_SSE_RESPONSE"
+        }
+      ]
+    },
+    {
+      "version": "after",
+      "name": "malformed",
+      "sends": 1,
+      "errors": [
+        "HOST_OR_TRANSPORT_FAILURE",
+        "COMPARISON_AUDIT_STOP"
+      ],
+      "rows": [
+        {
+          "state": "failed",
+          "failure": "HOST_OR_TRANSPORT_FAILURE"
+        }
+      ]
+    },
+    {
+      "version": "after",
+      "name": "send-throw",
+      "sends": 1,
+      "errors": [
+        "HOST_OR_TRANSPORT_FAILURE",
+        "COMPARISON_AUDIT_STOP"
+      ],
+      "rows": [
+        {
+          "state": "failed",
+          "failure": "HOST_OR_TRANSPORT_FAILURE"
+        }
+      ]
+    },
+    {
+      "version": "after",
+      "name": "empty-body",
+      "sends": 1,
+      "errors": [
+        "MISSING_SSE_BODY",
+        "COMPARISON_AUDIT_STOP"
+      ],
+      "rows": [
+        {
+          "state": "failed",
+          "failure": "MISSING_SSE_BODY"
+        }
+      ]
+    },
+    {
+      "version": "after",
+      "name": "missing-terminal",
+      "sends": 1,
+      "errors": [
+        "USAGE_UNAUDITABLE",
+        "COMPARISON_AUDIT_STOP"
+      ],
+      "rows": [
+        {
+          "state": "failed",
+          "failure": "USAGE_UNAUDITABLE",
+          "auditFailure": "USAGE_UNAUDITABLE"
+        }
+      ]
+    },
+    {
+      "version": "after",
+      "name": "read-error",
+      "sends": 1,
+      "errors": [
+        "HOST_OR_TRANSPORT_FAILURE",
+        "COMPARISON_AUDIT_STOP"
+      ],
+      "rows": [
+        {
+          "state": "failed",
+          "failure": "HOST_OR_TRANSPORT_FAILURE"
+        }
+      ]
+    },
+    {
+      "version": "after",
+      "name": "cancel-stream",
+      "sends": 1,
+      "errors": [
+        null,
+        "COMPARISON_AUDIT_STOP"
+      ],
+      "rows": [
+        {
+          "state": "failed",
+          "failure": "STREAM_CANCELLED"
+        }
+      ]
+    },
+    {
+      "version": "after",
+      "name": "http400",
+      "sends": 1,
+      "errors": [
+        "HTTP_REJECTED",
+        "COMPARISON_AUDIT_STOP"
+      ],
+      "rows": [
+        {
+          "state": "failed",
+          "failure": "HTTP_REJECTED",
+          "auditFailure": "HTTP_REJECTED"
+        }
+      ]
+    },
+    {
+      "version": "after",
+      "name": "http429",
+      "sends": 1,
+      "errors": [
+        "HTTP_REJECTED",
+        "COMPARISON_AUDIT_STOP"
+      ],
+      "rows": [
+        {
+          "state": "failed",
+          "failure": "HTTP_REJECTED",
+          "auditFailure": "HTTP_REJECTED"
+        }
+      ]
+    },
+    {
+      "version": "after",
+      "name": "incomplete",
+      "sends": 1,
+      "errors": [
+        "OUTPUT_INCOMPLETE",
+        "COMPARISON_AUDIT_STOP"
+      ],
+      "rows": [
+        {
+          "state": "failed",
+          "failure": "OUTPUT_INCOMPLETE",
+          "auditFailure": "OUTPUT_INCOMPLETE"
+        }
+      ]
+    },
+    {
+      "version": "after",
+      "name": "bad-usage",
+      "sends": 1,
+      "errors": [
+        "USAGE_UNAUDITABLE",
+        "COMPARISON_AUDIT_STOP"
+      ],
+      "rows": [
+        {
+          "state": "failed",
+          "failure": "USAGE_UNAUDITABLE",
+          "auditFailure": "USAGE_UNAUDITABLE"
+        }
+      ]
+    },
+    {
+      "version": "after",
+      "name": "cap",
+      "sends": 1,
+      "errors": [
+        "SERVER_OUTPUT_CAP_EXCEEDED",
+        "SERVER_OUTPUT_CAP_EXCEEDED"
+      ],
+      "rows": [
+        {
+          "state": "failed",
+          "failure": "SERVER_OUTPUT_CAP_EXCEEDED",
+          "auditFailure": "SERVER_OUTPUT_CAP_EXCEEDED"
+        }
+      ]
+    },
+    {
+      "version": "after",
+      "name": "valid",
+      "sends": 2,
+      "errors": [
+        null,
+        null
+      ],
+      "rows": [
+        {
+          "state": "completed",
+          "auditFailure": null
+        },
+        {
+          "state": "completed",
+          "auditFailure": null
+        }
+      ]
+    }
+  ]
+}

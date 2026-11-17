@@ -1,0 +1,37 @@
+{
+  "verdict": "PASS_LOCAL_STOP_AND_REPORT_ONLY",
+  "testedHead": "27d84826414b5a6f7d994ee31db2d457d25ab97e",
+  "originalDirectory": "/Users/wangxuyang/.t3/worktrees/compact/t3-56eef483-c353b1d5c8a8fc7d/artifacts/P6-real-stop-independent",
+  "allOriginalManifestEntriesVerified": 1195,
+  "copiedSubset": [
+    "REPORT.md",
+    "audit.json",
+    "cleanup.json",
+    "transport/results.json",
+    "crash/result.json",
+    "host-results.json",
+    "transport-probes.mjs",
+    "crash-recovery.mjs",
+    "run-host.mjs",
+    "outer-deny.mjs",
+    "inject.mjs",
+    "manifest.json"
+  ],
+  "files": {
+    "REPORT.md": "fa7a4004bc025eec6c5ba4d1b6ddc7b5cbed35e7794640f3de843bbbe12c92cc",
+    "audit.json": "c76fb873a1ac931ede81eb5dfd21c173aef6bcf828fe94b5153794237f8ecec1",
+    "cleanup.json": "e2da8459e97fb4784d89844b6c97795ca7b262afe2fb29571908f7e28dbf0ec3",
+    "transport/results.json": "56cef520ff54879ab09dd57b5e27df6bf0b121ec3134117457aebb49a2a22551",
+    "crash/result.json": "073b7c738d99776a20242c731027435190c4e23de03b4f9cbdf5eba4def8fb39",
+    "host-results.json": "f6493252f79a7c1402d72e3b96693b10a5432152402b28102ddd40ba72121e34",
+    "transport-probes.mjs": "d48636af9ac8faa85d6b6550465aa0d783ef407adc57a1de71bebe414aa1a074",
+    "crash-recovery.mjs": "c8f189a4a32727d497b5c66f73bcdd00fd3e75a39d869be20bd45a8773c9a085",
+    "run-host.mjs": "28afa1603fe8051a5761d417531dd366f02b9158bf7414f4dd17af5bf01e2bfb",
+    "outer-deny.mjs": "947d614496e7fd1cd0d21ed86c8b35e69d113b8faf8179ffa3974183bb76cf27",
+    "inject.mjs": "a101b1845c1c51155ab44fb60c9d390c96c6f6b441eea8ac2305539e5f5cad91",
+    "manifest.json": "869aac897e3aa76be870e3121bb7ab08883fc078cc87071006592e4300ebaf4a"
+  },
+  "realAcceptance": "NOT_PASSED",
+  "realRequestsInReview": 0,
+  "visual": "USER_APPROVED"
+}

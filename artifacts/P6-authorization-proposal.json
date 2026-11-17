@@ -1,0 +1,58 @@
+{
+  "schema": "pi-compact-authorization-proposal/v1",
+  "authorized": false,
+  "activeBudget": 0,
+  "testedHead": "22217359fb879a581a2c5f787d67786af0dd36b9",
+  "packageSHA256": "209888cd3f050ffe6d3a8932c15d25636d52d83919de0021cf9ce2c611d22c8d",
+  "comparisonFreezeSHA256": "5354ad1dcb046321413c6bb0c76b6c0c76d21f0ace741c2eb5eae0019b3adf41",
+  "options": [
+    {
+      "id": "full",
+      "comparisonProfile": "paired-five",
+      "comparisonDispatches": 248,
+      "functionalDispatches": 12,
+      "totalDispatches": 260,
+      "totalEstimatedInputCeiling": 15992000,
+      "totalReservedOutputCeiling": 260000
+    },
+    {
+      "id": "small",
+      "comparisonProfile": "quality-observation",
+      "comparisonDispatches": 56,
+      "functionalDispatches": 12,
+      "totalDispatches": 68,
+      "totalEstimatedInputCeiling": 3704000,
+      "totalReservedOutputCeiling": 68000
+    },
+    {
+      "id": "pilot",
+      "comparisonProfile": "compatibility-only",
+      "comparisonDispatches": 8,
+      "functionalDispatches": 0,
+      "totalDispatches": 8,
+      "totalEstimatedInputCeiling": 512000,
+      "totalReservedOutputCeiling": 8000
+    }
+  ],
+  "comparisonModels": [
+    "openai-codex/gpt-6.1-terra",
+    "openai-codex/gpt-6-luna"
+  ],
+  "functionalModels": [
+    "openai-codex/gpt-6.1-sol",
+    "deepseek/deepseek-chat"
+  ],
+  "endpoints": [
+    "https://chatgpt.com/backend-api/codex/responses",
+    "https://api.deepseek.com/chat/completions"
+  ],
+  "transport": "SSE",
+  "perRequestOutputCap": 1000,
+  "outputCapServerSupport": "unknown; stop on rejection, overrun, or unauditable usage; never remove cap",
+  "cost": "money unknown; input ceilings use decoded HTTP bytes/4, not server token bounds",
+  "data": "synthetic task/history/workspace only; read selected existing Pi credential values only after grant; no real history, auth copies, command credential resolution or refresh",
+  "order": "Comparison pilot first; eligible frozen pairs then functional acceptance. If cap or audit fails, stop all remaining real work. No new grant or budget reset to replace failures.",
+  "grantExpiryHoursAfterApproval": 4,
+  "storage": "private run directories; allowlisted public metadata only; opaque/auth excluded",
+  "visualGate": "pending"
+}

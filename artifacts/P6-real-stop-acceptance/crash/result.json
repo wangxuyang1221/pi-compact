@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "deadOwnerPID": 85840,
+  "parentPID": 85839,
+  "exitCode": 23,
+  "lockRecovered": true,
+  "failedDispatches": 1,
+  "additionalSends": 0,
+  "reservationsUnchanged": true,
+  "realRequests": 0
+}

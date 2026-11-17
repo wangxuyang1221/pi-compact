@@ -1,0 +1,26 @@
+[
+  {
+    "id": "compatibility-only",
+    "repeats": 0,
+    "dispatches": 8,
+    "status": "PROPOSAL",
+    "estimatedInputTokens": 512000,
+    "reservedOutputTokens": 8000
+  },
+  {
+    "id": "quality-observation",
+    "repeats": 1,
+    "dispatches": 56,
+    "status": "PROPOSAL",
+    "estimatedInputTokens": 3584000,
+    "reservedOutputTokens": 56000
+  },
+  {
+    "id": "paired-five",
+    "repeats": 5,
+    "dispatches": 248,
+    "status": "PROPOSAL",
+    "estimatedInputTokens": 15872000,
+    "reservedOutputTokens": 248000
+  }
+]

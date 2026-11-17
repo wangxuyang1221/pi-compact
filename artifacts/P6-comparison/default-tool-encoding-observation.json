@@ -1,0 +1,67 @@
+{
+  "fixture": true,
+  "realMeasurements": false,
+  "stage": "initial-offline-preflight-before-common-compatibility-control",
+  "dispatches": 36,
+  "observations": [
+    {
+      "id": "r1-gpt-6.1-terra-settlement-v2-pi-native",
+      "status": "passed",
+      "dispatches": 6,
+      "strictSuccess": true,
+      "failure": null
+    },
+    {
+      "id": "r1-gpt-6.1-terra-settlement-v2-pi-compact-remote",
+      "status": "failed",
+      "dispatches": 1,
+      "strictSuccess": null,
+      "failure": "CONTINUATION_FAILED"
+    },
+    {
+      "id": "r1-gpt-6.1-terra-redirect-v2-pi-compact-remote",
+      "status": "failed",
+      "dispatches": 1,
+      "strictSuccess": null,
+      "failure": "CONTINUATION_FAILED"
+    },
+    {
+      "id": "r1-gpt-6.1-terra-redirect-v2-pi-native",
+      "status": "passed",
+      "dispatches": 6,
+      "strictSuccess": true,
+      "failure": null
+    },
+    {
+      "id": "r1-gpt-6-luna-settlement-v2-pi-compact-remote",
+      "status": "failed",
+      "dispatches": 1,
+      "strictSuccess": null,
+      "failure": "CONTINUATION_FAILED"
+    },
+    {
+      "id": "r1-gpt-6-luna-settlement-v2-pi-native",
+      "status": "passed",
+      "dispatches": 6,
+      "strictSuccess": true,
+      "failure": null
+    },
+    {
+      "id": "r1-gpt-6-luna-redirect-v2-pi-native",
+      "status": "passed",
+      "dispatches": 6,
+      "strictSuccess": true,
+      "failure": null
+    },
+    {
+      "id": "r1-gpt-6-luna-redirect-v2-pi-compact-remote",
+      "status": "failed",
+      "dispatches": 1,
+      "strictSuccess": null,
+      "failure": "CONTINUATION_FAILED"
+    }
+  ],
+  "observedInstalledError": "Unsupported Codex wire item.",
+  "rootCause": "SDK additional_tools is outside product 713acbf validateWire supported item types.",
+  "resolution": "Both arms use explicit SDK top-level function compatibility encoding; no product changes; no real provider measurements."
+}

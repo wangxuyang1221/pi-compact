@@ -1,0 +1,72 @@
+{
+  "head": "27d84826414b5a6f7d994ee31db2d457d25ab97e",
+  "packageSHA": "209888cd3f050ffe6d3a8932c15d25636d52d83919de0021cf9ce2c611d22c8d",
+  "productAndPackageUnchanged": {
+    "713acbf87bfa87b3d6eb208fb55bdb3b6651fd49": "",
+    "f5123d566d815b1f9e9e881ab913c8fedb18555b": "",
+    "22217359fb879a581a2c5f787d67786af0dd36b9": ""
+  },
+  "rawHashes": {
+    "ledger.json": "7bba6d36a31d580bd6cf0b69534203f32ca31fa0996b30d130ac6ca5d854c13d",
+    "result.json": "0adadf6f93f28ba52b588c480d970ecfcee74b66c1fb977e264ad98392af644e",
+    "cleanup.json": "127978e9edda5e58411fb85a3edb96115ba00656595a33925766b0fab6fdcde7"
+  },
+  "rawFilesReadOnly": 3,
+  "realRows": 2,
+  "failedRows": 2,
+  "continuations": 0,
+  "validPairs": 0,
+  "estimatedInputReservation": 63737,
+  "reservedOutput": 2000,
+  "unusedApproved": 258,
+  "unexecutedLanes": 42,
+  "freezeSHA": "5354ad1dcb046321413c6bb0c76b6c0c76d21f0ace741c2eb5eae0019b3adf41",
+  "freezeResults": [
+    {
+      "profile": "compatibility-only",
+      "rejected": "EXECUTION_FREEZE_MISMATCH",
+      "changed": [
+        "runner"
+      ]
+    },
+    {
+      "profile": "quality-observation",
+      "rejected": "EXECUTION_FREEZE_MISMATCH",
+      "changed": [
+        "runner"
+      ]
+    },
+    {
+      "profile": "paired-five",
+      "rejected": "EXECUTION_FREEZE_MISMATCH",
+      "changed": [
+        "runner"
+      ]
+    }
+  ],
+  "liveGrantRead": false,
+  "liveGrantGenerated": false,
+  "realTrackedFiles": 0,
+  "scannedCandidateFiles": [
+    "artifacts/P6-real-delivery/REPORT.md",
+    "artifacts/P6-real-delivery/cleanup.json",
+    "artifacts/P6-real-delivery/raw-evidence-hashes.json",
+    "artifacts/P6-real-delivery/requests.json",
+    "artifacts/P6-real-delivery/summary.json",
+    "artifacts/P6-stop-fix/after/results.json",
+    "artifacts/P6-stop-fix/before/results.json",
+    "artifacts/P6-stop-fix/host-injection.jsonl",
+    "artifacts/P6-stop-fix/host-non-sse-summary.json",
+    "artifacts/P6-stop-fix/host-normal-summary.json",
+    "artifacts/P6-stop-fix/non-sse-preload.mjs",
+    "artifacts/P6-stop-fix/validation.json",
+    "docs/decisions.tsv",
+    "scripts/comparison/budget.mjs",
+    "scripts/comparison/worker.mjs",
+    "scripts/verify-comparison-fixes.mjs",
+    "scripts/verify-comparison-stop.mjs"
+  ],
+  "disclosureScope": "local tracked candidate delta only; remote publishing state not queried",
+  "historicalStopCases": 7,
+  "hostVersion": "1.5.2"
+}

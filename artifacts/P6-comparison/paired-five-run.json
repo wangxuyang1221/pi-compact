@@ -1,0 +1,6728 @@
+{
+  "schema": "comparison-run/v1",
+  "mode": "offline-fixture",
+  "fixture": true,
+  "realMeasurements": false,
+  "profile": "paired-five",
+  "fixtureFault": null,
+  "binding": {
+    "plan": "2b04bd9209893a6dccccf2eeaceafe5c5a3f2acecc70a517983d0ed087945b8c",
+    "dataset": "85bb0cac0bb00c4f2d8af1aca5665b7993273b5452c7945ed7ae72d1764f0c6a",
+    "scorer": "657a3bb90fd5d0618acb60542b90bacb891876594728b8654ccd375ec3e29755",
+    "toolSchema": "a17ce6423ee16d6fc82a4b35c1ad79b2382e30bd7c2f87dee561df0876243199",
+    "package": "209888cd3f050ffe6d3a8932c15d25636d52d83919de0021cf9ce2c611d22c8d",
+    "host": "43fb6fe411aa082dd471bd7ae668583009b5e80e5f98da6cd2d834fc76f625d8",
+    "schedule": "53296825a1072da9d85a86bbbfd686579ccc25018d1747df0516419d9dc71592",
+    "runner": "213c29f112647a3b142735850ba852cf7beecef580e03b7996f497ef402df6a7",
+    "boundaryPreflight": "2b88c47666ded9918cf5976caac58c57f0ec2e9456cf2189d36617d24e9fa17d"
+  },
+  "lanes": [
+    {
+      "id": "pilot-gpt-6.1-terra-pi-native",
+      "phase": "pilot",
+      "model": "gpt-6.1-terra",
+      "task": "settlement-v2",
+      "arm": "pi-native",
+      "repeat": 0,
+      "maxDispatches": 2,
+      "assignedArm": "pi-native",
+      "effectiveArm": "pi-native",
+      "fallback": false,
+      "status": "passed",
+      "startedMonoMs": 293.84925,
+      "firstDispatch": 1,
+      "recoveryPending": true,
+      "boundary": {
+        "model": "gpt-6.1-terra",
+        "task": "settlement-v2",
+        "firstKeptEntryId": "e227",
+        "isSplitTurn": false,
+        "prefixEntries": 227,
+        "retainedEntries": 185,
+        "criticalEntries": [
+          "e0",
+          "e1",
+          "e2",
+          "e3",
+          "e4",
+          "e5",
+          "e6",
+          "e7",
+          "e8",
+          "e9",
+          "e10"
+        ],
+        "criticalBeforeCut": true,
+        "rawHistoryHash": "58c247d7f55c0d2c15decc5209fb4ab305aa26ebc425fd49a2fa6e21a4270d3b",
+        "prefixHash": "9eb78f24c5d06981c22d6e426421612548376fdf70f155f70f12ddec4bbdb9fc",
+        "tailHash": "f0d902ac11d67b28d7a4782e4df7b08da411517e4374da18a4cacae4760f57d8",
+        "systemPromptHash": "06f2a3d99f5c185e9e4cd4b4f3d4b61943200129a8ecdbf26548644aef1ac831",
+        "workspacePathHash": "418bd63c9deb77159bb799ec81743d1da177a9579f145a047671ab1b5659cd3f",
+        "noPriorCheckpoint": true,
+        "managed": false,
+        "extensionPaths": [],
+        "modelSpec": {
+          "contextWindow": 500000,
+          "maxTokens": 128000,
+          "reasoning": true,
+          "thinkingLevelMap": {
+            "off": "none",
+            "minimal": "low",
+            "low": "low",
+            "medium": "medium",
+            "high": "high",
+            "xhigh": "xhigh",
+            "max": "max"
+          },
+          "commonToolEncoding": "top-level-functions",
+          "supportsAdditionalTools": false,
+          "supportsToolSearch": false
+        },
+        "settings": {
+          "enabled": true,
+          "reserveTokens": 16384,
+          "keepRecentTokens": 20000
+        },
+        "customInstructions": null
+      },
+      "matchedPeer": null,
+      "compactStartMonoMs": 320.737417,
+      "compactCommitMonoMs": 417.956917,
+      "checkpointKind": "native",
+      "continuationStartMonoMs": 417.991292,
+      "continuationEndMonoMs": 507.210917,
+      "tools": [],
+      "observedToolCalls": [],
+      "finishedMonoMs": 507.943792,
+      "dispatches": 2
+    },
+    {
+      "id": "pilot-gpt-6.1-terra-pi-compact-remote",
+      "phase": "pilot",
+      "model": "gpt-6.1-terra",
+      "task": "settlement-v2",
+      "arm": "pi-compact-remote",
+      "repeat": 0,
+      "maxDispatches": 2,
+      "assignedArm": "pi-compact-remote",
+      "effectiveArm": "pi-compact-remote",
+      "fallback": false,
+      "status": "passed",
+      "startedMonoMs": 516.082,
+      "firstDispatch": 3,
+      "recoveryPending": true,
+      "boundary": {
+        "model": "gpt-6.1-terra",
+        "task": "settlement-v2",
+        "firstKeptEntryId": "e227",
+        "isSplitTurn": false,
+        "prefixEntries": 227,
+        "retainedEntries": 185,
+        "criticalEntries": [
+          "e0",
+          "e1",
+          "e2",
+          "e3",
+          "e4",
+          "e5",
+          "e6",
+          "e7",
+          "e8",
+          "e9",
+          "e10"
+        ],
+        "criticalBeforeCut": true,
+        "rawHistoryHash": "58c247d7f55c0d2c15decc5209fb4ab305aa26ebc425fd49a2fa6e21a4270d3b",
+        "prefixHash": "9eb78f24c5d06981c22d6e426421612548376fdf70f155f70f12ddec4bbdb9fc",
+        "tailHash": "f0d902ac11d67b28d7a4782e4df7b08da411517e4374da18a4cacae4760f57d8",
+        "systemPromptHash": "06f2a3d99f5c185e9e4cd4b4f3d4b61943200129a8ecdbf26548644aef1ac831",
+        "workspacePathHash": "418bd63c9deb77159bb799ec81743d1da177a9579f145a047671ab1b5659cd3f",
+        "noPriorCheckpoint": true,
+        "managed": true,
+        "extensionPaths": [
+          "<installed-package>/src/index.ts"
+        ],
+        "modelSpec": {
+          "contextWindow": 500000,
+          "maxTokens": 128000,
+          "reasoning": true,
+          "thinkingLevelMap": {
+            "off": "none",
+            "minimal": "low",
+            "low": "low",
+            "medium": "medium",
+            "high": "high",
+            "xhigh": "xhigh",
+            "max": "max"
+          },
+          "commonToolEncoding": "top-level-functions",
+          "supportsAdditionalTools": false,
+          "supportsToolSearch": false
+        },
+        "settings": {
+          "enabled": true,
+          "reserveTokens": 16384,
+          "keepRecentTokens": 20000
+        },
+        "customInstructions": null
+      },
+      "matchedPeer": "pilot-gpt-6.1-terra-pi-native",
+      "compactStartMonoMs": 726.778125,
+      "compactCommitMonoMs": 852.025917,
+      "checkpointKind": "opaque",
+      "continuationStartMonoMs": 852.055667,
+      "continuationEndMonoMs": 951.2765,
+      "tools": [],
+      "observedToolCalls": [],
+      "finishedMonoMs": 953.240333,
+      "dispatches": 2
+    },
+    {
+      "id": "pilot-gpt-6-luna-pi-native",
+      "phase": "pilot",
+      "model": "gpt-6-luna",
+      "task": "settlement-v2",
+      "arm": "pi-native",
+      "repeat": 0,
+      "maxDispatches": 2,
+      "assignedArm": "pi-native",
+      "effectiveArm": "pi-native",
+      "fallback": false,
+      "status": "passed",
+      "startedMonoMs": 963.151458,
+      "firstDispatch": 5,
+      "recoveryPending": true,
+      "boundary": {
+        "model": "gpt-6-luna",
+        "task": "settlement-v2",
+        "firstKeptEntryId": "e227",
+        "isSplitTurn": false,
+        "prefixEntries": 227,
+        "retainedEntries": 185,
+        "criticalEntries": [
+          "e0",
+          "e1",
+          "e2",
+          "e3",
+          "e4",
+          "e5",
+          "e6",
+          "e7",
+          "e8",
+          "e9",
+          "e10"
+        ],
+        "criticalBeforeCut": true,
+        "rawHistoryHash": "d7d361bc0e56eeb2d40d1a49d0e6f4efc55a6fb404c36cf3ef85496ac1ca92de",
+        "prefixHash": "f44bc834de6f43bd52ca15f44a81061646f4b57b8a301ef35e4bbb79df1d5e5b",
+        "tailHash": "2c44a4c7a01552c4483f50c373f4d64ffd88f909063b7128331463e4bbde22bb",
+        "systemPromptHash": "06f2a3d99f5c185e9e4cd4b4f3d4b61943200129a8ecdbf26548644aef1ac831",
+        "workspacePathHash": "418bd63c9deb77159bb799ec81743d1da177a9579f145a047671ab1b5659cd3f",
+        "noPriorCheckpoint": true,
+        "managed": false,
+        "extensionPaths": [],
+        "modelSpec": {
+          "contextWindow": 272000,
+          "maxTokens": 128000,
+          "reasoning": true,
+          "thinkingLevelMap": {
+            "off": "none",
+            "minimal": "low",
+            "low": "low",
+            "medium": "medium",
+            "high": "high",
+            "xhigh": "xhigh",
+            "max": "max"
+          },
+          "commonToolEncoding": "top-level-functions",
+          "supportsAdditionalTools": false,
+          "supportsToolSearch": false
+        },
+        "settings": {
+          "enabled": true,
+          "reserveTokens": 16384,
+          "keepRecentTokens": 20000
+        },
+        "customInstructions": null
+      },
+      "matchedPeer": null,
+      "compactStartMonoMs": 996.0675,
+      "compactCommitMonoMs": 1086.3585,
+      "checkpointKind": "native",
+      "continuationStartMonoMs": 1086.386292,
+      "continuationEndMonoMs": 1186.375083,
+      "tools": [],
+      "observedToolCalls": [],
+      "finishedMonoMs": 1190.272167,
+      "dispatches": 2
+    },
+    {
+      "id": "pilot-gpt-6-luna-pi-compact-remote",
+      "phase": "pilot",
+      "model": "gpt-6-luna",
+      "task": "settlement-v2",
+      "arm": "pi-compact-remote",
+      "repeat": 0,
+      "maxDispatches": 2,
+      "assignedArm": "pi-compact-remote",
+      "effectiveArm": "pi-compact-remote",
+      "fallback": false,
+      "status": "passed",
+      "startedMonoMs": 1198.085625,
+      "firstDispatch": 7,
+      "recoveryPending": true,
+      "boundary": {
+        "model": "gpt-6-luna",
+        "task": "settlement-v2",
+        "firstKeptEntryId": "e227",
+        "isSplitTurn": false,
+        "prefixEntries": 227,
+        "retainedEntries": 185,
+        "criticalEntries": [
+          "e0",
+          "e1",
+          "e2",
+          "e3",
+          "e4",
+          "e5",
+          "e6",
+          "e7",
+          "e8",
+          "e9",
+          "e10"
+        ],
+        "criticalBeforeCut": true,
+        "rawHistoryHash": "d7d361bc0e56eeb2d40d1a49d0e6f4efc55a6fb404c36cf3ef85496ac1ca92de",
+        "prefixHash": "f44bc834de6f43bd52ca15f44a81061646f4b57b8a301ef35e4bbb79df1d5e5b",
+        "tailHash": "2c44a4c7a01552c4483f50c373f4d64ffd88f909063b7128331463e4bbde22bb",
+        "systemPromptHash": "06f2a3d99f5c185e9e4cd4b4f3d4b61943200129a8ecdbf26548644aef1ac831",
+        "workspacePathHash": "418bd63c9deb77159bb799ec81743d1da177a9579f145a047671ab1b5659cd3f",
+        "noPriorCheckpoint": true,
+        "managed": true,
+        "extensionPaths": [
+          "<installed-package>/src/index.ts"
+        ],
+        "modelSpec": {
+          "contextWindow": 272000,
+          "maxTokens": 128000,
+          "reasoning": true,
+          "thinkingLevelMap": {
+            "off": "none",
+            "minimal": "low",
+            "low": "low",
+            "medium": "medium",
+            "high": "high",
+            "xhigh": "xhigh",
+            "max": "max"
+          },
+          "commonToolEncoding": "top-level-functions",
+          "supportsAdditionalTools": false,
+          "supportsToolSearch": false
+        },
+        "settings": {
+          "enabled": true,
+          "reserveTokens": 16384,
+          "keepRecentTokens": 20000
+        },
+        "customInstructions": null
+      },
+      "matchedPeer": "pilot-gpt-6-luna-pi-native",
+      "compactStartMonoMs": 1242.515167,
+      "compactCommitMonoMs": 1369.82075,
+      "checkpointKind": "opaque",
+      "continuationStartMonoMs": 1369.838333,
+      "continuationEndMonoMs": 1463.823125,
+      "tools": [],
+      "observedToolCalls": [],
+      "finishedMonoMs": 1466.767042,
+      "dispatches": 2
+    },
+    {
+      "id": "r1-gpt-6.1-terra-settlement-v2-pi-native",
+      "phase": "comparison",
+      "model": "gpt-6.1-terra",
+      "task": "settlement-v2",
+      "arm": "pi-native",
+      "repeat": 1,
+      "maxDispatches": 6,
+      "assignedArm": "pi-native",
+      "effectiveArm": "pi-native",
+      "fallback": false,
+      "status": "passed",
+      "startedMonoMs": 1475.95775,
+      "firstDispatch": 9,
+      "recoveryPending": true,
+      "boundary": {
+        "model": "gpt-6.1-terra",
+        "task": "settlement-v2",
+        "firstKeptEntryId": "e227",
+        "isSplitTurn": false,
+        "prefixEntries": 227,
+        "retainedEntries": 185,
+        "criticalEntries": [
+          "e0",
+          "e1",
+          "e2",
+          "e3",
+          "e4",
+          "e5",
+          "e6",
+          "e7",
+          "e8",
+          "e9",
+          "e10"
+        ],
+        "criticalBeforeCut": true,
+        "rawHistoryHash": "58c247d7f55c0d2c15decc5209fb4ab305aa26ebc425fd49a2fa6e21a4270d3b",
+        "prefixHash": "9eb78f24c5d06981c22d6e426421612548376fdf70f155f70f12ddec4bbdb9fc",
+        "tailHash": "f0d902ac11d67b28d7a4782e4df7b08da411517e4374da18a4cacae4760f57d8",
+        "systemPromptHash": "06f2a3d99f5c185e9e4cd4b4f3d4b61943200129a8ecdbf26548644aef1ac831",
+        "workspacePathHash": "418bd63c9deb77159bb799ec81743d1da177a9579f145a047671ab1b5659cd3f",
+        "noPriorCheckpoint": true,
+        "managed": false,
+        "extensionPaths": [],
+        "modelSpec": {
+          "contextWindow": 500000,
+          "maxTokens": 128000,
+          "reasoning": true,
+          "thinkingLevelMap": {
+            "off": "none",
+            "minimal": "low",
+            "low": "low",
+            "medium": "medium",
+            "high": "high",
+            "xhigh": "xhigh",
+            "max": "max"
+          },
+          "commonToolEncoding": "top-level-functions",
+          "supportsAdditionalTools": false,
+          "supportsToolSearch": false
+        },
+        "settings": {
+          "enabled": true,
+          "reserveTokens": 16384,
+          "keepRecentTokens": 20000
+        },
+        "customInstructions": null
+      },
+      "matchedPeer": null,
+      "compactStartMonoMs": 1509.267083,
+      "compactCommitMonoMs": 1601.351125,
+      "checkpointKind": "native",
+      "continuationStartMonoMs": 1601.37475,
+      "continuationEndMonoMs": 2492.885667,
+      "record": {
+        "facts": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "state": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "pending": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "stale": {
+          "adopted": 0,
+          "opportunities": 3
+        }
+      },
+      "behavior": {
+        "passed": 7,
+        "total": 7,
+        "error": null,
+        "pid": 31225,
+        "exitCode": 0,
+        "signal": null
+      },
+      "workspace": {
+        "protectedPassed": 102,
+        "protectedTotal": 102,
+        "unauthorizedChanges": [],
+        "extraFiles": [],
+        "sourceChanged": true
+      },
+      "capturedFirst": true,
+      "strictSuccess": true,
+      "tools": [
+        {
+          "name": "record_checkpoint",
+          "sequence": 1
+        },
+        {
+          "name": "workspace_read",
+          "sequence": 2
+        },
+        {
+          "name": "workspace_write",
+          "sequence": 3
+        },
+        {
+          "name": "run_regression",
+          "sequence": 4
+        }
+      ],
+      "observedToolCalls": [
+        {
+          "name": "record_checkpoint",
+          "id": "call_10|fc_10"
+        },
+        {
+          "name": "workspace_read",
+          "id": "call_11|fc_11"
+        },
+        {
+          "name": "workspace_write",
+          "id": "call_12|fc_12"
+        },
+        {
+          "name": "run_regression",
+          "id": "call_13|fc_13"
+        }
+      ],
+      "finishedMonoMs": 2560.999,
+      "dispatches": 6
+    },
+    {
+      "id": "r1-gpt-6.1-terra-settlement-v2-pi-compact-remote",
+      "phase": "comparison",
+      "model": "gpt-6.1-terra",
+      "task": "settlement-v2",
+      "arm": "pi-compact-remote",
+      "repeat": 1,
+      "maxDispatches": 6,
+      "assignedArm": "pi-compact-remote",
+      "effectiveArm": "pi-compact-remote",
+      "fallback": false,
+      "status": "passed",
+      "startedMonoMs": 2570.621625,
+      "firstDispatch": 15,
+      "recoveryPending": true,
+      "boundary": {
+        "model": "gpt-6.1-terra",
+        "task": "settlement-v2",
+        "firstKeptEntryId": "e227",
+        "isSplitTurn": false,
+        "prefixEntries": 227,
+        "retainedEntries": 185,
+        "criticalEntries": [
+          "e0",
+          "e1",
+          "e2",
+          "e3",
+          "e4",
+          "e5",
+          "e6",
+          "e7",
+          "e8",
+          "e9",
+          "e10"
+        ],
+        "criticalBeforeCut": true,
+        "rawHistoryHash": "58c247d7f55c0d2c15decc5209fb4ab305aa26ebc425fd49a2fa6e21a4270d3b",
+        "prefixHash": "9eb78f24c5d06981c22d6e426421612548376fdf70f155f70f12ddec4bbdb9fc",
+        "tailHash": "f0d902ac11d67b28d7a4782e4df7b08da411517e4374da18a4cacae4760f57d8",
+        "systemPromptHash": "06f2a3d99f5c185e9e4cd4b4f3d4b61943200129a8ecdbf26548644aef1ac831",
+        "workspacePathHash": "418bd63c9deb77159bb799ec81743d1da177a9579f145a047671ab1b5659cd3f",
+        "noPriorCheckpoint": true,
+        "managed": true,
+        "extensionPaths": [
+          "<installed-package>/src/index.ts"
+        ],
+        "modelSpec": {
+          "contextWindow": 500000,
+          "maxTokens": 128000,
+          "reasoning": true,
+          "thinkingLevelMap": {
+            "off": "none",
+            "minimal": "low",
+            "low": "low",
+            "medium": "medium",
+            "high": "high",
+            "xhigh": "xhigh",
+            "max": "max"
+          },
+          "commonToolEncoding": "top-level-functions",
+          "supportsAdditionalTools": false,
+          "supportsToolSearch": false
+        },
+        "settings": {
+          "enabled": true,
+          "reserveTokens": 16384,
+          "keepRecentTokens": 20000
+        },
+        "customInstructions": null
+      },
+      "matchedPeer": "r1-gpt-6.1-terra-settlement-v2-pi-native",
+      "compactStartMonoMs": 2596.753833,
+      "compactCommitMonoMs": 2717.816208,
+      "checkpointKind": "opaque",
+      "continuationStartMonoMs": 2717.850458,
+      "continuationEndMonoMs": 3203.216125,
+      "record": {
+        "facts": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "state": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "pending": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "stale": {
+          "adopted": 0,
+          "opportunities": 3
+        }
+      },
+      "behavior": {
+        "passed": 7,
+        "total": 7,
+        "error": null,
+        "pid": 31229,
+        "exitCode": 0,
+        "signal": null
+      },
+      "workspace": {
+        "protectedPassed": 102,
+        "protectedTotal": 102,
+        "unauthorizedChanges": [],
+        "extraFiles": [],
+        "sourceChanged": true
+      },
+      "capturedFirst": true,
+      "strictSuccess": true,
+      "tools": [
+        {
+          "name": "record_checkpoint",
+          "sequence": 1
+        },
+        {
+          "name": "workspace_read",
+          "sequence": 2
+        },
+        {
+          "name": "workspace_write",
+          "sequence": 3
+        },
+        {
+          "name": "run_regression",
+          "sequence": 4
+        }
+      ],
+      "observedToolCalls": [
+        {
+          "name": "record_checkpoint",
+          "id": "call_16|fc_16"
+        },
+        {
+          "name": "workspace_read",
+          "id": "call_17|fc_17"
+        },
+        {
+          "name": "workspace_write",
+          "id": "call_18|fc_18"
+        },
+        {
+          "name": "run_regression",
+          "id": "call_19|fc_19"
+        }
+      ],
+      "finishedMonoMs": 3252.395,
+      "dispatches": 6
+    },
+    {
+      "id": "r1-gpt-6.1-terra-redirect-v2-pi-compact-remote",
+      "phase": "comparison",
+      "model": "gpt-6.1-terra",
+      "task": "redirect-v2",
+      "arm": "pi-compact-remote",
+      "repeat": 1,
+      "maxDispatches": 6,
+      "assignedArm": "pi-compact-remote",
+      "effectiveArm": "pi-compact-remote",
+      "fallback": false,
+      "status": "passed",
+      "startedMonoMs": 3262.460375,
+      "firstDispatch": 21,
+      "recoveryPending": true,
+      "boundary": {
+        "model": "gpt-6.1-terra",
+        "task": "redirect-v2",
+        "firstKeptEntryId": "e227",
+        "isSplitTurn": false,
+        "prefixEntries": 227,
+        "retainedEntries": 185,
+        "criticalEntries": [
+          "e0",
+          "e1",
+          "e2",
+          "e3",
+          "e4",
+          "e5",
+          "e6",
+          "e7",
+          "e8",
+          "e9",
+          "e10"
+        ],
+        "criticalBeforeCut": true,
+        "rawHistoryHash": "0968bb6feb27959be8ffcb13ff3e1b7dc602f80269ed33b9a736bff519701545",
+        "prefixHash": "647396f28a58c7b404180a6cb4a621b515edc8948e3a6e1e33c2b014b0e9d376",
+        "tailHash": "f0d902ac11d67b28d7a4782e4df7b08da411517e4374da18a4cacae4760f57d8",
+        "systemPromptHash": "06f2a3d99f5c185e9e4cd4b4f3d4b61943200129a8ecdbf26548644aef1ac831",
+        "workspacePathHash": "418bd63c9deb77159bb799ec81743d1da177a9579f145a047671ab1b5659cd3f",
+        "noPriorCheckpoint": true,
+        "managed": true,
+        "extensionPaths": [
+          "<installed-package>/src/index.ts"
+        ],
+        "modelSpec": {
+          "contextWindow": 500000,
+          "maxTokens": 128000,
+          "reasoning": true,
+          "thinkingLevelMap": {
+            "off": "none",
+            "minimal": "low",
+            "low": "low",
+            "medium": "medium",
+            "high": "high",
+            "xhigh": "xhigh",
+            "max": "max"
+          },
+          "commonToolEncoding": "top-level-functions",
+          "supportsAdditionalTools": false,
+          "supportsToolSearch": false
+        },
+        "settings": {
+          "enabled": true,
+          "reserveTokens": 16384,
+          "keepRecentTokens": 20000
+        },
+        "customInstructions": null
+      },
+      "matchedPeer": null,
+      "compactStartMonoMs": 3288.068,
+      "compactCommitMonoMs": 3407.624792,
+      "checkpointKind": "opaque",
+      "continuationStartMonoMs": 3407.656958,
+      "continuationEndMonoMs": 3889.496208,
+      "record": {
+        "facts": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "state": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "pending": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "stale": {
+          "adopted": 0,
+          "opportunities": 3
+        }
+      },
+      "behavior": {
+        "passed": 8,
+        "total": 8,
+        "error": null,
+        "pid": 31231,
+        "exitCode": 0,
+        "signal": null
+      },
+      "workspace": {
+        "protectedPassed": 102,
+        "protectedTotal": 102,
+        "unauthorizedChanges": [],
+        "extraFiles": [],
+        "sourceChanged": true
+      },
+      "capturedFirst": true,
+      "strictSuccess": true,
+      "tools": [
+        {
+          "name": "record_checkpoint",
+          "sequence": 1
+        },
+        {
+          "name": "workspace_read",
+          "sequence": 2
+        },
+        {
+          "name": "workspace_write",
+          "sequence": 3
+        },
+        {
+          "name": "run_regression",
+          "sequence": 4
+        }
+      ],
+      "observedToolCalls": [
+        {
+          "name": "record_checkpoint",
+          "id": "call_22|fc_22"
+        },
+        {
+          "name": "workspace_read",
+          "id": "call_23|fc_23"
+        },
+        {
+          "name": "workspace_write",
+          "id": "call_24|fc_24"
+        },
+        {
+          "name": "run_regression",
+          "id": "call_25|fc_25"
+        }
+      ],
+      "finishedMonoMs": 3936.318125,
+      "dispatches": 6
+    },
+    {
+      "id": "r1-gpt-6.1-terra-redirect-v2-pi-native",
+      "phase": "comparison",
+      "model": "gpt-6.1-terra",
+      "task": "redirect-v2",
+      "arm": "pi-native",
+      "repeat": 1,
+      "maxDispatches": 6,
+      "assignedArm": "pi-native",
+      "effectiveArm": "pi-native",
+      "fallback": false,
+      "status": "passed",
+      "startedMonoMs": 3945.434833,
+      "firstDispatch": 27,
+      "recoveryPending": true,
+      "boundary": {
+        "model": "gpt-6.1-terra",
+        "task": "redirect-v2",
+        "firstKeptEntryId": "e227",
+        "isSplitTurn": false,
+        "prefixEntries": 227,
+        "retainedEntries": 185,
+        "criticalEntries": [
+          "e0",
+          "e1",
+          "e2",
+          "e3",
+          "e4",
+          "e5",
+          "e6",
+          "e7",
+          "e8",
+          "e9",
+          "e10"
+        ],
+        "criticalBeforeCut": true,
+        "rawHistoryHash": "0968bb6feb27959be8ffcb13ff3e1b7dc602f80269ed33b9a736bff519701545",
+        "prefixHash": "647396f28a58c7b404180a6cb4a621b515edc8948e3a6e1e33c2b014b0e9d376",
+        "tailHash": "f0d902ac11d67b28d7a4782e4df7b08da411517e4374da18a4cacae4760f57d8",
+        "systemPromptHash": "06f2a3d99f5c185e9e4cd4b4f3d4b61943200129a8ecdbf26548644aef1ac831",
+        "workspacePathHash": "418bd63c9deb77159bb799ec81743d1da177a9579f145a047671ab1b5659cd3f",
+        "noPriorCheckpoint": true,
+        "managed": false,
+        "extensionPaths": [],
+        "modelSpec": {
+          "contextWindow": 500000,
+          "maxTokens": 128000,
+          "reasoning": true,
+          "thinkingLevelMap": {
+            "off": "none",
+            "minimal": "low",
+            "low": "low",
+            "medium": "medium",
+            "high": "high",
+            "xhigh": "xhigh",
+            "max": "max"
+          },
+          "commonToolEncoding": "top-level-functions",
+          "supportsAdditionalTools": false,
+          "supportsToolSearch": false
+        },
+        "settings": {
+          "enabled": true,
+          "reserveTokens": 16384,
+          "keepRecentTokens": 20000
+        },
+        "customInstructions": null
+      },
+      "matchedPeer": "r1-gpt-6.1-terra-redirect-v2-pi-compact-remote",
+      "compactStartMonoMs": 3971.703875,
+      "compactCommitMonoMs": 4058.11325,
+      "checkpointKind": "native",
+      "continuationStartMonoMs": 4058.13225,
+      "continuationEndMonoMs": 4521.59025,
+      "record": {
+        "facts": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "state": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "pending": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "stale": {
+          "adopted": 0,
+          "opportunities": 3
+        }
+      },
+      "behavior": {
+        "passed": 8,
+        "total": 8,
+        "error": null,
+        "pid": 31251,
+        "exitCode": 0,
+        "signal": null
+      },
+      "workspace": {
+        "protectedPassed": 102,
+        "protectedTotal": 102,
+        "unauthorizedChanges": [],
+        "extraFiles": [],
+        "sourceChanged": true
+      },
+      "capturedFirst": true,
+      "strictSuccess": true,
+      "tools": [
+        {
+          "name": "record_checkpoint",
+          "sequence": 1
+        },
+        {
+          "name": "workspace_read",
+          "sequence": 2
+        },
+        {
+          "name": "workspace_write",
+          "sequence": 3
+        },
+        {
+          "name": "run_regression",
+          "sequence": 4
+        }
+      ],
+      "observedToolCalls": [
+        {
+          "name": "record_checkpoint",
+          "id": "call_28|fc_28"
+        },
+        {
+          "name": "workspace_read",
+          "id": "call_29|fc_29"
+        },
+        {
+          "name": "workspace_write",
+          "id": "call_30|fc_30"
+        },
+        {
+          "name": "run_regression",
+          "id": "call_31|fc_31"
+        }
+      ],
+      "finishedMonoMs": 4567.765708,
+      "dispatches": 6
+    },
+    {
+      "id": "r1-gpt-6-luna-settlement-v2-pi-compact-remote",
+      "phase": "comparison",
+      "model": "gpt-6-luna",
+      "task": "settlement-v2",
+      "arm": "pi-compact-remote",
+      "repeat": 1,
+      "maxDispatches": 6,
+      "assignedArm": "pi-compact-remote",
+      "effectiveArm": "pi-compact-remote",
+      "fallback": false,
+      "status": "passed",
+      "startedMonoMs": 4578.057333,
+      "firstDispatch": 33,
+      "recoveryPending": true,
+      "boundary": {
+        "model": "gpt-6-luna",
+        "task": "settlement-v2",
+        "firstKeptEntryId": "e227",
+        "isSplitTurn": false,
+        "prefixEntries": 227,
+        "retainedEntries": 185,
+        "criticalEntries": [
+          "e0",
+          "e1",
+          "e2",
+          "e3",
+          "e4",
+          "e5",
+          "e6",
+          "e7",
+          "e8",
+          "e9",
+          "e10"
+        ],
+        "criticalBeforeCut": true,
+        "rawHistoryHash": "d7d361bc0e56eeb2d40d1a49d0e6f4efc55a6fb404c36cf3ef85496ac1ca92de",
+        "prefixHash": "f44bc834de6f43bd52ca15f44a81061646f4b57b8a301ef35e4bbb79df1d5e5b",
+        "tailHash": "2c44a4c7a01552c4483f50c373f4d64ffd88f909063b7128331463e4bbde22bb",
+        "systemPromptHash": "06f2a3d99f5c185e9e4cd4b4f3d4b61943200129a8ecdbf26548644aef1ac831",
+        "workspacePathHash": "418bd63c9deb77159bb799ec81743d1da177a9579f145a047671ab1b5659cd3f",
+        "noPriorCheckpoint": true,
+        "managed": true,
+        "extensionPaths": [
+          "<installed-package>/src/index.ts"
+        ],
+        "modelSpec": {
+          "contextWindow": 272000,
+          "maxTokens": 128000,
+          "reasoning": true,
+          "thinkingLevelMap": {
+            "off": "none",
+            "minimal": "low",
+            "low": "low",
+            "medium": "medium",
+            "high": "high",
+            "xhigh": "xhigh",
+            "max": "max"
+          },
+          "commonToolEncoding": "top-level-functions",
+          "supportsAdditionalTools": false,
+          "supportsToolSearch": false
+        },
+        "settings": {
+          "enabled": true,
+          "reserveTokens": 16384,
+          "keepRecentTokens": 20000
+        },
+        "customInstructions": null
+      },
+      "matchedPeer": null,
+      "compactStartMonoMs": 4604.775,
+      "compactCommitMonoMs": 4722.264333,
+      "checkpointKind": "opaque",
+      "continuationStartMonoMs": 4722.286792,
+      "continuationEndMonoMs": 5246.086542,
+      "record": {
+        "facts": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "state": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "pending": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "stale": {
+          "adopted": 0,
+          "opportunities": 3
+        }
+      },
+      "behavior": {
+        "passed": 7,
+        "total": 7,
+        "error": null,
+        "pid": 31253,
+        "exitCode": 0,
+        "signal": null
+      },
+      "workspace": {
+        "protectedPassed": 102,
+        "protectedTotal": 102,
+        "unauthorizedChanges": [],
+        "extraFiles": [],
+        "sourceChanged": true
+      },
+      "capturedFirst": true,
+      "strictSuccess": true,
+      "tools": [
+        {
+          "name": "record_checkpoint",
+          "sequence": 1
+        },
+        {
+          "name": "workspace_read",
+          "sequence": 2
+        },
+        {
+          "name": "workspace_write",
+          "sequence": 3
+        },
+        {
+          "name": "run_regression",
+          "sequence": 4
+        }
+      ],
+      "observedToolCalls": [
+        {
+          "name": "record_checkpoint",
+          "id": "call_34|fc_34"
+        },
+        {
+          "name": "workspace_read",
+          "id": "call_35|fc_35"
+        },
+        {
+          "name": "workspace_write",
+          "id": "call_36|fc_36"
+        },
+        {
+          "name": "run_regression",
+          "id": "call_37|fc_37"
+        }
+      ],
+      "finishedMonoMs": 5299.200708,
+      "dispatches": 6
+    },
+    {
+      "id": "r1-gpt-6-luna-settlement-v2-pi-native",
+      "phase": "comparison",
+      "model": "gpt-6-luna",
+      "task": "settlement-v2",
+      "arm": "pi-native",
+      "repeat": 1,
+      "maxDispatches": 6,
+      "assignedArm": "pi-native",
+      "effectiveArm": "pi-native",
+      "fallback": false,
+      "status": "passed",
+      "startedMonoMs": 5310.136,
+      "firstDispatch": 39,
+      "recoveryPending": true,
+      "boundary": {
+        "model": "gpt-6-luna",
+        "task": "settlement-v2",
+        "firstKeptEntryId": "e227",
+        "isSplitTurn": false,
+        "prefixEntries": 227,
+        "retainedEntries": 185,
+        "criticalEntries": [
+          "e0",
+          "e1",
+          "e2",
+          "e3",
+          "e4",
+          "e5",
+          "e6",
+          "e7",
+          "e8",
+          "e9",
+          "e10"
+        ],
+        "criticalBeforeCut": true,
+        "rawHistoryHash": "d7d361bc0e56eeb2d40d1a49d0e6f4efc55a6fb404c36cf3ef85496ac1ca92de",
+        "prefixHash": "f44bc834de6f43bd52ca15f44a81061646f4b57b8a301ef35e4bbb79df1d5e5b",
+        "tailHash": "2c44a4c7a01552c4483f50c373f4d64ffd88f909063b7128331463e4bbde22bb",
+        "systemPromptHash": "06f2a3d99f5c185e9e4cd4b4f3d4b61943200129a8ecdbf26548644aef1ac831",
+        "workspacePathHash": "418bd63c9deb77159bb799ec81743d1da177a9579f145a047671ab1b5659cd3f",
+        "noPriorCheckpoint": true,
+        "managed": false,
+        "extensionPaths": [],
+        "modelSpec": {
+          "contextWindow": 272000,
+          "maxTokens": 128000,
+          "reasoning": true,
+          "thinkingLevelMap": {
+            "off": "none",
+            "minimal": "low",
+            "low": "low",
+            "medium": "medium",
+            "high": "high",
+            "xhigh": "xhigh",
+            "max": "max"
+          },
+          "commonToolEncoding": "top-level-functions",
+          "supportsAdditionalTools": false,
+          "supportsToolSearch": false
+        },
+        "settings": {
+          "enabled": true,
+          "reserveTokens": 16384,
+          "keepRecentTokens": 20000
+        },
+        "customInstructions": null
+      },
+      "matchedPeer": "r1-gpt-6-luna-settlement-v2-pi-compact-remote",
+      "compactStartMonoMs": 5335.129833,
+      "compactCommitMonoMs": 5422.964917,
+      "checkpointKind": "native",
+      "continuationStartMonoMs": 5422.985292,
+      "continuationEndMonoMs": 5899.890875,
+      "record": {
+        "facts": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "state": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "pending": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "stale": {
+          "adopted": 0,
+          "opportunities": 3
+        }
+      },
+      "behavior": {
+        "passed": 7,
+        "total": 7,
+        "error": null,
+        "pid": 31274,
+        "exitCode": 0,
+        "signal": null
+      },
+      "workspace": {
+        "protectedPassed": 102,
+        "protectedTotal": 102,
+        "unauthorizedChanges": [],
+        "extraFiles": [],
+        "sourceChanged": true
+      },
+      "capturedFirst": true,
+      "strictSuccess": true,
+      "tools": [
+        {
+          "name": "record_checkpoint",
+          "sequence": 1
+        },
+        {
+          "name": "workspace_read",
+          "sequence": 2
+        },
+        {
+          "name": "workspace_write",
+          "sequence": 3
+        },
+        {
+          "name": "run_regression",
+          "sequence": 4
+        }
+      ],
+      "observedToolCalls": [
+        {
+          "name": "record_checkpoint",
+          "id": "call_40|fc_40"
+        },
+        {
+          "name": "workspace_read",
+          "id": "call_41|fc_41"
+        },
+        {
+          "name": "workspace_write",
+          "id": "call_42|fc_42"
+        },
+        {
+          "name": "run_regression",
+          "id": "call_43|fc_43"
+        }
+      ],
+      "finishedMonoMs": 5953.548583,
+      "dispatches": 6
+    },
+    {
+      "id": "r1-gpt-6-luna-redirect-v2-pi-native",
+      "phase": "comparison",
+      "model": "gpt-6-luna",
+      "task": "redirect-v2",
+      "arm": "pi-native",
+      "repeat": 1,
+      "maxDispatches": 6,
+      "assignedArm": "pi-native",
+      "effectiveArm": "pi-native",
+      "fallback": false,
+      "status": "passed",
+      "startedMonoMs": 5963.022417,
+      "firstDispatch": 45,
+      "recoveryPending": true,
+      "boundary": {
+        "model": "gpt-6-luna",
+        "task": "redirect-v2",
+        "firstKeptEntryId": "e227",
+        "isSplitTurn": false,
+        "prefixEntries": 227,
+        "retainedEntries": 185,
+        "criticalEntries": [
+          "e0",
+          "e1",
+          "e2",
+          "e3",
+          "e4",
+          "e5",
+          "e6",
+          "e7",
+          "e8",
+          "e9",
+          "e10"
+        ],
+        "criticalBeforeCut": true,
+        "rawHistoryHash": "972d4cde84b075721855feb5d24d7c8809d81ca2bdc9af518294254f739a1f9c",
+        "prefixHash": "1b516db26467f2282c3090fc74184af5df5263c210ebf9e3add73b21e0125171",
+        "tailHash": "2c44a4c7a01552c4483f50c373f4d64ffd88f909063b7128331463e4bbde22bb",
+        "systemPromptHash": "06f2a3d99f5c185e9e4cd4b4f3d4b61943200129a8ecdbf26548644aef1ac831",
+        "workspacePathHash": "418bd63c9deb77159bb799ec81743d1da177a9579f145a047671ab1b5659cd3f",
+        "noPriorCheckpoint": true,
+        "managed": false,
+        "extensionPaths": [],
+        "modelSpec": {
+          "contextWindow": 272000,
+          "maxTokens": 128000,
+          "reasoning": true,
+          "thinkingLevelMap": {
+            "off": "none",
+            "minimal": "low",
+            "low": "low",
+            "medium": "medium",
+            "high": "high",
+            "xhigh": "xhigh",
+            "max": "max"
+          },
+          "commonToolEncoding": "top-level-functions",
+          "supportsAdditionalTools": false,
+          "supportsToolSearch": false
+        },
+        "settings": {
+          "enabled": true,
+          "reserveTokens": 16384,
+          "keepRecentTokens": 20000
+        },
+        "customInstructions": null
+      },
+      "matchedPeer": null,
+      "compactStartMonoMs": 5991.051917,
+      "compactCommitMonoMs": 6080.751083,
+      "checkpointKind": "native",
+      "continuationStartMonoMs": 6080.7715,
+      "continuationEndMonoMs": 6567.425083,
+      "record": {
+        "facts": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "state": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "pending": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "stale": {
+          "adopted": 0,
+          "opportunities": 3
+        }
+      },
+      "behavior": {
+        "passed": 8,
+        "total": 8,
+        "error": null,
+        "pid": 31276,
+        "exitCode": 0,
+        "signal": null
+      },
+      "workspace": {
+        "protectedPassed": 102,
+        "protectedTotal": 102,
+        "unauthorizedChanges": [],
+        "extraFiles": [],
+        "sourceChanged": true
+      },
+      "capturedFirst": true,
+      "strictSuccess": true,
+      "tools": [
+        {
+          "name": "record_checkpoint",
+          "sequence": 1
+        },
+        {
+          "name": "workspace_read",
+          "sequence": 2
+        },
+        {
+          "name": "workspace_write",
+          "sequence": 3
+        },
+        {
+          "name": "run_regression",
+          "sequence": 4
+        }
+      ],
+      "observedToolCalls": [
+        {
+          "name": "record_checkpoint",
+          "id": "call_46|fc_46"
+        },
+        {
+          "name": "workspace_read",
+          "id": "call_47|fc_47"
+        },
+        {
+          "name": "workspace_write",
+          "id": "call_48|fc_48"
+        },
+        {
+          "name": "run_regression",
+          "id": "call_49|fc_49"
+        }
+      ],
+      "finishedMonoMs": 6616.081125,
+      "dispatches": 6
+    },
+    {
+      "id": "r1-gpt-6-luna-redirect-v2-pi-compact-remote",
+      "phase": "comparison",
+      "model": "gpt-6-luna",
+      "task": "redirect-v2",
+      "arm": "pi-compact-remote",
+      "repeat": 1,
+      "maxDispatches": 6,
+      "assignedArm": "pi-compact-remote",
+      "effectiveArm": "pi-compact-remote",
+      "fallback": false,
+      "status": "passed",
+      "startedMonoMs": 6625.858958,
+      "firstDispatch": 51,
+      "recoveryPending": true,
+      "boundary": {
+        "model": "gpt-6-luna",
+        "task": "redirect-v2",
+        "firstKeptEntryId": "e227",
+        "isSplitTurn": false,
+        "prefixEntries": 227,
+        "retainedEntries": 185,
+        "criticalEntries": [
+          "e0",
+          "e1",
+          "e2",
+          "e3",
+          "e4",
+          "e5",
+          "e6",
+          "e7",
+          "e8",
+          "e9",
+          "e10"
+        ],
+        "criticalBeforeCut": true,
+        "rawHistoryHash": "972d4cde84b075721855feb5d24d7c8809d81ca2bdc9af518294254f739a1f9c",
+        "prefixHash": "1b516db26467f2282c3090fc74184af5df5263c210ebf9e3add73b21e0125171",
+        "tailHash": "2c44a4c7a01552c4483f50c373f4d64ffd88f909063b7128331463e4bbde22bb",
+        "systemPromptHash": "06f2a3d99f5c185e9e4cd4b4f3d4b61943200129a8ecdbf26548644aef1ac831",
+        "workspacePathHash": "418bd63c9deb77159bb799ec81743d1da177a9579f145a047671ab1b5659cd3f",
+        "noPriorCheckpoint": true,
+        "managed": true,
+        "extensionPaths": [
+          "<installed-package>/src/index.ts"
+        ],
+        "modelSpec": {
+          "contextWindow": 272000,
+          "maxTokens": 128000,
+          "reasoning": true,
+          "thinkingLevelMap": {
+            "off": "none",
+            "minimal": "low",
+            "low": "low",
+            "medium": "medium",
+            "high": "high",
+            "xhigh": "xhigh",
+            "max": "max"
+          },
+          "commonToolEncoding": "top-level-functions",
+          "supportsAdditionalTools": false,
+          "supportsToolSearch": false
+        },
+        "settings": {
+          "enabled": true,
+          "reserveTokens": 16384,
+          "keepRecentTokens": 20000
+        },
+        "customInstructions": null
+      },
+      "matchedPeer": "r1-gpt-6-luna-redirect-v2-pi-native",
+      "compactStartMonoMs": 6652.208083,
+      "compactCommitMonoMs": 6766.941542,
+      "checkpointKind": "opaque",
+      "continuationStartMonoMs": 6766.965542,
+      "continuationEndMonoMs": 7253.444,
+      "record": {
+        "facts": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "state": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "pending": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "stale": {
+          "adopted": 0,
+          "opportunities": 3
+        }
+      },
+      "behavior": {
+        "passed": 8,
+        "total": 8,
+        "error": null,
+        "pid": 31279,
+        "exitCode": 0,
+        "signal": null
+      },
+      "workspace": {
+        "protectedPassed": 102,
+        "protectedTotal": 102,
+        "unauthorizedChanges": [],
+        "extraFiles": [],
+        "sourceChanged": true
+      },
+      "capturedFirst": true,
+      "strictSuccess": true,
+      "tools": [
+        {
+          "name": "record_checkpoint",
+          "sequence": 1
+        },
+        {
+          "name": "workspace_read",
+          "sequence": 2
+        },
+        {
+          "name": "workspace_write",
+          "sequence": 3
+        },
+        {
+          "name": "run_regression",
+          "sequence": 4
+        }
+      ],
+      "observedToolCalls": [
+        {
+          "name": "record_checkpoint",
+          "id": "call_52|fc_52"
+        },
+        {
+          "name": "workspace_read",
+          "id": "call_53|fc_53"
+        },
+        {
+          "name": "workspace_write",
+          "id": "call_54|fc_54"
+        },
+        {
+          "name": "run_regression",
+          "id": "call_55|fc_55"
+        }
+      ],
+      "finishedMonoMs": 7299.57825,
+      "dispatches": 6
+    },
+    {
+      "id": "r2-gpt-6.1-terra-settlement-v2-pi-compact-remote",
+      "phase": "comparison",
+      "model": "gpt-6.1-terra",
+      "task": "settlement-v2",
+      "arm": "pi-compact-remote",
+      "repeat": 2,
+      "maxDispatches": 6,
+      "assignedArm": "pi-compact-remote",
+      "effectiveArm": "pi-compact-remote",
+      "fallback": false,
+      "status": "passed",
+      "startedMonoMs": 7310.080583,
+      "firstDispatch": 57,
+      "recoveryPending": true,
+      "boundary": {
+        "model": "gpt-6.1-terra",
+        "task": "settlement-v2",
+        "firstKeptEntryId": "e227",
+        "isSplitTurn": false,
+        "prefixEntries": 227,
+        "retainedEntries": 185,
+        "criticalEntries": [
+          "e0",
+          "e1",
+          "e2",
+          "e3",
+          "e4",
+          "e5",
+          "e6",
+          "e7",
+          "e8",
+          "e9",
+          "e10"
+        ],
+        "criticalBeforeCut": true,
+        "rawHistoryHash": "58c247d7f55c0d2c15decc5209fb4ab305aa26ebc425fd49a2fa6e21a4270d3b",
+        "prefixHash": "9eb78f24c5d06981c22d6e426421612548376fdf70f155f70f12ddec4bbdb9fc",
+        "tailHash": "f0d902ac11d67b28d7a4782e4df7b08da411517e4374da18a4cacae4760f57d8",
+        "systemPromptHash": "06f2a3d99f5c185e9e4cd4b4f3d4b61943200129a8ecdbf26548644aef1ac831",
+        "workspacePathHash": "418bd63c9deb77159bb799ec81743d1da177a9579f145a047671ab1b5659cd3f",
+        "noPriorCheckpoint": true,
+        "managed": true,
+        "extensionPaths": [
+          "<installed-package>/src/index.ts"
+        ],
+        "modelSpec": {
+          "contextWindow": 500000,
+          "maxTokens": 128000,
+          "reasoning": true,
+          "thinkingLevelMap": {
+            "off": "none",
+            "minimal": "low",
+            "low": "low",
+            "medium": "medium",
+            "high": "high",
+            "xhigh": "xhigh",
+            "max": "max"
+          },
+          "commonToolEncoding": "top-level-functions",
+          "supportsAdditionalTools": false,
+          "supportsToolSearch": false
+        },
+        "settings": {
+          "enabled": true,
+          "reserveTokens": 16384,
+          "keepRecentTokens": 20000
+        },
+        "customInstructions": null
+      },
+      "matchedPeer": null,
+      "compactStartMonoMs": 7336.26275,
+      "compactCommitMonoMs": 7450.656333,
+      "checkpointKind": "opaque",
+      "continuationStartMonoMs": 7450.677292,
+      "continuationEndMonoMs": 7939.899708,
+      "record": {
+        "facts": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "state": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "pending": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "stale": {
+          "adopted": 0,
+          "opportunities": 3
+        }
+      },
+      "behavior": {
+        "passed": 7,
+        "total": 7,
+        "error": null,
+        "pid": 31298,
+        "exitCode": 0,
+        "signal": null
+      },
+      "workspace": {
+        "protectedPassed": 102,
+        "protectedTotal": 102,
+        "unauthorizedChanges": [],
+        "extraFiles": [],
+        "sourceChanged": true
+      },
+      "capturedFirst": true,
+      "strictSuccess": true,
+      "tools": [
+        {
+          "name": "record_checkpoint",
+          "sequence": 1
+        },
+        {
+          "name": "workspace_read",
+          "sequence": 2
+        },
+        {
+          "name": "workspace_write",
+          "sequence": 3
+        },
+        {
+          "name": "run_regression",
+          "sequence": 4
+        }
+      ],
+      "observedToolCalls": [
+        {
+          "name": "record_checkpoint",
+          "id": "call_58|fc_58"
+        },
+        {
+          "name": "workspace_read",
+          "id": "call_59|fc_59"
+        },
+        {
+          "name": "workspace_write",
+          "id": "call_60|fc_60"
+        },
+        {
+          "name": "run_regression",
+          "id": "call_61|fc_61"
+        }
+      ],
+      "finishedMonoMs": 7990.809042,
+      "dispatches": 6
+    },
+    {
+      "id": "r2-gpt-6.1-terra-settlement-v2-pi-native",
+      "phase": "comparison",
+      "model": "gpt-6.1-terra",
+      "task": "settlement-v2",
+      "arm": "pi-native",
+      "repeat": 2,
+      "maxDispatches": 6,
+      "assignedArm": "pi-native",
+      "effectiveArm": "pi-native",
+      "fallback": false,
+      "status": "passed",
+      "startedMonoMs": 8000.9025,
+      "firstDispatch": 63,
+      "recoveryPending": true,
+      "boundary": {
+        "model": "gpt-6.1-terra",
+        "task": "settlement-v2",
+        "firstKeptEntryId": "e227",
+        "isSplitTurn": false,
+        "prefixEntries": 227,
+        "retainedEntries": 185,
+        "criticalEntries": [
+          "e0",
+          "e1",
+          "e2",
+          "e3",
+          "e4",
+          "e5",
+          "e6",
+          "e7",
+          "e8",
+          "e9",
+          "e10"
+        ],
+        "criticalBeforeCut": true,
+        "rawHistoryHash": "58c247d7f55c0d2c15decc5209fb4ab305aa26ebc425fd49a2fa6e21a4270d3b",
+        "prefixHash": "9eb78f24c5d06981c22d6e426421612548376fdf70f155f70f12ddec4bbdb9fc",
+        "tailHash": "f0d902ac11d67b28d7a4782e4df7b08da411517e4374da18a4cacae4760f57d8",
+        "systemPromptHash": "06f2a3d99f5c185e9e4cd4b4f3d4b61943200129a8ecdbf26548644aef1ac831",
+        "workspacePathHash": "418bd63c9deb77159bb799ec81743d1da177a9579f145a047671ab1b5659cd3f",
+        "noPriorCheckpoint": true,
+        "managed": false,
+        "extensionPaths": [],
+        "modelSpec": {
+          "contextWindow": 500000,
+          "maxTokens": 128000,
+          "reasoning": true,
+          "thinkingLevelMap": {
+            "off": "none",
+            "minimal": "low",
+            "low": "low",
+            "medium": "medium",
+            "high": "high",
+            "xhigh": "xhigh",
+            "max": "max"
+          },
+          "commonToolEncoding": "top-level-functions",
+          "supportsAdditionalTools": false,
+          "supportsToolSearch": false
+        },
+        "settings": {
+          "enabled": true,
+          "reserveTokens": 16384,
+          "keepRecentTokens": 20000
+        },
+        "customInstructions": null
+      },
+      "matchedPeer": "r2-gpt-6.1-terra-settlement-v2-pi-compact-remote",
+      "compactStartMonoMs": 8026.812833,
+      "compactCommitMonoMs": 8113.631917,
+      "checkpointKind": "native",
+      "continuationStartMonoMs": 8113.653,
+      "continuationEndMonoMs": 8617.107333,
+      "record": {
+        "facts": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "state": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "pending": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "stale": {
+          "adopted": 0,
+          "opportunities": 3
+        }
+      },
+      "behavior": {
+        "passed": 7,
+        "total": 7,
+        "error": null,
+        "pid": 31301,
+        "exitCode": 0,
+        "signal": null
+      },
+      "workspace": {
+        "protectedPassed": 102,
+        "protectedTotal": 102,
+        "unauthorizedChanges": [],
+        "extraFiles": [],
+        "sourceChanged": true
+      },
+      "capturedFirst": true,
+      "strictSuccess": true,
+      "tools": [
+        {
+          "name": "record_checkpoint",
+          "sequence": 1
+        },
+        {
+          "name": "workspace_read",
+          "sequence": 2
+        },
+        {
+          "name": "workspace_write",
+          "sequence": 3
+        },
+        {
+          "name": "run_regression",
+          "sequence": 4
+        }
+      ],
+      "observedToolCalls": [
+        {
+          "name": "record_checkpoint",
+          "id": "call_64|fc_64"
+        },
+        {
+          "name": "workspace_read",
+          "id": "call_65|fc_65"
+        },
+        {
+          "name": "workspace_write",
+          "id": "call_66|fc_66"
+        },
+        {
+          "name": "run_regression",
+          "id": "call_67|fc_67"
+        }
+      ],
+      "finishedMonoMs": 8669.436958,
+      "dispatches": 6
+    },
+    {
+      "id": "r2-gpt-6.1-terra-redirect-v2-pi-native",
+      "phase": "comparison",
+      "model": "gpt-6.1-terra",
+      "task": "redirect-v2",
+      "arm": "pi-native",
+      "repeat": 2,
+      "maxDispatches": 6,
+      "assignedArm": "pi-native",
+      "effectiveArm": "pi-native",
+      "fallback": false,
+      "status": "passed",
+      "startedMonoMs": 8679.47725,
+      "firstDispatch": 69,
+      "recoveryPending": true,
+      "boundary": {
+        "model": "gpt-6.1-terra",
+        "task": "redirect-v2",
+        "firstKeptEntryId": "e227",
+        "isSplitTurn": false,
+        "prefixEntries": 227,
+        "retainedEntries": 185,
+        "criticalEntries": [
+          "e0",
+          "e1",
+          "e2",
+          "e3",
+          "e4",
+          "e5",
+          "e6",
+          "e7",
+          "e8",
+          "e9",
+          "e10"
+        ],
+        "criticalBeforeCut": true,
+        "rawHistoryHash": "0968bb6feb27959be8ffcb13ff3e1b7dc602f80269ed33b9a736bff519701545",
+        "prefixHash": "647396f28a58c7b404180a6cb4a621b515edc8948e3a6e1e33c2b014b0e9d376",
+        "tailHash": "f0d902ac11d67b28d7a4782e4df7b08da411517e4374da18a4cacae4760f57d8",
+        "systemPromptHash": "06f2a3d99f5c185e9e4cd4b4f3d4b61943200129a8ecdbf26548644aef1ac831",
+        "workspacePathHash": "418bd63c9deb77159bb799ec81743d1da177a9579f145a047671ab1b5659cd3f",
+        "noPriorCheckpoint": true,
+        "managed": false,
+        "extensionPaths": [],
+        "modelSpec": {
+          "contextWindow": 500000,
+          "maxTokens": 128000,
+          "reasoning": true,
+          "thinkingLevelMap": {
+            "off": "none",
+            "minimal": "low",
+            "low": "low",
+            "medium": "medium",
+            "high": "high",
+            "xhigh": "xhigh",
+            "max": "max"
+          },
+          "commonToolEncoding": "top-level-functions",
+          "supportsAdditionalTools": false,
+          "supportsToolSearch": false
+        },
+        "settings": {
+          "enabled": true,
+          "reserveTokens": 16384,
+          "keepRecentTokens": 20000
+        },
+        "customInstructions": null
+      },
+      "matchedPeer": null,
+      "compactStartMonoMs": 8704.156042,
+      "compactCommitMonoMs": 8793.1125,
+      "checkpointKind": "native",
+      "continuationStartMonoMs": 8793.129875,
+      "continuationEndMonoMs": 9279.201125,
+      "record": {
+        "facts": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "state": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "pending": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "stale": {
+          "adopted": 0,
+          "opportunities": 3
+        }
+      },
+      "behavior": {
+        "passed": 8,
+        "total": 8,
+        "error": null,
+        "pid": 31303,
+        "exitCode": 0,
+        "signal": null
+      },
+      "workspace": {
+        "protectedPassed": 102,
+        "protectedTotal": 102,
+        "unauthorizedChanges": [],
+        "extraFiles": [],
+        "sourceChanged": true
+      },
+      "capturedFirst": true,
+      "strictSuccess": true,
+      "tools": [
+        {
+          "name": "record_checkpoint",
+          "sequence": 1
+        },
+        {
+          "name": "workspace_read",
+          "sequence": 2
+        },
+        {
+          "name": "workspace_write",
+          "sequence": 3
+        },
+        {
+          "name": "run_regression",
+          "sequence": 4
+        }
+      ],
+      "observedToolCalls": [
+        {
+          "name": "record_checkpoint",
+          "id": "call_70|fc_70"
+        },
+        {
+          "name": "workspace_read",
+          "id": "call_71|fc_71"
+        },
+        {
+          "name": "workspace_write",
+          "id": "call_72|fc_72"
+        },
+        {
+          "name": "run_regression",
+          "id": "call_73|fc_73"
+        }
+      ],
+      "finishedMonoMs": 9325.682958,
+      "dispatches": 6
+    },
+    {
+      "id": "r2-gpt-6.1-terra-redirect-v2-pi-compact-remote",
+      "phase": "comparison",
+      "model": "gpt-6.1-terra",
+      "task": "redirect-v2",
+      "arm": "pi-compact-remote",
+      "repeat": 2,
+      "maxDispatches": 6,
+      "assignedArm": "pi-compact-remote",
+      "effectiveArm": "pi-compact-remote",
+      "fallback": false,
+      "status": "passed",
+      "startedMonoMs": 9335.585083,
+      "firstDispatch": 75,
+      "recoveryPending": true,
+      "boundary": {
+        "model": "gpt-6.1-terra",
+        "task": "redirect-v2",
+        "firstKeptEntryId": "e227",
+        "isSplitTurn": false,
+        "prefixEntries": 227,
+        "retainedEntries": 185,
+        "criticalEntries": [
+          "e0",
+          "e1",
+          "e2",
+          "e3",
+          "e4",
+          "e5",
+          "e6",
+          "e7",
+          "e8",
+          "e9",
+          "e10"
+        ],
+        "criticalBeforeCut": true,
+        "rawHistoryHash": "0968bb6feb27959be8ffcb13ff3e1b7dc602f80269ed33b9a736bff519701545",
+        "prefixHash": "647396f28a58c7b404180a6cb4a621b515edc8948e3a6e1e33c2b014b0e9d376",
+        "tailHash": "f0d902ac11d67b28d7a4782e4df7b08da411517e4374da18a4cacae4760f57d8",
+        "systemPromptHash": "06f2a3d99f5c185e9e4cd4b4f3d4b61943200129a8ecdbf26548644aef1ac831",
+        "workspacePathHash": "418bd63c9deb77159bb799ec81743d1da177a9579f145a047671ab1b5659cd3f",
+        "noPriorCheckpoint": true,
+        "managed": true,
+        "extensionPaths": [
+          "<installed-package>/src/index.ts"
+        ],
+        "modelSpec": {
+          "contextWindow": 500000,
+          "maxTokens": 128000,
+          "reasoning": true,
+          "thinkingLevelMap": {
+            "off": "none",
+            "minimal": "low",
+            "low": "low",
+            "medium": "medium",
+            "high": "high",
+            "xhigh": "xhigh",
+            "max": "max"
+          },
+          "commonToolEncoding": "top-level-functions",
+          "supportsAdditionalTools": false,
+          "supportsToolSearch": false
+        },
+        "settings": {
+          "enabled": true,
+          "reserveTokens": 16384,
+          "keepRecentTokens": 20000
+        },
+        "customInstructions": null
+      },
+      "matchedPeer": "r2-gpt-6.1-terra-redirect-v2-pi-native",
+      "compactStartMonoMs": 9362.097875,
+      "compactCommitMonoMs": 9481.133875,
+      "checkpointKind": "opaque",
+      "continuationStartMonoMs": 9481.170417,
+      "continuationEndMonoMs": 9993.589917,
+      "record": {
+        "facts": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "state": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "pending": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "stale": {
+          "adopted": 0,
+          "opportunities": 3
+        }
+      },
+      "behavior": {
+        "passed": 8,
+        "total": 8,
+        "error": null,
+        "pid": 31305,
+        "exitCode": 0,
+        "signal": null
+      },
+      "workspace": {
+        "protectedPassed": 102,
+        "protectedTotal": 102,
+        "unauthorizedChanges": [],
+        "extraFiles": [],
+        "sourceChanged": true
+      },
+      "capturedFirst": true,
+      "strictSuccess": true,
+      "tools": [
+        {
+          "name": "record_checkpoint",
+          "sequence": 1
+        },
+        {
+          "name": "workspace_read",
+          "sequence": 2
+        },
+        {
+          "name": "workspace_write",
+          "sequence": 3
+        },
+        {
+          "name": "run_regression",
+          "sequence": 4
+        }
+      ],
+      "observedToolCalls": [
+        {
+          "name": "record_checkpoint",
+          "id": "call_76|fc_76"
+        },
+        {
+          "name": "workspace_read",
+          "id": "call_77|fc_77"
+        },
+        {
+          "name": "workspace_write",
+          "id": "call_78|fc_78"
+        },
+        {
+          "name": "run_regression",
+          "id": "call_79|fc_79"
+        }
+      ],
+      "finishedMonoMs": 10041.29925,
+      "dispatches": 6
+    },
+    {
+      "id": "r2-gpt-6-luna-settlement-v2-pi-native",
+      "phase": "comparison",
+      "model": "gpt-6-luna",
+      "task": "settlement-v2",
+      "arm": "pi-native",
+      "repeat": 2,
+      "maxDispatches": 6,
+      "assignedArm": "pi-native",
+      "effectiveArm": "pi-native",
+      "fallback": false,
+      "status": "passed",
+      "startedMonoMs": 10050.7085,
+      "firstDispatch": 81,
+      "recoveryPending": true,
+      "boundary": {
+        "model": "gpt-6-luna",
+        "task": "settlement-v2",
+        "firstKeptEntryId": "e227",
+        "isSplitTurn": false,
+        "prefixEntries": 227,
+        "retainedEntries": 185,
+        "criticalEntries": [
+          "e0",
+          "e1",
+          "e2",
+          "e3",
+          "e4",
+          "e5",
+          "e6",
+          "e7",
+          "e8",
+          "e9",
+          "e10"
+        ],
+        "criticalBeforeCut": true,
+        "rawHistoryHash": "d7d361bc0e56eeb2d40d1a49d0e6f4efc55a6fb404c36cf3ef85496ac1ca92de",
+        "prefixHash": "f44bc834de6f43bd52ca15f44a81061646f4b57b8a301ef35e4bbb79df1d5e5b",
+        "tailHash": "2c44a4c7a01552c4483f50c373f4d64ffd88f909063b7128331463e4bbde22bb",
+        "systemPromptHash": "06f2a3d99f5c185e9e4cd4b4f3d4b61943200129a8ecdbf26548644aef1ac831",
+        "workspacePathHash": "418bd63c9deb77159bb799ec81743d1da177a9579f145a047671ab1b5659cd3f",
+        "noPriorCheckpoint": true,
+        "managed": false,
+        "extensionPaths": [],
+        "modelSpec": {
+          "contextWindow": 272000,
+          "maxTokens": 128000,
+          "reasoning": true,
+          "thinkingLevelMap": {
+            "off": "none",
+            "minimal": "low",
+            "low": "low",
+            "medium": "medium",
+            "high": "high",
+            "xhigh": "xhigh",
+            "max": "max"
+          },
+          "commonToolEncoding": "top-level-functions",
+          "supportsAdditionalTools": false,
+          "supportsToolSearch": false
+        },
+        "settings": {
+          "enabled": true,
+          "reserveTokens": 16384,
+          "keepRecentTokens": 20000
+        },
+        "customInstructions": null
+      },
+      "matchedPeer": null,
+      "compactStartMonoMs": 10076.552083,
+      "compactCommitMonoMs": 10162.711125,
+      "checkpointKind": "native",
+      "continuationStartMonoMs": 10162.727958,
+      "continuationEndMonoMs": 10642.351542,
+      "record": {
+        "facts": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "state": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "pending": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "stale": {
+          "adopted": 0,
+          "opportunities": 3
+        }
+      },
+      "behavior": {
+        "passed": 7,
+        "total": 7,
+        "error": null,
+        "pid": 31325,
+        "exitCode": 0,
+        "signal": null
+      },
+      "workspace": {
+        "protectedPassed": 102,
+        "protectedTotal": 102,
+        "unauthorizedChanges": [],
+        "extraFiles": [],
+        "sourceChanged": true
+      },
+      "capturedFirst": true,
+      "strictSuccess": true,
+      "tools": [
+        {
+          "name": "record_checkpoint",
+          "sequence": 1
+        },
+        {
+          "name": "workspace_read",
+          "sequence": 2
+        },
+        {
+          "name": "workspace_write",
+          "sequence": 3
+        },
+        {
+          "name": "run_regression",
+          "sequence": 4
+        }
+      ],
+      "observedToolCalls": [
+        {
+          "name": "record_checkpoint",
+          "id": "call_82|fc_82"
+        },
+        {
+          "name": "workspace_read",
+          "id": "call_83|fc_83"
+        },
+        {
+          "name": "workspace_write",
+          "id": "call_84|fc_84"
+        },
+        {
+          "name": "run_regression",
+          "id": "call_85|fc_85"
+        }
+      ],
+      "finishedMonoMs": 10692.032792,
+      "dispatches": 6
+    },
+    {
+      "id": "r2-gpt-6-luna-settlement-v2-pi-compact-remote",
+      "phase": "comparison",
+      "model": "gpt-6-luna",
+      "task": "settlement-v2",
+      "arm": "pi-compact-remote",
+      "repeat": 2,
+      "maxDispatches": 6,
+      "assignedArm": "pi-compact-remote",
+      "effectiveArm": "pi-compact-remote",
+      "fallback": false,
+      "status": "passed",
+      "startedMonoMs": 10701.712583,
+      "firstDispatch": 87,
+      "recoveryPending": true,
+      "boundary": {
+        "model": "gpt-6-luna",
+        "task": "settlement-v2",
+        "firstKeptEntryId": "e227",
+        "isSplitTurn": false,
+        "prefixEntries": 227,
+        "retainedEntries": 185,
+        "criticalEntries": [
+          "e0",
+          "e1",
+          "e2",
+          "e3",
+          "e4",
+          "e5",
+          "e6",
+          "e7",
+          "e8",
+          "e9",
+          "e10"
+        ],
+        "criticalBeforeCut": true,
+        "rawHistoryHash": "d7d361bc0e56eeb2d40d1a49d0e6f4efc55a6fb404c36cf3ef85496ac1ca92de",
+        "prefixHash": "f44bc834de6f43bd52ca15f44a81061646f4b57b8a301ef35e4bbb79df1d5e5b",
+        "tailHash": "2c44a4c7a01552c4483f50c373f4d64ffd88f909063b7128331463e4bbde22bb",
+        "systemPromptHash": "06f2a3d99f5c185e9e4cd4b4f3d4b61943200129a8ecdbf26548644aef1ac831",
+        "workspacePathHash": "418bd63c9deb77159bb799ec81743d1da177a9579f145a047671ab1b5659cd3f",
+        "noPriorCheckpoint": true,
+        "managed": true,
+        "extensionPaths": [
+          "<installed-package>/src/index.ts"
+        ],
+        "modelSpec": {
+          "contextWindow": 272000,
+          "maxTokens": 128000,
+          "reasoning": true,
+          "thinkingLevelMap": {
+            "off": "none",
+            "minimal": "low",
+            "low": "low",
+            "medium": "medium",
+            "high": "high",
+            "xhigh": "xhigh",
+            "max": "max"
+          },
+          "commonToolEncoding": "top-level-functions",
+          "supportsAdditionalTools": false,
+          "supportsToolSearch": false
+        },
+        "settings": {
+          "enabled": true,
+          "reserveTokens": 16384,
+          "keepRecentTokens": 20000
+        },
+        "customInstructions": null
+      },
+      "matchedPeer": "r2-gpt-6-luna-settlement-v2-pi-native",
+      "compactStartMonoMs": 10727.356167,
+      "compactCommitMonoMs": 10845.933708,
+      "checkpointKind": "opaque",
+      "continuationStartMonoMs": 10845.950583,
+      "continuationEndMonoMs": 11376.001167,
+      "record": {
+        "facts": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "state": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "pending": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "stale": {
+          "adopted": 0,
+          "opportunities": 3
+        }
+      },
+      "behavior": {
+        "passed": 7,
+        "total": 7,
+        "error": null,
+        "pid": 31333,
+        "exitCode": 0,
+        "signal": null
+      },
+      "workspace": {
+        "protectedPassed": 102,
+        "protectedTotal": 102,
+        "unauthorizedChanges": [],
+        "extraFiles": [],
+        "sourceChanged": true
+      },
+      "capturedFirst": true,
+      "strictSuccess": true,
+      "tools": [
+        {
+          "name": "record_checkpoint",
+          "sequence": 1
+        },
+        {
+          "name": "workspace_read",
+          "sequence": 2
+        },
+        {
+          "name": "workspace_write",
+          "sequence": 3
+        },
+        {
+          "name": "run_regression",
+          "sequence": 4
+        }
+      ],
+      "observedToolCalls": [
+        {
+          "name": "record_checkpoint",
+          "id": "call_88|fc_88"
+        },
+        {
+          "name": "workspace_read",
+          "id": "call_89|fc_89"
+        },
+        {
+          "name": "workspace_write",
+          "id": "call_90|fc_90"
+        },
+        {
+          "name": "run_regression",
+          "id": "call_91|fc_91"
+        }
+      ],
+      "finishedMonoMs": 11430.417458,
+      "dispatches": 6
+    },
+    {
+      "id": "r2-gpt-6-luna-redirect-v2-pi-compact-remote",
+      "phase": "comparison",
+      "model": "gpt-6-luna",
+      "task": "redirect-v2",
+      "arm": "pi-compact-remote",
+      "repeat": 2,
+      "maxDispatches": 6,
+      "assignedArm": "pi-compact-remote",
+      "effectiveArm": "pi-compact-remote",
+      "fallback": false,
+      "status": "passed",
+      "startedMonoMs": 11440.147875,
+      "firstDispatch": 93,
+      "recoveryPending": true,
+      "boundary": {
+        "model": "gpt-6-luna",
+        "task": "redirect-v2",
+        "firstKeptEntryId": "e227",
+        "isSplitTurn": false,
+        "prefixEntries": 227,
+        "retainedEntries": 185,
+        "criticalEntries": [
+          "e0",
+          "e1",
+          "e2",
+          "e3",
+          "e4",
+          "e5",
+          "e6",
+          "e7",
+          "e8",
+          "e9",
+          "e10"
+        ],
+        "criticalBeforeCut": true,
+        "rawHistoryHash": "972d4cde84b075721855feb5d24d7c8809d81ca2bdc9af518294254f739a1f9c",
+        "prefixHash": "1b516db26467f2282c3090fc74184af5df5263c210ebf9e3add73b21e0125171",
+        "tailHash": "2c44a4c7a01552c4483f50c373f4d64ffd88f909063b7128331463e4bbde22bb",
+        "systemPromptHash": "06f2a3d99f5c185e9e4cd4b4f3d4b61943200129a8ecdbf26548644aef1ac831",
+        "workspacePathHash": "418bd63c9deb77159bb799ec81743d1da177a9579f145a047671ab1b5659cd3f",
+        "noPriorCheckpoint": true,
+        "managed": true,
+        "extensionPaths": [
+          "<installed-package>/src/index.ts"
+        ],
+        "modelSpec": {
+          "contextWindow": 272000,
+          "maxTokens": 128000,
+          "reasoning": true,
+          "thinkingLevelMap": {
+            "off": "none",
+            "minimal": "low",
+            "low": "low",
+            "medium": "medium",
+            "high": "high",
+            "xhigh": "xhigh",
+            "max": "max"
+          },
+          "commonToolEncoding": "top-level-functions",
+          "supportsAdditionalTools": false,
+          "supportsToolSearch": false
+        },
+        "settings": {
+          "enabled": true,
+          "reserveTokens": 16384,
+          "keepRecentTokens": 20000
+        },
+        "customInstructions": null
+      },
+      "matchedPeer": null,
+      "compactStartMonoMs": 11466.421458,
+      "compactCommitMonoMs": 11590.075,
+      "checkpointKind": "opaque",
+      "continuationStartMonoMs": 11590.100458,
+      "continuationEndMonoMs": 12114.307,
+      "record": {
+        "facts": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "state": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "pending": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "stale": {
+          "adopted": 0,
+          "opportunities": 3
+        }
+      },
+      "behavior": {
+        "passed": 8,
+        "total": 8,
+        "error": null,
+        "pid": 31335,
+        "exitCode": 0,
+        "signal": null
+      },
+      "workspace": {
+        "protectedPassed": 102,
+        "protectedTotal": 102,
+        "unauthorizedChanges": [],
+        "extraFiles": [],
+        "sourceChanged": true
+      },
+      "capturedFirst": true,
+      "strictSuccess": true,
+      "tools": [
+        {
+          "name": "record_checkpoint",
+          "sequence": 1
+        },
+        {
+          "name": "workspace_read",
+          "sequence": 2
+        },
+        {
+          "name": "workspace_write",
+          "sequence": 3
+        },
+        {
+          "name": "run_regression",
+          "sequence": 4
+        }
+      ],
+      "observedToolCalls": [
+        {
+          "name": "record_checkpoint",
+          "id": "call_94|fc_94"
+        },
+        {
+          "name": "workspace_read",
+          "id": "call_95|fc_95"
+        },
+        {
+          "name": "workspace_write",
+          "id": "call_96|fc_96"
+        },
+        {
+          "name": "run_regression",
+          "id": "call_97|fc_97"
+        }
+      ],
+      "finishedMonoMs": 12163.7235,
+      "dispatches": 6
+    },
+    {
+      "id": "r2-gpt-6-luna-redirect-v2-pi-native",
+      "phase": "comparison",
+      "model": "gpt-6-luna",
+      "task": "redirect-v2",
+      "arm": "pi-native",
+      "repeat": 2,
+      "maxDispatches": 6,
+      "assignedArm": "pi-native",
+      "effectiveArm": "pi-native",
+      "fallback": false,
+      "status": "passed",
+      "startedMonoMs": 12172.48625,
+      "firstDispatch": 99,
+      "recoveryPending": true,
+      "boundary": {
+        "model": "gpt-6-luna",
+        "task": "redirect-v2",
+        "firstKeptEntryId": "e227",
+        "isSplitTurn": false,
+        "prefixEntries": 227,
+        "retainedEntries": 185,
+        "criticalEntries": [
+          "e0",
+          "e1",
+          "e2",
+          "e3",
+          "e4",
+          "e5",
+          "e6",
+          "e7",
+          "e8",
+          "e9",
+          "e10"
+        ],
+        "criticalBeforeCut": true,
+        "rawHistoryHash": "972d4cde84b075721855feb5d24d7c8809d81ca2bdc9af518294254f739a1f9c",
+        "prefixHash": "1b516db26467f2282c3090fc74184af5df5263c210ebf9e3add73b21e0125171",
+        "tailHash": "2c44a4c7a01552c4483f50c373f4d64ffd88f909063b7128331463e4bbde22bb",
+        "systemPromptHash": "06f2a3d99f5c185e9e4cd4b4f3d4b61943200129a8ecdbf26548644aef1ac831",
+        "workspacePathHash": "418bd63c9deb77159bb799ec81743d1da177a9579f145a047671ab1b5659cd3f",
+        "noPriorCheckpoint": true,
+        "managed": false,
+        "extensionPaths": [],
+        "modelSpec": {
+          "contextWindow": 272000,
+          "maxTokens": 128000,
+          "reasoning": true,
+          "thinkingLevelMap": {
+            "off": "none",
+            "minimal": "low",
+            "low": "low",
+            "medium": "medium",
+            "high": "high",
+            "xhigh": "xhigh",
+            "max": "max"
+          },
+          "commonToolEncoding": "top-level-functions",
+          "supportsAdditionalTools": false,
+          "supportsToolSearch": false
+        },
+        "settings": {
+          "enabled": true,
+          "reserveTokens": 16384,
+          "keepRecentTokens": 20000
+        },
+        "customInstructions": null
+      },
+      "matchedPeer": "r2-gpt-6-luna-redirect-v2-pi-compact-remote",
+      "compactStartMonoMs": 12198.317292,
+      "compactCommitMonoMs": 12287.098875,
+      "checkpointKind": "native",
+      "continuationStartMonoMs": 12287.115292,
+      "continuationEndMonoMs": 12791.466917,
+      "record": {
+        "facts": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "state": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "pending": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "stale": {
+          "adopted": 0,
+          "opportunities": 3
+        }
+      },
+      "behavior": {
+        "passed": 8,
+        "total": 8,
+        "error": null,
+        "pid": 31337,
+        "exitCode": 0,
+        "signal": null
+      },
+      "workspace": {
+        "protectedPassed": 102,
+        "protectedTotal": 102,
+        "unauthorizedChanges": [],
+        "extraFiles": [],
+        "sourceChanged": true
+      },
+      "capturedFirst": true,
+      "strictSuccess": true,
+      "tools": [
+        {
+          "name": "record_checkpoint",
+          "sequence": 1
+        },
+        {
+          "name": "workspace_read",
+          "sequence": 2
+        },
+        {
+          "name": "workspace_write",
+          "sequence": 3
+        },
+        {
+          "name": "run_regression",
+          "sequence": 4
+        }
+      ],
+      "observedToolCalls": [
+        {
+          "name": "record_checkpoint",
+          "id": "call_100|fc_100"
+        },
+        {
+          "name": "workspace_read",
+          "id": "call_101|fc_101"
+        },
+        {
+          "name": "workspace_write",
+          "id": "call_102|fc_102"
+        },
+        {
+          "name": "run_regression",
+          "id": "call_103|fc_103"
+        }
+      ],
+      "finishedMonoMs": 12841.602375,
+      "dispatches": 6
+    },
+    {
+      "id": "r3-gpt-6.1-terra-settlement-v2-pi-native",
+      "phase": "comparison",
+      "model": "gpt-6.1-terra",
+      "task": "settlement-v2",
+      "arm": "pi-native",
+      "repeat": 3,
+      "maxDispatches": 6,
+      "assignedArm": "pi-native",
+      "effectiveArm": "pi-native",
+      "fallback": false,
+      "status": "passed",
+      "startedMonoMs": 12851.792333,
+      "firstDispatch": 105,
+      "recoveryPending": true,
+      "boundary": {
+        "model": "gpt-6.1-terra",
+        "task": "settlement-v2",
+        "firstKeptEntryId": "e227",
+        "isSplitTurn": false,
+        "prefixEntries": 227,
+        "retainedEntries": 185,
+        "criticalEntries": [
+          "e0",
+          "e1",
+          "e2",
+          "e3",
+          "e4",
+          "e5",
+          "e6",
+          "e7",
+          "e8",
+          "e9",
+          "e10"
+        ],
+        "criticalBeforeCut": true,
+        "rawHistoryHash": "58c247d7f55c0d2c15decc5209fb4ab305aa26ebc425fd49a2fa6e21a4270d3b",
+        "prefixHash": "9eb78f24c5d06981c22d6e426421612548376fdf70f155f70f12ddec4bbdb9fc",
+        "tailHash": "f0d902ac11d67b28d7a4782e4df7b08da411517e4374da18a4cacae4760f57d8",
+        "systemPromptHash": "06f2a3d99f5c185e9e4cd4b4f3d4b61943200129a8ecdbf26548644aef1ac831",
+        "workspacePathHash": "418bd63c9deb77159bb799ec81743d1da177a9579f145a047671ab1b5659cd3f",
+        "noPriorCheckpoint": true,
+        "managed": false,
+        "extensionPaths": [],
+        "modelSpec": {
+          "contextWindow": 500000,
+          "maxTokens": 128000,
+          "reasoning": true,
+          "thinkingLevelMap": {
+            "off": "none",
+            "minimal": "low",
+            "low": "low",
+            "medium": "medium",
+            "high": "high",
+            "xhigh": "xhigh",
+            "max": "max"
+          },
+          "commonToolEncoding": "top-level-functions",
+          "supportsAdditionalTools": false,
+          "supportsToolSearch": false
+        },
+        "settings": {
+          "enabled": true,
+          "reserveTokens": 16384,
+          "keepRecentTokens": 20000
+        },
+        "customInstructions": null
+      },
+      "matchedPeer": null,
+      "compactStartMonoMs": 12878.213708,
+      "compactCommitMonoMs": 12963.357083,
+      "checkpointKind": "native",
+      "continuationStartMonoMs": 12963.371917,
+      "continuationEndMonoMs": 13486.508958,
+      "record": {
+        "facts": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "state": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "pending": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "stale": {
+          "adopted": 0,
+          "opportunities": 3
+        }
+      },
+      "behavior": {
+        "passed": 7,
+        "total": 7,
+        "error": null,
+        "pid": 31341,
+        "exitCode": 0,
+        "signal": null
+      },
+      "workspace": {
+        "protectedPassed": 102,
+        "protectedTotal": 102,
+        "unauthorizedChanges": [],
+        "extraFiles": [],
+        "sourceChanged": true
+      },
+      "capturedFirst": true,
+      "strictSuccess": true,
+      "tools": [
+        {
+          "name": "record_checkpoint",
+          "sequence": 1
+        },
+        {
+          "name": "workspace_read",
+          "sequence": 2
+        },
+        {
+          "name": "workspace_write",
+          "sequence": 3
+        },
+        {
+          "name": "run_regression",
+          "sequence": 4
+        }
+      ],
+      "observedToolCalls": [
+        {
+          "name": "record_checkpoint",
+          "id": "call_106|fc_106"
+        },
+        {
+          "name": "workspace_read",
+          "id": "call_107|fc_107"
+        },
+        {
+          "name": "workspace_write",
+          "id": "call_108|fc_108"
+        },
+        {
+          "name": "run_regression",
+          "id": "call_109|fc_109"
+        }
+      ],
+      "finishedMonoMs": 13542.347333,
+      "dispatches": 6
+    },
+    {
+      "id": "r3-gpt-6.1-terra-settlement-v2-pi-compact-remote",
+      "phase": "comparison",
+      "model": "gpt-6.1-terra",
+      "task": "settlement-v2",
+      "arm": "pi-compact-remote",
+      "repeat": 3,
+      "maxDispatches": 6,
+      "assignedArm": "pi-compact-remote",
+      "effectiveArm": "pi-compact-remote",
+      "fallback": false,
+      "status": "passed",
+      "startedMonoMs": 13550.693625,
+      "firstDispatch": 111,
+      "recoveryPending": true,
+      "boundary": {
+        "model": "gpt-6.1-terra",
+        "task": "settlement-v2",
+        "firstKeptEntryId": "e227",
+        "isSplitTurn": false,
+        "prefixEntries": 227,
+        "retainedEntries": 185,
+        "criticalEntries": [
+          "e0",
+          "e1",
+          "e2",
+          "e3",
+          "e4",
+          "e5",
+          "e6",
+          "e7",
+          "e8",
+          "e9",
+          "e10"
+        ],
+        "criticalBeforeCut": true,
+        "rawHistoryHash": "58c247d7f55c0d2c15decc5209fb4ab305aa26ebc425fd49a2fa6e21a4270d3b",
+        "prefixHash": "9eb78f24c5d06981c22d6e426421612548376fdf70f155f70f12ddec4bbdb9fc",
+        "tailHash": "f0d902ac11d67b28d7a4782e4df7b08da411517e4374da18a4cacae4760f57d8",
+        "systemPromptHash": "06f2a3d99f5c185e9e4cd4b4f3d4b61943200129a8ecdbf26548644aef1ac831",
+        "workspacePathHash": "418bd63c9deb77159bb799ec81743d1da177a9579f145a047671ab1b5659cd3f",
+        "noPriorCheckpoint": true,
+        "managed": true,
+        "extensionPaths": [
+          "<installed-package>/src/index.ts"
+        ],
+        "modelSpec": {
+          "contextWindow": 500000,
+          "maxTokens": 128000,
+          "reasoning": true,
+          "thinkingLevelMap": {
+            "off": "none",
+            "minimal": "low",
+            "low": "low",
+            "medium": "medium",
+            "high": "high",
+            "xhigh": "xhigh",
+            "max": "max"
+          },
+          "commonToolEncoding": "top-level-functions",
+          "supportsAdditionalTools": false,
+          "supportsToolSearch": false
+        },
+        "settings": {
+          "enabled": true,
+          "reserveTokens": 16384,
+          "keepRecentTokens": 20000
+        },
+        "customInstructions": null
+      },
+      "matchedPeer": "r3-gpt-6.1-terra-settlement-v2-pi-native",
+      "compactStartMonoMs": 13574.721333,
+      "compactCommitMonoMs": 13693.861542,
+      "checkpointKind": "opaque",
+      "continuationStartMonoMs": 13693.878208,
+      "continuationEndMonoMs": 14231.194292,
+      "record": {
+        "facts": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "state": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "pending": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "stale": {
+          "adopted": 0,
+          "opportunities": 3
+        }
+      },
+      "behavior": {
+        "passed": 7,
+        "total": 7,
+        "error": null,
+        "pid": 31360,
+        "exitCode": 0,
+        "signal": null
+      },
+      "workspace": {
+        "protectedPassed": 102,
+        "protectedTotal": 102,
+        "unauthorizedChanges": [],
+        "extraFiles": [],
+        "sourceChanged": true
+      },
+      "capturedFirst": true,
+      "strictSuccess": true,
+      "tools": [
+        {
+          "name": "record_checkpoint",
+          "sequence": 1
+        },
+        {
+          "name": "workspace_read",
+          "sequence": 2
+        },
+        {
+          "name": "workspace_write",
+          "sequence": 3
+        },
+        {
+          "name": "run_regression",
+          "sequence": 4
+        }
+      ],
+      "observedToolCalls": [
+        {
+          "name": "record_checkpoint",
+          "id": "call_112|fc_112"
+        },
+        {
+          "name": "workspace_read",
+          "id": "call_113|fc_113"
+        },
+        {
+          "name": "workspace_write",
+          "id": "call_114|fc_114"
+        },
+        {
+          "name": "run_regression",
+          "id": "call_115|fc_115"
+        }
+      ],
+      "finishedMonoMs": 14284.488875,
+      "dispatches": 6
+    },
+    {
+      "id": "r3-gpt-6.1-terra-redirect-v2-pi-compact-remote",
+      "phase": "comparison",
+      "model": "gpt-6.1-terra",
+      "task": "redirect-v2",
+      "arm": "pi-compact-remote",
+      "repeat": 3,
+      "maxDispatches": 6,
+      "assignedArm": "pi-compact-remote",
+      "effectiveArm": "pi-compact-remote",
+      "fallback": false,
+      "status": "passed",
+      "startedMonoMs": 14294.212583,
+      "firstDispatch": 117,
+      "recoveryPending": true,
+      "boundary": {
+        "model": "gpt-6.1-terra",
+        "task": "redirect-v2",
+        "firstKeptEntryId": "e227",
+        "isSplitTurn": false,
+        "prefixEntries": 227,
+        "retainedEntries": 185,
+        "criticalEntries": [
+          "e0",
+          "e1",
+          "e2",
+          "e3",
+          "e4",
+          "e5",
+          "e6",
+          "e7",
+          "e8",
+          "e9",
+          "e10"
+        ],
+        "criticalBeforeCut": true,
+        "rawHistoryHash": "0968bb6feb27959be8ffcb13ff3e1b7dc602f80269ed33b9a736bff519701545",
+        "prefixHash": "647396f28a58c7b404180a6cb4a621b515edc8948e3a6e1e33c2b014b0e9d376",
+        "tailHash": "f0d902ac11d67b28d7a4782e4df7b08da411517e4374da18a4cacae4760f57d8",
+        "systemPromptHash": "06f2a3d99f5c185e9e4cd4b4f3d4b61943200129a8ecdbf26548644aef1ac831",
+        "workspacePathHash": "418bd63c9deb77159bb799ec81743d1da177a9579f145a047671ab1b5659cd3f",
+        "noPriorCheckpoint": true,
+        "managed": true,
+        "extensionPaths": [
+          "<installed-package>/src/index.ts"
+        ],
+        "modelSpec": {
+          "contextWindow": 500000,
+          "maxTokens": 128000,
+          "reasoning": true,
+          "thinkingLevelMap": {
+            "off": "none",
+            "minimal": "low",
+            "low": "low",
+            "medium": "medium",
+            "high": "high",
+            "xhigh": "xhigh",
+            "max": "max"
+          },
+          "commonToolEncoding": "top-level-functions",
+          "supportsAdditionalTools": false,
+          "supportsToolSearch": false
+        },
+        "settings": {
+          "enabled": true,
+          "reserveTokens": 16384,
+          "keepRecentTokens": 20000
+        },
+        "customInstructions": null
+      },
+      "matchedPeer": null,
+      "compactStartMonoMs": 14321.037333,
+      "compactCommitMonoMs": 14441.216167,
+      "checkpointKind": "opaque",
+      "continuationStartMonoMs": 14441.237125,
+      "continuationEndMonoMs": 14985.068542,
+      "record": {
+        "facts": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "state": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "pending": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "stale": {
+          "adopted": 0,
+          "opportunities": 3
+        }
+      },
+      "behavior": {
+        "passed": 8,
+        "total": 8,
+        "error": null,
+        "pid": 31363,
+        "exitCode": 0,
+        "signal": null
+      },
+      "workspace": {
+        "protectedPassed": 102,
+        "protectedTotal": 102,
+        "unauthorizedChanges": [],
+        "extraFiles": [],
+        "sourceChanged": true
+      },
+      "capturedFirst": true,
+      "strictSuccess": true,
+      "tools": [
+        {
+          "name": "record_checkpoint",
+          "sequence": 1
+        },
+        {
+          "name": "workspace_read",
+          "sequence": 2
+        },
+        {
+          "name": "workspace_write",
+          "sequence": 3
+        },
+        {
+          "name": "run_regression",
+          "sequence": 4
+        }
+      ],
+      "observedToolCalls": [
+        {
+          "name": "record_checkpoint",
+          "id": "call_118|fc_118"
+        },
+        {
+          "name": "workspace_read",
+          "id": "call_119|fc_119"
+        },
+        {
+          "name": "workspace_write",
+          "id": "call_120|fc_120"
+        },
+        {
+          "name": "run_regression",
+          "id": "call_121|fc_121"
+        }
+      ],
+      "finishedMonoMs": 15035.305583,
+      "dispatches": 6
+    },
+    {
+      "id": "r3-gpt-6.1-terra-redirect-v2-pi-native",
+      "phase": "comparison",
+      "model": "gpt-6.1-terra",
+      "task": "redirect-v2",
+      "arm": "pi-native",
+      "repeat": 3,
+      "maxDispatches": 6,
+      "assignedArm": "pi-native",
+      "effectiveArm": "pi-native",
+      "fallback": false,
+      "status": "passed",
+      "startedMonoMs": 15045.155208,
+      "firstDispatch": 123,
+      "recoveryPending": true,
+      "boundary": {
+        "model": "gpt-6.1-terra",
+        "task": "redirect-v2",
+        "firstKeptEntryId": "e227",
+        "isSplitTurn": false,
+        "prefixEntries": 227,
+        "retainedEntries": 185,
+        "criticalEntries": [
+          "e0",
+          "e1",
+          "e2",
+          "e3",
+          "e4",
+          "e5",
+          "e6",
+          "e7",
+          "e8",
+          "e9",
+          "e10"
+        ],
+        "criticalBeforeCut": true,
+        "rawHistoryHash": "0968bb6feb27959be8ffcb13ff3e1b7dc602f80269ed33b9a736bff519701545",
+        "prefixHash": "647396f28a58c7b404180a6cb4a621b515edc8948e3a6e1e33c2b014b0e9d376",
+        "tailHash": "f0d902ac11d67b28d7a4782e4df7b08da411517e4374da18a4cacae4760f57d8",
+        "systemPromptHash": "06f2a3d99f5c185e9e4cd4b4f3d4b61943200129a8ecdbf26548644aef1ac831",
+        "workspacePathHash": "418bd63c9deb77159bb799ec81743d1da177a9579f145a047671ab1b5659cd3f",
+        "noPriorCheckpoint": true,
+        "managed": false,
+        "extensionPaths": [],
+        "modelSpec": {
+          "contextWindow": 500000,
+          "maxTokens": 128000,
+          "reasoning": true,
+          "thinkingLevelMap": {
+            "off": "none",
+            "minimal": "low",
+            "low": "low",
+            "medium": "medium",
+            "high": "high",
+            "xhigh": "xhigh",
+            "max": "max"
+          },
+          "commonToolEncoding": "top-level-functions",
+          "supportsAdditionalTools": false,
+          "supportsToolSearch": false
+        },
+        "settings": {
+          "enabled": true,
+          "reserveTokens": 16384,
+          "keepRecentTokens": 20000
+        },
+        "customInstructions": null
+      },
+      "matchedPeer": "r3-gpt-6.1-terra-redirect-v2-pi-compact-remote",
+      "compactStartMonoMs": 15071.041333,
+      "compactCommitMonoMs": 15161.930375,
+      "checkpointKind": "native",
+      "continuationStartMonoMs": 15161.948083,
+      "continuationEndMonoMs": 15689.511708,
+      "record": {
+        "facts": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "state": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "pending": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "stale": {
+          "adopted": 0,
+          "opportunities": 3
+        }
+      },
+      "behavior": {
+        "passed": 8,
+        "total": 8,
+        "error": null,
+        "pid": 31365,
+        "exitCode": 0,
+        "signal": null
+      },
+      "workspace": {
+        "protectedPassed": 102,
+        "protectedTotal": 102,
+        "unauthorizedChanges": [],
+        "extraFiles": [],
+        "sourceChanged": true
+      },
+      "capturedFirst": true,
+      "strictSuccess": true,
+      "tools": [
+        {
+          "name": "record_checkpoint",
+          "sequence": 1
+        },
+        {
+          "name": "workspace_read",
+          "sequence": 2
+        },
+        {
+          "name": "workspace_write",
+          "sequence": 3
+        },
+        {
+          "name": "run_regression",
+          "sequence": 4
+        }
+      ],
+      "observedToolCalls": [
+        {
+          "name": "record_checkpoint",
+          "id": "call_124|fc_124"
+        },
+        {
+          "name": "workspace_read",
+          "id": "call_125|fc_125"
+        },
+        {
+          "name": "workspace_write",
+          "id": "call_126|fc_126"
+        },
+        {
+          "name": "run_regression",
+          "id": "call_127|fc_127"
+        }
+      ],
+      "finishedMonoMs": 15740.8675,
+      "dispatches": 6
+    },
+    {
+      "id": "r3-gpt-6-luna-settlement-v2-pi-compact-remote",
+      "phase": "comparison",
+      "model": "gpt-6-luna",
+      "task": "settlement-v2",
+      "arm": "pi-compact-remote",
+      "repeat": 3,
+      "maxDispatches": 6,
+      "assignedArm": "pi-compact-remote",
+      "effectiveArm": "pi-compact-remote",
+      "fallback": false,
+      "status": "passed",
+      "startedMonoMs": 15752.331958,
+      "firstDispatch": 129,
+      "recoveryPending": true,
+      "boundary": {
+        "model": "gpt-6-luna",
+        "task": "settlement-v2",
+        "firstKeptEntryId": "e227",
+        "isSplitTurn": false,
+        "prefixEntries": 227,
+        "retainedEntries": 185,
+        "criticalEntries": [
+          "e0",
+          "e1",
+          "e2",
+          "e3",
+          "e4",
+          "e5",
+          "e6",
+          "e7",
+          "e8",
+          "e9",
+          "e10"
+        ],
+        "criticalBeforeCut": true,
+        "rawHistoryHash": "d7d361bc0e56eeb2d40d1a49d0e6f4efc55a6fb404c36cf3ef85496ac1ca92de",
+        "prefixHash": "f44bc834de6f43bd52ca15f44a81061646f4b57b8a301ef35e4bbb79df1d5e5b",
+        "tailHash": "2c44a4c7a01552c4483f50c373f4d64ffd88f909063b7128331463e4bbde22bb",
+        "systemPromptHash": "06f2a3d99f5c185e9e4cd4b4f3d4b61943200129a8ecdbf26548644aef1ac831",
+        "workspacePathHash": "418bd63c9deb77159bb799ec81743d1da177a9579f145a047671ab1b5659cd3f",
+        "noPriorCheckpoint": true,
+        "managed": true,
+        "extensionPaths": [
+          "<installed-package>/src/index.ts"
+        ],
+        "modelSpec": {
+          "contextWindow": 272000,
+          "maxTokens": 128000,
+          "reasoning": true,
+          "thinkingLevelMap": {
+            "off": "none",
+            "minimal": "low",
+            "low": "low",
+            "medium": "medium",
+            "high": "high",
+            "xhigh": "xhigh",
+            "max": "max"
+          },
+          "commonToolEncoding": "top-level-functions",
+          "supportsAdditionalTools": false,
+          "supportsToolSearch": false
+        },
+        "settings": {
+          "enabled": true,
+          "reserveTokens": 16384,
+          "keepRecentTokens": 20000
+        },
+        "customInstructions": null
+      },
+      "matchedPeer": null,
+      "compactStartMonoMs": 15778.406125,
+      "compactCommitMonoMs": 15894.07325,
+      "checkpointKind": "opaque",
+      "continuationStartMonoMs": 15894.092625,
+      "continuationEndMonoMs": 16417.889375,
+      "record": {
+        "facts": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "state": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "pending": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "stale": {
+          "adopted": 0,
+          "opportunities": 3
+        }
+      },
+      "behavior": {
+        "passed": 7,
+        "total": 7,
+        "error": null,
+        "pid": 31387,
+        "exitCode": 0,
+        "signal": null
+      },
+      "workspace": {
+        "protectedPassed": 102,
+        "protectedTotal": 102,
+        "unauthorizedChanges": [],
+        "extraFiles": [],
+        "sourceChanged": true
+      },
+      "capturedFirst": true,
+      "strictSuccess": true,
+      "tools": [
+        {
+          "name": "record_checkpoint",
+          "sequence": 1
+        },
+        {
+          "name": "workspace_read",
+          "sequence": 2
+        },
+        {
+          "name": "workspace_write",
+          "sequence": 3
+        },
+        {
+          "name": "run_regression",
+          "sequence": 4
+        }
+      ],
+      "observedToolCalls": [
+        {
+          "name": "record_checkpoint",
+          "id": "call_130|fc_130"
+        },
+        {
+          "name": "workspace_read",
+          "id": "call_131|fc_131"
+        },
+        {
+          "name": "workspace_write",
+          "id": "call_132|fc_132"
+        },
+        {
+          "name": "run_regression",
+          "id": "call_133|fc_133"
+        }
+      ],
+      "finishedMonoMs": 16473.891083,
+      "dispatches": 6
+    },
+    {
+      "id": "r3-gpt-6-luna-settlement-v2-pi-native",
+      "phase": "comparison",
+      "model": "gpt-6-luna",
+      "task": "settlement-v2",
+      "arm": "pi-native",
+      "repeat": 3,
+      "maxDispatches": 6,
+      "assignedArm": "pi-native",
+      "effectiveArm": "pi-native",
+      "fallback": false,
+      "status": "passed",
+      "startedMonoMs": 16484.346375,
+      "firstDispatch": 135,
+      "recoveryPending": true,
+      "boundary": {
+        "model": "gpt-6-luna",
+        "task": "settlement-v2",
+        "firstKeptEntryId": "e227",
+        "isSplitTurn": false,
+        "prefixEntries": 227,
+        "retainedEntries": 185,
+        "criticalEntries": [
+          "e0",
+          "e1",
+          "e2",
+          "e3",
+          "e4",
+          "e5",
+          "e6",
+          "e7",
+          "e8",
+          "e9",
+          "e10"
+        ],
+        "criticalBeforeCut": true,
+        "rawHistoryHash": "d7d361bc0e56eeb2d40d1a49d0e6f4efc55a6fb404c36cf3ef85496ac1ca92de",
+        "prefixHash": "f44bc834de6f43bd52ca15f44a81061646f4b57b8a301ef35e4bbb79df1d5e5b",
+        "tailHash": "2c44a4c7a01552c4483f50c373f4d64ffd88f909063b7128331463e4bbde22bb",
+        "systemPromptHash": "06f2a3d99f5c185e9e4cd4b4f3d4b61943200129a8ecdbf26548644aef1ac831",
+        "workspacePathHash": "418bd63c9deb77159bb799ec81743d1da177a9579f145a047671ab1b5659cd3f",
+        "noPriorCheckpoint": true,
+        "managed": false,
+        "extensionPaths": [],
+        "modelSpec": {
+          "contextWindow": 272000,
+          "maxTokens": 128000,
+          "reasoning": true,
+          "thinkingLevelMap": {
+            "off": "none",
+            "minimal": "low",
+            "low": "low",
+            "medium": "medium",
+            "high": "high",
+            "xhigh": "xhigh",
+            "max": "max"
+          },
+          "commonToolEncoding": "top-level-functions",
+          "supportsAdditionalTools": false,
+          "supportsToolSearch": false
+        },
+        "settings": {
+          "enabled": true,
+          "reserveTokens": 16384,
+          "keepRecentTokens": 20000
+        },
+        "customInstructions": null
+      },
+      "matchedPeer": "r3-gpt-6-luna-settlement-v2-pi-compact-remote",
+      "compactStartMonoMs": 16510.064542,
+      "compactCommitMonoMs": 16596.738125,
+      "checkpointKind": "native",
+      "continuationStartMonoMs": 16596.7495,
+      "continuationEndMonoMs": 17089.82075,
+      "record": {
+        "facts": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "state": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "pending": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "stale": {
+          "adopted": 0,
+          "opportunities": 3
+        }
+      },
+      "behavior": {
+        "passed": 7,
+        "total": 7,
+        "error": null,
+        "pid": 31406,
+        "exitCode": 0,
+        "signal": null
+      },
+      "workspace": {
+        "protectedPassed": 102,
+        "protectedTotal": 102,
+        "unauthorizedChanges": [],
+        "extraFiles": [],
+        "sourceChanged": true
+      },
+      "capturedFirst": true,
+      "strictSuccess": true,
+      "tools": [
+        {
+          "name": "record_checkpoint",
+          "sequence": 1
+        },
+        {
+          "name": "workspace_read",
+          "sequence": 2
+        },
+        {
+          "name": "workspace_write",
+          "sequence": 3
+        },
+        {
+          "name": "run_regression",
+          "sequence": 4
+        }
+      ],
+      "observedToolCalls": [
+        {
+          "name": "record_checkpoint",
+          "id": "call_136|fc_136"
+        },
+        {
+          "name": "workspace_read",
+          "id": "call_137|fc_137"
+        },
+        {
+          "name": "workspace_write",
+          "id": "call_138|fc_138"
+        },
+        {
+          "name": "run_regression",
+          "id": "call_139|fc_139"
+        }
+      ],
+      "finishedMonoMs": 17144.046583,
+      "dispatches": 6
+    },
+    {
+      "id": "r3-gpt-6-luna-redirect-v2-pi-native",
+      "phase": "comparison",
+      "model": "gpt-6-luna",
+      "task": "redirect-v2",
+      "arm": "pi-native",
+      "repeat": 3,
+      "maxDispatches": 6,
+      "assignedArm": "pi-native",
+      "effectiveArm": "pi-native",
+      "fallback": false,
+      "status": "passed",
+      "startedMonoMs": 17153.428542,
+      "firstDispatch": 141,
+      "recoveryPending": true,
+      "boundary": {
+        "model": "gpt-6-luna",
+        "task": "redirect-v2",
+        "firstKeptEntryId": "e227",
+        "isSplitTurn": false,
+        "prefixEntries": 227,
+        "retainedEntries": 185,
+        "criticalEntries": [
+          "e0",
+          "e1",
+          "e2",
+          "e3",
+          "e4",
+          "e5",
+          "e6",
+          "e7",
+          "e8",
+          "e9",
+          "e10"
+        ],
+        "criticalBeforeCut": true,
+        "rawHistoryHash": "972d4cde84b075721855feb5d24d7c8809d81ca2bdc9af518294254f739a1f9c",
+        "prefixHash": "1b516db26467f2282c3090fc74184af5df5263c210ebf9e3add73b21e0125171",
+        "tailHash": "2c44a4c7a01552c4483f50c373f4d64ffd88f909063b7128331463e4bbde22bb",
+        "systemPromptHash": "06f2a3d99f5c185e9e4cd4b4f3d4b61943200129a8ecdbf26548644aef1ac831",
+        "workspacePathHash": "418bd63c9deb77159bb799ec81743d1da177a9579f145a047671ab1b5659cd3f",
+        "noPriorCheckpoint": true,
+        "managed": false,
+        "extensionPaths": [],
+        "modelSpec": {
+          "contextWindow": 272000,
+          "maxTokens": 128000,
+          "reasoning": true,
+          "thinkingLevelMap": {
+            "off": "none",
+            "minimal": "low",
+            "low": "low",
+            "medium": "medium",
+            "high": "high",
+            "xhigh": "xhigh",
+            "max": "max"
+          },
+          "commonToolEncoding": "top-level-functions",
+          "supportsAdditionalTools": false,
+          "supportsToolSearch": false
+        },
+        "settings": {
+          "enabled": true,
+          "reserveTokens": 16384,
+          "keepRecentTokens": 20000
+        },
+        "customInstructions": null
+      },
+      "matchedPeer": null,
+      "compactStartMonoMs": 17179.2695,
+      "compactCommitMonoMs": 17267.980875,
+      "checkpointKind": "native",
+      "continuationStartMonoMs": 17267.995458,
+      "continuationEndMonoMs": 17791.153333,
+      "record": {
+        "facts": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "state": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "pending": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "stale": {
+          "adopted": 0,
+          "opportunities": 3
+        }
+      },
+      "behavior": {
+        "passed": 8,
+        "total": 8,
+        "error": null,
+        "pid": 31408,
+        "exitCode": 0,
+        "signal": null
+      },
+      "workspace": {
+        "protectedPassed": 102,
+        "protectedTotal": 102,
+        "unauthorizedChanges": [],
+        "extraFiles": [],
+        "sourceChanged": true
+      },
+      "capturedFirst": true,
+      "strictSuccess": true,
+      "tools": [
+        {
+          "name": "record_checkpoint",
+          "sequence": 1
+        },
+        {
+          "name": "workspace_read",
+          "sequence": 2
+        },
+        {
+          "name": "workspace_write",
+          "sequence": 3
+        },
+        {
+          "name": "run_regression",
+          "sequence": 4
+        }
+      ],
+      "observedToolCalls": [
+        {
+          "name": "record_checkpoint",
+          "id": "call_142|fc_142"
+        },
+        {
+          "name": "workspace_read",
+          "id": "call_143|fc_143"
+        },
+        {
+          "name": "workspace_write",
+          "id": "call_144|fc_144"
+        },
+        {
+          "name": "run_regression",
+          "id": "call_145|fc_145"
+        }
+      ],
+      "finishedMonoMs": 17841.540333,
+      "dispatches": 6
+    },
+    {
+      "id": "r3-gpt-6-luna-redirect-v2-pi-compact-remote",
+      "phase": "comparison",
+      "model": "gpt-6-luna",
+      "task": "redirect-v2",
+      "arm": "pi-compact-remote",
+      "repeat": 3,
+      "maxDispatches": 6,
+      "assignedArm": "pi-compact-remote",
+      "effectiveArm": "pi-compact-remote",
+      "fallback": false,
+      "status": "passed",
+      "startedMonoMs": 17851.396542,
+      "firstDispatch": 147,
+      "recoveryPending": true,
+      "boundary": {
+        "model": "gpt-6-luna",
+        "task": "redirect-v2",
+        "firstKeptEntryId": "e227",
+        "isSplitTurn": false,
+        "prefixEntries": 227,
+        "retainedEntries": 185,
+        "criticalEntries": [
+          "e0",
+          "e1",
+          "e2",
+          "e3",
+          "e4",
+          "e5",
+          "e6",
+          "e7",
+          "e8",
+          "e9",
+          "e10"
+        ],
+        "criticalBeforeCut": true,
+        "rawHistoryHash": "972d4cde84b075721855feb5d24d7c8809d81ca2bdc9af518294254f739a1f9c",
+        "prefixHash": "1b516db26467f2282c3090fc74184af5df5263c210ebf9e3add73b21e0125171",
+        "tailHash": "2c44a4c7a01552c4483f50c373f4d64ffd88f909063b7128331463e4bbde22bb",
+        "systemPromptHash": "06f2a3d99f5c185e9e4cd4b4f3d4b61943200129a8ecdbf26548644aef1ac831",
+        "workspacePathHash": "418bd63c9deb77159bb799ec81743d1da177a9579f145a047671ab1b5659cd3f",
+        "noPriorCheckpoint": true,
+        "managed": true,
+        "extensionPaths": [
+          "<installed-package>/src/index.ts"
+        ],
+        "modelSpec": {
+          "contextWindow": 272000,
+          "maxTokens": 128000,
+          "reasoning": true,
+          "thinkingLevelMap": {
+            "off": "none",
+            "minimal": "low",
+            "low": "low",
+            "medium": "medium",
+            "high": "high",
+            "xhigh": "xhigh",
+            "max": "max"
+          },
+          "commonToolEncoding": "top-level-functions",
+          "supportsAdditionalTools": false,
+          "supportsToolSearch": false
+        },
+        "settings": {
+          "enabled": true,
+          "reserveTokens": 16384,
+          "keepRecentTokens": 20000
+        },
+        "customInstructions": null
+      },
+      "matchedPeer": "r3-gpt-6-luna-redirect-v2-pi-native",
+      "compactStartMonoMs": 17878.080083,
+      "compactCommitMonoMs": 17996.321083,
+      "checkpointKind": "opaque",
+      "continuationStartMonoMs": 17996.338,
+      "continuationEndMonoMs": 18552.329875,
+      "record": {
+        "facts": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "state": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "pending": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "stale": {
+          "adopted": 0,
+          "opportunities": 3
+        }
+      },
+      "behavior": {
+        "passed": 8,
+        "total": 8,
+        "error": null,
+        "pid": 31411,
+        "exitCode": 0,
+        "signal": null
+      },
+      "workspace": {
+        "protectedPassed": 102,
+        "protectedTotal": 102,
+        "unauthorizedChanges": [],
+        "extraFiles": [],
+        "sourceChanged": true
+      },
+      "capturedFirst": true,
+      "strictSuccess": true,
+      "tools": [
+        {
+          "name": "record_checkpoint",
+          "sequence": 1
+        },
+        {
+          "name": "workspace_read",
+          "sequence": 2
+        },
+        {
+          "name": "workspace_write",
+          "sequence": 3
+        },
+        {
+          "name": "run_regression",
+          "sequence": 4
+        }
+      ],
+      "observedToolCalls": [
+        {
+          "name": "record_checkpoint",
+          "id": "call_148|fc_148"
+        },
+        {
+          "name": "workspace_read",
+          "id": "call_149|fc_149"
+        },
+        {
+          "name": "workspace_write",
+          "id": "call_150|fc_150"
+        },
+        {
+          "name": "run_regression",
+          "id": "call_151|fc_151"
+        }
+      ],
+      "finishedMonoMs": 18602.001917,
+      "dispatches": 6
+    },
+    {
+      "id": "r4-gpt-6.1-terra-settlement-v2-pi-compact-remote",
+      "phase": "comparison",
+      "model": "gpt-6.1-terra",
+      "task": "settlement-v2",
+      "arm": "pi-compact-remote",
+      "repeat": 4,
+      "maxDispatches": 6,
+      "assignedArm": "pi-compact-remote",
+      "effectiveArm": "pi-compact-remote",
+      "fallback": false,
+      "status": "passed",
+      "startedMonoMs": 18611.408625,
+      "firstDispatch": 153,
+      "recoveryPending": true,
+      "boundary": {
+        "model": "gpt-6.1-terra",
+        "task": "settlement-v2",
+        "firstKeptEntryId": "e227",
+        "isSplitTurn": false,
+        "prefixEntries": 227,
+        "retainedEntries": 185,
+        "criticalEntries": [
+          "e0",
+          "e1",
+          "e2",
+          "e3",
+          "e4",
+          "e5",
+          "e6",
+          "e7",
+          "e8",
+          "e9",
+          "e10"
+        ],
+        "criticalBeforeCut": true,
+        "rawHistoryHash": "58c247d7f55c0d2c15decc5209fb4ab305aa26ebc425fd49a2fa6e21a4270d3b",
+        "prefixHash": "9eb78f24c5d06981c22d6e426421612548376fdf70f155f70f12ddec4bbdb9fc",
+        "tailHash": "f0d902ac11d67b28d7a4782e4df7b08da411517e4374da18a4cacae4760f57d8",
+        "systemPromptHash": "06f2a3d99f5c185e9e4cd4b4f3d4b61943200129a8ecdbf26548644aef1ac831",
+        "workspacePathHash": "418bd63c9deb77159bb799ec81743d1da177a9579f145a047671ab1b5659cd3f",
+        "noPriorCheckpoint": true,
+        "managed": true,
+        "extensionPaths": [
+          "<installed-package>/src/index.ts"
+        ],
+        "modelSpec": {
+          "contextWindow": 500000,
+          "maxTokens": 128000,
+          "reasoning": true,
+          "thinkingLevelMap": {
+            "off": "none",
+            "minimal": "low",
+            "low": "low",
+            "medium": "medium",
+            "high": "high",
+            "xhigh": "xhigh",
+            "max": "max"
+          },
+          "commonToolEncoding": "top-level-functions",
+          "supportsAdditionalTools": false,
+          "supportsToolSearch": false
+        },
+        "settings": {
+          "enabled": true,
+          "reserveTokens": 16384,
+          "keepRecentTokens": 20000
+        },
+        "customInstructions": null
+      },
+      "matchedPeer": null,
+      "compactStartMonoMs": 18637.50675,
+      "compactCommitMonoMs": 18764.674958,
+      "checkpointKind": "opaque",
+      "continuationStartMonoMs": 18764.7025,
+      "continuationEndMonoMs": 19301.161125,
+      "record": {
+        "facts": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "state": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "pending": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "stale": {
+          "adopted": 0,
+          "opportunities": 3
+        }
+      },
+      "behavior": {
+        "passed": 7,
+        "total": 7,
+        "error": null,
+        "pid": 31415,
+        "exitCode": 0,
+        "signal": null
+      },
+      "workspace": {
+        "protectedPassed": 102,
+        "protectedTotal": 102,
+        "unauthorizedChanges": [],
+        "extraFiles": [],
+        "sourceChanged": true
+      },
+      "capturedFirst": true,
+      "strictSuccess": true,
+      "tools": [
+        {
+          "name": "record_checkpoint",
+          "sequence": 1
+        },
+        {
+          "name": "workspace_read",
+          "sequence": 2
+        },
+        {
+          "name": "workspace_write",
+          "sequence": 3
+        },
+        {
+          "name": "run_regression",
+          "sequence": 4
+        }
+      ],
+      "observedToolCalls": [
+        {
+          "name": "record_checkpoint",
+          "id": "call_154|fc_154"
+        },
+        {
+          "name": "workspace_read",
+          "id": "call_155|fc_155"
+        },
+        {
+          "name": "workspace_write",
+          "id": "call_156|fc_156"
+        },
+        {
+          "name": "run_regression",
+          "id": "call_157|fc_157"
+        }
+      ],
+      "finishedMonoMs": 19355.205542,
+      "dispatches": 6
+    },
+    {
+      "id": "r4-gpt-6.1-terra-settlement-v2-pi-native",
+      "phase": "comparison",
+      "model": "gpt-6.1-terra",
+      "task": "settlement-v2",
+      "arm": "pi-native",
+      "repeat": 4,
+      "maxDispatches": 6,
+      "assignedArm": "pi-native",
+      "effectiveArm": "pi-native",
+      "fallback": false,
+      "status": "passed",
+      "startedMonoMs": 19365.386292,
+      "firstDispatch": 159,
+      "recoveryPending": true,
+      "boundary": {
+        "model": "gpt-6.1-terra",
+        "task": "settlement-v2",
+        "firstKeptEntryId": "e227",
+        "isSplitTurn": false,
+        "prefixEntries": 227,
+        "retainedEntries": 185,
+        "criticalEntries": [
+          "e0",
+          "e1",
+          "e2",
+          "e3",
+          "e4",
+          "e5",
+          "e6",
+          "e7",
+          "e8",
+          "e9",
+          "e10"
+        ],
+        "criticalBeforeCut": true,
+        "rawHistoryHash": "58c247d7f55c0d2c15decc5209fb4ab305aa26ebc425fd49a2fa6e21a4270d3b",
+        "prefixHash": "9eb78f24c5d06981c22d6e426421612548376fdf70f155f70f12ddec4bbdb9fc",
+        "tailHash": "f0d902ac11d67b28d7a4782e4df7b08da411517e4374da18a4cacae4760f57d8",
+        "systemPromptHash": "06f2a3d99f5c185e9e4cd4b4f3d4b61943200129a8ecdbf26548644aef1ac831",
+        "workspacePathHash": "418bd63c9deb77159bb799ec81743d1da177a9579f145a047671ab1b5659cd3f",
+        "noPriorCheckpoint": true,
+        "managed": false,
+        "extensionPaths": [],
+        "modelSpec": {
+          "contextWindow": 500000,
+          "maxTokens": 128000,
+          "reasoning": true,
+          "thinkingLevelMap": {
+            "off": "none",
+            "minimal": "low",
+            "low": "low",
+            "medium": "medium",
+            "high": "high",
+            "xhigh": "xhigh",
+            "max": "max"
+          },
+          "commonToolEncoding": "top-level-functions",
+          "supportsAdditionalTools": false,
+          "supportsToolSearch": false
+        },
+        "settings": {
+          "enabled": true,
+          "reserveTokens": 16384,
+          "keepRecentTokens": 20000
+        },
+        "customInstructions": null
+      },
+      "matchedPeer": "r4-gpt-6.1-terra-settlement-v2-pi-compact-remote",
+      "compactStartMonoMs": 19391.161542,
+      "compactCommitMonoMs": 19484.029458,
+      "checkpointKind": "native",
+      "continuationStartMonoMs": 19484.045542,
+      "continuationEndMonoMs": 19989.0235,
+      "record": {
+        "facts": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "state": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "pending": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "stale": {
+          "adopted": 0,
+          "opportunities": 3
+        }
+      },
+      "behavior": {
+        "passed": 7,
+        "total": 7,
+        "error": null,
+        "pid": 31434,
+        "exitCode": 0,
+        "signal": null
+      },
+      "workspace": {
+        "protectedPassed": 102,
+        "protectedTotal": 102,
+        "unauthorizedChanges": [],
+        "extraFiles": [],
+        "sourceChanged": true
+      },
+      "capturedFirst": true,
+      "strictSuccess": true,
+      "tools": [
+        {
+          "name": "record_checkpoint",
+          "sequence": 1
+        },
+        {
+          "name": "workspace_read",
+          "sequence": 2
+        },
+        {
+          "name": "workspace_write",
+          "sequence": 3
+        },
+        {
+          "name": "run_regression",
+          "sequence": 4
+        }
+      ],
+      "observedToolCalls": [
+        {
+          "name": "record_checkpoint",
+          "id": "call_160|fc_160"
+        },
+        {
+          "name": "workspace_read",
+          "id": "call_161|fc_161"
+        },
+        {
+          "name": "workspace_write",
+          "id": "call_162|fc_162"
+        },
+        {
+          "name": "run_regression",
+          "id": "call_163|fc_163"
+        }
+      ],
+      "finishedMonoMs": 20044.039292,
+      "dispatches": 6
+    },
+    {
+      "id": "r4-gpt-6.1-terra-redirect-v2-pi-native",
+      "phase": "comparison",
+      "model": "gpt-6.1-terra",
+      "task": "redirect-v2",
+      "arm": "pi-native",
+      "repeat": 4,
+      "maxDispatches": 6,
+      "assignedArm": "pi-native",
+      "effectiveArm": "pi-native",
+      "fallback": false,
+      "status": "passed",
+      "startedMonoMs": 20054.728833,
+      "firstDispatch": 165,
+      "recoveryPending": true,
+      "boundary": {
+        "model": "gpt-6.1-terra",
+        "task": "redirect-v2",
+        "firstKeptEntryId": "e227",
+        "isSplitTurn": false,
+        "prefixEntries": 227,
+        "retainedEntries": 185,
+        "criticalEntries": [
+          "e0",
+          "e1",
+          "e2",
+          "e3",
+          "e4",
+          "e5",
+          "e6",
+          "e7",
+          "e8",
+          "e9",
+          "e10"
+        ],
+        "criticalBeforeCut": true,
+        "rawHistoryHash": "0968bb6feb27959be8ffcb13ff3e1b7dc602f80269ed33b9a736bff519701545",
+        "prefixHash": "647396f28a58c7b404180a6cb4a621b515edc8948e3a6e1e33c2b014b0e9d376",
+        "tailHash": "f0d902ac11d67b28d7a4782e4df7b08da411517e4374da18a4cacae4760f57d8",
+        "systemPromptHash": "06f2a3d99f5c185e9e4cd4b4f3d4b61943200129a8ecdbf26548644aef1ac831",
+        "workspacePathHash": "418bd63c9deb77159bb799ec81743d1da177a9579f145a047671ab1b5659cd3f",
+        "noPriorCheckpoint": true,
+        "managed": false,
+        "extensionPaths": [],
+        "modelSpec": {
+          "contextWindow": 500000,
+          "maxTokens": 128000,
+          "reasoning": true,
+          "thinkingLevelMap": {
+            "off": "none",
+            "minimal": "low",
+            "low": "low",
+            "medium": "medium",
+            "high": "high",
+            "xhigh": "xhigh",
+            "max": "max"
+          },
+          "commonToolEncoding": "top-level-functions",
+          "supportsAdditionalTools": false,
+          "supportsToolSearch": false
+        },
+        "settings": {
+          "enabled": true,
+          "reserveTokens": 16384,
+          "keepRecentTokens": 20000
+        },
+        "customInstructions": null
+      },
+      "matchedPeer": null,
+      "compactStartMonoMs": 20080.772333,
+      "compactCommitMonoMs": 20177.010167,
+      "checkpointKind": "native",
+      "continuationStartMonoMs": 20177.026833,
+      "continuationEndMonoMs": 20710.215625,
+      "record": {
+        "facts": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "state": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "pending": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "stale": {
+          "adopted": 0,
+          "opportunities": 3
+        }
+      },
+      "behavior": {
+        "passed": 8,
+        "total": 8,
+        "error": null,
+        "pid": 31436,
+        "exitCode": 0,
+        "signal": null
+      },
+      "workspace": {
+        "protectedPassed": 102,
+        "protectedTotal": 102,
+        "unauthorizedChanges": [],
+        "extraFiles": [],
+        "sourceChanged": true
+      },
+      "capturedFirst": true,
+      "strictSuccess": true,
+      "tools": [
+        {
+          "name": "record_checkpoint",
+          "sequence": 1
+        },
+        {
+          "name": "workspace_read",
+          "sequence": 2
+        },
+        {
+          "name": "workspace_write",
+          "sequence": 3
+        },
+        {
+          "name": "run_regression",
+          "sequence": 4
+        }
+      ],
+      "observedToolCalls": [
+        {
+          "name": "record_checkpoint",
+          "id": "call_166|fc_166"
+        },
+        {
+          "name": "workspace_read",
+          "id": "call_167|fc_167"
+        },
+        {
+          "name": "workspace_write",
+          "id": "call_168|fc_168"
+        },
+        {
+          "name": "run_regression",
+          "id": "call_169|fc_169"
+        }
+      ],
+      "finishedMonoMs": 20761.507042,
+      "dispatches": 6
+    },
+    {
+      "id": "r4-gpt-6.1-terra-redirect-v2-pi-compact-remote",
+      "phase": "comparison",
+      "model": "gpt-6.1-terra",
+      "task": "redirect-v2",
+      "arm": "pi-compact-remote",
+      "repeat": 4,
+      "maxDispatches": 6,
+      "assignedArm": "pi-compact-remote",
+      "effectiveArm": "pi-compact-remote",
+      "fallback": false,
+      "status": "passed",
+      "startedMonoMs": 20771.43575,
+      "firstDispatch": 171,
+      "recoveryPending": true,
+      "boundary": {
+        "model": "gpt-6.1-terra",
+        "task": "redirect-v2",
+        "firstKeptEntryId": "e227",
+        "isSplitTurn": false,
+        "prefixEntries": 227,
+        "retainedEntries": 185,
+        "criticalEntries": [
+          "e0",
+          "e1",
+          "e2",
+          "e3",
+          "e4",
+          "e5",
+          "e6",
+          "e7",
+          "e8",
+          "e9",
+          "e10"
+        ],
+        "criticalBeforeCut": true,
+        "rawHistoryHash": "0968bb6feb27959be8ffcb13ff3e1b7dc602f80269ed33b9a736bff519701545",
+        "prefixHash": "647396f28a58c7b404180a6cb4a621b515edc8948e3a6e1e33c2b014b0e9d376",
+        "tailHash": "f0d902ac11d67b28d7a4782e4df7b08da411517e4374da18a4cacae4760f57d8",
+        "systemPromptHash": "06f2a3d99f5c185e9e4cd4b4f3d4b61943200129a8ecdbf26548644aef1ac831",
+        "workspacePathHash": "418bd63c9deb77159bb799ec81743d1da177a9579f145a047671ab1b5659cd3f",
+        "noPriorCheckpoint": true,
+        "managed": true,
+        "extensionPaths": [
+          "<installed-package>/src/index.ts"
+        ],
+        "modelSpec": {
+          "contextWindow": 500000,
+          "maxTokens": 128000,
+          "reasoning": true,
+          "thinkingLevelMap": {
+            "off": "none",
+            "minimal": "low",
+            "low": "low",
+            "medium": "medium",
+            "high": "high",
+            "xhigh": "xhigh",
+            "max": "max"
+          },
+          "commonToolEncoding": "top-level-functions",
+          "supportsAdditionalTools": false,
+          "supportsToolSearch": false
+        },
+        "settings": {
+          "enabled": true,
+          "reserveTokens": 16384,
+          "keepRecentTokens": 20000
+        },
+        "customInstructions": null
+      },
+      "matchedPeer": "r4-gpt-6.1-terra-redirect-v2-pi-native",
+      "compactStartMonoMs": 20797.110667,
+      "compactCommitMonoMs": 20920.479125,
+      "checkpointKind": "opaque",
+      "continuationStartMonoMs": 20920.494167,
+      "continuationEndMonoMs": 21453.205917,
+      "record": {
+        "facts": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "state": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "pending": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "stale": {
+          "adopted": 0,
+          "opportunities": 3
+        }
+      },
+      "behavior": {
+        "passed": 8,
+        "total": 8,
+        "error": null,
+        "pid": 31444,
+        "exitCode": 0,
+        "signal": null
+      },
+      "workspace": {
+        "protectedPassed": 102,
+        "protectedTotal": 102,
+        "unauthorizedChanges": [],
+        "extraFiles": [],
+        "sourceChanged": true
+      },
+      "capturedFirst": true,
+      "strictSuccess": true,
+      "tools": [
+        {
+          "name": "record_checkpoint",
+          "sequence": 1
+        },
+        {
+          "name": "workspace_read",
+          "sequence": 2
+        },
+        {
+          "name": "workspace_write",
+          "sequence": 3
+        },
+        {
+          "name": "run_regression",
+          "sequence": 4
+        }
+      ],
+      "observedToolCalls": [
+        {
+          "name": "record_checkpoint",
+          "id": "call_172|fc_172"
+        },
+        {
+          "name": "workspace_read",
+          "id": "call_173|fc_173"
+        },
+        {
+          "name": "workspace_write",
+          "id": "call_174|fc_174"
+        },
+        {
+          "name": "run_regression",
+          "id": "call_175|fc_175"
+        }
+      ],
+      "finishedMonoMs": 21504.30475,
+      "dispatches": 6
+    },
+    {
+      "id": "r4-gpt-6-luna-settlement-v2-pi-native",
+      "phase": "comparison",
+      "model": "gpt-6-luna",
+      "task": "settlement-v2",
+      "arm": "pi-native",
+      "repeat": 4,
+      "maxDispatches": 6,
+      "assignedArm": "pi-native",
+      "effectiveArm": "pi-native",
+      "fallback": false,
+      "status": "passed",
+      "startedMonoMs": 21513.190292,
+      "firstDispatch": 177,
+      "recoveryPending": true,
+      "boundary": {
+        "model": "gpt-6-luna",
+        "task": "settlement-v2",
+        "firstKeptEntryId": "e227",
+        "isSplitTurn": false,
+        "prefixEntries": 227,
+        "retainedEntries": 185,
+        "criticalEntries": [
+          "e0",
+          "e1",
+          "e2",
+          "e3",
+          "e4",
+          "e5",
+          "e6",
+          "e7",
+          "e8",
+          "e9",
+          "e10"
+        ],
+        "criticalBeforeCut": true,
+        "rawHistoryHash": "d7d361bc0e56eeb2d40d1a49d0e6f4efc55a6fb404c36cf3ef85496ac1ca92de",
+        "prefixHash": "f44bc834de6f43bd52ca15f44a81061646f4b57b8a301ef35e4bbb79df1d5e5b",
+        "tailHash": "2c44a4c7a01552c4483f50c373f4d64ffd88f909063b7128331463e4bbde22bb",
+        "systemPromptHash": "06f2a3d99f5c185e9e4cd4b4f3d4b61943200129a8ecdbf26548644aef1ac831",
+        "workspacePathHash": "418bd63c9deb77159bb799ec81743d1da177a9579f145a047671ab1b5659cd3f",
+        "noPriorCheckpoint": true,
+        "managed": false,
+        "extensionPaths": [],
+        "modelSpec": {
+          "contextWindow": 272000,
+          "maxTokens": 128000,
+          "reasoning": true,
+          "thinkingLevelMap": {
+            "off": "none",
+            "minimal": "low",
+            "low": "low",
+            "medium": "medium",
+            "high": "high",
+            "xhigh": "xhigh",
+            "max": "max"
+          },
+          "commonToolEncoding": "top-level-functions",
+          "supportsAdditionalTools": false,
+          "supportsToolSearch": false
+        },
+        "settings": {
+          "enabled": true,
+          "reserveTokens": 16384,
+          "keepRecentTokens": 20000
+        },
+        "customInstructions": null
+      },
+      "matchedPeer": null,
+      "compactStartMonoMs": 21537.145208,
+      "compactCommitMonoMs": 21634.157208,
+      "checkpointKind": "native",
+      "continuationStartMonoMs": 21634.1745,
+      "continuationEndMonoMs": 22172.26875,
+      "record": {
+        "facts": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "state": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "pending": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "stale": {
+          "adopted": 0,
+          "opportunities": 3
+        }
+      },
+      "behavior": {
+        "passed": 7,
+        "total": 7,
+        "error": null,
+        "pid": 31446,
+        "exitCode": 0,
+        "signal": null
+      },
+      "workspace": {
+        "protectedPassed": 102,
+        "protectedTotal": 102,
+        "unauthorizedChanges": [],
+        "extraFiles": [],
+        "sourceChanged": true
+      },
+      "capturedFirst": true,
+      "strictSuccess": true,
+      "tools": [
+        {
+          "name": "record_checkpoint",
+          "sequence": 1
+        },
+        {
+          "name": "workspace_read",
+          "sequence": 2
+        },
+        {
+          "name": "workspace_write",
+          "sequence": 3
+        },
+        {
+          "name": "run_regression",
+          "sequence": 4
+        }
+      ],
+      "observedToolCalls": [
+        {
+          "name": "record_checkpoint",
+          "id": "call_178|fc_178"
+        },
+        {
+          "name": "workspace_read",
+          "id": "call_179|fc_179"
+        },
+        {
+          "name": "workspace_write",
+          "id": "call_180|fc_180"
+        },
+        {
+          "name": "run_regression",
+          "id": "call_181|fc_181"
+        }
+      ],
+      "finishedMonoMs": 22229.046208,
+      "dispatches": 6
+    },
+    {
+      "id": "r4-gpt-6-luna-settlement-v2-pi-compact-remote",
+      "phase": "comparison",
+      "model": "gpt-6-luna",
+      "task": "settlement-v2",
+      "arm": "pi-compact-remote",
+      "repeat": 4,
+      "maxDispatches": 6,
+      "assignedArm": "pi-compact-remote",
+      "effectiveArm": "pi-compact-remote",
+      "fallback": false,
+      "status": "passed",
+      "startedMonoMs": 22237.1665,
+      "firstDispatch": 183,
+      "recoveryPending": true,
+      "boundary": {
+        "model": "gpt-6-luna",
+        "task": "settlement-v2",
+        "firstKeptEntryId": "e227",
+        "isSplitTurn": false,
+        "prefixEntries": 227,
+        "retainedEntries": 185,
+        "criticalEntries": [
+          "e0",
+          "e1",
+          "e2",
+          "e3",
+          "e4",
+          "e5",
+          "e6",
+          "e7",
+          "e8",
+          "e9",
+          "e10"
+        ],
+        "criticalBeforeCut": true,
+        "rawHistoryHash": "d7d361bc0e56eeb2d40d1a49d0e6f4efc55a6fb404c36cf3ef85496ac1ca92de",
+        "prefixHash": "f44bc834de6f43bd52ca15f44a81061646f4b57b8a301ef35e4bbb79df1d5e5b",
+        "tailHash": "2c44a4c7a01552c4483f50c373f4d64ffd88f909063b7128331463e4bbde22bb",
+        "systemPromptHash": "06f2a3d99f5c185e9e4cd4b4f3d4b61943200129a8ecdbf26548644aef1ac831",
+        "workspacePathHash": "418bd63c9deb77159bb799ec81743d1da177a9579f145a047671ab1b5659cd3f",
+        "noPriorCheckpoint": true,
+        "managed": true,
+        "extensionPaths": [
+          "<installed-package>/src/index.ts"
+        ],
+        "modelSpec": {
+          "contextWindow": 272000,
+          "maxTokens": 128000,
+          "reasoning": true,
+          "thinkingLevelMap": {
+            "off": "none",
+            "minimal": "low",
+            "low": "low",
+            "medium": "medium",
+            "high": "high",
+            "xhigh": "xhigh",
+            "max": "max"
+          },
+          "commonToolEncoding": "top-level-functions",
+          "supportsAdditionalTools": false,
+          "supportsToolSearch": false
+        },
+        "settings": {
+          "enabled": true,
+          "reserveTokens": 16384,
+          "keepRecentTokens": 20000
+        },
+        "customInstructions": null
+      },
+      "matchedPeer": "r4-gpt-6-luna-settlement-v2-pi-native",
+      "compactStartMonoMs": 22261.412292,
+      "compactCommitMonoMs": 22382.319333,
+      "checkpointKind": "opaque",
+      "continuationStartMonoMs": 22382.343708,
+      "continuationEndMonoMs": 22903.243417,
+      "record": {
+        "facts": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "state": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "pending": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "stale": {
+          "adopted": 0,
+          "opportunities": 3
+        }
+      },
+      "behavior": {
+        "passed": 7,
+        "total": 7,
+        "error": null,
+        "pid": 31466,
+        "exitCode": 0,
+        "signal": null
+      },
+      "workspace": {
+        "protectedPassed": 102,
+        "protectedTotal": 102,
+        "unauthorizedChanges": [],
+        "extraFiles": [],
+        "sourceChanged": true
+      },
+      "capturedFirst": true,
+      "strictSuccess": true,
+      "tools": [
+        {
+          "name": "record_checkpoint",
+          "sequence": 1
+        },
+        {
+          "name": "workspace_read",
+          "sequence": 2
+        },
+        {
+          "name": "workspace_write",
+          "sequence": 3
+        },
+        {
+          "name": "run_regression",
+          "sequence": 4
+        }
+      ],
+      "observedToolCalls": [
+        {
+          "name": "record_checkpoint",
+          "id": "call_184|fc_184"
+        },
+        {
+          "name": "workspace_read",
+          "id": "call_185|fc_185"
+        },
+        {
+          "name": "workspace_write",
+          "id": "call_186|fc_186"
+        },
+        {
+          "name": "run_regression",
+          "id": "call_187|fc_187"
+        }
+      ],
+      "finishedMonoMs": 22957.947042,
+      "dispatches": 6
+    },
+    {
+      "id": "r4-gpt-6-luna-redirect-v2-pi-compact-remote",
+      "phase": "comparison",
+      "model": "gpt-6-luna",
+      "task": "redirect-v2",
+      "arm": "pi-compact-remote",
+      "repeat": 4,
+      "maxDispatches": 6,
+      "assignedArm": "pi-compact-remote",
+      "effectiveArm": "pi-compact-remote",
+      "fallback": false,
+      "status": "passed",
+      "startedMonoMs": 22968.244958,
+      "firstDispatch": 189,
+      "recoveryPending": true,
+      "boundary": {
+        "model": "gpt-6-luna",
+        "task": "redirect-v2",
+        "firstKeptEntryId": "e227",
+        "isSplitTurn": false,
+        "prefixEntries": 227,
+        "retainedEntries": 185,
+        "criticalEntries": [
+          "e0",
+          "e1",
+          "e2",
+          "e3",
+          "e4",
+          "e5",
+          "e6",
+          "e7",
+          "e8",
+          "e9",
+          "e10"
+        ],
+        "criticalBeforeCut": true,
+        "rawHistoryHash": "972d4cde84b075721855feb5d24d7c8809d81ca2bdc9af518294254f739a1f9c",
+        "prefixHash": "1b516db26467f2282c3090fc74184af5df5263c210ebf9e3add73b21e0125171",
+        "tailHash": "2c44a4c7a01552c4483f50c373f4d64ffd88f909063b7128331463e4bbde22bb",
+        "systemPromptHash": "06f2a3d99f5c185e9e4cd4b4f3d4b61943200129a8ecdbf26548644aef1ac831",
+        "workspacePathHash": "418bd63c9deb77159bb799ec81743d1da177a9579f145a047671ab1b5659cd3f",
+        "noPriorCheckpoint": true,
+        "managed": true,
+        "extensionPaths": [
+          "<installed-package>/src/index.ts"
+        ],
+        "modelSpec": {
+          "contextWindow": 272000,
+          "maxTokens": 128000,
+          "reasoning": true,
+          "thinkingLevelMap": {
+            "off": "none",
+            "minimal": "low",
+            "low": "low",
+            "medium": "medium",
+            "high": "high",
+            "xhigh": "xhigh",
+            "max": "max"
+          },
+          "commonToolEncoding": "top-level-functions",
+          "supportsAdditionalTools": false,
+          "supportsToolSearch": false
+        },
+        "settings": {
+          "enabled": true,
+          "reserveTokens": 16384,
+          "keepRecentTokens": 20000
+        },
+        "customInstructions": null
+      },
+      "matchedPeer": null,
+      "compactStartMonoMs": 22993.972333,
+      "compactCommitMonoMs": 23113.3045,
+      "checkpointKind": "opaque",
+      "continuationStartMonoMs": 23113.3275,
+      "continuationEndMonoMs": 23662.251,
+      "record": {
+        "facts": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "state": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "pending": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "stale": {
+          "adopted": 0,
+          "opportunities": 3
+        }
+      },
+      "behavior": {
+        "passed": 8,
+        "total": 8,
+        "error": null,
+        "pid": 31469,
+        "exitCode": 0,
+        "signal": null
+      },
+      "workspace": {
+        "protectedPassed": 102,
+        "protectedTotal": 102,
+        "unauthorizedChanges": [],
+        "extraFiles": [],
+        "sourceChanged": true
+      },
+      "capturedFirst": true,
+      "strictSuccess": true,
+      "tools": [
+        {
+          "name": "record_checkpoint",
+          "sequence": 1
+        },
+        {
+          "name": "workspace_read",
+          "sequence": 2
+        },
+        {
+          "name": "workspace_write",
+          "sequence": 3
+        },
+        {
+          "name": "run_regression",
+          "sequence": 4
+        }
+      ],
+      "observedToolCalls": [
+        {
+          "name": "record_checkpoint",
+          "id": "call_190|fc_190"
+        },
+        {
+          "name": "workspace_read",
+          "id": "call_191|fc_191"
+        },
+        {
+          "name": "workspace_write",
+          "id": "call_192|fc_192"
+        },
+        {
+          "name": "run_regression",
+          "id": "call_193|fc_193"
+        }
+      ],
+      "finishedMonoMs": 23714.375417,
+      "dispatches": 6
+    },
+    {
+      "id": "r4-gpt-6-luna-redirect-v2-pi-native",
+      "phase": "comparison",
+      "model": "gpt-6-luna",
+      "task": "redirect-v2",
+      "arm": "pi-native",
+      "repeat": 4,
+      "maxDispatches": 6,
+      "assignedArm": "pi-native",
+      "effectiveArm": "pi-native",
+      "fallback": false,
+      "status": "passed",
+      "startedMonoMs": 23724.381375,
+      "firstDispatch": 195,
+      "recoveryPending": true,
+      "boundary": {
+        "model": "gpt-6-luna",
+        "task": "redirect-v2",
+        "firstKeptEntryId": "e227",
+        "isSplitTurn": false,
+        "prefixEntries": 227,
+        "retainedEntries": 185,
+        "criticalEntries": [
+          "e0",
+          "e1",
+          "e2",
+          "e3",
+          "e4",
+          "e5",
+          "e6",
+          "e7",
+          "e8",
+          "e9",
+          "e10"
+        ],
+        "criticalBeforeCut": true,
+        "rawHistoryHash": "972d4cde84b075721855feb5d24d7c8809d81ca2bdc9af518294254f739a1f9c",
+        "prefixHash": "1b516db26467f2282c3090fc74184af5df5263c210ebf9e3add73b21e0125171",
+        "tailHash": "2c44a4c7a01552c4483f50c373f4d64ffd88f909063b7128331463e4bbde22bb",
+        "systemPromptHash": "06f2a3d99f5c185e9e4cd4b4f3d4b61943200129a8ecdbf26548644aef1ac831",
+        "workspacePathHash": "418bd63c9deb77159bb799ec81743d1da177a9579f145a047671ab1b5659cd3f",
+        "noPriorCheckpoint": true,
+        "managed": false,
+        "extensionPaths": [],
+        "modelSpec": {
+          "contextWindow": 272000,
+          "maxTokens": 128000,
+          "reasoning": true,
+          "thinkingLevelMap": {
+            "off": "none",
+            "minimal": "low",
+            "low": "low",
+            "medium": "medium",
+            "high": "high",
+            "xhigh": "xhigh",
+            "max": "max"
+          },
+          "commonToolEncoding": "top-level-functions",
+          "supportsAdditionalTools": false,
+          "supportsToolSearch": false
+        },
+        "settings": {
+          "enabled": true,
+          "reserveTokens": 16384,
+          "keepRecentTokens": 20000
+        },
+        "customInstructions": null
+      },
+      "matchedPeer": "r4-gpt-6-luna-redirect-v2-pi-compact-remote",
+      "compactStartMonoMs": 23749.538083,
+      "compactCommitMonoMs": 23844.056375,
+      "checkpointKind": "native",
+      "continuationStartMonoMs": 23844.070083,
+      "continuationEndMonoMs": 24392.257417,
+      "record": {
+        "facts": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "state": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "pending": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "stale": {
+          "adopted": 0,
+          "opportunities": 3
+        }
+      },
+      "behavior": {
+        "passed": 8,
+        "total": 8,
+        "error": null,
+        "pid": 31471,
+        "exitCode": 0,
+        "signal": null
+      },
+      "workspace": {
+        "protectedPassed": 102,
+        "protectedTotal": 102,
+        "unauthorizedChanges": [],
+        "extraFiles": [],
+        "sourceChanged": true
+      },
+      "capturedFirst": true,
+      "strictSuccess": true,
+      "tools": [
+        {
+          "name": "record_checkpoint",
+          "sequence": 1
+        },
+        {
+          "name": "workspace_read",
+          "sequence": 2
+        },
+        {
+          "name": "workspace_write",
+          "sequence": 3
+        },
+        {
+          "name": "run_regression",
+          "sequence": 4
+        }
+      ],
+      "observedToolCalls": [
+        {
+          "name": "record_checkpoint",
+          "id": "call_196|fc_196"
+        },
+        {
+          "name": "workspace_read",
+          "id": "call_197|fc_197"
+        },
+        {
+          "name": "workspace_write",
+          "id": "call_198|fc_198"
+        },
+        {
+          "name": "run_regression",
+          "id": "call_199|fc_199"
+        }
+      ],
+      "finishedMonoMs": 24446.8785,
+      "dispatches": 6
+    },
+    {
+      "id": "r5-gpt-6.1-terra-settlement-v2-pi-native",
+      "phase": "comparison",
+      "model": "gpt-6.1-terra",
+      "task": "settlement-v2",
+      "arm": "pi-native",
+      "repeat": 5,
+      "maxDispatches": 6,
+      "assignedArm": "pi-native",
+      "effectiveArm": "pi-native",
+      "fallback": false,
+      "status": "passed",
+      "startedMonoMs": 24456.427458,
+      "firstDispatch": 201,
+      "recoveryPending": true,
+      "boundary": {
+        "model": "gpt-6.1-terra",
+        "task": "settlement-v2",
+        "firstKeptEntryId": "e227",
+        "isSplitTurn": false,
+        "prefixEntries": 227,
+        "retainedEntries": 185,
+        "criticalEntries": [
+          "e0",
+          "e1",
+          "e2",
+          "e3",
+          "e4",
+          "e5",
+          "e6",
+          "e7",
+          "e8",
+          "e9",
+          "e10"
+        ],
+        "criticalBeforeCut": true,
+        "rawHistoryHash": "58c247d7f55c0d2c15decc5209fb4ab305aa26ebc425fd49a2fa6e21a4270d3b",
+        "prefixHash": "9eb78f24c5d06981c22d6e426421612548376fdf70f155f70f12ddec4bbdb9fc",
+        "tailHash": "f0d902ac11d67b28d7a4782e4df7b08da411517e4374da18a4cacae4760f57d8",
+        "systemPromptHash": "06f2a3d99f5c185e9e4cd4b4f3d4b61943200129a8ecdbf26548644aef1ac831",
+        "workspacePathHash": "418bd63c9deb77159bb799ec81743d1da177a9579f145a047671ab1b5659cd3f",
+        "noPriorCheckpoint": true,
+        "managed": false,
+        "extensionPaths": [],
+        "modelSpec": {
+          "contextWindow": 500000,
+          "maxTokens": 128000,
+          "reasoning": true,
+          "thinkingLevelMap": {
+            "off": "none",
+            "minimal": "low",
+            "low": "low",
+            "medium": "medium",
+            "high": "high",
+            "xhigh": "xhigh",
+            "max": "max"
+          },
+          "commonToolEncoding": "top-level-functions",
+          "supportsAdditionalTools": false,
+          "supportsToolSearch": false
+        },
+        "settings": {
+          "enabled": true,
+          "reserveTokens": 16384,
+          "keepRecentTokens": 20000
+        },
+        "customInstructions": null
+      },
+      "matchedPeer": null,
+      "compactStartMonoMs": 24481.228958,
+      "compactCommitMonoMs": 24575.993208,
+      "checkpointKind": "native",
+      "continuationStartMonoMs": 24576.008125,
+      "continuationEndMonoMs": 25111.051708,
+      "record": {
+        "facts": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "state": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "pending": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "stale": {
+          "adopted": 0,
+          "opportunities": 3
+        }
+      },
+      "behavior": {
+        "passed": 7,
+        "total": 7,
+        "error": null,
+        "pid": 31473,
+        "exitCode": 0,
+        "signal": null
+      },
+      "workspace": {
+        "protectedPassed": 102,
+        "protectedTotal": 102,
+        "unauthorizedChanges": [],
+        "extraFiles": [],
+        "sourceChanged": true
+      },
+      "capturedFirst": true,
+      "strictSuccess": true,
+      "tools": [
+        {
+          "name": "record_checkpoint",
+          "sequence": 1
+        },
+        {
+          "name": "workspace_read",
+          "sequence": 2
+        },
+        {
+          "name": "workspace_write",
+          "sequence": 3
+        },
+        {
+          "name": "run_regression",
+          "sequence": 4
+        }
+      ],
+      "observedToolCalls": [
+        {
+          "name": "record_checkpoint",
+          "id": "call_202|fc_202"
+        },
+        {
+          "name": "workspace_read",
+          "id": "call_203|fc_203"
+        },
+        {
+          "name": "workspace_write",
+          "id": "call_204|fc_204"
+        },
+        {
+          "name": "run_regression",
+          "id": "call_205|fc_205"
+        }
+      ],
+      "finishedMonoMs": 25169.421458,
+      "dispatches": 6
+    },
+    {
+      "id": "r5-gpt-6.1-terra-settlement-v2-pi-compact-remote",
+      "phase": "comparison",
+      "model": "gpt-6.1-terra",
+      "task": "settlement-v2",
+      "arm": "pi-compact-remote",
+      "repeat": 5,
+      "maxDispatches": 6,
+      "assignedArm": "pi-compact-remote",
+      "effectiveArm": "pi-compact-remote",
+      "fallback": false,
+      "status": "passed",
+      "startedMonoMs": 25178.378292,
+      "firstDispatch": 207,
+      "recoveryPending": true,
+      "boundary": {
+        "model": "gpt-6.1-terra",
+        "task": "settlement-v2",
+        "firstKeptEntryId": "e227",
+        "isSplitTurn": false,
+        "prefixEntries": 227,
+        "retainedEntries": 185,
+        "criticalEntries": [
+          "e0",
+          "e1",
+          "e2",
+          "e3",
+          "e4",
+          "e5",
+          "e6",
+          "e7",
+          "e8",
+          "e9",
+          "e10"
+        ],
+        "criticalBeforeCut": true,
+        "rawHistoryHash": "58c247d7f55c0d2c15decc5209fb4ab305aa26ebc425fd49a2fa6e21a4270d3b",
+        "prefixHash": "9eb78f24c5d06981c22d6e426421612548376fdf70f155f70f12ddec4bbdb9fc",
+        "tailHash": "f0d902ac11d67b28d7a4782e4df7b08da411517e4374da18a4cacae4760f57d8",
+        "systemPromptHash": "06f2a3d99f5c185e9e4cd4b4f3d4b61943200129a8ecdbf26548644aef1ac831",
+        "workspacePathHash": "418bd63c9deb77159bb799ec81743d1da177a9579f145a047671ab1b5659cd3f",
+        "noPriorCheckpoint": true,
+        "managed": true,
+        "extensionPaths": [
+          "<installed-package>/src/index.ts"
+        ],
+        "modelSpec": {
+          "contextWindow": 500000,
+          "maxTokens": 128000,
+          "reasoning": true,
+          "thinkingLevelMap": {
+            "off": "none",
+            "minimal": "low",
+            "low": "low",
+            "medium": "medium",
+            "high": "high",
+            "xhigh": "xhigh",
+            "max": "max"
+          },
+          "commonToolEncoding": "top-level-functions",
+          "supportsAdditionalTools": false,
+          "supportsToolSearch": false
+        },
+        "settings": {
+          "enabled": true,
+          "reserveTokens": 16384,
+          "keepRecentTokens": 20000
+        },
+        "customInstructions": null
+      },
+      "matchedPeer": "r5-gpt-6.1-terra-settlement-v2-pi-native",
+      "compactStartMonoMs": 25202.579875,
+      "compactCommitMonoMs": 25330.309667,
+      "checkpointKind": "opaque",
+      "continuationStartMonoMs": 25330.32625,
+      "continuationEndMonoMs": 25871.290417,
+      "record": {
+        "facts": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "state": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "pending": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "stale": {
+          "adopted": 0,
+          "opportunities": 3
+        }
+      },
+      "behavior": {
+        "passed": 7,
+        "total": 7,
+        "error": null,
+        "pid": 31493,
+        "exitCode": 0,
+        "signal": null
+      },
+      "workspace": {
+        "protectedPassed": 102,
+        "protectedTotal": 102,
+        "unauthorizedChanges": [],
+        "extraFiles": [],
+        "sourceChanged": true
+      },
+      "capturedFirst": true,
+      "strictSuccess": true,
+      "tools": [
+        {
+          "name": "record_checkpoint",
+          "sequence": 1
+        },
+        {
+          "name": "workspace_read",
+          "sequence": 2
+        },
+        {
+          "name": "workspace_write",
+          "sequence": 3
+        },
+        {
+          "name": "run_regression",
+          "sequence": 4
+        }
+      ],
+      "observedToolCalls": [
+        {
+          "name": "record_checkpoint",
+          "id": "call_208|fc_208"
+        },
+        {
+          "name": "workspace_read",
+          "id": "call_209|fc_209"
+        },
+        {
+          "name": "workspace_write",
+          "id": "call_210|fc_210"
+        },
+        {
+          "name": "run_regression",
+          "id": "call_211|fc_211"
+        }
+      ],
+      "finishedMonoMs": 25926.479,
+      "dispatches": 6
+    },
+    {
+      "id": "r5-gpt-6.1-terra-redirect-v2-pi-compact-remote",
+      "phase": "comparison",
+      "model": "gpt-6.1-terra",
+      "task": "redirect-v2",
+      "arm": "pi-compact-remote",
+      "repeat": 5,
+      "maxDispatches": 6,
+      "assignedArm": "pi-compact-remote",
+      "effectiveArm": "pi-compact-remote",
+      "fallback": false,
+      "status": "passed",
+      "startedMonoMs": 25936.368042,
+      "firstDispatch": 213,
+      "recoveryPending": true,
+      "boundary": {
+        "model": "gpt-6.1-terra",
+        "task": "redirect-v2",
+        "firstKeptEntryId": "e227",
+        "isSplitTurn": false,
+        "prefixEntries": 227,
+        "retainedEntries": 185,
+        "criticalEntries": [
+          "e0",
+          "e1",
+          "e2",
+          "e3",
+          "e4",
+          "e5",
+          "e6",
+          "e7",
+          "e8",
+          "e9",
+          "e10"
+        ],
+        "criticalBeforeCut": true,
+        "rawHistoryHash": "0968bb6feb27959be8ffcb13ff3e1b7dc602f80269ed33b9a736bff519701545",
+        "prefixHash": "647396f28a58c7b404180a6cb4a621b515edc8948e3a6e1e33c2b014b0e9d376",
+        "tailHash": "f0d902ac11d67b28d7a4782e4df7b08da411517e4374da18a4cacae4760f57d8",
+        "systemPromptHash": "06f2a3d99f5c185e9e4cd4b4f3d4b61943200129a8ecdbf26548644aef1ac831",
+        "workspacePathHash": "418bd63c9deb77159bb799ec81743d1da177a9579f145a047671ab1b5659cd3f",
+        "noPriorCheckpoint": true,
+        "managed": true,
+        "extensionPaths": [
+          "<installed-package>/src/index.ts"
+        ],
+        "modelSpec": {
+          "contextWindow": 500000,
+          "maxTokens": 128000,
+          "reasoning": true,
+          "thinkingLevelMap": {
+            "off": "none",
+            "minimal": "low",
+            "low": "low",
+            "medium": "medium",
+            "high": "high",
+            "xhigh": "xhigh",
+            "max": "max"
+          },
+          "commonToolEncoding": "top-level-functions",
+          "supportsAdditionalTools": false,
+          "supportsToolSearch": false
+        },
+        "settings": {
+          "enabled": true,
+          "reserveTokens": 16384,
+          "keepRecentTokens": 20000
+        },
+        "customInstructions": null
+      },
+      "matchedPeer": null,
+      "compactStartMonoMs": 25960.624042,
+      "compactCommitMonoMs": 26092.399958,
+      "checkpointKind": "opaque",
+      "continuationStartMonoMs": 26092.422167,
+      "continuationEndMonoMs": 26626.3015,
+      "record": {
+        "facts": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "state": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "pending": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "stale": {
+          "adopted": 0,
+          "opportunities": 3
+        }
+      },
+      "behavior": {
+        "passed": 8,
+        "total": 8,
+        "error": null,
+        "pid": 31515,
+        "exitCode": 0,
+        "signal": null
+      },
+      "workspace": {
+        "protectedPassed": 102,
+        "protectedTotal": 102,
+        "unauthorizedChanges": [],
+        "extraFiles": [],
+        "sourceChanged": true
+      },
+      "capturedFirst": true,
+      "strictSuccess": true,
+      "tools": [
+        {
+          "name": "record_checkpoint",
+          "sequence": 1
+        },
+        {
+          "name": "workspace_read",
+          "sequence": 2
+        },
+        {
+          "name": "workspace_write",
+          "sequence": 3
+        },
+        {
+          "name": "run_regression",
+          "sequence": 4
+        }
+      ],
+      "observedToolCalls": [
+        {
+          "name": "record_checkpoint",
+          "id": "call_214|fc_214"
+        },
+        {
+          "name": "workspace_read",
+          "id": "call_215|fc_215"
+        },
+        {
+          "name": "workspace_write",
+          "id": "call_216|fc_216"
+        },
+        {
+          "name": "run_regression",
+          "id": "call_217|fc_217"
+        }
+      ],
+      "finishedMonoMs": 26680.189208,
+      "dispatches": 6
+    },
+    {
+      "id": "r5-gpt-6.1-terra-redirect-v2-pi-native",
+      "phase": "comparison",
+      "model": "gpt-6.1-terra",
+      "task": "redirect-v2",
+      "arm": "pi-native",
+      "repeat": 5,
+      "maxDispatches": 6,
+      "assignedArm": "pi-native",
+      "effectiveArm": "pi-native",
+      "fallback": false,
+      "status": "passed",
+      "startedMonoMs": 26690.381333,
+      "firstDispatch": 219,
+      "recoveryPending": true,
+      "boundary": {
+        "model": "gpt-6.1-terra",
+        "task": "redirect-v2",
+        "firstKeptEntryId": "e227",
+        "isSplitTurn": false,
+        "prefixEntries": 227,
+        "retainedEntries": 185,
+        "criticalEntries": [
+          "e0",
+          "e1",
+          "e2",
+          "e3",
+          "e4",
+          "e5",
+          "e6",
+          "e7",
+          "e8",
+          "e9",
+          "e10"
+        ],
+        "criticalBeforeCut": true,
+        "rawHistoryHash": "0968bb6feb27959be8ffcb13ff3e1b7dc602f80269ed33b9a736bff519701545",
+        "prefixHash": "647396f28a58c7b404180a6cb4a621b515edc8948e3a6e1e33c2b014b0e9d376",
+        "tailHash": "f0d902ac11d67b28d7a4782e4df7b08da411517e4374da18a4cacae4760f57d8",
+        "systemPromptHash": "06f2a3d99f5c185e9e4cd4b4f3d4b61943200129a8ecdbf26548644aef1ac831",
+        "workspacePathHash": "418bd63c9deb77159bb799ec81743d1da177a9579f145a047671ab1b5659cd3f",
+        "noPriorCheckpoint": true,
+        "managed": false,
+        "extensionPaths": [],
+        "modelSpec": {
+          "contextWindow": 500000,
+          "maxTokens": 128000,
+          "reasoning": true,
+          "thinkingLevelMap": {
+            "off": "none",
+            "minimal": "low",
+            "low": "low",
+            "medium": "medium",
+            "high": "high",
+            "xhigh": "xhigh",
+            "max": "max"
+          },
+          "commonToolEncoding": "top-level-functions",
+          "supportsAdditionalTools": false,
+          "supportsToolSearch": false
+        },
+        "settings": {
+          "enabled": true,
+          "reserveTokens": 16384,
+          "keepRecentTokens": 20000
+        },
+        "customInstructions": null
+      },
+      "matchedPeer": "r5-gpt-6.1-terra-redirect-v2-pi-compact-remote",
+      "compactStartMonoMs": 26716.085208,
+      "compactCommitMonoMs": 26811.051,
+      "checkpointKind": "native",
+      "continuationStartMonoMs": 26811.067625,
+      "continuationEndMonoMs": 27347.398792,
+      "record": {
+        "facts": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "state": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "pending": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "stale": {
+          "adopted": 0,
+          "opportunities": 3
+        }
+      },
+      "behavior": {
+        "passed": 8,
+        "total": 8,
+        "error": null,
+        "pid": 31517,
+        "exitCode": 0,
+        "signal": null
+      },
+      "workspace": {
+        "protectedPassed": 102,
+        "protectedTotal": 102,
+        "unauthorizedChanges": [],
+        "extraFiles": [],
+        "sourceChanged": true
+      },
+      "capturedFirst": true,
+      "strictSuccess": true,
+      "tools": [
+        {
+          "name": "record_checkpoint",
+          "sequence": 1
+        },
+        {
+          "name": "workspace_read",
+          "sequence": 2
+        },
+        {
+          "name": "workspace_write",
+          "sequence": 3
+        },
+        {
+          "name": "run_regression",
+          "sequence": 4
+        }
+      ],
+      "observedToolCalls": [
+        {
+          "name": "record_checkpoint",
+          "id": "call_220|fc_220"
+        },
+        {
+          "name": "workspace_read",
+          "id": "call_221|fc_221"
+        },
+        {
+          "name": "workspace_write",
+          "id": "call_222|fc_222"
+        },
+        {
+          "name": "run_regression",
+          "id": "call_223|fc_223"
+        }
+      ],
+      "finishedMonoMs": 27400.45425,
+      "dispatches": 6
+    },
+    {
+      "id": "r5-gpt-6-luna-settlement-v2-pi-compact-remote",
+      "phase": "comparison",
+      "model": "gpt-6-luna",
+      "task": "settlement-v2",
+      "arm": "pi-compact-remote",
+      "repeat": 5,
+      "maxDispatches": 6,
+      "assignedArm": "pi-compact-remote",
+      "effectiveArm": "pi-compact-remote",
+      "fallback": false,
+      "status": "passed",
+      "startedMonoMs": 27410.547875,
+      "firstDispatch": 225,
+      "recoveryPending": true,
+      "boundary": {
+        "model": "gpt-6-luna",
+        "task": "settlement-v2",
+        "firstKeptEntryId": "e227",
+        "isSplitTurn": false,
+        "prefixEntries": 227,
+        "retainedEntries": 185,
+        "criticalEntries": [
+          "e0",
+          "e1",
+          "e2",
+          "e3",
+          "e4",
+          "e5",
+          "e6",
+          "e7",
+          "e8",
+          "e9",
+          "e10"
+        ],
+        "criticalBeforeCut": true,
+        "rawHistoryHash": "d7d361bc0e56eeb2d40d1a49d0e6f4efc55a6fb404c36cf3ef85496ac1ca92de",
+        "prefixHash": "f44bc834de6f43bd52ca15f44a81061646f4b57b8a301ef35e4bbb79df1d5e5b",
+        "tailHash": "2c44a4c7a01552c4483f50c373f4d64ffd88f909063b7128331463e4bbde22bb",
+        "systemPromptHash": "06f2a3d99f5c185e9e4cd4b4f3d4b61943200129a8ecdbf26548644aef1ac831",
+        "workspacePathHash": "418bd63c9deb77159bb799ec81743d1da177a9579f145a047671ab1b5659cd3f",
+        "noPriorCheckpoint": true,
+        "managed": true,
+        "extensionPaths": [
+          "<installed-package>/src/index.ts"
+        ],
+        "modelSpec": {
+          "contextWindow": 272000,
+          "maxTokens": 128000,
+          "reasoning": true,
+          "thinkingLevelMap": {
+            "off": "none",
+            "minimal": "low",
+            "low": "low",
+            "medium": "medium",
+            "high": "high",
+            "xhigh": "xhigh",
+            "max": "max"
+          },
+          "commonToolEncoding": "top-level-functions",
+          "supportsAdditionalTools": false,
+          "supportsToolSearch": false
+        },
+        "settings": {
+          "enabled": true,
+          "reserveTokens": 16384,
+          "keepRecentTokens": 20000
+        },
+        "customInstructions": null
+      },
+      "matchedPeer": null,
+      "compactStartMonoMs": 27437.48925,
+      "compactCommitMonoMs": 27572.643333,
+      "checkpointKind": "opaque",
+      "continuationStartMonoMs": 27572.669583,
+      "continuationEndMonoMs": 28142.241833,
+      "record": {
+        "facts": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "state": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "pending": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "stale": {
+          "adopted": 0,
+          "opportunities": 3
+        }
+      },
+      "behavior": {
+        "passed": 7,
+        "total": 7,
+        "error": null,
+        "pid": 31519,
+        "exitCode": 0,
+        "signal": null
+      },
+      "workspace": {
+        "protectedPassed": 102,
+        "protectedTotal": 102,
+        "unauthorizedChanges": [],
+        "extraFiles": [],
+        "sourceChanged": true
+      },
+      "capturedFirst": true,
+      "strictSuccess": true,
+      "tools": [
+        {
+          "name": "record_checkpoint",
+          "sequence": 1
+        },
+        {
+          "name": "workspace_read",
+          "sequence": 2
+        },
+        {
+          "name": "workspace_write",
+          "sequence": 3
+        },
+        {
+          "name": "run_regression",
+          "sequence": 4
+        }
+      ],
+      "observedToolCalls": [
+        {
+          "name": "record_checkpoint",
+          "id": "call_226|fc_226"
+        },
+        {
+          "name": "workspace_read",
+          "id": "call_227|fc_227"
+        },
+        {
+          "name": "workspace_write",
+          "id": "call_228|fc_228"
+        },
+        {
+          "name": "run_regression",
+          "id": "call_229|fc_229"
+        }
+      ],
+      "finishedMonoMs": 28198.595042,
+      "dispatches": 6
+    },
+    {
+      "id": "r5-gpt-6-luna-settlement-v2-pi-native",
+      "phase": "comparison",
+      "model": "gpt-6-luna",
+      "task": "settlement-v2",
+      "arm": "pi-native",
+      "repeat": 5,
+      "maxDispatches": 6,
+      "assignedArm": "pi-native",
+      "effectiveArm": "pi-native",
+      "fallback": false,
+      "status": "passed",
+      "startedMonoMs": 28208.40625,
+      "firstDispatch": 231,
+      "recoveryPending": true,
+      "boundary": {
+        "model": "gpt-6-luna",
+        "task": "settlement-v2",
+        "firstKeptEntryId": "e227",
+        "isSplitTurn": false,
+        "prefixEntries": 227,
+        "retainedEntries": 185,
+        "criticalEntries": [
+          "e0",
+          "e1",
+          "e2",
+          "e3",
+          "e4",
+          "e5",
+          "e6",
+          "e7",
+          "e8",
+          "e9",
+          "e10"
+        ],
+        "criticalBeforeCut": true,
+        "rawHistoryHash": "d7d361bc0e56eeb2d40d1a49d0e6f4efc55a6fb404c36cf3ef85496ac1ca92de",
+        "prefixHash": "f44bc834de6f43bd52ca15f44a81061646f4b57b8a301ef35e4bbb79df1d5e5b",
+        "tailHash": "2c44a4c7a01552c4483f50c373f4d64ffd88f909063b7128331463e4bbde22bb",
+        "systemPromptHash": "06f2a3d99f5c185e9e4cd4b4f3d4b61943200129a8ecdbf26548644aef1ac831",
+        "workspacePathHash": "418bd63c9deb77159bb799ec81743d1da177a9579f145a047671ab1b5659cd3f",
+        "noPriorCheckpoint": true,
+        "managed": false,
+        "extensionPaths": [],
+        "modelSpec": {
+          "contextWindow": 272000,
+          "maxTokens": 128000,
+          "reasoning": true,
+          "thinkingLevelMap": {
+            "off": "none",
+            "minimal": "low",
+            "low": "low",
+            "medium": "medium",
+            "high": "high",
+            "xhigh": "xhigh",
+            "max": "max"
+          },
+          "commonToolEncoding": "top-level-functions",
+          "supportsAdditionalTools": false,
+          "supportsToolSearch": false
+        },
+        "settings": {
+          "enabled": true,
+          "reserveTokens": 16384,
+          "keepRecentTokens": 20000
+        },
+        "customInstructions": null
+      },
+      "matchedPeer": "r5-gpt-6-luna-settlement-v2-pi-compact-remote",
+      "compactStartMonoMs": 28233.083833,
+      "compactCommitMonoMs": 28329.057875,
+      "checkpointKind": "native",
+      "continuationStartMonoMs": 28329.073458,
+      "continuationEndMonoMs": 28892.575458,
+      "record": {
+        "facts": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "state": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "pending": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "stale": {
+          "adopted": 0,
+          "opportunities": 3
+        }
+      },
+      "behavior": {
+        "passed": 7,
+        "total": 7,
+        "error": null,
+        "pid": 31540,
+        "exitCode": 0,
+        "signal": null
+      },
+      "workspace": {
+        "protectedPassed": 102,
+        "protectedTotal": 102,
+        "unauthorizedChanges": [],
+        "extraFiles": [],
+        "sourceChanged": true
+      },
+      "capturedFirst": true,
+      "strictSuccess": true,
+      "tools": [
+        {
+          "name": "record_checkpoint",
+          "sequence": 1
+        },
+        {
+          "name": "workspace_read",
+          "sequence": 2
+        },
+        {
+          "name": "workspace_write",
+          "sequence": 3
+        },
+        {
+          "name": "run_regression",
+          "sequence": 4
+        }
+      ],
+      "observedToolCalls": [
+        {
+          "name": "record_checkpoint",
+          "id": "call_232|fc_232"
+        },
+        {
+          "name": "workspace_read",
+          "id": "call_233|fc_233"
+        },
+        {
+          "name": "workspace_write",
+          "id": "call_234|fc_234"
+        },
+        {
+          "name": "run_regression",
+          "id": "call_235|fc_235"
+        }
+      ],
+      "finishedMonoMs": 28951.430667,
+      "dispatches": 6
+    },
+    {
+      "id": "r5-gpt-6-luna-redirect-v2-pi-native",
+      "phase": "comparison",
+      "model": "gpt-6-luna",
+      "task": "redirect-v2",
+      "arm": "pi-native",
+      "repeat": 5,
+      "maxDispatches": 6,
+      "assignedArm": "pi-native",
+      "effectiveArm": "pi-native",
+      "fallback": false,
+      "status": "passed",
+      "startedMonoMs": 28961.387792,
+      "firstDispatch": 237,
+      "recoveryPending": true,
+      "boundary": {
+        "model": "gpt-6-luna",
+        "task": "redirect-v2",
+        "firstKeptEntryId": "e227",
+        "isSplitTurn": false,
+        "prefixEntries": 227,
+        "retainedEntries": 185,
+        "criticalEntries": [
+          "e0",
+          "e1",
+          "e2",
+          "e3",
+          "e4",
+          "e5",
+          "e6",
+          "e7",
+          "e8",
+          "e9",
+          "e10"
+        ],
+        "criticalBeforeCut": true,
+        "rawHistoryHash": "972d4cde84b075721855feb5d24d7c8809d81ca2bdc9af518294254f739a1f9c",
+        "prefixHash": "1b516db26467f2282c3090fc74184af5df5263c210ebf9e3add73b21e0125171",
+        "tailHash": "2c44a4c7a01552c4483f50c373f4d64ffd88f909063b7128331463e4bbde22bb",
+        "systemPromptHash": "06f2a3d99f5c185e9e4cd4b4f3d4b61943200129a8ecdbf26548644aef1ac831",
+        "workspacePathHash": "418bd63c9deb77159bb799ec81743d1da177a9579f145a047671ab1b5659cd3f",
+        "noPriorCheckpoint": true,
+        "managed": false,
+        "extensionPaths": [],
+        "modelSpec": {
+          "contextWindow": 272000,
+          "maxTokens": 128000,
+          "reasoning": true,
+          "thinkingLevelMap": {
+            "off": "none",
+            "minimal": "low",
+            "low": "low",
+            "medium": "medium",
+            "high": "high",
+            "xhigh": "xhigh",
+            "max": "max"
+          },
+          "commonToolEncoding": "top-level-functions",
+          "supportsAdditionalTools": false,
+          "supportsToolSearch": false
+        },
+        "settings": {
+          "enabled": true,
+          "reserveTokens": 16384,
+          "keepRecentTokens": 20000
+        },
+        "customInstructions": null
+      },
+      "matchedPeer": null,
+      "compactStartMonoMs": 28986.046875,
+      "compactCommitMonoMs": 29084.411417,
+      "checkpointKind": "native",
+      "continuationStartMonoMs": 29084.427042,
+      "continuationEndMonoMs": 29630.436667,
+      "record": {
+        "facts": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "state": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "pending": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "stale": {
+          "adopted": 0,
+          "opportunities": 3
+        }
+      },
+      "behavior": {
+        "passed": 8,
+        "total": 8,
+        "error": null,
+        "pid": 31542,
+        "exitCode": 0,
+        "signal": null
+      },
+      "workspace": {
+        "protectedPassed": 102,
+        "protectedTotal": 102,
+        "unauthorizedChanges": [],
+        "extraFiles": [],
+        "sourceChanged": true
+      },
+      "capturedFirst": true,
+      "strictSuccess": true,
+      "tools": [
+        {
+          "name": "record_checkpoint",
+          "sequence": 1
+        },
+        {
+          "name": "workspace_read",
+          "sequence": 2
+        },
+        {
+          "name": "workspace_write",
+          "sequence": 3
+        },
+        {
+          "name": "run_regression",
+          "sequence": 4
+        }
+      ],
+      "observedToolCalls": [
+        {
+          "name": "record_checkpoint",
+          "id": "call_238|fc_238"
+        },
+        {
+          "name": "workspace_read",
+          "id": "call_239|fc_239"
+        },
+        {
+          "name": "workspace_write",
+          "id": "call_240|fc_240"
+        },
+        {
+          "name": "run_regression",
+          "id": "call_241|fc_241"
+        }
+      ],
+      "finishedMonoMs": 29686.363167,
+      "dispatches": 6
+    },
+    {
+      "id": "r5-gpt-6-luna-redirect-v2-pi-compact-remote",
+      "phase": "comparison",
+      "model": "gpt-6-luna",
+      "task": "redirect-v2",
+      "arm": "pi-compact-remote",
+      "repeat": 5,
+      "maxDispatches": 6,
+      "assignedArm": "pi-compact-remote",
+      "effectiveArm": "pi-compact-remote",
+      "fallback": false,
+      "status": "passed",
+      "startedMonoMs": 29696.447333,
+      "firstDispatch": 243,
+      "recoveryPending": true,
+      "boundary": {
+        "model": "gpt-6-luna",
+        "task": "redirect-v2",
+        "firstKeptEntryId": "e227",
+        "isSplitTurn": false,
+        "prefixEntries": 227,
+        "retainedEntries": 185,
+        "criticalEntries": [
+          "e0",
+          "e1",
+          "e2",
+          "e3",
+          "e4",
+          "e5",
+          "e6",
+          "e7",
+          "e8",
+          "e9",
+          "e10"
+        ],
+        "criticalBeforeCut": true,
+        "rawHistoryHash": "972d4cde84b075721855feb5d24d7c8809d81ca2bdc9af518294254f739a1f9c",
+        "prefixHash": "1b516db26467f2282c3090fc74184af5df5263c210ebf9e3add73b21e0125171",
+        "tailHash": "2c44a4c7a01552c4483f50c373f4d64ffd88f909063b7128331463e4bbde22bb",
+        "systemPromptHash": "06f2a3d99f5c185e9e4cd4b4f3d4b61943200129a8ecdbf26548644aef1ac831",
+        "workspacePathHash": "418bd63c9deb77159bb799ec81743d1da177a9579f145a047671ab1b5659cd3f",
+        "noPriorCheckpoint": true,
+        "managed": true,
+        "extensionPaths": [
+          "<installed-package>/src/index.ts"
+        ],
+        "modelSpec": {
+          "contextWindow": 272000,
+          "maxTokens": 128000,
+          "reasoning": true,
+          "thinkingLevelMap": {
+            "off": "none",
+            "minimal": "low",
+            "low": "low",
+            "medium": "medium",
+            "high": "high",
+            "xhigh": "xhigh",
+            "max": "max"
+          },
+          "commonToolEncoding": "top-level-functions",
+          "supportsAdditionalTools": false,
+          "supportsToolSearch": false
+        },
+        "settings": {
+          "enabled": true,
+          "reserveTokens": 16384,
+          "keepRecentTokens": 20000
+        },
+        "customInstructions": null
+      },
+      "matchedPeer": "r5-gpt-6-luna-redirect-v2-pi-native",
+      "compactStartMonoMs": 29722.570167,
+      "compactCommitMonoMs": 29846.5915,
+      "checkpointKind": "opaque",
+      "continuationStartMonoMs": 29846.607667,
+      "continuationEndMonoMs": 30418.328042,
+      "record": {
+        "facts": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "state": {
+          "tp": 5,
+          "fp": 0,
+          "fn": 0,
+          "precision": 1,
+          "recall": 1
+        },
+        "pending": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        },
+        "stale": {
+          "adopted": 0,
+          "opportunities": 3
+        }
+      },
+      "behavior": {
+        "passed": 8,
+        "total": 8,
+        "error": null,
+        "pid": 31544,
+        "exitCode": 0,
+        "signal": null
+      },
+      "workspace": {
+        "protectedPassed": 102,
+        "protectedTotal": 102,
+        "unauthorizedChanges": [],
+        "extraFiles": [],
+        "sourceChanged": true
+      },
+      "capturedFirst": true,
+      "strictSuccess": true,
+      "tools": [
+        {
+          "name": "record_checkpoint",
+          "sequence": 1
+        },
+        {
+          "name": "workspace_read",
+          "sequence": 2
+        },
+        {
+          "name": "workspace_write",
+          "sequence": 3
+        },
+        {
+          "name": "run_regression",
+          "sequence": 4
+        }
+      ],
+      "observedToolCalls": [
+        {
+          "name": "record_checkpoint",
+          "id": "call_244|fc_244"
+        },
+        {
+          "name": "workspace_read",
+          "id": "call_245|fc_245"
+        },
+        {
+          "name": "workspace_write",
+          "id": "call_246|fc_246"
+        },
+        {
+          "name": "run_regression",
+          "id": "call_247|fc_247"
+        }
+      ],
+      "finishedMonoMs": 30471.993125,
+      "dispatches": 6
+    }
+  ],
+  "pids": [
+    31091,
+    31092,
+    31224,
+    31225,
+    31228,
+    31229,
+    31230,
+    31231,
+    31249,
+    31251,
+    31252,
+    31253,
+    31264,
+    31274,
+    31275,
+    31276,
+    31277,
+    31279,
+    31297,
+    31298,
+    31300,
+    31301,
+    31302,
+    31303,
+    31304,
+    31305,
+    31324,
+    31325,
+    31332,
+    31333,
+    31334,
+    31335,
+    31336,
+    31337,
+    31340,
+    31341,
+    31359,
+    31360,
+    31362,
+    31363,
+    31364,
+    31365,
+    31386,
+    31387,
+    31405,
+    31406,
+    31407,
+    31408,
+    31410,
+    31411,
+    31413,
+    31415,
+    31433,
+    31434,
+    31435,
+    31436,
+    31443,
+    31444,
+    31445,
+    31446,
+    31465,
+    31466,
+    31468,
+    31469,
+    31470,
+    31471,
+    31472,
+    31473,
+    31492,
+    31493,
+    31514,
+    31515,
+    31516,
+    31517,
+    31518,
+    31519,
+    31522,
+    31540,
+    31541,
+    31542,
+    31543,
+    31544,
+    31564
+  ],
+  "startupDispatches": 248,
+  "status": "passed",
+  "cleanup": {
+    "trackedSockets": 0,
+    "listeners": 0,
+    "deniedNetworkActions": 0
+  },
+  "dispatches": 248,
+  "data": {
+    "kind": "FIXTURE_FLOW_ONLY",
+    "realMeasurements": false,
+    "superiorityVerdict": "不可形成优势结论：fixture 预先提供摘要、checkpoint 和参考实现。",
+    "accounting": {
+      "scheduledLanes": 44,
+      "scheduledComparisonLanes": 40,
+      "startedLanes": 44,
+      "reservedDispatches": 248,
+      "knownSentDispatches": 248,
+      "serverConfirmedDispatches": 0,
+      "failedLanes": 0,
+      "rawComparisonFailuresInDenominator": 0,
+      "stages": {
+        "pilot": {
+          "compact": {
+            "input": 400,
+            "cacheRead": 0,
+            "cacheWrite": null,
+            "output": 200,
+            "reasoning": 0,
+            "total": 600
+          },
+          "continuation": {
+            "input": 400,
+            "cacheRead": 0,
+            "cacheWrite": null,
+            "output": 200,
+            "reasoning": 0,
+            "total": 600
+          }
+        },
+        "comparison": {
+          "compact": {
+            "input": 4000,
+            "cacheRead": 0,
+            "cacheWrite": null,
+            "output": 2000,
+            "reasoning": 0,
+            "total": 6000
+          },
+          "continuation": {
+            "input": 20000,
+            "cacheRead": 0,
+            "cacheWrite": null,
+            "output": 10000,
+            "reasoning": 0,
+            "total": 30000
+          }
+        }
+      }
+    },
+    "statisticalComparison": null
+  }
+}

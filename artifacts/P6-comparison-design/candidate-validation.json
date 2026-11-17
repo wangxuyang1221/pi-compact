@@ -1,0 +1,35 @@
+{
+  "kind": "offline-candidate-oracle-validation",
+  "realMeasurements": false,
+  "providerRequests": 0,
+  "rows": [
+    {
+      "id": "settlement-v1",
+      "historyEntries": 412,
+      "historyBytes": 269268,
+      "longestToolResultChars": 1585,
+      "behaviorCases": 7,
+      "referencePassed": 7,
+      "initialPassed": 2,
+      "protectedFiles": 102,
+      "facts": 6,
+      "staleOpportunities": 3,
+      "state": 5,
+      "pending": 2
+    },
+    {
+      "id": "redirect-v1",
+      "historyEntries": 412,
+      "historyBytes": 269219,
+      "longestToolResultChars": 1585,
+      "behaviorCases": 8,
+      "referencePassed": 8,
+      "initialPassed": 5,
+      "protectedFiles": 102,
+      "facts": 6,
+      "staleOpportunities": 3,
+      "state": 5,
+      "pending": 2
+    }
+  ]
+}

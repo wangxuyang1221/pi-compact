@@ -1,0 +1,71 @@
+{
+  "checks": [
+    {
+      "name": "cache",
+      "verdict": "inconclusive",
+      "failureDenominator": 0
+    },
+    {
+      "name": "no-usage",
+      "verdict": "inconclusive",
+      "failureDenominator": 0
+    },
+    {
+      "name": "fallback",
+      "verdict": "inconclusive",
+      "failureDenominator": 0
+    },
+    {
+      "name": "unfinished",
+      "verdict": "inconclusive",
+      "failureDenominator": 20
+    },
+    {
+      "name": "four-repeats",
+      "verdict": "inconclusive",
+      "failureDenominator": 4
+    },
+    {
+      "name": "mixed-sign",
+      "verdict": "inconclusive",
+      "failureDenominator": 0
+    },
+    {
+      "name": "wide-spread",
+      "verdict": "inconclusive",
+      "failureDenominator": 0
+    },
+    {
+      "name": "missing-counter",
+      "verdict": "inconclusive-quality-constraint",
+      "failureDenominator": 0
+    },
+    {
+      "name": "missing-workspace-count",
+      "verdict": "inconclusive-quality-constraint",
+      "failureDenominator": 0
+    },
+    {
+      "name": "missing-captured",
+      "verdict": "inconclusive-quality-constraint",
+      "failureDenominator": 0
+    }
+  ],
+  "http": {
+    "dispatches": 1,
+    "stage": "compact",
+    "auditFailure": "HTTP_REJECTED",
+    "failedDenominator": 8,
+    "cleanup": {
+      "pids": [
+        74301,
+        74292,
+        74302
+      ],
+      "alive": [],
+      "listenerCount": 0,
+      "trackedSockets": 0,
+      "exitCode": 1
+    }
+  }
+}

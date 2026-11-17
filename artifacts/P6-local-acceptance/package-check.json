@@ -1,0 +1,12 @@
+{
+  "status": "pass",
+  "head": "0e26b8552d3e0c20fd0da84851e4e2f60447aba3",
+  "implementation": "44b9f33f89aef3cfa710172861d64b31e02b01d6",
+  "product": "713acbf87bfa87b3d6eb208fb55bdb3b6651fd49",
+  "packageSHA256": "209888cd3f050ffe6d3a8932c15d25636d52d83919de0021cf9ce2c611d22c8d",
+  "members": 26,
+  "memberHashesVerified": 26,
+  "sourceAndDocsEqual": true,
+  "repackByteIdentical": true,
+  "publicFilesVerified": 142
+}

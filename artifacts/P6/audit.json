@@ -1,0 +1,91 @@
+{
+  "productSHA": "713acbf87bfa87b3d6eb208fb55bdb3b6651fd49",
+  "tarballSHA": "dafa0fdd94b36a2fe3849c5575790e10dfcf577b5a20046807fea6a59cdb20c6",
+  "local": "/Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec/artifacts/P6/local/1794835573870",
+  "scores": [
+    {
+      "name": "native",
+      "path": "/Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec/artifacts/P6/local/1794835573870/native",
+      "score": 4,
+      "matched": 30,
+      "finalProcessDispatches": 2,
+      "clarification": "Resumed lanes contain earlier-process logs in the adjacent original lane. Counts here are final process only, not total scenario counts."
+    },
+    {
+      "name": "installed",
+      "path": "/Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec/artifacts/P6/local/1794835573870/config-restored",
+      "score": 4,
+      "matched": 30,
+      "finalProcessDispatches": 1,
+      "clarification": "Resumed lanes contain earlier-process logs in the adjacent original lane. Counts here are final process only, not total scenario counts."
+    },
+    {
+      "name": "auto",
+      "path": "/Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec/artifacts/P6/local/1794835573870/auto",
+      "score": 4,
+      "matched": 30,
+      "finalProcessDispatches": 3,
+      "clarification": "Resumed lanes contain earlier-process logs in the adjacent original lane. Counts here are final process only, not total scenario counts."
+    },
+    {
+      "name": "long-restore",
+      "path": "/Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec/artifacts/P6/local/1794835573870/restored",
+      "score": 4,
+      "matched": 30,
+      "finalProcessDispatches": 5,
+      "clarification": "Resumed lanes contain earlier-process logs in the adjacent original lane. Counts here are final process only, not total scenario counts."
+    },
+    {
+      "name": "migration",
+      "path": "/Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec/artifacts/P6/local/1794835573870/migration",
+      "score": 4,
+      "matched": 30,
+      "finalProcessDispatches": 3,
+      "clarification": "Resumed lanes contain earlier-process logs in the adjacent original lane. Counts here are final process only, not total scenario counts."
+    },
+    {
+      "name": "network-error",
+      "path": "/Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec/artifacts/P6/local/1794835573870/network-error",
+      "score": 4,
+      "matched": 30,
+      "finalProcessDispatches": 3,
+      "clarification": "Resumed lanes contain earlier-process logs in the adjacent original lane. Counts here are final process only, not total scenario counts."
+    },
+    {
+      "name": "quota",
+      "path": "/Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec/artifacts/P6/local/1794835573870/quota",
+      "score": 4,
+      "matched": 30,
+      "finalProcessDispatches": 3,
+      "clarification": "Resumed lanes contain earlier-process logs in the adjacent original lane. Counts here are final process only, not total scenario counts."
+    },
+    {
+      "name": "cancel",
+      "path": "/Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec/artifacts/P6/local/1794835573870/cancel",
+      "score": 4,
+      "matched": 30,
+      "finalProcessDispatches": 3,
+      "clarification": "Resumed lanes contain earlier-process logs in the adjacent original lane. Counts here are final process only, not total scenario counts."
+    },
+    {
+      "name": "doublefail",
+      "path": "/Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec/artifacts/P6/local/1794835573870/doublefail",
+      "score": 4,
+      "matched": 30,
+      "finalProcessDispatches": 4,
+      "clarification": "Resumed lanes contain earlier-process logs in the adjacent original lane. Counts here are final process only, not total scenario counts."
+    },
+    {
+      "name": "lifecycle",
+      "path": "/Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec/artifacts/P6/local/1794835573870/after-remove",
+      "score": 4,
+      "matched": 30,
+      "finalProcessDispatches": 2,
+      "clarification": "Resumed lanes contain earlier-process logs in the adjacent original lane. Counts here are final process only, not total scenario counts."
+    }
+  ],
+  "coreChangeLines": 2,
+  "realRequests": 0,
+  "realAuthHistoryReads": 0,
+  "scope": "Owner self-audit of raw encoded fixture records and file bytes. Does not replace independent review."
+}

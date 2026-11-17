@@ -4,7 +4,7 @@ pi-compact is a Pi extension for controlling when and how conversation history i
 
 ## Triggering compaction
 
-The default threshold is 90% of the active model's context window. Changing models recalculates the token threshold. The proposed `/compact-config` command displays settings, and `/compact-config threshold 80` changes the percentage.
+The default threshold is 90% of the active model's context window. Changing models recalculates the token threshold. The `/compact-config` command displays settings, and `/compact-config threshold 80` changes the percentage.
 
 The extension checks the pending context before a model request, including newly supplied input. When a model response requests multiple tools, all results must return before compaction begins. Tool calls and their results remain paired.
 
@@ -44,7 +44,7 @@ Failures and cancellations do not show a success divider.
 
 ## Integration constraints
 
-The initial target is Pi 1.5.2. Prototypes have demonstrated ordinary extension loading, in-process rendering changes, and selected request-boundary controls. Full CLI startup, reload behavior, recovery, and coexistence with other extensions still require acceptance testing.
+The initial target is Pi 1.5.2. Stages P1 through P5 have independent technical acceptance. P6 verifies ordinary package installation and isolated lifecycle behavior. Real-provider acceptance and user visual approval remain pending.
 
 Public extension hooks alone do not establish every required behavior. Version-specific adapters must check their capabilities, affect only the intended sessions, and leave installed Pi files unchanged.
 

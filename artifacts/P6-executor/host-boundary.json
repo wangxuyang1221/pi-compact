@@ -1,0 +1,19 @@
+{
+  "codingAgent": "/Users/wangxuyang/Library/pnpm/store/v11/links/@earendil-works/pi-coding-agent/1.5.2/643b01c0aa78c8ef11bcca81208b3bcdf7c0b473aa9432569290180e541a3aca/node_modules/@earendil-works/pi-coding-agent",
+  "ai": "/Users/wangxuyang/Library/pnpm/store/v11/links/@earendil-works/pi-ai/1.5.2/936659a097ad7387454e0c31387e2820428b6bb6ba34ef18ddecb705f03a983c/node_modules/@earendil-works/pi-ai",
+  "version": "1.5.2",
+  "sources": {
+    "api/openai-codex-responses.js": {
+      "path": "/Users/wangxuyang/Library/pnpm/store/v11/links/@earendil-works/pi-ai/1.5.2/936659a097ad7387454e0c31387e2820428b6bb6ba34ef18ddecb705f03a983c/node_modules/@earendil-works/pi-ai/dist/api/openai-codex-responses.js",
+      "sha256": "4a756bd6c87a6357a811ee512f47d5c3991026bcd213e00a4330be7b0fb4a80d"
+    },
+    "api/openai-completions.js": {
+      "path": "/Users/wangxuyang/Library/pnpm/store/v11/links/@earendil-works/pi-ai/1.5.2/936659a097ad7387454e0c31387e2820428b6bb6ba34ef18ddecb705f03a983c/node_modules/@earendil-works/pi-ai/dist/api/openai-completions.js",
+      "sha256": "3221deb8b506eab9722d27694fc1bceb752d8786180999add590c2489ac91846"
+    },
+    "utils/provider-retry.js": {
+      "path": "/Users/wangxuyang/Library/pnpm/store/v11/links/@earendil-works/pi-ai/1.5.2/936659a097ad7387454e0c31387e2820428b6bb6ba34ef18ddecb705f03a983c/node_modules/@earendil-works/pi-ai/dist/utils/provider-retry.js",
+      "sha256": "46da2f14c0f5d58164a44c1b2837d8ab7674ded3ae4c732d02ae62c87b39b939"
+    }
+  }
+}

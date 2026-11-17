@@ -1,0 +1,33 @@
+{
+  "status": "pass",
+  "reservations": 9,
+  "unusedProvider": "openai",
+  "markers": [
+    {
+      "pid": 58345,
+      "ppid": 58297,
+      "networkPreload": null,
+      "socketGuardPresent": false,
+      "httpsGuardPresent": false,
+      "outerStop": {
+        "host": "fixture.invalid",
+        "port": 443,
+        "networkSent": false
+      },
+      "requestError": "INDEPENDENT_OUTER_DENY"
+    },
+    {
+      "pid": 58549,
+      "ppid": 58375,
+      "networkPreload": null,
+      "socketGuardPresent": false,
+      "httpsGuardPresent": false,
+      "outerStop": {
+        "host": "fixture.invalid",
+        "port": 443,
+        "networkSent": false
+      },
+      "requestError": "INDEPENDENT_OUTER_DENY"
+    }
+  ]
+}

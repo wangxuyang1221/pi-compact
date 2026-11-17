@@ -1,0 +1,4409 @@
+{
+  "schema": 1,
+  "grantHash": "dbe45f3296000f49525e90dd800eb0dba7edc94f9d469e0175f4744fd123d699",
+  "rows": [
+    {
+      "phase": "pilot-gpt-6.1-terra-pi-native:compact",
+      "operation": "native",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-terra",
+      "transport": "sse",
+      "bodyBytes": 7704,
+      "decodedBytes": 120840,
+      "bodyHash": "1db10124a26d8b0a1c1476293c28d146ef4c135d799930cfa3ea84c0ac32e44c",
+      "inputTokens": 30210,
+      "outputTokens": 1000,
+      "laneId": "pilot-gpt-6.1-terra-pi-native",
+      "task": "settlement-v2",
+      "repeat": 0,
+      "assignedArm": "pi-native",
+      "experimentPhase": "pilot",
+      "stage": "compact",
+      "reservedMonoMs": 422.314,
+      "fixture": true,
+      "dispatch": 1,
+      "state": "completed",
+      "at": "2026-11-16T15:55:13.101Z",
+      "sendInvokedMonoMs": 431.931833,
+      "sendState": "response-confirmed",
+      "knownSent": true,
+      "serverConfirmed": false,
+      "responseMonoMs": 441.962583,
+      "status": 200,
+      "encoded": {
+        "model": "gpt-6.1-terra",
+        "reasoning": {
+          "effort": "none"
+        },
+        "maxOutputTokens": 1000,
+        "stream": true,
+        "inputHash": "9f32f713913bb969cf8ec08ac2944235eea6bdd7c33d6a2291b389d5b4639d18",
+        "instructionsHash": "c464889dcfa60441e642f291445b49523f263e6fb2725d0c25075543a2ec3f8f",
+        "systemMessagesHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "toolsHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "opaqueItems": 0,
+        "compactionTrigger": false,
+        "rawSHA256": "ed86a6a301188fdb1f28a372f050088e61f558964e1f2f633f2ec969a6a2427f",
+        "toolNames": []
+      },
+      "firstChunkMonoMs": 471.93,
+      "firstTokenMonoMs": 481.882666,
+      "terminalMonoMs": 489.977166,
+      "terminalType": "response.completed",
+      "rawUsage": {
+        "input_tokens": 100,
+        "output_tokens": 50,
+        "total_tokens": 150,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "serverUsage": {
+        "input": 100,
+        "cacheRead": 0,
+        "cacheWrite": null,
+        "output": 50,
+        "reasoning": 0,
+        "total": 150
+      },
+      "auditFailure": null,
+      "usage": {
+        "input": 100,
+        "output": 50,
+        "reasoning": 0
+      },
+      "stop": "completed"
+    },
+    {
+      "phase": "pilot-gpt-6.1-terra-pi-native:continuation",
+      "operation": "normal",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-terra",
+      "transport": "sse",
+      "bodyBytes": 6487,
+      "decodedBytes": 116183,
+      "bodyHash": "3dc5ee41c1d7e2a916234298faaa58d8b0ad6fc1497e16d5b2998e4bad1b30ef",
+      "inputTokens": 29046,
+      "outputTokens": 1000,
+      "laneId": "pilot-gpt-6.1-terra-pi-native",
+      "task": "settlement-v2",
+      "repeat": 0,
+      "assignedArm": "pi-native",
+      "experimentPhase": "pilot",
+      "stage": "continuation",
+      "reservedMonoMs": 517.732833,
+      "fixture": true,
+      "dispatch": 2,
+      "state": "completed",
+      "at": "2026-11-16T15:55:13.196Z",
+      "sendInvokedMonoMs": 525.848625,
+      "sendState": "response-confirmed",
+      "knownSent": true,
+      "serverConfirmed": false,
+      "responseMonoMs": 535.413,
+      "status": 200,
+      "encoded": {
+        "model": "gpt-6.1-terra",
+        "reasoning": {
+          "effort": "none"
+        },
+        "maxOutputTokens": 1000,
+        "stream": true,
+        "inputHash": "0859a58cab9bec1c5e1e9a2070afe0906e719f305685fe580b0972076fffa651",
+        "instructionsHash": "75357d685f238b6afd7738be9786fdafde641eb6ca9a3be7471939715a68a4de",
+        "systemMessagesHash": "46712c6e44d47b5000647ce443879ab04d5efd37b7e7416f63a9296784a0796a",
+        "toolsHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "opaqueItems": 0,
+        "compactionTrigger": false,
+        "rawSHA256": "a20dab8afaf9cdd7dbb031a6b1c01d7da3db0d6f9ef11e62dbd24c87b1840d46",
+        "toolNames": []
+      },
+      "firstChunkMonoMs": 564.019708,
+      "firstTokenMonoMs": 573.743916,
+      "terminalMonoMs": 583.851583,
+      "terminalType": "response.completed",
+      "rawUsage": {
+        "input_tokens": 100,
+        "output_tokens": 50,
+        "total_tokens": 150,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "serverUsage": {
+        "input": 100,
+        "cacheRead": 0,
+        "cacheWrite": null,
+        "output": 50,
+        "reasoning": 0,
+        "total": 150
+      },
+      "auditFailure": null,
+      "usage": {
+        "input": 100,
+        "output": 50,
+        "reasoning": 0
+      },
+      "stop": "completed"
+    },
+    {
+      "phase": "pilot-gpt-6.1-terra-pi-compact-remote:compact",
+      "operation": "remote",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-terra",
+      "transport": "sse",
+      "bodyBytes": 7770,
+      "decodedBytes": 134105,
+      "bodyHash": "2e5715232e584534186be46bcb5e0b2a3f550092571d30e5751be1a95eca41d6",
+      "inputTokens": 33527,
+      "outputTokens": 1000,
+      "laneId": "pilot-gpt-6.1-terra-pi-compact-remote",
+      "task": "settlement-v2",
+      "repeat": 0,
+      "assignedArm": "pi-compact-remote",
+      "experimentPhase": "pilot",
+      "stage": "compact",
+      "reservedMonoMs": 833.878208,
+      "fixture": true,
+      "dispatch": 3,
+      "state": "completed",
+      "at": "2026-11-16T15:55:13.513Z",
+      "sendInvokedMonoMs": 843.896791,
+      "sendState": "response-confirmed",
+      "knownSent": true,
+      "serverConfirmed": false,
+      "responseMonoMs": 853.451916,
+      "status": 200,
+      "encoded": {
+        "model": "gpt-6.1-terra",
+        "reasoning": {
+          "effort": "none"
+        },
+        "maxOutputTokens": 1000,
+        "stream": true,
+        "inputHash": "d646818e9afadad83fc586afbf1cdcd2a788172702ccbec605937252aba3e049",
+        "instructionsHash": "75357d685f238b6afd7738be9786fdafde641eb6ca9a3be7471939715a68a4de",
+        "systemMessagesHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "toolsHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "opaqueItems": 0,
+        "compactionTrigger": true,
+        "rawSHA256": "0e1a509cfa927827933433af0c9c2e892265a64754f0b8f706efb6887ece5ebd",
+        "toolNames": []
+      },
+      "firstChunkMonoMs": 879.9015,
+      "terminalMonoMs": 887.897375,
+      "terminalType": "response.completed",
+      "rawUsage": {
+        "input_tokens": 100,
+        "output_tokens": 50,
+        "total_tokens": 150,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "serverUsage": {
+        "input": 100,
+        "cacheRead": 0,
+        "cacheWrite": null,
+        "output": 50,
+        "reasoning": 0,
+        "total": 150
+      },
+      "auditFailure": null,
+      "usage": {
+        "input": 100,
+        "output": 50,
+        "reasoning": 0
+      },
+      "stop": "completed"
+    },
+    {
+      "phase": "pilot-gpt-6.1-terra-pi-compact-remote:continuation",
+      "operation": "normal",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-terra",
+      "transport": "sse",
+      "bodyBytes": 6017,
+      "decodedBytes": 114299,
+      "bodyHash": "ec51460e8d5df630830311d2a87213c4f0af6e8c8fdbdf9210a7abe475509c30",
+      "inputTokens": 28575,
+      "outputTokens": 1000,
+      "laneId": "pilot-gpt-6.1-terra-pi-compact-remote",
+      "task": "settlement-v2",
+      "repeat": 0,
+      "assignedArm": "pi-compact-remote",
+      "experimentPhase": "pilot",
+      "stage": "continuation",
+      "reservedMonoMs": 937.433416,
+      "fixture": true,
+      "dispatch": 4,
+      "state": "completed",
+      "at": "2026-11-16T15:55:13.616Z",
+      "sendInvokedMonoMs": 945.691708,
+      "sendState": "response-confirmed",
+      "knownSent": true,
+      "serverConfirmed": false,
+      "responseMonoMs": 954.483916,
+      "status": 200,
+      "encoded": {
+        "model": "gpt-6.1-terra",
+        "reasoning": {
+          "effort": "none"
+        },
+        "maxOutputTokens": 1000,
+        "stream": true,
+        "inputHash": "007f14f5dd32096cb6e565d862323da671888610e94d4aceca5ee2871609a9df",
+        "instructionsHash": "75357d685f238b6afd7738be9786fdafde641eb6ca9a3be7471939715a68a4de",
+        "systemMessagesHash": "46712c6e44d47b5000647ce443879ab04d5efd37b7e7416f63a9296784a0796a",
+        "toolsHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "opaqueItems": 1,
+        "compactionTrigger": false,
+        "rawSHA256": "e82eb73ec784d35a2c1162a6414bd0bd54ee6ba5d057acf4daa375440b94a171",
+        "toolNames": []
+      },
+      "firstChunkMonoMs": 979.913541,
+      "firstTokenMonoMs": 987.801083,
+      "terminalMonoMs": 995.945458,
+      "terminalType": "response.completed",
+      "rawUsage": {
+        "input_tokens": 100,
+        "output_tokens": 50,
+        "total_tokens": 150,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "serverUsage": {
+        "input": 100,
+        "cacheRead": 0,
+        "cacheWrite": null,
+        "output": 50,
+        "reasoning": 0,
+        "total": 150
+      },
+      "auditFailure": null,
+      "usage": {
+        "input": 100,
+        "output": 50,
+        "reasoning": 0
+      },
+      "stop": "completed"
+    },
+    {
+      "phase": "pilot-gpt-6-luna-pi-native:compact",
+      "operation": "native",
+      "provider": "openai-codex",
+      "model": "gpt-6-luna",
+      "transport": "sse",
+      "bodyBytes": 7702,
+      "decodedBytes": 120837,
+      "bodyHash": "8fc316104eeb7ff1da07248093eb300a8d7383e938d0cd962887848bde5fd20d",
+      "inputTokens": 30210,
+      "outputTokens": 1000,
+      "laneId": "pilot-gpt-6-luna-pi-native",
+      "task": "settlement-v2",
+      "repeat": 0,
+      "assignedArm": "pi-native",
+      "experimentPhase": "pilot",
+      "stage": "compact",
+      "reservedMonoMs": 1056.307541,
+      "fixture": true,
+      "dispatch": 5,
+      "state": "completed",
+      "at": "2026-11-16T15:55:13.735Z",
+      "sendInvokedMonoMs": 1065.891875,
+      "sendState": "response-confirmed",
+      "knownSent": true,
+      "serverConfirmed": false,
+      "responseMonoMs": 1074.506375,
+      "status": 200,
+      "encoded": {
+        "model": "gpt-6-luna",
+        "reasoning": {
+          "effort": "none"
+        },
+        "maxOutputTokens": 1000,
+        "stream": true,
+        "inputHash": "9f32f713913bb969cf8ec08ac2944235eea6bdd7c33d6a2291b389d5b4639d18",
+        "instructionsHash": "c464889dcfa60441e642f291445b49523f263e6fb2725d0c25075543a2ec3f8f",
+        "systemMessagesHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "toolsHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "opaqueItems": 0,
+        "compactionTrigger": false,
+        "rawSHA256": "d9fa7b84e0837e8029c92315afa68c1d47febb5f89f177feaac9ef35bd3c6195",
+        "toolNames": []
+      },
+      "firstChunkMonoMs": 1101.072125,
+      "firstTokenMonoMs": 1110.93925,
+      "terminalMonoMs": 1118.863125,
+      "terminalType": "response.completed",
+      "rawUsage": {
+        "input_tokens": 100,
+        "output_tokens": 50,
+        "total_tokens": 150,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "serverUsage": {
+        "input": 100,
+        "cacheRead": 0,
+        "cacheWrite": null,
+        "output": 50,
+        "reasoning": 0,
+        "total": 150
+      },
+      "auditFailure": null,
+      "usage": {
+        "input": 100,
+        "output": 50,
+        "reasoning": 0
+      },
+      "stop": "completed"
+    },
+    {
+      "phase": "pilot-gpt-6-luna-pi-native:continuation",
+      "operation": "normal",
+      "provider": "openai-codex",
+      "model": "gpt-6-luna",
+      "transport": "sse",
+      "bodyBytes": 6485,
+      "decodedBytes": 116180,
+      "bodyHash": "7fb376f2319a2d634a2b0060710e551470bc640e3ee588583726d6427f7afa0c",
+      "inputTokens": 29045,
+      "outputTokens": 1000,
+      "laneId": "pilot-gpt-6-luna-pi-native",
+      "task": "settlement-v2",
+      "repeat": 0,
+      "assignedArm": "pi-native",
+      "experimentPhase": "pilot",
+      "stage": "continuation",
+      "reservedMonoMs": 1138.984166,
+      "fixture": true,
+      "dispatch": 6,
+      "state": "completed",
+      "at": "2026-11-16T15:55:13.818Z",
+      "sendInvokedMonoMs": 1146.887625,
+      "sendState": "response-confirmed",
+      "knownSent": true,
+      "serverConfirmed": false,
+      "responseMonoMs": 1156.632166,
+      "status": 200,
+      "encoded": {
+        "model": "gpt-6-luna",
+        "reasoning": {
+          "effort": "none"
+        },
+        "maxOutputTokens": 1000,
+        "stream": true,
+        "inputHash": "0859a58cab9bec1c5e1e9a2070afe0906e719f305685fe580b0972076fffa651",
+        "instructionsHash": "75357d685f238b6afd7738be9786fdafde641eb6ca9a3be7471939715a68a4de",
+        "systemMessagesHash": "46712c6e44d47b5000647ce443879ab04d5efd37b7e7416f63a9296784a0796a",
+        "toolsHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "opaqueItems": 0,
+        "compactionTrigger": false,
+        "rawSHA256": "4b55bfe66014a737753d2ac4777c02ca3415690f00a33e048636f10db6a86205",
+        "toolNames": []
+      },
+      "firstChunkMonoMs": 1181.828458,
+      "firstTokenMonoMs": 1189.799666,
+      "terminalMonoMs": 1197.790958,
+      "terminalType": "response.completed",
+      "rawUsage": {
+        "input_tokens": 100,
+        "output_tokens": 50,
+        "total_tokens": 150,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "serverUsage": {
+        "input": 100,
+        "cacheRead": 0,
+        "cacheWrite": null,
+        "output": 50,
+        "reasoning": 0,
+        "total": 150
+      },
+      "auditFailure": null,
+      "usage": {
+        "input": 100,
+        "output": 50,
+        "reasoning": 0
+      },
+      "stop": "completed"
+    },
+    {
+      "phase": "pilot-gpt-6-luna-pi-compact-remote:compact",
+      "operation": "remote",
+      "provider": "openai-codex",
+      "model": "gpt-6-luna",
+      "transport": "sse",
+      "bodyBytes": 7766,
+      "decodedBytes": 134102,
+      "bodyHash": "8e8b757b78db3e3f386df343af636d77397ed4b14c9ab2f874d03348f0a9e808",
+      "inputTokens": 33526,
+      "outputTokens": 1000,
+      "laneId": "pilot-gpt-6-luna-pi-compact-remote",
+      "task": "settlement-v2",
+      "repeat": 0,
+      "assignedArm": "pi-compact-remote",
+      "experimentPhase": "pilot",
+      "stage": "compact",
+      "reservedMonoMs": 1277.064125,
+      "fixture": true,
+      "dispatch": 7,
+      "state": "completed",
+      "at": "2026-11-16T15:55:13.956Z",
+      "sendInvokedMonoMs": 1285.928958,
+      "sendState": "response-confirmed",
+      "knownSent": true,
+      "serverConfirmed": false,
+      "responseMonoMs": 1295.81675,
+      "status": 200,
+      "encoded": {
+        "model": "gpt-6-luna",
+        "reasoning": {
+          "effort": "none"
+        },
+        "maxOutputTokens": 1000,
+        "stream": true,
+        "inputHash": "d646818e9afadad83fc586afbf1cdcd2a788172702ccbec605937252aba3e049",
+        "instructionsHash": "75357d685f238b6afd7738be9786fdafde641eb6ca9a3be7471939715a68a4de",
+        "systemMessagesHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "toolsHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "opaqueItems": 0,
+        "compactionTrigger": true,
+        "rawSHA256": "a0fbfdbe18610a8421794e6e6b2c2bb9acc3dc8aa59c3c5f3573e9b390b79043",
+        "toolNames": []
+      },
+      "firstChunkMonoMs": 1323.870708,
+      "terminalMonoMs": 1331.891875,
+      "terminalType": "response.completed",
+      "rawUsage": {
+        "input_tokens": 100,
+        "output_tokens": 50,
+        "total_tokens": 150,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "serverUsage": {
+        "input": 100,
+        "cacheRead": 0,
+        "cacheWrite": null,
+        "output": 50,
+        "reasoning": 0,
+        "total": 150
+      },
+      "auditFailure": null,
+      "usage": {
+        "input": 100,
+        "output": 50,
+        "reasoning": 0
+      },
+      "stop": "completed"
+    },
+    {
+      "phase": "pilot-gpt-6-luna-pi-compact-remote:continuation",
+      "operation": "normal",
+      "provider": "openai-codex",
+      "model": "gpt-6-luna",
+      "transport": "sse",
+      "bodyBytes": 6016,
+      "decodedBytes": 114296,
+      "bodyHash": "d08c560a8f931fd04d40b123a18d56422e2741b4b8457fd6044ca7e4fae0cbda",
+      "inputTokens": 28574,
+      "outputTokens": 1000,
+      "laneId": "pilot-gpt-6-luna-pi-compact-remote",
+      "task": "settlement-v2",
+      "repeat": 0,
+      "assignedArm": "pi-compact-remote",
+      "experimentPhase": "pilot",
+      "stage": "continuation",
+      "reservedMonoMs": 1394.24525,
+      "fixture": true,
+      "dispatch": 8,
+      "state": "completed",
+      "at": "2026-11-16T15:55:14.073Z",
+      "sendInvokedMonoMs": 1403.8255,
+      "sendState": "response-confirmed",
+      "knownSent": true,
+      "serverConfirmed": false,
+      "responseMonoMs": 1414.757833,
+      "status": 200,
+      "encoded": {
+        "model": "gpt-6-luna",
+        "reasoning": {
+          "effort": "none"
+        },
+        "maxOutputTokens": 1000,
+        "stream": true,
+        "inputHash": "8a14f57ee3cfa60c1b7665d5726d7749435e340d39f5d783f0363ee5a0f5aea4",
+        "instructionsHash": "75357d685f238b6afd7738be9786fdafde641eb6ca9a3be7471939715a68a4de",
+        "systemMessagesHash": "46712c6e44d47b5000647ce443879ab04d5efd37b7e7416f63a9296784a0796a",
+        "toolsHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "opaqueItems": 1,
+        "compactionTrigger": false,
+        "rawSHA256": "8cd28e69c20228e75d900167c72c25ced8ce4d598e0c157f64d00ee13f00f17e",
+        "toolNames": []
+      },
+      "firstChunkMonoMs": 1443.977083,
+      "firstTokenMonoMs": 1453.922333,
+      "terminalMonoMs": 1462.931708,
+      "terminalType": "response.completed",
+      "rawUsage": {
+        "input_tokens": 100,
+        "output_tokens": 50,
+        "total_tokens": 150,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "serverUsage": {
+        "input": 100,
+        "cacheRead": 0,
+        "cacheWrite": null,
+        "output": 50,
+        "reasoning": 0,
+        "total": 150
+      },
+      "auditFailure": null,
+      "usage": {
+        "input": 100,
+        "output": 50,
+        "reasoning": 0
+      },
+      "stop": "completed"
+    },
+    {
+      "phase": "r1-gpt-6.1-terra-settlement-v2-pi-native:compact",
+      "operation": "native",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-terra",
+      "transport": "sse",
+      "bodyBytes": 7704,
+      "decodedBytes": 120840,
+      "bodyHash": "1db10124a26d8b0a1c1476293c28d146ef4c135d799930cfa3ea84c0ac32e44c",
+      "inputTokens": 30210,
+      "outputTokens": 1000,
+      "laneId": "r1-gpt-6.1-terra-settlement-v2-pi-native",
+      "task": "settlement-v2",
+      "repeat": 1,
+      "assignedArm": "pi-native",
+      "experimentPhase": "comparison",
+      "stage": "compact",
+      "reservedMonoMs": 1538.998708,
+      "fixture": true,
+      "dispatch": 9,
+      "state": "completed",
+      "at": "2026-11-16T15:55:14.218Z",
+      "sendInvokedMonoMs": 1549.024041,
+      "sendState": "response-confirmed",
+      "knownSent": true,
+      "serverConfirmed": false,
+      "responseMonoMs": 1559.905083,
+      "status": 200,
+      "encoded": {
+        "model": "gpt-6.1-terra",
+        "reasoning": {
+          "effort": "none"
+        },
+        "maxOutputTokens": 1000,
+        "stream": true,
+        "inputHash": "9f32f713913bb969cf8ec08ac2944235eea6bdd7c33d6a2291b389d5b4639d18",
+        "instructionsHash": "c464889dcfa60441e642f291445b49523f263e6fb2725d0c25075543a2ec3f8f",
+        "systemMessagesHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "toolsHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "opaqueItems": 0,
+        "compactionTrigger": false,
+        "rawSHA256": "ed86a6a301188fdb1f28a372f050088e61f558964e1f2f633f2ec969a6a2427f",
+        "toolNames": []
+      },
+      "firstChunkMonoMs": 1586.95525,
+      "firstTokenMonoMs": 1595.890416,
+      "terminalMonoMs": 1603.939041,
+      "terminalType": "response.completed",
+      "rawUsage": {
+        "input_tokens": 100,
+        "output_tokens": 50,
+        "total_tokens": 150,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "serverUsage": {
+        "input": 100,
+        "cacheRead": 0,
+        "cacheWrite": null,
+        "output": 50,
+        "reasoning": 0,
+        "total": 150
+      },
+      "auditFailure": null,
+      "usage": {
+        "input": 100,
+        "output": 50,
+        "reasoning": 0
+      },
+      "stop": "completed"
+    },
+    {
+      "phase": "r1-gpt-6.1-terra-settlement-v2-pi-native:continuation",
+      "operation": "normal",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-terra",
+      "transport": "sse",
+      "bodyBytes": 7724,
+      "decodedBytes": 118932,
+      "bodyHash": "d75759dfde8f9b8d06b2a451afb5d0232bbc69dc20fc55ca501c0ac05d067973",
+      "inputTokens": 29733,
+      "outputTokens": 1000,
+      "laneId": "r1-gpt-6.1-terra-settlement-v2-pi-native",
+      "task": "settlement-v2",
+      "repeat": 1,
+      "assignedArm": "pi-native",
+      "experimentPhase": "comparison",
+      "stage": "continuation",
+      "reservedMonoMs": 1629.328208,
+      "fixture": true,
+      "dispatch": 10,
+      "state": "completed",
+      "at": "2026-11-16T15:55:14.308Z",
+      "sendInvokedMonoMs": 1639.194541,
+      "sendState": "response-confirmed",
+      "knownSent": true,
+      "serverConfirmed": false,
+      "responseMonoMs": 1649.881083,
+      "status": 200,
+      "encoded": {
+        "model": "gpt-6.1-terra",
+        "reasoning": {
+          "effort": "none"
+        },
+        "maxOutputTokens": 1000,
+        "stream": true,
+        "inputHash": "582536a0b7148d5f1cbb22d9148760935a0910f241d81ad66a6c21ae1a39f69b",
+        "instructionsHash": "75357d685f238b6afd7738be9786fdafde641eb6ca9a3be7471939715a68a4de",
+        "systemMessagesHash": "46712c6e44d47b5000647ce443879ab04d5efd37b7e7416f63a9296784a0796a",
+        "toolsHash": "08151f4f9e169a4c589ba2a24c91bf0b9a1e61c21901c8465138d68f9670d47a",
+        "opaqueItems": 0,
+        "compactionTrigger": false,
+        "rawSHA256": "7c1e82ad346ae8f64ac99bcf163d7aacbde2b7aa3e60baf792ba06f779713bad",
+        "toolNames": [
+          "record_checkpoint",
+          "workspace_read",
+          "workspace_write",
+          "workspace_edit",
+          "run_regression"
+        ]
+      },
+      "firstChunkMonoMs": 1677.943791,
+      "terminalMonoMs": 1687.922375,
+      "terminalType": "response.completed",
+      "rawUsage": {
+        "input_tokens": 100,
+        "output_tokens": 50,
+        "total_tokens": 150,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "serverUsage": {
+        "input": 100,
+        "cacheRead": 0,
+        "cacheWrite": null,
+        "output": 50,
+        "reasoning": 0,
+        "total": 150
+      },
+      "auditFailure": null,
+      "usage": {
+        "input": 100,
+        "output": 50,
+        "reasoning": 0
+      },
+      "stop": "completed"
+    },
+    {
+      "phase": "r1-gpt-6.1-terra-settlement-v2-pi-native:continuation",
+      "operation": "normal",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-terra",
+      "transport": "sse",
+      "bodyBytes": 7780,
+      "decodedBytes": 119489,
+      "bodyHash": "df63c9311f8366fce06de8f378a26479d848c38c6159889fb2ce725fe1b42043",
+      "inputTokens": 29873,
+      "outputTokens": 1000,
+      "laneId": "r1-gpt-6.1-terra-settlement-v2-pi-native",
+      "task": "settlement-v2",
+      "repeat": 1,
+      "assignedArm": "pi-native",
+      "experimentPhase": "comparison",
+      "stage": "continuation",
+      "reservedMonoMs": 1716.147583,
+      "fixture": true,
+      "dispatch": 11,
+      "state": "completed",
+      "at": "2026-11-16T15:55:14.395Z",
+      "sendInvokedMonoMs": 1724.885291,
+      "sendState": "response-confirmed",
+      "knownSent": true,
+      "serverConfirmed": false,
+      "responseMonoMs": 1734.033041,
+      "status": 200,
+      "encoded": {
+        "model": "gpt-6.1-terra",
+        "reasoning": {
+          "effort": "none"
+        },
+        "maxOutputTokens": 1000,
+        "stream": true,
+        "inputHash": "23045248cea21351e943284be4dea95c3366b69c1152b9b9305500318ae84686",
+        "instructionsHash": "75357d685f238b6afd7738be9786fdafde641eb6ca9a3be7471939715a68a4de",
+        "systemMessagesHash": "46712c6e44d47b5000647ce443879ab04d5efd37b7e7416f63a9296784a0796a",
+        "toolsHash": "08151f4f9e169a4c589ba2a24c91bf0b9a1e61c21901c8465138d68f9670d47a",
+        "opaqueItems": 0,
+        "compactionTrigger": false,
+        "rawSHA256": "947751c954826d8ac02b4e0720a1caf470f00d234c985d9b23f332a6f0fd999f",
+        "toolNames": [
+          "record_checkpoint",
+          "workspace_read",
+          "workspace_write",
+          "workspace_edit",
+          "run_regression"
+        ]
+      },
+      "firstChunkMonoMs": 1761.582208,
+      "terminalMonoMs": 1769.968791,
+      "terminalType": "response.completed",
+      "rawUsage": {
+        "input_tokens": 100,
+        "output_tokens": 50,
+        "total_tokens": 150,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "serverUsage": {
+        "input": 100,
+        "cacheRead": 0,
+        "cacheWrite": null,
+        "output": 50,
+        "reasoning": 0,
+        "total": 150
+      },
+      "auditFailure": null,
+      "usage": {
+        "input": 100,
+        "output": 50,
+        "reasoning": 0
+      },
+      "stop": "completed"
+    },
+    {
+      "phase": "r1-gpt-6.1-terra-settlement-v2-pi-native:continuation",
+      "operation": "normal",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-terra",
+      "transport": "sse",
+      "bodyBytes": 7856,
+      "decodedBytes": 119743,
+      "bodyHash": "4113da65641621ac9cc16b34f451d0bec57a76df0d9d50d0f6d5a5f60e75cb21",
+      "inputTokens": 29936,
+      "outputTokens": 1000,
+      "laneId": "r1-gpt-6.1-terra-settlement-v2-pi-native",
+      "task": "settlement-v2",
+      "repeat": 1,
+      "assignedArm": "pi-native",
+      "experimentPhase": "comparison",
+      "stage": "continuation",
+      "reservedMonoMs": 1797.676666,
+      "fixture": true,
+      "dispatch": 12,
+      "state": "completed",
+      "at": "2026-11-16T15:55:14.476Z",
+      "sendInvokedMonoMs": 1805.848458,
+      "sendState": "response-confirmed",
+      "knownSent": true,
+      "serverConfirmed": false,
+      "responseMonoMs": 1815.250458,
+      "status": 200,
+      "encoded": {
+        "model": "gpt-6.1-terra",
+        "reasoning": {
+          "effort": "none"
+        },
+        "maxOutputTokens": 1000,
+        "stream": true,
+        "inputHash": "d81da51c9b3302eb8cf861c288c89d658b619567114158f0ddb39928cd58d486",
+        "instructionsHash": "75357d685f238b6afd7738be9786fdafde641eb6ca9a3be7471939715a68a4de",
+        "systemMessagesHash": "46712c6e44d47b5000647ce443879ab04d5efd37b7e7416f63a9296784a0796a",
+        "toolsHash": "08151f4f9e169a4c589ba2a24c91bf0b9a1e61c21901c8465138d68f9670d47a",
+        "opaqueItems": 0,
+        "compactionTrigger": false,
+        "rawSHA256": "804afeab4ea1940b0b8a45b3775580e67655dc1382c148c832e45c57405f105b",
+        "toolNames": [
+          "record_checkpoint",
+          "workspace_read",
+          "workspace_write",
+          "workspace_edit",
+          "run_regression"
+        ]
+      },
+      "firstChunkMonoMs": 1842.074,
+      "terminalMonoMs": 1851.942833,
+      "terminalType": "response.completed",
+      "rawUsage": {
+        "input_tokens": 100,
+        "output_tokens": 50,
+        "total_tokens": 150,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "serverUsage": {
+        "input": 100,
+        "cacheRead": 0,
+        "cacheWrite": null,
+        "output": 50,
+        "reasoning": 0,
+        "total": 150
+      },
+      "auditFailure": null,
+      "usage": {
+        "input": 100,
+        "output": 50,
+        "reasoning": 0
+      },
+      "stop": "completed"
+    },
+    {
+      "phase": "r1-gpt-6.1-terra-settlement-v2-pi-native:continuation",
+      "operation": "normal",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-terra",
+      "transport": "sse",
+      "bodyBytes": 8199,
+      "decodedBytes": 120458,
+      "bodyHash": "593ae38742e146d30f4225663cd765d57da8372f05ce47a8fdfdd66cee284519",
+      "inputTokens": 30115,
+      "outputTokens": 1000,
+      "laneId": "r1-gpt-6.1-terra-settlement-v2-pi-native",
+      "task": "settlement-v2",
+      "repeat": 1,
+      "assignedArm": "pi-native",
+      "experimentPhase": "comparison",
+      "stage": "continuation",
+      "reservedMonoMs": 1881.945125,
+      "fixture": true,
+      "dispatch": 13,
+      "state": "completed",
+      "at": "2026-11-16T15:55:14.561Z",
+      "sendInvokedMonoMs": 1890.094166,
+      "sendState": "response-confirmed",
+      "knownSent": true,
+      "serverConfirmed": false,
+      "responseMonoMs": 1899.588791,
+      "status": 200,
+      "encoded": {
+        "model": "gpt-6.1-terra",
+        "reasoning": {
+          "effort": "none"
+        },
+        "maxOutputTokens": 1000,
+        "stream": true,
+        "inputHash": "fbe054107c2940e0a918759fcc1c0e6b70e0707ead318ec9d7197351f697ddee",
+        "instructionsHash": "75357d685f238b6afd7738be9786fdafde641eb6ca9a3be7471939715a68a4de",
+        "systemMessagesHash": "46712c6e44d47b5000647ce443879ab04d5efd37b7e7416f63a9296784a0796a",
+        "toolsHash": "08151f4f9e169a4c589ba2a24c91bf0b9a1e61c21901c8465138d68f9670d47a",
+        "opaqueItems": 0,
+        "compactionTrigger": false,
+        "rawSHA256": "2207d9eef4e293f6201b70a7bbd3300f2da5266605aa31a38ce37e976fd7c4f1",
+        "toolNames": [
+          "record_checkpoint",
+          "workspace_read",
+          "workspace_write",
+          "workspace_edit",
+          "run_regression"
+        ]
+      },
+      "firstChunkMonoMs": 1925.972875,
+      "terminalMonoMs": 1934.904416,
+      "terminalType": "response.completed",
+      "rawUsage": {
+        "input_tokens": 100,
+        "output_tokens": 50,
+        "total_tokens": 150,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "serverUsage": {
+        "input": 100,
+        "cacheRead": 0,
+        "cacheWrite": null,
+        "output": 50,
+        "reasoning": 0,
+        "total": 150
+      },
+      "auditFailure": null,
+      "usage": {
+        "input": 100,
+        "output": 50,
+        "reasoning": 0
+      },
+      "stop": "completed"
+    },
+    {
+      "phase": "r1-gpt-6.1-terra-settlement-v2-pi-native:continuation",
+      "operation": "normal",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-terra",
+      "transport": "sse",
+      "bodyBytes": 8228,
+      "decodedBytes": 120647,
+      "bodyHash": "846b8dc245f8c3ec37b3af7748608cb334706320f0f02d6ad0735159167b5146",
+      "inputTokens": 30162,
+      "outputTokens": 1000,
+      "laneId": "r1-gpt-6.1-terra-settlement-v2-pi-native",
+      "task": "settlement-v2",
+      "repeat": 1,
+      "assignedArm": "pi-native",
+      "experimentPhase": "comparison",
+      "stage": "continuation",
+      "reservedMonoMs": 3197.06925,
+      "fixture": true,
+      "dispatch": 14,
+      "state": "completed",
+      "at": "2026-11-16T15:55:15.876Z",
+      "sendInvokedMonoMs": 3206.723291,
+      "sendState": "response-confirmed",
+      "knownSent": true,
+      "serverConfirmed": false,
+      "responseMonoMs": 3217.267,
+      "status": 200,
+      "encoded": {
+        "model": "gpt-6.1-terra",
+        "reasoning": {
+          "effort": "none"
+        },
+        "maxOutputTokens": 1000,
+        "stream": true,
+        "inputHash": "54985ab51215f280b0341459c69ac926dcf4bebe5468f762ce8b5e174b3a0b06",
+        "instructionsHash": "75357d685f238b6afd7738be9786fdafde641eb6ca9a3be7471939715a68a4de",
+        "systemMessagesHash": "46712c6e44d47b5000647ce443879ab04d5efd37b7e7416f63a9296784a0796a",
+        "toolsHash": "08151f4f9e169a4c589ba2a24c91bf0b9a1e61c21901c8465138d68f9670d47a",
+        "opaqueItems": 0,
+        "compactionTrigger": false,
+        "rawSHA256": "4582c14eaedd9cd3efd2d4ace24daeb323804840b2382cb9d2f2abee5beea2ad",
+        "toolNames": [
+          "record_checkpoint",
+          "workspace_read",
+          "workspace_write",
+          "workspace_edit",
+          "run_regression"
+        ]
+      },
+      "firstChunkMonoMs": 3247.022,
+      "firstTokenMonoMs": 3255.68875,
+      "terminalMonoMs": 3263.718333,
+      "terminalType": "response.completed",
+      "rawUsage": {
+        "input_tokens": 100,
+        "output_tokens": 50,
+        "total_tokens": 150,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "serverUsage": {
+        "input": 100,
+        "cacheRead": 0,
+        "cacheWrite": null,
+        "output": 50,
+        "reasoning": 0,
+        "total": 150
+      },
+      "auditFailure": null,
+      "usage": {
+        "input": 100,
+        "output": 50,
+        "reasoning": 0
+      },
+      "stop": "completed"
+    },
+    {
+      "phase": "r1-gpt-6.1-terra-settlement-v2-pi-compact-remote:compact",
+      "operation": "remote",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-terra",
+      "transport": "sse",
+      "bodyBytes": 7770,
+      "decodedBytes": 134105,
+      "bodyHash": "2e5715232e584534186be46bcb5e0b2a3f550092571d30e5751be1a95eca41d6",
+      "inputTokens": 33527,
+      "outputTokens": 1000,
+      "laneId": "r1-gpt-6.1-terra-settlement-v2-pi-compact-remote",
+      "task": "settlement-v2",
+      "repeat": 1,
+      "assignedArm": "pi-compact-remote",
+      "experimentPhase": "comparison",
+      "stage": "compact",
+      "reservedMonoMs": 3399.438333,
+      "fixture": true,
+      "dispatch": 15,
+      "state": "completed",
+      "at": "2026-11-16T15:55:16.078Z",
+      "sendInvokedMonoMs": 3408.675333,
+      "sendState": "response-confirmed",
+      "knownSent": true,
+      "serverConfirmed": false,
+      "responseMonoMs": 3417.336083,
+      "status": 200,
+      "encoded": {
+        "model": "gpt-6.1-terra",
+        "reasoning": {
+          "effort": "none"
+        },
+        "maxOutputTokens": 1000,
+        "stream": true,
+        "inputHash": "d646818e9afadad83fc586afbf1cdcd2a788172702ccbec605937252aba3e049",
+        "instructionsHash": "75357d685f238b6afd7738be9786fdafde641eb6ca9a3be7471939715a68a4de",
+        "systemMessagesHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "toolsHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "opaqueItems": 0,
+        "compactionTrigger": true,
+        "rawSHA256": "0e1a509cfa927827933433af0c9c2e892265a64754f0b8f706efb6887ece5ebd",
+        "toolNames": []
+      },
+      "firstChunkMonoMs": 3443.048416,
+      "terminalMonoMs": 3451.806416,
+      "terminalType": "response.completed",
+      "rawUsage": {
+        "input_tokens": 100,
+        "output_tokens": 50,
+        "total_tokens": 150,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "serverUsage": {
+        "input": 100,
+        "cacheRead": 0,
+        "cacheWrite": null,
+        "output": 50,
+        "reasoning": 0,
+        "total": 150
+      },
+      "auditFailure": null,
+      "usage": {
+        "input": 100,
+        "output": 50,
+        "reasoning": 0
+      },
+      "stop": "completed"
+    },
+    {
+      "phase": "r1-gpt-6.1-terra-settlement-v2-pi-compact-remote:continuation",
+      "operation": "normal",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-terra",
+      "transport": "sse",
+      "bodyBytes": 7308,
+      "decodedBytes": 117050,
+      "bodyHash": "419e9f9675a7f1288e3a7faf9854819e003134fb4272f13b10cfd01c83aaf16d",
+      "inputTokens": 29263,
+      "outputTokens": 1000,
+      "laneId": "r1-gpt-6.1-terra-settlement-v2-pi-compact-remote",
+      "task": "settlement-v2",
+      "repeat": 1,
+      "assignedArm": "pi-compact-remote",
+      "experimentPhase": "comparison",
+      "stage": "continuation",
+      "reservedMonoMs": 3507.16675,
+      "fixture": true,
+      "dispatch": 16,
+      "state": "completed",
+      "at": "2026-11-16T15:55:16.186Z",
+      "sendInvokedMonoMs": 3516.631416,
+      "sendState": "response-confirmed",
+      "knownSent": true,
+      "serverConfirmed": false,
+      "responseMonoMs": 3526.450416,
+      "status": 200,
+      "encoded": {
+        "model": "gpt-6.1-terra",
+        "reasoning": {
+          "effort": "none"
+        },
+        "maxOutputTokens": 1000,
+        "stream": true,
+        "inputHash": "e4380efcc88a32f1b12361fa9a0a980975de3454d24baf97b7ae58a5ce9a2fa5",
+        "instructionsHash": "75357d685f238b6afd7738be9786fdafde641eb6ca9a3be7471939715a68a4de",
+        "systemMessagesHash": "46712c6e44d47b5000647ce443879ab04d5efd37b7e7416f63a9296784a0796a",
+        "toolsHash": "08151f4f9e169a4c589ba2a24c91bf0b9a1e61c21901c8465138d68f9670d47a",
+        "opaqueItems": 1,
+        "compactionTrigger": false,
+        "rawSHA256": "8a911022e07ca5e54faf0a398f3283d312358995b48759d15a851f18f15e2e86",
+        "toolNames": [
+          "record_checkpoint",
+          "workspace_read",
+          "workspace_write",
+          "workspace_edit",
+          "run_regression"
+        ]
+      },
+      "firstChunkMonoMs": 3555.816916,
+      "terminalMonoMs": 3565.026333,
+      "terminalType": "response.completed",
+      "rawUsage": {
+        "input_tokens": 100,
+        "output_tokens": 50,
+        "total_tokens": 150,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "serverUsage": {
+        "input": 100,
+        "cacheRead": 0,
+        "cacheWrite": null,
+        "output": 50,
+        "reasoning": 0,
+        "total": 150
+      },
+      "auditFailure": null,
+      "usage": {
+        "input": 100,
+        "output": 50,
+        "reasoning": 0
+      },
+      "stop": "completed"
+    },
+    {
+      "phase": "r1-gpt-6.1-terra-settlement-v2-pi-compact-remote:continuation",
+      "operation": "normal",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-terra",
+      "transport": "sse",
+      "bodyBytes": 7541,
+      "decodedBytes": 117607,
+      "bodyHash": "c3c1092e67c6f4c7b45382ba1897d7569c8c4c519ed0aec8e5309024ec1710f2",
+      "inputTokens": 29402,
+      "outputTokens": 1000,
+      "laneId": "r1-gpt-6.1-terra-settlement-v2-pi-compact-remote",
+      "task": "settlement-v2",
+      "repeat": 1,
+      "assignedArm": "pi-compact-remote",
+      "experimentPhase": "comparison",
+      "stage": "continuation",
+      "reservedMonoMs": 3592.593625,
+      "fixture": true,
+      "dispatch": 17,
+      "state": "completed",
+      "at": "2026-11-16T15:55:16.271Z",
+      "sendInvokedMonoMs": 3601.733541,
+      "sendState": "response-confirmed",
+      "knownSent": true,
+      "serverConfirmed": false,
+      "responseMonoMs": 3612.571875,
+      "status": 200,
+      "encoded": {
+        "model": "gpt-6.1-terra",
+        "reasoning": {
+          "effort": "none"
+        },
+        "maxOutputTokens": 1000,
+        "stream": true,
+        "inputHash": "bb2c3736b137e9b3d7ff4d980d5cf8e3408bf51b0d15f5e365af03e01baf5d09",
+        "instructionsHash": "75357d685f238b6afd7738be9786fdafde641eb6ca9a3be7471939715a68a4de",
+        "systemMessagesHash": "46712c6e44d47b5000647ce443879ab04d5efd37b7e7416f63a9296784a0796a",
+        "toolsHash": "08151f4f9e169a4c589ba2a24c91bf0b9a1e61c21901c8465138d68f9670d47a",
+        "opaqueItems": 1,
+        "compactionTrigger": false,
+        "rawSHA256": "9adb7ab12a530f4881feb2a5eadc56968bc76511c92d7a7f8c9a2e4d97ff8802",
+        "toolNames": [
+          "record_checkpoint",
+          "workspace_read",
+          "workspace_write",
+          "workspace_edit",
+          "run_regression"
+        ]
+      },
+      "firstChunkMonoMs": 3641.754958,
+      "terminalMonoMs": 3651.700375,
+      "terminalType": "response.completed",
+      "rawUsage": {
+        "input_tokens": 100,
+        "output_tokens": 50,
+        "total_tokens": 150,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "serverUsage": {
+        "input": 100,
+        "cacheRead": 0,
+        "cacheWrite": null,
+        "output": 50,
+        "reasoning": 0,
+        "total": 150
+      },
+      "auditFailure": null,
+      "usage": {
+        "input": 100,
+        "output": 50,
+        "reasoning": 0
+      },
+      "stop": "completed"
+    },
+    {
+      "phase": "r1-gpt-6.1-terra-settlement-v2-pi-compact-remote:continuation",
+      "operation": "normal",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-terra",
+      "transport": "sse",
+      "bodyBytes": 7621,
+      "decodedBytes": 117861,
+      "bodyHash": "cc99582bc66df941b59feb033be0cc2690d91f32b1d4a22850ef6dba76ab6b3a",
+      "inputTokens": 29466,
+      "outputTokens": 1000,
+      "laneId": "r1-gpt-6.1-terra-settlement-v2-pi-compact-remote",
+      "task": "settlement-v2",
+      "repeat": 1,
+      "assignedArm": "pi-compact-remote",
+      "experimentPhase": "comparison",
+      "stage": "continuation",
+      "reservedMonoMs": 3685.523166,
+      "fixture": true,
+      "dispatch": 18,
+      "state": "completed",
+      "at": "2026-11-16T15:55:16.364Z",
+      "sendInvokedMonoMs": 3695.743416,
+      "sendState": "response-confirmed",
+      "knownSent": true,
+      "serverConfirmed": false,
+      "responseMonoMs": 3706.007375,
+      "status": 200,
+      "encoded": {
+        "model": "gpt-6.1-terra",
+        "reasoning": {
+          "effort": "none"
+        },
+        "maxOutputTokens": 1000,
+        "stream": true,
+        "inputHash": "06aef0ce11f110ad08c1c1521d7972897dde6fb2e27d043a3cd5ccea69cb2fc1",
+        "instructionsHash": "75357d685f238b6afd7738be9786fdafde641eb6ca9a3be7471939715a68a4de",
+        "systemMessagesHash": "46712c6e44d47b5000647ce443879ab04d5efd37b7e7416f63a9296784a0796a",
+        "toolsHash": "08151f4f9e169a4c589ba2a24c91bf0b9a1e61c21901c8465138d68f9670d47a",
+        "opaqueItems": 1,
+        "compactionTrigger": false,
+        "rawSHA256": "cd38c97b6ca7b76ee6d711c0d5c9f3c92108537452d097908421185200f3509d",
+        "toolNames": [
+          "record_checkpoint",
+          "workspace_read",
+          "workspace_write",
+          "workspace_edit",
+          "run_regression"
+        ]
+      },
+      "firstChunkMonoMs": 3735.856875,
+      "terminalMonoMs": 3743.813416,
+      "terminalType": "response.completed",
+      "rawUsage": {
+        "input_tokens": 100,
+        "output_tokens": 50,
+        "total_tokens": 150,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "serverUsage": {
+        "input": 100,
+        "cacheRead": 0,
+        "cacheWrite": null,
+        "output": 50,
+        "reasoning": 0,
+        "total": 150
+      },
+      "auditFailure": null,
+      "usage": {
+        "input": 100,
+        "output": 50,
+        "reasoning": 0
+      },
+      "stop": "completed"
+    },
+    {
+      "phase": "r1-gpt-6.1-terra-settlement-v2-pi-compact-remote:continuation",
+      "operation": "normal",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-terra",
+      "transport": "sse",
+      "bodyBytes": 7966,
+      "decodedBytes": 118576,
+      "bodyHash": "54287ab834bc501982c37006fa71bbcd47d6190171c2bc70ee2c6bfd8ebdc46f",
+      "inputTokens": 29644,
+      "outputTokens": 1000,
+      "laneId": "r1-gpt-6.1-terra-settlement-v2-pi-compact-remote",
+      "task": "settlement-v2",
+      "repeat": 1,
+      "assignedArm": "pi-compact-remote",
+      "experimentPhase": "comparison",
+      "stage": "continuation",
+      "reservedMonoMs": 3773.015333,
+      "fixture": true,
+      "dispatch": 19,
+      "state": "completed",
+      "at": "2026-11-16T15:55:16.452Z",
+      "sendInvokedMonoMs": 3781.514333,
+      "sendState": "response-confirmed",
+      "knownSent": true,
+      "serverConfirmed": false,
+      "responseMonoMs": 3791.239166,
+      "status": 200,
+      "encoded": {
+        "model": "gpt-6.1-terra",
+        "reasoning": {
+          "effort": "none"
+        },
+        "maxOutputTokens": 1000,
+        "stream": true,
+        "inputHash": "8f00667b6f3eee316e2927483b76755024de616f4b96339ae44e1c862651f263",
+        "instructionsHash": "75357d685f238b6afd7738be9786fdafde641eb6ca9a3be7471939715a68a4de",
+        "systemMessagesHash": "46712c6e44d47b5000647ce443879ab04d5efd37b7e7416f63a9296784a0796a",
+        "toolsHash": "08151f4f9e169a4c589ba2a24c91bf0b9a1e61c21901c8465138d68f9670d47a",
+        "opaqueItems": 1,
+        "compactionTrigger": false,
+        "rawSHA256": "28f3add8a7a3b1664479cb16197bdc05155a82ee2e409f642f984b245cd9f1b8",
+        "toolNames": [
+          "record_checkpoint",
+          "workspace_read",
+          "workspace_write",
+          "workspace_edit",
+          "run_regression"
+        ]
+      },
+      "firstChunkMonoMs": 3819.988291,
+      "terminalMonoMs": 3829.037625,
+      "terminalType": "response.completed",
+      "rawUsage": {
+        "input_tokens": 100,
+        "output_tokens": 50,
+        "total_tokens": 150,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "serverUsage": {
+        "input": 100,
+        "cacheRead": 0,
+        "cacheWrite": null,
+        "output": 50,
+        "reasoning": 0,
+        "total": 150
+      },
+      "auditFailure": null,
+      "usage": {
+        "input": 100,
+        "output": 50,
+        "reasoning": 0
+      },
+      "stop": "completed"
+    },
+    {
+      "phase": "r1-gpt-6.1-terra-settlement-v2-pi-compact-remote:continuation",
+      "operation": "normal",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-terra",
+      "transport": "sse",
+      "bodyBytes": 7996,
+      "decodedBytes": 118765,
+      "bodyHash": "c5f63c2dff490c100a3ce08559dcd70993520660cba648677f2d965b8c1e7ba8",
+      "inputTokens": 29692,
+      "outputTokens": 1000,
+      "laneId": "r1-gpt-6.1-terra-settlement-v2-pi-compact-remote",
+      "task": "settlement-v2",
+      "repeat": 1,
+      "assignedArm": "pi-compact-remote",
+      "experimentPhase": "comparison",
+      "stage": "continuation",
+      "reservedMonoMs": 3901.20275,
+      "fixture": true,
+      "dispatch": 20,
+      "state": "completed",
+      "at": "2026-11-16T15:55:16.580Z",
+      "sendInvokedMonoMs": 3910.835083,
+      "sendState": "response-confirmed",
+      "knownSent": true,
+      "serverConfirmed": false,
+      "responseMonoMs": 3920.367791,
+      "status": 200,
+      "encoded": {
+        "model": "gpt-6.1-terra",
+        "reasoning": {
+          "effort": "none"
+        },
+        "maxOutputTokens": 1000,
+        "stream": true,
+        "inputHash": "0bdf91a41f693e4ba2f194357731ac2abd0a22075bb63c030c2b39c18cf16280",
+        "instructionsHash": "75357d685f238b6afd7738be9786fdafde641eb6ca9a3be7471939715a68a4de",
+        "systemMessagesHash": "46712c6e44d47b5000647ce443879ab04d5efd37b7e7416f63a9296784a0796a",
+        "toolsHash": "08151f4f9e169a4c589ba2a24c91bf0b9a1e61c21901c8465138d68f9670d47a",
+        "opaqueItems": 1,
+        "compactionTrigger": false,
+        "rawSHA256": "eb764759c36bcc33ad35b09ae1e4b2d52f9f3a642a353b513d8d9f20527644e5",
+        "toolNames": [
+          "record_checkpoint",
+          "workspace_read",
+          "workspace_write",
+          "workspace_edit",
+          "run_regression"
+        ]
+      },
+      "firstChunkMonoMs": 3947.888083,
+      "firstTokenMonoMs": 3955.658916,
+      "terminalMonoMs": 3963.590083,
+      "terminalType": "response.completed",
+      "rawUsage": {
+        "input_tokens": 100,
+        "output_tokens": 50,
+        "total_tokens": 150,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "serverUsage": {
+        "input": 100,
+        "cacheRead": 0,
+        "cacheWrite": null,
+        "output": 50,
+        "reasoning": 0,
+        "total": 150
+      },
+      "auditFailure": null,
+      "usage": {
+        "input": 100,
+        "output": 50,
+        "reasoning": 0
+      },
+      "stop": "completed"
+    },
+    {
+      "phase": "r1-gpt-6.1-terra-redirect-v2-pi-compact-remote:compact",
+      "operation": "remote",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-terra",
+      "transport": "sse",
+      "bodyBytes": 7782,
+      "decodedBytes": 134056,
+      "bodyHash": "a9bb61e188ded9e7c4860260809ef0037539754e7546ab816af88b00632f9dcb",
+      "inputTokens": 33514,
+      "outputTokens": 1000,
+      "laneId": "r1-gpt-6.1-terra-redirect-v2-pi-compact-remote",
+      "task": "redirect-v2",
+      "repeat": 1,
+      "assignedArm": "pi-compact-remote",
+      "experimentPhase": "comparison",
+      "stage": "compact",
+      "reservedMonoMs": 4067.432125,
+      "fixture": true,
+      "dispatch": 21,
+      "state": "completed",
+      "at": "2026-11-16T15:55:16.746Z",
+      "sendInvokedMonoMs": 4076.8025,
+      "sendState": "response-confirmed",
+      "knownSent": true,
+      "serverConfirmed": false,
+      "responseMonoMs": 4087.422916,
+      "status": 200,
+      "encoded": {
+        "model": "gpt-6.1-terra",
+        "reasoning": {
+          "effort": "none"
+        },
+        "maxOutputTokens": 1000,
+        "stream": true,
+        "inputHash": "246e687df61e0b5dc312ba60c11ab2e081159b4710df1f814c923a96e56f880e",
+        "instructionsHash": "75357d685f238b6afd7738be9786fdafde641eb6ca9a3be7471939715a68a4de",
+        "systemMessagesHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "toolsHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "opaqueItems": 0,
+        "compactionTrigger": true,
+        "rawSHA256": "f879c6538b55f01a311c7a949a23127f4e6ca2e033bdb9369c8a000bc0e0f5a1",
+        "toolNames": []
+      },
+      "firstChunkMonoMs": 4116.799125,
+      "terminalMonoMs": 4125.730333,
+      "terminalType": "response.completed",
+      "rawUsage": {
+        "input_tokens": 100,
+        "output_tokens": 50,
+        "total_tokens": 150,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "serverUsage": {
+        "input": 100,
+        "cacheRead": 0,
+        "cacheWrite": null,
+        "output": 50,
+        "reasoning": 0,
+        "total": 150
+      },
+      "auditFailure": null,
+      "usage": {
+        "input": 100,
+        "output": 50,
+        "reasoning": 0
+      },
+      "stop": "completed"
+    },
+    {
+      "phase": "r1-gpt-6.1-terra-redirect-v2-pi-compact-remote:continuation",
+      "operation": "normal",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-terra",
+      "transport": "sse",
+      "bodyBytes": 7301,
+      "decodedBytes": 117040,
+      "bodyHash": "150f7ebcf824c6b7ea2dd1420b98283bce4cb6b4fc62f3b42de218115a9977ea",
+      "inputTokens": 29260,
+      "outputTokens": 1000,
+      "laneId": "r1-gpt-6.1-terra-redirect-v2-pi-compact-remote",
+      "task": "redirect-v2",
+      "repeat": 1,
+      "assignedArm": "pi-compact-remote",
+      "experimentPhase": "comparison",
+      "stage": "continuation",
+      "reservedMonoMs": 4182.536041,
+      "fixture": true,
+      "dispatch": 22,
+      "state": "completed",
+      "at": "2026-11-16T15:55:16.861Z",
+      "sendInvokedMonoMs": 4191.807416,
+      "sendState": "response-confirmed",
+      "knownSent": true,
+      "serverConfirmed": false,
+      "responseMonoMs": 4202.536958,
+      "status": 200,
+      "encoded": {
+        "model": "gpt-6.1-terra",
+        "reasoning": {
+          "effort": "none"
+        },
+        "maxOutputTokens": 1000,
+        "stream": true,
+        "inputHash": "eebb93defc672b45067eb0479d185a756153a7fac20a6e4b60e76259291184cc",
+        "instructionsHash": "75357d685f238b6afd7738be9786fdafde641eb6ca9a3be7471939715a68a4de",
+        "systemMessagesHash": "46712c6e44d47b5000647ce443879ab04d5efd37b7e7416f63a9296784a0796a",
+        "toolsHash": "08151f4f9e169a4c589ba2a24c91bf0b9a1e61c21901c8465138d68f9670d47a",
+        "opaqueItems": 1,
+        "compactionTrigger": false,
+        "rawSHA256": "ed172eeae069000f2f16b4256b3c4f5dc728d22f2b93503ec9a386f259a1e4b9",
+        "toolNames": [
+          "record_checkpoint",
+          "workspace_read",
+          "workspace_write",
+          "workspace_edit",
+          "run_regression"
+        ]
+      },
+      "firstChunkMonoMs": 4231.845416,
+      "terminalMonoMs": 4241.7295,
+      "terminalType": "response.completed",
+      "rawUsage": {
+        "input_tokens": 100,
+        "output_tokens": 50,
+        "total_tokens": 150,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "serverUsage": {
+        "input": 100,
+        "cacheRead": 0,
+        "cacheWrite": null,
+        "output": 50,
+        "reasoning": 0,
+        "total": 150
+      },
+      "auditFailure": null,
+      "usage": {
+        "input": 100,
+        "output": 50,
+        "reasoning": 0
+      },
+      "stop": "completed"
+    },
+    {
+      "phase": "r1-gpt-6.1-terra-redirect-v2-pi-compact-remote:continuation",
+      "operation": "normal",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-terra",
+      "transport": "sse",
+      "bodyBytes": 7537,
+      "decodedBytes": 117586,
+      "bodyHash": "9747fdd2543b3af63d3037a7cc7979327058e3fe8ba9aefe4bd57f5f4e1fed71",
+      "inputTokens": 29397,
+      "outputTokens": 1000,
+      "laneId": "r1-gpt-6.1-terra-redirect-v2-pi-compact-remote",
+      "task": "redirect-v2",
+      "repeat": 1,
+      "assignedArm": "pi-compact-remote",
+      "experimentPhase": "comparison",
+      "stage": "continuation",
+      "reservedMonoMs": 4272.678291,
+      "fixture": true,
+      "dispatch": 23,
+      "state": "completed",
+      "at": "2026-11-16T15:55:16.951Z",
+      "sendInvokedMonoMs": 4281.82525,
+      "sendState": "response-confirmed",
+      "knownSent": true,
+      "serverConfirmed": false,
+      "responseMonoMs": 4292.671041,
+      "status": 200,
+      "encoded": {
+        "model": "gpt-6.1-terra",
+        "reasoning": {
+          "effort": "none"
+        },
+        "maxOutputTokens": 1000,
+        "stream": true,
+        "inputHash": "be60bfb80589dfe2f7cfbbe375df1414ed3585def09f4ac65da36a1b8f8ba5bf",
+        "instructionsHash": "75357d685f238b6afd7738be9786fdafde641eb6ca9a3be7471939715a68a4de",
+        "systemMessagesHash": "46712c6e44d47b5000647ce443879ab04d5efd37b7e7416f63a9296784a0796a",
+        "toolsHash": "08151f4f9e169a4c589ba2a24c91bf0b9a1e61c21901c8465138d68f9670d47a",
+        "opaqueItems": 1,
+        "compactionTrigger": false,
+        "rawSHA256": "38927649bf41f7fc100bc9c274f64f4e4dd5527486cd37b133239e89ffad3632",
+        "toolNames": [
+          "record_checkpoint",
+          "workspace_read",
+          "workspace_write",
+          "workspace_edit",
+          "run_regression"
+        ]
+      },
+      "firstChunkMonoMs": 4320.736583,
+      "terminalMonoMs": 4329.847541,
+      "terminalType": "response.completed",
+      "rawUsage": {
+        "input_tokens": 100,
+        "output_tokens": 50,
+        "total_tokens": 150,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "serverUsage": {
+        "input": 100,
+        "cacheRead": 0,
+        "cacheWrite": null,
+        "output": 50,
+        "reasoning": 0,
+        "total": 150
+      },
+      "auditFailure": null,
+      "usage": {
+        "input": 100,
+        "output": 50,
+        "reasoning": 0
+      },
+      "stop": "completed"
+    },
+    {
+      "phase": "r1-gpt-6.1-terra-redirect-v2-pi-compact-remote:continuation",
+      "operation": "normal",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-terra",
+      "transport": "sse",
+      "bodyBytes": 7618,
+      "decodedBytes": 117845,
+      "bodyHash": "887a95623d8b498d7ac5cbd409d7d592bc587a1d175b78c4ab9357bfd2e3395d",
+      "inputTokens": 29462,
+      "outputTokens": 1000,
+      "laneId": "r1-gpt-6.1-terra-redirect-v2-pi-compact-remote",
+      "task": "redirect-v2",
+      "repeat": 1,
+      "assignedArm": "pi-compact-remote",
+      "experimentPhase": "comparison",
+      "stage": "continuation",
+      "reservedMonoMs": 4357.916125,
+      "fixture": true,
+      "dispatch": 24,
+      "state": "completed",
+      "at": "2026-11-16T15:55:17.037Z",
+      "sendInvokedMonoMs": 4366.724041,
+      "sendState": "response-confirmed",
+      "knownSent": true,
+      "serverConfirmed": false,
+      "responseMonoMs": 4376.814875,
+      "status": 200,
+      "encoded": {
+        "model": "gpt-6.1-terra",
+        "reasoning": {
+          "effort": "none"
+        },
+        "maxOutputTokens": 1000,
+        "stream": true,
+        "inputHash": "1071900623ae08695f3c5ffd34e686559707895a03d64b65aee5e735fdd213ad",
+        "instructionsHash": "75357d685f238b6afd7738be9786fdafde641eb6ca9a3be7471939715a68a4de",
+        "systemMessagesHash": "46712c6e44d47b5000647ce443879ab04d5efd37b7e7416f63a9296784a0796a",
+        "toolsHash": "08151f4f9e169a4c589ba2a24c91bf0b9a1e61c21901c8465138d68f9670d47a",
+        "opaqueItems": 1,
+        "compactionTrigger": false,
+        "rawSHA256": "fd35ead180a32bf17109c3b6d6bf4ebce784c6d8a8028808f3723a9fe751a2d7",
+        "toolNames": [
+          "record_checkpoint",
+          "workspace_read",
+          "workspace_write",
+          "workspace_edit",
+          "run_regression"
+        ]
+      },
+      "firstChunkMonoMs": 4401.690166,
+      "terminalMonoMs": 4409.613,
+      "terminalType": "response.completed",
+      "rawUsage": {
+        "input_tokens": 100,
+        "output_tokens": 50,
+        "total_tokens": 150,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "serverUsage": {
+        "input": 100,
+        "cacheRead": 0,
+        "cacheWrite": null,
+        "output": 50,
+        "reasoning": 0,
+        "total": 150
+      },
+      "auditFailure": null,
+      "usage": {
+        "input": 100,
+        "output": 50,
+        "reasoning": 0
+      },
+      "stop": "completed"
+    },
+    {
+      "phase": "r1-gpt-6.1-terra-redirect-v2-pi-compact-remote:continuation",
+      "operation": "normal",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-terra",
+      "transport": "sse",
+      "bodyBytes": 7852,
+      "decodedBytes": 118358,
+      "bodyHash": "5c612d79fe707b4d3a485426747e6ed53afc1563fbfb5fbc5c88d91fcc0818e7",
+      "inputTokens": 29590,
+      "outputTokens": 1000,
+      "laneId": "r1-gpt-6.1-terra-redirect-v2-pi-compact-remote",
+      "task": "redirect-v2",
+      "repeat": 1,
+      "assignedArm": "pi-compact-remote",
+      "experimentPhase": "comparison",
+      "stage": "continuation",
+      "reservedMonoMs": 4442.800875,
+      "fixture": true,
+      "dispatch": 25,
+      "state": "completed",
+      "at": "2026-11-16T15:55:17.121Z",
+      "sendInvokedMonoMs": 4451.701041,
+      "sendState": "response-confirmed",
+      "knownSent": true,
+      "serverConfirmed": false,
+      "responseMonoMs": 4460.957041,
+      "status": 200,
+      "encoded": {
+        "model": "gpt-6.1-terra",
+        "reasoning": {
+          "effort": "none"
+        },
+        "maxOutputTokens": 1000,
+        "stream": true,
+        "inputHash": "4738e83310f7881ee42585617cb8c2a4c59761ddc09c195ebf32df11928cb9c2",
+        "instructionsHash": "75357d685f238b6afd7738be9786fdafde641eb6ca9a3be7471939715a68a4de",
+        "systemMessagesHash": "46712c6e44d47b5000647ce443879ab04d5efd37b7e7416f63a9296784a0796a",
+        "toolsHash": "08151f4f9e169a4c589ba2a24c91bf0b9a1e61c21901c8465138d68f9670d47a",
+        "opaqueItems": 1,
+        "compactionTrigger": false,
+        "rawSHA256": "bc304fff3664dba6bc9a0436b292bb2daf94efcf5c9b42b303be3d90afa5933f",
+        "toolNames": [
+          "record_checkpoint",
+          "workspace_read",
+          "workspace_write",
+          "workspace_edit",
+          "run_regression"
+        ]
+      },
+      "firstChunkMonoMs": 4485.792083,
+      "terminalMonoMs": 4495.83275,
+      "terminalType": "response.completed",
+      "rawUsage": {
+        "input_tokens": 100,
+        "output_tokens": 50,
+        "total_tokens": 150,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "serverUsage": {
+        "input": 100,
+        "cacheRead": 0,
+        "cacheWrite": null,
+        "output": 50,
+        "reasoning": 0,
+        "total": 150
+      },
+      "auditFailure": null,
+      "usage": {
+        "input": 100,
+        "output": 50,
+        "reasoning": 0
+      },
+      "stop": "completed"
+    },
+    {
+      "phase": "r1-gpt-6.1-terra-redirect-v2-pi-compact-remote:continuation",
+      "operation": "normal",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-terra",
+      "transport": "sse",
+      "bodyBytes": 7881,
+      "decodedBytes": 118547,
+      "bodyHash": "fb6b4a64bfd80d4eabf09900ad177b48a325df4324213204574af812b87cdffd",
+      "inputTokens": 29637,
+      "outputTokens": 1000,
+      "laneId": "r1-gpt-6.1-terra-redirect-v2-pi-compact-remote",
+      "task": "redirect-v2",
+      "repeat": 1,
+      "assignedArm": "pi-compact-remote",
+      "experimentPhase": "comparison",
+      "stage": "continuation",
+      "reservedMonoMs": 4580.744958,
+      "fixture": true,
+      "dispatch": 26,
+      "state": "completed",
+      "at": "2026-11-16T15:55:17.259Z",
+      "sendInvokedMonoMs": 4589.7245,
+      "sendState": "response-confirmed",
+      "knownSent": true,
+      "serverConfirmed": false,
+      "responseMonoMs": 4600.240708,
+      "status": 200,
+      "encoded": {
+        "model": "gpt-6.1-terra",
+        "reasoning": {
+          "effort": "none"
+        },
+        "maxOutputTokens": 1000,
+        "stream": true,
+        "inputHash": "bb697a0ae67ec298c19365682ed3fa54e3ef5476c376a00afaf53b4e967dbd94",
+        "instructionsHash": "75357d685f238b6afd7738be9786fdafde641eb6ca9a3be7471939715a68a4de",
+        "systemMessagesHash": "46712c6e44d47b5000647ce443879ab04d5efd37b7e7416f63a9296784a0796a",
+        "toolsHash": "08151f4f9e169a4c589ba2a24c91bf0b9a1e61c21901c8465138d68f9670d47a",
+        "opaqueItems": 1,
+        "compactionTrigger": false,
+        "rawSHA256": "c978aa7a65254d25691575fd40ad6885e6083a1eb72b1f2c473c033048e6d5a0",
+        "toolNames": [
+          "record_checkpoint",
+          "workspace_read",
+          "workspace_write",
+          "workspace_edit",
+          "run_regression"
+        ]
+      },
+      "firstChunkMonoMs": 4628.782875,
+      "firstTokenMonoMs": 4638.692791,
+      "terminalMonoMs": 4647.6845,
+      "terminalType": "response.completed",
+      "rawUsage": {
+        "input_tokens": 100,
+        "output_tokens": 50,
+        "total_tokens": 150,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "serverUsage": {
+        "input": 100,
+        "cacheRead": 0,
+        "cacheWrite": null,
+        "output": 50,
+        "reasoning": 0,
+        "total": 150
+      },
+      "auditFailure": null,
+      "usage": {
+        "input": 100,
+        "output": 50,
+        "reasoning": 0
+      },
+      "stop": "completed"
+    },
+    {
+      "phase": "r1-gpt-6.1-terra-redirect-v2-pi-native:compact",
+      "operation": "native",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-terra",
+      "transport": "sse",
+      "bodyBytes": 7720,
+      "decodedBytes": 120791,
+      "bodyHash": "824317f50b41b9e8374f8a604e64b956aa673e45243ef48a59a8b774095e9f97",
+      "inputTokens": 30198,
+      "outputTokens": 1000,
+      "laneId": "r1-gpt-6.1-terra-redirect-v2-pi-native",
+      "task": "redirect-v2",
+      "repeat": 1,
+      "assignedArm": "pi-native",
+      "experimentPhase": "comparison",
+      "stage": "compact",
+      "reservedMonoMs": 4752.239083,
+      "fixture": true,
+      "dispatch": 27,
+      "state": "completed",
+      "at": "2026-11-16T15:55:17.431Z",
+      "sendInvokedMonoMs": 4760.761291,
+      "sendState": "response-confirmed",
+      "knownSent": true,
+      "serverConfirmed": false,
+      "responseMonoMs": 4770.354708,
+      "status": 200,
+      "encoded": {
+        "model": "gpt-6.1-terra",
+        "reasoning": {
+          "effort": "none"
+        },
+        "maxOutputTokens": 1000,
+        "stream": true,
+        "inputHash": "2770d1f0f203339c672056107d9c7ea40d206bc792ec4df42a736d49bab40e77",
+        "instructionsHash": "c464889dcfa60441e642f291445b49523f263e6fb2725d0c25075543a2ec3f8f",
+        "systemMessagesHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "toolsHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "opaqueItems": 0,
+        "compactionTrigger": false,
+        "rawSHA256": "3d49ba3bf7e7c7210c98905f8071ea33e09dcfe83defb92ac277403f92fc336f",
+        "toolNames": []
+      },
+      "firstChunkMonoMs": 4798.685833,
+      "firstTokenMonoMs": 4808.721291,
+      "terminalMonoMs": 4817.774416,
+      "terminalType": "response.completed",
+      "rawUsage": {
+        "input_tokens": 100,
+        "output_tokens": 50,
+        "total_tokens": 150,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "serverUsage": {
+        "input": 100,
+        "cacheRead": 0,
+        "cacheWrite": null,
+        "output": 50,
+        "reasoning": 0,
+        "total": 150
+      },
+      "auditFailure": null,
+      "usage": {
+        "input": 100,
+        "output": 50,
+        "reasoning": 0
+      },
+      "stop": "completed"
+    },
+    {
+      "phase": "r1-gpt-6.1-terra-redirect-v2-pi-native:continuation",
+      "operation": "normal",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-terra",
+      "transport": "sse",
+      "bodyBytes": 7720,
+      "decodedBytes": 118909,
+      "bodyHash": "0e36b233010cad21d87848d2c2d51cc0a1dc128c49293d72982e6b841c1c500e",
+      "inputTokens": 29728,
+      "outputTokens": 1000,
+      "laneId": "r1-gpt-6.1-terra-redirect-v2-pi-native",
+      "task": "redirect-v2",
+      "repeat": 1,
+      "assignedArm": "pi-native",
+      "experimentPhase": "comparison",
+      "stage": "continuation",
+      "reservedMonoMs": 4840.54075,
+      "fixture": true,
+      "dispatch": 28,
+      "state": "completed",
+      "at": "2026-11-16T15:55:17.519Z",
+      "sendInvokedMonoMs": 4849.725291,
+      "sendState": "response-confirmed",
+      "knownSent": true,
+      "serverConfirmed": false,
+      "responseMonoMs": 4859.488708,
+      "status": 200,
+      "encoded": {
+        "model": "gpt-6.1-terra",
+        "reasoning": {
+          "effort": "none"
+        },
+        "maxOutputTokens": 1000,
+        "stream": true,
+        "inputHash": "8bba3956006a8aaa7e0e3a618ccc352f4d9b52abc2018e5dec0ccf8bd73bad95",
+        "instructionsHash": "75357d685f238b6afd7738be9786fdafde641eb6ca9a3be7471939715a68a4de",
+        "systemMessagesHash": "46712c6e44d47b5000647ce443879ab04d5efd37b7e7416f63a9296784a0796a",
+        "toolsHash": "08151f4f9e169a4c589ba2a24c91bf0b9a1e61c21901c8465138d68f9670d47a",
+        "opaqueItems": 0,
+        "compactionTrigger": false,
+        "rawSHA256": "e1054657282ef96091a6c04c8f935d24a14f8df05af6dcde059921d229c93007",
+        "toolNames": [
+          "record_checkpoint",
+          "workspace_read",
+          "workspace_write",
+          "workspace_edit",
+          "run_regression"
+        ]
+      },
+      "firstChunkMonoMs": 4889.766,
+      "terminalMonoMs": 4898.71725,
+      "terminalType": "response.completed",
+      "rawUsage": {
+        "input_tokens": 100,
+        "output_tokens": 50,
+        "total_tokens": 150,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "serverUsage": {
+        "input": 100,
+        "cacheRead": 0,
+        "cacheWrite": null,
+        "output": 50,
+        "reasoning": 0,
+        "total": 150
+      },
+      "auditFailure": null,
+      "usage": {
+        "input": 100,
+        "output": 50,
+        "reasoning": 0
+      },
+      "stop": "completed"
+    },
+    {
+      "phase": "r1-gpt-6.1-terra-redirect-v2-pi-native:continuation",
+      "operation": "normal",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-terra",
+      "transport": "sse",
+      "bodyBytes": 7776,
+      "decodedBytes": 119455,
+      "bodyHash": "b704235a78b6117cc7b1728a9f13b5c2f1ad6f372102c7b29b8b005d755e40a7",
+      "inputTokens": 29864,
+      "outputTokens": 1000,
+      "laneId": "r1-gpt-6.1-terra-redirect-v2-pi-native",
+      "task": "redirect-v2",
+      "repeat": 1,
+      "assignedArm": "pi-native",
+      "experimentPhase": "comparison",
+      "stage": "continuation",
+      "reservedMonoMs": 4922.331166,
+      "fixture": true,
+      "dispatch": 29,
+      "state": "completed",
+      "at": "2026-11-16T15:55:17.601Z",
+      "sendInvokedMonoMs": 4931.831375,
+      "sendState": "response-confirmed",
+      "knownSent": true,
+      "serverConfirmed": false,
+      "responseMonoMs": 4942.756583,
+      "status": 200,
+      "encoded": {
+        "model": "gpt-6.1-terra",
+        "reasoning": {
+          "effort": "none"
+        },
+        "maxOutputTokens": 1000,
+        "stream": true,
+        "inputHash": "2a3b0453b5969885a575682d67e9c4d3b1fefcbfb957941dddc977fd47e9dfdf",
+        "instructionsHash": "75357d685f238b6afd7738be9786fdafde641eb6ca9a3be7471939715a68a4de",
+        "systemMessagesHash": "46712c6e44d47b5000647ce443879ab04d5efd37b7e7416f63a9296784a0796a",
+        "toolsHash": "08151f4f9e169a4c589ba2a24c91bf0b9a1e61c21901c8465138d68f9670d47a",
+        "opaqueItems": 0,
+        "compactionTrigger": false,
+        "rawSHA256": "9a0acd9b1d76797914618fa24668c5802871e1e738e2d91e6c978392fda1f406",
+        "toolNames": [
+          "record_checkpoint",
+          "workspace_read",
+          "workspace_write",
+          "workspace_edit",
+          "run_regression"
+        ]
+      },
+      "firstChunkMonoMs": 4969.746708,
+      "terminalMonoMs": 4977.756125,
+      "terminalType": "response.completed",
+      "rawUsage": {
+        "input_tokens": 100,
+        "output_tokens": 50,
+        "total_tokens": 150,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "serverUsage": {
+        "input": 100,
+        "cacheRead": 0,
+        "cacheWrite": null,
+        "output": 50,
+        "reasoning": 0,
+        "total": 150
+      },
+      "auditFailure": null,
+      "usage": {
+        "input": 100,
+        "output": 50,
+        "reasoning": 0
+      },
+      "stop": "completed"
+    },
+    {
+      "phase": "r1-gpt-6.1-terra-redirect-v2-pi-native:continuation",
+      "operation": "normal",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-terra",
+      "transport": "sse",
+      "bodyBytes": 7857,
+      "decodedBytes": 119714,
+      "bodyHash": "f9895932ad6a8696df873f7492b4c89615b91814527d82e834a72bfa83faf314",
+      "inputTokens": 29929,
+      "outputTokens": 1000,
+      "laneId": "r1-gpt-6.1-terra-redirect-v2-pi-native",
+      "task": "redirect-v2",
+      "repeat": 1,
+      "assignedArm": "pi-native",
+      "experimentPhase": "comparison",
+      "stage": "continuation",
+      "reservedMonoMs": 5002.044041,
+      "fixture": true,
+      "dispatch": 30,
+      "state": "completed",
+      "at": "2026-11-16T15:55:17.681Z",
+      "sendInvokedMonoMs": 5012.812958,
+      "sendState": "response-confirmed",
+      "knownSent": true,
+      "serverConfirmed": false,
+      "responseMonoMs": 5025.160041,
+      "status": 200,
+      "encoded": {
+        "model": "gpt-6.1-terra",
+        "reasoning": {
+          "effort": "none"
+        },
+        "maxOutputTokens": 1000,
+        "stream": true,
+        "inputHash": "a6997fefc2cbeb45f3fc98203c261837bfd058da433bf440118c20bbe0dae1d3",
+        "instructionsHash": "75357d685f238b6afd7738be9786fdafde641eb6ca9a3be7471939715a68a4de",
+        "systemMessagesHash": "46712c6e44d47b5000647ce443879ab04d5efd37b7e7416f63a9296784a0796a",
+        "toolsHash": "08151f4f9e169a4c589ba2a24c91bf0b9a1e61c21901c8465138d68f9670d47a",
+        "opaqueItems": 0,
+        "compactionTrigger": false,
+        "rawSHA256": "d7dafd1a4624626f8aede164d319dafaf2cb7b776f3b5ea4586fae8b3d082545",
+        "toolNames": [
+          "record_checkpoint",
+          "workspace_read",
+          "workspace_write",
+          "workspace_edit",
+          "run_regression"
+        ]
+      },
+      "firstChunkMonoMs": 5057.800041,
+      "terminalMonoMs": 5067.828166,
+      "terminalType": "response.completed",
+      "rawUsage": {
+        "input_tokens": 100,
+        "output_tokens": 50,
+        "total_tokens": 150,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "serverUsage": {
+        "input": 100,
+        "cacheRead": 0,
+        "cacheWrite": null,
+        "output": 50,
+        "reasoning": 0,
+        "total": 150
+      },
+      "auditFailure": null,
+      "usage": {
+        "input": 100,
+        "output": 50,
+        "reasoning": 0
+      },
+      "stop": "completed"
+    },
+    {
+      "phase": "r1-gpt-6.1-terra-redirect-v2-pi-native:continuation",
+      "operation": "normal",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-terra",
+      "transport": "sse",
+      "bodyBytes": 8098,
+      "decodedBytes": 120227,
+      "bodyHash": "ed9dc81e5032c06509273c4e721f1fc631baf1e63c01ab27e9a1dc8c675ecdb6",
+      "inputTokens": 30057,
+      "outputTokens": 1000,
+      "laneId": "r1-gpt-6.1-terra-redirect-v2-pi-native",
+      "task": "redirect-v2",
+      "repeat": 1,
+      "assignedArm": "pi-native",
+      "experimentPhase": "comparison",
+      "stage": "continuation",
+      "reservedMonoMs": 5099.1685,
+      "fixture": true,
+      "dispatch": 31,
+      "state": "completed",
+      "at": "2026-11-16T15:55:17.778Z",
+      "sendInvokedMonoMs": 5107.713666,
+      "sendState": "response-confirmed",
+      "knownSent": true,
+      "serverConfirmed": false,
+      "responseMonoMs": 5117.093291,
+      "status": 200,
+      "encoded": {
+        "model": "gpt-6.1-terra",
+        "reasoning": {
+          "effort": "none"
+        },
+        "maxOutputTokens": 1000,
+        "stream": true,
+        "inputHash": "6d00c738ebcbbd5bf81d4aedcfbddb0eed4580d8b9db11ef87ce363ec0147f98",
+        "instructionsHash": "75357d685f238b6afd7738be9786fdafde641eb6ca9a3be7471939715a68a4de",
+        "systemMessagesHash": "46712c6e44d47b5000647ce443879ab04d5efd37b7e7416f63a9296784a0796a",
+        "toolsHash": "08151f4f9e169a4c589ba2a24c91bf0b9a1e61c21901c8465138d68f9670d47a",
+        "opaqueItems": 0,
+        "compactionTrigger": false,
+        "rawSHA256": "b8fc97478a5852d813b97eef560d9e160fc0e52043d785c7592d13086962ee8d",
+        "toolNames": [
+          "record_checkpoint",
+          "workspace_read",
+          "workspace_write",
+          "workspace_edit",
+          "run_regression"
+        ]
+      },
+      "firstChunkMonoMs": 5148.770166,
+      "terminalMonoMs": 5159.732541,
+      "terminalType": "response.completed",
+      "rawUsage": {
+        "input_tokens": 100,
+        "output_tokens": 50,
+        "total_tokens": 150,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "serverUsage": {
+        "input": 100,
+        "cacheRead": 0,
+        "cacheWrite": null,
+        "output": 50,
+        "reasoning": 0,
+        "total": 150
+      },
+      "auditFailure": null,
+      "usage": {
+        "input": 100,
+        "output": 50,
+        "reasoning": 0
+      },
+      "stop": "completed"
+    },
+    {
+      "phase": "r1-gpt-6.1-terra-redirect-v2-pi-native:continuation",
+      "operation": "normal",
+      "provider": "openai-codex",
+      "model": "gpt-6.1-terra",
+      "transport": "sse",
+      "bodyBytes": 8136,
+      "decodedBytes": 120416,
+      "bodyHash": "35ff9c3b5f8271812b2f7b6e42249fb7b70b9054ee1c619a386a14ebeb321e46",
+      "inputTokens": 30104,
+      "outputTokens": 1000,
+      "laneId": "r1-gpt-6.1-terra-redirect-v2-pi-native",
+      "task": "redirect-v2",
+      "repeat": 1,
+      "assignedArm": "pi-native",
+      "experimentPhase": "comparison",
+      "stage": "continuation",
+      "reservedMonoMs": 5243.765166,
+      "fixture": true,
+      "dispatch": 32,
+      "state": "completed",
+      "at": "2026-11-16T15:55:17.922Z",
+      "sendInvokedMonoMs": 5253.322458,
+      "sendState": "response-confirmed",
+      "knownSent": true,
+      "serverConfirmed": false,
+      "responseMonoMs": 5263.9195,
+      "status": 200,
+      "encoded": {
+        "model": "gpt-6.1-terra",
+        "reasoning": {
+          "effort": "none"
+        },
+        "maxOutputTokens": 1000,
+        "stream": true,
+        "inputHash": "196899abdd26ebc40b9f3da52d583e378f9e3a3b8e010df7bed56f5a7e2d79fa",
+        "instructionsHash": "75357d685f238b6afd7738be9786fdafde641eb6ca9a3be7471939715a68a4de",
+        "systemMessagesHash": "46712c6e44d47b5000647ce443879ab04d5efd37b7e7416f63a9296784a0796a",
+        "toolsHash": "08151f4f9e169a4c589ba2a24c91bf0b9a1e61c21901c8465138d68f9670d47a",
+        "opaqueItems": 0,
+        "compactionTrigger": false,
+        "rawSHA256": "a8b01fb1c7dfa31fd02b7cdc7922fbe0e8747aa630859de48128a3f553260d5a",
+        "toolNames": [
+          "record_checkpoint",
+          "workspace_read",
+          "workspace_write",
+          "workspace_edit",
+          "run_regression"
+        ]
+      },
+      "firstChunkMonoMs": 5290.373875,
+      "firstTokenMonoMs": 5300.363,
+      "terminalMonoMs": 5310.327083,
+      "terminalType": "response.completed",
+      "rawUsage": {
+        "input_tokens": 100,
+        "output_tokens": 50,
+        "total_tokens": 150,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "serverUsage": {
+        "input": 100,
+        "cacheRead": 0,
+        "cacheWrite": null,
+        "output": 50,
+        "reasoning": 0,
+        "total": 150
+      },
+      "auditFailure": null,
+      "usage": {
+        "input": 100,
+        "output": 50,
+        "reasoning": 0
+      },
+      "stop": "completed"
+    },
+    {
+      "phase": "r1-gpt-6-luna-settlement-v2-pi-compact-remote:compact",
+      "operation": "remote",
+      "provider": "openai-codex",
+      "model": "gpt-6-luna",
+      "transport": "sse",
+      "bodyBytes": 7766,
+      "decodedBytes": 134102,
+      "bodyHash": "8e8b757b78db3e3f386df343af636d77397ed4b14c9ab2f874d03348f0a9e808",
+      "inputTokens": 33526,
+      "outputTokens": 1000,
+      "laneId": "r1-gpt-6-luna-settlement-v2-pi-compact-remote",
+      "task": "settlement-v2",
+      "repeat": 1,
+      "assignedArm": "pi-compact-remote",
+      "experimentPhase": "comparison",
+      "stage": "compact",
+      "reservedMonoMs": 5424.948291,
+      "fixture": true,
+      "dispatch": 33,
+      "state": "completed",
+      "at": "2026-11-16T15:55:18.104Z",
+      "sendInvokedMonoMs": 5433.499208,
+      "sendState": "response-confirmed",
+      "knownSent": true,
+      "serverConfirmed": false,
+      "responseMonoMs": 5442.89925,
+      "status": 200,
+      "encoded": {
+        "model": "gpt-6-luna",
+        "reasoning": {
+          "effort": "none"
+        },
+        "maxOutputTokens": 1000,
+        "stream": true,
+        "inputHash": "d646818e9afadad83fc586afbf1cdcd2a788172702ccbec605937252aba3e049",
+        "instructionsHash": "75357d685f238b6afd7738be9786fdafde641eb6ca9a3be7471939715a68a4de",
+        "systemMessagesHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "toolsHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "opaqueItems": 0,
+        "compactionTrigger": true,
+        "rawSHA256": "a0fbfdbe18610a8421794e6e6b2c2bb9acc3dc8aa59c3c5f3573e9b390b79043",
+        "toolNames": []
+      },
+      "firstChunkMonoMs": 5469.370958,
+      "terminalMonoMs": 5478.349541,
+      "terminalType": "response.completed",
+      "rawUsage": {
+        "input_tokens": 100,
+        "output_tokens": 50,
+        "total_tokens": 150,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "serverUsage": {
+        "input": 100,
+        "cacheRead": 0,
+        "cacheWrite": null,
+        "output": 50,
+        "reasoning": 0,
+        "total": 150
+      },
+      "auditFailure": null,
+      "usage": {
+        "input": 100,
+        "output": 50,
+        "reasoning": 0
+      },
+      "stop": "completed"
+    },
+    {
+      "phase": "r1-gpt-6-luna-settlement-v2-pi-compact-remote:continuation",
+      "operation": "normal",
+      "provider": "openai-codex",
+      "model": "gpt-6-luna",
+      "transport": "sse",
+      "bodyBytes": 7303,
+      "decodedBytes": 117047,
+      "bodyHash": "be1051ca007117f6bb00f6a6409e736d1ccf4067c5d05761848c7d24d4d3c293",
+      "inputTokens": 29262,
+      "outputTokens": 1000,
+      "laneId": "r1-gpt-6-luna-settlement-v2-pi-compact-remote",
+      "task": "settlement-v2",
+      "repeat": 1,
+      "assignedArm": "pi-compact-remote",
+      "experimentPhase": "comparison",
+      "stage": "continuation",
+      "reservedMonoMs": 5535.540416,
+      "fixture": true,
+      "dispatch": 34,
+      "state": "completed",
+      "at": "2026-11-16T15:55:18.214Z",
+      "sendInvokedMonoMs": 5545.424541,
+      "sendState": "response-confirmed",
+      "knownSent": true,
+      "serverConfirmed": false,
+      "responseMonoMs": 5556.140708,
+      "status": 200,
+      "encoded": {
+        "model": "gpt-6-luna",
+        "reasoning": {
+          "effort": "none"
+        },
+        "maxOutputTokens": 1000,
+        "stream": true,
+        "inputHash": "0e9dd31c44629fdd30e23897ce44d7ad4e2899228c7203450b898aa7b6c2d0c4",
+        "instructionsHash": "75357d685f238b6afd7738be9786fdafde641eb6ca9a3be7471939715a68a4de",
+        "systemMessagesHash": "46712c6e44d47b5000647ce443879ab04d5efd37b7e7416f63a9296784a0796a",
+        "toolsHash": "08151f4f9e169a4c589ba2a24c91bf0b9a1e61c21901c8465138d68f9670d47a",
+        "opaqueItems": 1,
+        "compactionTrigger": false,
+        "rawSHA256": "df330b4857e845b37b7d75230e922d2a7521b0f425dde2af0ed53c7f4a495d43",
+        "toolNames": [
+          "record_checkpoint",
+          "workspace_read",
+          "workspace_write",
+          "workspace_edit",
+          "run_regression"
+        ]
+      },
+      "firstChunkMonoMs": 5585.396,
+      "terminalMonoMs": 5594.354333,
+      "terminalType": "response.completed",
+      "rawUsage": {
+        "input_tokens": 100,
+        "output_tokens": 50,
+        "total_tokens": 150,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "serverUsage": {
+        "input": 100,
+        "cacheRead": 0,
+        "cacheWrite": null,
+        "output": 50,
+        "reasoning": 0,
+        "total": 150
+      },
+      "auditFailure": null,
+      "usage": {
+        "input": 100,
+        "output": 50,
+        "reasoning": 0
+      },
+      "stop": "completed"
+    },
+    {
+      "phase": "r1-gpt-6-luna-settlement-v2-pi-compact-remote:continuation",
+      "operation": "normal",
+      "provider": "openai-codex",
+      "model": "gpt-6-luna",
+      "transport": "sse",
+      "bodyBytes": 7537,
+      "decodedBytes": 117604,
+      "bodyHash": "8bc85106e45135ae9e166a0dc1859033f961c5181e07a14b9760e4421cb0ed2c",
+      "inputTokens": 29401,
+      "outputTokens": 1000,
+      "laneId": "r1-gpt-6-luna-settlement-v2-pi-compact-remote",
+      "task": "settlement-v2",
+      "repeat": 1,
+      "assignedArm": "pi-compact-remote",
+      "experimentPhase": "comparison",
+      "stage": "continuation",
+      "reservedMonoMs": 5622.824875,
+      "fixture": true,
+      "dispatch": 35,
+      "state": "completed",
+      "at": "2026-11-16T15:55:18.301Z",
+      "sendInvokedMonoMs": 5632.316791,
+      "sendState": "response-confirmed",
+      "knownSent": true,
+      "serverConfirmed": false,
+      "responseMonoMs": 5643.200375,
+      "status": 200,
+      "encoded": {
+        "model": "gpt-6-luna",
+        "reasoning": {
+          "effort": "none"
+        },
+        "maxOutputTokens": 1000,
+        "stream": true,
+        "inputHash": "c57ca9c35d0f093545dcf95e5b24d4ca6d0fdf32760f23509c7b386687dda959",
+        "instructionsHash": "75357d685f238b6afd7738be9786fdafde641eb6ca9a3be7471939715a68a4de",
+        "systemMessagesHash": "46712c6e44d47b5000647ce443879ab04d5efd37b7e7416f63a9296784a0796a",
+        "toolsHash": "08151f4f9e169a4c589ba2a24c91bf0b9a1e61c21901c8465138d68f9670d47a",
+        "opaqueItems": 1,
+        "compactionTrigger": false,
+        "rawSHA256": "24b44d5e7b86a279bb9309514e1ebd6de44beca8a5884cf399e48731fdc6ba83",
+        "toolNames": [
+          "record_checkpoint",
+          "workspace_read",
+          "workspace_write",
+          "workspace_edit",
+          "run_regression"
+        ]
+      },
+      "firstChunkMonoMs": 5674.3535,
+      "terminalMonoMs": 5684.366333,
+      "terminalType": "response.completed",
+      "rawUsage": {
+        "input_tokens": 100,
+        "output_tokens": 50,
+        "total_tokens": 150,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "serverUsage": {
+        "input": 100,
+        "cacheRead": 0,
+        "cacheWrite": null,
+        "output": 50,
+        "reasoning": 0,
+        "total": 150
+      },
+      "auditFailure": null,
+      "usage": {
+        "input": 100,
+        "output": 50,
+        "reasoning": 0
+      },
+      "stop": "completed"
+    },
+    {
+      "phase": "r1-gpt-6-luna-settlement-v2-pi-compact-remote:continuation",
+      "operation": "normal",
+      "provider": "openai-codex",
+      "model": "gpt-6-luna",
+      "transport": "sse",
+      "bodyBytes": 7618,
+      "decodedBytes": 117858,
+      "bodyHash": "7aa1159867e49e520c6c3ac4b0d8a204f6c4d62a44b37a1e71dadab1bff8186a",
+      "inputTokens": 29465,
+      "outputTokens": 1000,
+      "laneId": "r1-gpt-6-luna-settlement-v2-pi-compact-remote",
+      "task": "settlement-v2",
+      "repeat": 1,
+      "assignedArm": "pi-compact-remote",
+      "experimentPhase": "comparison",
+      "stage": "continuation",
+      "reservedMonoMs": 5714.54275,
+      "fixture": true,
+      "dispatch": 36,
+      "state": "completed",
+      "at": "2026-11-16T15:55:18.393Z",
+      "sendInvokedMonoMs": 5726.322958,
+      "sendState": "response-confirmed",
+      "knownSent": true,
+      "serverConfirmed": false,
+      "responseMonoMs": 5737.214791,
+      "status": 200,
+      "encoded": {
+        "model": "gpt-6-luna",
+        "reasoning": {
+          "effort": "none"
+        },
+        "maxOutputTokens": 1000,
+        "stream": true,
+        "inputHash": "2132ecc38727d2b1af8fb10316cf8c3ba9f0fb85c18ff7178a69dec9f5207fd5",
+        "instructionsHash": "75357d685f238b6afd7738be9786fdafde641eb6ca9a3be7471939715a68a4de",
+        "systemMessagesHash": "46712c6e44d47b5000647ce443879ab04d5efd37b7e7416f63a9296784a0796a",
+        "toolsHash": "08151f4f9e169a4c589ba2a24c91bf0b9a1e61c21901c8465138d68f9670d47a",
+        "opaqueItems": 1,
+        "compactionTrigger": false,
+        "rawSHA256": "2b0783b663a477f0ba6eea8fa42d2aa9b080b02b42eed414818d936b60de82b9",
+        "toolNames": [
+          "record_checkpoint",
+          "workspace_read",
+          "workspace_write",
+          "workspace_edit",
+          "run_regression"
+        ]
+      },
+      "firstChunkMonoMs": 5765.375791,
+      "terminalMonoMs": 5775.3875,
+      "terminalType": "response.completed",
+      "rawUsage": {
+        "input_tokens": 100,
+        "output_tokens": 50,
+        "total_tokens": 150,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "serverUsage": {
+        "input": 100,
+        "cacheRead": 0,
+        "cacheWrite": null,
+        "output": 50,
+        "reasoning": 0,
+        "total": 150
+      },
+      "auditFailure": null,
+      "usage": {
+        "input": 100,
+        "output": 50,
+        "reasoning": 0
+      },
+      "stop": "completed"
+    },
+    {
+      "phase": "r1-gpt-6-luna-settlement-v2-pi-compact-remote:continuation",
+      "operation": "normal",
+      "provider": "openai-codex",
+      "model": "gpt-6-luna",
+      "transport": "sse",
+      "bodyBytes": 7962,
+      "decodedBytes": 118573,
+      "bodyHash": "5db4e15a35f71c48c825ce91589402ea9165d39c1c7e3c3a8711783099eda03f",
+      "inputTokens": 29644,
+      "outputTokens": 1000,
+      "laneId": "r1-gpt-6-luna-settlement-v2-pi-compact-remote",
+      "task": "settlement-v2",
+      "repeat": 1,
+      "assignedArm": "pi-compact-remote",
+      "experimentPhase": "comparison",
+      "stage": "continuation",
+      "reservedMonoMs": 5805.420541,
+      "fixture": true,
+      "dispatch": 37,
+      "state": "completed",
+      "at": "2026-11-16T15:55:18.484Z",
+      "sendInvokedMonoMs": 5815.278,
+      "sendState": "response-confirmed",
+      "knownSent": true,
+      "serverConfirmed": false,
+      "responseMonoMs": 5826.176916,
+      "status": 200,
+      "encoded": {
+        "model": "gpt-6-luna",
+        "reasoning": {
+          "effort": "none"
+        },
+        "maxOutputTokens": 1000,
+        "stream": true,
+        "inputHash": "97403ffb3f83c2eb2b7e0f5f45add603df5918e453f87da625c936d0f9c50db4",
+        "instructionsHash": "75357d685f238b6afd7738be9786fdafde641eb6ca9a3be7471939715a68a4de",
+        "systemMessagesHash": "46712c6e44d47b5000647ce443879ab04d5efd37b7e7416f63a9296784a0796a",
+        "toolsHash": "08151f4f9e169a4c589ba2a24c91bf0b9a1e61c21901c8465138d68f9670d47a",
+        "opaqueItems": 1,
+        "compactionTrigger": false,
+        "rawSHA256": "2e50170d48b4cc5b2a3f4623c284d5cde98d6d68dfafd5bd7cdde639c69f2106",
+        "toolNames": [
+          "record_checkpoint",
+          "workspace_read",
+          "workspace_write",
+          "workspace_edit",
+          "run_regression"
+        ]
+      },
+      "firstChunkMonoMs": 5856.33925,
+      "terminalMonoMs": 5866.3765,
+      "terminalType": "response.completed",
+      "rawUsage": {
+        "input_tokens": 100,
+        "output_tokens": 50,
+        "total_tokens": 150,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "serverUsage": {
+        "input": 100,
+        "cacheRead": 0,
+        "cacheWrite": null,
+        "output": 50,
+        "reasoning": 0,
+        "total": 150
+      },
+      "auditFailure": null,
+      "usage": {
+        "input": 100,
+        "output": 50,
+        "reasoning": 0
+      },
+      "stop": "completed"
+    },
+    {
+      "phase": "r1-gpt-6-luna-settlement-v2-pi-compact-remote:continuation",
+      "operation": "normal",
+      "provider": "openai-codex",
+      "model": "gpt-6-luna",
+      "transport": "sse",
+      "bodyBytes": 7992,
+      "decodedBytes": 118762,
+      "bodyHash": "a61ca95f390353cba6b1a4c9f3316d20746189d67f37f50f7043a5fbe6cc71e9",
+      "inputTokens": 29691,
+      "outputTokens": 1000,
+      "laneId": "r1-gpt-6-luna-settlement-v2-pi-compact-remote",
+      "task": "settlement-v2",
+      "repeat": 1,
+      "assignedArm": "pi-compact-remote",
+      "experimentPhase": "comparison",
+      "stage": "continuation",
+      "reservedMonoMs": 5946.236375,
+      "fixture": true,
+      "dispatch": 38,
+      "state": "completed",
+      "at": "2026-11-16T15:55:18.625Z",
+      "sendInvokedMonoMs": 5956.35175,
+      "sendState": "response-confirmed",
+      "knownSent": true,
+      "serverConfirmed": false,
+      "responseMonoMs": 5966.944083,
+      "status": 200,
+      "encoded": {
+        "model": "gpt-6-luna",
+        "reasoning": {
+          "effort": "none"
+        },
+        "maxOutputTokens": 1000,
+        "stream": true,
+        "inputHash": "ca98680e98f88edf9d4ad8aaaedb4b19d03f18255765f03bb5258aa2cfa39245",
+        "instructionsHash": "75357d685f238b6afd7738be9786fdafde641eb6ca9a3be7471939715a68a4de",
+        "systemMessagesHash": "46712c6e44d47b5000647ce443879ab04d5efd37b7e7416f63a9296784a0796a",
+        "toolsHash": "08151f4f9e169a4c589ba2a24c91bf0b9a1e61c21901c8465138d68f9670d47a",
+        "opaqueItems": 1,
+        "compactionTrigger": false,
+        "rawSHA256": "224f99a3862938a8d311074eb23c7ecb867246d58cba78658bf2e3fb54b3fbb7",
+        "toolNames": [
+          "record_checkpoint",
+          "workspace_read",
+          "workspace_write",
+          "workspace_edit",
+          "run_regression"
+        ]
+      },
+      "firstChunkMonoMs": 5994.39375,
+      "firstTokenMonoMs": 6003.280375,
+      "terminalMonoMs": 6012.354208,
+      "terminalType": "response.completed",
+      "rawUsage": {
+        "input_tokens": 100,
+        "output_tokens": 50,
+        "total_tokens": 150,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "serverUsage": {
+        "input": 100,
+        "cacheRead": 0,
+        "cacheWrite": null,
+        "output": 50,
+        "reasoning": 0,
+        "total": 150
+      },
+      "auditFailure": null,
+      "usage": {
+        "input": 100,
+        "output": 50,
+        "reasoning": 0
+      },
+      "stop": "completed"
+    },
+    {
+      "phase": "r1-gpt-6-luna-settlement-v2-pi-native:compact",
+      "operation": "native",
+      "provider": "openai-codex",
+      "model": "gpt-6-luna",
+      "transport": "sse",
+      "bodyBytes": 7702,
+      "decodedBytes": 120837,
+      "bodyHash": "8fc316104eeb7ff1da07248093eb300a8d7383e938d0cd962887848bde5fd20d",
+      "inputTokens": 30210,
+      "outputTokens": 1000,
+      "laneId": "r1-gpt-6-luna-settlement-v2-pi-native",
+      "task": "settlement-v2",
+      "repeat": 1,
+      "assignedArm": "pi-native",
+      "experimentPhase": "comparison",
+      "stage": "compact",
+      "reservedMonoMs": 6116.248708,
+      "fixture": true,
+      "dispatch": 39,
+      "state": "completed",
+      "at": "2026-11-16T15:55:18.795Z",
+      "sendInvokedMonoMs": 6126.365625,
+      "sendState": "response-confirmed",
+      "knownSent": true,
+      "serverConfirmed": false,
+      "responseMonoMs": 6136.953958,
+      "status": 200,
+      "encoded": {
+        "model": "gpt-6-luna",
+        "reasoning": {
+          "effort": "none"
+        },
+        "maxOutputTokens": 1000,
+        "stream": true,
+        "inputHash": "9f32f713913bb969cf8ec08ac2944235eea6bdd7c33d6a2291b389d5b4639d18",
+        "instructionsHash": "c464889dcfa60441e642f291445b49523f263e6fb2725d0c25075543a2ec3f8f",
+        "systemMessagesHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "toolsHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "opaqueItems": 0,
+        "compactionTrigger": false,
+        "rawSHA256": "d9fa7b84e0837e8029c92315afa68c1d47febb5f89f177feaac9ef35bd3c6195",
+        "toolNames": []
+      },
+      "firstChunkMonoMs": 6163.603875,
+      "firstTokenMonoMs": 6172.296208,
+      "terminalMonoMs": 6181.360416,
+      "terminalType": "response.completed",
+      "rawUsage": {
+        "input_tokens": 100,
+        "output_tokens": 50,
+        "total_tokens": 150,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "serverUsage": {
+        "input": 100,
+        "cacheRead": 0,
+        "cacheWrite": null,
+        "output": 50,
+        "reasoning": 0,
+        "total": 150
+      },
+      "auditFailure": null,
+      "usage": {
+        "input": 100,
+        "output": 50,
+        "reasoning": 0
+      },
+      "stop": "completed"
+    },
+    {
+      "phase": "r1-gpt-6-luna-settlement-v2-pi-native:continuation",
+      "operation": "normal",
+      "provider": "openai-codex",
+      "model": "gpt-6-luna",
+      "transport": "sse",
+      "bodyBytes": 7718,
+      "decodedBytes": 118929,
+      "bodyHash": "5cc73d2e786f1ea45af0a0b82487b0ab14e56b404b18ab382a275b2902dd1a55",
+      "inputTokens": 29733,
+      "outputTokens": 1000,
+      "laneId": "r1-gpt-6-luna-settlement-v2-pi-native",
+      "task": "settlement-v2",
+      "repeat": 1,
+      "assignedArm": "pi-native",
+      "experimentPhase": "comparison",
+      "stage": "continuation",
+      "reservedMonoMs": 6202.786375,
+      "fixture": true,
+      "dispatch": 40,
+      "state": "completed",
+      "at": "2026-11-16T15:55:18.881Z",
+      "sendInvokedMonoMs": 6211.353666,
+      "sendState": "response-confirmed",
+      "knownSent": true,
+      "serverConfirmed": false,
+      "responseMonoMs": 6221.0425,
+      "status": 200,
+      "encoded": {
+        "model": "gpt-6-luna",
+        "reasoning": {
+          "effort": "none"
+        },
+        "maxOutputTokens": 1000,
+        "stream": true,
+        "inputHash": "582536a0b7148d5f1cbb22d9148760935a0910f241d81ad66a6c21ae1a39f69b",
+        "instructionsHash": "75357d685f238b6afd7738be9786fdafde641eb6ca9a3be7471939715a68a4de",
+        "systemMessagesHash": "46712c6e44d47b5000647ce443879ab04d5efd37b7e7416f63a9296784a0796a",
+        "toolsHash": "08151f4f9e169a4c589ba2a24c91bf0b9a1e61c21901c8465138d68f9670d47a",
+        "opaqueItems": 0,
+        "compactionTrigger": false,
+        "rawSHA256": "229dc21c59eed8508c862a73c25c5f669b1e644dfd868b0fa39c574324224bc2",
+        "toolNames": [
+          "record_checkpoint",
+          "workspace_read",
+          "workspace_write",
+          "workspace_edit",
+          "run_regression"
+        ]
+      },
+      "firstChunkMonoMs": 6249.449666,
+      "terminalMonoMs": 6259.376916,
+      "terminalType": "response.completed",
+      "rawUsage": {
+        "input_tokens": 100,
+        "output_tokens": 50,
+        "total_tokens": 150,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "serverUsage": {
+        "input": 100,
+        "cacheRead": 0,
+        "cacheWrite": null,
+        "output": 50,
+        "reasoning": 0,
+        "total": 150
+      },
+      "auditFailure": null,
+      "usage": {
+        "input": 100,
+        "output": 50,
+        "reasoning": 0
+      },
+      "stop": "completed"
+    },
+    {
+      "phase": "r1-gpt-6-luna-settlement-v2-pi-native:continuation",
+      "operation": "normal",
+      "provider": "openai-codex",
+      "model": "gpt-6-luna",
+      "transport": "sse",
+      "bodyBytes": 7777,
+      "decodedBytes": 119486,
+      "bodyHash": "220568ab0aaffd49ea89708287502d7e6cbd607a7469d9400ad4347355f6ab76",
+      "inputTokens": 29872,
+      "outputTokens": 1000,
+      "laneId": "r1-gpt-6-luna-settlement-v2-pi-native",
+      "task": "settlement-v2",
+      "repeat": 1,
+      "assignedArm": "pi-native",
+      "experimentPhase": "comparison",
+      "stage": "continuation",
+      "reservedMonoMs": 6284.01975,
+      "fixture": true,
+      "dispatch": 41,
+      "state": "completed",
+      "at": "2026-11-16T15:55:18.963Z",
+      "sendInvokedMonoMs": 6294.348458,
+      "sendState": "response-confirmed",
+      "knownSent": true,
+      "serverConfirmed": false,
+      "responseMonoMs": 6305.245083,
+      "status": 200,
+      "encoded": {
+        "model": "gpt-6-luna",
+        "reasoning": {
+          "effort": "none"
+        },
+        "maxOutputTokens": 1000,
+        "stream": true,
+        "inputHash": "8b1b4579152fed7b1f5cdc1016a921078c8d231694c2c60e12e940b8a7fc530e",
+        "instructionsHash": "75357d685f238b6afd7738be9786fdafde641eb6ca9a3be7471939715a68a4de",
+        "systemMessagesHash": "46712c6e44d47b5000647ce443879ab04d5efd37b7e7416f63a9296784a0796a",
+        "toolsHash": "08151f4f9e169a4c589ba2a24c91bf0b9a1e61c21901c8465138d68f9670d47a",
+        "opaqueItems": 0,
+        "compactionTrigger": false,
+        "rawSHA256": "597d937d25f82a01406c370ca8d8a1745459ba2a031d1cceebcec70791f9993d",
+        "toolNames": [
+          "record_checkpoint",
+          "workspace_read",
+          "workspace_write",
+          "workspace_edit",
+          "run_regression"
+        ]
+      },
+      "firstChunkMonoMs": 6336.370958,
+      "terminalMonoMs": 6345.351083,
+      "terminalType": "response.completed",
+      "rawUsage": {
+        "input_tokens": 100,
+        "output_tokens": 50,
+        "total_tokens": 150,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "serverUsage": {
+        "input": 100,
+        "cacheRead": 0,
+        "cacheWrite": null,
+        "output": 50,
+        "reasoning": 0,
+        "total": 150
+      },
+      "auditFailure": null,
+      "usage": {
+        "input": 100,
+        "output": 50,
+        "reasoning": 0
+      },
+      "stop": "completed"
+    },
+    {
+      "phase": "r1-gpt-6-luna-settlement-v2-pi-native:continuation",
+      "operation": "normal",
+      "provider": "openai-codex",
+      "model": "gpt-6-luna",
+      "transport": "sse",
+      "bodyBytes": 7852,
+      "decodedBytes": 119740,
+      "bodyHash": "8eb1f5e7120895ee53312f0302631dceeaf88d4233c600b0231ca3a036a63047",
+      "inputTokens": 29935,
+      "outputTokens": 1000,
+      "laneId": "r1-gpt-6-luna-settlement-v2-pi-native",
+      "task": "settlement-v2",
+      "repeat": 1,
+      "assignedArm": "pi-native",
+      "experimentPhase": "comparison",
+      "stage": "continuation",
+      "reservedMonoMs": 6368.59,
+      "fixture": true,
+      "dispatch": 42,
+      "state": "completed",
+      "at": "2026-11-16T15:55:19.047Z",
+      "sendInvokedMonoMs": 6377.372666,
+      "sendState": "response-confirmed",
+      "knownSent": true,
+      "serverConfirmed": false,
+      "responseMonoMs": 6386.500333,
+      "status": 200,
+      "encoded": {
+        "model": "gpt-6-luna",
+        "reasoning": {
+          "effort": "none"
+        },
+        "maxOutputTokens": 1000,
+        "stream": true,
+        "inputHash": "249e135fc305cac61bbe4e1af190dcbcfe334dd31c2054750ea875953c9af411",
+        "instructionsHash": "75357d685f238b6afd7738be9786fdafde641eb6ca9a3be7471939715a68a4de",
+        "systemMessagesHash": "46712c6e44d47b5000647ce443879ab04d5efd37b7e7416f63a9296784a0796a",
+        "toolsHash": "08151f4f9e169a4c589ba2a24c91bf0b9a1e61c21901c8465138d68f9670d47a",
+        "opaqueItems": 0,
+        "compactionTrigger": false,
+        "rawSHA256": "c8414b3702a4c7f3ba5b2d8aeb01574292720accf427acb2c3de590298971079",
+        "toolNames": [
+          "record_checkpoint",
+          "workspace_read",
+          "workspace_write",
+          "workspace_edit",
+          "run_regression"
+        ]
+      },
+      "firstChunkMonoMs": 6412.435333,
+      "terminalMonoMs": 6422.370625,
+      "terminalType": "response.completed",
+      "rawUsage": {
+        "input_tokens": 100,
+        "output_tokens": 50,
+        "total_tokens": 150,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "serverUsage": {
+        "input": 100,
+        "cacheRead": 0,
+        "cacheWrite": null,
+        "output": 50,
+        "reasoning": 0,
+        "total": 150
+      },
+      "auditFailure": null,
+      "usage": {
+        "input": 100,
+        "output": 50,
+        "reasoning": 0
+      },
+      "stop": "completed"
+    },
+    {
+      "phase": "r1-gpt-6-luna-settlement-v2-pi-native:continuation",
+      "operation": "normal",
+      "provider": "openai-codex",
+      "model": "gpt-6-luna",
+      "transport": "sse",
+      "bodyBytes": 8196,
+      "decodedBytes": 120455,
+      "bodyHash": "e009fcc74322783eba20f882cc281f766fbb683b5ec48d25b54a7020c9e85a4d",
+      "inputTokens": 30114,
+      "outputTokens": 1000,
+      "laneId": "r1-gpt-6-luna-settlement-v2-pi-native",
+      "task": "settlement-v2",
+      "repeat": 1,
+      "assignedArm": "pi-native",
+      "experimentPhase": "comparison",
+      "stage": "continuation",
+      "reservedMonoMs": 6453.418875,
+      "fixture": true,
+      "dispatch": 43,
+      "state": "completed",
+      "at": "2026-11-16T15:55:19.132Z",
+      "sendInvokedMonoMs": 6462.302375,
+      "sendState": "response-confirmed",
+      "knownSent": true,
+      "serverConfirmed": false,
+      "responseMonoMs": 6471.687916,
+      "status": 200,
+      "encoded": {
+        "model": "gpt-6-luna",
+        "reasoning": {
+          "effort": "none"
+        },
+        "maxOutputTokens": 1000,
+        "stream": true,
+        "inputHash": "eaf756ad80062b3713731b4f7c91b0a52a7d2eb9c775b65412879e78549a5271",
+        "instructionsHash": "75357d685f238b6afd7738be9786fdafde641eb6ca9a3be7471939715a68a4de",
+        "systemMessagesHash": "46712c6e44d47b5000647ce443879ab04d5efd37b7e7416f63a9296784a0796a",
+        "toolsHash": "08151f4f9e169a4c589ba2a24c91bf0b9a1e61c21901c8465138d68f9670d47a",
+        "opaqueItems": 0,
+        "compactionTrigger": false,
+        "rawSHA256": "5467c7cfeb8d0b8d3f02b7f60a0a30350ade326842e9a7220cfc0d61f166ed5a",
+        "toolNames": [
+          "record_checkpoint",
+          "workspace_read",
+          "workspace_write",
+          "workspace_edit",
+          "run_regression"
+        ]
+      },
+      "firstChunkMonoMs": 6501.451291,
+      "terminalMonoMs": 6511.416208,
+      "terminalType": "response.completed",
+      "rawUsage": {
+        "input_tokens": 100,
+        "output_tokens": 50,
+        "total_tokens": 150,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "serverUsage": {
+        "input": 100,
+        "cacheRead": 0,
+        "cacheWrite": null,
+        "output": 50,
+        "reasoning": 0,
+        "total": 150
+      },
+      "auditFailure": null,
+      "usage": {
+        "input": 100,
+        "output": 50,
+        "reasoning": 0
+      },
+      "stop": "completed"
+    },
+    {
+      "phase": "r1-gpt-6-luna-settlement-v2-pi-native:continuation",
+      "operation": "normal",
+      "provider": "openai-codex",
+      "model": "gpt-6-luna",
+      "transport": "sse",
+      "bodyBytes": 8227,
+      "decodedBytes": 120644,
+      "bodyHash": "cb3495deb008a9268c90f444a7757133e4bcea77921771f4c353b16e3e1587e3",
+      "inputTokens": 30161,
+      "outputTokens": 1000,
+      "laneId": "r1-gpt-6-luna-settlement-v2-pi-native",
+      "task": "settlement-v2",
+      "repeat": 1,
+      "assignedArm": "pi-native",
+      "experimentPhase": "comparison",
+      "stage": "continuation",
+      "reservedMonoMs": 6603.095291,
+      "fixture": true,
+      "dispatch": 44,
+      "state": "completed",
+      "at": "2026-11-16T15:55:19.282Z",
+      "sendInvokedMonoMs": 6612.11625,
+      "sendState": "response-confirmed",
+      "knownSent": true,
+      "serverConfirmed": false,
+      "responseMonoMs": 6621.698,
+      "status": 200,
+      "encoded": {
+        "model": "gpt-6-luna",
+        "reasoning": {
+          "effort": "none"
+        },
+        "maxOutputTokens": 1000,
+        "stream": true,
+        "inputHash": "93907d87cc1c5e83e6e52eee6db6a5c64cf3854d2e4f220c161db6b494c24e8f",
+        "instructionsHash": "75357d685f238b6afd7738be9786fdafde641eb6ca9a3be7471939715a68a4de",
+        "systemMessagesHash": "46712c6e44d47b5000647ce443879ab04d5efd37b7e7416f63a9296784a0796a",
+        "toolsHash": "08151f4f9e169a4c589ba2a24c91bf0b9a1e61c21901c8465138d68f9670d47a",
+        "opaqueItems": 0,
+        "compactionTrigger": false,
+        "rawSHA256": "1a560a2727cc6ac86e3373f6e39920dcb226bc9d4f7340819ae702f3846621c8",
+        "toolNames": [
+          "record_checkpoint",
+          "workspace_read",
+          "workspace_write",
+          "workspace_edit",
+          "run_regression"
+        ]
+      },
+      "firstChunkMonoMs": 6648.042375,
+      "firstTokenMonoMs": 6656.992041,
+      "terminalMonoMs": 6666.078916,
+      "terminalType": "response.completed",
+      "rawUsage": {
+        "input_tokens": 100,
+        "output_tokens": 50,
+        "total_tokens": 150,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "serverUsage": {
+        "input": 100,
+        "cacheRead": 0,
+        "cacheWrite": null,
+        "output": 50,
+        "reasoning": 0,
+        "total": 150
+      },
+      "auditFailure": null,
+      "usage": {
+        "input": 100,
+        "output": 50,
+        "reasoning": 0
+      },
+      "stop": "completed"
+    },
+    {
+      "phase": "r1-gpt-6-luna-redirect-v2-pi-native:compact",
+      "operation": "native",
+      "provider": "openai-codex",
+      "model": "gpt-6-luna",
+      "transport": "sse",
+      "bodyBytes": 7718,
+      "decodedBytes": 120788,
+      "bodyHash": "3df685ee610c2cbb273a5459f9579c64910db68a9b971c13f3c57a6b54470a94",
+      "inputTokens": 30197,
+      "outputTokens": 1000,
+      "laneId": "r1-gpt-6-luna-redirect-v2-pi-native",
+      "task": "redirect-v2",
+      "repeat": 1,
+      "assignedArm": "pi-native",
+      "experimentPhase": "comparison",
+      "stage": "compact",
+      "reservedMonoMs": 6769.615041,
+      "fixture": true,
+      "dispatch": 45,
+      "state": "completed",
+      "at": "2026-11-16T15:55:19.448Z",
+      "sendInvokedMonoMs": 6779.375416,
+      "sendState": "response-confirmed",
+      "knownSent": true,
+      "serverConfirmed": false,
+      "responseMonoMs": 6789.6725,
+      "status": 200,
+      "encoded": {
+        "model": "gpt-6-luna",
+        "reasoning": {
+          "effort": "none"
+        },
+        "maxOutputTokens": 1000,
+        "stream": true,
+        "inputHash": "2770d1f0f203339c672056107d9c7ea40d206bc792ec4df42a736d49bab40e77",
+        "instructionsHash": "c464889dcfa60441e642f291445b49523f263e6fb2725d0c25075543a2ec3f8f",
+        "systemMessagesHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "toolsHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "opaqueItems": 0,
+        "compactionTrigger": false,
+        "rawSHA256": "6484a234a951dceb8dd4ae5a49e5e8f024362f5e29a4698159dee8e885e0ae87",
+        "toolNames": []
+      },
+      "firstChunkMonoMs": 6816.959125,
+      "firstTokenMonoMs": 6825.998583,
+      "terminalMonoMs": 6835.014833,
+      "terminalType": "response.completed",
+      "rawUsage": {
+        "input_tokens": 100,
+        "output_tokens": 50,
+        "total_tokens": 150,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "serverUsage": {
+        "input": 100,
+        "cacheRead": 0,
+        "cacheWrite": null,
+        "output": 50,
+        "reasoning": 0,
+        "total": 150
+      },
+      "auditFailure": null,
+      "usage": {
+        "input": 100,
+        "output": 50,
+        "reasoning": 0
+      },
+      "stop": "completed"
+    },
+    {
+      "phase": "r1-gpt-6-luna-redirect-v2-pi-native:continuation",
+      "operation": "normal",
+      "provider": "openai-codex",
+      "model": "gpt-6-luna",
+      "transport": "sse",
+      "bodyBytes": 7718,
+      "decodedBytes": 118906,
+      "bodyHash": "5c1ed903c764ccda06aa986bc5d89fb6000964cc30a9e4f4ef6474a363618ecf",
+      "inputTokens": 29727,
+      "outputTokens": 1000,
+      "laneId": "r1-gpt-6-luna-redirect-v2-pi-native",
+      "task": "redirect-v2",
+      "repeat": 1,
+      "assignedArm": "pi-native",
+      "experimentPhase": "comparison",
+      "stage": "continuation",
+      "reservedMonoMs": 6857.309333,
+      "fixture": true,
+      "dispatch": 46,
+      "state": "completed",
+      "at": "2026-11-16T15:55:19.536Z",
+      "sendInvokedMonoMs": 6867.036166,
+      "sendState": "response-confirmed",
+      "knownSent": true,
+      "serverConfirmed": false,
+      "responseMonoMs": 6876.716833,
+      "status": 200,
+      "encoded": {
+        "model": "gpt-6-luna",
+        "reasoning": {
+          "effort": "none"
+        },
+        "maxOutputTokens": 1000,
+        "stream": true,
+        "inputHash": "8bba3956006a8aaa7e0e3a618ccc352f4d9b52abc2018e5dec0ccf8bd73bad95",
+        "instructionsHash": "75357d685f238b6afd7738be9786fdafde641eb6ca9a3be7471939715a68a4de",
+        "systemMessagesHash": "46712c6e44d47b5000647ce443879ab04d5efd37b7e7416f63a9296784a0796a",
+        "toolsHash": "08151f4f9e169a4c589ba2a24c91bf0b9a1e61c21901c8465138d68f9670d47a",
+        "opaqueItems": 0,
+        "compactionTrigger": false,
+        "rawSHA256": "13c56e79adf08fb13e58ca96ad4196a695dcfb9f709653631d2296c99748cf27",
+        "toolNames": [
+          "record_checkpoint",
+          "workspace_read",
+          "workspace_write",
+          "workspace_edit",
+          "run_regression"
+        ]
+      },
+      "firstChunkMonoMs": 6906.110416,
+      "terminalMonoMs": 6914.995958,
+      "terminalType": "response.completed",
+      "rawUsage": {
+        "input_tokens": 100,
+        "output_tokens": 50,
+        "total_tokens": 150,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "serverUsage": {
+        "input": 100,
+        "cacheRead": 0,
+        "cacheWrite": null,
+        "output": 50,
+        "reasoning": 0,
+        "total": 150
+      },
+      "auditFailure": null,
+      "usage": {
+        "input": 100,
+        "output": 50,
+        "reasoning": 0
+      },
+      "stop": "completed"
+    },
+    {
+      "phase": "r1-gpt-6-luna-redirect-v2-pi-native:continuation",
+      "operation": "normal",
+      "provider": "openai-codex",
+      "model": "gpt-6-luna",
+      "transport": "sse",
+      "bodyBytes": 7774,
+      "decodedBytes": 119452,
+      "bodyHash": "2b3ffb690c6db41a892a8ef403aebab4d889b2068cfc8e781e66d8ef6f270b5a",
+      "inputTokens": 29863,
+      "outputTokens": 1000,
+      "laneId": "r1-gpt-6-luna-redirect-v2-pi-native",
+      "task": "redirect-v2",
+      "repeat": 1,
+      "assignedArm": "pi-native",
+      "experimentPhase": "comparison",
+      "stage": "continuation",
+      "reservedMonoMs": 6938.362041,
+      "fixture": true,
+      "dispatch": 47,
+      "state": "completed",
+      "at": "2026-11-16T15:55:19.617Z",
+      "sendInvokedMonoMs": 6948.00125,
+      "sendState": "response-confirmed",
+      "knownSent": true,
+      "serverConfirmed": false,
+      "responseMonoMs": 6958.924708,
+      "status": 200,
+      "encoded": {
+        "model": "gpt-6-luna",
+        "reasoning": {
+          "effort": "none"
+        },
+        "maxOutputTokens": 1000,
+        "stream": true,
+        "inputHash": "064e5348a3da7701b50060e4d278669d11c06b9fadc903ed98a7ef99d2a26bf6",
+        "instructionsHash": "75357d685f238b6afd7738be9786fdafde641eb6ca9a3be7471939715a68a4de",
+        "systemMessagesHash": "46712c6e44d47b5000647ce443879ab04d5efd37b7e7416f63a9296784a0796a",
+        "toolsHash": "08151f4f9e169a4c589ba2a24c91bf0b9a1e61c21901c8465138d68f9670d47a",
+        "opaqueItems": 0,
+        "compactionTrigger": false,
+        "rawSHA256": "4c5dae55e170e06bfe068fc991c6b137a5fcdd798f2d074e3adbc0919b83ba12",
+        "toolNames": [
+          "record_checkpoint",
+          "workspace_read",
+          "workspace_write",
+          "workspace_edit",
+          "run_regression"
+        ]
+      },
+      "firstChunkMonoMs": 6987.136916,
+      "terminalMonoMs": 6996.05275,
+      "terminalType": "response.completed",
+      "rawUsage": {
+        "input_tokens": 100,
+        "output_tokens": 50,
+        "total_tokens": 150,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "serverUsage": {
+        "input": 100,
+        "cacheRead": 0,
+        "cacheWrite": null,
+        "output": 50,
+        "reasoning": 0,
+        "total": 150
+      },
+      "auditFailure": null,
+      "usage": {
+        "input": 100,
+        "output": 50,
+        "reasoning": 0
+      },
+      "stop": "completed"
+    },
+    {
+      "phase": "r1-gpt-6-luna-redirect-v2-pi-native:continuation",
+      "operation": "normal",
+      "provider": "openai-codex",
+      "model": "gpt-6-luna",
+      "transport": "sse",
+      "bodyBytes": 7856,
+      "decodedBytes": 119711,
+      "bodyHash": "28bcc2c0d7b015002970a36d1bacfa4295e042ecf2ad1bbee9e771f721d97557",
+      "inputTokens": 29928,
+      "outputTokens": 1000,
+      "laneId": "r1-gpt-6-luna-redirect-v2-pi-native",
+      "task": "redirect-v2",
+      "repeat": 1,
+      "assignedArm": "pi-native",
+      "experimentPhase": "comparison",
+      "stage": "continuation",
+      "reservedMonoMs": 7020.216416,
+      "fixture": true,
+      "dispatch": 48,
+      "state": "completed",
+      "at": "2026-11-16T15:55:19.699Z",
+      "sendInvokedMonoMs": 7029.014875,
+      "sendState": "response-confirmed",
+      "knownSent": true,
+      "serverConfirmed": false,
+      "responseMonoMs": 7039.977625,
+      "status": 200,
+      "encoded": {
+        "model": "gpt-6-luna",
+        "reasoning": {
+          "effort": "none"
+        },
+        "maxOutputTokens": 1000,
+        "stream": true,
+        "inputHash": "f5191375adf54786a76ef9ad104a3765ca2b655668713ee338041998e2d77f60",
+        "instructionsHash": "75357d685f238b6afd7738be9786fdafde641eb6ca9a3be7471939715a68a4de",
+        "systemMessagesHash": "46712c6e44d47b5000647ce443879ab04d5efd37b7e7416f63a9296784a0796a",
+        "toolsHash": "08151f4f9e169a4c589ba2a24c91bf0b9a1e61c21901c8465138d68f9670d47a",
+        "opaqueItems": 0,
+        "compactionTrigger": false,
+        "rawSHA256": "684f1d50f9905734007b1e92a50c9e22822fe775bc94b475d6224582781bc248",
+        "toolNames": [
+          "record_checkpoint",
+          "workspace_read",
+          "workspace_write",
+          "workspace_edit",
+          "run_regression"
+        ]
+      },
+      "firstChunkMonoMs": 7068.059708,
+      "terminalMonoMs": 7077.93325,
+      "terminalType": "response.completed",
+      "rawUsage": {
+        "input_tokens": 100,
+        "output_tokens": 50,
+        "total_tokens": 150,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "serverUsage": {
+        "input": 100,
+        "cacheRead": 0,
+        "cacheWrite": null,
+        "output": 50,
+        "reasoning": 0,
+        "total": 150
+      },
+      "auditFailure": null,
+      "usage": {
+        "input": 100,
+        "output": 50,
+        "reasoning": 0
+      },
+      "stop": "completed"
+    },
+    {
+      "phase": "r1-gpt-6-luna-redirect-v2-pi-native:continuation",
+      "operation": "normal",
+      "provider": "openai-codex",
+      "model": "gpt-6-luna",
+      "transport": "sse",
+      "bodyBytes": 8087,
+      "decodedBytes": 120224,
+      "bodyHash": "ea244bbde6107e52479f589f9edc1ae0c06b0fd86c12990771572335c6c0102b",
+      "inputTokens": 30056,
+      "outputTokens": 1000,
+      "laneId": "r1-gpt-6-luna-redirect-v2-pi-native",
+      "task": "redirect-v2",
+      "repeat": 1,
+      "assignedArm": "pi-native",
+      "experimentPhase": "comparison",
+      "stage": "continuation",
+      "reservedMonoMs": 7100.68525,
+      "fixture": true,
+      "dispatch": 49,
+      "state": "completed",
+      "at": "2026-11-16T15:55:19.779Z",
+      "sendInvokedMonoMs": 7111.012125,
+      "sendState": "response-confirmed",
+      "knownSent": true,
+      "serverConfirmed": false,
+      "responseMonoMs": 7121.741416,
+      "status": 200,
+      "encoded": {
+        "model": "gpt-6-luna",
+        "reasoning": {
+          "effort": "none"
+        },
+        "maxOutputTokens": 1000,
+        "stream": true,
+        "inputHash": "ba7986d4dba2afb096636df0ac65c9f9d87f5b458be41e5de4a6012648e15099",
+        "instructionsHash": "75357d685f238b6afd7738be9786fdafde641eb6ca9a3be7471939715a68a4de",
+        "systemMessagesHash": "46712c6e44d47b5000647ce443879ab04d5efd37b7e7416f63a9296784a0796a",
+        "toolsHash": "08151f4f9e169a4c589ba2a24c91bf0b9a1e61c21901c8465138d68f9670d47a",
+        "opaqueItems": 0,
+        "compactionTrigger": false,
+        "rawSHA256": "e6fb6b132905f36c62f1b576ee7eada75b0d12e5220933e0d0e0e0cec09d13c7",
+        "toolNames": [
+          "record_checkpoint",
+          "workspace_read",
+          "workspace_write",
+          "workspace_edit",
+          "run_regression"
+        ]
+      },
+      "firstChunkMonoMs": 7151.140458,
+      "terminalMonoMs": 7161.090166,
+      "terminalType": "response.completed",
+      "rawUsage": {
+        "input_tokens": 100,
+        "output_tokens": 50,
+        "total_tokens": 150,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "serverUsage": {
+        "input": 100,
+        "cacheRead": 0,
+        "cacheWrite": null,
+        "output": 50,
+        "reasoning": 0,
+        "total": 150
+      },
+      "auditFailure": null,
+      "usage": {
+        "input": 100,
+        "output": 50,
+        "reasoning": 0
+      },
+      "stop": "completed"
+    },
+    {
+      "phase": "r1-gpt-6-luna-redirect-v2-pi-native:continuation",
+      "operation": "normal",
+      "provider": "openai-codex",
+      "model": "gpt-6-luna",
+      "transport": "sse",
+      "bodyBytes": 8116,
+      "decodedBytes": 120413,
+      "bodyHash": "2a80cb5891bd359cae5afdc7a08c36002ba4272bd26c6a9c0d26ed58fa389a82",
+      "inputTokens": 30104,
+      "outputTokens": 1000,
+      "laneId": "r1-gpt-6-luna-redirect-v2-pi-native",
+      "task": "redirect-v2",
+      "repeat": 1,
+      "assignedArm": "pi-native",
+      "experimentPhase": "comparison",
+      "stage": "continuation",
+      "reservedMonoMs": 7226.6025,
+      "fixture": true,
+      "dispatch": 50,
+      "state": "completed",
+      "at": "2026-11-16T15:55:19.905Z",
+      "sendInvokedMonoMs": 7235.071833,
+      "sendState": "response-confirmed",
+      "knownSent": true,
+      "serverConfirmed": false,
+      "responseMonoMs": 7243.619416,
+      "status": 200,
+      "encoded": {
+        "model": "gpt-6-luna",
+        "reasoning": {
+          "effort": "none"
+        },
+        "maxOutputTokens": 1000,
+        "stream": true,
+        "inputHash": "80c79e3f8941c8c52f7f3097806d44c1e4aa30b4c3bb54c23b17862d7cf581e1",
+        "instructionsHash": "75357d685f238b6afd7738be9786fdafde641eb6ca9a3be7471939715a68a4de",
+        "systemMessagesHash": "46712c6e44d47b5000647ce443879ab04d5efd37b7e7416f63a9296784a0796a",
+        "toolsHash": "08151f4f9e169a4c589ba2a24c91bf0b9a1e61c21901c8465138d68f9670d47a",
+        "opaqueItems": 0,
+        "compactionTrigger": false,
+        "rawSHA256": "add06b1a18d526f8ac1f24ab2b638ea463862864e9b821f4be579ec25293b7e6",
+        "toolNames": [
+          "record_checkpoint",
+          "workspace_read",
+          "workspace_write",
+          "workspace_edit",
+          "run_regression"
+        ]
+      },
+      "firstChunkMonoMs": 7271.005833,
+      "firstTokenMonoMs": 7281.130583,
+      "terminalMonoMs": 7291.065,
+      "terminalType": "response.completed",
+      "rawUsage": {
+        "input_tokens": 100,
+        "output_tokens": 50,
+        "total_tokens": 150,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "serverUsage": {
+        "input": 100,
+        "cacheRead": 0,
+        "cacheWrite": null,
+        "output": 50,
+        "reasoning": 0,
+        "total": 150
+      },
+      "auditFailure": null,
+      "usage": {
+        "input": 100,
+        "output": 50,
+        "reasoning": 0
+      },
+      "stop": "completed"
+    },
+    {
+      "phase": "r1-gpt-6-luna-redirect-v2-pi-compact-remote:compact",
+      "operation": "remote",
+      "provider": "openai-codex",
+      "model": "gpt-6-luna",
+      "transport": "sse",
+      "bodyBytes": 7776,
+      "decodedBytes": 134053,
+      "bodyHash": "db7b70bc0ae7cfd8d158996a63e9c0f50c58b6f844cb4c8779d14395928814f9",
+      "inputTokens": 33514,
+      "outputTokens": 1000,
+      "laneId": "r1-gpt-6-luna-redirect-v2-pi-compact-remote",
+      "task": "redirect-v2",
+      "repeat": 1,
+      "assignedArm": "pi-compact-remote",
+      "experimentPhase": "comparison",
+      "stage": "compact",
+      "reservedMonoMs": 7403.81625,
+      "fixture": true,
+      "dispatch": 51,
+      "state": "completed",
+      "at": "2026-11-16T15:55:20.082Z",
+      "sendInvokedMonoMs": 7414.043958,
+      "sendState": "response-confirmed",
+      "knownSent": true,
+      "serverConfirmed": false,
+      "responseMonoMs": 7424.718,
+      "status": 200,
+      "encoded": {
+        "model": "gpt-6-luna",
+        "reasoning": {
+          "effort": "none"
+        },
+        "maxOutputTokens": 1000,
+        "stream": true,
+        "inputHash": "246e687df61e0b5dc312ba60c11ab2e081159b4710df1f814c923a96e56f880e",
+        "instructionsHash": "75357d685f238b6afd7738be9786fdafde641eb6ca9a3be7471939715a68a4de",
+        "systemMessagesHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "toolsHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "opaqueItems": 0,
+        "compactionTrigger": true,
+        "rawSHA256": "7810d1d041c44ea0d6796d3be387918a1245f83d84902cb989537af2b234964e",
+        "toolNames": []
+      },
+      "firstChunkMonoMs": 7453.01925,
+      "terminalMonoMs": 7463.020125,
+      "terminalType": "response.completed",
+      "rawUsage": {
+        "input_tokens": 100,
+        "output_tokens": 50,
+        "total_tokens": 150,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "serverUsage": {
+        "input": 100,
+        "cacheRead": 0,
+        "cacheWrite": null,
+        "output": 50,
+        "reasoning": 0,
+        "total": 150
+      },
+      "auditFailure": null,
+      "usage": {
+        "input": 100,
+        "output": 50,
+        "reasoning": 0
+      },
+      "stop": "completed"
+    },
+    {
+      "phase": "r1-gpt-6-luna-redirect-v2-pi-compact-remote:continuation",
+      "operation": "normal",
+      "provider": "openai-codex",
+      "model": "gpt-6-luna",
+      "transport": "sse",
+      "bodyBytes": 7298,
+      "decodedBytes": 117037,
+      "bodyHash": "eb1bca7019ffe711004159485a851822e93c89ec885b5dc6297800554b2660a4",
+      "inputTokens": 29260,
+      "outputTokens": 1000,
+      "laneId": "r1-gpt-6-luna-redirect-v2-pi-compact-remote",
+      "task": "redirect-v2",
+      "repeat": 1,
+      "assignedArm": "pi-compact-remote",
+      "experimentPhase": "comparison",
+      "stage": "continuation",
+      "reservedMonoMs": 7521.149583,
+      "fixture": true,
+      "dispatch": 52,
+      "state": "completed",
+      "at": "2026-11-16T15:55:20.200Z",
+      "sendInvokedMonoMs": 7531.13325,
+      "sendState": "response-confirmed",
+      "knownSent": true,
+      "serverConfirmed": false,
+      "responseMonoMs": 7542.047791,
+      "status": 200,
+      "encoded": {
+        "model": "gpt-6-luna",
+        "reasoning": {
+          "effort": "none"
+        },
+        "maxOutputTokens": 1000,
+        "stream": true,
+        "inputHash": "3e8add9530ffd9c33f30b9f0fc862c13d738c6abe6d620a569745707fc86b0eb",
+        "instructionsHash": "75357d685f238b6afd7738be9786fdafde641eb6ca9a3be7471939715a68a4de",
+        "systemMessagesHash": "46712c6e44d47b5000647ce443879ab04d5efd37b7e7416f63a9296784a0796a",
+        "toolsHash": "08151f4f9e169a4c589ba2a24c91bf0b9a1e61c21901c8465138d68f9670d47a",
+        "opaqueItems": 1,
+        "compactionTrigger": false,
+        "rawSHA256": "c437581f28c7fcd1bc78b7fcae5fe6b50d1583bb53740a556742c66d1f5a4b5a",
+        "toolNames": [
+          "record_checkpoint",
+          "workspace_read",
+          "workspace_write",
+          "workspace_edit",
+          "run_regression"
+        ]
+      },
+      "firstChunkMonoMs": 7573.153041,
+      "terminalMonoMs": 7583.133458,
+      "terminalType": "response.completed",
+      "rawUsage": {
+        "input_tokens": 100,
+        "output_tokens": 50,
+        "total_tokens": 150,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "serverUsage": {
+        "input": 100,
+        "cacheRead": 0,
+        "cacheWrite": null,
+        "output": 50,
+        "reasoning": 0,
+        "total": 150
+      },
+      "auditFailure": null,
+      "usage": {
+        "input": 100,
+        "output": 50,
+        "reasoning": 0
+      },
+      "stop": "completed"
+    },
+    {
+      "phase": "r1-gpt-6-luna-redirect-v2-pi-compact-remote:continuation",
+      "operation": "normal",
+      "provider": "openai-codex",
+      "model": "gpt-6-luna",
+      "transport": "sse",
+      "bodyBytes": 7537,
+      "decodedBytes": 117583,
+      "bodyHash": "ccce8326c807258e52ad9bc51389b4146e43894e7808ba77a3896e43fad43d5b",
+      "inputTokens": 29396,
+      "outputTokens": 1000,
+      "laneId": "r1-gpt-6-luna-redirect-v2-pi-compact-remote",
+      "task": "redirect-v2",
+      "repeat": 1,
+      "assignedArm": "pi-compact-remote",
+      "experimentPhase": "comparison",
+      "stage": "continuation",
+      "reservedMonoMs": 7615.452833,
+      "fixture": true,
+      "dispatch": 53,
+      "state": "completed",
+      "at": "2026-11-16T15:55:20.294Z",
+      "sendInvokedMonoMs": 7625.232541,
+      "sendState": "response-confirmed",
+      "knownSent": true,
+      "serverConfirmed": false,
+      "responseMonoMs": 7636.080416,
+      "status": 200,
+      "encoded": {
+        "model": "gpt-6-luna",
+        "reasoning": {
+          "effort": "none"
+        },
+        "maxOutputTokens": 1000,
+        "stream": true,
+        "inputHash": "3483dd830c679522f00fda402193a82210c30f3cda569acde40a00675972fb77",
+        "instructionsHash": "75357d685f238b6afd7738be9786fdafde641eb6ca9a3be7471939715a68a4de",
+        "systemMessagesHash": "46712c6e44d47b5000647ce443879ab04d5efd37b7e7416f63a9296784a0796a",
+        "toolsHash": "08151f4f9e169a4c589ba2a24c91bf0b9a1e61c21901c8465138d68f9670d47a",
+        "opaqueItems": 1,
+        "compactionTrigger": false,
+        "rawSHA256": "ca770031463d925861dd714f0a20cef210b37183c671337e6537673d558c1062",
+        "toolNames": [
+          "record_checkpoint",
+          "workspace_read",
+          "workspace_write",
+          "workspace_edit",
+          "run_regression"
+        ]
+      },
+      "firstChunkMonoMs": 7667.133083,
+      "terminalMonoMs": 7676.049666,
+      "terminalType": "response.completed",
+      "rawUsage": {
+        "input_tokens": 100,
+        "output_tokens": 50,
+        "total_tokens": 150,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "serverUsage": {
+        "input": 100,
+        "cacheRead": 0,
+        "cacheWrite": null,
+        "output": 50,
+        "reasoning": 0,
+        "total": 150
+      },
+      "auditFailure": null,
+      "usage": {
+        "input": 100,
+        "output": 50,
+        "reasoning": 0
+      },
+      "stop": "completed"
+    },
+    {
+      "phase": "r1-gpt-6-luna-redirect-v2-pi-compact-remote:continuation",
+      "operation": "normal",
+      "provider": "openai-codex",
+      "model": "gpt-6-luna",
+      "transport": "sse",
+      "bodyBytes": 7617,
+      "decodedBytes": 117842,
+      "bodyHash": "c2d909abf84cf894cc9e38647626779b8570a735867c1db6b2de03fdcae1fed0",
+      "inputTokens": 29461,
+      "outputTokens": 1000,
+      "laneId": "r1-gpt-6-luna-redirect-v2-pi-compact-remote",
+      "task": "redirect-v2",
+      "repeat": 1,
+      "assignedArm": "pi-compact-remote",
+      "experimentPhase": "comparison",
+      "stage": "continuation",
+      "reservedMonoMs": 7706.571541,
+      "fixture": true,
+      "dispatch": 54,
+      "state": "completed",
+      "at": "2026-11-16T15:55:20.385Z",
+      "sendInvokedMonoMs": 7715.045208,
+      "sendState": "response-confirmed",
+      "knownSent": true,
+      "serverConfirmed": false,
+      "responseMonoMs": 7725.044291,
+      "status": 200,
+      "encoded": {
+        "model": "gpt-6-luna",
+        "reasoning": {
+          "effort": "none"
+        },
+        "maxOutputTokens": 1000,
+        "stream": true,
+        "inputHash": "c45257d19f7522b65f49bb60ffd78a0e63a10854337db99b1c5e97616763b55d",
+        "instructionsHash": "75357d685f238b6afd7738be9786fdafde641eb6ca9a3be7471939715a68a4de",
+        "systemMessagesHash": "46712c6e44d47b5000647ce443879ab04d5efd37b7e7416f63a9296784a0796a",
+        "toolsHash": "08151f4f9e169a4c589ba2a24c91bf0b9a1e61c21901c8465138d68f9670d47a",
+        "opaqueItems": 1,
+        "compactionTrigger": false,
+        "rawSHA256": "1d996ef3eef63cff78265629688903e2e3dbc95e889bd2909a415a8564bb7af4",
+        "toolNames": [
+          "record_checkpoint",
+          "workspace_read",
+          "workspace_write",
+          "workspace_edit",
+          "run_regression"
+        ]
+      },
+      "firstChunkMonoMs": 7755.335416,
+      "terminalMonoMs": 7765.188625,
+      "terminalType": "response.completed",
+      "rawUsage": {
+        "input_tokens": 100,
+        "output_tokens": 50,
+        "total_tokens": 150,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "serverUsage": {
+        "input": 100,
+        "cacheRead": 0,
+        "cacheWrite": null,
+        "output": 50,
+        "reasoning": 0,
+        "total": 150
+      },
+      "auditFailure": null,
+      "usage": {
+        "input": 100,
+        "output": 50,
+        "reasoning": 0
+      },
+      "stop": "completed"
+    },
+    {
+      "phase": "r1-gpt-6-luna-redirect-v2-pi-compact-remote:continuation",
+      "operation": "normal",
+      "provider": "openai-codex",
+      "model": "gpt-6-luna",
+      "transport": "sse",
+      "bodyBytes": 7852,
+      "decodedBytes": 118355,
+      "bodyHash": "bd19ea7c928f1fe81f1cc7f2036a85a4839eb7a3aab49950118e7fb70e30560a",
+      "inputTokens": 29589,
+      "outputTokens": 1000,
+      "laneId": "r1-gpt-6-luna-redirect-v2-pi-compact-remote",
+      "task": "redirect-v2",
+      "repeat": 1,
+      "assignedArm": "pi-compact-remote",
+      "experimentPhase": "comparison",
+      "stage": "continuation",
+      "reservedMonoMs": 7796.0595,
+      "fixture": true,
+      "dispatch": 55,
+      "state": "completed",
+      "at": "2026-11-16T15:55:20.475Z",
+      "sendInvokedMonoMs": 7805.652333,
+      "sendState": "response-confirmed",
+      "knownSent": true,
+      "serverConfirmed": false,
+      "responseMonoMs": 7815.509125,
+      "status": 200,
+      "encoded": {
+        "model": "gpt-6-luna",
+        "reasoning": {
+          "effort": "none"
+        },
+        "maxOutputTokens": 1000,
+        "stream": true,
+        "inputHash": "c7c3332332f59279df1532b3a33bbe2f432100e2896cb0c76c0daf2b14adf82c",
+        "instructionsHash": "75357d685f238b6afd7738be9786fdafde641eb6ca9a3be7471939715a68a4de",
+        "systemMessagesHash": "46712c6e44d47b5000647ce443879ab04d5efd37b7e7416f63a9296784a0796a",
+        "toolsHash": "08151f4f9e169a4c589ba2a24c91bf0b9a1e61c21901c8465138d68f9670d47a",
+        "opaqueItems": 1,
+        "compactionTrigger": false,
+        "rawSHA256": "ffb3537066c57e78f15ac91040733a6742d9b1415064e47316ada3b29d638d6b",
+        "toolNames": [
+          "record_checkpoint",
+          "workspace_read",
+          "workspace_write",
+          "workspace_edit",
+          "run_regression"
+        ]
+      },
+      "firstChunkMonoMs": 7841.41275,
+      "terminalMonoMs": 7849.325166,
+      "terminalType": "response.completed",
+      "rawUsage": {
+        "input_tokens": 100,
+        "output_tokens": 50,
+        "total_tokens": 150,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "serverUsage": {
+        "input": 100,
+        "cacheRead": 0,
+        "cacheWrite": null,
+        "output": 50,
+        "reasoning": 0,
+        "total": 150
+      },
+      "auditFailure": null,
+      "usage": {
+        "input": 100,
+        "output": 50,
+        "reasoning": 0
+      },
+      "stop": "completed"
+    },
+    {
+      "phase": "r1-gpt-6-luna-redirect-v2-pi-compact-remote:continuation",
+      "operation": "normal",
+      "provider": "openai-codex",
+      "model": "gpt-6-luna",
+      "transport": "sse",
+      "bodyBytes": 7881,
+      "decodedBytes": 118544,
+      "bodyHash": "98e64ba03841360027eb721f5740bd7ebb79059777def36fc5760cf36282fc31",
+      "inputTokens": 29636,
+      "outputTokens": 1000,
+      "laneId": "r1-gpt-6-luna-redirect-v2-pi-compact-remote",
+      "task": "redirect-v2",
+      "repeat": 1,
+      "assignedArm": "pi-compact-remote",
+      "experimentPhase": "comparison",
+      "stage": "continuation",
+      "reservedMonoMs": 7923.495458,
+      "fixture": true,
+      "dispatch": 56,
+      "state": "completed",
+      "at": "2026-11-16T15:55:20.602Z",
+      "sendInvokedMonoMs": 7931.700541,
+      "sendState": "response-confirmed",
+      "knownSent": true,
+      "serverConfirmed": false,
+      "responseMonoMs": 7940.496125,
+      "status": 200,
+      "encoded": {
+        "model": "gpt-6-luna",
+        "reasoning": {
+          "effort": "none"
+        },
+        "maxOutputTokens": 1000,
+        "stream": true,
+        "inputHash": "16c5cad35134f2dfde5e9aa6b4ab0e8ad8a97197dbdac905323a9f1566a40f2d",
+        "instructionsHash": "75357d685f238b6afd7738be9786fdafde641eb6ca9a3be7471939715a68a4de",
+        "systemMessagesHash": "46712c6e44d47b5000647ce443879ab04d5efd37b7e7416f63a9296784a0796a",
+        "toolsHash": "08151f4f9e169a4c589ba2a24c91bf0b9a1e61c21901c8465138d68f9670d47a",
+        "opaqueItems": 1,
+        "compactionTrigger": false,
+        "rawSHA256": "523ec542170ceecb47e9fe8afc2261cdba78075c460ab4ee12c6f643d90b39c2",
+        "toolNames": [
+          "record_checkpoint",
+          "workspace_read",
+          "workspace_write",
+          "workspace_edit",
+          "run_regression"
+        ]
+      },
+      "firstChunkMonoMs": 7966.002916,
+      "firstTokenMonoMs": 7974.972791,
+      "terminalMonoMs": 7984.0105,
+      "terminalType": "response.completed",
+      "rawUsage": {
+        "input_tokens": 100,
+        "output_tokens": 50,
+        "total_tokens": 150,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "serverUsage": {
+        "input": 100,
+        "cacheRead": 0,
+        "cacheWrite": null,
+        "output": 50,
+        "reasoning": 0,
+        "total": 150
+      },
+      "auditFailure": null,
+      "usage": {
+        "input": 100,
+        "output": 50,
+        "reasoning": 0
+      },
+      "stop": "completed"
+    }
+  ],
+  "checksum": "45d38bb5fec4785100423ab8f18125d6020ce235e247b0df1a714dc5960d8e96"
+}

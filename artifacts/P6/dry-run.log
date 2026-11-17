@@ -1,0 +1,126 @@
+{
+  "schema": 1,
+  "mode": "dry-run",
+  "authorized": false,
+  "task": {
+    "id": "ledger-recovery-v1",
+    "seed": "Twelve complete synthetic tool turns, 7,000 filler characters each. No user history.",
+    "facts": [
+      "database=sqlite",
+      "retry=3",
+      "timezone=Asia/Shanghai"
+    ],
+    "unfinished": "Add idempotency test; do not claim it is complete.",
+    "files": {
+      "ledger.csv": "id,status\nA1,pending\n"
+    },
+    "toolResult": "ledger.csv exists, A1 pending, sha256 recorded before compaction.",
+    "continuation": "Return the facts, unfinished task, exact ledger.csv state, and last tool result. Do not edit files.",
+    "scoring": [
+      "All three facts match",
+      "Unfinished test remains unfinished",
+      "File bytes and SHA match",
+      "Tool result and pending row match"
+    ]
+  },
+  "networkRequestsThisRun": 0,
+  "authReadsThisRun": 0,
+  "providers": {
+    "native": "openai-codex/gpt-6.1-sol",
+    "remote": "openai-codex/gpt-6.1-sol",
+    "migrationTarget": "deepseek/deepseek-chat",
+    "reasoning": "xhigh where host/model supports it",
+    "transport": "SSE only",
+    "websocket": "unsupported for opaque traffic; do not enable"
+  },
+  "credentials": {
+    "reader": "Existing Pi ModelRuntime effective authorization at dispatch, only after a new explicit grant and independent review.",
+    "locations": "Existing Pi agent auth.json or configured provider runtime authorization. Described only; no file is opened by dry-run.",
+    "missing": "Coordinator uses secret tool. Never paste or copy credentials to reports."
+  },
+  "budget": {
+    "maxDispatches": 12,
+    "maxEstimatedInputTokens": 120000,
+    "maxEstimatedOutputTokens": 12000,
+    "monetaryCost": "unknown; subscription cost cannot be inferred from tokens or zero cost fields",
+    "count": "Every actual dispatch shares one ledger. Retries, fallback, source conversion and continuation all count. Disable SDK/provider retries; each transport dispatch reserves and fsyncs before sending.",
+    "exceed": "Stop before dispatch and preserve evidence. Never silently add requests."
+  },
+  "schedule": [
+    {
+      "id": "native-summary",
+      "dispatches": 1
+    },
+    {
+      "id": "native-continuation",
+      "dispatches": 1
+    },
+    {
+      "id": "remote-summary",
+      "dispatches": 1
+    },
+    {
+      "id": "remote-continuation",
+      "dispatches": 1
+    },
+    {
+      "id": "repeat-remote",
+      "dispatches": 1
+    },
+    {
+      "id": "restore-continuation",
+      "dispatches": 1
+    },
+    {
+      "id": "source-to-text",
+      "dispatches": 1
+    },
+    {
+      "id": "target-native-summary",
+      "dispatches": 1
+    },
+    {
+      "id": "deepseek-continuation",
+      "dispatches": 1
+    },
+    {
+      "id": "shared-contingency",
+      "dispatches": 3
+    }
+  ],
+  "estimates": {
+    "expectedDispatches": 9,
+    "inputTokens": "60000 to 100000 estimated, capacity checked before every dispatch",
+    "outputTokens": "4000 to 10000 estimated",
+    "requestBound": 12,
+    "noTimeLimit": true
+  },
+  "order": "Complete native baseline first on identical task bytes. If either side fails, report only that side; no remote advantage percentage.",
+  "evidence": {
+    "destination": "New isolated artifacts/P6-live/<grant-id> within selected checkout",
+    "save": [
+      "synthetic input/task hashes",
+      "model/transport identity",
+      "durable dispatch ledger",
+      "redacted request sizes and result scores",
+      "synthetic sessions/checkpoints",
+      "failure and cleanup logs"
+    ],
+    "redact": [
+      "authorization headers",
+      "tokens",
+      "cookies",
+      "account identifiers",
+      "opaque contents from public reports"
+    ],
+    "history": "No real conversation history copied or read."
+  },
+  "gate": "This plan is not authorization. Real execute remains disarmed in this delivery. A separately reviewed transport adapter and a fresh grant with id, expiry, provider/model/endpoint allowlist and explicit budget are required. Do not reuse exhausted five-request authorization.",
+  "pending": [
+    "All real service results",
+    "Real summary quality",
+    "Real SSE reliability",
+    "User visual acceptance",
+    "Independent P6 review"
+  ]
+}

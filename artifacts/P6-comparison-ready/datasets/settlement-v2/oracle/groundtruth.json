@@ -1,0 +1,280 @@
+{
+  "id": "settlement-v2",
+  "module": "settlement.mjs",
+  "exportName": "settle",
+  "facts": {
+    "currency": "CNY-cents",
+    "duplicateKey": "tenant+event",
+    "eligible": "settled",
+    "duplicateWinner": "first-valid",
+    "zero": "include",
+    "sort": "tenant-ascending"
+  },
+  "stale": {
+    "duplicateKey": "event",
+    "duplicateWinner": "last",
+    "zero": "drop"
+  },
+  "pending": [
+    "implement-settle",
+    "run-regression"
+  ],
+  "state": {
+    "metadataSchema": 2,
+    "metadataReady": false,
+    "implementation": "stub",
+    "lastTool": "read",
+    "regression": "not-run"
+  },
+  "cases": [
+    {
+      "id": "empty",
+      "input": [],
+      "expected": []
+    },
+    {
+      "id": "single",
+      "input": [
+        {
+          "tenant": "b",
+          "event": "e1",
+          "status": "settled",
+          "cents": 125
+        }
+      ],
+      "expected": [
+        {
+          "tenant": "b",
+          "cents": 125
+        }
+      ]
+    },
+    {
+      "id": "cross-tenant",
+      "input": [
+        {
+          "tenant": "b",
+          "event": "e1",
+          "status": "settled",
+          "cents": 5
+        },
+        {
+          "tenant": "a",
+          "event": "e1",
+          "status": "settled",
+          "cents": 7
+        }
+      ],
+      "expected": [
+        {
+          "tenant": "a",
+          "cents": 7
+        },
+        {
+          "tenant": "b",
+          "cents": 5
+        }
+      ]
+    },
+    {
+      "id": "first-valid",
+      "input": [
+        {
+          "tenant": "a",
+          "event": "e",
+          "status": "pending",
+          "cents": 99
+        },
+        {
+          "tenant": "a",
+          "event": "e",
+          "status": "settled",
+          "cents": 4
+        },
+        {
+          "tenant": "a",
+          "event": "e",
+          "status": "settled",
+          "cents": 8
+        }
+      ],
+      "expected": [
+        {
+          "tenant": "a",
+          "cents": 4
+        }
+      ]
+    },
+    {
+      "id": "zero",
+      "input": [
+        {
+          "tenant": "z",
+          "event": "e",
+          "status": "settled",
+          "cents": 0
+        }
+      ],
+      "expected": [
+        {
+          "tenant": "z",
+          "cents": 0
+        }
+      ]
+    },
+    {
+      "id": "invalid",
+      "input": [
+        {
+          "tenant": "a",
+          "event": "e",
+          "status": "failed",
+          "cents": 10
+        },
+        {
+          "tenant": "a",
+          "event": "f",
+          "status": "settled",
+          "cents": -1
+        },
+        {
+          "tenant": "a",
+          "event": "g",
+          "status": "settled",
+          "cents": 1.5
+        }
+      ],
+      "expected": []
+    },
+    {
+      "id": "sum",
+      "input": [
+        {
+          "tenant": "a",
+          "event": "e",
+          "status": "settled",
+          "cents": 10
+        },
+        {
+          "tenant": "a",
+          "event": "f",
+          "status": "settled",
+          "cents": 2
+        }
+      ],
+      "expected": [
+        {
+          "tenant": "a",
+          "cents": 12
+        }
+      ]
+    }
+  ],
+  "protectedFiles": [
+    "release.json",
+    "DO-NOT-EDIT.txt",
+    "maintenance/batch-000.json",
+    "maintenance/batch-001.json",
+    "maintenance/batch-002.json",
+    "maintenance/batch-003.json",
+    "maintenance/batch-004.json",
+    "maintenance/batch-005.json",
+    "maintenance/batch-006.json",
+    "maintenance/batch-007.json",
+    "maintenance/batch-008.json",
+    "maintenance/batch-009.json",
+    "maintenance/batch-010.json",
+    "maintenance/batch-011.json",
+    "maintenance/batch-012.json",
+    "maintenance/batch-013.json",
+    "maintenance/batch-014.json",
+    "maintenance/batch-015.json",
+    "maintenance/batch-016.json",
+    "maintenance/batch-017.json",
+    "maintenance/batch-018.json",
+    "maintenance/batch-019.json",
+    "maintenance/batch-020.json",
+    "maintenance/batch-021.json",
+    "maintenance/batch-022.json",
+    "maintenance/batch-023.json",
+    "maintenance/batch-024.json",
+    "maintenance/batch-025.json",
+    "maintenance/batch-026.json",
+    "maintenance/batch-027.json",
+    "maintenance/batch-028.json",
+    "maintenance/batch-029.json",
+    "maintenance/batch-030.json",
+    "maintenance/batch-031.json",
+    "maintenance/batch-032.json",
+    "maintenance/batch-033.json",
+    "maintenance/batch-034.json",
+    "maintenance/batch-035.json",
+    "maintenance/batch-036.json",
+    "maintenance/batch-037.json",
+    "maintenance/batch-038.json",
+    "maintenance/batch-039.json",
+    "maintenance/batch-040.json",
+    "maintenance/batch-041.json",
+    "maintenance/batch-042.json",
+    "maintenance/batch-043.json",
+    "maintenance/batch-044.json",
+    "maintenance/batch-045.json",
+    "maintenance/batch-046.json",
+    "maintenance/batch-047.json",
+    "maintenance/batch-048.json",
+    "maintenance/batch-049.json",
+    "maintenance/batch-050.json",
+    "maintenance/batch-051.json",
+    "maintenance/batch-052.json",
+    "maintenance/batch-053.json",
+    "maintenance/batch-054.json",
+    "maintenance/batch-055.json",
+    "maintenance/batch-056.json",
+    "maintenance/batch-057.json",
+    "maintenance/batch-058.json",
+    "maintenance/batch-059.json",
+    "maintenance/batch-060.json",
+    "maintenance/batch-061.json",
+    "maintenance/batch-062.json",
+    "maintenance/batch-063.json",
+    "maintenance/batch-064.json",
+    "maintenance/batch-065.json",
+    "maintenance/batch-066.json",
+    "maintenance/batch-067.json",
+    "maintenance/batch-068.json",
+    "maintenance/batch-069.json",
+    "maintenance/batch-070.json",
+    "maintenance/batch-071.json",
+    "maintenance/batch-072.json",
+    "maintenance/batch-073.json",
+    "maintenance/batch-074.json",
+    "maintenance/batch-075.json",
+    "maintenance/batch-076.json",
+    "maintenance/batch-077.json",
+    "maintenance/batch-078.json",
+    "maintenance/batch-079.json",
+    "maintenance/batch-080.json",
+    "maintenance/batch-081.json",
+    "maintenance/batch-082.json",
+    "maintenance/batch-083.json",
+    "maintenance/batch-084.json",
+    "maintenance/batch-085.json",
+    "maintenance/batch-086.json",
+    "maintenance/batch-087.json",
+    "maintenance/batch-088.json",
+    "maintenance/batch-089.json",
+    "maintenance/batch-090.json",
+    "maintenance/batch-091.json",
+    "maintenance/batch-092.json",
+    "maintenance/batch-093.json",
+    "maintenance/batch-094.json",
+    "maintenance/batch-095.json",
+    "maintenance/batch-096.json",
+    "maintenance/batch-097.json",
+    "maintenance/batch-098.json",
+    "maintenance/batch-099.json"
+  ],
+  "allowedModifiedFiles": [
+    "settlement.mjs"
+  ]
+}

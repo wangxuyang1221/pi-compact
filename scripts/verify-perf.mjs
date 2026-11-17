@@ -1,3 +1,4 @@
+if (process.argv.includes('P6')) { await import('./verify-p6-perf.mjs'); process.exit(); }
 if (process.argv.includes('P5')) { await import('./verify-p5-perf.mjs'); process.exit(); }
 if (process.argv.includes('P4')) { await import('./verify-p4-perf.mjs'); process.exit(); }
 import assert from 'node:assert/strict';

@@ -1,0 +1,19 @@
+{"name":"network-error","pass":true,"path":"/Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec/artifacts/P6/local/1794835156420/network-error","checks":["FACT_0=value_0","FACT_11=value_11","FACT_TOOL_0=result_0","FACT_TOOL_11=result_11","FACT_PENDING=idempotency_test","FACT_FILE=ledger.csv","FACT_ROW=A1_pending","database=sqlite","retry=3"],"fileHash":"92e85cfa04eb0188cddc41b1864191c20b0139efaf1bd9da8c89284a2d5bcda9","dispatches":2,"source":"synthetic transport through actual installed CLI/loader/encoder; not model quality"}
+{"name":"quota","pass":true,"path":"/Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec/artifacts/P6/local/1794835156420/quota","checks":["FACT_0=value_0","FACT_11=value_11","FACT_TOOL_0=result_0","FACT_TOOL_11=result_11","FACT_PENDING=idempotency_test","FACT_FILE=ledger.csv","FACT_ROW=A1_pending","database=sqlite","retry=3"],"fileHash":"92e85cfa04eb0188cddc41b1864191c20b0139efaf1bd9da8c89284a2d5bcda9","dispatches":2,"source":"synthetic transport through actual installed CLI/loader/encoder; not model quality"}
+{"name":"lifecycle","pass":false,"error":"Error: Timed out waiting for /reload","stack":"Error: Timed out waiting for /reload\n    at waitFor (file:///Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec/scripts/fixture/runtime.mjs:27:9)\n    at async command (file:///Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec/scripts/verify-p6.mjs:15:97)\n    at async file:///Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec/scripts/verify-p6.mjs:97:7"}
+/Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec/artifacts/P6/local/1794835156420
+node:internal/modules/run_main:123
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: P6 local fixtures
+    at file:///Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec/scripts/verify-p6.mjs:123:1 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
+
+Node.js v22.22.2

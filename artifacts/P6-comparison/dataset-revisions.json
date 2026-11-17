@@ -1,0 +1,40 @@
+{
+  "schema": 2,
+  "beforeAnyModelResult": true,
+  "changes": [
+    {
+      "from": "settlement-v1",
+      "to": "settlement-v2",
+      "reason": "Before model results: valid Pi assistant blocks produce v1 cut e226 with isSplitTurn=true. Add a truthful noncritical maintenance audit-index note (0..16) to retained final user message; v2 cut e227 is a user boundary. Critical contracts and workspace/oracle cases unchanged. Restricted tool names replace generic bash; no arbitrary commands.",
+      "v1UnnormalizedDiagnostic": {
+        "cut": "e222",
+        "isSplitTurn": true
+      },
+      "v1Normalized": {
+        "cut": "e226",
+        "isSplitTurn": true
+      },
+      "requiredV2": {
+        "cut": "e227",
+        "isSplitTurn": false
+      }
+    },
+    {
+      "from": "redirect-v1",
+      "to": "redirect-v2",
+      "reason": "Before model results: valid Pi assistant blocks produce v1 cut e226 with isSplitTurn=true. Add a truthful noncritical maintenance audit-index note (0..16) to retained final user message; v2 cut e227 is a user boundary. Critical contracts and workspace/oracle cases unchanged. Restricted tool names replace generic bash; no arbitrary commands.",
+      "v1UnnormalizedDiagnostic": {
+        "cut": "e222",
+        "isSplitTurn": true
+      },
+      "v1Normalized": {
+        "cut": "e226",
+        "isSplitTurn": true
+      },
+      "requiredV2": {
+        "cut": "e227",
+        "isSplitTurn": false
+      }
+    }
+  ]
+}
