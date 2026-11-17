@@ -1,0 +1,10 @@
+{
+  "pass": true,
+  "members": 5117,
+  "archive": {
+    "path": "artifacts/P3/evidence.tar.gz",
+    "bytes": 14610392,
+    "sha256": "eb03941de842fe18636bd60ef16117d26da8c717efc8bbe2d96d5a9fee0da5ea"
+  },
+  "standalone": 5
+}

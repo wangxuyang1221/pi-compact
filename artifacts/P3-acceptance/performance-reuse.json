@@ -1,0 +1,95 @@
+{
+  "decision": "沿用前次性能证据，本轮没有新测量，未混合不同 HEAD 样本",
+  "reviewedHead": "714114416a48b9789fd3b674aca8df073ad14352",
+  "measuredHead": "05dfe3870131a89df72c3021f6c38a0f49c7690f",
+  "hotpath": [
+    {
+      "size": 1000,
+      "pairs": 20,
+      "p95": 1.2344989999999711,
+      "max": 1.2348340000000348
+    },
+    {
+      "size": 10000,
+      "pairs": 20,
+      "p95": 7.46308299999987,
+      "max": 7.612333999999805
+    }
+  ],
+  "p3Samples": 60,
+  "p3Head": {
+    "localMs": {
+      "n": 30,
+      "min": 11.616833999999983,
+      "median": 13.326625000000035,
+      "p95": 21.4156670000001,
+      "max": 24.35716599999995
+    },
+    "prepareMs": {
+      "n": 30,
+      "min": 0.47545900000000074,
+      "median": 0.5884169999999926,
+      "p95": 0.8632920000000013,
+      "max": 0.8901250000000118
+    },
+    "commitMs": {
+      "n": 30,
+      "min": 28.793624999999963,
+      "median": 31.420916999999974,
+      "p95": 33.42583300000001,
+      "max": 34.70179200000007
+    },
+    "resumeMs": {
+      "n": 30,
+      "min": 52.69416699999999,
+      "median": 57.17016699999999,
+      "p95": 70.40666600000009,
+      "max": 90.15024999999997
+    },
+    "totalCompactionMs": {
+      "n": 30,
+      "min": 44.891208000000006,
+      "median": 48.895083,
+      "p95": 62.342250000000035,
+      "max": 62.448665999999946
+    },
+    "rssKiB": {
+      "n": 30,
+      "min": 196272,
+      "median": 196992,
+      "p95": 197424,
+      "max": 197712
+    },
+    "fetchMs": {
+      "n": 30,
+      "min": 3.6919169999999895,
+      "median": 4.2708749999999895,
+      "p95": 6.5203749999999445,
+      "max": 7.054708000000005
+    },
+    "summaryMs": {
+      "n": 30,
+      "min": 15.35737499999999,
+      "median": 17.765709000000015,
+      "p95": 27.936042000000043,
+      "max": 30.11070799999999
+    }
+  },
+  "rationale": [
+    "新增正常 prompt/append/rewrite 路径只读取会话内 pending 状态，没有新磁盘访问或随历史增长的循环。",
+    "recoverCheckpoint 在 ready 时立即返回，原有失败恢复移动到同一 session closure，重试增加磁盘恢复属故障路径。",
+    "成功路径仍执行原有 begin/readback/fsync/idle/unlink，新增状态赋值没有改变协议、预算与来源重建。",
+    "native 容量检查仅移入 opaque 分支，不增加序列化或模型调用。"
+  ],
+  "limitations": [
+    "hotpath 仅 awaited prepareRequest + transformContext + synchronous streamFunction，非完整请求本地成本。",
+    "P3 local 扣除 synthetic fetch 的构造与日志工作，resume 起点为 fixture success，没有真实网络。",
+    "前次 profile 的线性遍历/序列化及 fsync 解释主要成本，本轮未重新 profile。"
+  ],
+  "sources": [
+    "/Users/wangxuyang/.t3/worktrees/compact/t3-640f5eef-d06cda6fe0ec11ac/artifacts/P3-independent/hotpath/samples.json",
+    "/Users/wangxuyang/.t3/worktrees/compact/t3-640f5eef-d06cda6fe0ec11ac/artifacts/P3-independent/hotpath/summary.json",
+    "/Users/wangxuyang/.t3/worktrees/compact/t3-640f5eef-d06cda6fe0ec11ac/artifacts/P3-independent/owner-audit.json",
+    "/Users/wangxuyang/.t3/worktrees/compact/t3-640f5eef-d06cda6fe0ec11ac/artifacts/P3-independent/REPORT.md"
+  ]
+}

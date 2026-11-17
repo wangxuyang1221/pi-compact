@@ -10,7 +10,8 @@
     "docs/p2-policy.md",
     "docs/design.md",
     "docs/roadmap.md",
-    "GLOSSARY.md"
+    "GLOSSARY.md",
+    "docs/p3-checkpoints.md"
   ],
   "pi": {
     "extensions": [
@@ -25,7 +26,8 @@
     "verify:p2": "node scripts/verify-p2.mjs",
     "verify:p1-fixes": "node scripts/verify-p1-fixes.mjs",
     "verify:p1-scope": "node scripts/verify-p1-scope.mjs",
-    "verify:perf": "node scripts/verify-perf.mjs"
+    "verify:perf": "node scripts/verify-perf.mjs",
+    "verify:p3": "node --import=./scripts/fixture/relative-socket.mjs scripts/verify-p3.mjs"
   },
   "engines": {
     "node": ">=22.19.0"

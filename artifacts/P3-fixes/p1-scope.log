@@ -1,0 +1,5 @@
+{"probe":"scope","variant":"baseline","pass":true}
+{"probe":"scope","variant":"head","pass":true}
+{"probe":"managed-read","variant":"baseline","pass":true}
+{"probe":"managed-read","variant":"head","pass":true}
+/Users/wangxuyang/Code/codex/pstack/compact/artifacts/P1-scope/runs/1794825766844

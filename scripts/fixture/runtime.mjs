@@ -66,6 +66,8 @@ export async function tui(dir, options = {}) {
   writeFileSync(join(dir, 'run.sh'), `#!/bin/sh\ncd ${quote(join(dir, 'cwd'))}\n${command}\ncode=$?\nprintf '%s' "$code" > ${quote(join(dir, 'exit-code'))}\n`);
   const start = performance.now();
   tmux('new-session', '-d', '-x', '120', '-y', '40', '-s', 'fixture', '/bin/sh', join(dir, 'run.sh'));
+  const startedPids = [Number(tmux('display-message', '-p', '#{pid}').trim()), Number(tmux('list-panes', '-t', 'fixture', '-F', '#{pane_pid}').trim())];
+  writeFileSync(join(dir, 'processes.json'), JSON.stringify({ pids: startedPids, socket }));
   tmux('pipe-pane', '-o', '-t', 'fixture', `cat >> ${quote(join(dir, 'raw.ansi'))}`);
   const api = {
     dir, start, tmux,
@@ -82,7 +84,13 @@ export async function tui(dir, options = {}) {
       return screen;
     },
     async stop() {
-      const pids = tmux('list-panes', '-t', 'fixture', '-F', '#{pane_pid}').trim().split('\n').map(Number);
+      let pids = [...startedPids];
+      try { pids.push(...tmux('list-panes', '-t', 'fixture', '-F', '#{pane_pid}').trim().split('\n').map(Number)); } catch {}
+      const tree = spawnSync('ps', ['-axo', 'pid=,ppid='], { encoding: 'utf8' }).stdout.trim().split('\n').map(line => line.trim().split(/\s+/).map(Number));
+      for (let changed = true; changed;) {
+        changed = false;
+        for (const [pid, parent] of tree) if (pids.includes(parent) && !pids.includes(pid)) { pids.push(pid); changed = true; }
+      }
       try { await api.text('/quit'); await waitFor(() => existsSync(join(dir, 'exit-code')), 'CLI exit', 5000); }
       catch { try { tmux('send-keys', '-t', 'fixture', 'C-c', 'C-c'); } catch {} }
       try { tmux('kill-server'); } catch {}
@@ -98,7 +106,7 @@ export async function tui(dir, options = {}) {
   };
   try { await waitFor(() => events(dir).some(event => event.event === 'ready'), 'TUI ready'); }
   catch (error) { await api.capture('startup-failure'); await api.stop(); throw error; }
-  try { await waitFor(() => { const screen = tmux('capture-pane', '-p', '-t', 'fixture'); return (screen.includes('fixture-model') || screen.includes('deepseek-chat')) && screen.includes('────'); }, 'editor ready'); }
+  try { await waitFor(() => { const screen = tmux('capture-pane', '-p', '-t', 'fixture'); return (screen.includes('fixture-model') || screen.includes('deepseek-chat') || (options.readyText && screen.includes(options.readyText))) && screen.includes('────'); }, 'editor ready'); }
   catch (error) { await api.capture('editor-failure'); await api.stop(); throw error; }
   api.readyMs = performance.now() - start;
   if (options.captureReady !== false) await api.capture('ready');

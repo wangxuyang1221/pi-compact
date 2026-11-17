@@ -1,0 +1,18 @@
+{"size":1000,"pairs":5}
+{"size":10000,"pairs":5}
+{"path":"/Users/wangxuyang/.t3/worktrees/compact/t3-e8176d5e-a97eb3516a907f3c/artifacts/P2-reconstruction/perf/1794822884429","bySize":[{"size":1000,"baseline":{"count":5,"min":1.029042000000004,"median":1.1213330000000497,"p95":1.424792000000025,"max":1.424792000000025},"head":{"count":5,"min":2.3354170000000636,"median":2.3526249999999322,"p95":3.156708000000094,"max":3.156708000000094},"added":{"count":5,"min":0.9729579999998919,"median":1.214084000000014,"p95":2.12766600000009,"max":2.12766600000009}},{"size":10000,"baseline":{"count":5,"min":4.826042999999913,"median":5.725416999999993,"p95":6.421541999999931,"max":6.421541999999931},"head":{"count":5,"min":13.291708999999969,"median":13.549083000000223,"p95":16.29720900000018,"max":16.29720900000018},"added":{"count":5,"min":7.51420799999994,"median":7.883167000000185,"p95":10.386625000000208,"max":10.386625000000208}}],"pass":false}
+node:internal/modules/run_main:123
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: local boundary budget
+    at file:///Users/wangxuyang/.t3/worktrees/compact/t3-e8176d5e-a97eb3516a907f3c/scripts/verify-p2-reconstruction-perf.mjs:52:112 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
+
+Node.js v22.22.2

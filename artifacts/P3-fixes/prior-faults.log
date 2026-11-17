@@ -1,0 +1,5 @@
+{"kind":"partial","pass":true,"dir":"/Users/wangxuyang/Code/codex/pstack/compact/artifacts/P3/faults/1794825750138/partial","prior":"949855f8"}
+{"kind":"fsync","pass":true,"dir":"/Users/wangxuyang/Code/codex/pstack/compact/artifacts/P3/faults/1794825750138/fsync","prior":"ac6fa47a"}
+{"kind":"idle-rename","pass":true,"dir":"/Users/wangxuyang/Code/codex/pstack/compact/artifacts/P3/faults/1794825750138/idle-rename","prior":"51f38034"}
+{"kind":"commit-unlink","pass":true,"dir":"/Users/wangxuyang/Code/codex/pstack/compact/artifacts/P3/faults/1794825750138/commit-unlink","prior":"0f7f6fd2"}
+{"kind":"kill","pass":true,"dir":"/Users/wangxuyang/Code/codex/pstack/compact/artifacts/P3/faults/1794825750138/kill","prior":"651ca0cb"}

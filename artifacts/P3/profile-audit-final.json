@@ -1,0 +1,72 @@
+{
+  "dir": "/Users/wangxuyang/.t3/worktrees/compact/t3-e8176d5e-a97eb3516a907f3c/artifacts/P3/perf/1794823557882/0-head",
+  "profile": "control.json.cpuprofile",
+  "periodUs": 130375,
+  "samples": 33,
+  "topSelfMicroseconds": [
+    [
+      "post node:inspector:117",
+      64209
+    ],
+    [
+      "fsync :-1",
+      11375
+    ],
+    [
+      "fsync :-1",
+      9334
+    ],
+    [
+      "fsync :-1",
+      9000
+    ],
+    [
+      "fsync :-1",
+      4500
+    ],
+    [
+      "fsync :-1",
+      4041
+    ],
+    [
+      "note file:///Users/wangxuyang/.t3/worktrees/compact/t3-e8176d5e-a97eb3516a907f3c/scripts/p3/preload.mjs:4",
+      2542
+    ],
+    [
+      " file:///Users/wangxuyang/Library/pnpm/store/v11/links/@earendil-works/pi-coding-agent/1.5.2/643b01c0aa78c8ef11bcca81208b3bcdf7c0b473aa9432569290180e541a3aca/node_modules/@earendil-works/pi-coding-agent/dist/bundle/chunks/openai-codex-responses-TEQRB65N.js:1",
+      2541
+    ],
+    [
+      "digest file:///Users/wangxuyang/.t3/worktrees/compact/t3-e8176d5e-a97eb3516a907f3c/src/checkpoint.ts:14",
+      2500
+    ],
+    [
+      "digest file:///Users/wangxuyang/.t3/worktrees/compact/t3-e8176d5e-a97eb3516a907f3c/src/checkpoint.ts:14",
+      2500
+    ],
+    [
+      "compileSourceTextModule node:internal/modules/esm/utils:343",
+      2417
+    ],
+    [
+      "processTicksAndRejections node:internal/process/task_queues:70",
+      1292
+    ],
+    [
+      " file:///Users/wangxuyang/Library/pnpm/store/v11/links/@earendil-works/pi-coding-agent/1.5.2/643b01c0aa78c8ef11bcca81208b3bcdf7c0b473aa9432569290180e541a3aca/node_modules/@earendil-works/pi-coding-agent/dist/bundle/chunks/chunk-VEJDBY3O.js:1",
+      1292
+    ],
+    [
+      "codexAccess file:///Users/wangxuyang/.t3/worktrees/compact/t3-e8176d5e-a97eb3516a907f3c/src/codex/compact.ts:8",
+      1291
+    ],
+    [
+      "prepareCompaction file:///Users/wangxuyang/Library/pnpm/store/v11/links/@earendil-works/pi-coding-agent/1.5.2/643b01c0aa78c8ef11bcca81208b3bcdf7c0b473aa9432569290180e541a3aca/node_modules/@earendil-works/pi-coding-agent/dist/bundle/chunks/chunk-VEJDBY3O.js:625",
+      1250
+    ],
+    [
+      "normalizeString node:path:92",
+      1250
+    ]
+  ]
+}

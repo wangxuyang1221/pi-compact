@@ -1,0 +1,30 @@
+import assert from 'node:assert/strict';
+import { writeFileSync, mkdirSync, readFileSync } from 'node:fs';
+import { join } from 'node:path';
+import { execFileSync } from 'node:child_process';
+import { root, cli, sourceHashes } from './fixture/runtime.mjs';
+import { options, entries } from './p3/common.mjs';
+const pairs=Number(process.env.P3_PAIRS??30);
+const base=join(root,'artifacts/P3/perf',String(Date.now()));mkdirSync(base,{recursive:true});
+const rows=[];
+const source=sourceHashes();
+writeFileSync(join(base,'method.json'),JSON.stringify({claim:'Local protocol processing p95 <= 50ms; fixture success to actual continuation p95 <= 500ms; remote success has zero native requests.',pairs,bytes:1024*1024,alternation:'baseline,head',measurement:'summary function entry through awaited result, excluding fixture fetch execution; includes product serialization and stream parsing. Prepare and commit spans separately reported. Startup and disk seeding excluded.',source,load:execFileSync('uptime',{encoding:'utf8'}),cores:execFileSync('sysctl',['-n','hw.ncpu'],{encoding:'utf8'})},null,2));
+for(let index=0;index<pairs;index++)for(const variant of ['baseline','head']) {
+  const dir=join(base,`${index}-${variant}`);
+  const result=await cli(dir,{...options,variant,extraEnv:{...options.extraEnv,PI_P3_PERF:'1',...(process.env.P3_PROFILE?{P3_PROFILE:'1'}: {})},configure(dir){options.configure(dir);const file=join(dir,'agent/models.json');const config=JSON.parse(readFileSync(file));config.providers['openai-codex'].models[0].contextWindow=1048576;writeFileSync(file,JSON.stringify(config));}},'CURRENT_INPUT_MARKER perf continue');
+  const events=result.events;
+  const get=name=>events.filter(e=>e.event===name);
+  const summary=get('summary-span')[0];
+  const beforeEnd=events.slice(0,events.findIndex(e=>e.event==='summary-span'));
+  const transport=beforeEnd.filter(e=>e.event==='transport-span').reduce((sum,e)=>sum+e.ms,0);
+  const start=get('compaction_start')[0];const prepared=get('native-prepare')[0];const committed=get('compaction_end')[0];
+  const success=get(variant==='head'?'remote-fixture-success':'fixture-success')[0];const normal=get('normal-request')[0];
+  const checkpoints=entries(dir).filter(e=>e.type==='compaction');
+  const pass=result.code===0&&get('seed')[0]?.size===1048576&&get('normal-request').length===1&&get('network-blocked').length===0&&checkpoints.length===1&&!!committed?.success&&get('native-request').length===(variant==='head'?0:1)&&get('remote-request').length===(variant==='head'?1:0);
+  const row={index,variant,dir,pass,pid:result.pid,localMs:summary?.ms-transport,prepareMs:prepared?.at-start?.at,commitMs:committed?.at-summary?.at,resumeMs:normal?.at-success?.at,totalCompactionMs:committed?.at-start?.at,rssKiB:summary?.rss,wallMs:result.duration,source:sourceHashes()};
+  rows.push(row);writeFileSync(join(base,'samples.json'),JSON.stringify(rows,null,2));console.log(JSON.stringify({...row,source:undefined}));assert(pass,'Real performance sample performed required work');
+}
+const stats=values=>{const s=values.sort((a,b)=>a-b);return{n:s.length,median:s[Math.floor(s.length/2)],p95:s[Math.ceil(s.length*.95)-1],min:s[0],max:s.at(-1)}};
+const summary=Object.fromEntries(['baseline','head'].map(variant=>[variant,Object.fromEntries(['localMs','prepareMs','commitMs','resumeMs','totalCompactionMs','rssKiB'].map(key=>[key,stats(rows.filter(r=>r.variant===variant).map(r=>r[key]))]))]));
+summary.pass=summary.head.localMs.p95<=50&&summary.head.resumeMs.p95<=500;
+writeFileSync(join(base,'summary.json'),JSON.stringify(summary,null,2));console.log(JSON.stringify({base,summary}));assert(summary.pass,'P3 performance budget');

@@ -1,0 +1,29 @@
+
+> pi-compact@0.1.0 verify:p3 /Users/wangxuyang/.t3/worktrees/compact/t3-e8176d5e-a97eb3516a907f3c
+> node --import=./scripts/fixture/relative-socket.mjs scripts/verify-p3.mjs
+
+{"lane":1,"pass":true,"dir":"/Users/wangxuyang/.t3/worktrees/compact/t3-e8176d5e-a97eb3516a907f3c/artifacts/P3/runs/1794823222446/lane-1","remote":1,"native":0,"normal":1}
+{"lane":2,"pass":true,"dir":"/Users/wangxuyang/.t3/worktrees/compact/t3-e8176d5e-a97eb3516a907f3c/artifacts/P3/runs/1794823222446/lane-2","remote":1,"native":0,"normal":1}
+{"lane":3,"pass":true,"dir":"/Users/wangxuyang/.t3/worktrees/compact/t3-e8176d5e-a97eb3516a907f3c/artifacts/P3/runs/1794823222446/lane-3","remote":1,"native":1,"normal":1}
+{"lane":4,"pass":true,"dir":"/Users/wangxuyang/.t3/worktrees/compact/t3-e8176d5e-a97eb3516a907f3c/artifacts/P3/runs/1794823222446/lane-4","remote":1,"native":1,"normal":0}
+{"lane":5,"pass":true,"dir":"/Users/wangxuyang/.t3/worktrees/compact/t3-e8176d5e-a97eb3516a907f3c/artifacts/P3/runs/1794823222446/lane-5","remote":0,"native":1,"normal":1}
+{"lane":6,"pass":true,"dir":"/Users/wangxuyang/.t3/worktrees/compact/t3-e8176d5e-a97eb3516a907f3c/artifacts/P3/runs/1794823222446/lane-6","remote":1,"native":1,"normal":1}
+{"lane":7,"pass":true,"dir":"/Users/wangxuyang/.t3/worktrees/compact/t3-e8176d5e-a97eb3516a907f3c/artifacts/P3/runs/1794823222446/lane-7","remote":2,"native":0,"normal":1}
+{"lane":8,"pass":true,"dir":"/Users/wangxuyang/.t3/worktrees/compact/t3-e8176d5e-a97eb3516a907f3c/artifacts/P3/runs/1794823222446/lane-8","remote":2,"native":1,"normal":1}
+{"lane":9,"pass":true,"dir":"/Users/wangxuyang/.t3/worktrees/compact/t3-e8176d5e-a97eb3516a907f3c/artifacts/P3/runs/1794823222446/lane-9","remote":1,"native":0,"normal":0}
+{"kind":"native-baseline","pass":true,"dir":"/Users/wangxuyang/.t3/worktrees/compact/t3-e8176d5e-a97eb3516a907f3c/artifacts/P3/edges/1794823243544/native-baseline","remote":0,"native":1,"normal":1}
+{"kind":"default-disabled","pass":true,"dir":"/Users/wangxuyang/.t3/worktrees/compact/t3-e8176d5e-a97eb3516a907f3c/artifacts/P3/edges/1794823243544/default-disabled","remote":0,"native":1,"normal":1}
+{"kind":"bad-output","pass":true,"dir":"/Users/wangxuyang/.t3/worktrees/compact/t3-e8176d5e-a97eb3516a907f3c/artifacts/P3/edges/1794823243544/bad-output","remote":1,"native":1,"normal":1}
+{"kind":"returned-tools","pass":true,"dir":"/Users/wangxuyang/.t3/worktrees/compact/t3-e8176d5e-a97eb3516a907f3c/artifacts/P3/edges/1794823243544/returned-tools","remote":1,"native":0,"normal":1}
+{"kind":"edit","pass":true,"dir":"/Users/wangxuyang/.t3/worktrees/compact/t3-e8176d5e-a97eb3516a907f3c/artifacts/P3/edges/1794823243544/edit","remote":1,"native":1,"normal":1}
+{"kind":"delete","pass":true,"dir":"/Users/wangxuyang/.t3/worktrees/compact/t3-e8176d5e-a97eb3516a907f3c/artifacts/P3/edges/1794823243544/delete","remote":1,"native":1,"normal":1}
+{"kind":"branch","pass":true,"dir":"/Users/wangxuyang/.t3/worktrees/compact/t3-e8176d5e-a97eb3516a907f3c/artifacts/P3/edges/1794823243544/branch","remote":1,"native":0,"normal":1}
+{"kind":"large-fallback","pass":true,"dir":"/Users/wangxuyang/.t3/worktrees/compact/t3-e8176d5e-a97eb3516a907f3c/artifacts/P3/edges/1794823243544/large-fallback","remote":1,"native":4,"normal":1}
+{"kind":"auto-remote","pass":true,"dir":"/Users/wangxuyang/.t3/worktrees/compact/t3-e8176d5e-a97eb3516a907f3c/artifacts/P3/edges/1794823243544/auto-remote","remote":2,"native":0,"normal":1}
+{"kind":"auto-fallback","pass":true,"dir":"/Users/wangxuyang/.t3/worktrees/compact/t3-e8176d5e-a97eb3516a907f3c/artifacts/P3/edges/1794823243544/auto-fallback","remote":2,"native":3,"normal":1}
+{"kind":"tools","pass":true,"dir":"/Users/wangxuyang/.t3/worktrees/compact/t3-e8176d5e-a97eb3516a907f3c/artifacts/P3/edges/1794823243544/tools","remote":2,"native":0,"normal":2}
+{"kind":"partial","pass":true,"dir":"/Users/wangxuyang/.t3/worktrees/compact/t3-e8176d5e-a97eb3516a907f3c/artifacts/P3/faults/1794823271649/partial","prior":"101939b1"}
+{"kind":"fsync","pass":true,"dir":"/Users/wangxuyang/.t3/worktrees/compact/t3-e8176d5e-a97eb3516a907f3c/artifacts/P3/faults/1794823271649/fsync","prior":"5b0f2757"}
+{"kind":"idle-rename","pass":true,"dir":"/Users/wangxuyang/.t3/worktrees/compact/t3-e8176d5e-a97eb3516a907f3c/artifacts/P3/faults/1794823271649/idle-rename","prior":"4589fdf3"}
+{"kind":"commit-unlink","pass":true,"dir":"/Users/wangxuyang/.t3/worktrees/compact/t3-e8176d5e-a97eb3516a907f3c/artifacts/P3/faults/1794823271649/commit-unlink","prior":"c242f8cc"}
+{"kind":"kill","pass":true,"dir":"/Users/wangxuyang/.t3/worktrees/compact/t3-e8176d5e-a97eb3516a907f3c/artifacts/P3/faults/1794823271649/kill","prior":"c2148f3b"}

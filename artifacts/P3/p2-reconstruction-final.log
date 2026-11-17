@@ -1,0 +1,19 @@
+{"kind":"duplicate","status":"PASS","native":1,"normal":1,"checkpoints":1,"journal":{"kind":"idle","operationId":"351e7532-5c7f-4efa-a6f2-af4011c5d56e"}}
+{"kind":"tool-modify","status":"PASS","native":1,"normal":1,"checkpoints":1,"journal":{"kind":"idle","operationId":"16968a88-04b5-4a07-acda-ef3fc5561b00"}}
+{"kind":"modify-and-copy","status":"PASS","native":1,"normal":1,"checkpoints":1,"journal":{"kind":"idle","operationId":"89321e67-db16-4d9e-a873-7671e27935e7"}}
+{"kind":"clone","status":"PASS","native":1,"normal":1,"checkpoints":1,"journal":{"kind":"idle","operationId":"9e288eed-139b-4572-aa22-52d60f917149"}}
+{"kind":"clone-duplicate","status":"PASS","native":1,"normal":1,"checkpoints":1,"journal":{"kind":"idle","operationId":"0cbe0f3f-e29e-407d-9f1c-f3267e6606ab"}}
+{"kind":"same-reference","status":"PASS","native":1,"normal":1,"checkpoints":1,"journal":{"kind":"idle","operationId":"84333255-32d2-4688-906a-b6823881abde"}}
+{"kind":"in-place","status":"PASS","native":1,"normal":1,"checkpoints":1,"journal":{"kind":"idle","operationId":"3bd351ad-134e-4374-9083-e7493a6e7fb4"}}
+{"kind":"in-place-array","status":"PASS","native":1,"normal":1,"checkpoints":1,"journal":{"kind":"idle","operationId":"cb4a872e-ede5-4bbf-80b2-7b5c73a392b2"}}
+{"kind":"multi-tool","status":"PASS","native":1,"normal":1,"checkpoints":1,"journal":{"kind":"idle","operationId":"b4dbd3ae-2f4b-44ea-81f0-a0efb4bc6d6f"}}
+{"kind":"tool-call-modify","status":"PASS","native":1,"normal":1,"checkpoints":1,"journal":{"kind":"idle","operationId":"7ba30608-b4a0-4c63-83ff-9ca62fe088f4"}}
+{"kind":"tool-reorder","status":"PASS","native":1,"normal":1,"checkpoints":1,"journal":{"kind":"idle","operationId":"80929e93-7bcb-43e2-896b-34d917b7e51c"}}
+{"kind":"modify","status":"PASS","native":1,"normal":1,"checkpoints":1,"journal":{"kind":"idle","operationId":"d3f8c9a2-f6b8-45e2-964e-b6ccd8ec6425"}}
+{"kind":"remove","status":"PASS","native":1,"normal":1,"checkpoints":1,"journal":{"kind":"idle","operationId":"55d6216d-3839-494b-9e38-4d018966c7b4"}}
+{"kind":"reorder","status":"PASS","native":1,"normal":1,"checkpoints":1,"journal":{"kind":"idle","operationId":"5e3515cb-a1c6-4105-ad27-f9fbdd932924"}}
+{"kind":"system","status":"PASS","native":1,"normal":1,"checkpoints":1,"journal":{"kind":"idle","operationId":"ecc4df7c-5c87-405a-8675-6e2c543fdd21"}}
+{"kind":"retained-delete","status":"PASS","native":1,"normal":1,"checkpoints":1,"journal":{"kind":"idle","operationId":"7278fbc2-2e54-4131-8ef0-1990600455b2"}}
+{"kind":"cross-cut","status":"PASS","native":1,"normal":1,"checkpoints":1,"journal":{"kind":"idle","operationId":"6b50ddcd-a67b-40b9-acee-152adefe2db7"}}
+{"kind":"tool-capacity","status":"PASS","native":1,"normal":0,"checkpoints":1,"journal":{"kind":"blocked","message":"Prepared request exceeds the model input capacity."}}
+/Users/wangxuyang/.t3/worktrees/compact/t3-e8176d5e-a97eb3516a907f3c/artifacts/P2-reconstruction/run-1794823657889

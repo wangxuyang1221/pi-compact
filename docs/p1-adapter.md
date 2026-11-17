@@ -18,7 +18,7 @@ Post-run and before-settle continuation stop while blocked. Direct `agent.contin
 
 An adjacent `*.pi-compact-state.json` file records operation start before summarization. Replacement uses a temporary file, file fsync, rename, and directory fsync. A running or blocked record restores as blocked. Native checkpoint append remains a single call. The adapter reads the exact entry ID back from the JSONL file and calls fsync before accepting it.
 
-Native write errors keep the controller blocked. This adapter does not repair partial native JSONL writes or implement the P3 checkpoint transaction. A damaged native file needs inspection before recovery. In-memory sessions are rejected because they cannot retain the failure barrier after restart.
+Native write errors keep the controller blocked. P3 adds pending-append recovery for managed checkpoint writes. See [checkpoint durability](p3-checkpoints.md). Unrelated damaged native files still require inspection. In-memory sessions are rejected because they cannot retain the failure barrier after restart.
 
 `block()` returns its persistence result. If the blocked record cannot be saved, the result and pause message say whether a previously confirmed non-idle record still protects recovery. Without that record, the current instance stays blocked but restart protection is not guaranteed. A failed attempt to save idle invalidates the prior durability assumption because the replacement may already have happened.
 
