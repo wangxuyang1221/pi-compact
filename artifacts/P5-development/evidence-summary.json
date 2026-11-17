@@ -1,0 +1,344 @@
+{
+  "verdict": "PASS development candidate on P1; final P5 pending P4",
+  "paths": {
+    "live": "/Users/wangxuyang/.t3/worktrees/compact/t3-41b26b20-96a970aec24e1a21/artifacts/P5-development/runs/1794811889111",
+    "perf": "/Users/wangxuyang/.t3/worktrees/compact/t3-41b26b20-96a970aec24e1a21/artifacts/P5-development/perf/1794811890413",
+    "pack": "/Users/wangxuyang/.t3/worktrees/compact/t3-41b26b20-96a970aec24e1a21/artifacts/P5-development/package/1794811891503",
+    "demo": "/Users/wangxuyang/.t3/worktrees/compact/t3-41b26b20-96a970aec24e1a21/artifacts/P5-development/demo/1794811892804",
+    "disposal": "/Users/wangxuyang/.t3/worktrees/compact/t3-41b26b20-96a970aec24e1a21/artifacts/P5-development/disposal/1794811805601",
+    "p1Fixes": "/Users/wangxuyang/.t3/worktrees/compact/t3-41b26b20-96a970aec24e1a21/artifacts/P1-fixes/runs/1794811894052",
+    "p1Scope": "/Users/wangxuyang/.t3/worktrees/compact/t3-41b26b20-96a970aec24e1a21/artifacts/P1-scope/runs/1794811909376"
+  },
+  "product": {
+    "src/index.ts": "2b718f790082b3788176d401722c4b9f70877c3a62531c3a756f0e2419a904bf",
+    "src/state.ts": "10c7aad13e9da10bf54bba73edf33d61736f75417f8143c10c20538b3cc749ab",
+    "src/pi-adapter/compatibility.ts": "2a0c72e13b2e510b21b0812fa3265caf15289f86928e6020dc05f80f28ebf3f9",
+    "src/pi-adapter/journal.ts": "0fab09996308920b0757576769849533e9766ce9d99bdaa6b4ac7bee2ec17a67",
+    "src/pi-adapter/renderer.ts": "b269020867c4c800528b01fa39f7ef0dbf872f14d2e115508b25f5ad6d637a22",
+    "src/pi-adapter/session.ts": "696ed636e1af38f5ec71f4daf74ebd331992fb840cb86752b77759f75bd565c3",
+    "src/ui/compaction-divider.ts": "78830299265c21847db006231aa4b14210a1d34f038838a82332c1c62ec112e0"
+  },
+  "scenarios": [
+    {
+      "name": "baseline",
+      "pass": true
+    },
+    {
+      "name": "manual",
+      "pass": true
+    },
+    {
+      "name": "automatic",
+      "pass": true
+    },
+    {
+      "name": "failure",
+      "pass": true
+    }
+  ],
+  "performance": {
+    "groups": [
+      {
+        "width": 20,
+        "operation": "render",
+        "addedP95MedianMs": 0.007626000000072963,
+        "minMs": 0.006833000000028733,
+        "maxMs": 0.015582999999992353,
+        "nativeP95Ms": [
+          0.0027080000000978544,
+          0.001291999999921245,
+          0.0009169999999585343,
+          0.00045799999998052954,
+          0.00037500000007639755
+        ],
+        "headP95Ms": [
+          0.018875000000093678,
+          0.010209000000031665,
+          0.008249999999975444,
+          0.007749999999987267,
+          0.007166999999981272
+        ]
+      },
+      {
+        "width": 20,
+        "operation": "resize",
+        "addedP95MedianMs": -0.005917000000067674,
+        "minMs": -0.006540999999970154,
+        "maxMs": -0.005583000000001448,
+        "nativeP95Ms": [
+          0.032792000000085864,
+          0.03212499999995089,
+          0.016666999999984,
+          0.016041999999970358,
+          0.016666999999984
+        ],
+        "headP95Ms": [
+          0.018583999999918888,
+          0.017958000000021457,
+          0.008832999999981439,
+          0.008042000000045846,
+          0.009041999999908512
+        ]
+      },
+      {
+        "width": 90,
+        "operation": "render",
+        "addedP95MedianMs": 0.0004170000000840446,
+        "minMs": 0.00024999999993724487,
+        "maxMs": 0.0007919999999330685,
+        "nativeP95Ms": [
+          0.0006669999999076026,
+          0.0006670000000212895,
+          0.0006670000000212895,
+          0.0006250000000136424,
+          0.0003329999999550637
+        ],
+        "headP95Ms": [
+          0.0013750000000527507,
+          0.0012500000000272848,
+          0.001042000000097687,
+          0.0009579999999687061,
+          0.0004999999999881766
+        ]
+      },
+      {
+        "width": 90,
+        "operation": "resize",
+        "addedP95MedianMs": -0.006749000000013439,
+        "minMs": -0.006834000000139895,
+        "maxMs": -0.006582999999864114,
+        "nativeP95Ms": [
+          0.016208000000005995,
+          0.009125000000040018,
+          0.00941699999998491,
+          0.009209000000055312,
+          0.016875000000027285
+        ],
+        "headP95Ms": [
+          0.003375000000005457,
+          0.0015840000000935106,
+          0.0016249999999899956,
+          0.0015839999999798238,
+          0.003166000000078384
+        ]
+      },
+      {
+        "width": 120,
+        "operation": "render",
+        "addedP95MedianMs": 0.0002919999999448919,
+        "minMs": 0.00020900000004075991,
+        "maxMs": 0.0003749999999627107,
+        "nativeP95Ms": [
+          0.0005419999999958236,
+          0.0003329999999550637,
+          0.0005419999999958236,
+          0.0005419999999958236,
+          0.0005419999999958236
+        ],
+        "headP95Ms": [
+          0.0008750000000645741,
+          0.0004999999999881766,
+          0.0009159999999610591,
+          0.0009159999999610591,
+          0.0009159999999610591
+        ]
+      },
+      {
+        "width": 120,
+        "operation": "resize",
+        "addedP95MedianMs": -0.007083999999963453,
+        "minMs": -0.007416000000034728,
+        "maxMs": -0.007000000000061846,
+        "nativeP95Ms": [
+          0.010834000000045307,
+          0.01737500000001546,
+          0.016291000000023814,
+          0.018583999999918888,
+          0.01741699999990942
+        ],
+        "headP95Ms": [
+          0.0019170000000485743,
+          0.003249999999979991,
+          0.0028750000000172804,
+          0.003291999999987638,
+          0.0028750000000172804
+        ]
+      }
+    ],
+    "firstFrames": [
+      {
+        "lane": "manual",
+        "ms": 5.451165999999944
+      },
+      {
+        "lane": "automatic",
+        "ms": 32.65908300000001
+      },
+      {
+        "lane": "perf-measured",
+        "ms": 3.375959000000023
+      }
+    ],
+    "limiter": "synchronous ANSI width/truncation, native layout invalidation and theme formatting; see profile-summary.json. Assertions are outside timed regions."
+  },
+  "package": {
+    "sha256": "4c38ad6a6030f8112ac90cd353671b209b4032bad1343ed604854ee06f1b6d7d",
+    "tgz": "artifacts/P5-development/package/1794811891503/pi-compact-0.1.0.tgz",
+    "files": [
+      "GLOSSARY.md",
+      "README.md",
+      "package.json",
+      "docs/design.md",
+      "docs/p1-adapter.md",
+      "docs/p5-renderer.md",
+      "docs/roadmap.md",
+      "src/index.ts",
+      "src/state.ts",
+      "src/pi-adapter/compatibility.ts",
+      "src/pi-adapter/journal.ts",
+      "src/pi-adapter/renderer.ts",
+      "src/pi-adapter/session.ts",
+      "src/ui/compaction-divider.ts"
+    ]
+  },
+  "video": {
+    "durationSeconds": 36,
+    "frames": 72,
+    "source": "Real Pi TUI captured via tmux every 500ms; ANSI cells rendered with Menlo16; no OS window capture."
+  },
+  "cleanup": {
+    "checkedPids": [
+      94854,
+      94188,
+      31007,
+      64740,
+      76422,
+      27053,
+      26541,
+      65787,
+      65150,
+      4189,
+      3403,
+      94113,
+      93245,
+      28243,
+      28559,
+      1570,
+      2872,
+      91727,
+      93221,
+      95966,
+      96252,
+      8299,
+      6258,
+      18025,
+      17384,
+      6659,
+      41765,
+      39717,
+      42664,
+      42276,
+      40172,
+      3474,
+      494,
+      5605,
+      4484,
+      953,
+      93722,
+      91166,
+      95364,
+      94584,
+      91558,
+      97731,
+      95431,
+      95767,
+      95883,
+      95046,
+      97258,
+      96062,
+      98211,
+      98718,
+      98812,
+      98491,
+      98582,
+      94844,
+      94175,
+      27041,
+      26518,
+      65775,
+      65127,
+      4154,
+      3391,
+      94101,
+      93230,
+      28234,
+      28550,
+      1556,
+      2859,
+      91714,
+      93197,
+      95957,
+      8289,
+      6249,
+      18016,
+      17374,
+      6648,
+      41756,
+      39708,
+      42655,
+      42267,
+      40158,
+      3462,
+      482,
+      5590,
+      4473,
+      941,
+      93707,
+      91154,
+      95352,
+      94560,
+      91545,
+      97246,
+      96049,
+      94151,
+      92811,
+      91640,
+      91133
+    ],
+    "alive": [],
+    "sockets": [],
+    "listenerCheck": {
+      "status": 1,
+      "stdout": "",
+      "stderr": ""
+    },
+    "tmuxCleanups": 39,
+    "rootProcessMatches": []
+  },
+  "directDispose": {
+    "at": 394.308208,
+    "event": "p5-disposed",
+    "uiRegistryReleased": true,
+    "safetyRegistryReleased": true,
+    "addRestored": true,
+    "disposeRestored": true,
+    "lockReleased": true
+  },
+  "networkBlocked": 0,
+  "protectedFilesUnchanged": [
+    "src/pi-adapter/session.ts",
+    "src/pi-adapter/journal.ts",
+    "src/pi-adapter/compatibility.ts",
+    "src/state.ts",
+    "docs/design.md",
+    "docs/roadmap.md",
+    "docs/p1-adapter.md",
+    "tests/adapter.test.ts",
+    "tests/persistence.test.ts",
+    "scripts/fixture",
+    "scripts/regressions",
+    "scripts/verify-p1-fixes.mjs",
+    "scripts/verify-p1-scope.mjs",
+    "scripts/verify-perf.mjs"
+  ]
+}

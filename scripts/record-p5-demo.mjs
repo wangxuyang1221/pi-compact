@@ -1,0 +1,50 @@
+import './fixture/relative-socket.mjs';
+import assert from 'node:assert/strict';
+import { mkdirSync, writeFileSync } from 'node:fs';
+import { join } from 'node:path';
+import { execFileSync } from 'node:child_process';
+import { tui, root, waitFor, provenance } from './fixture/runtime.mjs';
+const dir = join(root, 'artifacts/P5-development/demo', String(Date.now()));
+mkdirSync(dir, { recursive: true });
+writeFileSync(join(dir, 'runner.json'), JSON.stringify({ pid: process.pid, started: new Date().toISOString() }));
+const t = await tui(dir, { observer: false, extensions: [join(root, 'scripts/p5/observer.ts')], seed: 800, captureReady: false });
+let theme = 'dark';
+let frame = 0;
+const started = performance.now();
+const actions = [];
+const record = () => {
+  const cols = Number(t.tmux('display-message', '-p', '-t', 'fixture', '#{pane_width}').trim());
+  const record = { at: performance.now() - started, cols, rows: 40, theme, ansi: t.tmux('capture-pane', '-e', '-p', '-t', 'fixture') };
+  writeFileSync(join(dir, `frame-${String(frame++).padStart(5, '0')}.json`), JSON.stringify(record));
+};
+const hold = async ms => { actions.push({ at: performance.now() - started, holdMs: ms }); await new Promise(resolve => setTimeout(resolve, ms)); };
+const text = async command => { actions.push({ at: performance.now() - started, command }); await t.text(command); };
+const resize = async cols => {
+  actions.push({ at: performance.now() - started, cols });
+  t.tmux('resize-window', '-t', 'fixture', '-x', String(cols), '-y', '40');
+  await waitFor(() => t.tmux('capture-pane', '-p', '-t', 'fixture').split('\n').some(line => /^─+$/.test(line) && line.length === cols), 'resize frame');
+};
+await resize(90);
+record();
+const timer = setInterval(record, 500);
+try {
+  await hold(3000);
+  await text('/compact KEEP_CUSTOM_MARKER');
+  await waitFor(() => t.log().some(e => e.event === 'p5-first-frame'), 'compacted frame');
+  await hold(6000);
+  actions.push({ at: performance.now() - started, key: 'Ctrl+O' }); t.key('C-o');
+  await hold(6000);
+  actions.push({ at: performance.now() - started, key: 'Ctrl+O' }); t.key('C-o');
+  await hold(3000);
+  await resize(120); await hold(4000);
+  await resize(40); await hold(4000);
+  await resize(20); await hold(4000);
+  await resize(90);
+  await text('/p5-theme light'); theme = 'light'; await hold(5000);
+  assert.equal(t.log().filter(e => e.event === 'native-request').length, 1);
+  assert.equal(t.log().filter(e => e.event === 'normal-request').length, 0);
+} finally { clearInterval(timer); record(); await t.stop(); }
+writeFileSync(join(dir, 'recording.json'), JSON.stringify({ provenance, source: 'Real Pi TUI captured via tmux every 500ms; ANSI cells rendered with Menlo16; no OS window capture.', durationSeconds: frame / 2, actions, frames: frame }, null, 2));
+execFileSync('conda', ['run', '--no-capture-output', '-n', 'codex-py312', 'python', join(root, 'scripts/p5/render-capture.py'), '--video', dir]);
+execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-framerate', '2', '-i', join(dir, 'video-%05d.png'), '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-movflags', '+faststart', join(dir, 'demo.mp4')]);
+console.log(dir);

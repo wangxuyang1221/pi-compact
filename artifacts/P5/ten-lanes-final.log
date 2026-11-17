@@ -1,0 +1,16 @@
+
+> pi-compact@0.1.0 verify:p5 /Users/wangxuyang/.t3/worktrees/compact/t3-38da13e1-5924d01b0a94b17c
+> node scripts/verify-p5-development.mjs && node scripts/verify-p5-integrated.mjs
+
+{"name":"baseline","pass":true}
+{"name":"manual","pass":true}
+{"name":"automatic","pass":true}
+{"name":"failure","pass":true}
+/Users/wangxuyang/.t3/worktrees/compact/t3-38da13e1-5924d01b0a94b17c/artifacts/P5-development/runs/1794832578968
+{"name":"remote","pass":true,"path":"/Users/wangxuyang/.t3/worktrees/compact/t3-38da13e1-5924d01b0a94b17c/artifacts/P5/integrated/1794832590287/restored","firstFrames":[]}
+{"name":"fallback","pass":true,"path":"/Users/wangxuyang/.t3/worktrees/compact/t3-38da13e1-5924d01b0a94b17c/artifacts/P5/integrated/1794832590287/fallback","firstFrames":[{"at":531.450375,"event":"p5-first-frame","ms":5.656207999999992,"bytes":2595}]}
+{"name":"doublefail","pass":true,"path":"/Users/wangxuyang/.t3/worktrees/compact/t3-38da13e1-5924d01b0a94b17c/artifacts/P5/integrated/1794832590287/doublefail","firstFrames":[]}
+{"name":"remote-cancel","pass":true,"path":"/Users/wangxuyang/.t3/worktrees/compact/t3-38da13e1-5924d01b0a94b17c/artifacts/P5/integrated/1794832590287/remote-cancel","firstFrames":[]}
+{"name":"persist-fail","pass":true,"path":"/Users/wangxuyang/.t3/worktrees/compact/t3-38da13e1-5924d01b0a94b17c/artifacts/P5/integrated/1794832590287/persist-fail","firstFrames":[]}
+{"name":"migration","pass":true,"path":"/Users/wangxuyang/.t3/worktrees/compact/t3-38da13e1-5924d01b0a94b17c/artifacts/P5/integrated/1794832590287/migration","firstFrames":[{"at":489.52875,"event":"p5-first-frame","ms":5.525750000000016,"bytes":2595},{"at":2316.002458,"event":"p5-first-frame","ms":2.334124999999858,"bytes":2098}]}
+/Users/wangxuyang/.t3/worktrees/compact/t3-38da13e1-5924d01b0a94b17c/artifacts/P5/integrated/1794832590287

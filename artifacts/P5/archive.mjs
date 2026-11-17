@@ -1,0 +1,17 @@
+import fs from 'node:fs';
+import { execFileSync } from 'node:child_process';
+import { createHash } from 'node:crypto';
+const base = 'artifacts/P5';
+const exclusions = new Set(['audit-run.log', 'audit-final.log', 'audit-final2.log', 'archive-files.txt', 'archive.log', 'archive-final.log', 'archive-audit.json', 'archive-manifest.json', 'archive.json', 'evidence.tar.gz', 'evidence-files.json', 'DELIVERY.json', 'REPORT.md']);
+const candidates = execFileSync('git', ['ls-files', '--others', '--ignored', '--exclude-standard', '-z', 'artifacts'], { encoding: 'utf8', maxBuffer: 64 * 1024 * 1024 }).split('\0').filter(Boolean);
+const selected = candidates.filter(file => !file.endsWith('.tar.gz') && !file.includes('/tmp/') && !file.includes('/node_modules/') && fs.lstatSync(file).isFile() && !(file.startsWith(base + '/') && exclusions.has(file.slice(base.length + 1))));
+selected.push(base + '/audit-run.log', base + '/audit-final.log', base + '/audit-final2.log');
+const files = [...new Set(selected)].sort();
+const members = files.map(file => ({ file, size: fs.statSync(file).size, sha256: createHash('sha256').update(fs.readFileSync(file)).digest('hex') }));
+fs.writeFileSync(base + '/archive-manifest.json', JSON.stringify(members,null,2));
+fs.writeFileSync(base + '/evidence-files.json', JSON.stringify(files.filter(f => f !== base + '/cleanup.json'),null,2));
+fs.writeFileSync(base + '/archive-files.txt', files.join('\n') + '\n');
+execFileSync('tar', ['-czf', base + '/evidence.tar.gz', '-T', base + '/archive-files.txt'], { env: { ...process.env, COPYFILE_DISABLE: '1' } });
+const archive = fs.readFileSync(base + '/evidence.tar.gz');
+fs.writeFileSync(base + '/archive.json', JSON.stringify({ members: members.length, bytes: archive.length, sha256: createHash('sha256').update(archive).digest('hex'), excludes: 'Node compile caches, symlink aliases, current stdout, manifests, report and receipts. Closed red audit stdout is retained.' },null,2));
+console.log(JSON.stringify({ members: members.length, bytes: archive.length }));

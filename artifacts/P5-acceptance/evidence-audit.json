@@ -1,0 +1,212 @@
+{
+  "pass": true,
+  "productHashes": {
+    "src/checkpoint.ts": "cd724555f005ae2d1f939b1d9d9eedcd7db202a76431f866e1dd0d2921b696f9",
+    "src/index.ts": "2b718f790082b3788176d401722c4b9f70877c3a62531c3a756f0e2419a904bf",
+    "src/migration.ts": "19f81889473a8a37c0be55b0e3ab85f6ae08bfb06462998172ba1424a3e120b8",
+    "src/policy.ts": "6cef2b94edade4ae747a504f64f6a5a087311d8868cd3428cf800f6cebcea8b2",
+    "src/settings.ts": "690cb811c458dfe3af512ab025e18d726b0d75ddea8c97e38cd0155a186b96ad",
+    "src/state.ts": "10c7aad13e9da10bf54bba73edf33d61736f75417f8143c10c20538b3cc749ab",
+    "src/codex/compact.ts": "947a06e1a2d2b13207235c36d4d6db0215f2583cca4b2732264cc723a2635136",
+    "src/codex/wire.ts": "1102a310cafed43f811baf500cdb6d8485dfef500ad5c41bd691edaa44bd63b5",
+    "src/pi-adapter/compatibility.ts": "09c1fff3c7424a041c2b72faab02bb1b34d4e23c29b12ca302027d9556566475",
+    "src/pi-adapter/journal.ts": "0fab09996308920b0757576769849533e9766ce9d99bdaa6b4ac7bee2ec17a67",
+    "src/pi-adapter/reconstruction.ts": "1f98066ed24c2eb82fd24bab0f03528750160c56a74166e6b46b9e894118b55f",
+    "src/pi-adapter/renderer.ts": "9cdded4f21dc030904370b35b78eafd7a75d0e61b65c06dfb70f42d27c4baced",
+    "src/pi-adapter/session.ts": "46a90de9f095ffe89de163d7980a43805e4a7199c3dac1a12871161ca691f486",
+    "src/pi-adapter/transaction.ts": "1fb6a89da306aceb5b4857cb73d0344128047282d3a753bee71516a05bf25d73",
+    "src/ui/compaction-divider.ts": "78830299265c21847db006231aa4b14210a1d34f038838a82332c1c62ec112e0"
+  },
+  "runs": [
+    {
+      "key": "native",
+      "path": "/Users/wangxuyang/.t3/worktrees/compact/t3-6b169eac-575e28d02aa72a28/artifacts/P5-independent/owner-archive/artifacts/P5-development/runs/1794832578968"
+    },
+    {
+      "key": "integrated",
+      "path": "/Users/wangxuyang/.t3/worktrees/compact/t3-6b169eac-575e28d02aa72a28/artifacts/P5-independent/owner-archive/artifacts/P5/integrated/1794832590287"
+    },
+    {
+      "key": "lifecycle",
+      "path": "/Users/wangxuyang/.t3/worktrees/compact/t3-6b169eac-575e28d02aa72a28/artifacts/P5-independent/owner-archive/artifacts/P5/lifecycle/1794832605596"
+    },
+    {
+      "key": "symlink",
+      "path": "/Users/wangxuyang/.t3/worktrees/compact/t3-6b169eac-575e28d02aa72a28/artifacts/P5-independent/owner-archive/artifacts/P5-symlink-fix/runs/1794832603050"
+    },
+    {
+      "key": "pkg",
+      "path": "/Users/wangxuyang/.t3/worktrees/compact/t3-6b169eac-575e28d02aa72a28/artifacts/P5-independent/owner-archive/artifacts/P5-development/package/1794832609173"
+    },
+    {
+      "key": "packed",
+      "path": "/Users/wangxuyang/.t3/worktrees/compact/t3-6b169eac-575e28d02aa72a28/artifacts/P5-independent/owner-archive/artifacts/P5/integrated/1794832630931"
+    }
+  ],
+  "measurement": {
+    "rawSHA256": "f7b1b7551a9c8d40df65f6aaac4ee9504206dd90b32f64a5d8a664a3a255e88d",
+    "records": 30,
+    "checksum": 23367500,
+    "errors": 0,
+    "summary": [
+      {
+        "operation": "20 render",
+        "baselineP95": 0.0005840000000034706,
+        "headP95": 0.006541999999967629,
+        "pairedP95": {
+          "min": 0.004792000000065855,
+          "median": 0.006042000000036296,
+          "p95": 0.007748999999989792,
+          "max": 0.007748999999989792
+        }
+      },
+      {
+        "operation": "20 resize",
+        "baselineP95": 0.007958000000030552,
+        "headP95": 0.005832999999938693,
+        "pairedP95": {
+          "min": -0.0017080000000078144,
+          "median": -0.0016249999999899956,
+          "p95": -0.0014170000000603977,
+          "max": -0.0014170000000603977
+        }
+      },
+      {
+        "operation": "90 render",
+        "baselineP95": 0.00020900000004075991,
+        "headP95": 0.00037500000007639755,
+        "pairedP95": {
+          "min": 0.00016800000003058813,
+          "median": 0.00020800000004328467,
+          "p95": 0.00029200000005857873,
+          "max": 0.00029200000005857873
+        }
+      },
+      {
+        "operation": "90 resize",
+        "baselineP95": 0.0048330000000760265,
+        "headP95": 0.001125000000001819,
+        "pairedP95": {
+          "min": -0.003459000000020751,
+          "median": -0.0034160000000156288,
+          "p95": -0.003291999999987638,
+          "max": -0.003291999999987638
+        }
+      },
+      {
+        "operation": "120 render",
+        "baselineP95": 0.00020900000004075991,
+        "headP95": 0.00033400000006622577,
+        "pairedP95": {
+          "min": 0.00016700000003311288,
+          "median": 0.00016700000014679972,
+          "p95": 0.00016800000003058813,
+          "max": 0.00016800000003058813
+        }
+      },
+      {
+        "operation": "120 resize",
+        "baselineP95": 0.004874999999969987,
+        "headP95": 0.0010419999999840002,
+        "pairedP95": {
+          "min": -0.003582999999935055,
+          "median": -0.00354200000003857,
+          "p95": -0.003499999999917236,
+          "max": -0.003499999999917236
+        }
+      }
+    ],
+    "frames": [
+      {
+        "file": "artifacts/P5-development/runs/1794832578968/automatic/events.jsonl",
+        "ms": 22.330333999999993,
+        "successIndex": 1,
+        "bytes": 53840
+      },
+      {
+        "file": "artifacts/P5-development/runs/1794832578968/manual/events.jsonl",
+        "ms": 4.263249999999971,
+        "successIndex": 1,
+        "bytes": 2244
+      },
+      {
+        "file": "artifacts/P5/integrated/1794832590287/fallback/events.jsonl",
+        "ms": 5.656207999999992,
+        "successIndex": 1,
+        "bytes": 2595
+      },
+      {
+        "file": "artifacts/P5/integrated/1794832590287/migration/events.jsonl",
+        "ms": 5.525750000000016,
+        "successIndex": 1,
+        "bytes": 2595
+      },
+      {
+        "file": "artifacts/P5/integrated/1794832590287/migration/events.jsonl",
+        "ms": 2.334124999999858,
+        "successIndex": 2,
+        "bytes": 2098
+      },
+      {
+        "file": "artifacts/P5/integrated/1794832590287/remote/events.jsonl",
+        "ms": 5.670292000000018,
+        "successIndex": 1,
+        "bytes": 2595
+      },
+      {
+        "file": "artifacts/P5-development/package/1794832609173/package-run/events.jsonl",
+        "ms": 5.4935839999999985,
+        "successIndex": 1,
+        "bytes": 2612
+      },
+      {
+        "file": "artifacts/P5/integrated/1794832630931/fallback/events.jsonl",
+        "ms": 5.85612500000002,
+        "successIndex": 1,
+        "bytes": 2595
+      },
+      {
+        "file": "artifacts/P5/integrated/1794832630931/migration/events.jsonl",
+        "ms": 5.46425000000005,
+        "successIndex": 1,
+        "bytes": 2595
+      },
+      {
+        "file": "artifacts/P5/integrated/1794832630931/migration/events.jsonl",
+        "ms": 2.312249999999949,
+        "successIndex": 2,
+        "bytes": 2098
+      },
+      {
+        "file": "artifacts/P5/integrated/1794832630931/remote/events.jsonl",
+        "ms": 5.713541000000021,
+        "successIndex": 1,
+        "bytes": 2595
+      },
+      {
+        "file": "artifacts/P5-development/perf/1794832656248/measured/events.jsonl",
+        "ms": 3.928457999999978,
+        "successIndex": 1,
+        "bytes": 2612
+      }
+    ],
+    "profileSHA256": "742a958e4ee28e81b1cb0b28d4f5e1c1f1583d3eb96baa8cfe4bf9858909b1aa",
+    "hotFunctions": [
+      "updateDisplay",
+      "truncateToWidth",
+      "ansiCodeLength",
+      "renderCompactionDivider",
+      "visibleWidth"
+    ],
+    "machine": {
+      "load": "20:37  up 78 days,  3:02, 4 users, load averages: 2.04 1.56 1.45",
+      "cores": "10"
+    }
+  },
+  "video": {
+    "duration": 36,
+    "frames": 72,
+    "sha256": "74f60359a5373f608f7221c70e7d73453db4a98e90901ba48eed4530627705ea",
+    "source": "Real Pi TUI captured via tmux every 500ms; ANSI cells rendered with Menlo16; no OS window capture."
+  }
+}

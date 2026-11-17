@@ -1,0 +1,786 @@
+{
+  "pass": true,
+  "runs": [
+    {
+      "kind": "native",
+      "name": "automatic",
+      "dir": "/Users/wangxuyang/.t3/worktrees/compact/t3-6b169eac-575e28d02aa72a28/artifacts/P5-independent/checks/artifacts/P5-development/runs/1794833412366/automatic",
+      "sessionSHA256": "3c2f4986336964f8f9d5bcf10eb85d9ee64c05cca5c37354ab4bc0963dd9b22c",
+      "checkpointIds": [
+        "e8397d25"
+      ],
+      "checkpointKinds": [
+        "text"
+      ],
+      "successes": 1,
+      "nativeRequests": 1,
+      "normalRequests": 1,
+      "remoteRequests": 0,
+      "bodies": [
+        {
+          "phase": "native-request",
+          "sha256": "cebd5c1ac27cc9b320c05ec8f42bff8f0e67513fb770aabd4c8d967de2e7dfe7",
+          "bytes": 20230
+        }
+      ]
+    },
+    {
+      "kind": "native",
+      "name": "baseline",
+      "dir": "/Users/wangxuyang/.t3/worktrees/compact/t3-6b169eac-575e28d02aa72a28/artifacts/P5-independent/checks/artifacts/P5-development/runs/1794833412366/baseline",
+      "sessionSHA256": "34d4690e869ae4a209b639275d734c1b921131fa9a8968ef820c8361046306d0",
+      "checkpointIds": [
+        "12b6144e"
+      ],
+      "checkpointKinds": [
+        "native"
+      ],
+      "successes": 1,
+      "nativeRequests": 1,
+      "normalRequests": 0,
+      "remoteRequests": 0,
+      "bodies": [
+        {
+          "phase": "native-request",
+          "sha256": "e625458911969575f7f346f12b7f42f7d620a1e6edc0df241c93ef5e8465ab46",
+          "bytes": 19888
+        }
+      ]
+    },
+    {
+      "kind": "native",
+      "name": "delay",
+      "dir": "/Users/wangxuyang/.t3/worktrees/compact/t3-6b169eac-575e28d02aa72a28/artifacts/P5-independent/checks/artifacts/P5-development/runs/1794833412366/delay",
+      "sessionSHA256": "8e6783f1e556d2fbd43211a20cbe50924326f1e96951374371aa421b51ca8533",
+      "checkpointIds": [],
+      "checkpointKinds": [],
+      "successes": 0,
+      "nativeRequests": 1,
+      "normalRequests": 0,
+      "remoteRequests": 0,
+      "bodies": [
+        {
+          "phase": "native-request",
+          "sha256": "e625458911969575f7f346f12b7f42f7d620a1e6edc0df241c93ef5e8465ab46",
+          "bytes": 19888
+        }
+      ]
+    },
+    {
+      "kind": "native",
+      "name": "failure",
+      "dir": "/Users/wangxuyang/.t3/worktrees/compact/t3-6b169eac-575e28d02aa72a28/artifacts/P5-independent/checks/artifacts/P5-development/runs/1794833412366/failure",
+      "sessionSHA256": "1590249c065821baa495306791f6e86be5fd961eb9b2b1472d81e75b74e59c3b",
+      "checkpointIds": [],
+      "checkpointKinds": [],
+      "successes": 0,
+      "nativeRequests": 1,
+      "normalRequests": 0,
+      "remoteRequests": 0,
+      "bodies": [
+        {
+          "phase": "native-request",
+          "sha256": "e625458911969575f7f346f12b7f42f7d620a1e6edc0df241c93ef5e8465ab46",
+          "bytes": 19888
+        }
+      ]
+    },
+    {
+      "kind": "native",
+      "name": "manual",
+      "dir": "/Users/wangxuyang/.t3/worktrees/compact/t3-6b169eac-575e28d02aa72a28/artifacts/P5-independent/checks/artifacts/P5-development/runs/1794833412366/manual",
+      "sessionSHA256": "2c8c5ad9720125c0ce2bf881698f34f05d3c5e2d59697e3b6e9d07c444d240a5",
+      "checkpointIds": [
+        "26a65cba"
+      ],
+      "checkpointKinds": [
+        "text"
+      ],
+      "successes": 1,
+      "nativeRequests": 1,
+      "normalRequests": 0,
+      "remoteRequests": 0,
+      "bodies": [
+        {
+          "phase": "native-request",
+          "sha256": "3f5df99b087b10bd8ba8e17a2cf2aca25b1538cc983fd22d8d13c4b9f2fa79cb",
+          "bytes": 19928
+        }
+      ]
+    },
+    {
+      "kind": "integrated",
+      "name": "doublefail",
+      "dir": "/Users/wangxuyang/.t3/worktrees/compact/t3-6b169eac-575e28d02aa72a28/artifacts/P5-independent/checks/artifacts/P5/integrated/1794833424526/doublefail",
+      "sessionSHA256": "ddc75a65610e0a7c2b2a5aedda72de8dff5032197c4a31c8c098d324bd563b0e",
+      "checkpointIds": [],
+      "checkpointKinds": [],
+      "successes": 0,
+      "nativeRequests": 1,
+      "normalRequests": 0,
+      "remoteRequests": 1,
+      "bodies": [
+        {
+          "phase": "remote",
+          "sha256": "c681c78aaa8b816b82fb57a3428a8a187448678356345907d8b3426b0e9cf886",
+          "bytes": 9082
+        },
+        {
+          "phase": "native",
+          "sha256": "c04c3b37b2747e8b8a05dd7fbec633fc4cc3ecbd415ea48efd0c8a90c1b81650",
+          "bytes": 9947
+        },
+        {
+          "phase": "native-request",
+          "sha256": "c04c3b37b2747e8b8a05dd7fbec633fc4cc3ecbd415ea48efd0c8a90c1b81650",
+          "bytes": 9947
+        }
+      ]
+    },
+    {
+      "kind": "integrated",
+      "name": "fallback",
+      "dir": "/Users/wangxuyang/.t3/worktrees/compact/t3-6b169eac-575e28d02aa72a28/artifacts/P5-independent/checks/artifacts/P5/integrated/1794833424526/fallback",
+      "sessionSHA256": "3241308eb273b0e9da5762956d3704a22d99bb5ecd2e7a57a6e68950890d5fba",
+      "checkpointIds": [
+        "e0421f68"
+      ],
+      "checkpointKinds": [
+        "text"
+      ],
+      "successes": 1,
+      "nativeRequests": 1,
+      "normalRequests": 0,
+      "remoteRequests": 1,
+      "bodies": [
+        {
+          "phase": "remote",
+          "sha256": "c681c78aaa8b816b82fb57a3428a8a187448678356345907d8b3426b0e9cf886",
+          "bytes": 9082
+        },
+        {
+          "phase": "native",
+          "sha256": "c04c3b37b2747e8b8a05dd7fbec633fc4cc3ecbd415ea48efd0c8a90c1b81650",
+          "bytes": 9947
+        },
+        {
+          "phase": "native-request",
+          "sha256": "c04c3b37b2747e8b8a05dd7fbec633fc4cc3ecbd415ea48efd0c8a90c1b81650",
+          "bytes": 9947
+        }
+      ]
+    },
+    {
+      "kind": "integrated",
+      "name": "migration",
+      "dir": "/Users/wangxuyang/.t3/worktrees/compact/t3-6b169eac-575e28d02aa72a28/artifacts/P5-independent/checks/artifacts/P5/integrated/1794833424526/migration",
+      "sessionSHA256": "525bbfb8e37e27f931efe27e540f929498ff65489de3988148e0542bac27347e",
+      "checkpointIds": [
+        "e6e6e26e",
+        "192f873c"
+      ],
+      "checkpointKinds": [
+        "opaque",
+        "text"
+      ],
+      "successes": 2,
+      "nativeRequests": 2,
+      "normalRequests": 0,
+      "remoteRequests": 1,
+      "bodies": [
+        {
+          "phase": "remote",
+          "sha256": "c681c78aaa8b816b82fb57a3428a8a187448678356345907d8b3426b0e9cf886",
+          "bytes": 9082
+        },
+        {
+          "phase": "source",
+          "sha256": "9c14086416d56cbf40881faffa0f8c20b176ece87c9bb00cf69c79e54d72f1a2",
+          "bytes": 1193
+        },
+        {
+          "phase": "native",
+          "sha256": "ab045eb7625d02aa74a7a9717340502419f19c718c45c09ccd0282e40cec7184",
+          "bytes": 10282
+        },
+        {
+          "phase": "native-request",
+          "sha256": "ab045eb7625d02aa74a7a9717340502419f19c718c45c09ccd0282e40cec7184",
+          "bytes": 10282
+        },
+        {
+          "phase": "source",
+          "sha256": "9c14086416d56cbf40881faffa0f8c20b176ece87c9bb00cf69c79e54d72f1a2",
+          "bytes": 1193
+        },
+        {
+          "phase": "native",
+          "sha256": "338bff50f381dd4739108878a9f222e55ecd027fdbe878522a48a5ff06ff65ce",
+          "bytes": 2367
+        },
+        {
+          "phase": "native-request",
+          "sha256": "338bff50f381dd4739108878a9f222e55ecd027fdbe878522a48a5ff06ff65ce",
+          "bytes": 2367
+        }
+      ]
+    },
+    {
+      "kind": "integrated",
+      "name": "persist-fail",
+      "dir": "/Users/wangxuyang/.t3/worktrees/compact/t3-6b169eac-575e28d02aa72a28/artifacts/P5-independent/checks/artifacts/P5/integrated/1794833424526/persist-fail",
+      "sessionSHA256": "a1997e3e75700ceb770516a3a42a1ea6aa15c0def4a8bf5ab7c14ffaca749657",
+      "checkpointIds": [],
+      "checkpointKinds": [],
+      "successes": 0,
+      "nativeRequests": 0,
+      "normalRequests": 0,
+      "remoteRequests": 1,
+      "bodies": [
+        {
+          "phase": "remote",
+          "sha256": "c681c78aaa8b816b82fb57a3428a8a187448678356345907d8b3426b0e9cf886",
+          "bytes": 9082
+        }
+      ]
+    },
+    {
+      "kind": "integrated",
+      "name": "remote",
+      "dir": "/Users/wangxuyang/.t3/worktrees/compact/t3-6b169eac-575e28d02aa72a28/artifacts/P5-independent/checks/artifacts/P5/integrated/1794833424526/remote",
+      "sessionSHA256": "318622c6f4e9ee46ae47c36dbac6726c7213a8e85710d522719600e278612166",
+      "checkpointIds": [
+        "cc56d4e6"
+      ],
+      "checkpointKinds": [
+        "opaque"
+      ],
+      "successes": 1,
+      "nativeRequests": 0,
+      "normalRequests": 0,
+      "remoteRequests": 1,
+      "bodies": [
+        {
+          "phase": "remote",
+          "sha256": "c681c78aaa8b816b82fb57a3428a8a187448678356345907d8b3426b0e9cf886",
+          "bytes": 9082
+        }
+      ]
+    },
+    {
+      "kind": "integrated",
+      "name": "remote-cancel",
+      "dir": "/Users/wangxuyang/.t3/worktrees/compact/t3-6b169eac-575e28d02aa72a28/artifacts/P5-independent/checks/artifacts/P5/integrated/1794833424526/remote-cancel",
+      "sessionSHA256": "95a190ccaf3424d1b0570426d4fcbaa2aaaf5630f797f0f584c69493bc01c521",
+      "checkpointIds": [],
+      "checkpointKinds": [],
+      "successes": 0,
+      "nativeRequests": 0,
+      "normalRequests": 0,
+      "remoteRequests": 1,
+      "bodies": [
+        {
+          "phase": "remote",
+          "sha256": "c681c78aaa8b816b82fb57a3428a8a187448678356345907d8b3426b0e9cf886",
+          "bytes": 9082
+        }
+      ]
+    },
+    {
+      "kind": "integrated",
+      "name": "restored",
+      "dir": "/Users/wangxuyang/.t3/worktrees/compact/t3-6b169eac-575e28d02aa72a28/artifacts/P5-independent/checks/artifacts/P5/integrated/1794833424526/restored",
+      "sessionSHA256": "318622c6f4e9ee46ae47c36dbac6726c7213a8e85710d522719600e278612166",
+      "checkpointIds": [
+        "cc56d4e6"
+      ],
+      "checkpointKinds": [
+        "opaque"
+      ],
+      "successes": 0,
+      "nativeRequests": 0,
+      "normalRequests": 0,
+      "remoteRequests": 0,
+      "bodies": []
+    },
+    {
+      "kind": "packed",
+      "name": "doublefail",
+      "dir": "/Users/wangxuyang/.t3/worktrees/compact/t3-6b169eac-575e28d02aa72a28/artifacts/P5-independent/checks/artifacts/P5/integrated/1794833531818/doublefail",
+      "sessionSHA256": "2a8a7e38c1689233d0fe800f6d84177f09e071c21cf4d6f6d9f3e71a2b34d080",
+      "checkpointIds": [],
+      "checkpointKinds": [],
+      "successes": 0,
+      "nativeRequests": 1,
+      "normalRequests": 0,
+      "remoteRequests": 1,
+      "bodies": [
+        {
+          "phase": "remote",
+          "sha256": "c681c78aaa8b816b82fb57a3428a8a187448678356345907d8b3426b0e9cf886",
+          "bytes": 9082
+        },
+        {
+          "phase": "native",
+          "sha256": "c04c3b37b2747e8b8a05dd7fbec633fc4cc3ecbd415ea48efd0c8a90c1b81650",
+          "bytes": 9947
+        },
+        {
+          "phase": "native-request",
+          "sha256": "c04c3b37b2747e8b8a05dd7fbec633fc4cc3ecbd415ea48efd0c8a90c1b81650",
+          "bytes": 9947
+        }
+      ]
+    },
+    {
+      "kind": "packed",
+      "name": "fallback",
+      "dir": "/Users/wangxuyang/.t3/worktrees/compact/t3-6b169eac-575e28d02aa72a28/artifacts/P5-independent/checks/artifacts/P5/integrated/1794833531818/fallback",
+      "sessionSHA256": "4773b036158503a1e56759a4a4cf4a34d95a700a33c30560224dcdd77f5999c5",
+      "checkpointIds": [
+        "0f7d26fe"
+      ],
+      "checkpointKinds": [
+        "text"
+      ],
+      "successes": 1,
+      "nativeRequests": 1,
+      "normalRequests": 0,
+      "remoteRequests": 1,
+      "bodies": [
+        {
+          "phase": "remote",
+          "sha256": "c681c78aaa8b816b82fb57a3428a8a187448678356345907d8b3426b0e9cf886",
+          "bytes": 9082
+        },
+        {
+          "phase": "native",
+          "sha256": "c04c3b37b2747e8b8a05dd7fbec633fc4cc3ecbd415ea48efd0c8a90c1b81650",
+          "bytes": 9947
+        },
+        {
+          "phase": "native-request",
+          "sha256": "c04c3b37b2747e8b8a05dd7fbec633fc4cc3ecbd415ea48efd0c8a90c1b81650",
+          "bytes": 9947
+        }
+      ]
+    },
+    {
+      "kind": "packed",
+      "name": "migration",
+      "dir": "/Users/wangxuyang/.t3/worktrees/compact/t3-6b169eac-575e28d02aa72a28/artifacts/P5-independent/checks/artifacts/P5/integrated/1794833531818/migration",
+      "sessionSHA256": "3b9276cb43913e98ad57d6e9275fe900d14dc0d6d71370c24770e12f339b600d",
+      "checkpointIds": [
+        "b1c6d6d3",
+        "b09ad6cc"
+      ],
+      "checkpointKinds": [
+        "opaque",
+        "text"
+      ],
+      "successes": 2,
+      "nativeRequests": 2,
+      "normalRequests": 0,
+      "remoteRequests": 1,
+      "bodies": [
+        {
+          "phase": "remote",
+          "sha256": "c681c78aaa8b816b82fb57a3428a8a187448678356345907d8b3426b0e9cf886",
+          "bytes": 9082
+        },
+        {
+          "phase": "source",
+          "sha256": "9c14086416d56cbf40881faffa0f8c20b176ece87c9bb00cf69c79e54d72f1a2",
+          "bytes": 1193
+        },
+        {
+          "phase": "native",
+          "sha256": "ab045eb7625d02aa74a7a9717340502419f19c718c45c09ccd0282e40cec7184",
+          "bytes": 10282
+        },
+        {
+          "phase": "native-request",
+          "sha256": "ab045eb7625d02aa74a7a9717340502419f19c718c45c09ccd0282e40cec7184",
+          "bytes": 10282
+        },
+        {
+          "phase": "source",
+          "sha256": "9c14086416d56cbf40881faffa0f8c20b176ece87c9bb00cf69c79e54d72f1a2",
+          "bytes": 1193
+        },
+        {
+          "phase": "native",
+          "sha256": "338bff50f381dd4739108878a9f222e55ecd027fdbe878522a48a5ff06ff65ce",
+          "bytes": 2367
+        },
+        {
+          "phase": "native-request",
+          "sha256": "338bff50f381dd4739108878a9f222e55ecd027fdbe878522a48a5ff06ff65ce",
+          "bytes": 2367
+        }
+      ]
+    },
+    {
+      "kind": "packed",
+      "name": "persist-fail",
+      "dir": "/Users/wangxuyang/.t3/worktrees/compact/t3-6b169eac-575e28d02aa72a28/artifacts/P5-independent/checks/artifacts/P5/integrated/1794833531818/persist-fail",
+      "sessionSHA256": "4944fdcd7cf4e96b18c64d5a62c1884cfd5b184ec90eba07b2e4bfc357beae6b",
+      "checkpointIds": [],
+      "checkpointKinds": [],
+      "successes": 0,
+      "nativeRequests": 0,
+      "normalRequests": 0,
+      "remoteRequests": 1,
+      "bodies": [
+        {
+          "phase": "remote",
+          "sha256": "c681c78aaa8b816b82fb57a3428a8a187448678356345907d8b3426b0e9cf886",
+          "bytes": 9082
+        }
+      ]
+    },
+    {
+      "kind": "packed",
+      "name": "remote",
+      "dir": "/Users/wangxuyang/.t3/worktrees/compact/t3-6b169eac-575e28d02aa72a28/artifacts/P5-independent/checks/artifacts/P5/integrated/1794833531818/remote",
+      "sessionSHA256": "bc4ca3df9700abc765cd1f67dfa81c4126e5e4885c168f14b0bf4adc249b8616",
+      "checkpointIds": [
+        "182df1ef"
+      ],
+      "checkpointKinds": [
+        "opaque"
+      ],
+      "successes": 1,
+      "nativeRequests": 0,
+      "normalRequests": 0,
+      "remoteRequests": 1,
+      "bodies": [
+        {
+          "phase": "remote",
+          "sha256": "c681c78aaa8b816b82fb57a3428a8a187448678356345907d8b3426b0e9cf886",
+          "bytes": 9082
+        }
+      ]
+    },
+    {
+      "kind": "packed",
+      "name": "remote-cancel",
+      "dir": "/Users/wangxuyang/.t3/worktrees/compact/t3-6b169eac-575e28d02aa72a28/artifacts/P5-independent/checks/artifacts/P5/integrated/1794833531818/remote-cancel",
+      "sessionSHA256": "cdb0111910586ce4915119219332b39a4320a268b2318a1c46af40ac1b7eb0c6",
+      "checkpointIds": [],
+      "checkpointKinds": [],
+      "successes": 0,
+      "nativeRequests": 0,
+      "normalRequests": 0,
+      "remoteRequests": 1,
+      "bodies": [
+        {
+          "phase": "remote",
+          "sha256": "c681c78aaa8b816b82fb57a3428a8a187448678356345907d8b3426b0e9cf886",
+          "bytes": 9082
+        }
+      ]
+    },
+    {
+      "kind": "packed",
+      "name": "restored",
+      "dir": "/Users/wangxuyang/.t3/worktrees/compact/t3-6b169eac-575e28d02aa72a28/artifacts/P5-independent/checks/artifacts/P5/integrated/1794833531818/restored",
+      "sessionSHA256": "bc4ca3df9700abc765cd1f67dfa81c4126e5e4885c168f14b0bf4adc249b8616",
+      "checkpointIds": [
+        "182df1ef"
+      ],
+      "checkpointKinds": [
+        "opaque"
+      ],
+      "successes": 0,
+      "nativeRequests": 0,
+      "normalRequests": 0,
+      "remoteRequests": 0,
+      "bodies": []
+    }
+  ],
+  "p4": [
+    {
+      "lane": 3,
+      "dir": "/Users/wangxuyang/.t3/worktrees/compact/t3-6b169eac-575e28d02aa72a28/artifacts/P5-independent/checks/artifacts/P4/runs/1794833483056/lane-3-head",
+      "requests": [
+        {
+          "phase": "remote",
+          "model": "gpt-6-astra",
+          "bytes": 8473,
+          "sha256": "76bcf7160a27c24cb17ad9161f3492c01b7c4670c2832d581df62ae2396f1872"
+        },
+        {
+          "phase": "normal",
+          "model": "gpt-6.1-sol",
+          "bytes": 1672,
+          "sha256": "0cc38034772527d5ac652cdd23e0c84442794d1303f3c5473e61162658e90ab2"
+        }
+      ]
+    },
+    {
+      "lane": 6,
+      "dir": "/Users/wangxuyang/.t3/worktrees/compact/t3-6b169eac-575e28d02aa72a28/artifacts/P5-independent/checks/artifacts/P4/runs/1794833484816/lane-6-head",
+      "requests": [
+        {
+          "phase": "remote",
+          "model": "gpt-6-astra",
+          "bytes": 8473,
+          "sha256": "76bcf7160a27c24cb17ad9161f3492c01b7c4670c2832d581df62ae2396f1872"
+        },
+        {
+          "phase": "native",
+          "model": "deepseek-chat",
+          "bytes": 31298,
+          "sha256": "6e9b227c302beebe2f70ea3ecbc458d159df0655eacddc171609577daad48be5"
+        },
+        {
+          "phase": "native",
+          "model": "deepseek-chat",
+          "bytes": 31938,
+          "sha256": "56c050069d5388ea1f8593ce5c5901ed36e39c42ff55e70957897cba7165d65d"
+        },
+        {
+          "phase": "native",
+          "model": "deepseek-chat",
+          "bytes": 32082,
+          "sha256": "e23a9bcbca4bcce2a6a9b5e8c7d93c85f99fb94328dd524444c88c01381ab7de"
+        },
+        {
+          "phase": "native",
+          "model": "deepseek-chat",
+          "bytes": 6601,
+          "sha256": "fc60d309eafe7e978d219d2d55a307c6ca41f7dff85ec218e52aa5cacb8d35d8"
+        },
+        {
+          "phase": "normal",
+          "model": "deepseek-chat",
+          "bytes": 1113,
+          "sha256": "a36a53ce632acb3cab858dde8985ed1bdd93ad51e60c5d1b717c67bc0a92190a"
+        }
+      ]
+    },
+    {
+      "lane": 10,
+      "dir": "/Users/wangxuyang/.t3/worktrees/compact/t3-6b169eac-575e28d02aa72a28/artifacts/P5-independent/checks/artifacts/P4/runs/1794833486739/lane-10-head",
+      "requests": [
+        {
+          "phase": "source",
+          "model": "gpt-6-astra",
+          "bytes": 1193,
+          "sha256": "9c14086416d56cbf40881faffa0f8c20b176ece87c9bb00cf69c79e54d72f1a2"
+        },
+        {
+          "phase": "native",
+          "model": "deepseek-chat",
+          "bytes": 2367,
+          "sha256": "338bff50f381dd4739108878a9f222e55ecd027fdbe878522a48a5ff06ff65ce"
+        },
+        {
+          "phase": "normal",
+          "model": "deepseek-chat",
+          "bytes": 674,
+          "sha256": "d3a44d4ef0ca6a82a33c9e6d0d083b36335f22eb7592139d616e93642e5454c9"
+        }
+      ]
+    }
+  ],
+  "lifecycle": [
+    {
+      "at": 362.455958,
+      "event": "review-start",
+      "registry": true,
+      "bindings": 0,
+      "nativeAdd": false,
+      "extensions": [
+        "/Users/wangxuyang/.t3/worktrees/compact/t3-6b169eac-575e28d02aa72a28/artifacts/P5-independent/checks/scripts/p5/observer.ts",
+        "/Users/wangxuyang/.t3/worktrees/compact/t3-6b169eac-575e28d02aa72a28/artifacts/P5-independent/checks/scripts/p5/lifecycle-observer.ts",
+        "/Users/wangxuyang/.t3/worktrees/compact/t3-6b169eac-575e28d02aa72a28/artifacts/P5-independent/checks/src/index.ts"
+      ]
+    },
+    {
+      "at": 608.244958,
+      "event": "review-multi-before",
+      "a": true,
+      "b": true,
+      "unmanaged": false,
+      "bindings": 3
+    },
+    {
+      "at": 608.548166,
+      "event": "review-multi-after-a",
+      "a": false,
+      "b": true,
+      "bindings": 2,
+      "aReleased": true,
+      "bActive": true,
+      "aLockReleased": true
+    },
+    {
+      "at": 608.692333,
+      "event": "review-multi-after-b",
+      "b": false,
+      "bindings": 1,
+      "before": [
+        {
+          "role": "user",
+          "content": "CURRENT_INPUT_MARKER disposed child queue",
+          "timestamp": 0
+        }
+      ],
+      "after": [
+        {
+          "role": "user",
+          "content": "CURRENT_INPUT_MARKER disposed child queue",
+          "timestamp": 0
+        }
+      ],
+      "error": "Error: pi-compact paused: Session is disposed. Use /compact to retry.",
+      "bReleased": true,
+      "bLockReleased": true
+    },
+    {
+      "at": 608.722916,
+      "event": "review-multi-done"
+    },
+    {
+      "at": 654.81725,
+      "event": "review-start",
+      "registry": false,
+      "nativeAdd": true,
+      "extensions": [
+        "/Users/wangxuyang/.t3/worktrees/compact/t3-6b169eac-575e28d02aa72a28/artifacts/P5-independent/checks/scripts/p5/observer.ts",
+        "/Users/wangxuyang/.t3/worktrees/compact/t3-6b169eac-575e28d02aa72a28/artifacts/P5-independent/checks/scripts/p5/lifecycle-observer.ts"
+      ]
+    },
+    {
+      "at": 675.940541,
+      "event": "review-state",
+      "registry": false,
+      "peerPrototype": false,
+      "currentDividers": 0,
+      "retained": []
+    },
+    {
+      "at": 796.185041,
+      "event": "review-start",
+      "registry": true,
+      "bindings": 1,
+      "nativeAdd": false,
+      "extensions": [
+        "/Users/wangxuyang/.t3/worktrees/compact/t3-6b169eac-575e28d02aa72a28/artifacts/P5-independent/checks/scripts/p5/observer.ts",
+        "/Users/wangxuyang/.t3/worktrees/compact/t3-6b169eac-575e28d02aa72a28/artifacts/P5-independent/checks/scripts/p5/lifecycle-observer.ts",
+        "/Users/wangxuyang/.t3/worktrees/compact/t3-6b169eac-575e28d02aa72a28/artifacts/P5-independent/checks/src/index.ts"
+      ]
+    },
+    {
+      "at": 1358.424416,
+      "event": "review-chain",
+      "enabled": true,
+      "instancePeer": true
+    },
+    {
+      "at": 1418.838,
+      "event": "review-start",
+      "registry": false,
+      "nativeAdd": false,
+      "extensions": [
+        "/Users/wangxuyang/.t3/worktrees/compact/t3-6b169eac-575e28d02aa72a28/artifacts/P5-independent/checks/scripts/p5/observer.ts",
+        "/Users/wangxuyang/.t3/worktrees/compact/t3-6b169eac-575e28d02aa72a28/artifacts/P5-independent/checks/scripts/p5/lifecycle-observer.ts"
+      ]
+    },
+    {
+      "at": 1441.006916,
+      "event": "review-state",
+      "registry": false,
+      "peerPrototype": true,
+      "peerCalls": 2,
+      "currentDividers": 0,
+      "retained": [
+        {
+          "enabled": false,
+          "peer": true,
+          "marker": true
+        }
+      ]
+    },
+    {
+      "at": 1560.027958,
+      "event": "review-start",
+      "registry": true,
+      "bindings": 1,
+      "nativeAdd": false,
+      "extensions": [
+        "/Users/wangxuyang/.t3/worktrees/compact/t3-6b169eac-575e28d02aa72a28/artifacts/P5-independent/checks/scripts/p5/observer.ts",
+        "/Users/wangxuyang/.t3/worktrees/compact/t3-6b169eac-575e28d02aa72a28/artifacts/P5-independent/checks/scripts/p5/lifecycle-observer.ts",
+        "/Users/wangxuyang/.t3/worktrees/compact/t3-6b169eac-575e28d02aa72a28/artifacts/P5-independent/checks/src/index.ts"
+      ]
+    },
+    {
+      "at": 1587.876291,
+      "event": "review-state",
+      "registry": true,
+      "bindings": 1,
+      "peerPrototype": false,
+      "peerCalls": 4,
+      "currentDividers": 1,
+      "retained": [
+        {
+          "enabled": false,
+          "peer": true,
+          "marker": true
+        }
+      ]
+    },
+    {
+      "at": 2183.338416,
+      "event": "review-start",
+      "registry": false,
+      "nativeAdd": false,
+      "extensions": [
+        "/Users/wangxuyang/.t3/worktrees/compact/t3-6b169eac-575e28d02aa72a28/artifacts/P5-independent/checks/scripts/p5/observer.ts",
+        "/Users/wangxuyang/.t3/worktrees/compact/t3-6b169eac-575e28d02aa72a28/artifacts/P5-independent/checks/scripts/p5/lifecycle-observer.ts"
+      ]
+    },
+    {
+      "at": 2206.538291,
+      "event": "review-state",
+      "registry": false,
+      "peerPrototype": true,
+      "peerCalls": 6,
+      "currentDividers": 0,
+      "retained": [
+        {
+          "enabled": false,
+          "peer": true,
+          "marker": true
+        }
+      ]
+    }
+  ],
+  "finalDispose": {
+    "at": 650.018791,
+    "event": "review-final-dispose",
+    "uiRegistryReleased": true,
+    "safetyRegistryReleased": true,
+    "addRestoredToPeer": true,
+    "disposeRestored": true,
+    "dividerGone": true,
+    "lockReleased": true,
+    "before": [
+      {
+        "role": "user",
+        "content": "CURRENT_INPUT_MARKER final disposed queue",
+        "timestamp": 0
+      }
+    ],
+    "after": [
+      {
+        "role": "user",
+        "content": "CURRENT_INPUT_MARKER final disposed queue",
+        "timestamp": 0
+      }
+    ],
+    "error": "Error: pi-compact paused: Session is disposed. Use /compact to retry."
+  }
+}

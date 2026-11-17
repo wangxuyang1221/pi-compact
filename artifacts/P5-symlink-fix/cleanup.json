@@ -1,0 +1,73 @@
+{
+  "pids": [
+    63556,
+    63565,
+    63754,
+    63763,
+    64531,
+    64543,
+    64785,
+    64797
+  ],
+  "alive": [],
+  "listenerCode": 1,
+  "listeners": "",
+  "cleanups": [
+    {
+      "panePids": [
+        63556,
+        63565
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "panePids": [
+        63754,
+        63763
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "panePids": [
+        64531,
+        64543
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "panePids": [
+        64785,
+        64797
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    }
+  ]
+}

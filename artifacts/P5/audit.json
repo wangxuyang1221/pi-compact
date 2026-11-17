@@ -1,0 +1,109 @@
+{
+  "pass": true,
+  "productSHA": "0f23577463a48f0b5b160f52691a8f9cf3e9155e",
+  "sources": {
+    "src/checkpoint.ts": "cd724555f005ae2d1f939b1d9d9eedcd7db202a76431f866e1dd0d2921b696f9",
+    "src/index.ts": "2b718f790082b3788176d401722c4b9f70877c3a62531c3a756f0e2419a904bf",
+    "src/migration.ts": "19f81889473a8a37c0be55b0e3ab85f6ae08bfb06462998172ba1424a3e120b8",
+    "src/policy.ts": "6cef2b94edade4ae747a504f64f6a5a087311d8868cd3428cf800f6cebcea8b2",
+    "src/settings.ts": "690cb811c458dfe3af512ab025e18d726b0d75ddea8c97e38cd0155a186b96ad",
+    "src/state.ts": "10c7aad13e9da10bf54bba73edf33d61736f75417f8143c10c20538b3cc749ab",
+    "src/codex/compact.ts": "947a06e1a2d2b13207235c36d4d6db0215f2583cca4b2732264cc723a2635136",
+    "src/codex/wire.ts": "1102a310cafed43f811baf500cdb6d8485dfef500ad5c41bd691edaa44bd63b5",
+    "src/pi-adapter/compatibility.ts": "09c1fff3c7424a041c2b72faab02bb1b34d4e23c29b12ca302027d9556566475",
+    "src/pi-adapter/journal.ts": "0fab09996308920b0757576769849533e9766ce9d99bdaa6b4ac7bee2ec17a67",
+    "src/pi-adapter/reconstruction.ts": "1f98066ed24c2eb82fd24bab0f03528750160c56a74166e6b46b9e894118b55f",
+    "src/pi-adapter/renderer.ts": "9cdded4f21dc030904370b35b78eafd7a75d0e61b65c06dfb70f42d27c4baced",
+    "src/pi-adapter/session.ts": "46a90de9f095ffe89de163d7980a43805e4a7199c3dac1a12871161ca691f486",
+    "src/pi-adapter/transaction.ts": "1fb6a89da306aceb5b4857cb73d0344128047282d3a753bee71516a05bf25d73",
+    "src/ui/compaction-divider.ts": "78830299265c21847db006231aa4b14210a1d34f038838a82332c1c62ec112e0"
+  },
+  "paths": {
+    "native": "/Users/wangxuyang/.t3/worktrees/compact/t3-38da13e1-5924d01b0a94b17c/artifacts/P5-development/runs/1794832578968",
+    "integrated": "/Users/wangxuyang/.t3/worktrees/compact/t3-38da13e1-5924d01b0a94b17c/artifacts/P5/integrated/1794832590287",
+    "lifecycle": "/Users/wangxuyang/.t3/worktrees/compact/t3-38da13e1-5924d01b0a94b17c/artifacts/P5/lifecycle/1794832605596",
+    "symlink": "/Users/wangxuyang/.t3/worktrees/compact/t3-38da13e1-5924d01b0a94b17c/artifacts/P5-symlink-fix/runs/1794832603050",
+    "pkg": "/Users/wangxuyang/.t3/worktrees/compact/t3-38da13e1-5924d01b0a94b17c/artifacts/P5-development/package/1794832609173",
+    "demo": "/Users/wangxuyang/.t3/worktrees/compact/t3-38da13e1-5924d01b0a94b17c/artifacts/P5-development/demo/1794832610891",
+    "perf": "/Users/wangxuyang/.t3/worktrees/compact/t3-38da13e1-5924d01b0a94b17c/artifacts/P5-development/perf/1794832656248",
+    "packed": "/Users/wangxuyang/.t3/worktrees/compact/t3-38da13e1-5924d01b0a94b17c/artifacts/P5/integrated/1794832630931"
+  },
+  "packageSHA256": "f21202a9566c01ab3ad02814797f7caf0acaa1635a21f78c6366838c5ce751b6",
+  "packageFiles": 25,
+  "videoDurationSeconds": 36,
+  "frames": [
+    {
+      "file": "artifacts/P5-development/runs/1794832578968/automatic/events.jsonl",
+      "ms": 22.330333999999993
+    },
+    {
+      "file": "artifacts/P5-development/runs/1794832578968/manual/events.jsonl",
+      "ms": 4.263249999999971
+    },
+    {
+      "file": "artifacts/P5/integrated/1794832590287/fallback/events.jsonl",
+      "ms": 5.656207999999992
+    },
+    {
+      "file": "artifacts/P5/integrated/1794832590287/migration/events.jsonl",
+      "ms": 5.525750000000016
+    },
+    {
+      "file": "artifacts/P5/integrated/1794832590287/migration/events.jsonl",
+      "ms": 2.334124999999858
+    },
+    {
+      "file": "artifacts/P5/integrated/1794832590287/remote/events.jsonl",
+      "ms": 5.670292000000018
+    },
+    {
+      "file": "artifacts/P5-development/package/1794832609173/package-run/events.jsonl",
+      "ms": 5.4935839999999985
+    },
+    {
+      "file": "artifacts/P5/integrated/1794832630931/fallback/events.jsonl",
+      "ms": 5.85612500000002
+    },
+    {
+      "file": "artifacts/P5/integrated/1794832630931/migration/events.jsonl",
+      "ms": 5.46425000000005
+    },
+    {
+      "file": "artifacts/P5/integrated/1794832630931/migration/events.jsonl",
+      "ms": 2.312249999999949
+    },
+    {
+      "file": "artifacts/P5/integrated/1794832630931/remote/events.jsonl",
+      "ms": 5.713541000000021
+    },
+    {
+      "file": "artifacts/P5-development/perf/1794832656248/measured/events.jsonl",
+      "ms": 3.928457999999978
+    }
+  ],
+  "component": {
+    "records": 30,
+    "checksum": 23367500,
+    "errors": 0
+  },
+  "copiedVisuals": {
+    "lane2-dark.png": "/Users/wangxuyang/.t3/worktrees/compact/t3-38da13e1-5924d01b0a94b17c/artifacts/P5-development/runs/1794832578968/manual/dark-90.png",
+    "lane3-light.png": "/Users/wangxuyang/.t3/worktrees/compact/t3-38da13e1-5924d01b0a94b17c/artifacts/P5-development/runs/1794832578968/manual/light-90.png",
+    "lane4-narrow.png": "/Users/wangxuyang/.t3/worktrees/compact/t3-38da13e1-5924d01b0a94b17c/artifacts/P5-development/runs/1794832578968/manual/resize-20.png",
+    "lane4-40.png": "/Users/wangxuyang/.t3/worktrees/compact/t3-38da13e1-5924d01b0a94b17c/artifacts/P5-development/runs/1794832578968/manual/resize-40.png",
+    "lane4-120.png": "/Users/wangxuyang/.t3/worktrees/compact/t3-38da13e1-5924d01b0a94b17c/artifacts/P5-development/runs/1794832578968/manual/resize-120.png",
+    "lane5-expanded.png": "/Users/wangxuyang/.t3/worktrees/compact/t3-38da13e1-5924d01b0a94b17c/artifacts/P5-development/runs/1794832578968/manual/expanded-90.png",
+    "lane6-remote.png": "/Users/wangxuyang/.t3/worktrees/compact/t3-38da13e1-5924d01b0a94b17c/artifacts/P5/integrated/1794832590287/remote/expanded.png",
+    "lane8-fallback.png": "/Users/wangxuyang/.t3/worktrees/compact/t3-38da13e1-5924d01b0a94b17c/artifacts/P5/integrated/1794832590287/fallback/completed.png",
+    "lane8-doublefail.png": "/Users/wangxuyang/.t3/worktrees/compact/t3-38da13e1-5924d01b0a94b17c/artifacts/P5/integrated/1794832590287/doublefail/failed.png",
+    "migration-expanded.png": "/Users/wangxuyang/.t3/worktrees/compact/t3-38da13e1-5924d01b0a94b17c/artifacts/P5/integrated/1794832590287/migration/expanded.png",
+    "demo.mp4": "/Users/wangxuyang/.t3/worktrees/compact/t3-38da13e1-5924d01b0a94b17c/artifacts/P5-development/demo/1794832610891/demo.mp4"
+  },
+  "coreUnchanged": true,
+  "cleanup": {
+    "pids": 531,
+    "sockets": 104,
+    "records": 104,
+    "networkBlocked": 0
+  }
+}

@@ -12,7 +12,8 @@
     "docs/roadmap.md",
     "GLOSSARY.md",
     "docs/p3-checkpoints.md",
-    "docs/p4-migration.md"
+    "docs/p4-migration.md",
+    "docs/p5-renderer.md"
   ],
   "pi": {
     "extensions": [
@@ -29,20 +30,29 @@
     "verify:p1-scope": "node scripts/verify-p1-scope.mjs",
     "verify:perf": "node scripts/verify-perf.mjs",
     "verify:p3": "node --import=./scripts/fixture/relative-socket.mjs scripts/verify-p3.mjs",
-    "verify:p4": "node scripts/verify-p4.mjs"
+    "verify:p4": "node scripts/verify-p4.mjs",
+    "verify:p5-development": "node scripts/verify-p5-development.mjs",
+    "verify:p5-symlink": "node scripts/verify-p5-symlink.mjs",
+    "verify:p5-perf": "node scripts/verify-p5-perf.mjs",
+    "record:p5-demo": "node scripts/record-p5-demo.mjs",
+    "verify:p5-package": "node scripts/verify-p5-package.mjs",
+    "verify:p5": "node scripts/verify-p5-development.mjs && node scripts/verify-p5-integrated.mjs",
+    "verify:p5-lifecycle": "node scripts/verify-p5-lifecycle.mjs lifecycle final-dispose"
   },
   "engines": {
     "node": ">=22.19.0"
   },
   "peerDependencies": {
-    "@earendil-works/pi-coding-agent": "1.5.2"
+    "@earendil-works/pi-coding-agent": "1.5.2",
+    "@earendil-works/pi-tui": "1.5.2"
   },
   "devDependencies": {
     "@earendil-works/pi-coding-agent": "1.5.2",
+    "@earendil-works/pi-tui": "1.5.2",
     "@types/node": "^22.19.0",
-    "typescript": "^5.9.3",
-    "tsx": "^4.20.6",
     "eslint": "^9.39.1",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3",
     "typescript-eslint": "^8.46.4"
   },
   "packageManager": "pnpm@10.11.0"
