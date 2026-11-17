@@ -37,6 +37,11 @@ export function confirmEntry(file: string, entry: { id: string }): void {
 }
 
 export function assertSessionFileAvailable(journal: string): void {
+  if (existsSync(journal + '.lock.claim')) throw new Error('Session lock acquisition is in progress or was interrupted. Stop all session writers before removing ' + journal + '.lock.claim');
+  assertOwnerInactive(journal);
+}
+
+function assertOwnerInactive(journal: string): void {
   let contents: string;
   try { contents = readFileSync(journal + '.lock', 'utf8'); } catch (error) {
     if (error && typeof error === 'object' && 'code' in error && error.code === 'ENOENT') return;
@@ -57,11 +62,24 @@ export function claimSessionFile(journal: string): () => void {
     const fd = openSync(file, 'wx', 0o600);
     try { writeFileSync(fd, identity); } finally { closeSync(fd); }
   };
-  try { create(); } catch (error) {
-    if (!error || typeof error !== 'object' || !('code' in error) || error.code !== 'EEXIST') throw error;
-    assertSessionFileAvailable(journal);
-    unlinkSync(file);
-    create();
+  let claim: number;
+  try { claim = openSync(file + '.claim', 'wx', 0o600); } catch (error) {
+    if (error && typeof error === 'object' && 'code' in error && error.code === 'EEXIST') {
+      throw new Error('Session lock acquisition is in progress or was interrupted. Stop all session writers before removing ' + file + '.claim');
+    }
+    throw error;
+  }
+  try {
+    writeFileSync(claim, identity);
+    try { create(); } catch (error) {
+      if (!error || typeof error !== 'object' || !('code' in error) || error.code !== 'EEXIST') throw error;
+      assertOwnerInactive(journal);
+      unlinkSync(file);
+      create();
+    }
+  } finally {
+    closeSync(claim);
+    unlinkSync(file + '.claim');
   }
   return () => { if (readFileSync(file, 'utf8') === identity) unlinkSync(file); };
 }
