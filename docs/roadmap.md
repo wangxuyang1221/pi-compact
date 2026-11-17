@@ -1,6 +1,6 @@
 # Implementation roadmap
 
-The design is approved. Stages 1 through 4 have passed independent technical acceptance; stages 5 and 6 remain open. Migration and capability selection have passed isolated runtime tests. User visual review and real-service quality acceptance remain pending. Each stage requires tests, evidence from a real Pi runtime, and checks for local processing overhead.
+The design is approved. Stages 1 through 5 have passed independent technical acceptance; stage 6 remains open. Migration and capability selection have passed isolated runtime tests. User visual review and real-service quality acceptance remain pending. Each stage requires tests, evidence from a real Pi runtime, and checks for local processing overhead.
 
 ## 1. Establish the extension integration
 
@@ -49,10 +49,10 @@ Accept this stage when Codex-to-DeepSeek continuation receives complete readable
 
 Development can start after stage 1. Final acceptance depends on stage 4, with the UI changes integrated into the same tested revision.
 
-- [ ] Replace the native completion card with the approved English divider.
-- [ ] Preserve `Ctrl+O` details without another model request.
-- [ ] Check narrow terminals, dark and light themes, reload, and other message renderers.
-- [ ] Keep native rendering available when only the UI adapter is incompatible.
+- [x] Replace the native completion card with the approved English divider.
+- [x] Preserve `Ctrl+O` details without another model request.
+- [x] Check narrow terminals, dark and light themes, reload, and other message renderers.
+- [x] Keep native rendering available when only the UI adapter is incompatible.
 
 Accept this stage when manual, automatic, remote, and fallback success each show one divider, while failure and cancellation show none.
 
@@ -76,4 +76,4 @@ Check local overhead against a measured native baseline. Network completion time
 
 Screenshots and interaction recordings should come from the tested package revision. Temporary processes and listeners must be stopped after verification.
 
-The repository contains the P1 through P4 extension and reproducible verification runners. Read the [P1 acceptance report](../artifacts/P1-acceptance/REPORT.md) and [adapter boundaries](p1-adapter.md) for the tested revision and supported behavior. The [P2 acceptance report](../artifacts/P2-acceptance/REPORT.md) records percentage policy, hook reconstruction, and measured limits. The [P3 acceptance report](../artifacts/P3-acceptance/REPORT.md) records checkpoint recovery, native fallback, and the fixture-only remote scope. The [P4 acceptance report](../artifacts/P4-acceptance/REPORT.md) records migration, account and branch boundaries, stale-source rejection and split-turn coverage. Prototype material remains separate from the development package.
+The repository contains the P1 through P5 extension and reproducible verification runners. Read the [P1 acceptance report](../artifacts/P1-acceptance/REPORT.md) and [adapter boundaries](p1-adapter.md) for the tested revision and supported behavior. The [P2 acceptance report](../artifacts/P2-acceptance/REPORT.md) records percentage policy, hook reconstruction, and measured limits. The [P3 acceptance report](../artifacts/P3-acceptance/REPORT.md) records checkpoint recovery, native fallback, and the fixture-only remote scope. The [P4 acceptance report](../artifacts/P4-acceptance/REPORT.md) records migration, account and branch boundaries, stale-source rejection and split-turn coverage. The [P5 technical acceptance report](../artifacts/P5-acceptance/REPORT.md) records the completion divider, safe details, lifecycle isolation and package verification. User visual approval remains separate. Prototype material remains separate from the development package.

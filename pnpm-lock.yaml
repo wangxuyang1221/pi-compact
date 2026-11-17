@@ -11,6 +11,9 @@ importers:
       '@earendil-works/pi-coding-agent':
         specifier: 1.5.2
         version: 1.5.2(@aws-sdk/credential-provider-node@3.972.97)(@smithy/signature-v4@5.7.5)(ws@8.23.0)
+      '@earendil-works/pi-tui':
+        specifier: 1.5.2
+        version: 1.5.2
       '@types/node':
         specifier: ^22.19.0
         version: 22.20.5

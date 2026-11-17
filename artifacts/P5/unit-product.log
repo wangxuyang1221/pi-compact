@@ -1,0 +1,377 @@
+
+> pi-compact@0.1.0 test /Users/wangxuyang/.t3/worktrees/compact/t3-38da13e1-5924d01b0a94b17c
+> tsx --test tests/*.test.ts
+
+TAP version 13
+# Subtest: failed remains blocked until a successful explicit retry
+ok 1 - failed remains blocked until a successful explicit retry
+  ---
+  duration_ms: 0.515792
+  type: 'test'
+  ...
+# Subtest: cancelled remains blocked until a successful explicit retry
+ok 2 - cancelled remains blocked until a successful explicit retry
+  ---
+  duration_ms: 0.086584
+  type: 'test'
+  ...
+# Subtest: oversized remains blocked until a successful explicit retry
+ok 3 - oversized remains blocked until a successful explicit retry
+  ---
+  duration_ms: 0.086625
+  type: 'test'
+  ...
+# Subtest: persistence remains blocked until a successful explicit retry
+ok 4 - persistence remains blocked until a successful explicit retry
+  ---
+  duration_ms: 0.062292
+  type: 'test'
+  ...
+# Subtest: reentrant operations and duplicate completions are rejected
+ok 5 - reentrant operations and duplicate completions are rejected
+  ---
+  duration_ms: 0.089042
+  type: 'test'
+  ...
+# Subtest: a failed durable start prevents the operation
+ok 6 - a failed durable start prevents the operation
+  ---
+  duration_ms: 0.119583
+  type: 'test'
+  ...
+# Subtest: a failed durable completion cannot become idle
+ok 7 - a failed durable completion cannot become idle
+  ---
+  duration_ms: 0.0835
+  type: 'test'
+  ...
+# Subtest: restoring an interrupted operation blocks only that session
+ok 8 - restoring an interrupted operation blocks only that session
+  ---
+  duration_ms: 0.032125
+  type: 'test'
+  ...
+# Subtest: version and safety capability checks reject unknown hosts
+ok 9 - version and safety capability checks reject unknown hosts
+  ---
+  duration_ms: 0.299959
+  type: 'test'
+  ...
+# Subtest: journal and native entry confirmation reject corrupt persistence
+ok 10 - journal and native entry confirmation reject corrupt persistence
+  ---
+  duration_ms: 20.409125
+  type: 'test'
+  ...
+# Subtest: unsupported sessions cannot use retry to bypass capability checks
+ok 11 - unsupported sessions cannot use retry to bypass capability checks
+  ---
+  duration_ms: 0.091833
+  type: 'test'
+  ...
+# Subtest: duplicate installation keeps one dispatcher and restores its descriptors
+ok 12 - duplicate installation keeps one dispatcher and restores its descriptors
+  ---
+  duration_ms: 5.955542
+  type: 'test'
+  ...
+# assertion_calls=36
+# Subtest: the session file has a single owner and releases on disposal
+ok 13 - the session file has a single owner and releases on disposal
+  ---
+  duration_ms: 6.020166
+  type: 'test'
+  ...
+# Subtest: disposal rejects late requests without blocking a clean restart
+ok 14 - disposal rejects late requests without blocking a clean restart
+  ---
+  duration_ms: 0.13125
+  type: 'test'
+  ...
+# Subtest: readable reconstruction applies source edits across removed compactions
+ok 15 - readable reconstruction applies source edits across removed compactions
+  ---
+  duration_ms: 0.888125
+  type: 'test'
+  ...
+# Subtest: partial append recovery preserves exact previous bytes and blocks restart
+ok 16 - partial append recovery preserves exact previous bytes and blocks restart
+  ---
+  duration_ms: 42.398083
+  type: 'test'
+  ...
+# Subtest: readable recovery rejects missing ancestry and imported summaries without original sources
+ok 17 - readable recovery rejects missing ancestry and imported summaries without original sources
+  ---
+  duration_ms: 0.088958
+  type: 'test'
+  ...
+# pi-compact visual downgrade: unsupported Pi renderer capabilities. Native compaction display retained.
+# pi-compact visual downgrade: host component identity mismatch. Native compaction display retained.
+# Subtest: divider uses terminal cells at 0 columns and resets colors
+ok 18 - divider uses terminal cells at 0 columns and resets colors
+  ---
+  duration_ms: 1.596958
+  type: 'test'
+  ...
+# Subtest: divider uses terminal cells at 1 columns and resets colors
+ok 19 - divider uses terminal cells at 1 columns and resets colors
+  ---
+  duration_ms: 0.188958
+  type: 'test'
+  ...
+# Subtest: divider uses terminal cells at 2 columns and resets colors
+ok 20 - divider uses terminal cells at 2 columns and resets colors
+  ---
+  duration_ms: 0.134792
+  type: 'test'
+  ...
+# Subtest: divider uses terminal cells at 8 columns and resets colors
+ok 21 - divider uses terminal cells at 8 columns and resets colors
+  ---
+  duration_ms: 0.122541
+  type: 'test'
+  ...
+# Subtest: divider uses terminal cells at 18 columns and resets colors
+ok 22 - divider uses terminal cells at 18 columns and resets colors
+  ---
+  duration_ms: 0.087584
+  type: 'test'
+  ...
+# Subtest: divider uses terminal cells at 19 columns and resets colors
+ok 23 - divider uses terminal cells at 19 columns and resets colors
+  ---
+  duration_ms: 0.056958
+  type: 'test'
+  ...
+# Subtest: divider uses terminal cells at 20 columns and resets colors
+ok 24 - divider uses terminal cells at 20 columns and resets colors
+  ---
+  duration_ms: 0.072667
+  type: 'test'
+  ...
+# Subtest: divider uses terminal cells at 21 columns and resets colors
+ok 25 - divider uses terminal cells at 21 columns and resets colors
+  ---
+  duration_ms: 0.064167
+  type: 'test'
+  ...
+# Subtest: divider uses terminal cells at 23 columns and resets colors
+ok 26 - divider uses terminal cells at 23 columns and resets colors
+  ---
+  duration_ms: 0.182792
+  type: 'test'
+  ...
+# Subtest: divider uses terminal cells at 40 columns and resets colors
+ok 27 - divider uses terminal cells at 40 columns and resets colors
+  ---
+  duration_ms: 0.23575
+  type: 'test'
+  ...
+# Subtest: divider uses terminal cells at 90 columns and resets colors
+ok 28 - divider uses terminal cells at 90 columns and resets colors
+  ---
+  duration_ms: 0.076708
+  type: 'test'
+  ...
+# Subtest: divider uses terminal cells at 120 columns and resets colors
+ok 29 - divider uses terminal cells at 120 columns and resets colors
+  ---
+  duration_ms: 0.085583
+  type: 'test'
+  ...
+# Subtest: non-finite and negative widths cannot create unbounded lines
+ok 30 - non-finite and negative widths cannot create unbounded lines
+  ---
+  duration_ms: 0.031
+  type: 'test'
+  ...
+# Subtest: actual native component expands true summary and restores after repeated installation
+ok 31 - actual native component expands true summary and restores after repeated installation
+  ---
+  duration_ms: 25.662666
+  type: 'test'
+  ...
+# Subtest: unmanaged components keep native rendering and chained renderers survive disable
+ok 32 - unmanaged components keep native rendering and chained renderers survive disable
+  ---
+  duration_ms: 1.102667
+  type: 'test'
+  ...
+# Subtest: missing UI capability keeps native display without terminating
+ok 33 - missing UI capability keeps native display without terminating
+  ---
+  duration_ms: 0.735292
+  type: 'test'
+  ...
+# Subtest: simultaneous unrelated session keeps its own native card
+ok 34 - simultaneous unrelated session keeps its own native card
+  ---
+  duration_ms: 1.737541
+  type: 'test'
+  ...
+# Subtest: root class identity mismatch downgrades to actual native component
+ok 35 - root class identity mismatch downgrades to actual native component
+  ---
+  duration_ms: 0.50375
+  type: 'test'
+  ...
+# Subtest: expansion and repeated render never call model transport
+ok 36 - expansion and repeated render never call model transport
+  ---
+  duration_ms: 1.397917
+  type: 'test'
+  ...
+# Subtest: opaque expansion shows committed metadata and hides arbitrary wire and account material
+ok 37 - opaque expansion shows committed metadata and hides arbitrary wire and account material
+  ---
+  duration_ms: 0.98075
+  type: 'test'
+  ...
+# Subtest: compatibility follows account, endpoint, protocol and encoder capability across models
+ok 38 - compatibility follows account, endpoint, protocol and encoder capability across models
+  ---
+  duration_ms: 0.274625
+  type: 'test'
+  ...
+# Subtest: selection epoch rejects an A to B to A race even when final model bytes match
+ok 39 - selection epoch rejects an A to B to A race even when final model bytes match
+  ---
+  duration_ms: 0.272166
+  type: 'test'
+  ...
+# Subtest: effective OAuth capability has no environment gate and never stores credentials
+ok 40 - effective OAuth capability has no environment gate and never stores credentials
+  ---
+  duration_ms: 0.2635
+  type: 'test'
+  ...
+# Subtest: failed block persistence reports recovery guarantee with begin=true
+ok 41 - failed block persistence reports recovery guarantee with begin=true
+  ---
+  duration_ms: 0.634166
+  type: 'test'
+  ...
+# Subtest: failed block persistence reports recovery guarantee with begin=false
+ok 42 - failed block persistence reports recovery guarantee with begin=false
+  ---
+  duration_ms: 0.046083
+  type: 'test'
+  ...
+# Subtest: unwritable journal keeps a truthful recovery result with begin=true
+ok 43 - unwritable journal keeps a truthful recovery result with begin=true
+  ---
+  duration_ms: 18.219583
+  type: 'test'
+  ...
+# Subtest: unwritable journal keeps a truthful recovery result with begin=false
+ok 44 - unwritable journal keeps a truthful recovery result with begin=false
+  ---
+  duration_ms: 8.741875
+  type: 'test'
+  ...
+# Subtest: an uncertain idle replacement cannot promise the previous running barrier
+ok 45 - an uncertain idle replacement cannot promise the previous running barrier
+  ---
+  duration_ms: 0.246292
+  type: 'test'
+  ...
+# Subtest: inclusive percentage threshold uses the first integer token at or above the percentage
+ok 46 - inclusive percentage threshold uses the first integer token at or above the percentage
+  ---
+  duration_ms: 0.270958
+  type: 'test'
+  ...
+# Subtest: invalid percentages cannot replace the previous project setting
+ok 47 - invalid percentages cannot replace the previous project setting
+  ---
+  duration_ms: 2.759
+  type: 'test'
+  ...
+# Subtest: identity anchoring preserves an added byte-equal clone while summarizing the original
+ok 48 - identity anchoring preserves an added byte-equal clone while summarizing the original
+  ---
+  duration_ms: 1.477125
+  type: 'test'
+  ...
+# Subtest: ambiguous cloned additions and cross-cut duplicates keep all hook output
+ok 49 - ambiguous cloned additions and cross-cut duplicates keep all hook output
+  ---
+  duration_ms: 0.358417
+  type: 'test'
+  ...
+# Subtest: in-place content and array mutations survive the pre-hook snapshot
+ok 50 - in-place content and array mutations survive the pre-hook snapshot
+  ---
+  duration_ms: 0.436458
+  type: 'test'
+  ...
+# Subtest: equal clone arrays compact unchanged history and preserve reorder and deletes
+ok 51 - equal clone arrays compact unchanged history and preserve reorder and deletes
+  ---
+  duration_ms: 0.2925
+  type: 'test'
+  ...
+# Subtest: a retained tool member preserves every call and result in its batch and their hook order
+ok 52 - a retained tool member preserves every call and result in its batch and their hook order
+  ---
+  duration_ms: 0.328875
+  type: 'test'
+  ...
+# Subtest: a modified clone cannot cause an added original-content clone to be summarized
+ok 53 - a modified clone cannot cause an added original-content clone to be summarized
+  ---
+  duration_ms: 0.16325
+  type: 'test'
+  ...
+# Subtest: branch selection finds only its own opaque checkpoint and deleted sources disable source replay
+ok 54 - branch selection finds only its own opaque checkpoint and deleted sources disable source replay
+  ---
+  duration_ms: 0.74975
+  type: 'test'
+  ...
+# Subtest: unknown schema and mixed representations reject rather than replaying a display label
+ok 55 - unknown schema and mixed representations reject rather than replaying a display label
+  ---
+  duration_ms: 0.185709
+  type: 'test'
+  ...
+# Subtest: complete ordered output survives stream validation with nonzero budget
+ok 56 - complete ordered output survives stream validation with nonzero budget
+  ---
+  duration_ms: 1.271708
+  type: 'test'
+  ...
+# Subtest: half streams, false termination and conflicting terminal output fail
+ok 57 - half streams, false termination and conflicting terminal output fail
+  ---
+  duration_ms: 0.210583
+  type: 'test'
+  ...
+# Subtest: wire rejects unknown items, empty opaque, duplicate IDs and unfinished tool groups
+ok 58 - wire rejects unknown items, empty opaque, duplicate IDs and unfinished tool groups
+  ---
+  duration_ms: 0.3015
+  type: 'test'
+  ...
+# Subtest: unknown or corrupt usage cannot produce a free opaque checkpoint
+ok 59 - unknown or corrupt usage cannot produce a free opaque checkpoint
+  ---
+  duration_ms: 0.193208
+  type: 'test'
+  ...
+# Subtest: string-valued token usage is rejected at the protocol boundary
+ok 60 - string-valued token usage is rejected at the protocol boundary
+  ---
+  duration_ms: 0.126792
+  type: 'test'
+  ...
+1..60
+# tests 60
+# suites 0
+# pass 60
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 739.439125

@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/Users/wangxuyang/.t3/worktrees/compact/t3-38da13e1-5924d01b0a94b17c/artifacts/P5/verify-archive.py", line 12, in <module>
+    item = expected[member.name]
+           ~~~~~~~~^^^^^^^^^^^^^
+KeyError: 'artifacts/P1-fixes/runs/1794832486600/contender/agent/._auth.json'
+ERROR conda.cli.main_run:execute(142): `conda run python artifacts/P5/verify-archive.py` failed. (See above for error)

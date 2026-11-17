@@ -1,0 +1,7 @@
+{"name":"remote","pass":true,"path":"/Users/wangxuyang/.t3/worktrees/compact/t3-38da13e1-5924d01b0a94b17c/artifacts/P5/integrated/1794832630931/restored","firstFrames":[]}
+{"name":"fallback","pass":true,"path":"/Users/wangxuyang/.t3/worktrees/compact/t3-38da13e1-5924d01b0a94b17c/artifacts/P5/integrated/1794832630931/fallback","firstFrames":[{"at":506.029708,"event":"p5-first-frame","ms":5.85612500000002,"bytes":2595}]}
+{"name":"doublefail","pass":true,"path":"/Users/wangxuyang/.t3/worktrees/compact/t3-38da13e1-5924d01b0a94b17c/artifacts/P5/integrated/1794832630931/doublefail","firstFrames":[]}
+{"name":"remote-cancel","pass":true,"path":"/Users/wangxuyang/.t3/worktrees/compact/t3-38da13e1-5924d01b0a94b17c/artifacts/P5/integrated/1794832630931/remote-cancel","firstFrames":[]}
+{"name":"persist-fail","pass":true,"path":"/Users/wangxuyang/.t3/worktrees/compact/t3-38da13e1-5924d01b0a94b17c/artifacts/P5/integrated/1794832630931/persist-fail","firstFrames":[]}
+{"name":"migration","pass":true,"path":"/Users/wangxuyang/.t3/worktrees/compact/t3-38da13e1-5924d01b0a94b17c/artifacts/P5/integrated/1794832630931/migration","firstFrames":[{"at":490.019959,"event":"p5-first-frame","ms":5.46425000000005,"bytes":2595},{"at":2300.738084,"event":"p5-first-frame","ms":2.312249999999949,"bytes":2098}]}
+/Users/wangxuyang/.t3/worktrees/compact/t3-38da13e1-5924d01b0a94b17c/artifacts/P5/integrated/1794832630931

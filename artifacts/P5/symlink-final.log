@@ -1,0 +1,7 @@
+
+> pi-compact@0.1.0 verify:p5-symlink /Users/wangxuyang/.t3/worktrees/compact/t3-38da13e1-5924d01b0a94b17c
+> node scripts/verify-p5-symlink.mjs
+
+{"name":"direct","managed":true,"divider":true,"native":false,"summaries":1,"requests":0,"checkpoints":1,"firstFrame":4.511750000000006}
+{"name":"symlink","managed":true,"divider":true,"native":false,"summaries":1,"requests":0,"checkpoints":1,"firstFrame":4.287750000000017}
+/Users/wangxuyang/.t3/worktrees/compact/t3-38da13e1-5924d01b0a94b17c/artifacts/P5-symlink-fix/runs/1794832603050

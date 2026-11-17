@@ -1,0 +1,5 @@
+{"at":30.383667,"event":"preload","pid":34507,"version":"v22.22.2","network":"fetch fixture.invalid only; sockets denied"}
+{"at":437.538167,"event":"ready","version":"1.5.2","managed":true,"rendererBindings":0,"extensions":["/Users/wangxuyang/.t3/worktrees/compact/t3-48fc6757-52d383aa396c31ef/scripts/p5/observer.ts","/Users/wangxuyang/.t3/worktrees/compact/t3-48fc6757-52d383aa396c31ef/artifacts/P5-independent-development/probes/1794813137949/alias/src/index.ts"],"rootClass":"CompactionSummaryMessageComponent"}
+{"at":504.726125,"event":"compaction_start","reason":"manual","success":false}
+{"at":516.688542,"event":"native-request","count":1,"currentInput":false,"instructions":false}
+{"at":536.270334,"event":"compaction_end","reason":"manual","success":true,"aborted":false}

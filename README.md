@@ -42,3 +42,5 @@ The ordinary extension selects compatible Codex remote compaction or native text
 Run `pnpm lint`, `pnpm typecheck`, and `pnpm test`. The real CLI and TUI fixture suite runs with `pnpm verify:live --pr P2`. It requires tmux and a Python `codex-py312` conda environment with Pillow for terminal captures. Performance verification uses `pnpm verify:perf --pr P2`.
 
 `pnpm pack` creates a development tarball containing the extension source and README. The extension loader resolves Pi's host classes. Do not bundle a second Pi runtime into the package.
+
+The completion card uses the active theme and shows `↗↙ Context compacted`. `Ctrl+O` shows a text summary or safe opaque checkpoint metadata without a model request. Read [completion display and verification](docs/p5-renderer.md). P5 has passed [independent technical review](artifacts/P5-acceptance/REPORT.md). User visual review and P6 final acceptance remain pending.

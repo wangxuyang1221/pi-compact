@@ -1,0 +1,11 @@
+ts	phase	decision	why	evidence	result
+2026-11-16T00:00:00Z	shape	沿用已选架构，UI 按会话和组件实例包装	执行 owner 保持 P1，P4 后复验	DATA-SHAPES.md	defined before code
+2026-11-16T06:56:13.774Z	audit	首行 00:00 时间为初始化占位，撤销该时间值；数据形状确在代码实现前写入	用真实记录纠正时间字段，保留原行便于审计	DATA-SHAPES.md; 当前任务工具记录	timestamp corrected, ordering unchanged
+2026-11-16T06:56:13.775Z	fixture	修复 peer fixture 的窄窗口裁剪，并等待 resize 完成后继续	第一轮测试扩展超宽导致宿主退出，不能归因到 divider	runs/1794811128389/manual/raw.ansi; scripts/verify-p5-development.mjs	final scenarios pass
+2026-11-16T06:56:13.775Z	native-auto	以大新输入触发宿主真实自动路径	仅增加历史未触发 native threshold，最终预算拒绝符合 P1	runs/1794811176683/automatic/events.jsonl; runs/1794811889111/automatic/events.jsonl	automatic success and continuation pass
+2026-11-16T06:56:13.775Z	downgrade	UI 不兼容时同时使用 stderr、notify 和持久状态提示	宿主初始化会重绘历史并清除瞬时通知	package/1794811891503/downgrade-run/downgrade-notice.txt	native UI and normal continuation pass
+2026-11-16T06:56:13.775Z	lifetime	生命周期保存 manager 与 UI 快照，关闭时不读取失效 ctx	直接 dispose 会使扩展 ctx getter 失效，清理不能依赖它	disposal/1794811706533/stderr.txt; disposal/1794811805601/events.jsonl	double dispose and descriptor restoration pass
+2026-11-16T06:56:13.775Z	verification	完成真实 loader、TUI、包、性能及 P1 回归	P1 开发候选需要可复查结果，P4 后仍需完整验收	evidence-summary.json; audit.log	38 tests, development scenarios and 30 perf groups pass
+2026-11-16T06:56:13.775Z	cleanup	核对全部已登记 Pi、pane 与最终 runner PID	保留失败 run，不能仅清理最后成功场景	cleanup.json	96 PIDs exited; 39 tmux cleanup records; no listeners or socket
+2026-11-16T06:58:08.940Z	audit-rerun	从原始 tmux cleanup 集合排除审计自己写出的汇总	复跑不应把不同数据形状的最终摘要当作原始记录	audit-self-summary-failure.log; scripts/p5/audit-evidence.mjs	fix before final handback
+2026-11-16T06:58:39.858Z	audit-verified	连续两次复跑证据审计均通过	确认汇总文件不会再次进入原始记录集合	audit.log; audit-rerun.log	PASS; 96 PIDs absent; candidate ready for coordinator
