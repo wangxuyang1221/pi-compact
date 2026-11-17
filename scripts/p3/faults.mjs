@@ -34,6 +34,7 @@ for(const kind of ['partial','fsync','idle-rename','commit-unlink','kill']) {
     } else {
       await waitFor(()=>count(t,'compaction_end')===2,'failed completion');
       assert.equal(count(t,'extension-success'),1);
+      await waitFor(()=>!existsSync(join(dir,'session.jsonl.pi-compact-pending.json'))&&readFileSync(join(dir,'session.jsonl')).equals(before),'rollback settled');
       assert(readFileSync(join(dir,'session.jsonl')).equals(before));
       assert.equal(entries(dir).filter(e=>e.type==='compaction').length,1);
       await t.text('/p3-restore');await waitFor(()=>count(t,'disk-restored'),'restore disk');

@@ -1,0 +1,6 @@
+{"script":"verify-p3-fixes.mjs","code":0,"pid":30768,"log":"/Users/wangxuyang/.t3/worktrees/compact/t3-9e593481-75cd610a8c552e84/artifacts/P4/regressions/1794828744945/verify-p3-fixes.mjs.log"}
+{"script":"p3/faults.mjs","code":0,"pid":36800,"log":"/Users/wangxuyang/.t3/worktrees/compact/t3-9e593481-75cd610a8c552e84/artifacts/P4/regressions/1794828744945/p3-faults.mjs.log"}
+{"script":"verify-p1-fixes.mjs","code":0,"pid":41018,"log":"/Users/wangxuyang/.t3/worktrees/compact/t3-9e593481-75cd610a8c552e84/artifacts/P4/regressions/1794828744945/verify-p1-fixes.mjs.log"}
+{"script":"verify-p1-scope.mjs","code":0,"pid":42524,"log":"/Users/wangxuyang/.t3/worktrees/compact/t3-9e593481-75cd610a8c552e84/artifacts/P4/regressions/1794828744945/verify-p1-scope.mjs.log"}
+{"script":"verify-p2-fixes.mjs","code":0,"pid":42724,"log":"/Users/wangxuyang/.t3/worktrees/compact/t3-9e593481-75cd610a8c552e84/artifacts/P4/regressions/1794828744945/verify-p2-fixes.mjs.log"}
+{"script":"verify-p2-reconstruction.mjs","code":0,"pid":47866,"log":"/Users/wangxuyang/.t3/worktrees/compact/t3-9e593481-75cd610a8c552e84/artifacts/P4/regressions/1794828744945/verify-p2-reconstruction.mjs.log"}

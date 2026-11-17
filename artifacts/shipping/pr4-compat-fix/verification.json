@@ -1,0 +1,680 @@
+{
+  "head": "d1d17dc9a362546781c458ba58334b589761ea0d",
+  "scenarios": [
+    {
+      "lane": 1,
+      "variant": "baseline",
+      "pass": true,
+      "dir": "/Users/wangxuyang/.t3/worktrees/compact/fix-shipping-pr1-lock-r-102e22217d8e86d5/artifacts/P4/runs/1794929576708/lane-1-baseline",
+      "remote": 0,
+      "native": 1,
+      "sourceRequests": 0,
+      "normal": 1
+    },
+    {
+      "lane": 1,
+      "variant": "head",
+      "pass": true,
+      "dir": "/Users/wangxuyang/.t3/worktrees/compact/fix-shipping-pr1-lock-r-102e22217d8e86d5/artifacts/P4/runs/1794929576708/lane-1-head",
+      "remote": 1,
+      "native": 1,
+      "sourceRequests": 1,
+      "normal": 1
+    },
+    {
+      "lane": 2,
+      "variant": "head",
+      "pass": true,
+      "dir": "/Users/wangxuyang/.t3/worktrees/compact/fix-shipping-pr1-lock-r-102e22217d8e86d5/artifacts/P4/runs/1794929576708/lane-2-head",
+      "remote": 1,
+      "native": 1,
+      "sourceRequests": 1,
+      "normal": 1
+    },
+    {
+      "lane": 3,
+      "variant": "head",
+      "pass": true,
+      "dir": "/Users/wangxuyang/.t3/worktrees/compact/fix-shipping-pr1-lock-r-102e22217d8e86d5/artifacts/P4/runs/1794929576708/lane-3-head",
+      "remote": 1,
+      "native": 0,
+      "sourceRequests": 0,
+      "normal": 1
+    },
+    {
+      "lane": 4,
+      "variant": "head",
+      "pass": true,
+      "dir": "/Users/wangxuyang/.t3/worktrees/compact/fix-shipping-pr1-lock-r-102e22217d8e86d5/artifacts/P4/runs/1794929576708/lane-4-head",
+      "remote": 1,
+      "native": 1,
+      "sourceRequests": 0,
+      "normal": 1
+    },
+    {
+      "lane": 5,
+      "variant": "head",
+      "pass": true,
+      "dir": "/Users/wangxuyang/.t3/worktrees/compact/fix-shipping-pr1-lock-r-102e22217d8e86d5/artifacts/P4/runs/1794929576708/lane-5-head",
+      "remote": 1,
+      "native": 1,
+      "sourceRequests": 0,
+      "normal": 1
+    },
+    {
+      "lane": 6,
+      "variant": "head",
+      "pass": true,
+      "dir": "/Users/wangxuyang/.t3/worktrees/compact/fix-shipping-pr1-lock-r-102e22217d8e86d5/artifacts/P4/runs/1794929576708/lane-6-head",
+      "remote": 1,
+      "native": 4,
+      "sourceRequests": 0,
+      "normal": 1
+    },
+    {
+      "lane": 7,
+      "variant": "head",
+      "pass": true,
+      "dir": "/Users/wangxuyang/.t3/worktrees/compact/fix-shipping-pr1-lock-r-102e22217d8e86d5/artifacts/P4/runs/1794929576708/lane-7-head",
+      "remote": 1,
+      "native": 0,
+      "sourceRequests": 1,
+      "normal": 0
+    },
+    {
+      "lane": 8,
+      "variant": "head",
+      "pass": true,
+      "dir": "/Users/wangxuyang/.t3/worktrees/compact/fix-shipping-pr1-lock-r-102e22217d8e86d5/artifacts/P4/runs/1794929576708/lane-8-head",
+      "remote": 1,
+      "native": 1,
+      "sourceRequests": 2,
+      "normal": 1
+    },
+    {
+      "lane": 9,
+      "variant": "head",
+      "pass": true,
+      "dir": "/Users/wangxuyang/.t3/worktrees/compact/fix-shipping-pr1-lock-r-102e22217d8e86d5/artifacts/P4/runs/1794929576708/lane-9-head",
+      "remote": 2,
+      "native": 0,
+      "sourceRequests": 0,
+      "normal": 3
+    },
+    {
+      "lane": 10,
+      "variant": "head",
+      "pass": true,
+      "dir": "/Users/wangxuyang/.t3/worktrees/compact/fix-shipping-pr1-lock-r-102e22217d8e86d5/artifacts/P4/runs/1794929576708/lane-10-head",
+      "remote": 0,
+      "native": 1,
+      "sourceRequests": 1,
+      "normal": 1
+    },
+    {
+      "mode": "reload-source",
+      "dir": "/Users/wangxuyang/.t3/worktrees/compact/fix-shipping-pr1-lock-r-102e22217d8e86d5/artifacts/P4-fixes/runs/1794929600086/reload-source",
+      "pass": true,
+      "requests": [
+        {
+          "phase": "remote",
+          "model": "gpt-6-astra"
+        },
+        {
+          "phase": "source",
+          "model": "gpt-6-astra"
+        },
+        {
+          "phase": "native",
+          "model": "deepseek-chat"
+        },
+        {
+          "phase": "normal",
+          "model": "deepseek-chat"
+        }
+      ],
+      "cleanup": {
+        "panePids": [
+          42324,
+          42325,
+          42325,
+          42356,
+          42357,
+          42334,
+          42334
+        ],
+        "listenerCheck": {
+          "exitCode": 1,
+          "stdout": "",
+          "stderr": ""
+        },
+        "alive": [],
+        "exitCode": "0",
+        "socketExists": false
+      }
+    },
+    {
+      "mode": "reload-native",
+      "dir": "/Users/wangxuyang/.t3/worktrees/compact/fix-shipping-pr1-lock-r-102e22217d8e86d5/artifacts/P4-fixes/runs/1794929600086/reload-native",
+      "pass": true,
+      "requests": [
+        {
+          "phase": "remote",
+          "model": "gpt-6-astra"
+        },
+        {
+          "phase": "source",
+          "model": "gpt-6-astra"
+        },
+        {
+          "phase": "native",
+          "model": "deepseek-chat"
+        },
+        {
+          "phase": "native",
+          "model": "deepseek-chat"
+        },
+        {
+          "phase": "normal",
+          "model": "deepseek-chat"
+        }
+      ],
+      "cleanup": {
+        "panePids": [
+          42704,
+          42705,
+          42705,
+          42736,
+          42737,
+          42714,
+          42714
+        ],
+        "listenerCheck": {
+          "exitCode": 1,
+          "stdout": "",
+          "stderr": ""
+        },
+        "alive": [],
+        "exitCode": "0",
+        "socketExists": false
+      }
+    },
+    {
+      "mode": "reload-source-unchanged",
+      "dir": "/Users/wangxuyang/.t3/worktrees/compact/fix-shipping-pr1-lock-r-102e22217d8e86d5/artifacts/P4-fixes/runs/1794929600086/reload-source-unchanged",
+      "pass": true,
+      "requests": [
+        {
+          "phase": "remote",
+          "model": "gpt-6-astra"
+        },
+        {
+          "phase": "source",
+          "model": "gpt-6-astra"
+        },
+        {
+          "phase": "source",
+          "model": "gpt-6-astra"
+        },
+        {
+          "phase": "native",
+          "model": "deepseek-chat"
+        },
+        {
+          "phase": "normal",
+          "model": "deepseek-chat"
+        }
+      ],
+      "cleanup": {
+        "panePids": [
+          43080,
+          43081,
+          43081,
+          43112,
+          43113,
+          43090,
+          43090
+        ],
+        "listenerCheck": {
+          "exitCode": 1,
+          "stdout": "",
+          "stderr": ""
+        },
+        "alive": [],
+        "exitCode": "0",
+        "socketExists": false
+      }
+    },
+    {
+      "mode": "reload-native-unchanged",
+      "dir": "/Users/wangxuyang/.t3/worktrees/compact/fix-shipping-pr1-lock-r-102e22217d8e86d5/artifacts/P4-fixes/runs/1794929600086/reload-native-unchanged",
+      "pass": true,
+      "requests": [
+        {
+          "phase": "remote",
+          "model": "gpt-6-astra"
+        },
+        {
+          "phase": "source",
+          "model": "gpt-6-astra"
+        },
+        {
+          "phase": "native",
+          "model": "deepseek-chat"
+        },
+        {
+          "phase": "source",
+          "model": "gpt-6-astra"
+        },
+        {
+          "phase": "native",
+          "model": "deepseek-chat"
+        },
+        {
+          "phase": "normal",
+          "model": "deepseek-chat"
+        }
+      ],
+      "cleanup": {
+        "panePids": [
+          43431,
+          43432,
+          43432,
+          43463,
+          43464,
+          43441,
+          43441
+        ],
+        "listenerCheck": {
+          "exitCode": 1,
+          "stdout": "",
+          "stderr": ""
+        },
+        "alive": [],
+        "exitCode": "0",
+        "socketExists": false
+      }
+    },
+    {
+      "mode": "split-source",
+      "dir": "/Users/wangxuyang/.t3/worktrees/compact/fix-shipping-pr1-lock-r-102e22217d8e86d5/artifacts/P4-fixes/runs/1794929600086/split-source",
+      "pass": true,
+      "requests": [
+        {
+          "phase": "remote",
+          "model": "gpt-6-astra"
+        },
+        {
+          "phase": "source",
+          "model": "gpt-6-astra"
+        },
+        {
+          "phase": "native",
+          "model": "deepseek-chat"
+        },
+        {
+          "phase": "normal",
+          "model": "deepseek-chat"
+        }
+      ],
+      "cleanup": {
+        "panePids": [
+          43789,
+          43790,
+          43790,
+          43845,
+          43846,
+          43823,
+          43823
+        ],
+        "listenerCheck": {
+          "exitCode": 1,
+          "stdout": "",
+          "stderr": ""
+        },
+        "alive": [],
+        "exitCode": "0",
+        "socketExists": false
+      }
+    },
+    {
+      "mode": "split-multi-source",
+      "dir": "/Users/wangxuyang/.t3/worktrees/compact/fix-shipping-pr1-lock-r-102e22217d8e86d5/artifacts/P4-fixes/runs/1794929600086/split-multi-source",
+      "pass": true,
+      "requests": [
+        {
+          "phase": "remote",
+          "model": "gpt-6-astra"
+        },
+        {
+          "phase": "remote",
+          "model": "gpt-6-astra"
+        },
+        {
+          "phase": "source",
+          "model": "gpt-6-astra"
+        },
+        {
+          "phase": "native",
+          "model": "deepseek-chat"
+        },
+        {
+          "phase": "normal",
+          "model": "deepseek-chat"
+        }
+      ],
+      "cleanup": {
+        "panePids": [
+          44155,
+          44156,
+          44156,
+          44187,
+          44188,
+          44165,
+          44165
+        ],
+        "listenerCheck": {
+          "exitCode": 1,
+          "stdout": "",
+          "stderr": ""
+        },
+        "alive": [],
+        "exitCode": "0",
+        "socketExists": false
+      }
+    },
+    {
+      "mode": "split-raw",
+      "dir": "/Users/wangxuyang/.t3/worktrees/compact/fix-shipping-pr1-lock-r-102e22217d8e86d5/artifacts/P4-fixes/runs/1794929600086/split-raw",
+      "pass": true,
+      "requests": [
+        {
+          "phase": "remote",
+          "model": "gpt-6-astra"
+        },
+        {
+          "phase": "native",
+          "model": "deepseek-chat"
+        },
+        {
+          "phase": "native",
+          "model": "deepseek-chat"
+        },
+        {
+          "phase": "normal",
+          "model": "deepseek-chat"
+        }
+      ],
+      "cleanup": {
+        "panePids": [
+          44566,
+          44567,
+          44567,
+          44598,
+          44599,
+          44576,
+          44576
+        ],
+        "listenerCheck": {
+          "exitCode": 1,
+          "stdout": "",
+          "stderr": ""
+        },
+        "alive": [],
+        "exitCode": "0",
+        "socketExists": false
+      }
+    },
+    {
+      "mode": "split-multi-raw",
+      "dir": "/Users/wangxuyang/.t3/worktrees/compact/fix-shipping-pr1-lock-r-102e22217d8e86d5/artifacts/P4-fixes/runs/1794929600086/split-multi-raw",
+      "pass": true,
+      "requests": [
+        {
+          "phase": "remote",
+          "model": "gpt-6-astra"
+        },
+        {
+          "phase": "remote",
+          "model": "gpt-6-astra"
+        },
+        {
+          "phase": "native",
+          "model": "deepseek-chat"
+        },
+        {
+          "phase": "native",
+          "model": "deepseek-chat"
+        },
+        {
+          "phase": "normal",
+          "model": "deepseek-chat"
+        }
+      ],
+      "cleanup": {
+        "panePids": [
+          44936,
+          44937,
+          44937,
+          44968,
+          44969,
+          44946,
+          44946
+        ],
+        "listenerCheck": {
+          "exitCode": 1,
+          "stdout": "",
+          "stderr": ""
+        },
+        "alive": [],
+        "exitCode": "0",
+        "socketExists": false
+      }
+    },
+    {
+      "mode": "split-failure",
+      "dir": "/Users/wangxuyang/.t3/worktrees/compact/fix-shipping-pr1-lock-r-102e22217d8e86d5/artifacts/P4-fixes/runs/1794929600086/split-failure",
+      "pass": true,
+      "requests": [
+        {
+          "phase": "remote",
+          "model": "gpt-6-astra"
+        },
+        {
+          "phase": "source",
+          "model": "gpt-6-astra"
+        },
+        {
+          "phase": "native",
+          "model": "deepseek-chat"
+        },
+        {
+          "phase": "native",
+          "model": "deepseek-chat"
+        },
+        {
+          "phase": "normal",
+          "model": "deepseek-chat"
+        }
+      ],
+      "cleanup": {
+        "panePids": [
+          45366,
+          45367,
+          45367,
+          45398,
+          45399,
+          45376,
+          45376
+        ],
+        "listenerCheck": {
+          "exitCode": 1,
+          "stdout": "",
+          "stderr": ""
+        },
+        "alive": [],
+        "exitCode": "0",
+        "socketExists": false
+      }
+    },
+    {
+      "mode": "split-multi-failure",
+      "dir": "/Users/wangxuyang/.t3/worktrees/compact/fix-shipping-pr1-lock-r-102e22217d8e86d5/artifacts/P4-fixes/runs/1794929600086/split-multi-failure",
+      "pass": true,
+      "requests": [
+        {
+          "phase": "remote",
+          "model": "gpt-6-astra"
+        },
+        {
+          "phase": "remote",
+          "model": "gpt-6-astra"
+        },
+        {
+          "phase": "source",
+          "model": "gpt-6-astra"
+        },
+        {
+          "phase": "native",
+          "model": "deepseek-chat"
+        },
+        {
+          "phase": "native",
+          "model": "deepseek-chat"
+        },
+        {
+          "phase": "normal",
+          "model": "deepseek-chat"
+        }
+      ],
+      "cleanup": {
+        "panePids": [
+          45695,
+          45697,
+          45697,
+          45728,
+          45729,
+          45706,
+          45706
+        ],
+        "listenerCheck": {
+          "exitCode": 1,
+          "stdout": "",
+          "stderr": ""
+        },
+        "alive": [],
+        "exitCode": "0",
+        "socketExists": false
+      }
+    }
+  ],
+  "pids": [
+    37860,
+    37861,
+    37870,
+    37892,
+    37893,
+    38203,
+    38205,
+    38216,
+    38238,
+    38239,
+    38528,
+    38529,
+    38538,
+    38560,
+    38561,
+    38899,
+    38900,
+    38909,
+    38931,
+    38932,
+    39279,
+    39280,
+    39289,
+    39313,
+    39314,
+    39626,
+    39627,
+    39636,
+    39658,
+    39659,
+    39978,
+    39979,
+    39988,
+    40010,
+    40011,
+    40339,
+    40340,
+    40349,
+    40371,
+    40372,
+    40750,
+    40751,
+    40760,
+    40782,
+    40783,
+    41188,
+    41189,
+    41198,
+    41220,
+    41221,
+    42046,
+    42047,
+    42060,
+    42082,
+    42083,
+    42324,
+    42325,
+    42334,
+    42356,
+    42357,
+    42704,
+    42705,
+    42714,
+    42736,
+    42737,
+    43080,
+    43081,
+    43090,
+    43112,
+    43113,
+    43431,
+    43432,
+    43441,
+    43463,
+    43464,
+    43789,
+    43790,
+    43823,
+    43845,
+    43846,
+    44155,
+    44156,
+    44165,
+    44187,
+    44188,
+    44566,
+    44567,
+    44576,
+    44598,
+    44599,
+    44936,
+    44937,
+    44946,
+    44968,
+    44969,
+    45366,
+    45367,
+    45376,
+    45398,
+    45399,
+    45695,
+    45697,
+    45706,
+    45728,
+    45729
+  ],
+  "alive": [],
+  "listeners": ""
+}

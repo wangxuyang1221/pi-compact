@@ -1,0 +1,373 @@
+{
+  "pass": true,
+  "cases": 14,
+  "checks": [
+    {
+      "name": "remote-reload",
+      "requests": [
+        {
+          "phase": "remote",
+          "bytes": 8473,
+          "sha256": "76bcf7160a27c24cb17ad9161f3492c01b7c4670c2832d581df62ae2396f1872"
+        },
+        {
+          "phase": "remote",
+          "bytes": 505,
+          "sha256": "06d2766b14f80fbe88cdc5fa615c8c32b930fc5932ed4f4c3070851b8dc0e6c9"
+        },
+        {
+          "phase": "normal",
+          "bytes": 1653,
+          "sha256": "7ae308e4be0e967860ed51a63ad59b5707aff09b36832c365694a543711f3625"
+        }
+      ]
+    },
+    {
+      "name": "remote-auth-reload",
+      "requests": [
+        {
+          "phase": "remote",
+          "bytes": 505,
+          "sha256": "06d2766b14f80fbe88cdc5fa615c8c32b930fc5932ed4f4c3070851b8dc0e6c9"
+        },
+        {
+          "phase": "normal",
+          "bytes": 1658,
+          "sha256": "d51c6d47a5901d76094df21a9d01670ad1e46689552fb348c745df1da93a4ece"
+        }
+      ]
+    },
+    {
+      "name": "source-auth-reload",
+      "requests": [
+        {
+          "phase": "remote",
+          "bytes": 8473,
+          "sha256": "76bcf7160a27c24cb17ad9161f3492c01b7c4670c2832d581df62ae2396f1872"
+        },
+        {
+          "phase": "native",
+          "bytes": 1537,
+          "sha256": "89b0f395ecf07a971d79a1fd975844ed971750cf80e6575c42d610b3dbb10767"
+        },
+        {
+          "phase": "normal",
+          "bytes": 1041,
+          "sha256": "09631b4e0ec9af01f8f23a29ab5888533ddb70b3ce7e4145746e25d8b8593872"
+        }
+      ]
+    },
+    {
+      "name": "remote-auth-after",
+      "requests": [
+        {
+          "phase": "remote",
+          "bytes": 505,
+          "sha256": "06d2766b14f80fbe88cdc5fa615c8c32b930fc5932ed4f4c3070851b8dc0e6c9"
+        },
+        {
+          "phase": "normal",
+          "bytes": 1657,
+          "sha256": "9f99d340459920e20cace262f77e1207a23ba60e70057570219910248cdaaa41"
+        }
+      ]
+    },
+    {
+      "name": "source-auth-after",
+      "requests": [
+        {
+          "phase": "remote",
+          "bytes": 8473,
+          "sha256": "76bcf7160a27c24cb17ad9161f3492c01b7c4670c2832d581df62ae2396f1872"
+        },
+        {
+          "phase": "native",
+          "bytes": 1537,
+          "sha256": "89b0f395ecf07a971d79a1fd975844ed971750cf80e6575c42d610b3dbb10767"
+        },
+        {
+          "phase": "normal",
+          "bytes": 1040,
+          "sha256": "14d1375cd5deb30e3fb835490157cfd5f6d35a83e6f41a059dc4420dd0a67a1e"
+        }
+      ]
+    },
+    {
+      "name": "source-auth-failed-edit",
+      "requests": [
+        {
+          "phase": "remote",
+          "bytes": 8473,
+          "sha256": "76bcf7160a27c24cb17ad9161f3492c01b7c4670c2832d581df62ae2396f1872"
+        },
+        {
+          "phase": "source",
+          "bytes": 1193,
+          "sha256": "9c14086416d56cbf40881faffa0f8c20b176ece87c9bb00cf69c79e54d72f1a2"
+        },
+        {
+          "phase": "normal",
+          "bytes": 1077,
+          "sha256": "230a6fc618d861687c3bc8ecb695326bba7f29262e667911b7070d685ec75d4f"
+        }
+      ]
+    },
+    {
+      "name": "native-default-reload",
+      "requests": [
+        {
+          "phase": "native",
+          "bytes": 9505,
+          "sha256": "11cbc0cede2de1137634696ccf9b1bba925ec6c9ee189c77291cac8ed101cb80"
+        },
+        {
+          "phase": "native",
+          "bytes": 1537,
+          "sha256": "89b0f395ecf07a971d79a1fd975844ed971750cf80e6575c42d610b3dbb10767"
+        },
+        {
+          "phase": "normal",
+          "bytes": 1044,
+          "sha256": "a43c9f919597129e1d635ffaa303fa572d6267b7fc934b4806c7adf8393d31cd"
+        }
+      ]
+    },
+    {
+      "name": "source-retained-tools",
+      "requests": [
+        {
+          "phase": "remote",
+          "bytes": 8473,
+          "sha256": "76bcf7160a27c24cb17ad9161f3492c01b7c4670c2832d581df62ae2396f1872"
+        },
+        {
+          "phase": "source",
+          "bytes": 1193,
+          "sha256": "9c14086416d56cbf40881faffa0f8c20b176ece87c9bb00cf69c79e54d72f1a2"
+        },
+        {
+          "phase": "native",
+          "bytes": 7550,
+          "sha256": "e2547c1e3c7417bca9e0953c1637f84068f508ead7014487a69baef626fce6fa"
+        },
+        {
+          "phase": "normal",
+          "bytes": 3667,
+          "sha256": "d77efd558a48b6694a5c698640492c478bf967b706d9b4d549980c6b9b2c0691"
+        }
+      ],
+      "retainedCalls": [
+        "ind_2_0",
+        "ind_2_1"
+      ],
+      "retainedResults": [
+        "ind_2_0",
+        "ind_2_1"
+      ]
+    },
+    {
+      "name": "source-context-edit",
+      "requests": [
+        {
+          "phase": "remote",
+          "bytes": 8473,
+          "sha256": "76bcf7160a27c24cb17ad9161f3492c01b7c4670c2832d581df62ae2396f1872"
+        },
+        {
+          "phase": "source",
+          "bytes": 1193,
+          "sha256": "9c14086416d56cbf40881faffa0f8c20b176ece87c9bb00cf69c79e54d72f1a2"
+        },
+        {
+          "phase": "native",
+          "bytes": 9354,
+          "sha256": "0863da8c5b24cb79f8edbd47cfaa8431dfe38e32a99349b62e2fe8ac7567b773"
+        },
+        {
+          "phase": "normal",
+          "bytes": 1710,
+          "sha256": "e183c1a3e550a6452e03463731383b4fc997bcc693d260c7856ad784f3daf035"
+        }
+      ],
+      "retainedCalls": [],
+      "retainedResults": []
+    },
+    {
+      "name": "source-large-segments",
+      "requests": [
+        {
+          "phase": "remote",
+          "bytes": 8473,
+          "sha256": "76bcf7160a27c24cb17ad9161f3492c01b7c4670c2832d581df62ae2396f1872"
+        },
+        {
+          "phase": "source",
+          "bytes": 1193,
+          "sha256": "9c14086416d56cbf40881faffa0f8c20b176ece87c9bb00cf69c79e54d72f1a2"
+        },
+        {
+          "phase": "native",
+          "bytes": 31933,
+          "sha256": "23d378b9b1d0ae38b048e2b23daf5f899de6c87531922f02d8ae746438206cd9"
+        },
+        {
+          "phase": "native",
+          "bytes": 33090,
+          "sha256": "2cbb23b2728e5724cabd7b4d7e9d8168df4e345c08cd934bb09582f7a9751f37"
+        },
+        {
+          "phase": "native",
+          "bytes": 22027,
+          "sha256": "44fc54177470b632f5abec1f7608ad2817e287d26a74ff3f09ca519a35f2b586"
+        },
+        {
+          "phase": "normal",
+          "bytes": 3406,
+          "sha256": "36611cc4ad6604dfdedd774055a8c270353b718b06bde354511318a3608de12b"
+        }
+      ],
+      "completeToolResults": 40,
+      "serializedUtf16": 77821,
+      "previousSummaryChainExact": true,
+      "retainedCalls": [],
+      "retainedResults": []
+    },
+    {
+      "name": "source-multi-large",
+      "requests": [
+        {
+          "phase": "remote",
+          "bytes": 8473,
+          "sha256": "76bcf7160a27c24cb17ad9161f3492c01b7c4670c2832d581df62ae2396f1872"
+        },
+        {
+          "phase": "remote",
+          "bytes": 5604,
+          "sha256": "c86c1926c972a2f767a2831494fe2eac179e5c20731e41c70338e6cd91b44236"
+        },
+        {
+          "phase": "source",
+          "bytes": 1193,
+          "sha256": "32985a4f13d9f0ee5b53330dad3778b513a81f462f6acf23200a064554bc40b6"
+        },
+        {
+          "phase": "native",
+          "bytes": 31933,
+          "sha256": "23d378b9b1d0ae38b048e2b23daf5f899de6c87531922f02d8ae746438206cd9"
+        },
+        {
+          "phase": "native",
+          "bytes": 33090,
+          "sha256": "2cbb23b2728e5724cabd7b4d7e9d8168df4e345c08cd934bb09582f7a9751f37"
+        },
+        {
+          "phase": "native",
+          "bytes": 22027,
+          "sha256": "44fc54177470b632f5abec1f7608ad2817e287d26a74ff3f09ca519a35f2b586"
+        },
+        {
+          "phase": "normal",
+          "bytes": 3403,
+          "sha256": "17710d2199caf706504f47a6b04cce3698e8826f1cd1e81a035401643982e658"
+        }
+      ],
+      "completeToolResults": 40,
+      "serializedUtf16": 77821,
+      "previousSummaryChainExact": true,
+      "retainedCalls": [],
+      "retainedResults": []
+    },
+    {
+      "name": "raw-context-edit",
+      "requests": [
+        {
+          "phase": "remote",
+          "bytes": 8473,
+          "sha256": "76bcf7160a27c24cb17ad9161f3492c01b7c4670c2832d581df62ae2396f1872"
+        },
+        {
+          "phase": "native",
+          "bytes": 9947,
+          "sha256": "7294de5c9e7f8e3f1ef464a841dfc15ef76686dd3cd7206681c726601a20e404"
+        },
+        {
+          "phase": "native",
+          "bytes": 8203,
+          "sha256": "ac78a27a9746c3006c30d73f817753243c08d2948c571be71443d6d55c9ce3ce"
+        },
+        {
+          "phase": "normal",
+          "bytes": 1774,
+          "sha256": "b48ce8403f22844e036fff7a4df816ca2e0db832b1f5a249caa0a68d42fffa5b"
+        }
+      ],
+      "retainedCalls": [],
+      "retainedResults": []
+    },
+    {
+      "name": "failure-retained-tools",
+      "requests": [
+        {
+          "phase": "remote",
+          "bytes": 8473,
+          "sha256": "76bcf7160a27c24cb17ad9161f3492c01b7c4670c2832d581df62ae2396f1872"
+        },
+        {
+          "phase": "source",
+          "bytes": 1193,
+          "sha256": "9c14086416d56cbf40881faffa0f8c20b176ece87c9bb00cf69c79e54d72f1a2"
+        },
+        {
+          "phase": "native",
+          "bytes": 9947,
+          "sha256": "7294de5c9e7f8e3f1ef464a841dfc15ef76686dd3cd7206681c726601a20e404"
+        },
+        {
+          "phase": "native",
+          "bytes": 6399,
+          "sha256": "9e872c8e9e1fe630c9904e333ca6e782d9649ec35026d5f40d07d714d980e486"
+        },
+        {
+          "phase": "normal",
+          "bytes": 3735,
+          "sha256": "4aeb24cc198e6b47d5ec87b0962b7a7d32b087a6eca7c842973b440bfa6a70a9"
+        }
+      ],
+      "retainedCalls": [
+        "ind_2_0",
+        "ind_2_1"
+      ],
+      "retainedResults": [
+        "ind_2_0",
+        "ind_2_1"
+      ]
+    },
+    {
+      "name": "native-original-split",
+      "requests": [
+        {
+          "phase": "native",
+          "bytes": 9505,
+          "sha256": "11cbc0cede2de1137634696ccf9b1bba925ec6c9ee189c77291cac8ed101cb80"
+        },
+        {
+          "phase": "native",
+          "bytes": 2413,
+          "sha256": "da2f54fb3d6642c749158da9bd8bc855940f939d8a5816652103fe91c2ac001c"
+        },
+        {
+          "phase": "native",
+          "bytes": 8202,
+          "sha256": "1871afb121392c4d286a0bddc7a2c8c876d291f55fc249c84e54e88030386d4d"
+        },
+        {
+          "phase": "normal",
+          "bytes": 1778,
+          "sha256": "fbe8fb136c1f88a360744fc722a0a9992cd03d6d5eba48dcd7c35ebf50bef827"
+        }
+      ],
+      "retainedCalls": [],
+      "retainedResults": []
+    }
+  ]
+}

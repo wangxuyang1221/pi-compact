@@ -81,10 +81,10 @@ for (const kind of ['direct-retry', 'blocked-input', 'restart', 'kill-idle']) {
 
 for (const variant of ['baseline', 'head']) {
   const dir = join(base, 'small-' + variant);
-  const t = await tui(dir, { ...options, variant, extraEnv: { ...options.extraEnv, PI_COMPACT_P3_DEV: '' }, configure(dir) {
+  const t = await tui(dir, { ...options, variant, extraArgs: ['--provider', 'fixture', '--model', 'fixture-model'], configure(dir) {
     options.configure(dir);
     const path = join(dir, 'agent/models.json'); const models = JSON.parse(readFileSync(path));
-    models.providers['openai-codex'].models[0].contextWindow = 4096;
+    models.providers.fixture.models[0].contextWindow = 4096;
     writeFileSync(path, JSON.stringify(models));
   } });
   try {

@@ -6,7 +6,7 @@ export type Compatibility = { provider: 'openai-codex'; endpoint: string; protoc
 export type Coverage = { sourceLeaf: string; firstKept: string; entries: string[]; hash: string };
 type Base = { schemaVersion: 1; source: Coverage };
 export type Checkpoint = Base & (
-  | { kind: 'text'; text: string; segments: { entries: string[]; hash: string; start: number; end: number }[] }
+  | { kind: 'text'; text: string; segments: { entries: string[]; hash: string; start: number; end: number; unit?: 'utf16' | 'wire' }[] }
   | { kind: 'opaque'; compatibility: Compatibility; items: WireItem[]; budget: WireBudget }
 );
 export type Message = Pi.SessionProjection['messages'][number];

@@ -1,6 +1,6 @@
 # Implementation roadmap
 
-The design is approved. Stages 1 through 3 have passed independent acceptance; stages 4 through 6 remain open. Stage 3 remote execution remains limited to isolated fixtures until migration is accepted. Each stage requires tests, evidence from a real Pi runtime, and checks for local processing overhead.
+The design is approved. Stages 1 through 4 have passed independent technical acceptance; stages 5 and 6 remain open. Migration and capability selection have passed isolated runtime tests. User visual review and real-service quality acceptance remain pending. Each stage requires tests, evidence from a real Pi runtime, and checks for local processing overhead.
 
 ## 1. Establish the extension integration
 
@@ -38,10 +38,10 @@ Accept this stage when repeated remote compaction, continuation, fallback, and d
 
 Depends on stage 3.
 
-- [ ] Convert opaque context before continuing with an incompatible provider.
-- [ ] Reuse readable-history reconstruction for large or unavailable-source histories.
-- [ ] Validate account changes, branch ownership, schema compatibility, and stale asynchronous results.
-- [ ] Pause safely when conversion fails or is cancelled.
+- [x] Convert opaque context before continuing with an incompatible provider.
+- [x] Reuse readable-history reconstruction for large or unavailable-source histories.
+- [x] Validate account changes, branch ownership, schema compatibility, and stale asynchronous results.
+- [x] Pause safely when conversion fails or is cancelled.
 
 Accept this stage when Codex-to-DeepSeek continuation receives complete readable context, and no incompatible request contains opaque data.
 
@@ -76,4 +76,4 @@ Check local overhead against a measured native baseline. Network completion time
 
 Screenshots and interaction recordings should come from the tested package revision. Temporary processes and listeners must be stopped after verification.
 
-The repository contains the P1 through P3 extension and reproducible verification runners. Read the [P1 acceptance report](../artifacts/P1-acceptance/REPORT.md) and [adapter boundaries](p1-adapter.md) for the tested revision and supported behavior. The [P2 acceptance report](../artifacts/P2-acceptance/REPORT.md) records percentage policy, hook reconstruction, and measured limits. The [P3 acceptance report](../artifacts/P3-acceptance/REPORT.md) records checkpoint recovery, native fallback, and the fixture-only remote scope. Prototype material remains separate from the development package.
+The repository contains the P1 through P4 extension and reproducible verification runners. Read the [P1 acceptance report](../artifacts/P1-acceptance/REPORT.md) and [adapter boundaries](p1-adapter.md) for the tested revision and supported behavior. The [P2 acceptance report](../artifacts/P2-acceptance/REPORT.md) records percentage policy, hook reconstruction, and measured limits. The [P3 acceptance report](../artifacts/P3-acceptance/REPORT.md) records checkpoint recovery, native fallback, and the fixture-only remote scope. The [P4 acceptance report](../artifacts/P4-acceptance/REPORT.md) records migration, account and branch boundaries, stale-source rejection and split-turn coverage. Prototype material remains separate from the development package.

@@ -1,0 +1,597 @@
+
+> pi-compact@0.1.0 test /Users/wangxuyang/.t3/worktrees/compact/fix-shipping-pr1-lock-r-102e22217d8e86d5
+> tsx --test tests/*.test.ts
+
+TAP version 13
+# Subtest: failed remains blocked until a successful explicit retry
+ok 1 - failed remains blocked until a successful explicit retry
+  ---
+  duration_ms: 0.504666
+  type: 'test'
+  ...
+# Subtest: cancelled remains blocked until a successful explicit retry
+ok 2 - cancelled remains blocked until a successful explicit retry
+  ---
+  duration_ms: 0.082791
+  type: 'test'
+  ...
+# Subtest: oversized remains blocked until a successful explicit retry
+ok 3 - oversized remains blocked until a successful explicit retry
+  ---
+  duration_ms: 0.081
+  type: 'test'
+  ...
+# Subtest: persistence remains blocked until a successful explicit retry
+ok 4 - persistence remains blocked until a successful explicit retry
+  ---
+  duration_ms: 0.064584
+  type: 'test'
+  ...
+# Subtest: reentrant operations and duplicate completions are rejected
+ok 5 - reentrant operations and duplicate completions are rejected
+  ---
+  duration_ms: 0.089584
+  type: 'test'
+  ...
+# Subtest: a failed durable start prevents the operation
+ok 6 - a failed durable start prevents the operation
+  ---
+  duration_ms: 0.111042
+  type: 'test'
+  ...
+# Subtest: a failed durable completion cannot become idle
+ok 7 - a failed durable completion cannot become idle
+  ---
+  duration_ms: 0.090167
+  type: 'test'
+  ...
+# Subtest: restoring an interrupted operation blocks only that session
+ok 8 - restoring an interrupted operation blocks only that session
+  ---
+  duration_ms: 0.032
+  type: 'test'
+  ...
+# Subtest: version and safety capability checks reject unknown hosts
+ok 9 - version and safety capability checks reject unknown hosts
+  ---
+  duration_ms: 0.302292
+  type: 'test'
+  ...
+# Subtest: journal and native entry confirmation reject corrupt persistence
+ok 10 - journal and native entry confirmation reject corrupt persistence
+  ---
+  duration_ms: 31.892458
+  type: 'test'
+  ...
+# Subtest: unsupported sessions cannot use retry to bypass capability checks
+ok 11 - unsupported sessions cannot use retry to bypass capability checks
+  ---
+  duration_ms: 0.076625
+  type: 'test'
+  ...
+# Subtest: duplicate installation keeps one dispatcher and restores its descriptors
+ok 12 - duplicate installation keeps one dispatcher and restores its descriptors
+  ---
+  duration_ms: 10.75325
+  type: 'test'
+  ...
+# assertion_calls=36
+# Subtest: the session file has a single owner and releases on disposal
+ok 13 - the session file has a single owner and releases on disposal
+  ---
+  duration_ms: 1.080917
+  type: 'test'
+  ...
+# Subtest: disposal rejects late requests without blocking a clean restart
+ok 14 - disposal rejects late requests without blocking a clean restart
+  ---
+  duration_ms: 0.105083
+  type: 'test'
+  ...
+# Subtest: readable reconstruction applies source edits across removed compactions
+ok 15 - readable reconstruction applies source edits across removed compactions
+  ---
+  duration_ms: 0.773333
+  type: 'test'
+  ...
+# Subtest: partial append recovery preserves exact previous bytes and blocks restart
+ok 16 - partial append recovery preserves exact previous bytes and blocks restart
+  ---
+  duration_ms: 47.209166
+  type: 'test'
+  ...
+# Subtest: readable recovery rejects missing ancestry and imported summaries without original sources
+ok 17 - readable recovery rejects missing ancestry and imported summaries without original sources
+  ---
+  duration_ms: 0.079458
+  type: 'test'
+  ...
+# Subtest: compatibility follows account, endpoint, protocol and encoder capability across models
+ok 18 - compatibility follows account, endpoint, protocol and encoder capability across models
+  ---
+  duration_ms: 0.31
+  type: 'test'
+  ...
+# Subtest: selection epoch rejects an A to B to A race even when final model bytes match
+ok 19 - selection epoch rejects an A to B to A race even when final model bytes match
+  ---
+  duration_ms: 0.29625
+  type: 'test'
+  ...
+# Subtest: effective OAuth capability has no environment gate and never stores credentials
+ok 20 - effective OAuth capability has no environment gate and never stores credentials
+  ---
+  duration_ms: 0.293
+  type: 'test'
+  ...
+# Subtest: failed block persistence reports recovery guarantee with begin=true
+ok 21 - failed block persistence reports recovery guarantee with begin=true
+  ---
+  duration_ms: 0.633208
+  type: 'test'
+  ...
+# Subtest: failed block persistence reports recovery guarantee with begin=false
+ok 22 - failed block persistence reports recovery guarantee with begin=false
+  ---
+  duration_ms: 0.143708
+  type: 'test'
+  ...
+# Subtest: unwritable journal keeps a truthful recovery result with begin=true
+ok 23 - unwritable journal keeps a truthful recovery result with begin=true
+  ---
+  duration_ms: 18.818875
+  type: 'test'
+  ...
+# Subtest: unwritable journal keeps a truthful recovery result with begin=false
+ok 24 - unwritable journal keeps a truthful recovery result with begin=false
+  ---
+  duration_ms: 9.59125
+  type: 'test'
+  ...
+# Subtest: an uncertain idle replacement cannot promise the previous running barrier
+ok 25 - an uncertain idle replacement cannot promise the previous running barrier
+  ---
+  duration_ms: 0.260209
+  type: 'test'
+  ...
+# Subtest: inclusive percentage threshold uses the first integer token at or above the percentage
+ok 26 - inclusive percentage threshold uses the first integer token at or above the percentage
+  ---
+  duration_ms: 0.275167
+  type: 'test'
+  ...
+# Subtest: invalid percentages cannot replace the previous project setting
+ok 27 - invalid percentages cannot replace the previous project setting
+  ---
+  duration_ms: 16.57025
+  type: 'test'
+  ...
+# Subtest: identity anchoring preserves an added byte-equal clone while summarizing the original
+ok 28 - identity anchoring preserves an added byte-equal clone while summarizing the original
+  ---
+  duration_ms: 1.4475
+  type: 'test'
+  ...
+# Subtest: ambiguous cloned additions and cross-cut duplicates keep all hook output
+ok 29 - ambiguous cloned additions and cross-cut duplicates keep all hook output
+  ---
+  duration_ms: 0.340625
+  type: 'test'
+  ...
+# Subtest: in-place content and array mutations survive the pre-hook snapshot
+ok 30 - in-place content and array mutations survive the pre-hook snapshot
+  ---
+  duration_ms: 0.433917
+  type: 'test'
+  ...
+# Subtest: equal clone arrays compact unchanged history and preserve reorder and deletes
+ok 31 - equal clone arrays compact unchanged history and preserve reorder and deletes
+  ---
+  duration_ms: 0.279041
+  type: 'test'
+  ...
+# Subtest: a retained tool member preserves every call and result in its batch and their hook order
+ok 32 - a retained tool member preserves every call and result in its batch and their hook order
+  ---
+  duration_ms: 0.32225
+  type: 'test'
+  ...
+# Subtest: a modified clone cannot cause an added original-content clone to be summarized
+ok 33 - a modified clone cannot cause an added original-content clone to be summarized
+  ---
+  duration_ms: 0.166292
+  type: 'test'
+  ...
+# Subtest: branch selection finds only its own opaque checkpoint and deleted sources disable source replay
+ok 34 - branch selection finds only its own opaque checkpoint and deleted sources disable source replay
+  ---
+  duration_ms: 0.730667
+  type: 'test'
+  ...
+# Subtest: unknown schema and mixed representations reject rather than replaying a display label
+ok 35 - unknown schema and mixed representations reject rather than replaying a display label
+  ---
+  duration_ms: 0.183292
+  type: 'test'
+  ...
+# Subtest: complete ordered output survives stream validation with nonzero budget
+ok 36 - complete ordered output survives stream validation with nonzero budget
+  ---
+  duration_ms: 1.605
+  type: 'test'
+  ...
+# Subtest: half streams, false termination and conflicting terminal output fail
+ok 37 - half streams, false termination and conflicting terminal output fail
+  ---
+  duration_ms: 0.320625
+  type: 'test'
+  ...
+# Subtest: wire rejects unknown items, empty opaque, duplicate IDs and unfinished tool groups
+ok 38 - wire rejects unknown items, empty opaque, duplicate IDs and unfinished tool groups
+  ---
+  duration_ms: 0.454625
+  type: 'test'
+  ...
+# Subtest: unknown or corrupt usage cannot produce a free opaque checkpoint
+ok 39 - unknown or corrupt usage cannot produce a free opaque checkpoint
+  ---
+  duration_ms: 0.359583
+  type: 'test'
+  ...
+# Subtest: string-valued token usage is rejected at the protocol boundary
+ok 40 - string-valued token usage is rejected at the protocol boundary
+  ---
+  duration_ms: 0.186917
+  type: 'test'
+  ...
+# Subtest: request tools survive opaque replay without becoming valid checkpoint output
+ok 41 - request tools survive opaque replay without becoming valid checkpoint output
+  ---
+  duration_ms: 33.413459
+  type: 'test'
+  ...
+# Subtest: request declarations retain function schemas and output rejection boundaries
+ok 42 - request declarations retain function schemas and output rejection boundaries
+  ---
+  duration_ms: 0.433666
+  type: 'test'
+  ...
+# Subtest: observed empty terminal output preserves the completed compaction and usage budget
+ok 43 - observed empty terminal output preserves the completed compaction and usage budget
+  ---
+  duration_ms: 1.859125
+  type: 'test'
+  ...
+# Subtest: empty terminal output orders complete done items by index
+ok 44 - empty terminal output orders complete done items by index
+  ---
+  duration_ms: 0.164916
+  type: 'test'
+  ...
+# Subtest: empty terminal reconstruction rejects no done items
+ok 45 - empty terminal reconstruction rejects no done items
+  ---
+  duration_ms: 0.158958
+  type: 'test'
+  ...
+# Subtest: empty terminal reconstruction rejects added without done
+ok 46 - empty terminal reconstruction rejects added without done
+  ---
+  duration_ms: 0.056875
+  type: 'test'
+  ...
+# Subtest: empty terminal reconstruction rejects unfinished trailing item
+ok 47 - empty terminal reconstruction rejects unfinished trailing item
+  ---
+  duration_ms: 0.199334
+  type: 'test'
+  ...
+# Subtest: empty terminal reconstruction rejects missing first index
+ok 48 - empty terminal reconstruction rejects missing first index
+  ---
+  duration_ms: 0.062083
+  type: 'test'
+  ...
+# Subtest: empty terminal reconstruction rejects missing middle index
+ok 49 - empty terminal reconstruction rejects missing middle index
+  ---
+  duration_ms: 0.140125
+  type: 'test'
+  ...
+# Subtest: empty terminal reconstruction rejects duplicate index
+ok 50 - empty terminal reconstruction rejects duplicate index
+  ---
+  duration_ms: 0.051625
+  type: 'test'
+  ...
+# Subtest: empty terminal reconstruction rejects duplicate added index
+ok 51 - empty terminal reconstruction rejects duplicate added index
+  ---
+  duration_ms: 0.209875
+  type: 'test'
+  ...
+# Subtest: empty terminal reconstruction rejects added after done
+ok 52 - empty terminal reconstruction rejects added after done
+  ---
+  duration_ms: 0.36175
+  type: 'test'
+  ...
+# Subtest: empty terminal reconstruction rejects invalid added index
+ok 53 - empty terminal reconstruction rejects invalid added index
+  ---
+  duration_ms: 0.07025
+  type: 'test'
+  ...
+# Subtest: empty terminal reconstruction rejects no compaction
+ok 54 - empty terminal reconstruction rejects no compaction
+  ---
+  duration_ms: 0.057167
+  type: 'test'
+  ...
+# Subtest: empty terminal reconstruction rejects empty encrypted content
+ok 55 - empty terminal reconstruction rejects empty encrypted content
+  ---
+  duration_ms: 0.112334
+  type: 'test'
+  ...
+# Subtest: empty terminal reconstruction rejects unfinished item
+ok 56 - empty terminal reconstruction rejects unfinished item
+  ---
+  duration_ms: 0.054875
+  type: 'test'
+  ...
+# Subtest: empty terminal reconstruction rejects multiple compactions
+ok 57 - empty terminal reconstruction rejects multiple compactions
+  ---
+  duration_ms: 0.050584
+  type: 'test'
+  ...
+# Subtest: empty terminal reconstruction rejects unfinished tool group
+ok 58 - empty terminal reconstruction rejects unfinished tool group
+  ---
+  duration_ms: 0.203958
+  type: 'test'
+  ...
+# Subtest: empty terminal reconstruction rejects unknown done item
+ok 59 - empty terminal reconstruction rejects unknown done item
+  ---
+  duration_ms: 0.083125
+  type: 'test'
+  ...
+# Subtest: empty terminal reconstruction rejects nonempty terminal conflict
+ok 60 - empty terminal reconstruction rejects nonempty terminal conflict
+  ---
+  duration_ms: 0.074625
+  type: 'test'
+  ...
+# Subtest: empty terminal reconstruction rejects nonempty terminal without done
+ok 61 - empty terminal reconstruction rejects nonempty terminal without done
+  ---
+  duration_ms: 0.05575
+  type: 'test'
+  ...
+# Subtest: empty terminal reconstruction rejects null output
+ok 62 - empty terminal reconstruction rejects null output
+  ---
+  duration_ms: 0.06
+  type: 'test'
+  ...
+# Subtest: empty terminal reconstruction rejects missing output
+ok 63 - empty terminal reconstruction rejects missing output
+  ---
+  duration_ms: 0.0555
+  type: 'test'
+  ...
+# Subtest: empty terminal reconstruction rejects nonarray output
+ok 64 - empty terminal reconstruction rejects nonarray output
+  ---
+  duration_ms: 0.028459
+  type: 'test'
+  ...
+# Subtest: empty terminal reconstruction rejects no terminal
+ok 65 - empty terminal reconstruction rejects no terminal
+  ---
+  duration_ms: 0.02525
+  type: 'test'
+  ...
+# Subtest: empty terminal reconstruction rejects invalid index undefined
+ok 66 - empty terminal reconstruction rejects invalid index undefined
+  ---
+  duration_ms: 0.028333
+  type: 'test'
+  ...
+# Subtest: empty terminal reconstruction rejects invalid index null
+ok 67 - empty terminal reconstruction rejects invalid index null
+  ---
+  duration_ms: 0.045041
+  type: 'test'
+  ...
+# Subtest: empty terminal reconstruction rejects invalid index -1
+ok 68 - empty terminal reconstruction rejects invalid index -1
+  ---
+  duration_ms: 0.025541
+  type: 'test'
+  ...
+# Subtest: empty terminal reconstruction rejects invalid index 0.5
+ok 69 - empty terminal reconstruction rejects invalid index 0.5
+  ---
+  duration_ms: 0.020375
+  type: 'test'
+  ...
+# Subtest: empty terminal reconstruction rejects invalid index 0
+ok 70 - empty terminal reconstruction rejects invalid index 0
+  ---
+  duration_ms: 0.019042
+  type: 'test'
+  ...
+# Subtest: empty terminal reconstruction rejects invalid index NaN
+ok 71 - empty terminal reconstruction rejects invalid index NaN
+  ---
+  duration_ms: 0.018209
+  type: 'test'
+  ...
+# Subtest: empty terminal reconstruction rejects invalid index Infinity
+ok 72 - empty terminal reconstruction rejects invalid index Infinity
+  ---
+  duration_ms: 0.017834
+  type: 'test'
+  ...
+# Subtest: empty terminal reconstruction rejects invalid index 9007199254740992
+ok 73 - empty terminal reconstruction rejects invalid index 9007199254740992
+  ---
+  duration_ms: 0.017791
+  type: 'test'
+  ...
+# Subtest: empty terminal reconstruction rejects invalid usage undefined
+ok 74 - empty terminal reconstruction rejects invalid usage undefined
+  ---
+  duration_ms: 0.04575
+  type: 'test'
+  ...
+# Subtest: empty terminal reconstruction rejects invalid usage null
+ok 75 - empty terminal reconstruction rejects invalid usage null
+  ---
+  duration_ms: 0.030917
+  type: 'test'
+  ...
+# Subtest: empty terminal reconstruction rejects invalid usage {}
+ok 76 - empty terminal reconstruction rejects invalid usage {}
+  ---
+  duration_ms: 0.070042
+  type: 'test'
+  ...
+# Subtest: empty terminal reconstruction rejects invalid usage {"output_tokens":"2092"}
+ok 77 - empty terminal reconstruction rejects invalid usage {"output_tokens":"2092"}
+  ---
+  duration_ms: 0.029834
+  type: 'test'
+  ...
+# Subtest: empty terminal reconstruction rejects invalid usage {"output_tokens":null}
+ok 78 - empty terminal reconstruction rejects invalid usage {"output_tokens":null}
+  ---
+  duration_ms: 0.027958
+  type: 'test'
+  ...
+# Subtest: empty terminal reconstruction rejects invalid usage {"output_tokens":0}
+ok 79 - empty terminal reconstruction rejects invalid usage {"output_tokens":0}
+  ---
+  duration_ms: 0.123208
+  type: 'test'
+  ...
+# Subtest: empty terminal reconstruction rejects invalid usage {"output_tokens":-1}
+ok 80 - empty terminal reconstruction rejects invalid usage {"output_tokens":-1}
+  ---
+  duration_ms: 0.153708
+  type: 'test'
+  ...
+# Subtest: empty terminal reconstruction rejects invalid usage {"output_tokens":null}
+ok 81 - empty terminal reconstruction rejects invalid usage {"output_tokens":null}
+  ---
+  duration_ms: 0.037167
+  type: 'test'
+  ...
+# Subtest: empty terminal reconstruction rejects invalid usage {"output_tokens":null}
+ok 82 - empty terminal reconstruction rejects invalid usage {"output_tokens":null}
+  ---
+  duration_ms: 0.029
+  type: 'test'
+  ...
+# Subtest: empty terminal reconstruction rejects invalid usage {"output_tokens":1.5}
+ok 83 - empty terminal reconstruction rejects invalid usage {"output_tokens":1.5}
+  ---
+  duration_ms: 0.026875
+  type: 'test'
+  ...
+# Subtest: empty terminal reconstruction rejects response.failed
+ok 84 - empty terminal reconstruction rejects response.failed
+  ---
+  duration_ms: 0.01975
+  type: 'test'
+  ...
+# Subtest: empty terminal reconstruction rejects response.incomplete
+ok 85 - empty terminal reconstruction rejects response.incomplete
+  ---
+  duration_ms: 0.018334
+  type: 'test'
+  ...
+# Subtest: empty terminal reconstruction rejects error
+ok 86 - empty terminal reconstruction rejects error
+  ---
+  duration_ms: 0.021458
+  type: 'test'
+  ...
+# Subtest: empty terminal reconstruction rejects terminal status failed
+ok 87 - empty terminal reconstruction rejects terminal status failed
+  ---
+  duration_ms: 0.13
+  type: 'test'
+  ...
+# Subtest: empty terminal reconstruction rejects terminal status incomplete
+ok 88 - empty terminal reconstruction rejects terminal status incomplete
+  ---
+  duration_ms: 0.072667
+  type: 'test'
+  ...
+# Subtest: empty terminal reconstruction rejects terminal status cancelled
+ok 89 - empty terminal reconstruction rejects terminal status cancelled
+  ---
+  duration_ms: 0.185041
+  type: 'test'
+  ...
+# Subtest: empty terminal reconstruction rejects terminal status undefined
+ok 90 - empty terminal reconstruction rejects terminal status undefined
+  ---
+  duration_ms: 0.0595
+  type: 'test'
+  ...
+# Subtest: empty terminal reconstruction rejects event after terminal response.output_item.done
+ok 91 - empty terminal reconstruction rejects event after terminal response.output_item.done
+  ---
+  duration_ms: 0.131083
+  type: 'test'
+  ...
+# Subtest: empty terminal reconstruction rejects event after terminal response.completed
+ok 92 - empty terminal reconstruction rejects event after terminal response.completed
+  ---
+  duration_ms: 0.114042
+  type: 'test'
+  ...
+# Subtest: empty terminal reconstruction rejects event after terminal response.compaction.compacting
+ok 93 - empty terminal reconstruction rejects event after terminal response.compaction.compacting
+  ---
+  duration_ms: 0.091833
+  type: 'test'
+  ...
+# Subtest: empty terminal reconstruction rejects event after terminal response.failed
+ok 94 - empty terminal reconstruction rejects event after terminal response.failed
+  ---
+  duration_ms: 0.451542
+  type: 'test'
+  ...
+# Subtest: nonempty terminal output still requires exact complete stream agreement
+ok 95 - nonempty terminal output still requires exact complete stream agreement
+  ---
+  duration_ms: 0.259625
+  type: 'test'
+  ...
+# Subtest: nonempty terminal cannot hide an advertised unfinished tail
+ok 96 - nonempty terminal cannot hide an advertised unfinished tail
+  ---
+  duration_ms: 0.077125
+  type: 'test'
+  ...
+# Subtest: reconstructed items retain checkpoint size and safe usage limits
+ok 97 - reconstructed items retain checkpoint size and safe usage limits
+  ---
+  duration_ms: 76.116083
+  type: 'test'
+  ...
+1..97
+# tests 97
+# suites 0
+# pass 97
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 795.437542

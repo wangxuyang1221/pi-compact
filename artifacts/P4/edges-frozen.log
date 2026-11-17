@@ -1,0 +1,13 @@
+{"kind":"late-model","pass":true,"dir":"/Users/wangxuyang/.t3/worktrees/compact/t3-9e593481-75cd610a8c552e84/artifacts/P4/edges/1794828768942/late-model"}
+{"kind":"late-auth","pass":true,"dir":"/Users/wangxuyang/.t3/worktrees/compact/t3-9e593481-75cd610a8c552e84/artifacts/P4/edges/1794828768942/late-auth"}
+{"kind":"late-source","pass":true,"dir":"/Users/wangxuyang/.t3/worktrees/compact/t3-9e593481-75cd610a8c552e84/artifacts/P4/edges/1794828768942/late-source"}
+{"kind":"edit","pass":true,"dir":"/Users/wangxuyang/.t3/worktrees/compact/t3-9e593481-75cd610a8c552e84/artifacts/P4/edges/1794828768942/edit"}
+{"kind":"delete","pass":true,"dir":"/Users/wangxuyang/.t3/worktrees/compact/t3-9e593481-75cd610a8c552e84/artifacts/P4/edges/1794828768942/delete"}
+{"kind":"source-failure","pass":true,"dir":"/Users/wangxuyang/.t3/worktrees/compact/t3-9e593481-75cd610a8c552e84/artifacts/P4/edges/1794828768942/source-failure"}
+{"kind":"both-fail","pass":true,"dir":"/Users/wangxuyang/.t3/worktrees/compact/t3-9e593481-75cd610a8c552e84/artifacts/P4/edges/1794828768942/both-fail"}
+{"kind":"migration-source-change","pass":true,"dir":"/Users/wangxuyang/.t3/worktrees/compact/t3-9e593481-75cd610a8c552e84/artifacts/P4/edges/1794828768942/migration-source-change"}
+{"kind":"migration-auth-change","pass":true,"dir":"/Users/wangxuyang/.t3/worktrees/compact/t3-9e593481-75cd610a8c552e84/artifacts/P4/edges/1794828768942/migration-auth-change"}
+{"kind":"schema","pass":true,"dir":"/Users/wangxuyang/.t3/worktrees/compact/t3-9e593481-75cd610a8c552e84/artifacts/P4/edges/1794828768942/schema","code":1}
+{"kind":"inactive-schema","pass":true,"dir":"/Users/wangxuyang/.t3/worktrees/compact/t3-9e593481-75cd610a8c552e84/artifacts/P4/edges/1794828768942/inactive-schema","code":0}
+{"kind":"missing-source","pass":true,"dir":"/Users/wangxuyang/.t3/worktrees/compact/t3-9e593481-75cd610a8c552e84/artifacts/P4/edges/1794828768942/missing-source","code":0}
+{"kind":"tools","pass":true,"dir":"/Users/wangxuyang/.t3/worktrees/compact/t3-9e593481-75cd610a8c552e84/artifacts/P4/edges/1794828768942/tools"}

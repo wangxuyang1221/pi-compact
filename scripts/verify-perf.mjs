@@ -1,3 +1,4 @@
+if (process.argv.includes('P4')) { await import('./verify-p4-perf.mjs'); process.exit(); }
 import assert from 'node:assert/strict';
 import { mkdirSync, readFileSync, writeFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
