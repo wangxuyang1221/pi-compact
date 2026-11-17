@@ -1,0 +1,26 @@
+{"at":20.015166,"event":"preload","pid":37088,"version":"v22.22.2","network":"fetch fixture.invalid only; sockets denied"}
+{"at":295.094625,"event":"session-start","reason":"startup"}
+{"at":295.474208,"event":"ready","session":"01a1e2b4-ceb4-774e-ad9f-b171cfee0e85","version":"1.5.2","managed":true,"identity":true,"extensions":["/Users/wangxuyang/.t3/worktrees/compact/t3-ffc0cc73-3dfcde48e9a1b862/scripts/fixture/observer.ts","/Users/wangxuyang/.t3/worktrees/compact/t3-ffc0cc73-3dfcde48e9a1b862/src/index.ts"]}
+{"at":862.802291,"event":"compaction_start","success":false,"outcome":"stop","checkpoints":0}
+{"at":864.3405,"event":"stream-duration","ms":0.22100000000000364}
+{"at":872.565416,"event":"payload-duration","ms":0.09216700000001765}
+{"at":874.135916,"event":"native-request","count":1,"currentInput":false,"instructions":false}
+{"at":886.545958,"event":"compaction_end","success":false,"aborted":false,"error":"pi-compact paused: Compaction failed: Summarization failed: unknown: Synthetic native failure Use /compact to retry.","outcome":"stop","checkpoints":0}
+{"at":886.856958,"event":"failure-hook-retry","rejected":true,"error":"Error: pi-compact paused: Compaction failed: Summarization failed: unknown: Synthetic native failure Use /compact to retry."}
+{"at":926.675291,"event":"entry-probe","name":"post-run","rejected":false}
+{"at":926.736916,"event":"entry-probe","name":"before-settle","rejected":false}
+{"at":926.79125,"event":"entry-probe","name":"continue","rejected":true,"message":"Error: pi-compact paused: Compaction failed: Summarization failed: unknown: Synthetic native failure Use /compact to retry."}
+{"at":926.836666,"event":"entry-probe","name":"auto","rejected":true,"message":"Error: pi-compact paused: Compaction failed: Summarization failed: unknown: Synthetic native failure Use /compact to retry."}
+{"at":926.873458,"event":"entry-probe","name":"manual-extension","rejected":true,"message":"Error: pi-compact paused: Compaction failed: Summarization failed: unknown: Synthetic native failure Use /compact to retry."}
+{"at":927.065708,"event":"entry-probe","name":"model-change","rejected":false}
+{"at":928.610291,"event":"prepare-input","currentInput":false,"messages":5}
+{"at":928.658625,"event":"prepare-duration","ms":0.10004100000003291}
+{"at":930.050833,"event":"agent_settled","success":false,"aborted":false,"outcome":"error","checkpoints":0}
+{"at":930.097125,"event":"entry-probe","name":"sendUserMessage","rejected":false}
+{"at":930.262166,"event":"entry-probe","name":"steer","rejected":false}
+{"at":930.3225,"event":"entry-probe","name":"followUp","rejected":false}
+{"at":931.704083,"event":"prepare-input","currentInput":false,"messages":8}
+{"at":931.736291,"event":"prepare-duration","ms":0.07954099999994924}
+{"at":932.42075,"event":"agent_settled","success":false,"aborted":false,"outcome":"error","checkpoints":0}
+{"at":932.45375,"event":"entry-probe","name":"prompt","rejected":false}
+{"at":932.541833,"event":"probe-complete","before":5,"after":12,"queued":1,"warming":{"state":"inactive","reason":"inactive"},"warmRunExists":false,"state":"blocked"}

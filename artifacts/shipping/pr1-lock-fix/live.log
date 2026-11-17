@@ -1,0 +1,14 @@
+
+> pi-compact@0.1.0 verify:live /Users/wangxuyang/.t3/worktrees/compact/fix-shipping-pr1-lock-r-102e22217d8e86d5
+> node scripts/verify-live.mjs --pr P1
+
+{"lane":1,"status":"PASS"}
+{"lane":2,"status":"PASS"}
+{"lane":3,"status":"PASS"}
+{"lane":4,"status":"PASS"}
+{"lane":5,"status":"PASS"}
+{"lane":6,"status":"PASS"}
+{"lane":7,"status":"PASS"}
+{"lane":8,"status":"PASS"}
+{"lane":9,"status":"PASS"}
+{"lane":10,"status":"PASS"}

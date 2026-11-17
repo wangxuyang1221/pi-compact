@@ -1,0 +1,572 @@
+[
+  {
+    "index": 0,
+    "baseline": {
+      "startupMs": 305.782,
+      "prepareMs": 0.4512499999999591,
+      "requestToSettledMs": 3.492999999999995,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "head": {
+      "startupMs": 334.210875,
+      "prepareMs": 0.6311660000000074,
+      "requestToSettledMs": 3.6910419999999817,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedStartupMs": 28.428875000000005,
+    "addedPrepareMs": 0.17991600000004837
+  },
+  {
+    "index": 1,
+    "baseline": {
+      "startupMs": 300.0060840000001,
+      "prepareMs": 0.4409999999999741,
+      "requestToSettledMs": 3.643624999999986,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "head": {
+      "startupMs": 337.6070829999999,
+      "prepareMs": 0.6387089999999489,
+      "requestToSettledMs": 3.6943750000000364,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedStartupMs": 37.600998999999774,
+    "addedPrepareMs": 0.19770899999997482
+  },
+  {
+    "index": 2,
+    "baseline": {
+      "startupMs": 305.2527500000001,
+      "prepareMs": 0.4426660000000311,
+      "requestToSettledMs": 3.5208339999999794,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "head": {
+      "startupMs": 333.89087500000005,
+      "prepareMs": 0.6263339999999289,
+      "requestToSettledMs": 3.6733330000000137,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedStartupMs": 28.638124999999945,
+    "addedPrepareMs": 0.1836679999998978
+  },
+  {
+    "index": 3,
+    "baseline": {
+      "startupMs": 302.87191600000006,
+      "prepareMs": 0.43824999999998226,
+      "requestToSettledMs": 3.61587499999996,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "head": {
+      "startupMs": 333.9157500000001,
+      "prepareMs": 0.6229590000000371,
+      "requestToSettledMs": 3.6550410000000397,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedStartupMs": 31.04383400000006,
+    "addedPrepareMs": 0.18470900000005486
+  },
+  {
+    "index": 4,
+    "baseline": {
+      "startupMs": 301.7704590000003,
+      "prepareMs": 0.4436670000000049,
+      "requestToSettledMs": 3.5423749999999927,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "head": {
+      "startupMs": 335.2512919999999,
+      "prepareMs": 0.622792000000004,
+      "requestToSettledMs": 3.7121250000000146,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedStartupMs": 33.48083299999962,
+    "addedPrepareMs": 0.1791249999999991
+  },
+  {
+    "index": 5,
+    "baseline": {
+      "startupMs": 305.30133300000034,
+      "prepareMs": 0.43108299999994415,
+      "requestToSettledMs": 3.5434170000000336,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "head": {
+      "startupMs": 335.46408299999985,
+      "prepareMs": 0.6198750000000359,
+      "requestToSettledMs": 3.6670840000000453,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedStartupMs": 30.162749999999505,
+    "addedPrepareMs": 0.18879200000009178
+  },
+  {
+    "index": 6,
+    "baseline": {
+      "startupMs": 301.04554199999984,
+      "prepareMs": 0.4284999999999286,
+      "requestToSettledMs": 3.553083000000015,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "head": {
+      "startupMs": 334.7295409999997,
+      "prepareMs": 0.6109159999999747,
+      "requestToSettledMs": 3.8650420000000167,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedStartupMs": 33.68399899999986,
+    "addedPrepareMs": 0.1824160000000461
+  },
+  {
+    "index": 7,
+    "baseline": {
+      "startupMs": 300.7202500000003,
+      "prepareMs": 0.4475410000000011,
+      "requestToSettledMs": 3.6574999999999704,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "head": {
+      "startupMs": 334.3604580000001,
+      "prepareMs": 0.6306659999999056,
+      "requestToSettledMs": 3.690166999999974,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedStartupMs": 33.6402079999998,
+    "addedPrepareMs": 0.1831249999999045
+  },
+  {
+    "index": 8,
+    "baseline": {
+      "startupMs": 297.87645800000064,
+      "prepareMs": 0.4537930000000756,
+      "requestToSettledMs": 3.5689579999999523,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "head": {
+      "startupMs": 333.11604199999965,
+      "prepareMs": 0.6292500000000132,
+      "requestToSettledMs": 3.6451660000000174,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedStartupMs": 35.23958399999901,
+    "addedPrepareMs": 0.17545699999993758
+  },
+  {
+    "index": 9,
+    "baseline": {
+      "startupMs": 302.9860000000008,
+      "prepareMs": 0.44262500000007776,
+      "requestToSettledMs": 3.6404999999999745,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "head": {
+      "startupMs": 338.01616599999943,
+      "prepareMs": 0.6213339999999903,
+      "requestToSettledMs": 3.6402080000000296,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedStartupMs": 35.030165999998644,
+    "addedPrepareMs": 0.17870899999991252
+  },
+  {
+    "index": 10,
+    "baseline": {
+      "startupMs": 302.5700000000015,
+      "prepareMs": 0.44533400000000256,
+      "requestToSettledMs": 3.5616660000000024,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "head": {
+      "startupMs": 332.6839999999993,
+      "prepareMs": 0.6212510000000293,
+      "requestToSettledMs": 3.7464590000000157,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedStartupMs": 30.11399999999776,
+    "addedPrepareMs": 0.17591700000002675
+  },
+  {
+    "index": 11,
+    "baseline": {
+      "startupMs": 303.8892909999995,
+      "prepareMs": 0.44128999999998086,
+      "requestToSettledMs": 3.4893749999999955,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "head": {
+      "startupMs": 333.69275000000016,
+      "prepareMs": 0.6069170000000099,
+      "requestToSettledMs": 3.7025840000000017,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedStartupMs": 29.803459000000657,
+    "addedPrepareMs": 0.16562700000002906
+  },
+  {
+    "index": 12,
+    "baseline": {
+      "startupMs": 299.06974999999875,
+      "prepareMs": 0.44345799999996416,
+      "requestToSettledMs": 3.741291999999987,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "head": {
+      "startupMs": 331.9768750000003,
+      "prepareMs": 0.6257090000000289,
+      "requestToSettledMs": 3.6557090000000017,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedStartupMs": 32.90712500000154,
+    "addedPrepareMs": 0.18225100000006478
+  },
+  {
+    "index": 13,
+    "baseline": {
+      "startupMs": 304.19837499999994,
+      "prepareMs": 0.4276249999999777,
+      "requestToSettledMs": 3.5783330000000433,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "head": {
+      "startupMs": 335.49212500000067,
+      "prepareMs": 0.6160840000000007,
+      "requestToSettledMs": 3.584541999999999,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedStartupMs": 31.293750000000728,
+    "addedPrepareMs": 0.18845900000002302
+  },
+  {
+    "index": 14,
+    "baseline": {
+      "startupMs": 305.04329099999995,
+      "prepareMs": 0.43737600000002885,
+      "requestToSettledMs": 3.5002920000000017,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "head": {
+      "startupMs": 334.3881249999995,
+      "prepareMs": 0.6168340000000399,
+      "requestToSettledMs": 3.7202500000000214,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedStartupMs": 29.344833999999537,
+    "addedPrepareMs": 0.179458000000011
+  },
+  {
+    "index": 15,
+    "baseline": {
+      "startupMs": 304.73775000000023,
+      "prepareMs": 0.42970699999995077,
+      "requestToSettledMs": 3.505375000000015,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "head": {
+      "startupMs": 333.1296250000014,
+      "prepareMs": 0.6194580000000656,
+      "requestToSettledMs": 3.694999999999993,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedStartupMs": 28.391875000001164,
+    "addedPrepareMs": 0.1897510000001148
+  },
+  {
+    "index": 16,
+    "baseline": {
+      "startupMs": 304.9735410000012,
+      "prepareMs": 0.44324899999998024,
+      "requestToSettledMs": 3.512625000000014,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "head": {
+      "startupMs": 334.75175000000127,
+      "prepareMs": 0.6305840000000558,
+      "requestToSettledMs": 3.541999999999973,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedStartupMs": 29.77820900000006,
+    "addedPrepareMs": 0.18733500000007552
+  },
+  {
+    "index": 17,
+    "baseline": {
+      "startupMs": 300.5935830000017,
+      "prepareMs": 0.47608299999996007,
+      "requestToSettledMs": 3.734125000000006,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "head": {
+      "startupMs": 334.92516700000124,
+      "prepareMs": 0.6267500000000155,
+      "requestToSettledMs": 3.6126669999999876,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedStartupMs": 34.331583999999566,
+    "addedPrepareMs": 0.1506670000000554
+  },
+  {
+    "index": 18,
+    "baseline": {
+      "startupMs": 302.6476250000014,
+      "prepareMs": 0.4270000000000209,
+      "requestToSettledMs": 3.520166999999958,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "head": {
+      "startupMs": 336.87254199999734,
+      "prepareMs": 0.6187499999999204,
+      "requestToSettledMs": 3.699165999999991,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedStartupMs": 34.22491699999591,
+    "addedPrepareMs": 0.1917499999998995
+  },
+  {
+    "index": 19,
+    "baseline": {
+      "startupMs": 301.3199160000004,
+      "prepareMs": 0.4457909999999856,
+      "requestToSettledMs": 3.6474169999999617,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "head": {
+      "startupMs": 334.93166700000074,
+      "prepareMs": 0.6204590000000394,
+      "requestToSettledMs": 3.7067089999999894,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedStartupMs": 33.61175100000037,
+    "addedPrepareMs": 0.17466800000005378
+  },
+  {
+    "index": 20,
+    "baseline": {
+      "startupMs": 302.4565419999999,
+      "prepareMs": 0.4436670000000049,
+      "requestToSettledMs": 3.5849170000000186,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "head": {
+      "startupMs": 333.1011249999974,
+      "prepareMs": 0.616292000000044,
+      "requestToSettledMs": 3.703207999999961,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedStartupMs": 30.64458299999751,
+    "addedPrepareMs": 0.1726250000000391
+  },
+  {
+    "index": 21,
+    "baseline": {
+      "startupMs": 338.80820799999856,
+      "prepareMs": 0.4385840000000485,
+      "requestToSettledMs": 3.5478749999999764,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "head": {
+      "startupMs": 332.05116700000144,
+      "prepareMs": 0.6231249999999591,
+      "requestToSettledMs": 3.5761249999999905,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedStartupMs": -6.757040999997116,
+    "addedPrepareMs": 0.18454099999991058
+  },
+  {
+    "index": 22,
+    "baseline": {
+      "startupMs": 302.19070799999827,
+      "prepareMs": 0.4531670000000645,
+      "requestToSettledMs": 3.5451249999999845,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "head": {
+      "startupMs": 339.14391700000124,
+      "prepareMs": 0.6137910000000488,
+      "requestToSettledMs": 3.6602920000000267,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedStartupMs": 36.95320900000297,
+    "addedPrepareMs": 0.16062399999998433
+  },
+  {
+    "index": 23,
+    "baseline": {
+      "startupMs": 303.78237499999886,
+      "prepareMs": 0.43279199999994944,
+      "requestToSettledMs": 3.479582999999991,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "head": {
+      "startupMs": 337.58158399999957,
+      "prepareMs": 0.6310840000000439,
+      "requestToSettledMs": 3.56087500000001,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedStartupMs": 33.7992090000007,
+    "addedPrepareMs": 0.1982920000000945
+  },
+  {
+    "index": 24,
+    "baseline": {
+      "startupMs": 304.58387500000026,
+      "prepareMs": 0.4230419999999526,
+      "requestToSettledMs": 3.5828329999999937,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "head": {
+      "startupMs": 334.32195800000045,
+      "prepareMs": 0.6424570000000358,
+      "requestToSettledMs": 3.683583999999996,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedStartupMs": 29.738083000000188,
+    "addedPrepareMs": 0.21941500000008318
+  },
+  {
+    "index": 25,
+    "baseline": {
+      "startupMs": 302.7182499999981,
+      "prepareMs": 0.4367499999999609,
+      "requestToSettledMs": 3.5453749999999786,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "head": {
+      "startupMs": 335.42733299999963,
+      "prepareMs": 0.629748999999947,
+      "requestToSettledMs": 3.6756670000000327,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedStartupMs": 32.709083000001556,
+    "addedPrepareMs": 0.19299899999998615
+  },
+  {
+    "index": 26,
+    "baseline": {
+      "startupMs": 302.0323329999992,
+      "prepareMs": 0.44258299999995643,
+      "requestToSettledMs": 3.634625000000028,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "head": {
+      "startupMs": 336.17966700000034,
+      "prepareMs": 0.6243329999999219,
+      "requestToSettledMs": 3.68004099999996,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedStartupMs": 34.14733400000114,
+    "addedPrepareMs": 0.18174999999996544
+  },
+  {
+    "index": 27,
+    "baseline": {
+      "startupMs": 303.08587500000067,
+      "prepareMs": 0.44075000000003683,
+      "requestToSettledMs": 3.5129159999999615,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "head": {
+      "startupMs": 336.6648750000022,
+      "prepareMs": 0.6268749999999272,
+      "requestToSettledMs": 3.6499580000000265,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedStartupMs": 33.57900000000154,
+    "addedPrepareMs": 0.1861249999998904
+  },
+  {
+    "index": 28,
+    "baseline": {
+      "startupMs": 305.4576670000024,
+      "prepareMs": 0.44320799999997007,
+      "requestToSettledMs": 3.6800420000000145,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "head": {
+      "startupMs": 336.1666670000013,
+      "prepareMs": 0.6113320000000044,
+      "requestToSettledMs": 3.7145000000000437,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedStartupMs": 30.708999999998923,
+    "addedPrepareMs": 0.16812400000003436
+  },
+  {
+    "index": 29,
+    "baseline": {
+      "startupMs": 302.42091600000276,
+      "prepareMs": 0.4490830000000301,
+      "requestToSettledMs": 3.65058300000004,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "head": {
+      "startupMs": 336.13716600000043,
+      "prepareMs": 0.628625999999997,
+      "requestToSettledMs": 3.68504200000001,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedStartupMs": 33.71624999999767,
+    "addedPrepareMs": 0.17954299999996692
+  }
+]

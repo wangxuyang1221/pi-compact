@@ -1,0 +1,21 @@
+{"at":19.883209,"event":"preload","pid":37703,"version":"v22.22.2","network":"fetch fixture.invalid only; sockets denied"}
+{"at":294.253834,"event":"session-start","reason":"startup"}
+{"at":294.62425,"event":"ready","session":"01a1e2b4-dd6b-7069-b9b6-3a8e18f6b997","version":"1.5.2","managed":true,"identity":true,"extensions":["/Users/wangxuyang/.t3/worktrees/compact/t3-ffc0cc73-3dfcde48e9a1b862/scripts/fixture/observer.ts","/Users/wangxuyang/.t3/worktrees/compact/t3-ffc0cc73-3dfcde48e9a1b862/src/index.ts"]}
+{"at":867.982459,"event":"compaction_start","success":false,"outcome":"stop","checkpoints":0}
+{"at":868.740042,"event":"reentry-rejected","error":"Error: pi-compact is compacting. Wait or cancel the current operation."}
+{"at":869.564292,"event":"stream-duration","ms":0.21225000000004002}
+{"at":877.937459,"event":"payload-duration","ms":0.11008400000002894}
+{"at":879.501,"event":"native-request","count":1,"currentInput":false,"instructions":false}
+{"at":925.263625,"event":"compaction_end","success":false,"aborted":true,"error":"pi-compact paused: Compaction was cancelled. Use /compact to retry.","outcome":"stop","checkpoints":0}
+{"at":955.947584,"event":"compaction_start","success":false,"outcome":"stop","checkpoints":0}
+{"at":956.377375,"event":"stream-duration","ms":0.04025000000001455}
+{"at":956.7565,"event":"payload-duration","ms":0.0917500000000473}
+{"at":957.192667,"event":"native-request","count":2,"currentInput":false,"instructions":true}
+{"at":973.600042,"event":"extension-success","checkpointId":"13ecaa8c","state":"idle"}
+{"at":973.658584,"event":"compaction_end","success":true,"aborted":false,"checkpoints":1}
+{"at":977.888959,"event":"prepare-input","currentInput":true,"messages":4}
+{"at":978.079709,"event":"prepare-duration","ms":0.20837500000004638}
+{"at":978.488959,"event":"stream-duration","ms":0.16470799999990504}
+{"at":979.082709,"event":"payload-duration","ms":0.11054200000000947}
+{"at":979.295209,"event":"normal-request","count":1,"input":[{"role":"system","content":"Synthetic fixture only.\n\n<cwd>\n/Users/wangxuyang/.t3/worktrees/compact/t3-ffc0cc73-3dfcde48e9a1b862/artifacts/P1/lane-7/cwd\n</cwd>"},{"role":"user","content":[{"type":"input_text","text":"The conversation history before this point was compacted into the following summary:\n\n<summary>\nSynthetic native summary.\n</summary>"}]},{"role":"user","content":[{"type":"input_text","text":"Recent retained synthetic input. Recent retained synthetic input. Recent retained synthetic input. Recent retained synthetic input. Recent retained synthetic input. Recent retained synthetic input. Recent retained synthetic input. Recent retained synthetic input. Recent retained synthetic input. Recent retained synthetic input. "}]},{"role":"user","content":[{"type":"input_text","text":"CURRENT_INPUT_MARKER queued during compact"}]}]}
+{"at":980.769792,"event":"agent_settled","success":false,"aborted":false,"outcome":"stop","checkpoints":1}

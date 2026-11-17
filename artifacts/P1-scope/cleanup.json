@@ -1,0 +1,62 @@
+{
+  "pids": [
+    55280,
+    55286,
+    55244,
+    55251,
+    55634,
+    55641,
+    55617,
+    55623,
+    57387,
+    57394,
+    57368,
+    57380,
+    56199,
+    55698,
+    55704,
+    55711,
+    55674,
+    56100,
+    55742,
+    56333
+  ],
+  "alive": [],
+  "listeners": {
+    "code": 1,
+    "stdout": "",
+    "stderr": ""
+  },
+  "tui": [
+    {
+      "path": "artifacts/P1-fixes/runs/1794809471685/owner/cleanup.json",
+      "panePids": [
+        56088,
+        56100
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794809471685/retry/cleanup.json",
+      "panePids": [
+        55730,
+        55742
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    }
+  ]
+}

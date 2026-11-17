@@ -1,0 +1,8 @@
+
+> pi-compact@0.1.0 verify:perf /Users/wangxuyang/.t3/worktrees/compact/t3-ffc0cc73-3dfcde48e9a1b862
+> node scripts/verify-perf.mjs --pr P1
+
+Completed 10/30 alternating pairs
+Completed 20/30 alternating pairs
+Completed 30/30 alternating pairs
+{"pass":true,"addedStartup":{"min":-6.757040999997116,"max":37.600998999999774,"median":32.80810400000155,"p95":36.95320900000297},"addedPrepare":{"min":0.1506670000000554,"max":0.21941500000008318,"median":0.18233350000005544,"p95":0.1982920000000945}}

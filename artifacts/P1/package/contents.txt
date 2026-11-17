@@ -1,0 +1,11 @@
+package/package.json
+package/docs/design.md
+package/GLOSSARY.md
+package/docs/p1-adapter.md
+package/README.md
+package/docs/roadmap.md
+package/src/pi-adapter/compatibility.ts
+package/src/index.ts
+package/src/pi-adapter/journal.ts
+package/src/pi-adapter/session.ts
+package/src/state.ts

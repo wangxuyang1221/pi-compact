@@ -1,0 +1,22 @@
+{"at":20.943,"event":"preload","pid":36813,"version":"v22.22.2","network":"fetch fixture.invalid only; sockets denied"}
+{"at":296.7875,"event":"session-start","reason":"startup"}
+{"at":297.165625,"event":"ready","session":"01a1e2b4-c85d-71c8-a7ea-eeb54510e9d8","version":"1.5.2","managed":true,"identity":true,"extensions":["/Users/wangxuyang/.t3/worktrees/compact/t3-ffc0cc73-3dfcde48e9a1b862/scripts/fixture/observer.ts","/Users/wangxuyang/.t3/worktrees/compact/t3-ffc0cc73-3dfcde48e9a1b862/src/index.ts"]}
+{"at":861.190917,"event":"prepare-input","currentInput":true,"messages":5}
+{"at":871.713083,"event":"compaction_start","success":false,"outcome":"stop","checkpoints":0}
+{"at":872.83825,"event":"stream-duration","ms":0.2202909999999747}
+{"at":880.972208,"event":"payload-duration","ms":0.0898339999999962}
+{"at":882.657292,"event":"native-request","count":1,"currentInput":false,"instructions":false}
+{"at":894.62225,"event":"compaction_end","success":false,"aborted":false,"error":"pi-compact paused: Auto-compaction failed: Summarization failed: unknown: Synthetic native failure Use /compact to retry.","outcome":"stop","checkpoints":0}
+{"at":894.824542,"event":"prepare-duration","ms":33.74341599999991}
+{"at":896.175042,"event":"agent_settled","success":false,"aborted":false,"outcome":"error","checkpoints":0}
+{"at":933.789,"event":"entry-probe","name":"post-run","rejected":false}
+{"at":933.8465,"event":"entry-probe","name":"before-settle","rejected":false}
+{"at":933.90025,"event":"entry-probe","name":"continue","rejected":true,"message":"Error: pi-compact paused: Auto-compaction failed: Summarization failed: unknown: Synthetic native failure Use /compact to retry."}
+{"at":933.94225,"event":"entry-probe","name":"auto","rejected":true,"message":"Error: pi-compact paused: Auto-compaction failed: Summarization failed: unknown: Synthetic native failure Use /compact to retry."}
+{"at":933.993417,"event":"entry-probe","name":"manual-extension","rejected":true,"message":"Error: pi-compact paused: Auto-compaction failed: Summarization failed: unknown: Synthetic native failure Use /compact to retry."}
+{"at":934.195958,"event":"entry-probe","name":"model-change","rejected":false}
+{"at":934.750667,"event":"entry-probe","name":"sendUserMessage","rejected":true,"message":"Error: pi-compact paused: Auto-compaction failed: Summarization failed: unknown: Synthetic native failure Use /compact to retry."}
+{"at":934.880333,"event":"entry-probe","name":"steer","rejected":false}
+{"at":934.945125,"event":"entry-probe","name":"followUp","rejected":false}
+{"at":935.454542,"event":"entry-probe","name":"prompt","rejected":true,"message":"Error: pi-compact paused: Auto-compaction failed: Summarization failed: unknown: Synthetic native failure Use /compact to retry."}
+{"at":935.552,"event":"probe-complete","before":8,"after":9,"queued":1,"warming":{"state":"inactive","reason":"inactive"},"warmRunExists":false,"state":"blocked"}

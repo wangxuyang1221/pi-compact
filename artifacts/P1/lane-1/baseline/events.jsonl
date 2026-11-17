@@ -1,0 +1,8 @@
+{"at":20.691916,"event":"preload","pid":35458,"version":"v22.22.2","network":"fetch fixture.invalid only; sockets denied"}
+{"at":259.319583,"event":"session-start","reason":"startup"}
+{"at":259.429458,"event":"ready","session":"01a1e2b4-a7d3-749b-b9c6-7594786c96a0","version":"1.5.2","identity":true,"extensions":["/Users/wangxuyang/.t3/worktrees/compact/t3-ffc0cc73-3dfcde48e9a1b862/scripts/fixture/observer.ts"]}
+{"at":833.1885,"event":"compaction_start","success":false,"outcome":"stop","checkpoints":0}
+{"at":834.590416,"event":"stream-duration","ms":0.16858399999989615}
+{"at":843.951833,"event":"native-request","count":1,"currentInput":false,"instructions":true}
+{"at":846.860375,"event":"extension-success","checkpointId":"149de98b"}
+{"at":846.908291,"event":"compaction_end","success":true,"aborted":false,"checkpoints":1}

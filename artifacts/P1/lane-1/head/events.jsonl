@@ -1,0 +1,9 @@
+{"at":18.930916,"event":"preload","pid":35699,"version":"v22.22.2","network":"fetch fixture.invalid only; sockets denied"}
+{"at":291.526416,"event":"session-start","reason":"startup"}
+{"at":291.89,"event":"ready","session":"01a1e2b4-ada9-7633-9003-1f8a2b347c8d","version":"1.5.2","managed":true,"identity":true,"extensions":["/Users/wangxuyang/.t3/worktrees/compact/t3-ffc0cc73-3dfcde48e9a1b862/scripts/fixture/observer.ts","/Users/wangxuyang/.t3/worktrees/compact/t3-ffc0cc73-3dfcde48e9a1b862/src/index.ts"]}
+{"at":871.791666,"event":"compaction_start","success":false,"outcome":"stop","checkpoints":0}
+{"at":873.472166,"event":"stream-duration","ms":0.24116700000001856}
+{"at":882.255875,"event":"payload-duration","ms":0.09483399999999165}
+{"at":883.82725,"event":"native-request","count":1,"currentInput":false,"instructions":true}
+{"at":902.240708,"event":"extension-success","checkpointId":"617b0e38","state":"idle"}
+{"at":902.337208,"event":"compaction_end","success":true,"aborted":false,"checkpoints":1}

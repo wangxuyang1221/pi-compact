@@ -1,0 +1,1307 @@
+{
+  "at": "2026-11-16T04:57:57.714Z",
+  "pids": [
+    35403,
+    35446,
+    35458,
+    35687,
+    35699,
+    35962,
+    35974,
+    36249,
+    36261,
+    36521,
+    36533,
+    37076,
+    37088,
+    36801,
+    36813,
+    37381,
+    37393,
+    37691,
+    37703,
+    38060,
+    38072,
+    38164,
+    38176,
+    38894,
+    38906,
+    38636,
+    38648,
+    39168,
+    39180,
+    39854,
+    39866,
+    39504,
+    39516,
+    40215,
+    40228,
+    40406,
+    40418,
+    40593,
+    40605,
+    40782,
+    40794,
+    44049,
+    44061,
+    44238,
+    44251,
+    44426,
+    44438,
+    44630,
+    44642,
+    44817,
+    44829,
+    45004,
+    45016,
+    45193,
+    45205,
+    45390,
+    45402,
+    45577,
+    45589,
+    45764,
+    45776,
+    45968,
+    45980,
+    46155,
+    46167,
+    46343,
+    46355,
+    46531,
+    46543,
+    46719,
+    46731,
+    46925,
+    46937,
+    47118,
+    47130,
+    47322,
+    47334,
+    47509,
+    47521,
+    47698,
+    47710,
+    40986,
+    40998,
+    41173,
+    41185,
+    47886,
+    47898,
+    48073,
+    48085,
+    48260,
+    48272,
+    48476,
+    48488,
+    48663,
+    48676,
+    48852,
+    48864,
+    49040,
+    49052,
+    49227,
+    49239,
+    49414,
+    49426,
+    49601,
+    49613,
+    49805,
+    49817,
+    49993,
+    50005,
+    50181,
+    50193,
+    50374,
+    50386,
+    50563,
+    50575,
+    50750,
+    50762,
+    50956,
+    50970,
+    51179,
+    51191,
+    51367,
+    51379,
+    51554,
+    51566,
+    41360,
+    41372,
+    41550,
+    41562,
+    41738,
+    41750,
+    41925,
+    41937,
+    42132,
+    42144,
+    42320,
+    42332,
+    42507,
+    42519,
+    42710,
+    42723,
+    42907,
+    42919,
+    43094,
+    43106,
+    43281,
+    43293,
+    43487,
+    43499,
+    43674,
+    43686,
+    43861,
+    43873,
+    40194
+  ],
+  "alive": [],
+  "listeners": {
+    "exitCode": 1,
+    "stdout": ""
+  },
+  "ownedTmuxProcesses": [],
+  "cleanups": [
+    {
+      "path": "artifacts/P1/lane-1/baseline/cleanup.json",
+      "panePids": [
+        35446,
+        35458
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/lane-1/head/cleanup.json",
+      "panePids": [
+        35687,
+        35699
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/lane-2/cleanup.json",
+      "panePids": [
+        35962,
+        35974
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/lane-3/resume/cleanup.json",
+      "panePids": [
+        36249,
+        36261
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/lane-4/cleanup.json",
+      "panePids": [
+        36521,
+        36533
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/lane-5/cleanup.json",
+      "panePids": [
+        37076,
+        37088
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/lane-5/automatic/cleanup.json",
+      "panePids": [
+        36801,
+        36813
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/lane-6/cleanup.json",
+      "panePids": [
+        37381,
+        37393
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/lane-7/cleanup.json",
+      "panePids": [
+        37691,
+        37703
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/lane-8/one/cleanup.json",
+      "panePids": [
+        38060,
+        38072
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/lane-8/two/cleanup.json",
+      "panePids": [
+        38164,
+        38176
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/lane-9/disk/cleanup.json",
+      "panePids": [
+        38894,
+        38906
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/lane-9/oversized/cleanup.json",
+      "panePids": [
+        38636,
+        38648
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/lane-9/payload/cleanup.json",
+      "panePids": [
+        39168,
+        39180
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/lane-10/recovery/cleanup.json",
+      "panePids": [
+        39854,
+        39866
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/lane-10/reload/cleanup.json",
+      "panePids": [
+        39504,
+        39516
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/perf/1794804880117/0-baseline/cleanup.json",
+      "panePids": [
+        40215,
+        40228
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/perf/1794804880117/0-head/cleanup.json",
+      "panePids": [
+        40406,
+        40418
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/perf/1794804880117/1-baseline/cleanup.json",
+      "panePids": [
+        40593,
+        40605
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/perf/1794804880117/1-head/cleanup.json",
+      "panePids": [
+        40782,
+        40794
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/perf/1794804880117/10-baseline/cleanup.json",
+      "panePids": [
+        44049,
+        44061
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/perf/1794804880117/10-head/cleanup.json",
+      "panePids": [
+        44238,
+        44251
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/perf/1794804880117/11-baseline/cleanup.json",
+      "panePids": [
+        44426,
+        44438
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/perf/1794804880117/11-head/cleanup.json",
+      "panePids": [
+        44630,
+        44642
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/perf/1794804880117/12-baseline/cleanup.json",
+      "panePids": [
+        44817,
+        44829
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/perf/1794804880117/12-head/cleanup.json",
+      "panePids": [
+        45004,
+        45016
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/perf/1794804880117/13-baseline/cleanup.json",
+      "panePids": [
+        45193,
+        45205
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/perf/1794804880117/13-head/cleanup.json",
+      "panePids": [
+        45390,
+        45402
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/perf/1794804880117/14-baseline/cleanup.json",
+      "panePids": [
+        45577,
+        45589
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/perf/1794804880117/14-head/cleanup.json",
+      "panePids": [
+        45764,
+        45776
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/perf/1794804880117/15-baseline/cleanup.json",
+      "panePids": [
+        45968,
+        45980
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/perf/1794804880117/15-head/cleanup.json",
+      "panePids": [
+        46155,
+        46167
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/perf/1794804880117/16-baseline/cleanup.json",
+      "panePids": [
+        46343,
+        46355
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/perf/1794804880117/16-head/cleanup.json",
+      "panePids": [
+        46531,
+        46543
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/perf/1794804880117/17-baseline/cleanup.json",
+      "panePids": [
+        46719,
+        46731
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/perf/1794804880117/17-head/cleanup.json",
+      "panePids": [
+        46925,
+        46937
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/perf/1794804880117/18-baseline/cleanup.json",
+      "panePids": [
+        47118,
+        47130
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/perf/1794804880117/18-head/cleanup.json",
+      "panePids": [
+        47322,
+        47334
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/perf/1794804880117/19-baseline/cleanup.json",
+      "panePids": [
+        47509,
+        47521
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/perf/1794804880117/19-head/cleanup.json",
+      "panePids": [
+        47698,
+        47710
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/perf/1794804880117/2-baseline/cleanup.json",
+      "panePids": [
+        40986,
+        40998
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/perf/1794804880117/2-head/cleanup.json",
+      "panePids": [
+        41173,
+        41185
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/perf/1794804880117/20-baseline/cleanup.json",
+      "panePids": [
+        47886,
+        47898
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/perf/1794804880117/20-head/cleanup.json",
+      "panePids": [
+        48073,
+        48085
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/perf/1794804880117/21-baseline/cleanup.json",
+      "panePids": [
+        48260,
+        48272
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/perf/1794804880117/21-head/cleanup.json",
+      "panePids": [
+        48476,
+        48488
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/perf/1794804880117/22-baseline/cleanup.json",
+      "panePids": [
+        48663,
+        48676
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/perf/1794804880117/22-head/cleanup.json",
+      "panePids": [
+        48852,
+        48864
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/perf/1794804880117/23-baseline/cleanup.json",
+      "panePids": [
+        49040,
+        49052
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/perf/1794804880117/23-head/cleanup.json",
+      "panePids": [
+        49227,
+        49239
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/perf/1794804880117/24-baseline/cleanup.json",
+      "panePids": [
+        49414,
+        49426
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/perf/1794804880117/24-head/cleanup.json",
+      "panePids": [
+        49601,
+        49613
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/perf/1794804880117/25-baseline/cleanup.json",
+      "panePids": [
+        49805,
+        49817
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/perf/1794804880117/25-head/cleanup.json",
+      "panePids": [
+        49993,
+        50005
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/perf/1794804880117/26-baseline/cleanup.json",
+      "panePids": [
+        50181,
+        50193
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/perf/1794804880117/26-head/cleanup.json",
+      "panePids": [
+        50374,
+        50386
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/perf/1794804880117/27-baseline/cleanup.json",
+      "panePids": [
+        50563,
+        50575
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/perf/1794804880117/27-head/cleanup.json",
+      "panePids": [
+        50750,
+        50762
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/perf/1794804880117/28-baseline/cleanup.json",
+      "panePids": [
+        50956,
+        50970
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/perf/1794804880117/28-head/cleanup.json",
+      "panePids": [
+        51179,
+        51191
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/perf/1794804880117/29-baseline/cleanup.json",
+      "panePids": [
+        51367,
+        51379
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/perf/1794804880117/29-head/cleanup.json",
+      "panePids": [
+        51554,
+        51566
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/perf/1794804880117/3-baseline/cleanup.json",
+      "panePids": [
+        41360,
+        41372
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/perf/1794804880117/3-head/cleanup.json",
+      "panePids": [
+        41550,
+        41562
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/perf/1794804880117/4-baseline/cleanup.json",
+      "panePids": [
+        41738,
+        41750
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/perf/1794804880117/4-head/cleanup.json",
+      "panePids": [
+        41925,
+        41937
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/perf/1794804880117/5-baseline/cleanup.json",
+      "panePids": [
+        42132,
+        42144
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/perf/1794804880117/5-head/cleanup.json",
+      "panePids": [
+        42320,
+        42332
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/perf/1794804880117/6-baseline/cleanup.json",
+      "panePids": [
+        42507,
+        42519
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/perf/1794804880117/6-head/cleanup.json",
+      "panePids": [
+        42710,
+        42723
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/perf/1794804880117/7-baseline/cleanup.json",
+      "panePids": [
+        42907,
+        42919
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/perf/1794804880117/7-head/cleanup.json",
+      "panePids": [
+        43094,
+        43106
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/perf/1794804880117/8-baseline/cleanup.json",
+      "panePids": [
+        43281,
+        43293
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/perf/1794804880117/8-head/cleanup.json",
+      "panePids": [
+        43487,
+        43499
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/perf/1794804880117/9-baseline/cleanup.json",
+      "panePids": [
+        43674,
+        43686
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    },
+    {
+      "path": "artifacts/P1/perf/1794804880117/9-head/cleanup.json",
+      "panePids": [
+        43861,
+        43873
+      ],
+      "listenerCheck": {
+        "exitCode": 1,
+        "stdout": "",
+        "stderr": ""
+      },
+      "alive": [],
+      "exitCode": "0",
+      "socketExists": false
+    }
+  ]
+}

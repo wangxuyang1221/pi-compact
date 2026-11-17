@@ -1,0 +1,99 @@
+
+> pi-compact@0.1.0 test /Users/wangxuyang/.t3/worktrees/compact/t3-ffc0cc73-3dfcde48e9a1b862
+> tsx --test tests/*.test.ts -- tests/adapter.test.ts
+
+TAP version 13
+# Subtest: failed remains blocked until a successful explicit retry
+ok 1 - failed remains blocked until a successful explicit retry
+  ---
+  duration_ms: 0.458042
+  type: 'test'
+  ...
+# Subtest: cancelled remains blocked until a successful explicit retry
+ok 2 - cancelled remains blocked until a successful explicit retry
+  ---
+  duration_ms: 0.0765
+  type: 'test'
+  ...
+# Subtest: oversized remains blocked until a successful explicit retry
+ok 3 - oversized remains blocked until a successful explicit retry
+  ---
+  duration_ms: 0.083208
+  type: 'test'
+  ...
+# Subtest: persistence remains blocked until a successful explicit retry
+ok 4 - persistence remains blocked until a successful explicit retry
+  ---
+  duration_ms: 0.056917
+  type: 'test'
+  ...
+# Subtest: reentrant operations and duplicate completions are rejected
+ok 5 - reentrant operations and duplicate completions are rejected
+  ---
+  duration_ms: 0.087208
+  type: 'test'
+  ...
+# Subtest: a failed durable start prevents the operation
+ok 6 - a failed durable start prevents the operation
+  ---
+  duration_ms: 0.09975
+  type: 'test'
+  ...
+# Subtest: a failed durable completion cannot become idle
+ok 7 - a failed durable completion cannot become idle
+  ---
+  duration_ms: 0.080167
+  type: 'test'
+  ...
+# Subtest: restoring an interrupted operation blocks only that session
+ok 8 - restoring an interrupted operation blocks only that session
+  ---
+  duration_ms: 0.031084
+  type: 'test'
+  ...
+# Subtest: version and safety capability checks reject unknown hosts
+ok 9 - version and safety capability checks reject unknown hosts
+  ---
+  duration_ms: 0.295042
+  type: 'test'
+  ...
+# Subtest: journal and native entry confirmation reject corrupt persistence
+ok 10 - journal and native entry confirmation reject corrupt persistence
+  ---
+  duration_ms: 20.255042
+  type: 'test'
+  ...
+# Subtest: unsupported sessions cannot use retry to bypass capability checks
+ok 11 - unsupported sessions cannot use retry to bypass capability checks
+  ---
+  duration_ms: 0.058583
+  type: 'test'
+  ...
+# Subtest: duplicate installation keeps one dispatcher and restores its descriptors
+ok 12 - duplicate installation keeps one dispatcher and restores its descriptors
+  ---
+  duration_ms: 5.209875
+  type: 'test'
+  ...
+# assertion_calls=36
+# Subtest: the session file has a single owner and releases on disposal
+ok 13 - the session file has a single owner and releases on disposal
+  ---
+  duration_ms: 0.637833
+  type: 'test'
+  ...
+# Subtest: disposal rejects late requests without blocking a clean restart
+ok 14 - disposal rejects late requests without blocking a clean restart
+  ---
+  duration_ms: 0.082292
+  type: 'test'
+  ...
+1..14
+# tests 14
+# suites 0
+# pass 14
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 597.443083

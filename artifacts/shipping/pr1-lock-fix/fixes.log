@@ -1,0 +1,10 @@
+
+> pi-compact@0.1.0 verify:p1-fixes /Users/wangxuyang/.t3/worktrees/compact/fix-shipping-pr1-lock-r-102e22217d8e86d5
+> node scripts/verify-p1-fixes.mjs
+
+{"name":"dispose","pass":true}
+{"name":"disabled","pass":true}
+{"name":"retry","pass":true}
+{"name":"ownership","pass":true}
+{"name":"shared","pass":true}
+/Users/wangxuyang/.t3/worktrees/compact/fix-shipping-pr1-lock-r-102e22217d8e86d5/artifacts/P1-fixes/runs/1794929170571

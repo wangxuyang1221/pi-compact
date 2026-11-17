@@ -1,0 +1,336 @@
+{
+  "oldHead": "20e1edd956ee224af7c9bdc41d9386b6c036c69e",
+  "codeHead": "9405011b18d4a2887c558e195b6e48713b7c596e",
+  "red": "artifacts/P1-fixes/runs/1794807238869",
+  "green": "artifacts/P1-fixes/runs/1794807397798",
+  "redResults": [
+    {
+      "name": "dispose",
+      "pass": false
+    },
+    {
+      "name": "disabled",
+      "pass": false
+    },
+    {
+      "name": "retry",
+      "pass": false
+    },
+    {
+      "name": "ownership",
+      "pass": false
+    }
+  ],
+  "greenResults": [
+    {
+      "name": "dispose",
+      "pass": true
+    },
+    {
+      "name": "disabled",
+      "pass": true
+    },
+    {
+      "name": "retry",
+      "pass": true
+    },
+    {
+      "name": "ownership",
+      "pass": true
+    },
+    {
+      "name": "shared",
+      "pass": true
+    }
+  ],
+  "redDispose": {
+    "normal": 4,
+    "compact": 0,
+    "networkBlocked": 0,
+    "probes": [
+      {
+        "at": 304.521916,
+        "event": "disposed-probe",
+        "disposedAt": 289.8055,
+        "before": [
+          {
+            "role": "user",
+            "content": "CURRENT_INPUT_MARKER delayed disposed followup",
+            "timestamp": 0
+          }
+        ],
+        "after": [],
+        "released": true,
+        "managed": false
+      },
+      {
+        "at": 308.215208,
+        "event": "last-disposed-probe",
+        "before": [
+          {
+            "role": "user",
+            "content": "Disposed last session queued input",
+            "timestamp": 0
+          }
+        ],
+        "after": [],
+        "registryReleased": true,
+        "dispatcherReleased": true,
+        "lockReleased": true
+      }
+    ]
+  },
+  "greenDispose": {
+    "normal": 1,
+    "compact": 0,
+    "networkBlocked": 0,
+    "probes": [
+      {
+        "at": 321.7325,
+        "event": "disposed-probe",
+        "disposedAt": 321.680125,
+        "before": [
+          {
+            "role": "user",
+            "content": "CURRENT_INPUT_MARKER delayed disposed followup",
+            "timestamp": 0
+          }
+        ],
+        "after": [
+          {
+            "role": "user",
+            "content": "CURRENT_INPUT_MARKER delayed disposed followup",
+            "timestamp": 0
+          }
+        ],
+        "error": "Error: pi-compact paused: Session is disposed. Use /compact to retry.",
+        "released": true,
+        "managed": false
+      },
+      {
+        "at": 339.196,
+        "event": "last-disposed-probe",
+        "before": [
+          {
+            "role": "user",
+            "content": "Disposed last session queued input",
+            "timestamp": 0
+          }
+        ],
+        "after": [
+          {
+            "role": "user",
+            "content": "Disposed last session queued input",
+            "timestamp": 0
+          }
+        ],
+        "error": "Error: pi-compact paused: Session is disposed. Use /compact to retry.",
+        "registryReleased": true,
+        "dispatcherReleased": true,
+        "lockReleased": true
+      }
+    ]
+  },
+  "disabled": {
+    "red": {
+      "normal": 0,
+      "compact": 0,
+      "networkBlocked": 0,
+      "probes": []
+    },
+    "green": {
+      "normal": 1,
+      "compact": 0,
+      "networkBlocked": 0,
+      "probes": []
+    },
+    "overflow": {
+      "normal": 0,
+      "compact": 0,
+      "networkBlocked": 0,
+      "probes": []
+    }
+  },
+  "retry": [
+    {
+      "at": 1066.104417,
+      "event": "native-request",
+      "count": 1,
+      "currentInput": false,
+      "instructions": false
+    },
+    {
+      "at": 1078.019459,
+      "event": "compaction_end",
+      "success": false,
+      "error": "pi-compact paused: Compaction failed: Summarization failed: unknown: Synthetic native failure Use /compact to retry."
+    },
+    {
+      "at": 1078.230292,
+      "event": "failure-hook-enter"
+    },
+    {
+      "at": 1163.912792,
+      "event": "failure-hook-release"
+    },
+    {
+      "at": 1173.169084,
+      "event": "native-request",
+      "count": 2,
+      "currentInput": false,
+      "instructions": false
+    },
+    {
+      "at": 1208.161,
+      "event": "extension-success",
+      "id": "9452fbbe"
+    },
+    {
+      "at": 1208.283292,
+      "event": "compaction_end",
+      "success": true
+    }
+  ],
+  "ownership": {
+    "contender": {
+      "normal": 0,
+      "compact": 0,
+      "networkBlocked": 0,
+      "probes": []
+    },
+    "shared": {
+      "normal": 1,
+      "compact": 0,
+      "networkBlocked": 0,
+      "probes": [
+        {
+          "at": 320.585542,
+          "event": "shared-manager-probe",
+          "error": "Error: SessionManager is already attached. Use buildSessionProjection for reads; create another manager for a new session.",
+          "unchanged": true
+        }
+      ]
+    }
+  },
+  "preloadOwnership": {
+    "pid": 13231,
+    "exit": 1,
+    "unchanged": false,
+    "appended": "{\"type\":\"session_info\",\"id\":\"cba34bb7\",\"parentId\":\"f4b29169\",\"timestamp\":\"2026-11-16T05:36:39.899Z\",\"name\":\"synthetic-unowned-name\"}\n",
+    "lockUnchanged": true,
+    "requests": 0
+  },
+  "live": [
+    {
+      "lane": 1,
+      "status": "PASS"
+    },
+    {
+      "lane": 2,
+      "status": "PASS"
+    },
+    {
+      "lane": 3,
+      "status": "PASS"
+    },
+    {
+      "lane": 4,
+      "status": "PASS"
+    },
+    {
+      "lane": 5,
+      "status": "PASS"
+    },
+    {
+      "lane": 6,
+      "status": "PASS"
+    },
+    {
+      "lane": 7,
+      "status": "PASS"
+    },
+    {
+      "lane": 8,
+      "status": "PASS"
+    },
+    {
+      "lane": 9,
+      "status": "PASS"
+    },
+    {
+      "lane": 10,
+      "status": "PASS"
+    }
+  ],
+  "package": {
+    "exit": 0,
+    "pid": 17438,
+    "sha256": "b24cda98338a569d941e1f2d80fa86b9d21b6606bf8b7c1c62a8d48b5c164662",
+    "files": [
+      "GLOSSARY.md",
+      "README.md",
+      "package.json",
+      "docs/design.md",
+      "docs/p1-adapter.md",
+      "docs/roadmap.md",
+      "src/index.ts",
+      "src/state.ts",
+      "src/pi-adapter/compatibility.ts",
+      "src/pi-adapter/journal.ts",
+      "src/pi-adapter/session.ts"
+    ],
+    "sourceMatched": true,
+    "normal": 1,
+    "ready": {
+      "at": 298.396542,
+      "event": "ready",
+      "session": "01a1e2db-d7ce-75e8-925c-219cc5597768",
+      "version": "1.5.2",
+      "managed": true,
+      "identity": true,
+      "extensions": [
+        "/Users/wangxuyang/.t3/worktrees/compact/t3-4caa62ef-20ed12fb98efc9e3/scripts/fixture/observer.ts",
+        "/Users/wangxuyang/.t3/worktrees/compact/t3-4caa62ef-20ed12fb98efc9e3/artifacts/P1-fixes/package/unpacked/package/src/index.ts"
+      ]
+    }
+  },
+  "perf": {
+    "path": "/Users/wangxuyang/.t3/worktrees/compact/t3-4caa62ef-20ed12fb98efc9e3/artifacts/P1-fixes/perf/1794807442834",
+    "pairs": 5,
+    "machine": {
+      "load": "13:37  up 77 days, 20:02, 4 users, load averages: 1.75 1.34 1.25",
+      "cores": "10"
+    },
+    "addedStartup": {
+      "min": 30.105125999999927,
+      "max": 92.71683399999984,
+      "median": 35.02845799999977,
+      "p95": 92.71683399999984
+    },
+    "addedPrepare": {
+      "min": 0.14812499999999318,
+      "max": 0.18099800000004507,
+      "median": 0.1621240000000057,
+      "p95": 0.18099800000004507
+    },
+    "continuation": [
+      {
+        "lane": "lane-2",
+        "successToRequestMs": 3.623792000000094
+      },
+      {
+        "lane": "lane-3/resume",
+        "successToRequestMs": 4.342832999999928
+      },
+      {
+        "lane": "lane-4",
+        "successToRequestMs": 3.3392499999999927
+      },
+      {
+        "lane": "lane-7",
+        "successToRequestMs": 5.694958999999926
+      }
+    ]
+  },
+  "redProductMatchesOldHead": true
+}

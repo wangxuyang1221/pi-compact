@@ -1,0 +1,29 @@
+{"at":19.44125,"event":"preload","pid":38176,"version":"v22.22.2","network":"fetch fixture.invalid only; sockets denied"}
+{"at":302.304459,"event":"session-start","reason":"startup"}
+{"at":302.68375,"event":"ready","session":"01a1e2b4-e74b-73b7-b15d-107f156d0351","version":"1.5.2","managed":true,"identity":true,"extensions":["/Users/wangxuyang/.t3/worktrees/compact/t3-ffc0cc73-3dfcde48e9a1b862/scripts/fixture/observer.ts","/Users/wangxuyang/.t3/worktrees/compact/t3-ffc0cc73-3dfcde48e9a1b862/src/index.ts"]}
+{"at":929.872875,"event":"compaction_start","success":false,"outcome":"stop","checkpoints":0}
+{"at":931.633625,"event":"stream-duration","ms":0.23166600000001836}
+{"at":940.0635,"event":"payload-duration","ms":0.11345800000003692}
+{"at":941.668042,"event":"native-request","count":1,"currentInput":false,"instructions":false}
+{"at":1025.66925,"event":"extension-success","checkpointId":"19d2393e","state":"idle"}
+{"at":1025.791792,"event":"compaction_end","success":true,"aborted":false,"checkpoints":1}
+{"at":2167.638709,"event":"session-start","reason":"startup"}
+{"at":2167.775542,"event":"ready","session":"01a1e2b4-ef39-73b7-b15d-1082efead567","version":"1.5.2","managed":true,"identity":true,"extensions":["/Users/wangxuyang/.t3/worktrees/compact/t3-ffc0cc73-3dfcde48e9a1b862/scripts/fixture/observer.ts","/Users/wangxuyang/.t3/worktrees/compact/t3-ffc0cc73-3dfcde48e9a1b862/src/index.ts"]}
+{"at":2198.278209,"event":"session-start","reason":"startup"}
+{"at":2198.38775,"event":"ready","session":"01a1e2b4-ef58-73b7-b15d-1084db5eaf9c","version":"1.5.2","managed":true,"identity":true,"extensions":["/Users/wangxuyang/.t3/worktrees/compact/t3-ffc0cc73-3dfcde48e9a1b862/scripts/fixture/observer.ts","/Users/wangxuyang/.t3/worktrees/compact/t3-ffc0cc73-3dfcde48e9a1b862/src/index.ts"]}
+{"at":2218.936959,"event":"compaction_start","success":false,"outcome":"stop","checkpoints":0}
+{"at":2219.126667,"event":"compaction_start","success":false,"outcome":"stop","checkpoints":0}
+{"at":2228.039084,"event":"compaction_end","success":false,"aborted":true,"error":"pi-compact paused: Compaction was cancelled. Use /compact to retry.","outcome":"stop","checkpoints":0}
+{"at":2228.376209,"event":"stream-duration","ms":0.040292000000135886}
+{"at":2228.701042,"event":"payload-duration","ms":0.08854199999996126}
+{"at":2229.193459,"event":"native-request","count":2,"currentInput":false,"instructions":false}
+{"at":2242.925834,"event":"extension-success","checkpointId":"baba2026","state":"idle"}
+{"at":2242.966375,"event":"compaction_end","success":true,"aborted":false,"checkpoints":1}
+{"at":2243.006417,"event":"same-process-isolation","one":"blocked","two":"idle","oneCheckpoints":0,"twoCheckpoints":1}
+{"at":2244.377459,"event":"prepare-input","currentInput":true,"messages":4}
+{"at":2244.525959,"event":"prepare-duration","ms":0.1647080000002461}
+{"at":2244.950209,"event":"stream-duration","ms":0.128458999999566}
+{"at":2245.491584,"event":"payload-duration","ms":0.09466599999996106}
+{"at":2245.703834,"event":"normal-request","count":1,"input":[{"role":"system","content":"Synthetic multi-session test.\n\n<cwd>\n/Users/wangxuyang/.t3/worktrees/compact/t3-ffc0cc73-3dfcde48e9a1b862/artifacts/P1/lane-8/two/cwd/two\n</cwd>"},{"role":"user","content":[{"type":"input_text","text":"The conversation history before this point was compacted into the following summary:\n\n<summary>\nSynthetic native summary.\n</summary>"}]},{"role":"user","content":[{"type":"input_text","text":"Recent retained synthetic input. Recent retained synthetic input. Recent retained synthetic input. Recent retained synthetic input. Recent retained synthetic input. Recent retained synthetic input. Recent retained synthetic input. Recent retained synthetic input. Recent retained synthetic input. Recent retained synthetic input. "}]},{"role":"user","content":[{"type":"input_text","text":"CURRENT_INPUT_MARKER continue after other session dispose"}]}]}
+{"at":2246.908625,"event":"agent_settled","success":false,"aborted":false,"outcome":"stop","checkpoints":1}
+{"at":2246.938209,"event":"same-process-continued","state":"idle"}

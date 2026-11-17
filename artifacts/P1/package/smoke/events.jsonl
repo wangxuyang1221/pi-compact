@@ -1,0 +1,9 @@
+{"at":18.050208,"event":"preload","pid":35403,"version":"v22.22.2","network":"fetch fixture.invalid only; sockets denied"}
+{"at":271.309125,"event":"session-start","reason":"startup"}
+{"at":271.895417,"event":"ready","session":"01a1e2b4-a554-746c-a479-edddcb1577d3","version":"1.5.2","managed":true,"identity":true,"extensions":["/Users/wangxuyang/.t3/worktrees/compact/t3-ffc0cc73-3dfcde48e9a1b862/scripts/fixture/observer.ts","/Users/wangxuyang/.t3/worktrees/compact/t3-ffc0cc73-3dfcde48e9a1b862/artifacts/P1/package/extracted/package/src/index.ts"]}
+{"at":273.358042,"event":"prepare-input","currentInput":true,"messages":5}
+{"at":273.617083,"event":"prepare-duration","ms":0.3043749999999932}
+{"at":274.119875,"event":"stream-duration","ms":0.2636669999999981}
+{"at":282.719375,"event":"payload-duration","ms":0.1812919999999849}
+{"at":284.1645,"event":"normal-request","count":1,"input":[{"role":"system","content":"Synthetic fixture only.\n\n<cwd>\n/Users/wangxuyang/.t3/worktrees/compact/t3-ffc0cc73-3dfcde48e9a1b862/artifacts/P1/package/smoke/cwd\n</cwd>"},{"role":"user","content":[{"type":"input_text","text":""}]},{"type":"message","role":"assistant","content":[{"type":"output_text","text":"Prior synthetic reply.","annotations":[]}],"status":"completed","id":"msg_pi_1"},{"role":"user","content":[{"type":"input_text","text":"Recent retained synthetic input. Recent retained synthetic input. Recent retained synthetic input. Recent retained synthetic input. Recent retained synthetic input. Recent retained synthetic input. Recent retained synthetic input. Recent retained synthetic input. Recent retained synthetic input. Recent retained synthetic input. "}]},{"role":"user","content":[{"type":"input_text","text":"CURRENT_INPUT_MARKER packaged entry"}]}]}
+{"at":287.556875,"event":"agent_settled","success":false,"aborted":false,"outcome":"stop","checkpoints":0}
