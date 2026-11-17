@@ -1,0 +1,20 @@
+
+> pi-compact@0.1.0 verify:perf /Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047
+> node scripts/verify-perf.mjs --pr P2
+
+Completed 5/30 alternating pairs
+Completed 10/30 alternating pairs
+Completed 15/30 alternating pairs
+ ELIFECYCLE  Command failed.
+Lockfile is up to date, resolution step is skipped
+Already up to date
+
+╭ Warning ─────────────────────────────────────────────────────────────────────╮
+│                                                                              │
+│   Ignored build scripts: @google/genai, esbuild, protobufjs.                 │
+│   Run "pnpm approve-builds" to pick which dependencies should be allowed     │
+│   to run scripts.                                                            │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+Done in 213ms using pnpm v10.11.0

@@ -1,0 +1,9 @@
+
+> pi-compact@0.1.0 verify:p1-scope /Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047
+> node scripts/verify-p1-scope.mjs
+
+{"probe":"scope","variant":"baseline","pass":true}
+{"probe":"scope","variant":"head","pass":true}
+{"probe":"managed-read","variant":"baseline","pass":true}
+{"probe":"managed-read","variant":"head","pass":true}
+/Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047/artifacts/P1-scope/runs/1794811614696

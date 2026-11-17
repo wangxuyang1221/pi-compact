@@ -1,0 +1,5 @@
+
+> pi-compact@0.1.0 verify:live /Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047
+> node scripts/verify-live.mjs --pr P1 --lane 2 --output artifacts/P2/p1-regressions
+
+{"lane":2,"status":"PASS"}

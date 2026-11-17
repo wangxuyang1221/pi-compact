@@ -1,0 +1,15 @@
+
+> pi-compact@0.1.0 verify:live /Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047
+> node scripts/verify-live.mjs --pr P2
+
+{"lane":1,"status":"PASS"}
+{"lane":2,"status":"FAIL","error":"AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n+ actual - expected\n\n+ undefined\n- true\n","stack":"AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n+ actual - expected\n\n+ undefined\n- true\n\n    at success (file:///Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047/scripts/verify-live.mjs:12:29)\n    at 2 (file:///Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047/scripts/verify-live.mjs:31:84)\n    at async file:///Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047/scripts/verify-live.mjs:197:9"}
+{"lane":3,"status":"FAIL","error":"AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n+ actual - expected\n\n+ undefined\n- true\n","stack":"AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n+ actual - expected\n\n+ undefined\n- true\n\n    at success (file:///Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047/scripts/verify-live.mjs:12:29)\n    at 3 (file:///Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047/scripts/verify-live.mjs:45:84)\n    at async file:///Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047/scripts/verify-live.mjs:197:9"}
+{"lane":4,"status":"PASS"}
+{"lane":5,"status":"FAIL","error":"AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n+ actual - expected\n\n+ undefined\n- false\n","stack":"AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n+ actual - expected\n\n+ undefined\n- false\n\n    at blocked (file:///Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047/scripts/verify-live.mjs:13:29)\n    at 5 (file:///Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047/scripts/verify-live.mjs:68:33)\n    at async file:///Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047/scripts/verify-live.mjs:197:9"}
+{"lane":6,"status":"PASS"}
+{"lane":7,"status":"PASS"}
+{"lane":8,"status":"PASS"}
+{"lane":9,"status":"FAIL","error":"AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n+ actual - expected\n\n+ undefined\n- false\n","stack":"AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n+ actual - expected\n\n+ undefined\n- false\n\n    at blocked (file:///Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047/scripts/verify-live.mjs:13:29)\n    at 9 (file:///Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047/scripts/verify-live.mjs:144:84)\n    at async file:///Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047/scripts/verify-live.mjs:197:9"}
+{"lane":10,"status":"PASS"}
+ ELIFECYCLE  Command failed with exit code 1.

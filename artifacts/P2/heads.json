@@ -1,0 +1,10 @@
+{
+  "branch": "t3/implement-pi-compact-p1-p6-1",
+  "base": "82c33d45ba7b351c9cefbfa2390d651953c80f31",
+  "acceptedP1": "aff503792cb9359ab7787cc267c7c080e8557ac3",
+  "product": "046f56d4654959474335490e1e0635c89d481ebc",
+  "productBytesMatchEvidence": true,
+  "independentAcceptance": "pending",
+  "userReview": "pending",
+  "push": false
+}

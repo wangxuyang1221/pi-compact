@@ -1,7 +1,7 @@
 import type * as Pi from '@earendil-works/pi-coding-agent';
 
 export const supportedVersion = '1.5.2';
-const required = ['_buildRuntime', '_runAutoCompaction', '_runDefaultCompaction', '_exceedsCompactionThreshold',
+const required = ['_buildRuntime', '_runAutoCompaction', '_runDefaultCompaction', '_exceedsCompactionThreshold', '_checkCompaction',
   '_emit', '_handlePostAgentRun', '_runBeforeSettleBoundary', 'compact', 'abortCompaction', 'dispose', 'prompt'];
 
 export function checkHost(host: typeof Pi): void {

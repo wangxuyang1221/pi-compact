@@ -1,0 +1,212 @@
+[
+  {
+    "index": 0,
+    "ms": 20.25033400000001,
+    "normalRequests": 1,
+    "nativeRequests": 1,
+    "errors": 0
+  },
+  {
+    "index": 1,
+    "ms": 18.972417000000007,
+    "normalRequests": 1,
+    "nativeRequests": 1,
+    "errors": 0
+  },
+  {
+    "index": 2,
+    "ms": 20.224625000000003,
+    "normalRequests": 1,
+    "nativeRequests": 1,
+    "errors": 0
+  },
+  {
+    "index": 3,
+    "ms": 19.47758299999998,
+    "normalRequests": 1,
+    "nativeRequests": 1,
+    "errors": 0
+  },
+  {
+    "index": 4,
+    "ms": 20.886000000000024,
+    "normalRequests": 1,
+    "nativeRequests": 1,
+    "errors": 0
+  },
+  {
+    "index": 5,
+    "ms": 19.119582999999977,
+    "normalRequests": 1,
+    "nativeRequests": 1,
+    "errors": 0
+  },
+  {
+    "index": 6,
+    "ms": 19.66558299999997,
+    "normalRequests": 1,
+    "nativeRequests": 1,
+    "errors": 0
+  },
+  {
+    "index": 7,
+    "ms": 22.32704100000001,
+    "normalRequests": 1,
+    "nativeRequests": 1,
+    "errors": 0
+  },
+  {
+    "index": 8,
+    "ms": 20.53895799999998,
+    "normalRequests": 1,
+    "nativeRequests": 1,
+    "errors": 0
+  },
+  {
+    "index": 9,
+    "ms": 19.459625000000017,
+    "normalRequests": 1,
+    "nativeRequests": 1,
+    "errors": 0
+  },
+  {
+    "index": 10,
+    "ms": 18.66058300000003,
+    "normalRequests": 1,
+    "nativeRequests": 1,
+    "errors": 0
+  },
+  {
+    "index": 11,
+    "ms": 20.226790999999935,
+    "normalRequests": 1,
+    "nativeRequests": 1,
+    "errors": 0
+  },
+  {
+    "index": 12,
+    "ms": 20.260459000000026,
+    "normalRequests": 1,
+    "nativeRequests": 1,
+    "errors": 0
+  },
+  {
+    "index": 13,
+    "ms": 18.90462500000001,
+    "normalRequests": 1,
+    "nativeRequests": 1,
+    "errors": 0
+  },
+  {
+    "index": 14,
+    "ms": 19.14133400000003,
+    "normalRequests": 1,
+    "nativeRequests": 1,
+    "errors": 0
+  },
+  {
+    "index": 15,
+    "ms": 20.156292000000008,
+    "normalRequests": 1,
+    "nativeRequests": 1,
+    "errors": 0
+  },
+  {
+    "index": 16,
+    "ms": 19.888041999999984,
+    "normalRequests": 1,
+    "nativeRequests": 1,
+    "errors": 0
+  },
+  {
+    "index": 17,
+    "ms": 19.55845800000003,
+    "normalRequests": 1,
+    "nativeRequests": 1,
+    "errors": 0
+  },
+  {
+    "index": 18,
+    "ms": 19.642333000000008,
+    "normalRequests": 1,
+    "nativeRequests": 1,
+    "errors": 0
+  },
+  {
+    "index": 19,
+    "ms": 20.409625000000005,
+    "normalRequests": 1,
+    "nativeRequests": 1,
+    "errors": 0
+  },
+  {
+    "index": 20,
+    "ms": 19.154416999999967,
+    "normalRequests": 1,
+    "nativeRequests": 1,
+    "errors": 0
+  },
+  {
+    "index": 21,
+    "ms": 20.81929200000002,
+    "normalRequests": 1,
+    "nativeRequests": 1,
+    "errors": 0
+  },
+  {
+    "index": 22,
+    "ms": 20.850915999999984,
+    "normalRequests": 1,
+    "nativeRequests": 1,
+    "errors": 0
+  },
+  {
+    "index": 23,
+    "ms": 20.68433299999998,
+    "normalRequests": 1,
+    "nativeRequests": 1,
+    "errors": 0
+  },
+  {
+    "index": 24,
+    "ms": 20.314666000000045,
+    "normalRequests": 1,
+    "nativeRequests": 1,
+    "errors": 0
+  },
+  {
+    "index": 25,
+    "ms": 20.39633299999997,
+    "normalRequests": 1,
+    "nativeRequests": 1,
+    "errors": 0
+  },
+  {
+    "index": 26,
+    "ms": 20.86166700000001,
+    "normalRequests": 1,
+    "nativeRequests": 1,
+    "errors": 0
+  },
+  {
+    "index": 27,
+    "ms": 19.29174999999998,
+    "normalRequests": 1,
+    "nativeRequests": 1,
+    "errors": 0
+  },
+  {
+    "index": 28,
+    "ms": 22.247083000000032,
+    "normalRequests": 1,
+    "nativeRequests": 1,
+    "errors": 0
+  },
+  {
+    "index": 29,
+    "ms": 27.641124999999988,
+    "normalRequests": 1,
+    "nativeRequests": 1,
+    "errors": 0
+  }
+]

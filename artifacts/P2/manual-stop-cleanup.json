@@ -1,0 +1,26 @@
+{
+  "stoppedRunners": [
+    42494,
+    62492
+  ],
+  "knownPids": [
+    57792,
+    57793,
+    57805,
+    88276
+  ],
+  "sockets": [
+    {
+      "socket": "4afcc0f6.sock",
+      "status": 1,
+      "error": "no server running on /Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047/4afcc0f6.sock\n",
+      "removed": true
+    },
+    {
+      "socket": "c3ba9a44.sock",
+      "status": 1,
+      "error": "no server running on /Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047/c3ba9a44.sock\n",
+      "removed": true
+    }
+  ]
+}

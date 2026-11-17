@@ -1,0 +1,2 @@
+{"kind":"duplicate","native":0,"normal":1,"hook":1,"oldOccurrences":2,"toolCall":true,"toolResult":true,"modifiedTool":false}
+{"kind":"tool-modify","native":0,"normal":1,"hook":1,"oldOccurrences":1,"toolCall":true,"toolResult":true,"modifiedTool":true}

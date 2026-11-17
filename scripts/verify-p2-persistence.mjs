@@ -1,0 +1,30 @@
+import assert from 'node:assert/strict';
+import { readFileSync, writeFileSync } from 'node:fs';
+import { join } from 'node:path';
+import { root, tui, waitFor, provenance } from './fixture/runtime.mjs';
+import { options, input, count } from './p2/common.mjs';
+const dir = join(root, 'artifacts/P2-fixes/persistence', String(Date.now()));
+const t = await tui(dir, { ...options, extensions: [...options.extensions, join(root, 'scripts/p2/persistence-fault.ts')] });
+const journal = () => JSON.parse(readFileSync(join(dir, 'session.jsonl.pi-compact-state.json')));
+const entries = () => readFileSync(join(dir, 'session.jsonl'), 'utf8').trim().split('\n').map(JSON.parse);
+try {
+  await t.text('/p2-budget 9000'); await waitFor(() => count(t, 'budget'), 'history seeded');
+  const before = readFileSync(join(dir, 'session.jsonl'));
+  await t.text('/p2-disk-fail'); await waitFor(() => count(t, 'disk-fault-armed'), 'disk injection');
+  await t.text(input); await waitFor(() => count(t, 'compaction_end'), 'failed checkpoint append');
+  assert.equal(count(t, 'disk-fault-fired'), 1);
+  assert.equal(journal().kind, 'blocked'); assert.equal(count(t, 'normal-request'), 0);
+  assert.equal(entries().filter(entry => entry.type === 'compaction').length, 0);
+  assert(readFileSync(join(dir, 'session.jsonl')).subarray(0, before.length).equals(before));
+  await t.text('/p2-disk-restore'); await waitFor(() => count(t, 'disk-fault-restored'), 'disk restored');
+  await t.text('BLOCKED_DISK_FOLLOWUP'); await t.text('/p2-state'); await waitFor(() => count(t, 'state'), 'blocked followup checked');
+  assert.equal(journal().kind, 'blocked'); assert.equal(count(t, 'normal-request'), 0);
+  await t.text('/compact'); await waitFor(() => count(t, 'extension-success'), 'explicit native retry committed');
+  assert.equal(journal().kind, 'idle'); assert.equal(count(t, 'native-request'), 2);
+  assert.equal(entries().filter(entry => entry.type === 'compaction').length, 1);
+  await t.text('CURRENT_INPUT_MARKER disk recovered'); await waitFor(() => count(t, 'normal-request'), 'post-retry continuation');
+  assert.equal(count(t, 'normal-request'), 1); assert.equal(count(t, 'extension-success'), 1);
+  await t.capture('disk-retry');
+  writeFileSync(join(dir, 'result.json'), JSON.stringify({ pass: true, provenance, native: 2, normal: 1, checkpoints: 1, journal: journal() }, null, 2));
+  console.log(JSON.stringify({ pass: true, dir, native: 2, normal: 1, checkpoints: 1 }));
+} finally { await t.stop(); }

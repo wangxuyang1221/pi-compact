@@ -1,0 +1,266 @@
+[
+  {
+    "kind": "duplicate",
+    "path": "artifacts/P2-reconstruction/run-1794818499100/duplicate/events.jsonl",
+    "sha256": "02b2ed058476d5bb1546bfc7df35afeee118d76925b3fc04c2b7e9e5807bb7dc",
+    "hookRuns": 1,
+    "hookOld": 2,
+    "actualOld": 2,
+    "current": 1,
+    "calls": [],
+    "outputs": [],
+    "normal": 1
+  },
+  {
+    "kind": "tool-modify",
+    "path": "artifacts/P2-reconstruction/run-1794818499100/tool-modify/events.jsonl",
+    "sha256": "26dce07d942290e220a3177752ce2de6d07a66f6d7941a3fc6a22c70fe71ecd4",
+    "hookRuns": 1,
+    "hookOld": 1,
+    "actualOld": 1,
+    "current": 1,
+    "calls": [
+      "call_independent"
+    ],
+    "outputs": [
+      "call_independent"
+    ],
+    "normal": 1
+  },
+  {
+    "kind": "modify-and-copy",
+    "path": "artifacts/P2-reconstruction/run-1794818499100/modify-and-copy/events.jsonl",
+    "sha256": "72aa27c266c504bcaa571902efbc807406b5dcfc141f6b4aae81997f35a13067",
+    "hookRuns": 1,
+    "hookOld": 1,
+    "actualOld": 1,
+    "current": 1,
+    "calls": [
+      "call_independent"
+    ],
+    "outputs": [
+      "call_independent"
+    ],
+    "normal": 1
+  },
+  {
+    "kind": "clone",
+    "path": "artifacts/P2-reconstruction/run-1794818499100/clone/events.jsonl",
+    "sha256": "32520d69309216ee1b9c42bf28c32c5ad276cba4af99d164bd67f7861ac35987",
+    "hookRuns": 1,
+    "hookOld": 1,
+    "actualOld": 0,
+    "current": 1,
+    "calls": [],
+    "outputs": [],
+    "normal": 1
+  },
+  {
+    "kind": "clone-duplicate",
+    "path": "artifacts/P2-reconstruction/run-1794818499100/clone-duplicate/events.jsonl",
+    "sha256": "2ecf1ded13299c9354885380cb0e852f556cb2289d7e586525df646a2e9c378e",
+    "hookRuns": 1,
+    "hookOld": 2,
+    "actualOld": 2,
+    "current": 1,
+    "calls": [],
+    "outputs": [],
+    "normal": 1
+  },
+  {
+    "kind": "same-reference",
+    "path": "artifacts/P2-reconstruction/run-1794818499100/same-reference/events.jsonl",
+    "sha256": "7a7710e3abee4003875ced5c96d51090f8e050d8defb1cd2023a0cbe4e61d876",
+    "hookRuns": 1,
+    "hookOld": 2,
+    "actualOld": 2,
+    "current": 1,
+    "calls": [],
+    "outputs": [],
+    "normal": 1
+  },
+  {
+    "kind": "in-place",
+    "path": "artifacts/P2-reconstruction/run-1794818499100/in-place/events.jsonl",
+    "sha256": "5eae55f3ada84d7c5a5612a9c1802fb2514c1407e191a6685d0af21b579ef2c8",
+    "hookRuns": 1,
+    "hookOld": 0,
+    "actualOld": 0,
+    "current": 1,
+    "calls": [
+      "call_independent"
+    ],
+    "outputs": [
+      "call_independent"
+    ],
+    "normal": 1
+  },
+  {
+    "kind": "in-place-array",
+    "path": "artifacts/P2-reconstruction/run-1794818499100/in-place-array/events.jsonl",
+    "sha256": "39392b3436cc7336909d68f5e8ec35d445d17f26c7ed64287109d8b8a563c87c",
+    "hookRuns": 1,
+    "hookOld": 0,
+    "actualOld": 0,
+    "current": 1,
+    "calls": [
+      "call_independent"
+    ],
+    "outputs": [
+      "call_independent"
+    ],
+    "normal": 1
+  },
+  {
+    "kind": "multi-tool",
+    "path": "artifacts/P2-reconstruction/run-1794818499100/multi-tool/events.jsonl",
+    "sha256": "03bef6ea2e276796c2a2d2c0f9184649757b9e0f457390b26d4f39a9c70dc231",
+    "hookRuns": 1,
+    "hookOld": 1,
+    "actualOld": 1,
+    "current": 1,
+    "calls": [
+      "call_independent",
+      "call_beta",
+      "call_gamma"
+    ],
+    "outputs": [
+      "call_gamma",
+      "call_beta",
+      "call_independent"
+    ],
+    "normal": 1
+  },
+  {
+    "kind": "tool-call-modify",
+    "path": "artifacts/P2-reconstruction/run-1794818499100/tool-call-modify/events.jsonl",
+    "sha256": "cc35cd218afe8986e9fdea1a8522155b03083570c936bea25495e700d4dbc916",
+    "hookRuns": 1,
+    "hookOld": 1,
+    "actualOld": 1,
+    "current": 1,
+    "calls": [
+      "call_independent",
+      "call_beta",
+      "call_gamma"
+    ],
+    "outputs": [
+      "call_gamma",
+      "call_beta",
+      "call_independent"
+    ],
+    "normal": 1
+  },
+  {
+    "kind": "tool-reorder",
+    "path": "artifacts/P2-reconstruction/run-1794818499100/tool-reorder/events.jsonl",
+    "sha256": "2bbbb7fbc99504a9284123626167689b6ebf1fbd7987593c5f9e1220fb608952",
+    "hookRuns": 1,
+    "hookOld": 1,
+    "actualOld": 1,
+    "current": 1,
+    "calls": [
+      "call_independent",
+      "call_beta",
+      "call_gamma"
+    ],
+    "outputs": [
+      "call_independent",
+      "call_beta",
+      "call_gamma"
+    ],
+    "normal": 1
+  },
+  {
+    "kind": "modify",
+    "path": "artifacts/P2-reconstruction/run-1794818499100/modify/events.jsonl",
+    "sha256": "2a384340cc30ff12dc93d416d8015d7f5c29b91ca39c89b33a15e098b9fcd891",
+    "hookRuns": 1,
+    "hookOld": 0,
+    "actualOld": 0,
+    "current": 1,
+    "calls": [
+      "call_independent"
+    ],
+    "outputs": [
+      "call_independent"
+    ],
+    "normal": 1
+  },
+  {
+    "kind": "remove",
+    "path": "artifacts/P2-reconstruction/run-1794818499100/remove/events.jsonl",
+    "sha256": "b926faf5439e6bcb8188ab173aa3e82432552cbdb878d535d66adde037c7ac40",
+    "hookRuns": 1,
+    "hookOld": 1,
+    "actualOld": 0,
+    "current": 1,
+    "calls": [],
+    "outputs": [],
+    "normal": 1
+  },
+  {
+    "kind": "reorder",
+    "path": "artifacts/P2-reconstruction/run-1794818499100/reorder/events.jsonl",
+    "sha256": "c0c85467d34faf3c3ce3f38dcedb800ed938a367a1c91181b877f040c144b624",
+    "hookRuns": 1,
+    "hookOld": 1,
+    "actualOld": 1,
+    "current": 1,
+    "calls": [
+      "call_independent"
+    ],
+    "outputs": [
+      "call_independent"
+    ],
+    "normal": 1
+  },
+  {
+    "kind": "system",
+    "path": "artifacts/P2-reconstruction/run-1794818499100/system/events.jsonl",
+    "sha256": "fb1ff6fbfc2ed0e4d1bc82021a2649f6016550d0b46ddb3caedb163080fe2d89",
+    "hookRuns": 1,
+    "hookOld": 1,
+    "actualOld": 0,
+    "current": 1,
+    "calls": [],
+    "outputs": [],
+    "normal": 1
+  },
+  {
+    "kind": "retained-delete",
+    "path": "artifacts/P2-reconstruction/run-1794818499100/retained-delete/events.jsonl",
+    "sha256": "0f04fbae24106728aec74da2b3ac41b73b8cf6d08a4823b5ee0ae7622ab60aa6",
+    "hookRuns": 1,
+    "hookOld": 1,
+    "actualOld": 0,
+    "current": 1,
+    "calls": [],
+    "outputs": [],
+    "normal": 1
+  },
+  {
+    "kind": "cross-cut",
+    "path": "artifacts/P2-reconstruction/run-1794818499100/cross-cut/events.jsonl",
+    "sha256": "7ccdda94a243dd85097021735e058201272d8621ba2b04718a9a9a83dd536c6f",
+    "hookRuns": 1,
+    "hookOld": 2,
+    "actualOld": 2,
+    "current": 1,
+    "calls": [],
+    "outputs": [],
+    "normal": 1
+  },
+  {
+    "kind": "tool-capacity",
+    "path": "artifacts/P2-reconstruction/run-1794818499100/tool-capacity/events.jsonl",
+    "sha256": "3d70311b1314c2f10bd251b6f904dee4ee21472830c6f76a4abbb872dd09d474",
+    "hookRuns": 1,
+    "hookOld": 1,
+    "actualOld": 0,
+    "current": 0,
+    "calls": [],
+    "outputs": [],
+    "normal": 0
+  }
+]

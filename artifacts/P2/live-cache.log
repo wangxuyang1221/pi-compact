@@ -1,0 +1,18 @@
+
+> pi-compact@0.1.0 verify:live /Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047
+> node scripts/verify-live.mjs --pr P2
+
+{"lane":1,"status":"PASS"}
+{"lane":2,"status":"PASS"}
+{"lane":3,"status":"PASS"}
+{"lane":4,"status":"PASS"}
+{"lane":5,"status":"PASS"}
+{"lane":6,"status":"PASS"}
+{"lane":7,"status":"PASS"}
+{"lane":8,"status":"PASS"}
+Lane 9 remains pending after 15 seconds
+Lane 9 remains pending after 30 seconds
+Lane 9 remains pending after 45 seconds
+Lane 9 remains pending after 60 seconds
+{"lane":9,"status":"PASS"}
+{"lane":10,"status":"PASS"}

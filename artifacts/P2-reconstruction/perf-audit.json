@@ -1,0 +1,662 @@
+[
+  {
+    "size": 1000,
+    "index": 0,
+    "variant": "baseline",
+    "path": "artifacts/P2-reconstruction/perf/1794818528817/1000-0-baseline",
+    "seedMessages": 1000,
+    "normal": 1,
+    "native": 0,
+    "network": 0,
+    "current": true,
+    "persisted": true,
+    "prepare": [
+      {
+        "at": 361.626625,
+        "event": "prepare-duration",
+        "ms": 0.3100420000000099
+      }
+    ],
+    "transform": [
+      {
+        "at": 362.009292,
+        "event": "transform-duration",
+        "ms": 0.28758400000003803
+      }
+    ],
+    "stream": [
+      {
+        "at": 362.814708,
+        "event": "stream-duration",
+        "ms": 0.4942909999999756
+      }
+    ]
+  },
+  {
+    "size": 1000,
+    "index": 0,
+    "variant": "head",
+    "path": "artifacts/P2-reconstruction/perf/1794818528817/1000-0-head",
+    "seedMessages": 1000,
+    "normal": 1,
+    "native": 0,
+    "network": 0,
+    "current": true,
+    "persisted": true,
+    "prepare": [
+      {
+        "at": 428.904,
+        "event": "prepare-duration",
+        "ms": 0.3509589999999889
+      }
+    ],
+    "transform": [
+      {
+        "at": 430.064708,
+        "event": "transform-duration",
+        "ms": 1.0554579999999874
+      }
+    ],
+    "stream": [
+      {
+        "at": 430.73425,
+        "event": "stream-duration",
+        "ms": 0.5572080000000028
+      }
+    ]
+  },
+  {
+    "size": 1000,
+    "index": 1,
+    "variant": "baseline",
+    "path": "artifacts/P2-reconstruction/perf/1794818528817/1000-1-baseline",
+    "seedMessages": 1000,
+    "normal": 1,
+    "native": 0,
+    "network": 0,
+    "current": true,
+    "persisted": true,
+    "prepare": [
+      {
+        "at": 390.561958,
+        "event": "prepare-duration",
+        "ms": 0.291499999999985
+      }
+    ],
+    "transform": [
+      {
+        "at": 390.941,
+        "event": "transform-duration",
+        "ms": 0.286625000000015
+      }
+    ],
+    "stream": [
+      {
+        "at": 391.742042,
+        "event": "stream-duration",
+        "ms": 0.47662500000001273
+      }
+    ]
+  },
+  {
+    "size": 1000,
+    "index": 1,
+    "variant": "head",
+    "path": "artifacts/P2-reconstruction/perf/1794818528817/1000-1-head",
+    "seedMessages": 1000,
+    "normal": 1,
+    "native": 0,
+    "network": 0,
+    "current": true,
+    "persisted": true,
+    "prepare": [
+      {
+        "at": 428.580958,
+        "event": "prepare-duration",
+        "ms": 0.3260839999999803
+      }
+    ],
+    "transform": [
+      {
+        "at": 429.707791,
+        "event": "transform-duration",
+        "ms": 1.0332919999999604
+      }
+    ],
+    "stream": [
+      {
+        "at": 430.404375,
+        "event": "stream-duration",
+        "ms": 0.5773750000000177
+      }
+    ]
+  },
+  {
+    "size": 1000,
+    "index": 2,
+    "variant": "baseline",
+    "path": "artifacts/P2-reconstruction/perf/1794818528817/1000-2-baseline",
+    "seedMessages": 1000,
+    "normal": 1,
+    "native": 0,
+    "network": 0,
+    "current": true,
+    "persisted": true,
+    "prepare": [
+      {
+        "at": 364.154916,
+        "event": "prepare-duration",
+        "ms": 0.2902080000000069
+      }
+    ],
+    "transform": [
+      {
+        "at": 364.535583,
+        "event": "transform-duration",
+        "ms": 0.2837080000000469
+      }
+    ],
+    "stream": [
+      {
+        "at": 365.323208,
+        "event": "stream-duration",
+        "ms": 0.4755840000000262
+      }
+    ]
+  },
+  {
+    "size": 1000,
+    "index": 2,
+    "variant": "head",
+    "path": "artifacts/P2-reconstruction/perf/1794818528817/1000-2-head",
+    "seedMessages": 1000,
+    "normal": 1,
+    "native": 0,
+    "network": 0,
+    "current": true,
+    "persisted": true,
+    "prepare": [
+      {
+        "at": 429.873375,
+        "event": "prepare-duration",
+        "ms": 0.35287500000004
+      }
+    ],
+    "transform": [
+      {
+        "at": 431.746875,
+        "event": "transform-duration",
+        "ms": 1.7721670000000245
+      }
+    ],
+    "stream": [
+      {
+        "at": 432.469542,
+        "event": "stream-duration",
+        "ms": 0.5819999999999936
+      }
+    ]
+  },
+  {
+    "size": 1000,
+    "index": 3,
+    "variant": "baseline",
+    "path": "artifacts/P2-reconstruction/perf/1794818528817/1000-3-baseline",
+    "seedMessages": 1000,
+    "normal": 1,
+    "native": 0,
+    "network": 0,
+    "current": true,
+    "persisted": true,
+    "prepare": [
+      {
+        "at": 380.527,
+        "event": "prepare-duration",
+        "ms": 0.30866600000001654
+      }
+    ],
+    "transform": [
+      {
+        "at": 380.981208,
+        "event": "transform-duration",
+        "ms": 0.3537910000000011
+      }
+    ],
+    "stream": [
+      {
+        "at": 381.789041,
+        "event": "stream-duration",
+        "ms": 0.4763749999999618
+      }
+    ]
+  },
+  {
+    "size": 1000,
+    "index": 3,
+    "variant": "head",
+    "path": "artifacts/P2-reconstruction/perf/1794818528817/1000-3-head",
+    "seedMessages": 1000,
+    "normal": 1,
+    "native": 0,
+    "network": 0,
+    "current": true,
+    "persisted": true,
+    "prepare": [
+      {
+        "at": 438.240583,
+        "event": "prepare-duration",
+        "ms": 0.34275000000002365
+      }
+    ],
+    "transform": [
+      {
+        "at": 439.416375,
+        "event": "transform-duration",
+        "ms": 1.0641250000000468
+      }
+    ],
+    "stream": [
+      {
+        "at": 440.12075,
+        "event": "stream-duration",
+        "ms": 0.5783749999999941
+      }
+    ]
+  },
+  {
+    "size": 1000,
+    "index": 4,
+    "variant": "baseline",
+    "path": "artifacts/P2-reconstruction/perf/1794818528817/1000-4-baseline",
+    "seedMessages": 1000,
+    "normal": 1,
+    "native": 0,
+    "network": 0,
+    "current": true,
+    "persisted": true,
+    "prepare": [
+      {
+        "at": 370.501542,
+        "event": "prepare-duration",
+        "ms": 0.28533399999997755
+      }
+    ],
+    "transform": [
+      {
+        "at": 370.914625,
+        "event": "transform-duration",
+        "ms": 0.310957999999971
+      }
+    ],
+    "stream": [
+      {
+        "at": 371.710083,
+        "event": "stream-duration",
+        "ms": 0.4753750000000423
+      }
+    ]
+  },
+  {
+    "size": 1000,
+    "index": 4,
+    "variant": "head",
+    "path": "artifacts/P2-reconstruction/perf/1794818528817/1000-4-head",
+    "seedMessages": 1000,
+    "normal": 1,
+    "native": 0,
+    "network": 0,
+    "current": true,
+    "persisted": true,
+    "prepare": [
+      {
+        "at": 433.766125,
+        "event": "prepare-duration",
+        "ms": 0.3341660000000388
+      }
+    ],
+    "transform": [
+      {
+        "at": 435.03175,
+        "event": "transform-duration",
+        "ms": 1.1456249999999955
+      }
+    ],
+    "stream": [
+      {
+        "at": 435.801208,
+        "event": "stream-duration",
+        "ms": 0.6076250000000414
+      }
+    ]
+  },
+  {
+    "size": 10000,
+    "index": 0,
+    "variant": "baseline",
+    "path": "artifacts/P2-reconstruction/perf/1794818528817/10000-0-baseline",
+    "seedMessages": 10000,
+    "normal": 1,
+    "native": 0,
+    "network": 0,
+    "current": true,
+    "persisted": true,
+    "prepare": [
+      {
+        "at": 748.474083,
+        "event": "prepare-duration",
+        "ms": 1.211917000000085
+      }
+    ],
+    "transform": [
+      {
+        "at": 752.359708,
+        "event": "transform-duration",
+        "ms": 3.776917000000026
+      }
+    ],
+    "stream": [
+      {
+        "at": 755.822875,
+        "event": "stream-duration",
+        "ms": 1.6295000000000073
+      }
+    ]
+  },
+  {
+    "size": 10000,
+    "index": 0,
+    "variant": "head",
+    "path": "artifacts/P2-reconstruction/perf/1794818528817/10000-0-head",
+    "seedMessages": 10000,
+    "normal": 1,
+    "native": 0,
+    "network": 0,
+    "current": true,
+    "persisted": true,
+    "prepare": [
+      {
+        "at": 814.631667,
+        "event": "prepare-duration",
+        "ms": 1.1986249999999927
+      }
+    ],
+    "transform": [
+      {
+        "at": 824.172042,
+        "event": "transform-duration",
+        "ms": 7.191500000000019
+      }
+    ],
+    "stream": [
+      {
+        "at": 827.454583,
+        "event": "stream-duration",
+        "ms": 2.8433750000000373
+      }
+    ]
+  },
+  {
+    "size": 10000,
+    "index": 1,
+    "variant": "baseline",
+    "path": "artifacts/P2-reconstruction/perf/1794818528817/10000-1-baseline",
+    "seedMessages": 10000,
+    "normal": 1,
+    "native": 0,
+    "network": 0,
+    "current": true,
+    "persisted": true,
+    "prepare": [
+      {
+        "at": 751.803792,
+        "event": "prepare-duration",
+        "ms": 1.0315409999999474
+      }
+    ],
+    "transform": [
+      {
+        "at": 754.016917,
+        "event": "transform-duration",
+        "ms": 2.0823749999999563
+      }
+    ],
+    "stream": [
+      {
+        "at": 757.489125,
+        "event": "stream-duration",
+        "ms": 1.622082999999975
+      }
+    ]
+  },
+  {
+    "size": 10000,
+    "index": 1,
+    "variant": "head",
+    "path": "artifacts/P2-reconstruction/perf/1794818528817/10000-1-head",
+    "seedMessages": 10000,
+    "normal": 1,
+    "native": 0,
+    "network": 0,
+    "current": true,
+    "persisted": true,
+    "prepare": [
+      {
+        "at": 856.004417,
+        "event": "prepare-duration",
+        "ms": 0.8906670000000076
+      }
+    ],
+    "transform": [
+      {
+        "at": 863.8155,
+        "event": "transform-duration",
+        "ms": 7.7060410000000275
+      }
+    ],
+    "stream": [
+      {
+        "at": 867.214167,
+        "event": "stream-duration",
+        "ms": 2.152665999999954
+      }
+    ]
+  },
+  {
+    "size": 10000,
+    "index": 2,
+    "variant": "baseline",
+    "path": "artifacts/P2-reconstruction/perf/1794818528817/10000-2-baseline",
+    "seedMessages": 10000,
+    "normal": 1,
+    "native": 0,
+    "network": 0,
+    "current": true,
+    "persisted": true,
+    "prepare": [
+      {
+        "at": 761.839875,
+        "event": "prepare-duration",
+        "ms": 1.1159589999999753
+      }
+    ],
+    "transform": [
+      {
+        "at": 764.017041,
+        "event": "transform-duration",
+        "ms": 2.0651249999999663
+      }
+    ],
+    "stream": [
+      {
+        "at": 768.5845,
+        "event": "stream-duration",
+        "ms": 2.764415999999983
+      }
+    ]
+  },
+  {
+    "size": 10000,
+    "index": 2,
+    "variant": "head",
+    "path": "artifacts/P2-reconstruction/perf/1794818528817/10000-2-head",
+    "seedMessages": 10000,
+    "normal": 1,
+    "native": 0,
+    "network": 0,
+    "current": true,
+    "persisted": true,
+    "prepare": [
+      {
+        "at": 815.447583,
+        "event": "prepare-duration",
+        "ms": 0.8330419999999776
+      }
+    ],
+    "transform": [
+      {
+        "at": 823.43175,
+        "event": "transform-duration",
+        "ms": 7.87783300000001
+      }
+    ],
+    "stream": [
+      {
+        "at": 825.892666,
+        "event": "stream-duration",
+        "ms": 1.9494999999999436
+      }
+    ]
+  },
+  {
+    "size": 10000,
+    "index": 3,
+    "variant": "baseline",
+    "path": "artifacts/P2-reconstruction/perf/1794818528817/10000-3-baseline",
+    "seedMessages": 10000,
+    "normal": 1,
+    "native": 0,
+    "network": 0,
+    "current": true,
+    "persisted": true,
+    "prepare": [
+      {
+        "at": 751.956375,
+        "event": "prepare-duration",
+        "ms": 1.4568749999999682
+      }
+    ],
+    "transform": [
+      {
+        "at": 754.089334,
+        "event": "transform-duration",
+        "ms": 1.9875000000000682
+      }
+    ],
+    "stream": [
+      {
+        "at": 758.665,
+        "event": "stream-duration",
+        "ms": 2.7366250000000036
+      }
+    ]
+  },
+  {
+    "size": 10000,
+    "index": 3,
+    "variant": "head",
+    "path": "artifacts/P2-reconstruction/perf/1794818528817/10000-3-head",
+    "seedMessages": 10000,
+    "normal": 1,
+    "native": 0,
+    "network": 0,
+    "current": true,
+    "persisted": true,
+    "prepare": [
+      {
+        "at": 836.025291,
+        "event": "prepare-duration",
+        "ms": 1.8601660000000493
+      }
+    ],
+    "transform": [
+      {
+        "at": 843.418583,
+        "event": "transform-duration",
+        "ms": 7.241375000000062
+      }
+    ],
+    "stream": [
+      {
+        "at": 845.906291,
+        "event": "stream-duration",
+        "ms": 1.9933750000000146
+      }
+    ]
+  },
+  {
+    "size": 10000,
+    "index": 4,
+    "variant": "baseline",
+    "path": "artifacts/P2-reconstruction/perf/1794818528817/10000-4-baseline",
+    "seedMessages": 10000,
+    "normal": 1,
+    "native": 0,
+    "network": 0,
+    "current": true,
+    "persisted": true,
+    "prepare": [
+      {
+        "at": 736.39925,
+        "event": "prepare-duration",
+        "ms": 1.8106670000000804
+      }
+    ],
+    "transform": [
+      {
+        "at": 738.480083,
+        "event": "transform-duration",
+        "ms": 1.9637500000000045
+      }
+    ],
+    "stream": [
+      {
+        "at": 742.783667,
+        "event": "stream-duration",
+        "ms": 2.450917000000004
+      }
+    ]
+  },
+  {
+    "size": 10000,
+    "index": 4,
+    "variant": "head",
+    "path": "artifacts/P2-reconstruction/perf/1794818528817/10000-4-head",
+    "seedMessages": 10000,
+    "normal": 1,
+    "native": 0,
+    "network": 0,
+    "current": true,
+    "persisted": true,
+    "prepare": [
+      {
+        "at": 790.080084,
+        "event": "prepare-duration",
+        "ms": 0.8091670000000022
+      }
+    ],
+    "transform": [
+      {
+        "at": 797.36425,
+        "event": "transform-duration",
+        "ms": 7.181874999999991
+      }
+    ],
+    "stream": [
+      {
+        "at": 800.514334,
+        "event": "stream-duration",
+        "ms": 1.9762080000000424
+      }
+    ]
+  }
+]

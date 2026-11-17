@@ -1,0 +1,17 @@
+{"kind":"modify-and-copy","status":"FAIL","error":"AssertionError [ERR_ASSERTION]: preserve modified source and added clone together","stack":"AssertionError [ERR_ASSERTION]: preserve modified source and added clone together\n    at file:///Users/wangxuyang/.t3/worktrees/compact/t3-1ffed212-e1dc3a2046f48779/scripts/verify-p2-reconstruction.mjs:51:39"}
+/Users/wangxuyang/.t3/worktrees/compact/t3-1ffed212-e1dc3a2046f48779/artifacts/P2-reconstruction/run-1794818480474
+node:internal/modules/run_main:123
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: request reconstruction
+    at file:///Users/wangxuyang/.t3/worktrees/compact/t3-1ffed212-e1dc3a2046f48779/scripts/verify-p2-reconstruction.mjs:79:1 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
+
+Node.js v22.22.2

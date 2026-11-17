@@ -1,0 +1,9 @@
+{
+  "testedHead": "08b6b11973d8651ba51c5d4b83375de730182446",
+  "reason": "Exclude the stdout log while it is being generated. Historical zero-byte hash was invalid; independent review verified the other evidence.",
+  "previous": {
+    "artifacts/P2-reconstruction/audit.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "artifacts/P2-reconstruction/audit.mjs": "c8f0e0132674a451dc415aaec3fe1b919ce87c72d365188bf162b1af91115306"
+  },
+  "actualLogSha256": "fb4c75080fbb7e99115bb59e5850eed72859f9c202bee55d689222699cb10b5e"
+}

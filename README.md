@@ -4,7 +4,7 @@ Context compaction for [Pi](https://pi.dev/) with Codex remote compaction, perce
 
 ## Status
 
-P1 implements the ordinary Pi 1.5.2 extension, native compaction admission, cancellation, persistent failure barriers, and explicit TUI retry. The complete product described below remains in development.
+P1 and P2 implement the ordinary Pi 1.5.2 extension, percentage-based native compaction, project configuration, cancellation, persistent failure barriers, and explicit TUI retry. The complete product described below remains in development.
 
 Disposable prototypes have exercised Pi 1.5.2's compaction flow and TUI. A small synthetic conversation also completed real Codex remote compaction and continuation. These experiments do not establish production reliability or a quality advantage over native compaction.
 
@@ -31,12 +31,14 @@ The extension will use Pi's existing session and provider setup. Some integratio
 - [Implementation roadmap](docs/roadmap.md)
 - [Terminology in Chinese](GLOSSARY.md)
 
-## Run the P1 development package
+## Run the development package
 
 Use Node 22.19 or later and Pi 1.5.2. Install development dependencies with `pnpm install --frozen-lockfile`. Load the ordinary extension with `pi -e ./src/index.ts`.
 
-P1 retains Pi's native compaction settings and text summaries. It requires persistent sessions and pauses failed or cancelled work until a successful explicit `/compact` retry. It disables cache warming for managed sessions. Read the [adapter behavior and verification commands](docs/p1-adapter.md) before testing integrations.
+The default compaction threshold is 90% of the active model window. `/compact-config threshold 80` saves an override in the project's `.pi/pi-compact.json`. `/compact-config` displays the current threshold and source. Read [percentage compaction](docs/p2-policy.md) for boundaries and recovery behavior.
 
-Run `pnpm lint`, `pnpm typecheck`, and `pnpm test`. The real CLI and TUI fixture suite runs with `pnpm verify:live --pr P1`. It requires tmux and a Python `codex-py312` conda environment with Pillow for terminal captures. Performance verification uses `pnpm verify:perf --pr P1`.
+The extension uses native text summaries. It requires persistent sessions and pauses failed or cancelled work until a successful explicit `/compact` retry. It disables cache warming for managed sessions. Read the [adapter behavior and verification commands](docs/p1-adapter.md) before testing integrations.
+
+Run `pnpm lint`, `pnpm typecheck`, and `pnpm test`. The real CLI and TUI fixture suite runs with `pnpm verify:live --pr P2`. It requires tmux and a Python `codex-py312` conda environment with Pillow for terminal captures. Performance verification uses `pnpm verify:perf --pr P2`.
 
 `pnpm pack` creates a development tarball containing the extension source and README. The extension loader resolves Pi's host classes. Do not bundle a second Pi runtime into the package.

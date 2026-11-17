@@ -10,7 +10,7 @@ An execution lease remains held until the native promise, failure hooks, and nat
 
 The adapter checks the canonical projection in `agent.prepareRequest`, after Pi records the new input. Pi's next-turn boundary still waits for the complete tool batch. The stream wrapper checks the actual message budget and state again, then checks the generation after the native provider payload callback. An extension that changes the final payload is rejected because its request budget has not been validated.
 
-Automatic compaction respects Pi's enabled setting and reserve threshold. The final request check reserves the model's output capacity against its context window even when automatic compaction is disabled. A disabled reserve threshold does not block safe input.
+Automatic compaction respects Pi's enabled setting and the project percentage threshold. A session-local settings facade maps the inclusive percentage to Pi's strict comparison only while checking the threshold. Native summary preparation retains Pi's original reserve and keepRecentTokens. The final request check reserves the model's output capacity even when automatic compaction is disabled. See [percentage compaction](p2-policy.md).
 
 Post-run and before-settle continuation stop while blocked. Direct `agent.continue()` also checks the state before consuming a queue. Pi retains its queues. The TUI's compaction queue stays in place while blocked and participates in the successful retry budget check.
 
@@ -54,4 +54,4 @@ Run `pnpm verify:p1-scope` to compare native and managed behavior for unrelated 
 
 The runner uses the installed shell shim, independent agent directories, and synthetic sessions. It supplies fake credentials and model responses. Preloading denies sockets and permits only the fixture fetch endpoint. It never invokes a real model service. Tmux drives actual keys and captures ANSI. PNG files render captured terminal text with Menlo on a dark background; they are terminal-output renderings rather than OS screenshots.
 
-The P1 package uses native compaction settings. Percentage configuration, Codex remote checkpoints, migration, and the new completion divider belong to subsequent implementation units.
+P2 adds project percentage configuration. Codex remote checkpoints, migration, and the new completion divider belong to subsequent implementation units.

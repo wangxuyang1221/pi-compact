@@ -86,7 +86,7 @@ test('duplicate installation keeps one dispatcher and restores its descriptors',
   const { install } = await import('../src/pi-adapter/session.ts');
   const prototype = host.AgentSession.prototype as unknown as Record<string, unknown>;
   const original = prototype._buildRuntime;
-  const api = { on() {} } as unknown as host.ExtensionAPI;
+  const api = { on() {}, registerCommand() {} } as unknown as host.ExtensionAPI;
   install(host, api);
   const first = prototype._buildRuntime;
   install(host, api);

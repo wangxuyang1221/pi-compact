@@ -1,0 +1,11 @@
+
+> pi-compact@0.1.0 verify:perf /Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047
+> node scripts/verify-perf.mjs --pr P2
+
+{"size":1000,"pairs":5}
+{"size":1000,"pairs":10}
+{"size":1000,"pairs":15}
+{"size":1000,"pairs":20}
+{"size":1000,"pairs":25}
+{"size":1000,"pairs":30}
+ ELIFECYCLE  Command failed.

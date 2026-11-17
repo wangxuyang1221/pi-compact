@@ -1,0 +1,1022 @@
+[
+  {
+    "size": 1000,
+    "index": 0,
+    "baseline": {
+      "prepareMs": 1.0279170000000022,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "configTuiMs": 63.99066700000003,
+    "configMs": 0.9996670000000449,
+    "head": {
+      "prepareMs": 2.5481669999999212,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedMs": 1.520249999999919
+  },
+  {
+    "size": 1000,
+    "index": 1,
+    "baseline": {
+      "prepareMs": 1.0107090000000198,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "configTuiMs": 69.26429200000075,
+    "configMs": 0.5725000000001046,
+    "head": {
+      "prepareMs": 2.453583999999978,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedMs": 1.4428749999999582
+  },
+  {
+    "size": 1000,
+    "index": 2,
+    "baseline": {
+      "prepareMs": 1.1485429999999042,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "configTuiMs": 58.189792000000125,
+    "configMs": 0.7157090000000608,
+    "head": {
+      "prepareMs": 4.458041999999978,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedMs": 3.3094990000000735
+  },
+  {
+    "size": 1000,
+    "index": 3,
+    "baseline": {
+      "prepareMs": 1.31412499999999,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "configTuiMs": 169.98341599999912,
+    "configMs": 0.6705420000000686,
+    "head": {
+      "prepareMs": 2.351541000000111,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedMs": 1.0374160000001211
+  },
+  {
+    "size": 1000,
+    "index": 4,
+    "baseline": {
+      "prepareMs": 0.9309169999999654,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "configTuiMs": 129.09095800000068,
+    "configMs": 0.8811670000000049,
+    "head": {
+      "prepareMs": 3.718082000000095,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedMs": 2.7871650000001296
+  },
+  {
+    "size": 1000,
+    "index": 5,
+    "baseline": {
+      "prepareMs": 0.9952499999999986,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "configTuiMs": 59.569124999999985,
+    "configMs": 0.5907910000000811,
+    "head": {
+      "prepareMs": 2.780750000000012,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedMs": 1.7855000000000132
+  },
+  {
+    "size": 1000,
+    "index": 6,
+    "baseline": {
+      "prepareMs": 0.9125000000000227,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "configTuiMs": 61.0207500000015,
+    "configMs": 0.7785410000000184,
+    "head": {
+      "prepareMs": 2.4567910000000666,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedMs": 1.5442910000000438
+  },
+  {
+    "size": 1000,
+    "index": 7,
+    "baseline": {
+      "prepareMs": 0.9532920000000331,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "configTuiMs": 126.6294170000001,
+    "configMs": 0.6628750000000991,
+    "head": {
+      "prepareMs": 2.336041000000023,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedMs": 1.3827489999999898
+  },
+  {
+    "size": 1000,
+    "index": 8,
+    "baseline": {
+      "prepareMs": 0.9304579999999874,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "configTuiMs": 54.17950000000019,
+    "configMs": 0.7241670000000227,
+    "head": {
+      "prepareMs": 2.5557500000001028,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedMs": 1.6252920000001154
+  },
+  {
+    "size": 1000,
+    "index": 9,
+    "baseline": {
+      "prepareMs": 0.9149170000000026,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "configTuiMs": 51.72375000000102,
+    "configMs": 0.6361249999999927,
+    "head": {
+      "prepareMs": 2.99941600000011,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedMs": 2.0844990000001076
+  },
+  {
+    "size": 1000,
+    "index": 10,
+    "baseline": {
+      "prepareMs": 0.8792909999999665,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "configTuiMs": 57.05708400000003,
+    "configMs": 0.6080420000000117,
+    "head": {
+      "prepareMs": 1.9866660000001275,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedMs": 1.107375000000161
+  },
+  {
+    "size": 1000,
+    "index": 11,
+    "baseline": {
+      "prepareMs": 1.0364999999999895,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "configTuiMs": 53.66312499999913,
+    "configMs": 0.5664590000000089,
+    "head": {
+      "prepareMs": 2.1340410000000247,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedMs": 1.0975410000000352
+  },
+  {
+    "size": 1000,
+    "index": 12,
+    "baseline": {
+      "prepareMs": 0.9178749999999809,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "configTuiMs": 55.742582999999286,
+    "configMs": 0.5427920000000199,
+    "head": {
+      "prepareMs": 2.0374160000000074,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedMs": 1.1195410000000265
+  },
+  {
+    "size": 1000,
+    "index": 13,
+    "baseline": {
+      "prepareMs": 0.9433750000000032,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "configTuiMs": 50.93549999999959,
+    "configMs": 0.5336669999999799,
+    "head": {
+      "prepareMs": 1.9885410000000547,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedMs": 1.0451660000000516
+  },
+  {
+    "size": 1000,
+    "index": 14,
+    "baseline": {
+      "prepareMs": 0.9441669999999931,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "configTuiMs": 117.02858299999934,
+    "configMs": 0.6119169999999485,
+    "head": {
+      "prepareMs": 1.8698340000000826,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedMs": 0.9256670000000895
+  },
+  {
+    "size": 1000,
+    "index": 15,
+    "baseline": {
+      "prepareMs": 0.8564579999999751,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "configTuiMs": 48.6282919999976,
+    "configMs": 0.5255410000000325,
+    "head": {
+      "prepareMs": 1.959583000000066,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedMs": 1.103125000000091
+  },
+  {
+    "size": 1000,
+    "index": 16,
+    "baseline": {
+      "prepareMs": 0.8872920000000022,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "configTuiMs": 52.613875000002736,
+    "configMs": 0.6238749999999982,
+    "head": {
+      "prepareMs": 1.845166000000063,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedMs": 0.9578740000000607
+  },
+  {
+    "size": 1000,
+    "index": 17,
+    "baseline": {
+      "prepareMs": 0.8806249999999523,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "configTuiMs": 53.93720899999971,
+    "configMs": 0.5522079999999505,
+    "head": {
+      "prepareMs": 3.273832999999968,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedMs": 2.3932080000000155
+  },
+  {
+    "size": 1000,
+    "index": 18,
+    "baseline": {
+      "prepareMs": 0.9082919999999604,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "configTuiMs": 53.15304200000173,
+    "configMs": 0.5801669999999604,
+    "head": {
+      "prepareMs": 2.3059169999999085,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedMs": 1.3976249999999482
+  },
+  {
+    "size": 1000,
+    "index": 19,
+    "baseline": {
+      "prepareMs": 0.8643340000000421,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "configTuiMs": 67.64691700000185,
+    "configMs": 0.6324170000000322,
+    "head": {
+      "prepareMs": 2.361250000000041,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedMs": 1.4969159999999988
+  },
+  {
+    "size": 1000,
+    "index": 20,
+    "baseline": {
+      "prepareMs": 0.9340410000000361,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "configTuiMs": 120.06083299999955,
+    "configMs": 0.6839580000000183,
+    "head": {
+      "prepareMs": 2.0915410000000065,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedMs": 1.1574999999999704
+  },
+  {
+    "size": 1000,
+    "index": 21,
+    "baseline": {
+      "prepareMs": 0.8549990000000207,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "configTuiMs": 52.55312500000582,
+    "configMs": 0.6245000000000118,
+    "head": {
+      "prepareMs": 2.1934170000000677,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedMs": 1.338418000000047
+  },
+  {
+    "size": 1000,
+    "index": 22,
+    "baseline": {
+      "prepareMs": 0.8936659999999392,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "configTuiMs": 48.01350000000093,
+    "configMs": 0.6042500000000359,
+    "head": {
+      "prepareMs": 2.012166000000036,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedMs": 1.1185000000000969
+  },
+  {
+    "size": 1000,
+    "index": 23,
+    "baseline": {
+      "prepareMs": 0.8541260000000079,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "configTuiMs": 118.69033300000592,
+    "configMs": 0.7047089999999798,
+    "head": {
+      "prepareMs": 2.120207999999991,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedMs": 1.266081999999983
+  },
+  {
+    "size": 1000,
+    "index": 24,
+    "baseline": {
+      "prepareMs": 0.8241660000000479,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "configTuiMs": 48.76462499999616,
+    "configMs": 0.5094589999999926,
+    "head": {
+      "prepareMs": 1.8108330000000592,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedMs": 0.9866670000000113
+  },
+  {
+    "size": 1000,
+    "index": 25,
+    "baseline": {
+      "prepareMs": 1.3325000000000387,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "configTuiMs": 49.37437499999942,
+    "configMs": 0.5252920000000358,
+    "head": {
+      "prepareMs": 1.90383300000002,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedMs": 0.5713329999999814
+  },
+  {
+    "size": 1000,
+    "index": 26,
+    "baseline": {
+      "prepareMs": 0.824957999999981,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "configTuiMs": 50.41266700000415,
+    "configMs": 0.5182500000000232,
+    "head": {
+      "prepareMs": 1.844459000000029,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedMs": 1.019501000000048
+  },
+  {
+    "size": 1000,
+    "index": 27,
+    "baseline": {
+      "prepareMs": 0.7950419999999667,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "configTuiMs": 117.75708299999678,
+    "configMs": 0.5845830000000092,
+    "head": {
+      "prepareMs": 1.75895799999995,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedMs": 0.9639159999999833
+  },
+  {
+    "size": 1000,
+    "index": 28,
+    "baseline": {
+      "prepareMs": 0.7934999999999945,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "configTuiMs": 48.36920899999677,
+    "configMs": 0.5422909999999774,
+    "head": {
+      "prepareMs": 1.7830830000000333,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedMs": 0.9895830000000387
+  },
+  {
+    "size": 1000,
+    "index": 29,
+    "baseline": {
+      "prepareMs": 0.8522489999999721,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "configTuiMs": 56.31433400000242,
+    "configMs": 0.9688750000000255,
+    "head": {
+      "prepareMs": 3.0806249999999977,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedMs": 2.2283760000000257
+  },
+  {
+    "size": 10000,
+    "index": 0,
+    "baseline": {
+      "prepareMs": 4.240458999999987,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "configTuiMs": 212.54641699999775,
+    "configMs": 0.753832999999986,
+    "head": {
+      "prepareMs": 12.78762400000005,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedMs": 8.547165000000064
+  },
+  {
+    "size": 10000,
+    "index": 1,
+    "baseline": {
+      "prepareMs": 3.2474580000000515,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "configTuiMs": 83.00862499999494,
+    "configMs": 0.6156250000000227,
+    "head": {
+      "prepareMs": 7.8600830000000315,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedMs": 4.61262499999998
+  },
+  {
+    "size": 10000,
+    "index": 2,
+    "baseline": {
+      "prepareMs": 5.088498999999956,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "configTuiMs": 122.75533300000097,
+    "configMs": 0.7229169999999385,
+    "head": {
+      "prepareMs": 9.276751000000104,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedMs": 4.188252000000148
+  },
+  {
+    "size": 10000,
+    "index": 3,
+    "baseline": {
+      "prepareMs": 6.5055830000000014,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "configTuiMs": 766.8952080000017,
+    "configMs": 0.6437500000001819,
+    "head": {
+      "prepareMs": 9.411207999999988,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedMs": 2.9056249999999864
+  },
+  {
+    "size": 10000,
+    "index": 4,
+    "baseline": {
+      "prepareMs": 4.245500000000106,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "configTuiMs": 86.95429099999456,
+    "configMs": 0.570041999999944,
+    "head": {
+      "prepareMs": 7.994290999999862,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedMs": 3.7487909999997555
+  },
+  {
+    "size": 10000,
+    "index": 5,
+    "baseline": {
+      "prepareMs": 3.5422909999999774,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "configTuiMs": 672.726917,
+    "configMs": 0.5638339999999289,
+    "head": {
+      "prepareMs": 10.149832999999944,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedMs": 6.607541999999967
+  },
+  {
+    "size": 10000,
+    "index": 6,
+    "baseline": {
+      "prepareMs": 4.606416999999965,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "configTuiMs": 86.62045800000487,
+    "configMs": 0.5782080000000178,
+    "head": {
+      "prepareMs": 10.14874999999995,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedMs": 5.542332999999985
+  },
+  {
+    "size": 10000,
+    "index": 7,
+    "baseline": {
+      "prepareMs": 3.784375000000068,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "configTuiMs": 85.64775000000373,
+    "configMs": 0.5799580000000333,
+    "head": {
+      "prepareMs": 8.164874000000054,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedMs": 4.380498999999986
+  },
+  {
+    "size": 10000,
+    "index": 8,
+    "baseline": {
+      "prepareMs": 4.963416999999936,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "configTuiMs": 118.75479099999939,
+    "configMs": 0.6060420000000022,
+    "head": {
+      "prepareMs": 8.40770699999996,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedMs": 3.4442900000000236
+  },
+  {
+    "size": 10000,
+    "index": 9,
+    "baseline": {
+      "prepareMs": 2.6769590000000107,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "configTuiMs": 116.29883400000108,
+    "configMs": 0.5708329999999933,
+    "head": {
+      "prepareMs": 7.31345900000008,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedMs": 4.636500000000069
+  },
+  {
+    "size": 10000,
+    "index": 10,
+    "baseline": {
+      "prepareMs": 2.7462079999999105,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "configTuiMs": 84.08333400000993,
+    "configMs": 0.6045830000000478,
+    "head": {
+      "prepareMs": 8.603042999999957,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedMs": 5.856835000000046
+  },
+  {
+    "size": 10000,
+    "index": 11,
+    "baseline": {
+      "prepareMs": 3.810290999999893,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "configTuiMs": 119.80662499999744,
+    "configMs": 0.61587499999996,
+    "head": {
+      "prepareMs": 8.009541000000013,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedMs": 4.19925000000012
+  },
+  {
+    "size": 10000,
+    "index": 12,
+    "baseline": {
+      "prepareMs": 3.010373999999956,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "configTuiMs": 86.06345800000418,
+    "configMs": 0.5592920000000277,
+    "head": {
+      "prepareMs": 6.913707999999929,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedMs": 3.9033339999999725
+  },
+  {
+    "size": 10000,
+    "index": 13,
+    "baseline": {
+      "prepareMs": 3.820791999999983,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "configTuiMs": 86.45741599999019,
+    "configMs": 0.5851250000000618,
+    "head": {
+      "prepareMs": 8.418165999999928,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedMs": 4.597373999999945
+  },
+  {
+    "size": 10000,
+    "index": 14,
+    "baseline": {
+      "prepareMs": 2.8125420000000076,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "configTuiMs": 85.44279200000165,
+    "configMs": 0.5209580000000642,
+    "head": {
+      "prepareMs": 8.846000000000004,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedMs": 6.033457999999996
+  },
+  {
+    "size": 10000,
+    "index": 15,
+    "baseline": {
+      "prepareMs": 4.266292000000021,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "configTuiMs": 130.21949999999197,
+    "configMs": 0.8137090000000171,
+    "head": {
+      "prepareMs": 7.596499999999992,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedMs": 3.3302079999999705
+  },
+  {
+    "size": 10000,
+    "index": 16,
+    "baseline": {
+      "prepareMs": 4.158376000000089,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "configTuiMs": 132.7171670000098,
+    "configMs": 1.4104590000000599,
+    "head": {
+      "prepareMs": 9.135416000000077,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedMs": 4.977039999999988
+  },
+  {
+    "size": 10000,
+    "index": 17,
+    "baseline": {
+      "prepareMs": 4.794582999999875,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "configTuiMs": 120.10095799999544,
+    "configMs": 0.5497910000000275,
+    "head": {
+      "prepareMs": 9.697999999999979,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedMs": 4.903417000000104
+  },
+  {
+    "size": 10000,
+    "index": 18,
+    "baseline": {
+      "prepareMs": 3.607334000000037,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "configTuiMs": 764.2457500000019,
+    "configMs": 0.5650000000000546,
+    "head": {
+      "prepareMs": 6.958999999999833,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedMs": 3.3516659999997955
+  },
+  {
+    "size": 10000,
+    "index": 19,
+    "baseline": {
+      "prepareMs": 4.0656249999999545,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "configTuiMs": 119.03045799999381,
+    "configMs": 0.6139580000000251,
+    "head": {
+      "prepareMs": 8.718209000000002,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedMs": 4.652584000000047
+  },
+  {
+    "size": 10000,
+    "index": 20,
+    "baseline": {
+      "prepareMs": 3.560790999999881,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "configTuiMs": 116.45716599999287,
+    "configMs": 0.5542500000000246,
+    "head": {
+      "prepareMs": 8.451708000000053,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedMs": 4.890917000000172
+  },
+  {
+    "size": 10000,
+    "index": 21,
+    "baseline": {
+      "prepareMs": 4.4975820000000795,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "configTuiMs": 120.58758300000045,
+    "configMs": 0.5562499999999773,
+    "head": {
+      "prepareMs": 9.494707999999946,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedMs": 4.9971259999998665
+  },
+  {
+    "size": 10000,
+    "index": 22,
+    "baseline": {
+      "prepareMs": 3.7657919999999194,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "configTuiMs": 816.7004999999917,
+    "configMs": 0.7085839999999735,
+    "head": {
+      "prepareMs": 8.576291000000083,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedMs": 4.8104990000001635
+  },
+  {
+    "size": 10000,
+    "index": 23,
+    "baseline": {
+      "prepareMs": 4.938583999999992,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "configTuiMs": 129.43237500000396,
+    "configMs": 0.6579580000000078,
+    "head": {
+      "prepareMs": 21.025290999999925,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedMs": 16.086706999999933
+  },
+  {
+    "size": 10000,
+    "index": 24,
+    "baseline": {
+      "prepareMs": 3.4723330000000487,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "configTuiMs": 86.89054199999373,
+    "configMs": 0.5644170000000486,
+    "head": {
+      "prepareMs": 8.675041999999962,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedMs": 5.202708999999913
+  },
+  {
+    "size": 10000,
+    "index": 25,
+    "baseline": {
+      "prepareMs": 3.1715829999999414,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "configTuiMs": 84.52445900000748,
+    "configMs": 0.5775830000000042,
+    "head": {
+      "prepareMs": 8.493832999999995,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedMs": 5.322250000000054
+  },
+  {
+    "size": 10000,
+    "index": 26,
+    "baseline": {
+      "prepareMs": 4.815459000000033,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "configTuiMs": 124.86525000000256,
+    "configMs": 0.7772500000000946,
+    "head": {
+      "prepareMs": 7.955999999999904,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedMs": 3.140540999999871
+  },
+  {
+    "size": 10000,
+    "index": 27,
+    "baseline": {
+      "prepareMs": 4.125416000000087,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "configTuiMs": 120.10529099999985,
+    "configMs": 0.5995420000000422,
+    "head": {
+      "prepareMs": 8.75916600000005,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedMs": 4.633749999999964
+  },
+  {
+    "size": 10000,
+    "index": 28,
+    "baseline": {
+      "prepareMs": 5.212165999999911,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "configTuiMs": 86.03258299999288,
+    "configMs": 0.5815409999999019,
+    "head": {
+      "prepareMs": 7.910708999999997,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedMs": 2.698543000000086
+  },
+  {
+    "size": 10000,
+    "index": 29,
+    "baseline": {
+      "prepareMs": 3.676958000000127,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "configTuiMs": 170.70854099999997,
+    "configMs": 0.741790999999921,
+    "head": {
+      "prepareMs": 8.872292000000016,
+      "normalRequests": 1,
+      "errors": 0
+    },
+    "addedMs": 5.195333999999889
+  }
+]

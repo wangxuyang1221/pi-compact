@@ -1,0 +1,141 @@
+
+> pi-compact@0.1.0 test /Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047
+> tsx --test tests/*.test.ts
+
+TAP version 13
+# Subtest: failed remains blocked until a successful explicit retry
+ok 1 - failed remains blocked until a successful explicit retry
+  ---
+  duration_ms: 0.523
+  type: 'test'
+  ...
+# Subtest: cancelled remains blocked until a successful explicit retry
+ok 2 - cancelled remains blocked until a successful explicit retry
+  ---
+  duration_ms: 0.0945
+  type: 'test'
+  ...
+# Subtest: oversized remains blocked until a successful explicit retry
+ok 3 - oversized remains blocked until a successful explicit retry
+  ---
+  duration_ms: 0.086125
+  type: 'test'
+  ...
+# Subtest: persistence remains blocked until a successful explicit retry
+ok 4 - persistence remains blocked until a successful explicit retry
+  ---
+  duration_ms: 0.076958
+  type: 'test'
+  ...
+# Subtest: reentrant operations and duplicate completions are rejected
+ok 5 - reentrant operations and duplicate completions are rejected
+  ---
+  duration_ms: 0.102708
+  type: 'test'
+  ...
+# Subtest: a failed durable start prevents the operation
+ok 6 - a failed durable start prevents the operation
+  ---
+  duration_ms: 0.10725
+  type: 'test'
+  ...
+# Subtest: a failed durable completion cannot become idle
+ok 7 - a failed durable completion cannot become idle
+  ---
+  duration_ms: 0.07225
+  type: 'test'
+  ...
+# Subtest: restoring an interrupted operation blocks only that session
+ok 8 - restoring an interrupted operation blocks only that session
+  ---
+  duration_ms: 0.031416
+  type: 'test'
+  ...
+# Subtest: version and safety capability checks reject unknown hosts
+ok 9 - version and safety capability checks reject unknown hosts
+  ---
+  duration_ms: 0.29325
+  type: 'test'
+  ...
+# Subtest: journal and native entry confirmation reject corrupt persistence
+ok 10 - journal and native entry confirmation reject corrupt persistence
+  ---
+  duration_ms: 18.245917
+  type: 'test'
+  ...
+# Subtest: unsupported sessions cannot use retry to bypass capability checks
+ok 11 - unsupported sessions cannot use retry to bypass capability checks
+  ---
+  duration_ms: 0.068833
+  type: 'test'
+  ...
+# Subtest: duplicate installation keeps one dispatcher and restores its descriptors
+ok 12 - duplicate installation keeps one dispatcher and restores its descriptors
+  ---
+  duration_ms: 4.22425
+  type: 'test'
+  ...
+# assertion_calls=36
+# Subtest: the session file has a single owner and releases on disposal
+ok 13 - the session file has a single owner and releases on disposal
+  ---
+  duration_ms: 0.660208
+  type: 'test'
+  ...
+# Subtest: disposal rejects late requests without blocking a clean restart
+ok 14 - disposal rejects late requests without blocking a clean restart
+  ---
+  duration_ms: 0.097875
+  type: 'test'
+  ...
+# Subtest: failed block persistence reports recovery guarantee with begin=true
+ok 15 - failed block persistence reports recovery guarantee with begin=true
+  ---
+  duration_ms: 0.780084
+  type: 'test'
+  ...
+# Subtest: failed block persistence reports recovery guarantee with begin=false
+ok 16 - failed block persistence reports recovery guarantee with begin=false
+  ---
+  duration_ms: 0.063958
+  type: 'test'
+  ...
+# Subtest: unwritable journal keeps a truthful recovery result with begin=true
+ok 17 - unwritable journal keeps a truthful recovery result with begin=true
+  ---
+  duration_ms: 42.01575
+  type: 'test'
+  ...
+# Subtest: unwritable journal keeps a truthful recovery result with begin=false
+ok 18 - unwritable journal keeps a truthful recovery result with begin=false
+  ---
+  duration_ms: 8.638292
+  type: 'test'
+  ...
+# Subtest: an uncertain idle replacement cannot promise the previous running barrier
+ok 19 - an uncertain idle replacement cannot promise the previous running barrier
+  ---
+  duration_ms: 0.120584
+  type: 'test'
+  ...
+# Subtest: inclusive percentage threshold uses the first integer token at or above the percentage
+ok 20 - inclusive percentage threshold uses the first integer token at or above the percentage
+  ---
+  duration_ms: 0.262458
+  type: 'test'
+  ...
+# Subtest: invalid percentages cannot replace the previous project setting
+ok 21 - invalid percentages cannot replace the previous project setting
+  ---
+  duration_ms: 14.746083
+  type: 'test'
+  ...
+1..21
+# tests 21
+# suites 0
+# pass 21
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 813.374791

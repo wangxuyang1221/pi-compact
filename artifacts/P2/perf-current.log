@@ -1,0 +1,33 @@
+
+> pi-compact@0.1.0 verify:perf /Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047
+> node scripts/verify-perf.mjs --pr P2
+
+{"size":1000,"pairs":5}
+{"size":1000,"pairs":10}
+{"size":1000,"pairs":15}
+{"size":1000,"pairs":20}
+{"size":1000,"pairs":25}
+{"size":1000,"pairs":30}
+{"size":10000,"pairs":5}
+{"size":10000,"pairs":10}
+{"size":10000,"pairs":15}
+{"size":10000,"pairs":20}
+{"size":10000,"pairs":25}
+{"size":10000,"pairs":30}
+{"path":"/Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047/artifacts/P2/perf/1794811399582","bySize":[{"size":1000,"baseline":{"count":30,"min":0.8481659999999351,"median":1.0437500000000455,"p95":2.0846669999999676,"max":2.969832999999994},"head":{"count":30,"min":2.0760839999999234,"median":2.6672080000000733,"p95":4.885834000000045,"max":5.0725419999999986},"added":{"count":30,"min":0.05970999999999549,"median":1.7314160000000811,"p95":3.8070419999999103,"max":4.0123760000000175}},{"size":10000,"baseline":{"count":30,"min":2.9341669999998885,"median":4.768417000000227,"p95":11.008290999999872,"max":35.63099999999986},"head":{"count":30,"min":9.747250999999778,"median":16.091876000000184,"p95":24.40083299999992,"max":25.897458000000142},"added":{"count":30,"min":-24.920250000000124,"median":10.177373999999645,"p95":19.9122490000002,"max":21.365959000000203}}],"config":{"count":60,"min":0.5603750000000218,"median":0.7450830000000224,"p95":1.6835410000001048,"max":3.7783330000002024},"configTui":{"count":60,"min":52.003333000000566,"median":123.32095900000422,"p95":896.3242089999985,"max":1537.0216250000085},"continuation":[{"lane":3,"ms":22.076749999999947},{"lane":4,"ms":31.809374999999818},{"lane":9,"ms":30.720124999999825}],"continuationStats":{"count":3,"min":22.076749999999947,"median":30.720124999999825,"p95":31.809374999999818,"max":31.809374999999818},"pass":false}
+node:internal/modules/run_main:123
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: P2 performance budgets
+    at file:///Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047/scripts/verify-p2-perf.mjs:61:132 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
+
+Node.js v22.22.2
+ ELIFECYCLE  Command failed with exit code 1.

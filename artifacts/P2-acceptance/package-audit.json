@@ -1,0 +1,66 @@
+{
+  "files": [
+    {
+      "path": "GLOSSARY.md",
+      "sha256": "a9f620330bd2e77901d2766ab65511c3a7b866e099d385ba5977dc9a90715d02"
+    },
+    {
+      "path": "README.md",
+      "sha256": "cf8a487c992d3e0a5d9e81534357a673dc6dd04344bc24f55e3529da3e316b61"
+    },
+    {
+      "path": "docs/design.md",
+      "sha256": "fef462b03f0e7c529bc71881e19f44af6e7ea54235b43479837d3cc83153f112"
+    },
+    {
+      "path": "docs/p1-adapter.md",
+      "sha256": "5fd6467184e840c2b4669a893a86699d9ca671bfad6068ae5e8063fd5b709c65"
+    },
+    {
+      "path": "docs/p2-policy.md",
+      "sha256": "abe8d853897da29a7c6886e29db1cff90e7b2c5cd2dc9b0ba1bbb844e2895b90"
+    },
+    {
+      "path": "docs/roadmap.md",
+      "sha256": "8fefe03663848428fd83526b19d56bc05957d1123d24c58eff930ed930f11596"
+    },
+    {
+      "path": "package.json",
+      "sha256": "698768b44bbec27c0bd0ee8db268c2676083350d2bf0517e7677d8fea7b5c377"
+    },
+    {
+      "path": "src/index.ts",
+      "sha256": "ca2346f3653f4014ac0726c26bc1da72c63f45c527e04118fecb45ee1db21ee6"
+    },
+    {
+      "path": "src/pi-adapter/compatibility.ts",
+      "sha256": "d92b22417ee08878950e400a4fafd793df82518e71a40d6b7a6cf1bee835b226"
+    },
+    {
+      "path": "src/pi-adapter/journal.ts",
+      "sha256": "0fab09996308920b0757576769849533e9766ce9d99bdaa6b4ac7bee2ec17a67"
+    },
+    {
+      "path": "src/pi-adapter/reconstruction.ts",
+      "sha256": "1f98066ed24c2eb82fd24bab0f03528750160c56a74166e6b46b9e894118b55f"
+    },
+    {
+      "path": "src/pi-adapter/session.ts",
+      "sha256": "8c288cd442f24d461acf915194136bccb736329e20d42e74666f426cdb36d531"
+    },
+    {
+      "path": "src/policy.ts",
+      "sha256": "6cef2b94edade4ae747a504f64f6a5a087311d8868cd3428cf800f6cebcea8b2"
+    },
+    {
+      "path": "src/settings.ts",
+      "sha256": "690cb811c458dfe3af512ab025e18d726b0d75ddea8c97e38cd0155a186b96ad"
+    },
+    {
+      "path": "src/state.ts",
+      "sha256": "10c7aad13e9da10bf54bba73edf33d61736f75417f8143c10c20538b3cc749ab"
+    }
+  ],
+  "tarball": "/Users/wangxuyang/.t3/worktrees/compact/t3-caa833f4-c88341ddaac19837/artifacts/P2-reconstruction-independent/checks/artifacts/P2-reconstruction/package-delivery/pi-compact-0.1.0.tgz",
+  "sha256": "25d41b1e6315fc554558cc4b3dc3a84b06c180a7f19f27cf4447c42b626bee61"
+}

@@ -4,6 +4,7 @@ import { join } from 'node:path';
 import { execFileSync } from 'node:child_process';
 import { root, cli, tui, waitFor, provenance, sourceHashes } from './fixture/runtime.mjs';
 const flags = process.argv.slice(2);
+if (flags.includes('--pr') && flags[flags.indexOf('--pr') + 1] === 'P2') { await import('./verify-p2-perf.mjs'); process.exit(); }
 const pairs = flags.includes('--pairs') ? Number(flags[flags.indexOf('--pairs') + 1]) : 30;
 const base = flags.includes('--output') ? join(root, flags[flags.indexOf('--output') + 1]) : join(root, 'artifacts/P1');
 const lanes = flags.includes('--lanes') ? join(root, flags[flags.indexOf('--lanes') + 1]) : join(root, 'artifacts/P1');

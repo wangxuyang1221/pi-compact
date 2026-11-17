@@ -1,0 +1,19 @@
+📦  pi-compact@0.1.0
+Tarball Contents
+docs/design.md
+docs/p1-adapter.md
+docs/p2-policy.md
+docs/roadmap.md
+GLOSSARY.md
+package.json
+README.md
+src/index.ts
+src/pi-adapter/compatibility.ts
+src/pi-adapter/journal.ts
+src/pi-adapter/reconstruction.ts
+src/pi-adapter/session.ts
+src/policy.ts
+src/settings.ts
+src/state.ts
+Tarball Details
+/Users/wangxuyang/.t3/worktrees/compact/t3-1ffed212-e1dc3a2046f48779/artifacts/P2-reconstruction/package-delivery/pi-compact-0.1.0.tgz

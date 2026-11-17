@@ -1,0 +1,20 @@
+{
+  "baseline": "05d5c9f7e90b2839a4c27a4e9b60ab12603801ac",
+  "productSha": "50f0b8090c94074159fc9ce311774971ca00eb83",
+  "branch": "t3/fix-p2-reconstruction",
+  "worktree": "/Users/wangxuyang/.t3/worktrees/compact/t3-1ffed212-e1dc3a2046f48779",
+  "package": "artifacts/P2-reconstruction/package-delivery/pi-compact-0.1.0.tgz",
+  "packageSha256": "25d41b1e6315fc554558cc4b3dc3a84b06c180a7f19f27cf4447c42b626bee61",
+  "archive": "artifacts/P2-reconstruction/runtime-evidence.tar.gz",
+  "archiveSha256": "6f1ee2137f1b81b9a2b157f1baf16cd1282c34e3c209f65b8c14c784255cb8e8",
+  "green": "artifacts/P2-reconstruction/run-1794818499100",
+  "perf": "artifacts/P2-reconstruction/perf/1794818528817",
+  "cleanup": {
+    "runs": 357,
+    "pids": 672,
+    "alive": [],
+    "listeners": "",
+    "sockets": 357
+  },
+  "scope": "P2 R1/R2 reconstruction candidate only; fresh independent verification pending; no P3 or P5 integration"
+}

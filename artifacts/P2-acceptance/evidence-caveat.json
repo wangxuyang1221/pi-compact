@@ -1,0 +1,8 @@
+{
+  "path": "artifacts/P2-reconstruction/audit.log",
+  "recordedHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "actualHash": "fb4c75080fbb7e99115bb59e5850eed72859f9c202bee55d689222699cb10b5e",
+  "content": "{\"runs\":357,\"pids\":672,\"alive\":[],\"sockets\":357,\"rawFiles\":1916}\n",
+  "diagnosis": "audit.mjs hashes stdout log before final console.log. Empty-file hash captured. All other 1915 entries match. No raw event or product byte mismatch.",
+  "blocking": false
+}
