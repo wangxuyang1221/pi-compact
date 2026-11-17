@@ -1,0 +1,37 @@
+{
+  "schema": 2,
+  "authorized": false,
+  "mode": "real",
+  "grantId": null,
+  "expiresAt": null,
+  "explicitUserAuthorization": null,
+  "syntheticOnly": true,
+  "allowAuthRefresh": false,
+  "taskHash": "972e1704ca5d40d2ede42a6c0d2ab56ba5c9dfc2eb1be6c36e5b28c251d28e46",
+  "packageHash": null,
+  "evidenceDir": null,
+  "authPath": null,
+  "maxDispatches": 12,
+  "maxEstimatedInputTokens": 120000,
+  "maxReservedOutputTokens": 12000,
+  "perRequestOutputTokens": 1000,
+  "targets": [
+    {
+      "provider": "openai-codex",
+      "model": "gpt-6.1-sol",
+      "api": "openai-codex-responses",
+      "baseUrl": "https://chatgpt.com/backend-api",
+      "endpoint": "https://chatgpt.com/backend-api/codex/responses",
+      "transport": "sse"
+    },
+    {
+      "provider": "deepseek",
+      "model": "deepseek-chat",
+      "api": "openai-completions",
+      "baseUrl": "https://api.deepseek.com",
+      "endpoint": "https://api.deepseek.com/chat/completions",
+      "transport": "sse"
+    }
+  ],
+  "note": "INVALID TEMPLATE. Coordinator fills only after fresh user authorization and independent review. This file cannot enable execution."
+}

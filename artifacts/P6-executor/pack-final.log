@@ -1,0 +1,30 @@
+📦  pi-compact@0.1.0
+Tarball Contents
+docs/compatibility.md
+docs/install.md
+docs/live-acceptance.md
+docs/p1-adapter.md
+docs/p2-policy.md
+docs/p3-checkpoints.md
+docs/p4-migration.md
+docs/p5-renderer.md
+docs/recovery.md
+package.json
+README.md
+src/checkpoint.ts
+src/codex/compact.ts
+src/codex/wire.ts
+src/index.ts
+src/migration.ts
+src/pi-adapter/compatibility.ts
+src/pi-adapter/journal.ts
+src/pi-adapter/reconstruction.ts
+src/pi-adapter/renderer.ts
+src/pi-adapter/session.ts
+src/pi-adapter/transaction.ts
+src/policy.ts
+src/settings.ts
+src/state.ts
+src/ui/compaction-divider.ts
+Tarball Details
+/Users/wangxuyang/.t3/worktrees/compact/t3-94dae7b7-15794223f5905ed2/artifacts/P6-executor/release/pi-compact-0.1.0.tgz

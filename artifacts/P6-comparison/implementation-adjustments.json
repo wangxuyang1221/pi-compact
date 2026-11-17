@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "beforeAnyRealModelResults": true,
+  "productSourceChanged": false,
+  "adjustments": [
+    {
+      "finding": "v1 assistant strings must be normalized to Pi text blocks. Actual normalized prepareCompaction cuts both tasks at e226 with isSplitTurn=true.",
+      "change": "Keep v1. v2 adds only a truthful noncritical maintenance audit-index note (0..16) to the final retained user message. Actual cut is e227, isSplitTurn=false. Workspace, contracts and seven/eight oracle cases are unchanged."
+    },
+    {
+      "finding": "Installed Terra/Luna Codex encoder emits additional_tools with custom tools. Product 713acbf opaque validator rejects that item before HTTP; tool-free pilot alone did not detect this.",
+      "change": "Both arms explicitly set model compat supportsAdditionalTools=false and supportsToolSearch=false. The actual installed SDK emits the same top-level function schemas. This is a common experiment compatibility constraint, not unrestricted default Pi behavior."
+    },
+    {
+      "finding": "Installed Codex encoder ignores maxTokens for max_output_tokens.",
+      "change": "The shared bounded experiment adapter inserts max_output_tokens=1000 after the installed onPayload hook. Final encoded HTTP bytes must contain 1000, SSE and reasoning.effort=none. The current candidate does not establish service acceptance or cap enforcement."
+    },
+    {
+      "finding": "Opaque product requires persistent sessions; in-memory sessions are not representative.",
+      "change": "Both arms use actual isolated persistent SessionManager files with identical history entry IDs and timestamps. Session stores sit outside the model-accessible business workspace."
+    },
+    {
+      "finding": "A generic bash tool would expose a process and filesystem escape surface.",
+      "change": "Versioned tools use workspace_read, workspace_edit, workspace_write and a fixed run_regression interface. Model source executes only in a macOS OS sandbox after all test inputs are preloaded. No expected answers enter that child."
+    },
+    {
+      "finding": "Pi places cwd in developer messages. A lane-named cwd reveals arm labels even when top-level instructions hash matches.",
+      "change": "Before any real model result, use one identical visible workspace path, fresh file copies per lane and hidden per-lane snapshots. Match the full encoded system/developer message hash as well as instructions/tools; no task or scorer changes."
+    }
+  ]
+}

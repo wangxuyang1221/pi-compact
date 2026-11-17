@@ -1,0 +1,21 @@
+{
+  "archive": "artifacts/P6/evidence.tar.gz",
+  "sha256": "de0543889d2a62d542629397499709a5ef36e6fa18d099d57f8558d8ebc95bb1",
+  "bytes": 20267562,
+  "members": 3284,
+  "verifiedEachMember": true,
+  "excluded": [
+    "artifacts/P6/REPORT.md",
+    "artifacts/P6/archive-manifest.json",
+    "artifacts/P6/archive-receipt.json",
+    "artifacts/P6/evidence.tar.gz"
+  ],
+  "otherExclusions": [
+    "tmp",
+    "node_modules",
+    "auth.json",
+    "symlinks",
+    "non-regular files"
+  ],
+  "sourceRoot": "/Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec"
+}

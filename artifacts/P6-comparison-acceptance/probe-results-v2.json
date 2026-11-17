@@ -1,0 +1,1402 @@
+{
+  "syntheticOnly": true,
+  "checks": [
+    {
+      "name": "markers-and-all-wire-dimensions",
+      "status": "PASS",
+      "detail": [
+        {
+          "marker": "ordinary",
+          "stages": [
+            "compact",
+            "continuation",
+            "continuation",
+            "continuation",
+            "continuation",
+            "continuation"
+          ]
+        },
+        {
+          "marker": "ordinary",
+          "dimension": "instructions",
+          "rejectedBeforeSend": true
+        },
+        {
+          "marker": "ordinary",
+          "dimension": "tools",
+          "rejectedBeforeSend": true
+        },
+        {
+          "marker": "ordinary",
+          "dimension": "system",
+          "rejectedBeforeSend": true
+        },
+        {
+          "marker": "# Conversation",
+          "stages": [
+            "compact",
+            "continuation",
+            "continuation",
+            "continuation",
+            "continuation",
+            "continuation"
+          ]
+        },
+        {
+          "marker": "# Conversation",
+          "dimension": "instructions",
+          "rejectedBeforeSend": true
+        },
+        {
+          "marker": "# Conversation",
+          "dimension": "tools",
+          "rejectedBeforeSend": true
+        },
+        {
+          "marker": "# Conversation",
+          "dimension": "system",
+          "rejectedBeforeSend": true
+        },
+        {
+          "marker": "<conversation>",
+          "stages": [
+            "compact",
+            "continuation",
+            "continuation",
+            "continuation",
+            "continuation",
+            "continuation"
+          ]
+        },
+        {
+          "marker": "<conversation>",
+          "dimension": "instructions",
+          "rejectedBeforeSend": true
+        },
+        {
+          "marker": "<conversation>",
+          "dimension": "tools",
+          "rejectedBeforeSend": true
+        },
+        {
+          "marker": "<conversation>",
+          "dimension": "system",
+          "rejectedBeforeSend": true
+        },
+        {
+          "marker": "Convert this checkpoint to a complete readable continuation summary.",
+          "stages": [
+            "compact",
+            "continuation",
+            "continuation",
+            "continuation",
+            "continuation",
+            "continuation"
+          ]
+        },
+        {
+          "marker": "Convert this checkpoint to a complete readable continuation summary.",
+          "dimension": "instructions",
+          "rejectedBeforeSend": true
+        },
+        {
+          "marker": "Convert this checkpoint to a complete readable continuation summary.",
+          "dimension": "tools",
+          "rejectedBeforeSend": true
+        },
+        {
+          "marker": "Convert this checkpoint to a complete readable continuation summary.",
+          "dimension": "system",
+          "rejectedBeforeSend": true
+        }
+      ]
+    },
+    {
+      "name": "concurrent-stage-capture-and-trigger-rejection",
+      "status": "PASS",
+      "detail": {
+        "stages": [
+          "compact",
+          "continuation"
+        ],
+        "sends": 2
+      }
+    },
+    {
+      "name": "usage-numeric-boundaries-and-global-stop",
+      "status": "PASS",
+      "detail": [
+        {
+          "name": "valid",
+          "error": null,
+          "usage": {
+            "input": 100,
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "output": 20,
+            "reasoning": 0,
+            "total": 120
+          },
+          "sends": 1
+        },
+        {
+          "name": "unknown",
+          "error": null,
+          "usage": {
+            "input": 100,
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "output": 20,
+            "reasoning": 0,
+            "total": 120
+          },
+          "sends": 1
+        },
+        {
+          "name": "missingOptional",
+          "error": null,
+          "usage": {
+            "input": 100,
+            "cacheRead": null,
+            "cacheWrite": null,
+            "output": 20,
+            "reasoning": null,
+            "total": 120
+          },
+          "sends": 1
+        },
+        {
+          "name": "cacheSum",
+          "error": "USAGE_UNAUDITABLE",
+          "usage": {
+            "input": 100,
+            "cacheRead": 60,
+            "cacheWrite": 41,
+            "output": 20,
+            "reasoning": 0,
+            "total": 120
+          },
+          "sends": 1
+        },
+        {
+          "name": "cacheExact",
+          "error": null,
+          "usage": {
+            "input": 100,
+            "cacheRead": 60,
+            "cacheWrite": 40,
+            "output": 20,
+            "reasoning": 0,
+            "total": 120
+          },
+          "sends": 1
+        },
+        {
+          "name": "missingInput",
+          "error": "USAGE_UNAUDITABLE",
+          "usage": {
+            "input": null,
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "output": 20,
+            "reasoning": 0,
+            "total": 120
+          },
+          "sends": 1
+        },
+        {
+          "name": "stringInput",
+          "error": "USAGE_UNAUDITABLE",
+          "usage": {
+            "input": null,
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "output": 20,
+            "reasoning": 0,
+            "total": 120
+          },
+          "sends": 1
+        },
+        {
+          "name": "fractionOutput",
+          "error": "USAGE_UNAUDITABLE",
+          "usage": {
+            "input": 100,
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "output": null,
+            "reasoning": 0,
+            "total": null
+          },
+          "sends": 1
+        },
+        {
+          "name": "negativeCache",
+          "error": "USAGE_UNAUDITABLE",
+          "usage": {
+            "input": 100,
+            "cacheRead": null,
+            "cacheWrite": null,
+            "output": 20,
+            "reasoning": 0,
+            "total": 120
+          },
+          "sends": 1
+        },
+        {
+          "name": "nullCache",
+          "error": "USAGE_UNAUDITABLE",
+          "usage": {
+            "input": 100,
+            "cacheRead": null,
+            "cacheWrite": null,
+            "output": 20,
+            "reasoning": 0,
+            "total": 120
+          },
+          "sends": 1
+        },
+        {
+          "name": "stringWrite",
+          "error": "USAGE_UNAUDITABLE",
+          "usage": {
+            "input": 100,
+            "cacheRead": null,
+            "cacheWrite": null,
+            "output": 20,
+            "reasoning": 0,
+            "total": 120
+          },
+          "sends": 1
+        },
+        {
+          "name": "reasoningTooLarge",
+          "error": "USAGE_UNAUDITABLE",
+          "usage": {
+            "input": 100,
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "output": 20,
+            "reasoning": 21,
+            "total": 120
+          },
+          "sends": 1
+        },
+        {
+          "name": "totalMismatch",
+          "error": "USAGE_UNAUDITABLE",
+          "usage": {
+            "input": 100,
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "output": 20,
+            "reasoning": 0,
+            "total": 121
+          },
+          "sends": 1
+        },
+        {
+          "name": "unsafeInteger",
+          "error": "USAGE_UNAUDITABLE",
+          "usage": {
+            "input": null,
+            "cacheRead": 0,
+            "cacheWrite": 0,
+            "output": 20,
+            "reasoning": 0,
+            "total": null
+          },
+          "sends": 1
+        }
+      ]
+    },
+    {
+      "name": "full-quality-vectors-and-statistical-negative-controls",
+      "status": "PASS",
+      "detail": {
+        "cases": [
+          {
+            "name": "facts",
+            "size": 80,
+            "verdict": "tradeoff-smaller-input-quality-regression"
+          },
+          {
+            "name": "facts",
+            "size": 100,
+            "verdict": "inconclusive"
+          },
+          {
+            "name": "facts",
+            "size": 130,
+            "verdict": "remote-larger-in-this-cell"
+          },
+          {
+            "name": "state",
+            "size": 80,
+            "verdict": "tradeoff-smaller-input-quality-regression"
+          },
+          {
+            "name": "state",
+            "size": 100,
+            "verdict": "inconclusive"
+          },
+          {
+            "name": "state",
+            "size": 130,
+            "verdict": "remote-larger-in-this-cell"
+          },
+          {
+            "name": "pending",
+            "size": 80,
+            "verdict": "tradeoff-smaller-input-quality-regression"
+          },
+          {
+            "name": "pending",
+            "size": 100,
+            "verdict": "inconclusive"
+          },
+          {
+            "name": "pending",
+            "size": 130,
+            "verdict": "remote-larger-in-this-cell"
+          },
+          {
+            "name": "stale",
+            "size": 80,
+            "verdict": "tradeoff-smaller-input-quality-regression"
+          },
+          {
+            "name": "stale",
+            "size": 100,
+            "verdict": "inconclusive"
+          },
+          {
+            "name": "stale",
+            "size": 130,
+            "verdict": "remote-larger-in-this-cell"
+          },
+          {
+            "name": "behavior",
+            "size": 80,
+            "verdict": "tradeoff-smaller-input-quality-regression"
+          },
+          {
+            "name": "behavior",
+            "size": 100,
+            "verdict": "inconclusive"
+          },
+          {
+            "name": "behavior",
+            "size": 130,
+            "verdict": "remote-larger-in-this-cell"
+          },
+          {
+            "name": "behaviorError",
+            "size": 80,
+            "verdict": "tradeoff-smaller-input-quality-regression"
+          },
+          {
+            "name": "behaviorError",
+            "size": 100,
+            "verdict": "inconclusive"
+          },
+          {
+            "name": "behaviorError",
+            "size": 130,
+            "verdict": "remote-larger-in-this-cell"
+          },
+          {
+            "name": "workspace",
+            "size": 80,
+            "verdict": "tradeoff-smaller-input-quality-regression"
+          },
+          {
+            "name": "workspace",
+            "size": 100,
+            "verdict": "inconclusive"
+          },
+          {
+            "name": "workspace",
+            "size": 130,
+            "verdict": "remote-larger-in-this-cell"
+          },
+          {
+            "name": "unauthorized",
+            "size": 80,
+            "verdict": "tradeoff-smaller-input-quality-regression"
+          },
+          {
+            "name": "unauthorized",
+            "size": 100,
+            "verdict": "inconclusive"
+          },
+          {
+            "name": "unauthorized",
+            "size": 130,
+            "verdict": "remote-larger-in-this-cell"
+          },
+          {
+            "name": "extra",
+            "size": 80,
+            "verdict": "tradeoff-smaller-input-quality-regression"
+          },
+          {
+            "name": "extra",
+            "size": 100,
+            "verdict": "inconclusive"
+          },
+          {
+            "name": "extra",
+            "size": 130,
+            "verdict": "remote-larger-in-this-cell"
+          },
+          {
+            "name": "source",
+            "size": 80,
+            "verdict": "tradeoff-smaller-input-quality-regression"
+          },
+          {
+            "name": "source",
+            "size": 100,
+            "verdict": "inconclusive"
+          },
+          {
+            "name": "source",
+            "size": 130,
+            "verdict": "remote-larger-in-this-cell"
+          },
+          {
+            "name": "captured",
+            "size": 80,
+            "verdict": "tradeoff-smaller-input-quality-regression"
+          },
+          {
+            "name": "captured",
+            "size": 100,
+            "verdict": "inconclusive"
+          },
+          {
+            "name": "captured",
+            "size": 130,
+            "verdict": "remote-larger-in-this-cell"
+          },
+          {
+            "missing": "record",
+            "size": 80,
+            "verdict": "inconclusive-quality-constraint"
+          },
+          {
+            "missing": "record",
+            "size": 100,
+            "verdict": "inconclusive"
+          },
+          {
+            "missing": "record",
+            "size": 130,
+            "verdict": "inconclusive-quality-constraint"
+          },
+          {
+            "missing": "behavior",
+            "size": 80,
+            "verdict": "inconclusive-quality-constraint"
+          },
+          {
+            "missing": "behavior",
+            "size": 100,
+            "verdict": "inconclusive"
+          },
+          {
+            "missing": "behavior",
+            "size": 130,
+            "verdict": "inconclusive-quality-constraint"
+          },
+          {
+            "missing": "workspace",
+            "size": 80,
+            "verdict": "inconclusive-quality-constraint"
+          },
+          {
+            "missing": "workspace",
+            "size": 100,
+            "verdict": "inconclusive"
+          },
+          {
+            "missing": "workspace",
+            "size": 130,
+            "verdict": "inconclusive-quality-constraint"
+          },
+          {
+            "missing": "capturedFirst",
+            "size": 80,
+            "verdict": "inconclusive-quality-constraint"
+          },
+          {
+            "missing": "capturedFirst",
+            "size": 100,
+            "verdict": "inconclusive"
+          },
+          {
+            "missing": "capturedFirst",
+            "size": 130,
+            "verdict": "inconclusive-quality-constraint"
+          }
+        ],
+        "largerBetter": {
+          "model": "gpt-6.1-terra",
+          "task": "settlement-v2",
+          "pairs": [
+            {
+              "repeat": 1,
+              "native": {
+                "strictSuccess": false,
+                "stale": 0,
+                "comparable": true,
+                "firstContinuationInputProxy": 100,
+                "cacheRead": 0,
+                "durationMs": 100,
+                "qualityVector": {
+                  "record": {
+                    "facts": {
+                      "tp": 6,
+                      "fp": 0,
+                      "fn": 0,
+                      "precision": 1,
+                      "recall": 1
+                    },
+                    "state": {
+                      "tp": 5,
+                      "fp": 0,
+                      "fn": 0,
+                      "precision": 1,
+                      "recall": 1
+                    },
+                    "pending": {
+                      "tp": 2,
+                      "fp": 0,
+                      "fn": 0
+                    },
+                    "stale": {
+                      "adopted": 0,
+                      "opportunities": 3
+                    }
+                  },
+                  "behavior": {
+                    "passed": 6,
+                    "total": 7,
+                    "error": null
+                  },
+                  "workspace": {
+                    "protectedPassed": 102,
+                    "protectedTotal": 102,
+                    "unauthorizedChanges": [],
+                    "extraFiles": [],
+                    "sourceChanged": true
+                  },
+                  "capturedFirst": true
+                },
+                "cost": {
+                  "compact": {
+                    "input": 20,
+                    "cacheRead": 0,
+                    "cacheWrite": 0,
+                    "output": 10,
+                    "reasoning": 0,
+                    "total": 30
+                  },
+                  "continuation": {
+                    "input": 100,
+                    "cacheRead": 0,
+                    "cacheWrite": 0,
+                    "output": 10,
+                    "reasoning": 0,
+                    "total": 110
+                  },
+                  "total": {
+                    "input": 120,
+                    "cacheRead": 0,
+                    "cacheWrite": 0,
+                    "output": 20,
+                    "reasoning": 0,
+                    "total": 140
+                  }
+                },
+                "assignedArm": "pi-native",
+                "effectiveArm": "pi-native"
+              },
+              "remote": {
+                "strictSuccess": true,
+                "stale": 0,
+                "comparable": true,
+                "firstContinuationInputProxy": 130,
+                "cacheRead": 0,
+                "durationMs": 100,
+                "qualityVector": {
+                  "record": {
+                    "facts": {
+                      "tp": 6,
+                      "fp": 0,
+                      "fn": 0,
+                      "precision": 1,
+                      "recall": 1
+                    },
+                    "state": {
+                      "tp": 5,
+                      "fp": 0,
+                      "fn": 0,
+                      "precision": 1,
+                      "recall": 1
+                    },
+                    "pending": {
+                      "tp": 2,
+                      "fp": 0,
+                      "fn": 0
+                    },
+                    "stale": {
+                      "adopted": 0,
+                      "opportunities": 3
+                    }
+                  },
+                  "behavior": {
+                    "passed": 7,
+                    "total": 7,
+                    "error": null
+                  },
+                  "workspace": {
+                    "protectedPassed": 102,
+                    "protectedTotal": 102,
+                    "unauthorizedChanges": [],
+                    "extraFiles": [],
+                    "sourceChanged": true
+                  },
+                  "capturedFirst": true
+                },
+                "cost": {
+                  "compact": {
+                    "input": 20,
+                    "cacheRead": 0,
+                    "cacheWrite": 0,
+                    "output": 10,
+                    "reasoning": 0,
+                    "total": 30
+                  },
+                  "continuation": {
+                    "input": 130,
+                    "cacheRead": 0,
+                    "cacheWrite": 0,
+                    "output": 10,
+                    "reasoning": 0,
+                    "total": 140
+                  },
+                  "total": {
+                    "input": 150,
+                    "cacheRead": 0,
+                    "cacheWrite": 0,
+                    "output": 20,
+                    "reasoning": 0,
+                    "total": 170
+                  }
+                },
+                "assignedArm": "pi-compact-remote",
+                "effectiveArm": "pi-compact-remote"
+              }
+            },
+            {
+              "repeat": 2,
+              "native": {
+                "strictSuccess": false,
+                "stale": 0,
+                "comparable": true,
+                "firstContinuationInputProxy": 100,
+                "cacheRead": 0,
+                "durationMs": 100,
+                "qualityVector": {
+                  "record": {
+                    "facts": {
+                      "tp": 6,
+                      "fp": 0,
+                      "fn": 0,
+                      "precision": 1,
+                      "recall": 1
+                    },
+                    "state": {
+                      "tp": 5,
+                      "fp": 0,
+                      "fn": 0,
+                      "precision": 1,
+                      "recall": 1
+                    },
+                    "pending": {
+                      "tp": 2,
+                      "fp": 0,
+                      "fn": 0
+                    },
+                    "stale": {
+                      "adopted": 0,
+                      "opportunities": 3
+                    }
+                  },
+                  "behavior": {
+                    "passed": 6,
+                    "total": 7,
+                    "error": null
+                  },
+                  "workspace": {
+                    "protectedPassed": 102,
+                    "protectedTotal": 102,
+                    "unauthorizedChanges": [],
+                    "extraFiles": [],
+                    "sourceChanged": true
+                  },
+                  "capturedFirst": true
+                },
+                "cost": {
+                  "compact": {
+                    "input": 20,
+                    "cacheRead": 0,
+                    "cacheWrite": 0,
+                    "output": 10,
+                    "reasoning": 0,
+                    "total": 30
+                  },
+                  "continuation": {
+                    "input": 100,
+                    "cacheRead": 0,
+                    "cacheWrite": 0,
+                    "output": 10,
+                    "reasoning": 0,
+                    "total": 110
+                  },
+                  "total": {
+                    "input": 120,
+                    "cacheRead": 0,
+                    "cacheWrite": 0,
+                    "output": 20,
+                    "reasoning": 0,
+                    "total": 140
+                  }
+                },
+                "assignedArm": "pi-native",
+                "effectiveArm": "pi-native"
+              },
+              "remote": {
+                "strictSuccess": true,
+                "stale": 0,
+                "comparable": true,
+                "firstContinuationInputProxy": 130,
+                "cacheRead": 0,
+                "durationMs": 100,
+                "qualityVector": {
+                  "record": {
+                    "facts": {
+                      "tp": 6,
+                      "fp": 0,
+                      "fn": 0,
+                      "precision": 1,
+                      "recall": 1
+                    },
+                    "state": {
+                      "tp": 5,
+                      "fp": 0,
+                      "fn": 0,
+                      "precision": 1,
+                      "recall": 1
+                    },
+                    "pending": {
+                      "tp": 2,
+                      "fp": 0,
+                      "fn": 0
+                    },
+                    "stale": {
+                      "adopted": 0,
+                      "opportunities": 3
+                    }
+                  },
+                  "behavior": {
+                    "passed": 7,
+                    "total": 7,
+                    "error": null
+                  },
+                  "workspace": {
+                    "protectedPassed": 102,
+                    "protectedTotal": 102,
+                    "unauthorizedChanges": [],
+                    "extraFiles": [],
+                    "sourceChanged": true
+                  },
+                  "capturedFirst": true
+                },
+                "cost": {
+                  "compact": {
+                    "input": 20,
+                    "cacheRead": 0,
+                    "cacheWrite": 0,
+                    "output": 10,
+                    "reasoning": 0,
+                    "total": 30
+                  },
+                  "continuation": {
+                    "input": 130,
+                    "cacheRead": 0,
+                    "cacheWrite": 0,
+                    "output": 10,
+                    "reasoning": 0,
+                    "total": 140
+                  },
+                  "total": {
+                    "input": 150,
+                    "cacheRead": 0,
+                    "cacheWrite": 0,
+                    "output": 20,
+                    "reasoning": 0,
+                    "total": 170
+                  }
+                },
+                "assignedArm": "pi-compact-remote",
+                "effectiveArm": "pi-compact-remote"
+              }
+            },
+            {
+              "repeat": 3,
+              "native": {
+                "strictSuccess": false,
+                "stale": 0,
+                "comparable": true,
+                "firstContinuationInputProxy": 100,
+                "cacheRead": 0,
+                "durationMs": 100,
+                "qualityVector": {
+                  "record": {
+                    "facts": {
+                      "tp": 6,
+                      "fp": 0,
+                      "fn": 0,
+                      "precision": 1,
+                      "recall": 1
+                    },
+                    "state": {
+                      "tp": 5,
+                      "fp": 0,
+                      "fn": 0,
+                      "precision": 1,
+                      "recall": 1
+                    },
+                    "pending": {
+                      "tp": 2,
+                      "fp": 0,
+                      "fn": 0
+                    },
+                    "stale": {
+                      "adopted": 0,
+                      "opportunities": 3
+                    }
+                  },
+                  "behavior": {
+                    "passed": 6,
+                    "total": 7,
+                    "error": null
+                  },
+                  "workspace": {
+                    "protectedPassed": 102,
+                    "protectedTotal": 102,
+                    "unauthorizedChanges": [],
+                    "extraFiles": [],
+                    "sourceChanged": true
+                  },
+                  "capturedFirst": true
+                },
+                "cost": {
+                  "compact": {
+                    "input": 20,
+                    "cacheRead": 0,
+                    "cacheWrite": 0,
+                    "output": 10,
+                    "reasoning": 0,
+                    "total": 30
+                  },
+                  "continuation": {
+                    "input": 100,
+                    "cacheRead": 0,
+                    "cacheWrite": 0,
+                    "output": 10,
+                    "reasoning": 0,
+                    "total": 110
+                  },
+                  "total": {
+                    "input": 120,
+                    "cacheRead": 0,
+                    "cacheWrite": 0,
+                    "output": 20,
+                    "reasoning": 0,
+                    "total": 140
+                  }
+                },
+                "assignedArm": "pi-native",
+                "effectiveArm": "pi-native"
+              },
+              "remote": {
+                "strictSuccess": true,
+                "stale": 0,
+                "comparable": true,
+                "firstContinuationInputProxy": 130,
+                "cacheRead": 0,
+                "durationMs": 100,
+                "qualityVector": {
+                  "record": {
+                    "facts": {
+                      "tp": 6,
+                      "fp": 0,
+                      "fn": 0,
+                      "precision": 1,
+                      "recall": 1
+                    },
+                    "state": {
+                      "tp": 5,
+                      "fp": 0,
+                      "fn": 0,
+                      "precision": 1,
+                      "recall": 1
+                    },
+                    "pending": {
+                      "tp": 2,
+                      "fp": 0,
+                      "fn": 0
+                    },
+                    "stale": {
+                      "adopted": 0,
+                      "opportunities": 3
+                    }
+                  },
+                  "behavior": {
+                    "passed": 7,
+                    "total": 7,
+                    "error": null
+                  },
+                  "workspace": {
+                    "protectedPassed": 102,
+                    "protectedTotal": 102,
+                    "unauthorizedChanges": [],
+                    "extraFiles": [],
+                    "sourceChanged": true
+                  },
+                  "capturedFirst": true
+                },
+                "cost": {
+                  "compact": {
+                    "input": 20,
+                    "cacheRead": 0,
+                    "cacheWrite": 0,
+                    "output": 10,
+                    "reasoning": 0,
+                    "total": 30
+                  },
+                  "continuation": {
+                    "input": 130,
+                    "cacheRead": 0,
+                    "cacheWrite": 0,
+                    "output": 10,
+                    "reasoning": 0,
+                    "total": 140
+                  },
+                  "total": {
+                    "input": 150,
+                    "cacheRead": 0,
+                    "cacheWrite": 0,
+                    "output": 20,
+                    "reasoning": 0,
+                    "total": 170
+                  }
+                },
+                "assignedArm": "pi-compact-remote",
+                "effectiveArm": "pi-compact-remote"
+              }
+            },
+            {
+              "repeat": 4,
+              "native": {
+                "strictSuccess": false,
+                "stale": 0,
+                "comparable": true,
+                "firstContinuationInputProxy": 100,
+                "cacheRead": 0,
+                "durationMs": 100,
+                "qualityVector": {
+                  "record": {
+                    "facts": {
+                      "tp": 6,
+                      "fp": 0,
+                      "fn": 0,
+                      "precision": 1,
+                      "recall": 1
+                    },
+                    "state": {
+                      "tp": 5,
+                      "fp": 0,
+                      "fn": 0,
+                      "precision": 1,
+                      "recall": 1
+                    },
+                    "pending": {
+                      "tp": 2,
+                      "fp": 0,
+                      "fn": 0
+                    },
+                    "stale": {
+                      "adopted": 0,
+                      "opportunities": 3
+                    }
+                  },
+                  "behavior": {
+                    "passed": 6,
+                    "total": 7,
+                    "error": null
+                  },
+                  "workspace": {
+                    "protectedPassed": 102,
+                    "protectedTotal": 102,
+                    "unauthorizedChanges": [],
+                    "extraFiles": [],
+                    "sourceChanged": true
+                  },
+                  "capturedFirst": true
+                },
+                "cost": {
+                  "compact": {
+                    "input": 20,
+                    "cacheRead": 0,
+                    "cacheWrite": 0,
+                    "output": 10,
+                    "reasoning": 0,
+                    "total": 30
+                  },
+                  "continuation": {
+                    "input": 100,
+                    "cacheRead": 0,
+                    "cacheWrite": 0,
+                    "output": 10,
+                    "reasoning": 0,
+                    "total": 110
+                  },
+                  "total": {
+                    "input": 120,
+                    "cacheRead": 0,
+                    "cacheWrite": 0,
+                    "output": 20,
+                    "reasoning": 0,
+                    "total": 140
+                  }
+                },
+                "assignedArm": "pi-native",
+                "effectiveArm": "pi-native"
+              },
+              "remote": {
+                "strictSuccess": true,
+                "stale": 0,
+                "comparable": true,
+                "firstContinuationInputProxy": 130,
+                "cacheRead": 0,
+                "durationMs": 100,
+                "qualityVector": {
+                  "record": {
+                    "facts": {
+                      "tp": 6,
+                      "fp": 0,
+                      "fn": 0,
+                      "precision": 1,
+                      "recall": 1
+                    },
+                    "state": {
+                      "tp": 5,
+                      "fp": 0,
+                      "fn": 0,
+                      "precision": 1,
+                      "recall": 1
+                    },
+                    "pending": {
+                      "tp": 2,
+                      "fp": 0,
+                      "fn": 0
+                    },
+                    "stale": {
+                      "adopted": 0,
+                      "opportunities": 3
+                    }
+                  },
+                  "behavior": {
+                    "passed": 7,
+                    "total": 7,
+                    "error": null
+                  },
+                  "workspace": {
+                    "protectedPassed": 102,
+                    "protectedTotal": 102,
+                    "unauthorizedChanges": [],
+                    "extraFiles": [],
+                    "sourceChanged": true
+                  },
+                  "capturedFirst": true
+                },
+                "cost": {
+                  "compact": {
+                    "input": 20,
+                    "cacheRead": 0,
+                    "cacheWrite": 0,
+                    "output": 10,
+                    "reasoning": 0,
+                    "total": 30
+                  },
+                  "continuation": {
+                    "input": 130,
+                    "cacheRead": 0,
+                    "cacheWrite": 0,
+                    "output": 10,
+                    "reasoning": 0,
+                    "total": 140
+                  },
+                  "total": {
+                    "input": 150,
+                    "cacheRead": 0,
+                    "cacheWrite": 0,
+                    "output": 20,
+                    "reasoning": 0,
+                    "total": 170
+                  }
+                },
+                "assignedArm": "pi-compact-remote",
+                "effectiveArm": "pi-compact-remote"
+              }
+            },
+            {
+              "repeat": 5,
+              "native": {
+                "strictSuccess": false,
+                "stale": 0,
+                "comparable": true,
+                "firstContinuationInputProxy": 100,
+                "cacheRead": 0,
+                "durationMs": 100,
+                "qualityVector": {
+                  "record": {
+                    "facts": {
+                      "tp": 6,
+                      "fp": 0,
+                      "fn": 0,
+                      "precision": 1,
+                      "recall": 1
+                    },
+                    "state": {
+                      "tp": 5,
+                      "fp": 0,
+                      "fn": 0,
+                      "precision": 1,
+                      "recall": 1
+                    },
+                    "pending": {
+                      "tp": 2,
+                      "fp": 0,
+                      "fn": 0
+                    },
+                    "stale": {
+                      "adopted": 0,
+                      "opportunities": 3
+                    }
+                  },
+                  "behavior": {
+                    "passed": 6,
+                    "total": 7,
+                    "error": null
+                  },
+                  "workspace": {
+                    "protectedPassed": 102,
+                    "protectedTotal": 102,
+                    "unauthorizedChanges": [],
+                    "extraFiles": [],
+                    "sourceChanged": true
+                  },
+                  "capturedFirst": true
+                },
+                "cost": {
+                  "compact": {
+                    "input": 20,
+                    "cacheRead": 0,
+                    "cacheWrite": 0,
+                    "output": 10,
+                    "reasoning": 0,
+                    "total": 30
+                  },
+                  "continuation": {
+                    "input": 100,
+                    "cacheRead": 0,
+                    "cacheWrite": 0,
+                    "output": 10,
+                    "reasoning": 0,
+                    "total": 110
+                  },
+                  "total": {
+                    "input": 120,
+                    "cacheRead": 0,
+                    "cacheWrite": 0,
+                    "output": 20,
+                    "reasoning": 0,
+                    "total": 140
+                  }
+                },
+                "assignedArm": "pi-native",
+                "effectiveArm": "pi-native"
+              },
+              "remote": {
+                "strictSuccess": true,
+                "stale": 0,
+                "comparable": true,
+                "firstContinuationInputProxy": 130,
+                "cacheRead": 0,
+                "durationMs": 100,
+                "qualityVector": {
+                  "record": {
+                    "facts": {
+                      "tp": 6,
+                      "fp": 0,
+                      "fn": 0,
+                      "precision": 1,
+                      "recall": 1
+                    },
+                    "state": {
+                      "tp": 5,
+                      "fp": 0,
+                      "fn": 0,
+                      "precision": 1,
+                      "recall": 1
+                    },
+                    "pending": {
+                      "tp": 2,
+                      "fp": 0,
+                      "fn": 0
+                    },
+                    "stale": {
+                      "adopted": 0,
+                      "opportunities": 3
+                    }
+                  },
+                  "behavior": {
+                    "passed": 7,
+                    "total": 7,
+                    "error": null
+                  },
+                  "workspace": {
+                    "protectedPassed": 102,
+                    "protectedTotal": 102,
+                    "unauthorizedChanges": [],
+                    "extraFiles": [],
+                    "sourceChanged": true
+                  },
+                  "capturedFirst": true
+                },
+                "cost": {
+                  "compact": {
+                    "input": 20,
+                    "cacheRead": 0,
+                    "cacheWrite": 0,
+                    "output": 10,
+                    "reasoning": 0,
+                    "total": 30
+                  },
+                  "continuation": {
+                    "input": 130,
+                    "cacheRead": 0,
+                    "cacheWrite": 0,
+                    "output": 10,
+                    "reasoning": 0,
+                    "total": 140
+                  },
+                  "total": {
+                    "input": 150,
+                    "cacheRead": 0,
+                    "cacheWrite": 0,
+                    "output": 20,
+                    "reasoning": 0,
+                    "total": 170
+                  }
+                },
+                "assignedArm": "pi-compact-remote",
+                "effectiveArm": "pi-compact-remote"
+              }
+            }
+          ],
+          "denominator": 10,
+          "improvements": 5,
+          "losses": 0,
+          "qualityVerdict": "remote-quality-win-in-this-cell",
+          "firstContinuationInputProxy": [
+            {
+              "median": 100,
+              "range": [
+                100,
+                100
+              ]
+            },
+            {
+              "median": 130,
+              "range": [
+                130,
+                130
+              ]
+            }
+          ],
+          "durationMs": [
+            {
+              "median": 100,
+              "range": [
+                100,
+                100
+              ]
+            },
+            {
+              "median": 100,
+              "range": [
+                100,
+                100
+              ]
+            }
+          ],
+          "latencyVerdict": "inconclusive-without-measured-bottleneck-and-cache-order-analysis",
+          "contextComparison": {
+            "verdict": "tradeoff-larger-input-quality-improvement",
+            "relativeEffects": [
+              -0.3,
+              -0.3,
+              -0.3,
+              -0.3,
+              -0.3
+            ],
+            "medianRelativeImprovement": -0.3,
+            "withinArmRelativeRange": 0,
+            "native": {
+              "median": 100,
+              "range": [
+                100,
+                100
+              ]
+            },
+            "remote": {
+              "median": 130,
+              "range": [
+                130,
+                130
+              ]
+            },
+            "numericVerdict": "remote-larger-in-this-cell",
+            "qualityConstraints": {
+              "fullVectorEqual": false,
+              "remoteNoWorse": true,
+              "nativeNoWorse": false
+            }
+          },
+          "contextScope": "visible-first-continuation-input-proxy-only; not opaque internal effective tokens",
+          "originalUncompressedServerBaseline": null,
+          "compressionPercentage": null
+        },
+        "failureDenominator": 40
+      }
+    }
+  ],
+  "findings": []
+}

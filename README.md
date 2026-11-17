@@ -1,46 +1,59 @@
 # pi-compact
 
-Context compaction for [Pi](https://pi.dev/) with Codex remote compaction, percentage-based thresholds, and native fallback.
+Context compaction for Pi 1.5.2. Install it as an ordinary extension and keep your existing Pi launcher, providers and authorization.
 
-## Status
+The extension compacts at 90% of the active model window by default. It checks the pending input after a complete tool batch and before the next model request. Compatible Codex sessions use remote checkpoints. Other providers, including DeepSeek, use Pi's native summarization with the selected model. An explicit remote failure falls back to native summarization. Native summarization can itself call a remote model.
 
-P1 and P2 implement the ordinary Pi 1.5.2 extension, percentage-based native compaction, project configuration, cancellation, persistent failure barriers, and explicit TUI retry. P3 adds durable Codex checkpoints and readable recovery. P4 adds request-time migration, account and branch checks, and stale-selection rejection. Remote capability no longer requires a development switch. Real service and quality acceptance remain pending in P6. The complete product described below remains in development.
+## Install
 
-Disposable prototypes have exercised Pi 1.5.2's compaction flow and TUI. A small synthetic conversation also completed real Codex remote compaction and continuation. These experiments do not establish production reliability or a quality advantage over native compaction.
+Use Node 22.19 or later and Pi **1.5.2**. Download the reviewed `pi-compact-0.1.0.tgz`, verify its published SHA-256, and unpack it into a permanent directory.
 
-## Planned behavior
+```sh
+mkdir -p ./pi-compact-release
+tar -xzf ./pi-compact-0.1.0.tgz -C ./pi-compact-release
+pi install "$PWD/pi-compact-release/package"
+pi
+```
 
-- Compact at 90% context usage by default, with a configurable percentage.
-- Check before the next model request, after all tools in the current batch finish.
-- Prefer remote compaction when the active model and authorization support OpenAI Codex compaction.
-- Use Pi's native summarization for other providers, including DeepSeek, even when Codex authorization is also available.
-- Fall back to native compaction when remote compaction explicitly fails.
-- Wait for completion without an extension-imposed timeout. Allow cancellation and pause the task if compaction cannot succeed.
-- Convert a remote checkpoint to a readable summary before continuing with an incompatible provider.
-- Show a compact completion divider, with details available through `Ctrl+O`.
+Pi 1.5.2 registers local directories; it does not unpack a local tarball. Keep that directory after installation. To limit installation to a project, use `pi install -l /absolute/path/to/package` in a trusted project. See [installation and lifecycle](docs/install.md) for isolation, upgrade, disable and removal. The package has no runtime dependencies and uses the host's Pi classes. Do not install another Pi inside it.
+
+## Use
+
+Run `/compact-config` to show the percentage, configuration source and active model boundary. Run `/compact-config threshold 80` to atomically save `{ "thresholdPercent": 80 }` in the project's `.pi/pi-compact.json`. Valid percentages are greater than 0 and less than 100. A missing setting uses 90%. A malformed configuration stops normal requests until repaired.
+
+Run `/compact` to compact immediately. Custom instructions such as `/compact preserve the pending migration` are forwarded. Pi's automatic compaction enabled setting still applies to automatic work.
+
+There is no extension-imposed timeout. A slow response keeps waiting. Escape cancels compaction without starting fallback. Cancellation, failure of both methods, or failed persistence blocks normal continuation and preserves the history. Resolve the cause and run an explicit `/compact` retry. Only a successful retry clears the barrier. See [recovery](docs/recovery.md).
+
+Successful compaction replaces the collapsed card with an English divider.
 
 ```text
 ──────────────── ↗↙ Context compacted ────────────────
 ```
 
-The extension will use Pi's existing session and provider setup. Some integration points require a version-specific, in-process adapter. The initial compatibility target is Pi 1.5.2.
+`Ctrl+O` expands the text summary or safe opaque checkpoint metadata. Expansion does not call a model. It does not generate a readable summary for an opaque checkpoint.
 
-## Design and development
+Sessions persist checkpoints and adjacent recovery records. Restart and branch selection validate their source history. Provider, model capability, endpoint and account determine compatibility. Before an incompatible provider or account continues, the extension commits a readable text summary. Failed conversion pauses the task. Original source entries must remain available for readable recovery. Convert active opaque sessions before disabling or uninstalling the extension.
 
-- [Product design](docs/design.md)
-- [Implementation roadmap](docs/roadmap.md)
-- [Terminology in Chinese](GLOSSARY.md)
+## Support and acceptance
 
-## Run the development package
+[Compatibility](docs/compatibility.md) lists tested paths and limits. Opaque traffic is SSE only. WebSocket and arbitrary proxies are unsupported for opaque traffic. Local tests use the actual Pi loader, SDK, encoders and TUI with synthetic network responses.
 
-Use Node 22.19 or later and Pi 1.5.2. Install development dependencies with `pnpm install --frozen-lockfile`. Load the ordinary extension with `pi -e ./src/index.ts`.
+Real Pi 1.5.2 tests with Terra and Luna completed 20 paired file-maintenance comparisons, including checkpoint persistence, process restart and default-tool continuation. Remote and native groups each passed 20/20 task checks. This limited experiment found no remote quality advantage; it does not establish statistical equivalence or general reliability. Visual review is approved. Cross-provider migration and other-provider service behavior remain covered by fixtures rather than this real comparison.
 
-The default compaction threshold is 90% of the active model window. `/compact-config threshold 80` saves an override in the project's `.pi/pi-compact.json`. `/compact-config` displays the current threshold and source. Read [percentage compaction](docs/p2-policy.md) for boundaries and recovery behavior.
+[Live acceptance preparation](docs/live-acceptance.md) describes the disarmed dry-run and proposed shared request budget. It does not authorize requests.
 
-The ordinary extension selects compatible Codex remote compaction or native text summaries. Read [model changes and recovery](docs/p4-migration.md) for the capability, migration, cancellation and transport boundaries, and [checkpoint recovery](docs/p3-checkpoints.md) for persistence. It requires persistent sessions and pauses failed or cancelled work until a successful explicit `/compact` retry. It disables cache warming for managed sessions. Read the [adapter behavior and verification commands](docs/p1-adapter.md) before testing integrations.
+## Develop and verify
 
-Run `pnpm lint`, `pnpm typecheck`, and `pnpm test`. The real CLI and TUI fixture suite runs with `pnpm verify:live --pr P2`. It requires tmux and a Python `codex-py312` conda environment with Pillow for terminal captures. Performance verification uses `pnpm verify:perf --pr P2`.
+```sh
+pnpm install --frozen-lockfile
+pnpm lint
+pnpm typecheck
+pnpm test
+pnpm pack
+pnpm verify:p6
+pnpm verify:perf --pr P6
+pnpm acceptance:plan
+```
 
-`pnpm pack` creates a development tarball containing the extension source and README. The extension loader resolves Pi's host classes. Do not bundle a second Pi runtime into the package.
-
-The completion card uses the active theme and shows `↗↙ Context compacted`. `Ctrl+O` shows a text summary or safe opaque checkpoint metadata without a model request. Read [completion display and verification](docs/p5-renderer.md). P5 has passed [independent technical review](artifacts/P5-acceptance/REPORT.md). User visual review and P6 final acceptance remain pending.
+Runtime verification requires tmux, conda environment `codex-py312`, Pillow/pyte and ffmpeg for ANSI captures. Each run uses isolated synthetic auth and sessions and denies real network. See [P6 local report](artifacts/P6/REPORT.md) in the source checkout for exact hashes and pending gates. The published package contains user documentation, not test artifacts.

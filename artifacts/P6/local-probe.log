@@ -1,0 +1,31 @@
+{"name":"native","pass":true,"path":"/Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec/artifacts/P6/local/1794835048914/native","checks":["FACT_0=value_0","FACT_11=value_11","FACT_TOOL_0=result_0","FACT_TOOL_11=result_11","FACT_PENDING=idempotency_test","FACT_FILE=ledger.csv","FACT_ROW=A1_pending","database=sqlite","retry=3"],"fileHash":"92e85cfa04eb0188cddc41b1864191c20b0139efaf1bd9da8c89284a2d5bcda9","dispatches":2,"source":"synthetic transport through actual installed CLI/loader/encoder; not model quality"}
+{"name":"installed","pass":true,"path":"/Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec/artifacts/P6/local/1794835048914/installed","checks":["FACT_0=value_0","FACT_11=value_11","FACT_TOOL_0=result_0","FACT_TOOL_11=result_11","FACT_PENDING=idempotency_test","FACT_FILE=ledger.csv","FACT_ROW=A1_pending","database=sqlite","retry=3"],"fileHash":"92e85cfa04eb0188cddc41b1864191c20b0139efaf1bd9da8c89284a2d5bcda9","dispatches":2,"source":"synthetic transport through actual installed CLI/loader/encoder; not model quality"}
+{"name":"auto","pass":true,"path":"/Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec/artifacts/P6/local/1794835048914/auto","checks":["FACT_0=value_0","FACT_11=value_11","FACT_TOOL_0=result_0","FACT_TOOL_11=result_11","FACT_PENDING=idempotency_test","FACT_FILE=ledger.csv","FACT_ROW=A1_pending","database=sqlite","retry=3"],"fileHash":"92e85cfa04eb0188cddc41b1864191c20b0139efaf1bd9da8c89284a2d5bcda9","dispatches":3,"source":"synthetic transport through actual installed CLI/loader/encoder; not model quality"}
+node:internal/errors:983
+  const err = new Error(message);
+              ^
+
+Error: Command failed: tmux -f /dev/null -S 02e4cf7c.sock capture-pane -e -p -t fixture
+error connecting to 02e4cf7c.sock (No such file or directory)
+
+    at genericNodeError (node:internal/errors:983:15)
+    at wrappedFn (node:internal/errors:537:14)
+    at checkExecSyncError (node:child_process:916:11)
+    at execFileSync (node:child_process:952:15)
+    at cp.execFileSync (file:///Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec/scripts/fixture/relative-socket.mjs:11:17)
+    at Object.tmux (file:///Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec/scripts/fixture/runtime.mjs:64:29)
+    at capture (file:///Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec/scripts/verify-p6.mjs:18:84)
+    at file:///Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec/scripts/verify-p6.mjs:115:107 {
+  status: 1,
+  signal: null,
+  output: [
+    null,
+    '',
+    'error connecting to 02e4cf7c.sock (No such file or directory)\n'
+  ],
+  pid: 11447,
+  stdout: '',
+  stderr: 'error connecting to 02e4cf7c.sock (No such file or directory)\n'
+}
+
+Node.js v22.22.2

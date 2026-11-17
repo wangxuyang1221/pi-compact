@@ -1,0 +1,385 @@
+{
+  "schema": "pi-compact-real-delivery/v1",
+  "status": "REAL_ACCEPTANCE_NOT_PASSED",
+  "visual": "USER_APPROVED",
+  "realRunHead": "f5123d566d815b1f9e9e881ab913c8fedb18555b",
+  "testedRunnerHead": "22217359fb879a581a2c5f787d67786af0dd36b9",
+  "packageSHA256": "209888cd3f050ffe6d3a8932c15d25636d52d83919de0021cf9ce2c611d22c8d",
+  "approvedMaxDispatches": 260,
+  "comparisonMax": 248,
+  "functionalMax": 12,
+  "usedDispatches": 2,
+  "serverResponseConfirmed": 2,
+  "remainingNotExecuted": 258,
+  "continuationDispatches": 0,
+  "validQualityPairs": 0,
+  "estimatedInputReservation": 63737,
+  "outputReservation": 2000,
+  "actualServerUsage": null,
+  "actualCost": null,
+  "qualityVerdict": "INSUFFICIENT_EVIDENCE",
+  "remoteAdvantage": null,
+  "remoteIneffectiveness": null,
+  "protocolCause": "UNKNOWN: response content and first exact status were not retained",
+  "haltDeviation": "First NON_SSE_RESPONSE did not set auditFailure; executor sent a second pilot request before HTTP_REJECTED triggered global stop. Root stops all further live work, including functional acceptance.",
+  "lanes": [
+    {
+      "id": "pilot-gpt-6.1-terra-pi-native",
+      "phase": "pilot",
+      "model": "gpt-6.1-terra",
+      "arm": "pi-native",
+      "status": "failed",
+      "failure": "HOST_OR_TRANSPORT_FAILURE",
+      "dispatches": 1
+    },
+    {
+      "id": "pilot-gpt-6.1-terra-pi-compact-remote",
+      "phase": "pilot",
+      "model": "gpt-6.1-terra",
+      "arm": "pi-compact-remote",
+      "status": "failed",
+      "failure": "HOST_OR_TRANSPORT_FAILURE",
+      "dispatches": 1
+    },
+    {
+      "id": "pilot-gpt-6-luna-pi-native",
+      "phase": "pilot",
+      "model": "gpt-6-luna",
+      "arm": "pi-native",
+      "status": "ineligible",
+      "failure": "GLOBAL_AUDIT_STOP"
+    },
+    {
+      "id": "pilot-gpt-6-luna-pi-compact-remote",
+      "phase": "pilot",
+      "model": "gpt-6-luna",
+      "arm": "pi-compact-remote",
+      "status": "ineligible",
+      "failure": "GLOBAL_AUDIT_STOP"
+    },
+    {
+      "id": "r1-gpt-6.1-terra-settlement-v2-pi-native",
+      "phase": "comparison",
+      "model": "gpt-6.1-terra",
+      "arm": "pi-native",
+      "status": "ineligible",
+      "failure": "PILOT_NOT_ELIGIBLE"
+    },
+    {
+      "id": "r1-gpt-6.1-terra-settlement-v2-pi-compact-remote",
+      "phase": "comparison",
+      "model": "gpt-6.1-terra",
+      "arm": "pi-compact-remote",
+      "status": "ineligible",
+      "failure": "PILOT_NOT_ELIGIBLE"
+    },
+    {
+      "id": "r1-gpt-6.1-terra-redirect-v2-pi-compact-remote",
+      "phase": "comparison",
+      "model": "gpt-6.1-terra",
+      "arm": "pi-compact-remote",
+      "status": "ineligible",
+      "failure": "PILOT_NOT_ELIGIBLE"
+    },
+    {
+      "id": "r1-gpt-6.1-terra-redirect-v2-pi-native",
+      "phase": "comparison",
+      "model": "gpt-6.1-terra",
+      "arm": "pi-native",
+      "status": "ineligible",
+      "failure": "PILOT_NOT_ELIGIBLE"
+    },
+    {
+      "id": "r1-gpt-6-luna-settlement-v2-pi-compact-remote",
+      "phase": "comparison",
+      "model": "gpt-6-luna",
+      "arm": "pi-compact-remote",
+      "status": "ineligible",
+      "failure": "PILOT_NOT_ELIGIBLE"
+    },
+    {
+      "id": "r1-gpt-6-luna-settlement-v2-pi-native",
+      "phase": "comparison",
+      "model": "gpt-6-luna",
+      "arm": "pi-native",
+      "status": "ineligible",
+      "failure": "PILOT_NOT_ELIGIBLE"
+    },
+    {
+      "id": "r1-gpt-6-luna-redirect-v2-pi-native",
+      "phase": "comparison",
+      "model": "gpt-6-luna",
+      "arm": "pi-native",
+      "status": "ineligible",
+      "failure": "PILOT_NOT_ELIGIBLE"
+    },
+    {
+      "id": "r1-gpt-6-luna-redirect-v2-pi-compact-remote",
+      "phase": "comparison",
+      "model": "gpt-6-luna",
+      "arm": "pi-compact-remote",
+      "status": "ineligible",
+      "failure": "PILOT_NOT_ELIGIBLE"
+    },
+    {
+      "id": "r2-gpt-6.1-terra-settlement-v2-pi-compact-remote",
+      "phase": "comparison",
+      "model": "gpt-6.1-terra",
+      "arm": "pi-compact-remote",
+      "status": "ineligible",
+      "failure": "PILOT_NOT_ELIGIBLE"
+    },
+    {
+      "id": "r2-gpt-6.1-terra-settlement-v2-pi-native",
+      "phase": "comparison",
+      "model": "gpt-6.1-terra",
+      "arm": "pi-native",
+      "status": "ineligible",
+      "failure": "PILOT_NOT_ELIGIBLE"
+    },
+    {
+      "id": "r2-gpt-6.1-terra-redirect-v2-pi-native",
+      "phase": "comparison",
+      "model": "gpt-6.1-terra",
+      "arm": "pi-native",
+      "status": "ineligible",
+      "failure": "PILOT_NOT_ELIGIBLE"
+    },
+    {
+      "id": "r2-gpt-6.1-terra-redirect-v2-pi-compact-remote",
+      "phase": "comparison",
+      "model": "gpt-6.1-terra",
+      "arm": "pi-compact-remote",
+      "status": "ineligible",
+      "failure": "PILOT_NOT_ELIGIBLE"
+    },
+    {
+      "id": "r2-gpt-6-luna-settlement-v2-pi-native",
+      "phase": "comparison",
+      "model": "gpt-6-luna",
+      "arm": "pi-native",
+      "status": "ineligible",
+      "failure": "PILOT_NOT_ELIGIBLE"
+    },
+    {
+      "id": "r2-gpt-6-luna-settlement-v2-pi-compact-remote",
+      "phase": "comparison",
+      "model": "gpt-6-luna",
+      "arm": "pi-compact-remote",
+      "status": "ineligible",
+      "failure": "PILOT_NOT_ELIGIBLE"
+    },
+    {
+      "id": "r2-gpt-6-luna-redirect-v2-pi-compact-remote",
+      "phase": "comparison",
+      "model": "gpt-6-luna",
+      "arm": "pi-compact-remote",
+      "status": "ineligible",
+      "failure": "PILOT_NOT_ELIGIBLE"
+    },
+    {
+      "id": "r2-gpt-6-luna-redirect-v2-pi-native",
+      "phase": "comparison",
+      "model": "gpt-6-luna",
+      "arm": "pi-native",
+      "status": "ineligible",
+      "failure": "PILOT_NOT_ELIGIBLE"
+    },
+    {
+      "id": "r3-gpt-6.1-terra-settlement-v2-pi-native",
+      "phase": "comparison",
+      "model": "gpt-6.1-terra",
+      "arm": "pi-native",
+      "status": "ineligible",
+      "failure": "PILOT_NOT_ELIGIBLE"
+    },
+    {
+      "id": "r3-gpt-6.1-terra-settlement-v2-pi-compact-remote",
+      "phase": "comparison",
+      "model": "gpt-6.1-terra",
+      "arm": "pi-compact-remote",
+      "status": "ineligible",
+      "failure": "PILOT_NOT_ELIGIBLE"
+    },
+    {
+      "id": "r3-gpt-6.1-terra-redirect-v2-pi-compact-remote",
+      "phase": "comparison",
+      "model": "gpt-6.1-terra",
+      "arm": "pi-compact-remote",
+      "status": "ineligible",
+      "failure": "PILOT_NOT_ELIGIBLE"
+    },
+    {
+      "id": "r3-gpt-6.1-terra-redirect-v2-pi-native",
+      "phase": "comparison",
+      "model": "gpt-6.1-terra",
+      "arm": "pi-native",
+      "status": "ineligible",
+      "failure": "PILOT_NOT_ELIGIBLE"
+    },
+    {
+      "id": "r3-gpt-6-luna-settlement-v2-pi-compact-remote",
+      "phase": "comparison",
+      "model": "gpt-6-luna",
+      "arm": "pi-compact-remote",
+      "status": "ineligible",
+      "failure": "PILOT_NOT_ELIGIBLE"
+    },
+    {
+      "id": "r3-gpt-6-luna-settlement-v2-pi-native",
+      "phase": "comparison",
+      "model": "gpt-6-luna",
+      "arm": "pi-native",
+      "status": "ineligible",
+      "failure": "PILOT_NOT_ELIGIBLE"
+    },
+    {
+      "id": "r3-gpt-6-luna-redirect-v2-pi-native",
+      "phase": "comparison",
+      "model": "gpt-6-luna",
+      "arm": "pi-native",
+      "status": "ineligible",
+      "failure": "PILOT_NOT_ELIGIBLE"
+    },
+    {
+      "id": "r3-gpt-6-luna-redirect-v2-pi-compact-remote",
+      "phase": "comparison",
+      "model": "gpt-6-luna",
+      "arm": "pi-compact-remote",
+      "status": "ineligible",
+      "failure": "PILOT_NOT_ELIGIBLE"
+    },
+    {
+      "id": "r4-gpt-6.1-terra-settlement-v2-pi-compact-remote",
+      "phase": "comparison",
+      "model": "gpt-6.1-terra",
+      "arm": "pi-compact-remote",
+      "status": "ineligible",
+      "failure": "PILOT_NOT_ELIGIBLE"
+    },
+    {
+      "id": "r4-gpt-6.1-terra-settlement-v2-pi-native",
+      "phase": "comparison",
+      "model": "gpt-6.1-terra",
+      "arm": "pi-native",
+      "status": "ineligible",
+      "failure": "PILOT_NOT_ELIGIBLE"
+    },
+    {
+      "id": "r4-gpt-6.1-terra-redirect-v2-pi-native",
+      "phase": "comparison",
+      "model": "gpt-6.1-terra",
+      "arm": "pi-native",
+      "status": "ineligible",
+      "failure": "PILOT_NOT_ELIGIBLE"
+    },
+    {
+      "id": "r4-gpt-6.1-terra-redirect-v2-pi-compact-remote",
+      "phase": "comparison",
+      "model": "gpt-6.1-terra",
+      "arm": "pi-compact-remote",
+      "status": "ineligible",
+      "failure": "PILOT_NOT_ELIGIBLE"
+    },
+    {
+      "id": "r4-gpt-6-luna-settlement-v2-pi-native",
+      "phase": "comparison",
+      "model": "gpt-6-luna",
+      "arm": "pi-native",
+      "status": "ineligible",
+      "failure": "PILOT_NOT_ELIGIBLE"
+    },
+    {
+      "id": "r4-gpt-6-luna-settlement-v2-pi-compact-remote",
+      "phase": "comparison",
+      "model": "gpt-6-luna",
+      "arm": "pi-compact-remote",
+      "status": "ineligible",
+      "failure": "PILOT_NOT_ELIGIBLE"
+    },
+    {
+      "id": "r4-gpt-6-luna-redirect-v2-pi-compact-remote",
+      "phase": "comparison",
+      "model": "gpt-6-luna",
+      "arm": "pi-compact-remote",
+      "status": "ineligible",
+      "failure": "PILOT_NOT_ELIGIBLE"
+    },
+    {
+      "id": "r4-gpt-6-luna-redirect-v2-pi-native",
+      "phase": "comparison",
+      "model": "gpt-6-luna",
+      "arm": "pi-native",
+      "status": "ineligible",
+      "failure": "PILOT_NOT_ELIGIBLE"
+    },
+    {
+      "id": "r5-gpt-6.1-terra-settlement-v2-pi-native",
+      "phase": "comparison",
+      "model": "gpt-6.1-terra",
+      "arm": "pi-native",
+      "status": "ineligible",
+      "failure": "PILOT_NOT_ELIGIBLE"
+    },
+    {
+      "id": "r5-gpt-6.1-terra-settlement-v2-pi-compact-remote",
+      "phase": "comparison",
+      "model": "gpt-6.1-terra",
+      "arm": "pi-compact-remote",
+      "status": "ineligible",
+      "failure": "PILOT_NOT_ELIGIBLE"
+    },
+    {
+      "id": "r5-gpt-6.1-terra-redirect-v2-pi-compact-remote",
+      "phase": "comparison",
+      "model": "gpt-6.1-terra",
+      "arm": "pi-compact-remote",
+      "status": "ineligible",
+      "failure": "PILOT_NOT_ELIGIBLE"
+    },
+    {
+      "id": "r5-gpt-6.1-terra-redirect-v2-pi-native",
+      "phase": "comparison",
+      "model": "gpt-6.1-terra",
+      "arm": "pi-native",
+      "status": "ineligible",
+      "failure": "PILOT_NOT_ELIGIBLE"
+    },
+    {
+      "id": "r5-gpt-6-luna-settlement-v2-pi-compact-remote",
+      "phase": "comparison",
+      "model": "gpt-6-luna",
+      "arm": "pi-compact-remote",
+      "status": "ineligible",
+      "failure": "PILOT_NOT_ELIGIBLE"
+    },
+    {
+      "id": "r5-gpt-6-luna-settlement-v2-pi-native",
+      "phase": "comparison",
+      "model": "gpt-6-luna",
+      "arm": "pi-native",
+      "status": "ineligible",
+      "failure": "PILOT_NOT_ELIGIBLE"
+    },
+    {
+      "id": "r5-gpt-6-luna-redirect-v2-pi-native",
+      "phase": "comparison",
+      "model": "gpt-6-luna",
+      "arm": "pi-native",
+      "status": "ineligible",
+      "failure": "PILOT_NOT_ELIGIBLE"
+    },
+    {
+      "id": "r5-gpt-6-luna-redirect-v2-pi-compact-remote",
+      "phase": "comparison",
+      "model": "gpt-6-luna",
+      "arm": "pi-compact-remote",
+      "status": "ineligible",
+      "failure": "PILOT_NOT_ELIGIBLE"
+    }
+  ],
+  "principles": {
+    "proveItWorks": "Use actual installed-package and transport ledger evidence; fixture results are not model quality.",
+    "fixRootCauses": "Treat any failed dispatch as a durable global stop, not only a fixed list of audit codes."
+  }
+}

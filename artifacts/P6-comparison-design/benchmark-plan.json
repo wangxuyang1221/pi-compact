@@ -1,0 +1,344 @@
+{
+  "schema": "pi-compact-comparison-design/v1",
+  "authorized": false,
+  "armed": false,
+  "mode": "design-only",
+  "executionImplemented": false,
+  "realMeasurements": false,
+  "baseCommit": "1c7d88be1104ee55b024620db7227e4fd89ae9b5",
+  "activeBudget": {
+    "maxDispatches": 0,
+    "maxEstimatedInputTokens": 0,
+    "maxReservedOutputTokens": 0
+  },
+  "defaultProfile": null,
+  "models": [
+    {
+      "provider": "openai-codex",
+      "id": "gpt-6.1-terra",
+      "api": "openai-codex-responses",
+      "baseUrl": "https://chatgpt.com/backend-api",
+      "endpoint": "https://chatgpt.com/backend-api/codex/responses",
+      "catalogContextWindow": 500000,
+      "catalogMaxTokens": 128000,
+      "reasoning": "off",
+      "wireReasoning": "none",
+      "availability": "unknown",
+      "outputCapSupport": "unknown",
+      "remoteCompactionSupport": "unknown"
+    },
+    {
+      "provider": "openai-codex",
+      "id": "gpt-6-luna",
+      "api": "openai-codex-responses",
+      "baseUrl": "https://chatgpt.com/backend-api",
+      "endpoint": "https://chatgpt.com/backend-api/codex/responses",
+      "catalogContextWindow": 272000,
+      "catalogMaxTokens": 128000,
+      "reasoning": "off",
+      "wireReasoning": "none",
+      "availability": "unknown",
+      "outputCapSupport": "unknown",
+      "remoteCompactionSupport": "unknown"
+    }
+  ],
+  "matchedPair": {
+    "arms": [
+      "pi-native",
+      "pi-compact-remote"
+    ],
+    "same": [
+      "model",
+      "provider",
+      "raw-history-hash",
+      "workspace-manifest",
+      "firstKeptEntryId",
+      "retained-tail-hash",
+      "system-prompt",
+      "continuation",
+      "tool-schema",
+      "reasoning-none",
+      "output-cap",
+      "service-tier",
+      "transport"
+    ],
+    "nativeCompaction": {
+      "enabled": true,
+      "reserveTokens": 16384,
+      "keepRecentTokens": 20000,
+      "customInstructions": null
+    },
+    "commonControls": {
+      "transport": "sse",
+      "maxRetries": 0,
+      "cacheWarming": "off",
+      "perRequestOutputTokens": 1000,
+      "perRequestEstimatedInputCeiling": 64000,
+      "temperature": "unset-both",
+      "serviceTier": "unset-both",
+      "seed": "unsupported-unset"
+    },
+    "primaryEligibility": {
+      "isSplitTurn": false,
+      "criticalFactsBeforeCut": true,
+      "criticalToolResultMaxChars": 2000,
+      "historyModelMetadata": "same-within-pair",
+      "noPriorCheckpoint": true
+    }
+  },
+  "datasets": [
+    {
+      "id": "settlement-v1",
+      "history": "datasets/settlement-v1/history.json",
+      "workspace": "datasets/settlement-v1/workspace",
+      "continuation": "datasets/settlement-v1/continuation.json",
+      "oracle": "datasets/settlement-v1/oracle/groundtruth.json",
+      "facts": 6,
+      "revokedFacts": 3,
+      "pendingTasks": 2,
+      "stateFields": 5,
+      "behaviorCases": 7,
+      "protectedFiles": 102,
+      "freezeManifest": "dataset-manifest.json",
+      "status": "candidate-await-offline-boundary-preflight"
+    },
+    {
+      "id": "redirect-v1",
+      "history": "datasets/redirect-v1/history.json",
+      "workspace": "datasets/redirect-v1/workspace",
+      "continuation": "datasets/redirect-v1/continuation.json",
+      "oracle": "datasets/redirect-v1/oracle/groundtruth.json",
+      "facts": 6,
+      "revokedFacts": 3,
+      "pendingTasks": 2,
+      "stateFields": 5,
+      "behaviorCases": 8,
+      "protectedFiles": 102,
+      "freezeManifest": "dataset-manifest.json",
+      "status": "candidate-await-offline-boundary-preflight"
+    }
+  ],
+  "metrics": {
+    "facts": {
+      "method": "typed-exact-key-value",
+      "precision": "TP/(TP+FP); no predictions=null",
+      "recall": "TP/6",
+      "wrongValue": "one FP plus one FN",
+      "unknownKeys": "FP"
+    },
+    "stale": {
+      "method": "typed-exact-old-value",
+      "denominator": 3
+    },
+    "pending": {
+      "method": "set-exact",
+      "recallDenominator": 2,
+      "extraItems": "FP"
+    },
+    "state": {
+      "method": "typed-exact-key-value",
+      "denominator": 5
+    },
+    "continuation": {
+      "method": "actual-workspace-function-execution-deep-equality",
+      "casesByTask": [
+        7,
+        8
+      ],
+      "protectedFiles": 102,
+      "sourceChanged": true,
+      "modelTestSelfReportIsEvidence": false
+    },
+    "context": {
+      "primary": "first-post-compact-server-input-total",
+      "compare": "remote/native paired ratio",
+      "opaqueWireBytesAreTokens": false,
+      "originalUncompactedServerInput": "not-measured"
+    },
+    "usage": {
+      "raw": [
+        "input_tokens",
+        "input_tokens_details.cached_tokens",
+        "output_tokens",
+        "output_tokens_details.reasoning_tokens",
+        "input_tokens_details.cache_write_tokens",
+        "total_tokens"
+      ],
+      "pi": [
+        "input",
+        "cacheRead",
+        "cacheWrite",
+        "output",
+        "totalTokens"
+      ],
+      "missing": "null-not-zero",
+      "summaryCost": "all-compaction-dispatches-separate-token-vector; money-unknown"
+    },
+    "latency": {
+      "clock": "monotonic",
+      "phases": [
+        "compact-to-checkpoint-commit",
+        "first-token",
+        "continuation-through-tools-final",
+        "end-to-end"
+      ],
+      "minimumRepeatsPerModelTaskArm": 5,
+      "report": [
+        "median",
+        "range",
+        "every-pair",
+        "failure-duration",
+        "cache-stratum"
+      ]
+    },
+    "failure": {
+      "denominators": [
+        "scheduled-lanes",
+        "started-lanes",
+        "reserved-dispatches",
+        "known-sent-dispatches"
+      ],
+      "keepNegativeResults": true
+    },
+    "strictTaskSuccess": [
+      "facts TP=6 FP=0 FN=0",
+      "state TP=5 FP=0 FN=0",
+      "pending exact set, no duplicates",
+      "stale adopted=0",
+      "all behavior cases passed on actual edited module",
+      "all 102 protected file hashes unchanged",
+      "no extra files or unauthorized modifications",
+      "record captured before workspace access"
+    ]
+  },
+  "stages": {
+    "pilot": {
+      "perModel": [
+        "native-compact",
+        "native-one-normal-no-tools",
+        "remote-compact",
+        "remote-one-normal-no-tools"
+      ],
+      "maxDispatchesPerModel": 4,
+      "dataset": "settlement-v1 exact history; prompt only asks acknowledge ready, not scored",
+      "stopOn": [
+        "cap-rejected",
+        "cap-overrun",
+        "cap-enforcement-unverifiable",
+        "missing-terminal-usage",
+        "incomplete-output",
+        "unknown-model",
+        "no-opaque-checkpoint",
+        "context-overflow"
+      ],
+      "countsInComparison": false,
+      "capEvidence": "accepted field plus complete terminal usage <=1000 in observed requests; not proof of universal service enforcement"
+    },
+    "comparison": {
+      "perLane": {
+        "compactExpected": 1,
+        "compactMaxIncludingFallback": 2,
+        "continuationMax": 5,
+        "totalMax": 6
+      },
+      "continuationSketch": [
+        "record_checkpoint",
+        "read-current-files",
+        "edit-business-module",
+        "run-local-tests",
+        "final-response"
+      ],
+      "allExtraCallsShareTotal": true,
+      "noRetry": true,
+      "noReplacementForFailedSample": true,
+      "sequence": "for repeat 1..R, model Terra then Luna, task settlement then redirect; arms N,R if (repeat+modelIndex+taskIndex)%2=1 else R,N",
+      "pairedFreshWorkspaces": true,
+      "maxLaneWallMs": 180000,
+      "maxExperimentWallMs": 5400000
+    }
+  },
+  "budget": {
+    "status": "proposal-only-not-grant",
+    "currentExecutor": {
+      "maxDispatches": 12,
+      "defaultFunctionalFlow": 9,
+      "maxEstimatedInputTokens": 120000,
+      "maxReservedOutputTokens": 12000,
+      "targets": "Sol+DeepSeek only; schema change needed for Terra/Luna"
+    },
+    "profiles": [
+      {
+        "id": "compatibility-only",
+        "models": 2,
+        "tasks": 0,
+        "repeats": 0,
+        "lanes": 0,
+        "pilotDispatches": 8,
+        "comparisonDispatches": 0,
+        "hardDispatches": 8,
+        "hardEstimatedInputTokens": 512000,
+        "hardReservedOutputTokens": 8000
+      },
+      {
+        "id": "quality-observation",
+        "models": 2,
+        "tasks": 2,
+        "repeats": 1,
+        "lanes": 8,
+        "pilotDispatches": 8,
+        "comparisonDispatches": 48,
+        "hardDispatches": 56,
+        "hardEstimatedInputTokens": 3584000,
+        "hardReservedOutputTokens": 56000
+      },
+      {
+        "id": "paired-five",
+        "models": 2,
+        "tasks": 2,
+        "repeats": 5,
+        "lanes": 40,
+        "pilotDispatches": 8,
+        "comparisonDispatches": 240,
+        "hardDispatches": 248,
+        "hardEstimatedInputTokens": 15872000,
+        "hardReservedOutputTokens": 248000
+      }
+    ],
+    "formula": "pilot = 2 models * 2 arms * (1 compact + 1 continuation) = 8; comparison = models * tasks * repeats * 2 arms * (1 compact + at most 5 continuations) ; lane total <=6 also with fallback",
+    "fallback": "counts in shared hard total; native fallback is remote-assigned failure for opaque endpoint claim; can continue only inside remaining lane budget",
+    "newAuthorityRequired": true,
+    "implicitExpansion": false
+  },
+  "verdicts": {
+    "functional": "real opaque checkpoint consumed by real Pi continuation with deterministic file tests; separate from superiority",
+    "qualityWin": "within named cells only: >=4/5 pair strict-success improvements, zero opposite strict-success losses, no worse stale rate; otherwise report counts without quality-superiority claim",
+    "speedOrContextWin": "all five pairs complete and comparable; median relative improvement >=0.10; every pair same sign; effect exceeds max within-arm relative range; latency additionally needs measured bottleneck and no cache/order confound",
+    "tie": "both eligible, same quality vector, absolute median difference <=0.05 and per-arm relative range <=0.05; call no measurable difference, not equivalence",
+    "loss": "symmetric win rule reversed",
+    "tradeoff": "quality loss prevents overall win even if smaller/faster; report Pareto vector",
+    "inconclusive": "missing cap/support/usage, incomplete pair, confounded cache/order, wide variation, underpowered or mixed results"
+  },
+  "freeze": {
+    "requiredBeforeAnyProviderRequest": [
+      "plan-hash",
+      "dataset-manifest-hash",
+      "scorer-hash",
+      "package-hash",
+      "installed-source-hashes",
+      "encoded-request-and-boundary-preflight",
+      "schedule",
+      "selected-profile-and-approved-budget"
+    ],
+    "pilotOutcomeMustNotRetuneScoring": true,
+    "changePolicy": "version new dataset/plan and disclose prior attempts; no post-outcome edits"
+  },
+  "restrictions": {
+    "networkNow": false,
+    "readRealAuthOrHistory": false,
+    "createGrant": false,
+    "changeProductOrExecutor": false,
+    "modelJudge": false,
+    "chatAgentResultsAsPiResults": false,
+    "nearWindowVariant": "not-in-primary-budget; separate frozen study only after valid capability evidence"
+  }
+}

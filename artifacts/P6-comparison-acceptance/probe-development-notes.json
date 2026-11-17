@@ -1,0 +1,10 @@
+{
+  "productDefects": [],
+  "preservedProbeFailures": [
+    {"kind":"latency-label-typo","firstEvidence":"probe-results.json","expectedIncorrectly":"inconclusive-without-measured-bottleneck-and-cache-order-control","actual":"inconclusive-without-measured-bottleneck-and-cache-order-analysis","finalEvidence":"probe-results-v2.json"},
+    {"kind":"contract-text-assumption","firstEvidence":"audit.log","expectedIncorrectly":"Contract final","actual":"Contract amendment","finalEvidence":"audit-v2.log"},
+    {"kind":"inline-binding-hash-transcription","firstEvidence":"tool transcript; no output file generated","expectedIncorrectly":"5354ad1dcb046321413c6bb0c76b6c0c76b6c0c76d21f0ace741c2eb5eae0019b3adf41","actual":"5354ad1dcb046321413c6bb0c76b6c0c76d21f0ace741c2eb5eae0019b3adf41","finalEvidence":"bindings.json"}
+  ],
+  "changesToProductOrExistingTests":false,
+  "timeoutChanged":false
+}

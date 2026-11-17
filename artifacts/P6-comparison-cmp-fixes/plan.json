@@ -1,0 +1,180 @@
+{
+  "schema": "pi-compact-comparison-plan/v2",
+  "authorized": false,
+  "armed": false,
+  "realMeasurements": false,
+  "activeBudget": {
+    "dispatches": 0,
+    "estimatedInputTokens": 0,
+    "reservedOutputTokens": 0
+  },
+  "defaultProfile": null,
+  "profile": null,
+  "commonToolEncoding": {
+    "supportsAdditionalTools": false,
+    "supportsToolSearch": false,
+    "reason": "Product opaque validator does not accept SDK additional_tools; both arms use actual SDK top-level function encoding. Default native compaction strategy under common transport constraints only."
+  },
+  "models": [
+    {
+      "provider": "openai-codex",
+      "model": "gpt-6.1-terra",
+      "api": "openai-codex-responses",
+      "baseUrl": "https://chatgpt.com/backend-api",
+      "endpoint": "https://chatgpt.com/backend-api/codex/responses",
+      "transport": "sse"
+    },
+    {
+      "provider": "openai-codex",
+      "model": "gpt-6-luna",
+      "api": "openai-codex-responses",
+      "baseUrl": "https://chatgpt.com/backend-api",
+      "endpoint": "https://chatgpt.com/backend-api/codex/responses",
+      "transport": "sse"
+    }
+  ],
+  "controls": {
+    "compaction": {
+      "enabled": true,
+      "reserveTokens": 16384,
+      "keepRecentTokens": 20000
+    },
+    "retry": {
+      "enabled": false
+    },
+    "providerRetry": {
+      "maxRetries": 0
+    },
+    "transport": "sse",
+    "cacheWarming": "off",
+    "quietStartup": true
+  },
+  "profiles": [
+    {
+      "id": "compatibility-only",
+      "repeats": 0,
+      "dispatches": 8,
+      "status": "PROPOSAL",
+      "estimatedInputTokens": 512000,
+      "reservedOutputTokens": 8000
+    },
+    {
+      "id": "quality-observation",
+      "repeats": 1,
+      "dispatches": 56,
+      "status": "PROPOSAL",
+      "estimatedInputTokens": 3584000,
+      "reservedOutputTokens": 56000
+    },
+    {
+      "id": "paired-five",
+      "repeats": 5,
+      "dispatches": 248,
+      "status": "PROPOSAL",
+      "estimatedInputTokens": 15872000,
+      "reservedOutputTokens": 248000
+    }
+  ],
+  "scoring": {
+    "facts": {
+      "method": "typed-exact-key-value",
+      "precision": "TP/(TP+FP); no predictions=null",
+      "recall": "TP/6",
+      "wrongValue": "one FP plus one FN",
+      "unknownKeys": "FP"
+    },
+    "stale": {
+      "method": "typed-exact-old-value",
+      "denominator": 3
+    },
+    "pending": {
+      "method": "set-exact",
+      "recallDenominator": 2,
+      "extraItems": "FP"
+    },
+    "state": {
+      "method": "typed-exact-key-value",
+      "denominator": 5
+    },
+    "continuation": {
+      "method": "actual-workspace-function-execution-deep-equality",
+      "casesByTask": [
+        7,
+        8
+      ],
+      "protectedFiles": 102,
+      "sourceChanged": true,
+      "modelTestSelfReportIsEvidence": false
+    },
+    "context": {
+      "primary": "first-post-compact-server-input-total",
+      "compare": "remote/native paired ratio",
+      "opaqueWireBytesAreTokens": false,
+      "originalUncompactedServerInput": "not-measured"
+    },
+    "usage": {
+      "raw": [
+        "input_tokens",
+        "input_tokens_details.cached_tokens",
+        "output_tokens",
+        "output_tokens_details.reasoning_tokens",
+        "input_tokens_details.cache_write_tokens",
+        "total_tokens"
+      ],
+      "pi": [
+        "input",
+        "cacheRead",
+        "cacheWrite",
+        "output",
+        "totalTokens"
+      ],
+      "missing": "null-not-zero",
+      "summaryCost": "all-compaction-dispatches-separate-token-vector; money-unknown"
+    },
+    "latency": {
+      "clock": "monotonic",
+      "phases": [
+        "compact-to-checkpoint-commit",
+        "first-token",
+        "continuation-through-tools-final",
+        "end-to-end"
+      ],
+      "minimumRepeatsPerModelTaskArm": 5,
+      "report": [
+        "median",
+        "range",
+        "every-pair",
+        "failure-duration",
+        "cache-stratum"
+      ]
+    },
+    "failure": {
+      "denominators": [
+        "scheduled-lanes",
+        "started-lanes",
+        "reserved-dispatches",
+        "known-sent-dispatches"
+      ],
+      "keepNegativeResults": true
+    },
+    "strictTaskSuccess": [
+      "facts TP=6 FP=0 FN=0",
+      "state TP=5 FP=0 FN=0",
+      "pending exact set, no duplicates",
+      "stale adopted=0",
+      "all behavior cases passed on actual edited module",
+      "all 102 protected file hashes unchanged",
+      "no extra files or unauthorized modifications",
+      "record captured before workspace access"
+    ]
+  },
+  "verdicts": {
+    "functional": "real opaque checkpoint consumed by real Pi continuation with deterministic file tests; separate from superiority",
+    "qualityWin": "within named cells only: >=4/5 pair strict-success improvements, zero opposite strict-success losses, no worse stale rate; otherwise report counts without quality-superiority claim",
+    "speedOrContextWin": "all five pairs complete and comparable; median relative improvement >=0.10; every pair same sign; effect exceeds max within-arm relative range; latency additionally needs measured bottleneck and no cache/order confound",
+    "tie": "both eligible, same quality vector, absolute median difference <=0.05 and per-arm relative range <=0.05; call no measurable difference, not equivalence",
+    "loss": "symmetric win rule reversed",
+    "tradeoff": "quality loss prevents overall win even if smaller/faster; report Pareto vector",
+    "inconclusive": "missing cap/support/usage, incomplete pair, confounded cache/order, wide variation, underpowered or mixed results"
+  }
+}

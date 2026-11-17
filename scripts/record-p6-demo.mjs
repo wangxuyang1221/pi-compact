@@ -1,0 +1,45 @@
+import './fixture/relative-socket.mjs';
+import assert from 'node:assert/strict';
+import { mkdirSync, writeFileSync, copyFileSync } from 'node:fs';
+import { join } from 'node:path';
+import { execFileSync } from 'node:child_process';
+import { tui, root, shim, waitFor } from './fixture/runtime.mjs';
+import { options } from './p6/common.mjs';
+import { sha } from './p6/package.mjs';
+const dir = join(root, 'artifacts/P6/demo', String(Date.now()));
+const review = join(root, 'artifacts/P6/review');
+mkdirSync(dir, { recursive: true }); mkdirSync(review, { recursive: true });
+const pkg = join(root, 'artifacts/P6/release/package');
+const quote = value => `'${String(value).replaceAll("'", "'\\''")}'`;
+let frame = 0, timer;
+const began = performance.now(); const actions = [];
+const record = t => writeFileSync(join(dir, `frame-${String(frame++).padStart(5, '0')}.json`), JSON.stringify({ at: performance.now() - began, cols: 120, rows: 40, theme: 'dark', ansi: t.tmux('capture-pane', '-e', '-p', '-t', 'fixture') }));
+const env = { PATH: process.env.PATH, HOME: join(dir, 'home'), PI_CODING_AGENT_DIR: join(dir, 'agent'), PI_OFFLINE: '1', NODE_OPTIONS: '--import=' + join(root, 'scripts/fixture/preload.mjs'), PI_FIXTURE_LOG: join(dir, 'install-events.jsonl'), PI_FIXTURE_CONTROL: join(dir, 'control.json') };
+const prelude = 'export ' + Object.entries(env).map(([k,v]) => k + '=' + quote(v)).join(' ') + '\nset -x\n' + quote(shim) + ' install ' + quote(pkg) + ' --approve\nset +x\nsleep 2';
+const t = await tui(dir, { ...options(pkg), prelude, onSpawn(api) { record(api); timer = setInterval(() => { try { record(api); } catch (error) { clearInterval(timer); writeFileSync(join(dir, 'capture-error.txt'), String(error)); } }, 500); } });
+const hold = async ms => { await new Promise(resolve => setTimeout(resolve, ms)); };
+const capture = name => {
+  const file = join(review, name + '.json');
+  writeFileSync(file, JSON.stringify({ cols: 120, rows: 40, theme: 'dark', ansi: t.tmux('capture-pane', '-e', '-p', '-t', 'fixture') }));
+};
+const command = async (text, event) => { actions.push({ at: performance.now() - began, text }); const n = t.log().filter(e => e.event === event).length; await t.text(text); if(event) await waitFor(() => t.log().filter(e => e.event === event).length > n, text); };
+try {
+  await command('/compact-config threshold 80'); await hold(3000); capture('configuration');
+  await command('/p6-task', 'p6-task-seeded'); await command('/compact', 'extension-success'); await hold(5000); capture('remote-fixture');
+  t.key('C-o'); await hold(4000); capture('opaque-details'); t.key('C-o');
+  await command('CURRENT_INPUT_MARKER recall pending file and tools', 'agent_settled'); await hold(4000); capture('continuation');
+  await command('/p4-model deepseek/deepseek-chat', 'selected'); await command('/compact', 'extension-success'); await hold(5000); capture('migration');
+  t.key('C-o'); await hold(4000); capture('migration-details'); t.key('C-o');
+  await command('CURRENT_INPUT_MARKER continue with readable context', 'agent_settled'); await hold(5000); capture('divider');
+  assert(t.log().some(e => e.event === 'remote-request'));
+  assert(t.log().some(e => e.event === 'source-request'));
+  assert.equal(t.log().filter(e => e.event === 'network-blocked').length, 0);
+} finally { clearInterval(timer); record(t); await t.stop(); }
+writeFileSync(join(review, 'recording.json'), JSON.stringify({ path: dir, source: 'Actual ordinary-installed Pi TUI tmux ANSI cells rendered with Menlo 16; not OS screenshots. All network responses synthetic.', tarballSHA: sha(join(root, 'artifacts/P6/release/pi-compact-0.1.0.tgz')), frames: frame, durationSeconds: frame/2, actions }, null, 2));
+execFileSync('conda', ['run', '--no-capture-output', '-n', 'codex-py312', 'python', join(root, 'scripts/p5/render-capture.py'), '--video', dir]);
+execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-framerate', '2', '-i', join(dir, 'video-%05d.png'), '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-movflags', '+faststart', join(review, 'demo.mp4')]);
+for (const name of ['configuration','remote-fixture','opaque-details','continuation','migration','migration-details','divider']) execFileSync('conda', ['run', '--no-capture-output', '-n', 'codex-py312', 'python', join(root, 'scripts/p5/render-capture.py'), join(review, name+'.json'), join(review,name+'.png')]);
+const firstInstallFrame = join(dir, 'frame-00002.json');
+copyFileSync(firstInstallFrame, join(review, 'installation.json'));
+execFileSync('conda', ['run', '--no-capture-output', '-n', 'codex-py312', 'python', join(root, 'scripts/p5/render-capture.py'), join(review, 'installation.json'), join(review, 'installation.png')]);
+console.log(dir);

@@ -1,0 +1,398 @@
+[
+  {
+    "id": "pilot-gpt-6.1-terra-pi-native",
+    "phase": "pilot",
+    "model": "gpt-6.1-terra",
+    "task": "settlement-v2",
+    "arm": "pi-native",
+    "repeat": 0,
+    "maxDispatches": 2
+  },
+  {
+    "id": "pilot-gpt-6.1-terra-pi-compact-remote",
+    "phase": "pilot",
+    "model": "gpt-6.1-terra",
+    "task": "settlement-v2",
+    "arm": "pi-compact-remote",
+    "repeat": 0,
+    "maxDispatches": 2
+  },
+  {
+    "id": "pilot-gpt-6-luna-pi-native",
+    "phase": "pilot",
+    "model": "gpt-6-luna",
+    "task": "settlement-v2",
+    "arm": "pi-native",
+    "repeat": 0,
+    "maxDispatches": 2
+  },
+  {
+    "id": "pilot-gpt-6-luna-pi-compact-remote",
+    "phase": "pilot",
+    "model": "gpt-6-luna",
+    "task": "settlement-v2",
+    "arm": "pi-compact-remote",
+    "repeat": 0,
+    "maxDispatches": 2
+  },
+  {
+    "id": "r1-gpt-6.1-terra-settlement-v2-pi-native",
+    "phase": "comparison",
+    "model": "gpt-6.1-terra",
+    "task": "settlement-v2",
+    "arm": "pi-native",
+    "repeat": 1,
+    "maxDispatches": 6
+  },
+  {
+    "id": "r1-gpt-6.1-terra-settlement-v2-pi-compact-remote",
+    "phase": "comparison",
+    "model": "gpt-6.1-terra",
+    "task": "settlement-v2",
+    "arm": "pi-compact-remote",
+    "repeat": 1,
+    "maxDispatches": 6
+  },
+  {
+    "id": "r1-gpt-6.1-terra-redirect-v2-pi-compact-remote",
+    "phase": "comparison",
+    "model": "gpt-6.1-terra",
+    "task": "redirect-v2",
+    "arm": "pi-compact-remote",
+    "repeat": 1,
+    "maxDispatches": 6
+  },
+  {
+    "id": "r1-gpt-6.1-terra-redirect-v2-pi-native",
+    "phase": "comparison",
+    "model": "gpt-6.1-terra",
+    "task": "redirect-v2",
+    "arm": "pi-native",
+    "repeat": 1,
+    "maxDispatches": 6
+  },
+  {
+    "id": "r1-gpt-6-luna-settlement-v2-pi-compact-remote",
+    "phase": "comparison",
+    "model": "gpt-6-luna",
+    "task": "settlement-v2",
+    "arm": "pi-compact-remote",
+    "repeat": 1,
+    "maxDispatches": 6
+  },
+  {
+    "id": "r1-gpt-6-luna-settlement-v2-pi-native",
+    "phase": "comparison",
+    "model": "gpt-6-luna",
+    "task": "settlement-v2",
+    "arm": "pi-native",
+    "repeat": 1,
+    "maxDispatches": 6
+  },
+  {
+    "id": "r1-gpt-6-luna-redirect-v2-pi-native",
+    "phase": "comparison",
+    "model": "gpt-6-luna",
+    "task": "redirect-v2",
+    "arm": "pi-native",
+    "repeat": 1,
+    "maxDispatches": 6
+  },
+  {
+    "id": "r1-gpt-6-luna-redirect-v2-pi-compact-remote",
+    "phase": "comparison",
+    "model": "gpt-6-luna",
+    "task": "redirect-v2",
+    "arm": "pi-compact-remote",
+    "repeat": 1,
+    "maxDispatches": 6
+  },
+  {
+    "id": "r2-gpt-6.1-terra-settlement-v2-pi-compact-remote",
+    "phase": "comparison",
+    "model": "gpt-6.1-terra",
+    "task": "settlement-v2",
+    "arm": "pi-compact-remote",
+    "repeat": 2,
+    "maxDispatches": 6
+  },
+  {
+    "id": "r2-gpt-6.1-terra-settlement-v2-pi-native",
+    "phase": "comparison",
+    "model": "gpt-6.1-terra",
+    "task": "settlement-v2",
+    "arm": "pi-native",
+    "repeat": 2,
+    "maxDispatches": 6
+  },
+  {
+    "id": "r2-gpt-6.1-terra-redirect-v2-pi-native",
+    "phase": "comparison",
+    "model": "gpt-6.1-terra",
+    "task": "redirect-v2",
+    "arm": "pi-native",
+    "repeat": 2,
+    "maxDispatches": 6
+  },
+  {
+    "id": "r2-gpt-6.1-terra-redirect-v2-pi-compact-remote",
+    "phase": "comparison",
+    "model": "gpt-6.1-terra",
+    "task": "redirect-v2",
+    "arm": "pi-compact-remote",
+    "repeat": 2,
+    "maxDispatches": 6
+  },
+  {
+    "id": "r2-gpt-6-luna-settlement-v2-pi-native",
+    "phase": "comparison",
+    "model": "gpt-6-luna",
+    "task": "settlement-v2",
+    "arm": "pi-native",
+    "repeat": 2,
+    "maxDispatches": 6
+  },
+  {
+    "id": "r2-gpt-6-luna-settlement-v2-pi-compact-remote",
+    "phase": "comparison",
+    "model": "gpt-6-luna",
+    "task": "settlement-v2",
+    "arm": "pi-compact-remote",
+    "repeat": 2,
+    "maxDispatches": 6
+  },
+  {
+    "id": "r2-gpt-6-luna-redirect-v2-pi-compact-remote",
+    "phase": "comparison",
+    "model": "gpt-6-luna",
+    "task": "redirect-v2",
+    "arm": "pi-compact-remote",
+    "repeat": 2,
+    "maxDispatches": 6
+  },
+  {
+    "id": "r2-gpt-6-luna-redirect-v2-pi-native",
+    "phase": "comparison",
+    "model": "gpt-6-luna",
+    "task": "redirect-v2",
+    "arm": "pi-native",
+    "repeat": 2,
+    "maxDispatches": 6
+  },
+  {
+    "id": "r3-gpt-6.1-terra-settlement-v2-pi-native",
+    "phase": "comparison",
+    "model": "gpt-6.1-terra",
+    "task": "settlement-v2",
+    "arm": "pi-native",
+    "repeat": 3,
+    "maxDispatches": 6
+  },
+  {
+    "id": "r3-gpt-6.1-terra-settlement-v2-pi-compact-remote",
+    "phase": "comparison",
+    "model": "gpt-6.1-terra",
+    "task": "settlement-v2",
+    "arm": "pi-compact-remote",
+    "repeat": 3,
+    "maxDispatches": 6
+  },
+  {
+    "id": "r3-gpt-6.1-terra-redirect-v2-pi-compact-remote",
+    "phase": "comparison",
+    "model": "gpt-6.1-terra",
+    "task": "redirect-v2",
+    "arm": "pi-compact-remote",
+    "repeat": 3,
+    "maxDispatches": 6
+  },
+  {
+    "id": "r3-gpt-6.1-terra-redirect-v2-pi-native",
+    "phase": "comparison",
+    "model": "gpt-6.1-terra",
+    "task": "redirect-v2",
+    "arm": "pi-native",
+    "repeat": 3,
+    "maxDispatches": 6
+  },
+  {
+    "id": "r3-gpt-6-luna-settlement-v2-pi-compact-remote",
+    "phase": "comparison",
+    "model": "gpt-6-luna",
+    "task": "settlement-v2",
+    "arm": "pi-compact-remote",
+    "repeat": 3,
+    "maxDispatches": 6
+  },
+  {
+    "id": "r3-gpt-6-luna-settlement-v2-pi-native",
+    "phase": "comparison",
+    "model": "gpt-6-luna",
+    "task": "settlement-v2",
+    "arm": "pi-native",
+    "repeat": 3,
+    "maxDispatches": 6
+  },
+  {
+    "id": "r3-gpt-6-luna-redirect-v2-pi-native",
+    "phase": "comparison",
+    "model": "gpt-6-luna",
+    "task": "redirect-v2",
+    "arm": "pi-native",
+    "repeat": 3,
+    "maxDispatches": 6
+  },
+  {
+    "id": "r3-gpt-6-luna-redirect-v2-pi-compact-remote",
+    "phase": "comparison",
+    "model": "gpt-6-luna",
+    "task": "redirect-v2",
+    "arm": "pi-compact-remote",
+    "repeat": 3,
+    "maxDispatches": 6
+  },
+  {
+    "id": "r4-gpt-6.1-terra-settlement-v2-pi-compact-remote",
+    "phase": "comparison",
+    "model": "gpt-6.1-terra",
+    "task": "settlement-v2",
+    "arm": "pi-compact-remote",
+    "repeat": 4,
+    "maxDispatches": 6
+  },
+  {
+    "id": "r4-gpt-6.1-terra-settlement-v2-pi-native",
+    "phase": "comparison",
+    "model": "gpt-6.1-terra",
+    "task": "settlement-v2",
+    "arm": "pi-native",
+    "repeat": 4,
+    "maxDispatches": 6
+  },
+  {
+    "id": "r4-gpt-6.1-terra-redirect-v2-pi-native",
+    "phase": "comparison",
+    "model": "gpt-6.1-terra",
+    "task": "redirect-v2",
+    "arm": "pi-native",
+    "repeat": 4,
+    "maxDispatches": 6
+  },
+  {
+    "id": "r4-gpt-6.1-terra-redirect-v2-pi-compact-remote",
+    "phase": "comparison",
+    "model": "gpt-6.1-terra",
+    "task": "redirect-v2",
+    "arm": "pi-compact-remote",
+    "repeat": 4,
+    "maxDispatches": 6
+  },
+  {
+    "id": "r4-gpt-6-luna-settlement-v2-pi-native",
+    "phase": "comparison",
+    "model": "gpt-6-luna",
+    "task": "settlement-v2",
+    "arm": "pi-native",
+    "repeat": 4,
+    "maxDispatches": 6
+  },
+  {
+    "id": "r4-gpt-6-luna-settlement-v2-pi-compact-remote",
+    "phase": "comparison",
+    "model": "gpt-6-luna",
+    "task": "settlement-v2",
+    "arm": "pi-compact-remote",
+    "repeat": 4,
+    "maxDispatches": 6
+  },
+  {
+    "id": "r4-gpt-6-luna-redirect-v2-pi-compact-remote",
+    "phase": "comparison",
+    "model": "gpt-6-luna",
+    "task": "redirect-v2",
+    "arm": "pi-compact-remote",
+    "repeat": 4,
+    "maxDispatches": 6
+  },
+  {
+    "id": "r4-gpt-6-luna-redirect-v2-pi-native",
+    "phase": "comparison",
+    "model": "gpt-6-luna",
+    "task": "redirect-v2",
+    "arm": "pi-native",
+    "repeat": 4,
+    "maxDispatches": 6
+  },
+  {
+    "id": "r5-gpt-6.1-terra-settlement-v2-pi-native",
+    "phase": "comparison",
+    "model": "gpt-6.1-terra",
+    "task": "settlement-v2",
+    "arm": "pi-native",
+    "repeat": 5,
+    "maxDispatches": 6
+  },
+  {
+    "id": "r5-gpt-6.1-terra-settlement-v2-pi-compact-remote",
+    "phase": "comparison",
+    "model": "gpt-6.1-terra",
+    "task": "settlement-v2",
+    "arm": "pi-compact-remote",
+    "repeat": 5,
+    "maxDispatches": 6
+  },
+  {
+    "id": "r5-gpt-6.1-terra-redirect-v2-pi-compact-remote",
+    "phase": "comparison",
+    "model": "gpt-6.1-terra",
+    "task": "redirect-v2",
+    "arm": "pi-compact-remote",
+    "repeat": 5,
+    "maxDispatches": 6
+  },
+  {
+    "id": "r5-gpt-6.1-terra-redirect-v2-pi-native",
+    "phase": "comparison",
+    "model": "gpt-6.1-terra",
+    "task": "redirect-v2",
+    "arm": "pi-native",
+    "repeat": 5,
+    "maxDispatches": 6
+  },
+  {
+    "id": "r5-gpt-6-luna-settlement-v2-pi-compact-remote",
+    "phase": "comparison",
+    "model": "gpt-6-luna",
+    "task": "settlement-v2",
+    "arm": "pi-compact-remote",
+    "repeat": 5,
+    "maxDispatches": 6
+  },
+  {
+    "id": "r5-gpt-6-luna-settlement-v2-pi-native",
+    "phase": "comparison",
+    "model": "gpt-6-luna",
+    "task": "settlement-v2",
+    "arm": "pi-native",
+    "repeat": 5,
+    "maxDispatches": 6
+  },
+  {
+    "id": "r5-gpt-6-luna-redirect-v2-pi-native",
+    "phase": "comparison",
+    "model": "gpt-6-luna",
+    "task": "redirect-v2",
+    "arm": "pi-native",
+    "repeat": 5,
+    "maxDispatches": 6
+  },
+  {
+    "id": "r5-gpt-6-luna-redirect-v2-pi-compact-remote",
+    "phase": "comparison",
+    "model": "gpt-6-luna",
+    "task": "redirect-v2",
+    "arm": "pi-compact-remote",
+    "repeat": 5,
+    "maxDispatches": 6
+  }
+]

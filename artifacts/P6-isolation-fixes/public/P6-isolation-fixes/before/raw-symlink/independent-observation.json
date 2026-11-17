@@ -1,0 +1,20 @@
+{
+  "status": "failed",
+  "failure": "CONTINUATION_FAILED",
+  "dispatches": 1,
+  "evidenceDir": "/Users/wangxuyang/Code/codex/pstack/compact/artifacts/P6-isolation-fixes/before/raw-symlink",
+  "rawRealpath": "/Users/wangxuyang/Code/codex/pstack/compact/artifacts/P6-isolation-fixes/before/synthetic-outside-grant",
+  "externalWrites": [
+    "agent",
+    "control.json",
+    "grant.json",
+    "home",
+    "install.jsonl",
+    "native",
+    "network-denials.jsonl",
+    "offline-error-fa1ded8a-9841-4767-9de5-bc93763acd62.txt",
+    "package",
+    "tmp"
+  ],
+  "externalAuthExists": true
+}

@@ -1,0 +1,23 @@
+{
+  "implementationSHA": "92aab061d6c254fc385111edacef94f0ad16292c",
+  "public": {
+    "file": "public-evidence.tar.gz",
+    "sha256": "1d93fc6c750beec0324144041998cde1e46dedab7d5039d701f638e46ce46550",
+    "bytes": 59166,
+    "members": 510
+  },
+  "private": {
+    "file": "private-offline-evidence.tar.gz",
+    "sha256": "2344f6401303814533382401e68ec26ab03287d16f4107a85e95908e512034c2",
+    "bytes": 412550,
+    "members": 1544,
+    "mode": "0600",
+    "committed": false,
+    "excluded": [
+      "auth.json",
+      "package",
+      "tmp",
+      "home"
+    ]
+  }
+}

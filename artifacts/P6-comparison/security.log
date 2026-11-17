@@ -1,0 +1,13 @@
+PASS default-plan-help-real-have-no-auth-network-or-worker
+PASS old-functional-grant-and-real-grants-rejected
+PASS full-budget-schedule-compatibility-only
+PASS full-budget-schedule-quality-observation
+PASS full-budget-schedule-paired-five
+PASS concurrent-hidden-round-fallback-and-recovery-no-refund
+PASS crashed-owner-recovery-keeps-unsent-reservation
+PASS R1-literal-credentials-only-and-R2-private-paths
+PASS OS-sandbox-file-network-process-oracle-import-probes
+PASS typed-scorer-and-actual-business-settlement-v2
+PASS typed-scorer-and-actual-business-redirect-v2
+PASS null-usage-failure-denominator-and-no-fixture-superiority
+{"passed":12,"evidence":"/Users/wangxuyang/.t3/worktrees/compact/t3-88319be2-04ee402f7441184e/scratch/comparison/final-denominator-verification/security-evidence.json"}

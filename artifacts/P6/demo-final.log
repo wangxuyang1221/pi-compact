@@ -1,0 +1,26 @@
+node:child_process:955
+    throw err;
+    ^
+
+Error: Command failed: tmux -f /dev/null -S af29a9be.sock capture-pane -e -p -t fixture
+no server running on af29a9be.sock
+
+    at genericNodeError (node:internal/errors:983:15)
+    at wrappedFn (node:internal/errors:537:14)
+    at checkExecSyncError (node:child_process:916:11)
+    at execFileSync (node:child_process:952:15)
+    at cp.execFileSync (file:///Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec/scripts/fixture/relative-socket.mjs:11:17)
+    at Object.tmux (file:///Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec/scripts/fixture/runtime.mjs:64:29)
+    at record (file:///Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec/scripts/record-p6-demo.mjs:16:188)
+    at Timeout._onTimeout (file:///Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec/scripts/record-p6-demo.mjs:19:108)
+    at listOnTimeout (node:internal/timers:585:17)
+    at process.processTimers (node:internal/timers:521:7) {
+  status: 1,
+  signal: null,
+  output: [ null, '', 'no server running on af29a9be.sock\n' ],
+  pid: 62938,
+  stdout: '',
+  stderr: 'no server running on af29a9be.sock\n'
+}
+
+Node.js v22.22.2

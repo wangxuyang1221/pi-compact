@@ -1,0 +1,47 @@
+{
+  "schema": "pi-compact-comparison-grant/v1",
+  "mode": "real",
+  "authorized": false,
+  "explicitUserAuthorization": null,
+  "grantId": null,
+  "expiresAt": null,
+  "evidenceDir": null,
+  "authPath": null,
+  "allowAuthRefresh": false,
+  "syntheticOnly": true,
+  "profile": "quality-observation",
+  "binding": {
+    "plan": "63d414e023a8cea0128c77252a4236519fe0e2d9a20066cdd1380eadcabd4277",
+    "dataset": "85bb0cac0bb00c4f2d8af1aca5665b7993273b5452c7945ed7ae72d1764f0c6a",
+    "scorer": "657a3bb90fd5d0618acb60542b90bacb891876594728b8654ccd375ec3e29755",
+    "toolSchema": "a17ce6423ee16d6fc82a4b35c1ad79b2382e30bd7c2f87dee561df0876243199",
+    "package": "209888cd3f050ffe6d3a8932c15d25636d52d83919de0021cf9ce2c611d22c8d",
+    "host": "43fb6fe411aa082dd471bd7ae668583009b5e80e5f98da6cd2d834fc76f625d8",
+    "schedule": "c03de56cf44f7c262b3ebfae1fcf5ad267c23272d2a91917a3afa8e0ce6bcc70",
+    "runner": "ce2c617fff862bf971766de479689f334635df290ae5db1f3d70a03387fbe2ef",
+    "boundaryPreflight": "77eb122ff279de81c60d3f061186d4422aa35314c1c55dc2f954ff9e19e6ba20"
+  },
+  "targets": [
+    {
+      "provider": "openai-codex",
+      "model": "gpt-6.1-terra",
+      "api": "openai-codex-responses",
+      "baseUrl": "https://chatgpt.com/backend-api",
+      "endpoint": "https://chatgpt.com/backend-api/codex/responses",
+      "transport": "sse"
+    },
+    {
+      "provider": "openai-codex",
+      "model": "gpt-6-luna",
+      "api": "openai-codex-responses",
+      "baseUrl": "https://chatgpt.com/backend-api",
+      "endpoint": "https://chatgpt.com/backend-api/codex/responses",
+      "transport": "sse"
+    }
+  ],
+  "activeBudget": 0,
+  "maxDispatches": 0,
+  "maxEstimatedInputTokens": 0,
+  "maxReservedOutputTokens": 0,
+  "perRequestOutputTokens": 1000
+}

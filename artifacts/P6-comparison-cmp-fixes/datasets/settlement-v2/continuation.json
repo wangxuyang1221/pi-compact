@@ -1,0 +1,10 @@
+{
+  "prompt": "先调用 record_checkpoint 工具，仅从已有上下文填写压缩时状态，再继续修改工作区中的业务函数并运行工具允许的回归。record_checkpoint 参数为 {facts:{},pending:[],state:{}}，facts 键为 currency,duplicateKey,eligible,duplicateWinner,zero,sort；state 键为 metadataSchema,metadataReady,implementation,lastTool,regression。metadataSchema 为整数，metadataReady 为布尔；implementation 为 stub 或 implemented；lastTool 填实际工具名称；regression 为 not-run、pass 或 fail。facts 值采用历史契约原值；未知可填 null。pending 从任务 ID implement-settle,run-regression,metadata-upgrade,maintenance-review 中选择未完成的项。记录完状态后可 workspace_read/workspace_edit/workspace_write/run_regression，完成后简短说明结果。",
+  "pendingVocabulary": [
+    "implement-settle",
+    "run-regression",
+    "metadata-upgrade",
+    "maintenance-review"
+  ],
+  "toolPolicy": "record_checkpoint first and once, before any workspace read/edit/write/test; workspace_read/edit/write allowlisted regular files only; run_regression fixed host scorer in OS sandbox, aggregate scores only; no shell; oracle/history inaccessible"
+}

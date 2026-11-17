@@ -1,0 +1,17 @@
+{"name":"lifecycle","pass":false,"error":"Error: Timed out waiting for /reload","stack":"Error: Timed out waiting for /reload\n    at waitFor (file:///Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec/scripts/fixture/runtime.mjs:27:9)\n    at async command (file:///Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec/scripts/verify-p6.mjs:15:97)\n    at async file:///Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec/scripts/verify-p6.mjs:97:7"}
+/Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec/artifacts/P6/local/1794835228100
+node:internal/modules/run_main:123
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: P6 local fixtures
+    at file:///Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec/scripts/verify-p6.mjs:123:1 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
+
+Node.js v22.22.2

@@ -1,0 +1,38 @@
+{
+  "fixture": true,
+  "status": "passed",
+  "dispatches": 8,
+  "lanes": [
+    {
+      "id": "pilot-gpt-6.1-terra-pi-native",
+      "status": "passed",
+      "dispatches": 2
+    },
+    {
+      "id": "pilot-gpt-6.1-terra-pi-compact-remote",
+      "status": "passed",
+      "dispatches": 2
+    },
+    {
+      "id": "pilot-gpt-6-luna-pi-native",
+      "status": "passed",
+      "dispatches": 2
+    },
+    {
+      "id": "pilot-gpt-6-luna-pi-compact-remote",
+      "status": "passed",
+      "dispatches": 2
+    }
+  ],
+  "cleanup": {
+    "pids": [
+      78871,
+      78862,
+      78872
+    ],
+    "alive": [],
+    "listenerCount": 0,
+    "trackedSockets": 0,
+    "exitCode": 0
+  }
+}

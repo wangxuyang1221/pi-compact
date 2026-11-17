@@ -26,7 +26,7 @@ export async function waitFor(predicate, label, timeout = 20000) {
   }
   throw new Error(`Timed out waiting for ${label}`);
 }
-export function setup(dir, { variant = 'head', seed = 0, mode = 'success', tools = false, unsupported = false, profile = false, sessionFile = join(dir, 'session.jsonl'), observer = true, extensions = [], extraEnv = {}, compaction, extraArgs = [], configure } = {}) {
+export function setup(dir, { variant = 'head', seed = 0, mode = 'success', tools = false, unsupported = false, profile = false, sessionFile = join(dir, 'session.jsonl'), observer = true, extensions = [], extraEnv = {}, compaction, extraArgs = [], discover = false, configure } = {}) {
   mkdirSync(join(dir, 'agent'), { recursive: true });
   mkdirSync(join(dir, 'cwd'), { recursive: true });
   mkdirSync(join(dir, 'tmp'), { recursive: true });
@@ -38,8 +38,8 @@ export function setup(dir, { variant = 'head', seed = 0, mode = 'success', tools
     PI_CODING_AGENT_DIR: join(dir, 'agent'), PI_OFFLINE: '1', TMPDIR: join(dir, 'tmp'), JITI_FS_CACHE: 'false',
     NODE_OPTIONS: `--import=${join(root, 'scripts/fixture/preload.mjs')} ${profile ? '--cpu-prof --cpu-prof-dir=' + dir : ''}`, PI_FIXTURE_LOG: join(dir, 'events.jsonl'), PI_FIXTURE_CONTROL: join(dir, 'control.json'),
     PI_FIXTURE_SEED: String(seed), PI_FIXTURE_UNSUPPORTED: unsupported ? '1' : '0', ...extraEnv };
-  const args = ['--approve','--provider', 'fixture', '--model', 'fixture-model', '--thinking', 'off', '--no-extensions', ...(observer ? ['-e', join(root, 'scripts/fixture/observer.ts')] : []),
-    ...(variant === 'head' ? ['-e', join(root, 'src/index.ts')] : []), ...extensions.flatMap(path => ['-e', path]), '--no-skills', '--no-prompt-templates', '--no-themes', '--no-context-files',
+  const args = ['--approve','--provider', 'fixture', '--model', 'fixture-model', '--thinking', 'off', ...(discover ? [] : ['--no-extensions']), ...(observer ? ['-e', join(root, 'scripts/fixture/observer.ts')] : []),
+    ...(variant === 'head' ? ['-e', process.env.PI_TEST_ENTRY ?? join(root, 'src/index.ts')] : []), ...extensions.flatMap(path => ['-e', path]), '--no-skills', '--no-prompt-templates', '--no-themes', '--no-context-files',
     ...extraArgs, '--system-prompt', 'Synthetic fixture only.', '--session', sessionFile, '--tools', tools ? 'alpha,beta,gamma' : ''];
   configure?.(dir);
   return { env, args };
@@ -63,7 +63,7 @@ export async function tui(dir, options = {}) {
   const socket = join(root, createHash('sha256').update(dir).digest('hex').slice(0, 8) + '.sock');
   const tmux = (...args) => execFileSync('tmux', ['-f', '/dev/null', '-S', socket, ...args], { encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] });
   const command = `${Object.entries(env).map(([key, value]) => `${key}=${quote(value)}`).join(' ')} ${quote(shim)} ${args.map(quote).join(' ')} --tui-mode regular`;
-  writeFileSync(join(dir, 'run.sh'), `#!/bin/sh\ncd ${quote(join(dir, 'cwd'))}\n${command}\ncode=$?\nprintf '%s' "$code" > ${quote(join(dir, 'exit-code'))}\n`);
+  writeFileSync(join(dir, 'run.sh'), `#!/bin/sh\ncd ${quote(join(dir, 'cwd'))}\n${options.prelude ?? ''}\n${command}\ncode=$?\nprintf '%s' "$code" > ${quote(join(dir, 'exit-code'))}\n`);
   const start = performance.now();
   tmux('new-session', '-d', '-x', '120', '-y', '40', '-s', 'fixture', '/bin/sh', join(dir, 'run.sh'));
   const startedPids = [Number(tmux('display-message', '-p', '#{pid}').trim()), Number(tmux('list-panes', '-t', 'fixture', '-F', '#{pane_pid}').trim())];
@@ -104,6 +104,7 @@ export async function tui(dir, options = {}) {
       return cleanup;
     },
   };
+  options.onSpawn?.(api);
   try { await waitFor(() => events(dir).some(event => event.event === 'ready'), 'TUI ready'); }
   catch (error) { await api.capture('startup-failure'); await api.stop(); throw error; }
   try { await waitFor(() => { const screen = tmux('capture-pane', '-p', '-t', 'fixture'); return (screen.includes('fixture-model') || screen.includes('deepseek-chat') || (options.readyText && screen.includes(options.readyText))) && screen.includes('────'); }, 'editor ready'); }

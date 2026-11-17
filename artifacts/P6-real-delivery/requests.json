@@ -1,0 +1,68 @@
+[
+  {
+    "dispatch": 1,
+    "at": "2026-11-16T23:22:56.976Z",
+    "laneId": "pilot-gpt-6.1-terra-pi-native",
+    "provider": "openai-codex",
+    "model": "gpt-6.1-terra",
+    "stage": "compact",
+    "state": "failed",
+    "failure": "NON_SSE_RESPONSE",
+    "bodyBytes": 7704,
+    "decodedBytes": 120840,
+    "inputTokens": 30210,
+    "outputTokens": 1000,
+    "knownSent": true,
+    "serverConfirmed": true,
+    "encoded": {
+      "model": "gpt-6.1-terra",
+      "reasoning": {
+        "effort": "none"
+      },
+      "maxOutputTokens": 1000,
+      "stream": true,
+      "inputHash": "9f32f713913bb969cf8ec08ac2944235eea6bdd7c33d6a2291b389d5b4639d18",
+      "instructionsHash": "c464889dcfa60441e642f291445b49523f263e6fb2725d0c25075543a2ec3f8f",
+      "systemMessagesHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "toolsHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "opaqueItems": 0,
+      "compactionTrigger": false,
+      "rawSHA256": "ed86a6a301188fdb1f28a372f050088e61f558964e1f2f633f2ec969a6a2427f",
+      "toolNames": []
+    }
+  },
+  {
+    "dispatch": 2,
+    "at": "2026-11-16T23:22:59.318Z",
+    "laneId": "pilot-gpt-6.1-terra-pi-compact-remote",
+    "provider": "openai-codex",
+    "model": "gpt-6.1-terra",
+    "stage": "compact",
+    "state": "failed",
+    "failure": "HTTP_REJECTED",
+    "auditFailure": "HTTP_REJECTED",
+    "transportStatus": 400,
+    "bodyBytes": 7770,
+    "decodedBytes": 134105,
+    "inputTokens": 33527,
+    "outputTokens": 1000,
+    "knownSent": true,
+    "serverConfirmed": true,
+    "encoded": {
+      "model": "gpt-6.1-terra",
+      "reasoning": {
+        "effort": "none"
+      },
+      "maxOutputTokens": 1000,
+      "stream": true,
+      "inputHash": "d646818e9afadad83fc586afbf1cdcd2a788172702ccbec605937252aba3e049",
+      "instructionsHash": "75357d685f238b6afd7738be9786fdafde641eb6ca9a3be7471939715a68a4de",
+      "systemMessagesHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "toolsHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "opaqueItems": 0,
+      "compactionTrigger": true,
+      "rawSHA256": "0e1a509cfa927827933433af0c9c2e892265a64754f0b8f706efb6887ece5ebd",
+      "toolNames": []
+    }
+  }
+]

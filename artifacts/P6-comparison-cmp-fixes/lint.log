@@ -1,0 +1,23 @@
+
+> pi-compact@0.1.0 lint /Users/wangxuyang/Code/codex/pstack/compact
+> eslint src tests scripts
+
+
+/Users/wangxuyang/Code/codex/pstack/compact/scripts/verify-comparison-fixes.mjs
+   4:9   error  'spawnSync' is defined but never used        @typescript-eslint/no-unused-vars
+   5:39  error  'invalidTemplate' is defined but never used  @typescript-eslint/no-unused-vars
+   6:9   error  'dataset' is defined but never used          @typescript-eslint/no-unused-vars
+   6:58  error  'hashJSON' is defined but never used         @typescript-eslint/no-unused-vars
+   6:67  error  'fileManifest' is defined but never used     @typescript-eslint/no-unused-vars
+   6:80  error  'readJSON' is defined but never used         @typescript-eslint/no-unused-vars
+   9:9   error  'scoreRecord' is defined but never used      @typescript-eslint/no-unused-vars
+   9:21  error  'scoreWorkspace' is defined but never used   @typescript-eslint/no-unused-vars
+   9:36  error  'strictSuccess' is defined but never used    @typescript-eslint/no-unused-vars
+  10:9   error  'createTools' is defined but never used      @typescript-eslint/no-unused-vars
+  11:9   error  'buildSandbox' is defined but never used     @typescript-eslint/no-unused-vars
+  11:22  error  'scoreBehavior' is defined but never used    @typescript-eslint/no-unused-vars
+  11:36  error  'sandboxEvaluate' is defined but never used  @typescript-eslint/no-unused-vars
+
+✖ 13 problems (13 errors, 0 warnings)
+
+ ELIFECYCLE  Command failed with exit code 1.

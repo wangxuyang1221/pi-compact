@@ -1,0 +1,428 @@
+[
+  {
+    "name": "complete",
+    "expectedSuccess": true,
+    "expectedDispatches": 9,
+    "status": "pass",
+    "run": "/Users/wangxuyang/.t3/worktrees/compact/t3-88319be2-04ee402f7441184e/artifacts/P6-executor/runs/1794842302611-complete",
+    "actualDispatches": 9,
+    "cleanup": {
+      "runId": "9ba53283-2f00-466a-bd86-2d8a5592fe7d",
+      "pids": [
+        93073,
+        93565,
+        93154,
+        93678
+      ],
+      "pid": 93565,
+      "exitCode": 0,
+      "alive": false,
+      "listenerCount": 0,
+      "childOutputBytesDiscarded": 0,
+      "rawMode": 448
+    }
+  },
+  {
+    "name": "implicit-retry",
+    "expectedSuccess": true,
+    "expectedDispatches": 12,
+    "status": "pass",
+    "run": "/Users/wangxuyang/.t3/worktrees/compact/t3-88319be2-04ee402f7441184e/artifacts/P6-executor/runs/1794842305790-implicit-retry",
+    "actualDispatches": 12,
+    "cleanup": {
+      "runId": "6b9f3fa9-b626-4d43-9048-def33a8f0e42",
+      "pids": [
+        94334,
+        94785,
+        94439,
+        94823
+      ],
+      "pid": 94785,
+      "exitCode": 0,
+      "alive": false,
+      "listenerCount": 0,
+      "childOutputBytesDiscarded": 0,
+      "rawMode": 448
+    }
+  },
+  {
+    "name": "retry-cap",
+    "expectedSuccess": false,
+    "expectedDispatches": 1,
+    "status": "pass",
+    "run": "/Users/wangxuyang/.t3/worktrees/compact/t3-88319be2-04ee402f7441184e/artifacts/P6-executor/runs/1794842311283-retry-cap",
+    "actualDispatches": 1,
+    "cleanup": {
+      "runId": "7a3d61bb-677f-4a9e-a4aa-cd242739ab21",
+      "pids": [
+        94878,
+        94916
+      ],
+      "pid": 94878,
+      "exitCode": 1,
+      "alive": false,
+      "listenerCount": 0,
+      "childOutputBytesDiscarded": 0,
+      "rawMode": 448
+    }
+  },
+  {
+    "name": "concurrent",
+    "expectedSuccess": false,
+    "expectedDispatches": 1,
+    "status": "pass",
+    "run": "/Users/wangxuyang/.t3/worktrees/compact/t3-88319be2-04ee402f7441184e/artifacts/P6-executor/runs/1794842313007-concurrent",
+    "actualDispatches": 1,
+    "cleanup": {
+      "runId": "d1c80f76-cf29-4682-9d28-4522e033c803",
+      "pids": [
+        94943,
+        94981
+      ],
+      "pid": 94943,
+      "exitCode": 1,
+      "alive": false,
+      "listenerCount": 0,
+      "childOutputBytesDiscarded": 0,
+      "rawMode": 448
+    }
+  },
+  {
+    "name": "abort-after-reserve",
+    "expectedSuccess": false,
+    "expectedDispatches": 1,
+    "status": "pass",
+    "run": "/Users/wangxuyang/.t3/worktrees/compact/t3-88319be2-04ee402f7441184e/artifacts/P6-executor/runs/1794842313774-abort-after-reserve",
+    "actualDispatches": 1,
+    "cleanup": {
+      "runId": "5d0ecb50-6cb8-4e52-9aab-424509bd9f68",
+      "pids": [
+        95004,
+        95042
+      ],
+      "pid": 95004,
+      "exitCode": 1,
+      "alive": false,
+      "listenerCount": 0,
+      "childOutputBytesDiscarded": 0,
+      "rawMode": 448
+    }
+  },
+  {
+    "name": "multi-slice",
+    "expectedSuccess": false,
+    "expectedDispatches": 12,
+    "status": "pass",
+    "run": "/Users/wangxuyang/.t3/worktrees/compact/t3-88319be2-04ee402f7441184e/artifacts/P6-executor/runs/1794842314466-multi-slice",
+    "actualDispatches": 12,
+    "cleanup": {
+      "runId": "ca51c949-06ba-4ff3-b748-2a95bd98be1c",
+      "pids": [
+        95100,
+        95144,
+        95138,
+        95182
+      ],
+      "pid": 95144,
+      "exitCode": 1,
+      "alive": false,
+      "listenerCount": 0,
+      "childOutputBytesDiscarded": 0,
+      "rawMode": 448
+    }
+  },
+  {
+    "name": "budget",
+    "expectedSuccess": false,
+    "expectedDispatches": 1,
+    "status": "pass",
+    "run": "/Users/wangxuyang/.t3/worktrees/compact/t3-88319be2-04ee402f7441184e/artifacts/P6-executor/runs/1794842316862-budget",
+    "actualDispatches": 1,
+    "cleanup": {
+      "runId": "e63dd4ef-1c77-4455-8a53-e31682d59cb2",
+      "pids": [
+        95204,
+        95242
+      ],
+      "pid": 95204,
+      "exitCode": 1,
+      "alive": false,
+      "listenerCount": 0,
+      "childOutputBytesDiscarded": 0,
+      "rawMode": 448
+    }
+  },
+  {
+    "name": "input-budget",
+    "expectedSuccess": false,
+    "expectedDispatches": 0,
+    "status": "pass",
+    "run": "/Users/wangxuyang/.t3/worktrees/compact/t3-88319be2-04ee402f7441184e/artifacts/P6-executor/runs/1794842317614-input-budget",
+    "actualDispatches": 0,
+    "cleanup": {
+      "runId": "3458594b-2e11-4158-8669-8914513f74f3",
+      "pids": [
+        95280,
+        95318
+      ],
+      "pid": 95280,
+      "exitCode": 1,
+      "alive": false,
+      "listenerCount": 0,
+      "childOutputBytesDiscarded": 0,
+      "rawMode": 448
+    }
+  },
+  {
+    "name": "output-budget",
+    "expectedSuccess": false,
+    "expectedDispatches": 0,
+    "status": "pass",
+    "run": "/Users/wangxuyang/.t3/worktrees/compact/t3-88319be2-04ee402f7441184e/artifacts/P6-executor/runs/1794842318303-output-budget",
+    "actualDispatches": 0,
+    "cleanup": {
+      "runId": "c0f3286e-c181-4a44-9140-c9a69b9fc60a",
+      "pids": [
+        95341,
+        95380
+      ],
+      "pid": 95341,
+      "exitCode": 1,
+      "alive": false,
+      "listenerCount": 0,
+      "childOutputBytesDiscarded": 0,
+      "rawMode": 448
+    }
+  },
+  {
+    "name": "expired",
+    "expectedSuccess": false,
+    "expectedDispatches": 0,
+    "status": "pass",
+    "run": "/Users/wangxuyang/.t3/worktrees/compact/t3-88319be2-04ee402f7441184e/artifacts/P6-executor/runs/1794842318984-expired",
+    "actualDispatches": 0,
+    "cleanup": {
+      "runId": "7c4e516f-c9f6-4518-a4be-6e19d4d6b922",
+      "pids": [
+        95401,
+        95439
+      ],
+      "pid": 95401,
+      "exitCode": 1,
+      "alive": false,
+      "listenerCount": 0,
+      "childOutputBytesDiscarded": 0,
+      "rawMode": 448
+    }
+  },
+  {
+    "name": "persist-failure",
+    "expectedSuccess": false,
+    "expectedDispatches": 0,
+    "status": "pass",
+    "run": "/Users/wangxuyang/.t3/worktrees/compact/t3-88319be2-04ee402f7441184e/artifacts/P6-executor/runs/1794842319658-persist-failure",
+    "actualDispatches": 0,
+    "cleanup": {
+      "runId": "4cb82425-8726-4725-bb43-afd6b53a554c",
+      "pids": [
+        95462,
+        95500
+      ],
+      "pid": 95462,
+      "exitCode": 1,
+      "alive": false,
+      "listenerCount": 0,
+      "childOutputBytesDiscarded": 0,
+      "rawMode": 448
+    }
+  },
+  {
+    "name": "abort",
+    "expectedSuccess": false,
+    "expectedDispatches": 0,
+    "status": "pass",
+    "run": "/Users/wangxuyang/.t3/worktrees/compact/t3-88319be2-04ee402f7441184e/artifacts/P6-executor/runs/1794842320331-abort",
+    "actualDispatches": 0,
+    "cleanup": {
+      "runId": "99d8cf80-701d-4d71-9cbf-9ab3fe18a934",
+      "pids": [
+        95538,
+        95576
+      ],
+      "pid": 95538,
+      "exitCode": 1,
+      "alive": false,
+      "listenerCount": 0,
+      "childOutputBytesDiscarded": 0,
+      "rawMode": 448
+    }
+  },
+  {
+    "name": "endpoint",
+    "expectedSuccess": false,
+    "expectedDispatches": 0,
+    "status": "pass",
+    "run": "/Users/wangxuyang/.t3/worktrees/compact/t3-88319be2-04ee402f7441184e/artifacts/P6-executor/runs/1794842321016-endpoint",
+    "actualDispatches": 0,
+    "cleanup": {
+      "runId": "50eff4d5-6630-4b51-a5cc-bdbe191485ba",
+      "pids": [
+        95597,
+        95635
+      ],
+      "pid": 95597,
+      "exitCode": 1,
+      "alive": false,
+      "listenerCount": 0,
+      "childOutputBytesDiscarded": 0,
+      "rawMode": 448
+    }
+  },
+  {
+    "name": "model",
+    "expectedSuccess": false,
+    "expectedDispatches": 0,
+    "status": "pass",
+    "run": "/Users/wangxuyang/.t3/worktrees/compact/t3-88319be2-04ee402f7441184e/artifacts/P6-executor/runs/1794842321686-model",
+    "actualDispatches": 0,
+    "cleanup": {
+      "runId": "23787e43-16f6-454c-9ca6-29263c9b9299",
+      "pids": [
+        95656,
+        95694
+      ],
+      "pid": 95656,
+      "exitCode": 1,
+      "alive": false,
+      "listenerCount": 0,
+      "childOutputBytesDiscarded": 0,
+      "rawMode": 448
+    }
+  },
+  {
+    "name": "cap",
+    "expectedSuccess": false,
+    "expectedDispatches": 0,
+    "status": "pass",
+    "run": "/Users/wangxuyang/.t3/worktrees/compact/t3-88319be2-04ee402f7441184e/artifacts/P6-executor/runs/1794842322358-cap",
+    "actualDispatches": 0,
+    "cleanup": {
+      "runId": "49a629d5-fb50-4a3c-81d7-89530ae9e56f",
+      "pids": [
+        95721,
+        95759
+      ],
+      "pid": 95721,
+      "exitCode": 1,
+      "alive": false,
+      "listenerCount": 0,
+      "childOutputBytesDiscarded": 0,
+      "rawMode": 448
+    }
+  },
+  {
+    "name": "http-failure",
+    "expectedSuccess": false,
+    "expectedDispatches": 1,
+    "status": "pass",
+    "run": "/Users/wangxuyang/.t3/worktrees/compact/t3-88319be2-04ee402f7441184e/artifacts/P6-executor/runs/1794842323027-http-failure",
+    "actualDispatches": 1,
+    "cleanup": {
+      "runId": "5f67af23-156b-48ad-adfa-b04c57aa9961",
+      "pids": [
+        95781,
+        95819
+      ],
+      "pid": 95781,
+      "exitCode": 1,
+      "alive": false,
+      "listenerCount": 0,
+      "childOutputBytesDiscarded": 0,
+      "rawMode": 448
+    }
+  },
+  {
+    "name": "redaction",
+    "expectedSuccess": false,
+    "expectedDispatches": 1,
+    "status": "pass",
+    "run": "/Users/wangxuyang/.t3/worktrees/compact/t3-88319be2-04ee402f7441184e/artifacts/P6-executor/runs/1794842323741-redaction",
+    "actualDispatches": 1,
+    "cleanup": {
+      "runId": "d19d8ba5-cafd-4e1c-9590-fe16d1a16fca",
+      "pids": [
+        95858,
+        95896
+      ],
+      "pid": 95858,
+      "exitCode": 1,
+      "alive": false,
+      "listenerCount": 0,
+      "childOutputBytesDiscarded": 0,
+      "rawMode": 448
+    }
+  },
+  {
+    "name": "auth-refresh",
+    "expectedSuccess": false,
+    "expectedDispatches": 0,
+    "status": "pass",
+    "run": "/Users/wangxuyang/.t3/worktrees/compact/t3-88319be2-04ee402f7441184e/artifacts/P6-executor/runs/1794842324435-auth-refresh",
+    "actualDispatches": 0,
+    "cleanup": {
+      "runId": "c2acce5a-3050-4142-93c8-04b57f0a0dc0",
+      "pids": [
+        95936,
+        95974
+      ],
+      "pid": 95936,
+      "exitCode": 1,
+      "alive": false,
+      "listenerCount": 0,
+      "childOutputBytesDiscarded": 0,
+      "rawMode": 448
+    }
+  },
+  {
+    "name": "stream-failure",
+    "expectedSuccess": false,
+    "expectedDispatches": 1,
+    "status": "pass",
+    "run": "/Users/wangxuyang/.t3/worktrees/compact/t3-88319be2-04ee402f7441184e/artifacts/P6-executor/runs/1794842325111-stream-failure",
+    "actualDispatches": 1,
+    "cleanup": {
+      "runId": "2aac06eb-61ad-4ed6-9a0e-8c4a331492c3",
+      "pids": [
+        95995,
+        96033
+      ],
+      "pid": 95995,
+      "exitCode": 1,
+      "alive": false,
+      "listenerCount": 0,
+      "childOutputBytesDiscarded": 0,
+      "rawMode": 448
+    }
+  },
+  {
+    "name": "crash-after-reserve",
+    "expectedSuccess": false,
+    "expectedDispatches": 1,
+    "status": "pass",
+    "run": "/Users/wangxuyang/.t3/worktrees/compact/t3-88319be2-04ee402f7441184e/artifacts/P6-executor/runs/1794842325816-crash-after-reserve",
+    "actualDispatches": 1,
+    "cleanup": {
+      "runId": "11a283ef-8ee0-40cc-a8ef-f06f13875f19",
+      "pids": [
+        96056,
+        96095
+      ],
+      "pid": 96056,
+      "exitCode": 42,
+      "alive": false,
+      "listenerCount": 0,
+      "childOutputBytesDiscarded": 0,
+      "rawMode": 448
+    }
+  }
+]

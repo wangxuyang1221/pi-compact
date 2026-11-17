@@ -1,0 +1,34 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import { join, resolve } from 'node:path';
+import { spawnSync } from 'node:child_process';
+process.umask(0o077);
+const base = resolve('artifacts/P6-real-stop-independent');
+const root = resolve(process.argv[2] ?? base);
+assert(root === base || root.startsWith(base + '/'));
+fs.mkdirSync(root, { recursive: true, mode: 0o700 });
+for (const name of ['home', 'tmp']) fs.mkdirSync(join(root, name), { recursive: true, mode: 0o700 });
+assert(!fs.existsSync(join(root, 'host-results.json')), 'choose a fresh output directory');
+const preloads = base;
+const results = [];
+for (const [name, fault] of [['host-non-sse'], ['host-malformed'], ['host-http', 'http'], ['host-no-usage', 'no-usage'], ['host-normal']]) {
+  const out = join(root, name);
+  const args = ['--import=' + join(preloads, 'outer-deny.mjs'), '--import=' + join(preloads, 'inject.mjs'), 'scripts/comparison.mjs', 'offline', '--profile', 'compatibility-only', '--out', out, ...(fault ? ['--fixture-fault', fault] : [])];
+  const run = spawnSync(process.execPath, args, { encoding: 'utf8', timeout: 120000, env: { PATH: process.env.PATH, HOME: join(root, 'home'), TMPDIR: join(root, 'tmp'), JITI_FS_CACHE: 'false', LANG: 'en_US.UTF-8' } });
+  fs.writeFileSync(join(root, name + '.log'), run.stdout + run.stderr);
+  const result = JSON.parse(fs.readFileSync(join(out, 'result.json'))), ledger = JSON.parse(fs.readFileSync(join(out, 'ledger.json'))), cleanup = JSON.parse(fs.readFileSync(join(out, 'cleanup.json')));
+  const expected = name === 'host-normal' ? 8 : 1;
+  results.push({ name, pid: run.pid, exit: run.status, dispatches: ledger.rows.length, lanes: result.lanes.map(({ id, status, failure, dispatches }) => ({ id, status, failure, dispatches })), rows: ledger.rows.map(({ state, failure, auditFailure }) => ({ state, failure, auditFailure })), cleanup });
+  fs.writeFileSync(join(root, 'host-results.json'), JSON.stringify(results, null, 2));
+  assert.equal(ledger.rows.length, expected, name); assert.equal(result.dispatches, expected);
+  assert.equal(run.status, name === 'host-normal' ? 0 : 1, name);
+  assert.deepEqual(cleanup.alive, []); assert.equal(cleanup.listenerCount, 0); assert.equal(cleanup.trackedSockets, 0);
+  if (name !== 'host-normal') assert(result.lanes.slice(1).every(r => r.status === 'ineligible' && r.failure === 'GLOBAL_AUDIT_STOP'));
+  const resume = spawnSync(process.execPath, [...args, '--resume'], { encoding: 'utf8', timeout: 120000, env: { PATH: process.env.PATH, HOME: join(root, 'home'), TMPDIR: join(root, 'tmp'), JITI_FS_CACHE: 'false', LANG: 'en_US.UTF-8' } });
+  fs.writeFileSync(join(root, name + '-resume.log'), resume.stdout + resume.stderr);
+  assert.equal(resume.status, run.status);
+  assert.equal(JSON.parse(fs.readFileSync(join(out, 'ledger.json'))).rows.length, expected);
+  results.at(-1).resume = { pid: resume.pid, exit: resume.status, unchangedDispatches: expected, cleanup: JSON.parse(fs.readFileSync(join(out, 'cleanup.json'))) };
+  fs.writeFileSync(join(root, 'host-results.json'), JSON.stringify(results, null, 2));
+  console.log(name + ' passed, resume added zero dispatches');
+}

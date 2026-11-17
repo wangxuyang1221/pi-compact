@@ -1,0 +1,13 @@
+{
+  "kind": "design-artifact-validation",
+  "pid": 62783,
+  "networkRequests": 0,
+  "checks": [
+    "all proposed budget formulas consistent",
+    "plan disarmed",
+    "no executable grant",
+    "synthetic tool reads and edits replay exactly to workspace bytes",
+    "known finished helpers dead and no listeners"
+  ],
+  "realMeasurements": false
+}

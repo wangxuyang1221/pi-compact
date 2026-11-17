@@ -1,0 +1,61 @@
+TAP version 13
+# Subtest: dry-run is unarmed and execute rejects before auth or network
+ok 1 - dry-run is unarmed and execute rejects before auth or network
+  ---
+  duration_ms: 40.680375
+  type: 'test'
+  ...
+# Subtest: all phases share twelve durable reservations including failure and fallback
+ok 2 - all phases share twelve durable reservations including failure and fallback
+  ---
+  duration_ms: 0.4215
+  type: 'test'
+  ...
+# Subtest: abort, persistence failure, token cap and redaction stop unsafe fixture sends
+not ok 3 - abort, persistence failure, token cap and redaction stop unsafe fixture sends
+  ---
+  duration_ms: 0.305125
+  type: 'test'
+  location: '/Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec/tests/live-plan.test.mjs:23:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    The input did not match the regular expression /Budget exhausted/. Input:
+    
+    'AbortError: This operation was aborted'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+  actual:
+  error: ''
+  stack: |-
+    new DOMException (node:internal/per_context/domexception:76:18)
+    AbortSignal.abort (node:internal/abort_controller:231:14)
+    TestContext.<anonymous> (file:///Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec/tests/live-plan.test.mjs:25:30)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  operator: 'rejects'
+  stack: |-
+    async TestContext.<anonymous> (file:///Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec/tests/live-plan.test.mjs:30:3)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: concurrent fixture attempts serialize durable reservation before any send
+ok 4 - concurrent fixture attempts serialize durable reservation before any send
+  ---
+  duration_ms: 4.659208
+  type: 'test'
+  ...
+1..4
+# tests 4
+# suites 0
+# pass 3
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 72.203292

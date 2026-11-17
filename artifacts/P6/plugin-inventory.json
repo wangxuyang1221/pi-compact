@@ -1,0 +1,33 @@
+{
+  "readScope": "Only settings packages/extensions fields and auto-discovery entry names. No auth, history or env credential reads.",
+  "inventory": [
+    {
+      "path": "/Users/wangxuyang/.pi/agent",
+      "settingsExists": true,
+      "packages": [],
+      "explicitExtensions": [],
+      "autoDiscoveryEntries": [
+        {
+          "name": ".DS_Store"
+        },
+        {
+          "name": "pi-openai-fast-mode",
+          "children": [
+            "config.json"
+          ]
+        },
+        {
+          "name": "subagents.zip"
+        }
+      ]
+    },
+    {
+      "path": "/Users/wangxuyang/Code/codex/pstack/compact/.pi",
+      "settingsExists": false,
+      "packages": [],
+      "explicitExtensions": [],
+      "autoDiscoveryEntries": []
+    }
+  ],
+  "conclusion": "No executable external extension entry found. pi-openai-fast-mode contains config.json only; its contents were not read. subagents.zip is not an autoloadable extension. Host builtins are exercised by ordinary discovery. Arbitrary third-party combinations remain untested."
+}

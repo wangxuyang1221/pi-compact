@@ -1,0 +1,8 @@
+{
+  "ownerCheck": true,
+  "newProductCommentCount": 0,
+  "newSuppressions": 0,
+  "anyBypass": 0,
+  "changedCore": "src/pi-adapter/session.ts two added/replaced lines",
+  "review": "No independent comment reviewer spawned per explicit user prohibition. Root fresh review pending."
+}

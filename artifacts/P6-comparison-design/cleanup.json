@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "backgroundProcessesStarted": [],
+  "listenersStarted": [],
+  "knownExitedHelperPidsChecked": [
+    62783,
+    50790
+  ],
+  "alive": [],
+  "listenerCount": 0,
+  "synchronousCommands": "all earlier shell/Node helpers returned exit status; no persistent exec session",
+  "pidCoverage": "early synchronous helpers not individually recorded; no claim of complete per-PID census",
+  "outsideWorkspaceWrites": false,
+  "providerRequests": 0,
+  "realAuthOrHistoryReads": 0
+}

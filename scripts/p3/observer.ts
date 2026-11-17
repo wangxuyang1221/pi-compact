@@ -1,7 +1,7 @@
 import * as host from '@earendil-works/pi-coding-agent';
 import fs from 'node:fs';
 const note = (event, data = {}) => fs.appendFileSync(process.env.PI_FIXTURE_LOG, JSON.stringify({ at: performance.now(), event, ...data }) + '\n');
-const sessions = new Map();
+const sessions = globalThis[Symbol.for('pi-compact.p3.fixture-sessions')] ??= new Map();
 const bind = host.AgentSession.prototype.bindExtensions;
 host.AgentSession.prototype.bindExtensions = async function (...args) {
   sessions.set(this.sessionManager, this);

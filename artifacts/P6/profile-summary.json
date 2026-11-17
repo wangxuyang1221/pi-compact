@@ -1,0 +1,204 @@
+[
+  {
+    "file": "artifacts/P3/perf/1794835740691/0-baseline/control.json.cpuprofile",
+    "hot": [
+      {
+        "us": 37417,
+        "functionName": "post",
+        "scriptId": "264",
+        "url": "node:inspector",
+        "lineNumber": 117,
+        "columnNumber": 6
+      },
+      {
+        "us": 4500,
+        "functionName": "globalThis.fetch",
+        "scriptId": "88",
+        "url": "file:///Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec/scripts/fixture/preload.mjs",
+        "lineNumber": 33,
+        "columnNumber": 19
+      },
+      {
+        "us": 3000,
+        "functionName": "",
+        "scriptId": "267",
+        "url": "file:///Users/wangxuyang/Library/pnpm/store/v11/links/@earendil-works/pi-coding-agent/1.5.2/643b01c0aa78c8ef11bcca81208b3bcdf7c0b473aa9432569290180e541a3aca/node_modules/@earendil-works/pi-coding-agent/dist/bundle/chunks/openai-codex-responses-TEQRB65N.js",
+        "lineNumber": 1,
+        "columnNumber": 7396
+      },
+      {
+        "us": 1583,
+        "functionName": "resolveProviderAuthWithSignal",
+        "scriptId": "223",
+        "url": "file:///Users/wangxuyang/Library/pnpm/store/v11/links/@earendil-works/pi-coding-agent/1.5.2/643b01c0aa78c8ef11bcca81208b3bcdf7c0b473aa9432569290180e541a3aca/node_modules/@earendil-works/pi-coding-agent/dist/bundle/chunks/chunk-AUUCDC7R.js",
+        "lineNumber": 3,
+        "columnNumber": 8941
+      },
+      {
+        "us": 1542,
+        "functionName": "readFileUtf8",
+        "scriptId": "0",
+        "url": "",
+        "lineNumber": -1,
+        "columnNumber": -1
+      },
+      {
+        "us": 1500,
+        "functionName": "log",
+        "scriptId": "88",
+        "url": "file:///Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec/scripts/fixture/preload.mjs",
+        "lineNumber": 5,
+        "columnNumber": 12
+      },
+      {
+        "us": 1500,
+        "functionName": "sse",
+        "scriptId": "88",
+        "url": "file:///Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec/scripts/fixture/preload.mjs",
+        "lineNumber": 21,
+        "columnNumber": 12
+      },
+      {
+        "us": 1500,
+        "functionName": "cancel",
+        "scriptId": "185",
+        "url": "node:internal/webstreams/readablestream",
+        "lineNumber": 889,
+        "columnNumber": 8
+      },
+      {
+        "us": 1458,
+        "functionName": "setOwnProperty",
+        "scriptId": "13",
+        "url": "node:internal/util",
+        "lineNumber": 720,
+        "columnNumber": 23
+      },
+      {
+        "us": 1083,
+        "functionName": "dispatch",
+        "scriptId": "0",
+        "url": "",
+        "lineNumber": -1,
+        "columnNumber": -1
+      },
+      {
+        "us": 833,
+        "functionName": "pathToFileURL",
+        "scriptId": "0",
+        "url": "",
+        "lineNumber": -1,
+        "columnNumber": -1
+      },
+      {
+        "us": 792,
+        "functionName": "validateThisAbortSignal",
+        "scriptId": "93",
+        "url": "node:internal/abort_controller",
+        "lineNumber": 134,
+        "columnNumber": 32
+      }
+    ]
+  },
+  {
+    "file": "artifacts/P3/perf/1794835740691/0-head/control.json.cpuprofile",
+    "hot": [
+      {
+        "us": 53750,
+        "functionName": "post",
+        "scriptId": "280",
+        "url": "node:inspector",
+        "lineNumber": 117,
+        "columnNumber": 6
+      },
+      {
+        "us": 13250,
+        "functionName": "fsync",
+        "scriptId": "0",
+        "url": "",
+        "lineNumber": -1,
+        "columnNumber": -1
+      },
+      {
+        "us": 11125,
+        "functionName": "fsync",
+        "scriptId": "0",
+        "url": "",
+        "lineNumber": -1,
+        "columnNumber": -1
+      },
+      {
+        "us": 10083,
+        "functionName": "fsync",
+        "scriptId": "0",
+        "url": "",
+        "lineNumber": -1,
+        "columnNumber": -1
+      },
+      {
+        "us": 5042,
+        "functionName": "fsync",
+        "scriptId": "0",
+        "url": "",
+        "lineNumber": -1,
+        "columnNumber": -1
+      },
+      {
+        "us": 3875,
+        "functionName": "fsync",
+        "scriptId": "0",
+        "url": "",
+        "lineNumber": -1,
+        "columnNumber": -1
+      },
+      {
+        "us": 3000,
+        "functionName": "",
+        "scriptId": "283",
+        "url": "file:///Users/wangxuyang/Library/pnpm/store/v11/links/@earendil-works/pi-coding-agent/1.5.2/643b01c0aa78c8ef11bcca81208b3bcdf7c0b473aa9432569290180e541a3aca/node_modules/@earendil-works/pi-coding-agent/dist/bundle/chunks/openai-codex-responses-TEQRB65N.js",
+        "lineNumber": 1,
+        "columnNumber": 7396
+      },
+      {
+        "us": 2875,
+        "functionName": "digest",
+        "scriptId": "273",
+        "url": "file:///Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec/artifacts/P6/release/package/src/checkpoint.ts",
+        "lineNumber": 14,
+        "columnNumber": 15
+      },
+      {
+        "us": 1541,
+        "functionName": "normalizeString",
+        "scriptId": "36",
+        "url": "node:path",
+        "lineNumber": 92,
+        "columnNumber": 24
+      },
+      {
+        "us": 1500,
+        "functionName": "",
+        "scriptId": "264",
+        "url": "file:///Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec/artifacts/P6/release/package/src/pi-adapter/session.ts",
+        "lineNumber": 169,
+        "columnNumber": 23
+      },
+      {
+        "us": 1500,
+        "functionName": "streamSimple",
+        "scriptId": "283",
+        "url": "file:///Users/wangxuyang/Library/pnpm/store/v11/links/@earendil-works/pi-coding-agent/1.5.2/643b01c0aa78c8ef11bcca81208b3bcdf7c0b473aa9432569290180e541a3aca/node_modules/@earendil-works/pi-coding-agent/dist/bundle/chunks/openai-codex-responses-TEQRB65N.js",
+        "lineNumber": 1,
+        "columnNumber": 13369
+      },
+      {
+        "us": 1500,
+        "functionName": "globalThis.fetch",
+        "scriptId": "86",
+        "url": "file:///Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec/scripts/p3/preload.mjs",
+        "lineNumber": 8,
+        "columnNumber": 19
+      }
+    ]
+  }
+]

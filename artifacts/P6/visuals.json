@@ -1,0 +1,72 @@
+[
+  {
+    "output": "artifacts/P6/review/native-baseline.png",
+    "source": "/Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec/artifacts/P6/local/1794835573870/native/completed.png",
+    "sourceJSON": "/Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec/artifacts/P6/local/1794835573870/native/completed.json",
+    "sha256": "eb0706c91b4d50e12c781ef7b436009a4a6634d0bd2a974a8adb967eea159ca8",
+    "tarballSHA": "dafa0fdd94b36a2fe3849c5575790e10dfcf577b5a20046807fea6a59cdb20c6"
+  },
+  {
+    "output": "artifacts/P6/review/saved-config.png",
+    "source": "/Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec/artifacts/P6/local/1794835573870/installed/config.png",
+    "sourceJSON": "/Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec/artifacts/P6/local/1794835573870/installed/config.json",
+    "sha256": "3c48a069e690cde07890bc9c787f8eabdf4ed8eb73598582d92c48ab6e3366f2",
+    "tarballSHA": "dafa0fdd94b36a2fe3849c5575790e10dfcf577b5a20046807fea6a59cdb20c6"
+  },
+  {
+    "output": "artifacts/P6/review/automatic.png",
+    "source": "/Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec/artifacts/P6/local/1794835573870/auto/completed.png",
+    "sourceJSON": "/Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec/artifacts/P6/local/1794835573870/auto/completed.json",
+    "sha256": "125394c8ad63e705fad42f0a2316c8063d87481b35596ed61300ef4ae18c76eb",
+    "tarballSHA": "dafa0fdd94b36a2fe3849c5575790e10dfcf577b5a20046807fea6a59cdb20c6"
+  },
+  {
+    "output": "artifacts/P6/review/disk-restore.png",
+    "source": "/Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec/artifacts/P6/local/1794835573870/restored/restored.png",
+    "sourceJSON": "/Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec/artifacts/P6/local/1794835573870/restored/restored.json",
+    "sha256": "c89074c7a9a546454c464d6ab4a80591ecfe1612746ab8e29b59ef90c0c26625",
+    "tarballSHA": "dafa0fdd94b36a2fe3849c5575790e10dfcf577b5a20046807fea6a59cdb20c6"
+  },
+  {
+    "output": "artifacts/P6/review/network-fallback.png",
+    "source": "/Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec/artifacts/P6/local/1794835573870/network-error/completed.png",
+    "sourceJSON": "/Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec/artifacts/P6/local/1794835573870/network-error/completed.json",
+    "sha256": "734f8d7c1dd60aa41cd908e1750476e8d68853f180281ff75d3fa88fb67986b8",
+    "tarballSHA": "dafa0fdd94b36a2fe3849c5575790e10dfcf577b5a20046807fea6a59cdb20c6"
+  },
+  {
+    "output": "artifacts/P6/review/quota-fallback.png",
+    "source": "/Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec/artifacts/P6/local/1794835573870/quota/completed.png",
+    "sourceJSON": "/Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec/artifacts/P6/local/1794835573870/quota/completed.json",
+    "sha256": "cc901c418d640215b72d63a34e242fb31fcd9a957f9312732a70d60e6950b8a4",
+    "tarballSHA": "dafa0fdd94b36a2fe3849c5575790e10dfcf577b5a20046807fea6a59cdb20c6"
+  },
+  {
+    "output": "artifacts/P6/review/cancelled.png",
+    "source": "/Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec/artifacts/P6/local/1794835573870/cancel/blocked.png",
+    "sourceJSON": "/Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec/artifacts/P6/local/1794835573870/cancel/blocked.json",
+    "sha256": "2222df5ad5c8c7d2f3d7d80abceb086bee604960d7ccd08810d3aa88b3bda14a",
+    "tarballSHA": "dafa0fdd94b36a2fe3849c5575790e10dfcf577b5a20046807fea6a59cdb20c6"
+  },
+  {
+    "output": "artifacts/P6/review/double-failure.png",
+    "source": "/Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec/artifacts/P6/local/1794835573870/doublefail/blocked.png",
+    "sourceJSON": "/Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec/artifacts/P6/local/1794835573870/doublefail/blocked.json",
+    "sha256": "5d0a4ac9c5096f92f1c96e7009f205584d54425b6d1f5d135526c22413988183",
+    "tarballSHA": "dafa0fdd94b36a2fe3849c5575790e10dfcf577b5a20046807fea6a59cdb20c6"
+  },
+  {
+    "output": "artifacts/P6/review/disabled.png",
+    "source": "/Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec/artifacts/P6/local/1794835573870/lifecycle/disabled.png",
+    "sourceJSON": "/Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec/artifacts/P6/local/1794835573870/lifecycle/disabled.json",
+    "sha256": "434fda2550935cdc6692d1ba449ced81b08996d18e25789180ca499d2ad19164",
+    "tarballSHA": "dafa0fdd94b36a2fe3849c5575790e10dfcf577b5a20046807fea6a59cdb20c6"
+  },
+  {
+    "output": "artifacts/P6/review/uninstalled.png",
+    "source": "/Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec/artifacts/P6/local/1794835573870/after-remove/removed.png",
+    "sourceJSON": "/Users/wangxuyang/.t3/worktrees/compact/t3-a5e921a8-de93512efb933bec/artifacts/P6/local/1794835573870/after-remove/removed.json",
+    "sha256": "29c5d6bd2fa5037d084ca6ba2492f602768880fee7e6df031fe9cbfe426aea0b",
+    "tarballSHA": "dafa0fdd94b36a2fe3849c5575790e10dfcf577b5a20046807fea6a59cdb20c6"
+  }
+]

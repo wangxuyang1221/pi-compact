@@ -1,0 +1,149 @@
+{
+  "realMeasurements": false,
+  "providerRequests": 0,
+  "authReads": 0,
+  "installedHostHash": "43fb6fe411aa082dd471bd7ae668583009b5e80e5f98da6cd2d834fc76f625d8",
+  "rows": [
+    {
+      "task": "settlement-v1",
+      "model": "gpt-6.1-terra",
+      "rawHistoryHash": "978eae8153d6879b763bac5d56fbc988efec4efb18234fa2dbd2ad1aa7cf1d6b",
+      "normalizedMessageHash": "f153d1d89db0fd5bbc1521d063922d15fc77c98d5bd3cb082863abc831a98e6d",
+      "firstKeptEntryId": "e226",
+      "isSplitTurn": true,
+      "prefixEntries": 223,
+      "turnPrefixEntries": 3,
+      "longestToolResultCharacters": 1585,
+      "priorSummary": null,
+      "settings": {
+        "enabled": true,
+        "reserveTokens": 16384,
+        "keepRecentTokens": 20000
+      }
+    },
+    {
+      "task": "settlement-v2",
+      "model": "gpt-6.1-terra",
+      "rawHistoryHash": "406cda1c7b9c2d2fba3ac8fb08ef09195eff3f72b97c4c242b3771227e66bb90",
+      "normalizedMessageHash": "58c247d7f55c0d2c15decc5209fb4ab305aa26ebc425fd49a2fa6e21a4270d3b",
+      "firstKeptEntryId": "e227",
+      "isSplitTurn": false,
+      "prefixEntries": 227,
+      "turnPrefixEntries": 0,
+      "longestToolResultCharacters": 1585,
+      "priorSummary": null,
+      "settings": {
+        "enabled": true,
+        "reserveTokens": 16384,
+        "keepRecentTokens": 20000
+      }
+    },
+    {
+      "task": "redirect-v1",
+      "model": "gpt-6.1-terra",
+      "rawHistoryHash": "0ffea4903817164acf410e898bfed919bbd72c6ea55cb75230648d9a41629f78",
+      "normalizedMessageHash": "0aeefcb87b6202c1e3b550a98da74912345a8c0813711f8a57477e65bf7a2f63",
+      "firstKeptEntryId": "e226",
+      "isSplitTurn": true,
+      "prefixEntries": 223,
+      "turnPrefixEntries": 3,
+      "longestToolResultCharacters": 1585,
+      "priorSummary": null,
+      "settings": {
+        "enabled": true,
+        "reserveTokens": 16384,
+        "keepRecentTokens": 20000
+      }
+    },
+    {
+      "task": "redirect-v2",
+      "model": "gpt-6.1-terra",
+      "rawHistoryHash": "e658ec5eddeeeabfce828bd40de5648b329f5beb84b18f83334abc5c90831642",
+      "normalizedMessageHash": "0968bb6feb27959be8ffcb13ff3e1b7dc602f80269ed33b9a736bff519701545",
+      "firstKeptEntryId": "e227",
+      "isSplitTurn": false,
+      "prefixEntries": 227,
+      "turnPrefixEntries": 0,
+      "longestToolResultCharacters": 1585,
+      "priorSummary": null,
+      "settings": {
+        "enabled": true,
+        "reserveTokens": 16384,
+        "keepRecentTokens": 20000
+      }
+    },
+    {
+      "task": "settlement-v1",
+      "model": "gpt-6-luna",
+      "rawHistoryHash": "978eae8153d6879b763bac5d56fbc988efec4efb18234fa2dbd2ad1aa7cf1d6b",
+      "normalizedMessageHash": "f731c76cc554aeec661671a2fb922b9f89542b2ef4d8bf808d963fe45fe1b4e1",
+      "firstKeptEntryId": "e226",
+      "isSplitTurn": true,
+      "prefixEntries": 223,
+      "turnPrefixEntries": 3,
+      "longestToolResultCharacters": 1585,
+      "priorSummary": null,
+      "settings": {
+        "enabled": true,
+        "reserveTokens": 16384,
+        "keepRecentTokens": 20000
+      }
+    },
+    {
+      "task": "settlement-v2",
+      "model": "gpt-6-luna",
+      "rawHistoryHash": "406cda1c7b9c2d2fba3ac8fb08ef09195eff3f72b97c4c242b3771227e66bb90",
+      "normalizedMessageHash": "d7d361bc0e56eeb2d40d1a49d0e6f4efc55a6fb404c36cf3ef85496ac1ca92de",
+      "firstKeptEntryId": "e227",
+      "isSplitTurn": false,
+      "prefixEntries": 227,
+      "turnPrefixEntries": 0,
+      "longestToolResultCharacters": 1585,
+      "priorSummary": null,
+      "settings": {
+        "enabled": true,
+        "reserveTokens": 16384,
+        "keepRecentTokens": 20000
+      }
+    },
+    {
+      "task": "redirect-v1",
+      "model": "gpt-6-luna",
+      "rawHistoryHash": "0ffea4903817164acf410e898bfed919bbd72c6ea55cb75230648d9a41629f78",
+      "normalizedMessageHash": "4d28bbae023987f41258672ad8f9c9c4cb15f43453939dac921be857ab28409d",
+      "firstKeptEntryId": "e226",
+      "isSplitTurn": true,
+      "prefixEntries": 223,
+      "turnPrefixEntries": 3,
+      "longestToolResultCharacters": 1585,
+      "priorSummary": null,
+      "settings": {
+        "enabled": true,
+        "reserveTokens": 16384,
+        "keepRecentTokens": 20000
+      }
+    },
+    {
+      "task": "redirect-v2",
+      "model": "gpt-6-luna",
+      "rawHistoryHash": "e658ec5eddeeeabfce828bd40de5648b329f5beb84b18f83334abc5c90831642",
+      "normalizedMessageHash": "972d4cde84b075721855feb5d24d7c8809d81ca2bdc9af518294254f739a1f9c",
+      "firstKeptEntryId": "e227",
+      "isSplitTurn": false,
+      "prefixEntries": 227,
+      "turnPrefixEntries": 0,
+      "longestToolResultCharacters": 1585,
+      "priorSummary": null,
+      "settings": {
+        "enabled": true,
+        "reserveTokens": 16384,
+        "keepRecentTokens": 20000
+      }
+    }
+  ],
+  "cleanup": {
+    "trackedSockets": 0,
+    "listeners": 0,
+    "deniedNetworkActions": 0
+  }
+}

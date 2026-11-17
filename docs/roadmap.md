@@ -60,11 +60,12 @@ Accept this stage when manual, automatic, remote, and fallback success each show
 
 Depends on the integrated stage 5 revision.
 
-- [ ] Verify installation from a clean package in an isolated Pi environment.
+- [x] Verify installation from a clean package in an isolated Pi environment.
 - [ ] Run authorized real-provider tests with synthetic data, a bounded request budget, and no user conversation history.
 - [ ] Compare native and remote compaction on the same tasks, recording failures and retained facts.
 - [ ] Validate supported transports, long conversations, repeated compaction, provider changes, and recovery.
-- [ ] Publish compatibility and installation documentation after acceptance.
+- [x] Write compatibility, installation, recovery and disarmed live-acceptance documentation.
+- [ ] Complete independent P6 review and user acceptance before publication.
 
 Accept this stage when the package reproduces the approved behavior, supported configurations have runtime evidence, and remaining limitations are documented.
 
