@@ -26,7 +26,7 @@ export async function waitFor(predicate, label, timeout = 20000) {
   }
   throw new Error(`Timed out waiting for ${label}`);
 }
-export function setup(dir, { variant = 'head', seed = 0, mode = 'success', tools = false, unsupported = false, profile = false, sessionFile = join(dir, 'session.jsonl'), observer = true, extensions = [], extraEnv = {}, compaction, extraArgs = [] } = {}) {
+export function setup(dir, { variant = 'head', seed = 0, mode = 'success', tools = false, unsupported = false, profile = false, sessionFile = join(dir, 'session.jsonl'), observer = true, extensions = [], extraEnv = {}, compaction, extraArgs = [], configure } = {}) {
   mkdirSync(join(dir, 'agent'), { recursive: true });
   mkdirSync(join(dir, 'cwd'), { recursive: true });
   mkdirSync(join(dir, 'tmp'), { recursive: true });
@@ -41,6 +41,7 @@ export function setup(dir, { variant = 'head', seed = 0, mode = 'success', tools
   const args = ['--approve','--provider', 'fixture', '--model', 'fixture-model', '--thinking', 'off', '--no-extensions', ...(observer ? ['-e', join(root, 'scripts/fixture/observer.ts')] : []),
     ...(variant === 'head' ? ['-e', join(root, 'src/index.ts')] : []), ...extensions.flatMap(path => ['-e', path]), '--no-skills', '--no-prompt-templates', '--no-themes', '--no-context-files',
     ...extraArgs, '--system-prompt', 'Synthetic fixture only.', '--session', sessionFile, '--tools', tools ? 'alpha,beta,gamma' : ''];
+  configure?.(dir);
   return { env, args };
 }
 export async function cli(dir, options = {}, prompt = 'CURRENT_INPUT_MARKER short prompt') {
@@ -97,7 +98,8 @@ export async function tui(dir, options = {}) {
   };
   try { await waitFor(() => events(dir).some(event => event.event === 'ready'), 'TUI ready'); }
   catch (error) { await api.capture('startup-failure'); await api.stop(); throw error; }
-  await waitFor(() => { const screen = tmux('capture-pane', '-p', '-t', 'fixture'); return screen.includes('fixture-model') && screen.includes('────'); }, 'editor ready');
+  try { await waitFor(() => { const screen = tmux('capture-pane', '-p', '-t', 'fixture'); return (screen.includes('fixture-model') || screen.includes('deepseek-chat')) && screen.includes('────'); }, 'editor ready'); }
+  catch (error) { await api.capture('editor-failure'); await api.stop(); throw error; }
   api.readyMs = performance.now() - start;
   if (options.captureReady !== false) await api.capture('ready');
   return api;

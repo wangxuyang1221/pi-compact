@@ -5,10 +5,15 @@ import type * as Pi from '@earendil-works/pi-coding-agent';
 import { CompactionController, type Operation } from '../state.ts';
 import { checkHost } from './compatibility.ts';
 import { assertSessionFileAvailable, claimSessionFile, confirmEntry, readJournal, writeJournal } from './journal.ts';
+import { nativeThresholdReserve, parseThreshold, thresholdTokens } from '../policy.ts';
+import { readSettings, saveThreshold } from '../settings.ts';
+import { snapshotContext, reconstructContext } from './reconstruction.ts';
 
 type Model = NonNullable<Pi.AgentSession['model']>;
 type Agent = Pi.AgentSession['agent'];
 type Session = Pick<Pi.AgentSession, 'agent' | 'model' | 'sessionManager' | 'settingsManager' | 'compact' | 'abortCompaction' | 'dispose' | 'prompt'> & {
+  _cwd: string;
+  _checkCompaction(...args: unknown[]): Promise<boolean>;
   _buildRuntime(options: unknown): void;
   _resourceLoader: { getExtensions(): { extensions: Pi.Extension[] } };
   _runAutoCompaction(reason: 'threshold' | 'overflow', willRetry: boolean): Promise<boolean>;
@@ -25,7 +30,9 @@ type Session = Pick<Pi.AgentSession, 'agent' | 'model' | 'sessionManager' | 'set
 type Mode = { session: Session; compactionQueuedMessages: { text: string; mode: string }[];
   bindCurrentSessionExtensions(): Promise<void>;
   handleCompactCommand(instructions?: string): Promise<void>; flushCompactionQueue(options?: unknown): Promise<void> };
-type Execution = { operation: Operation; settled: Promise<void>; finish(): void; committed?: string; compactEvent?: Pi.SessionCompactEvent; completionEvent?: Pi.AgentSessionEvent };
+type NativeProgress = { kind: 'preparing' } | { kind: 'started' } | { kind: 'committed'; id: string };
+type PolicyBoundary = { entry: string | undefined; model: Model; percent: number };
+type Execution = { progress: NativeProgress; operation: Operation; settled: Promise<void>; finish(): void; compactEvent?: Pi.SessionCompactEvent; completionEvent?: Pi.AgentSessionEvent };
 type Binding = { controller: CompactionController; lifecycle: 'active' | 'disposed'; execution?: Execution; ui?: Mode; restoreEvents?: () => void; publishCompact?: (event: Pi.SessionCompactEvent) => Promise<unknown> };
 type FileOwner = { file: string; release(): void; session?: Session };
 type Manager = { [K in keyof Pi.SessionManager]: Pi.SessionManager[K] } & { _appendEntry(entry: Pi.SessionEntry): void; _rewriteFile(): void };
@@ -59,7 +66,7 @@ function bindEvents(session: Session, binding: Binding, registryForEvent: AsyncL
     if (event.type === 'session_compact') {
       const execution = registryForEvent.getStore();
       if (!execution || binding.execution !== execution) throw new Error('Stale compaction event.');
-      const entry = execution.committed && session.sessionManager.getEntry(execution.committed);
+      const entry = execution.progress.kind === 'committed' && session.sessionManager.getEntry(execution.progress.id);
       if (!entry || entry.type !== 'compaction') throw new Error('Compaction event has no confirmed checkpoint.');
       execution.compactEvent = { ...event, compactionEntry: entry };
       return undefined;
@@ -104,6 +111,38 @@ function bind(host: typeof Pi, registry: Registry, session: Session): void {
   registry.bindings.set(session, binding);
   bindEvents(session, binding, registry.execution);
 
+  let policyBoundary: PolicyBoundary | undefined;
+  const boundary = (): PolicyBoundary => {
+    const config = readSettings(session._cwd);
+    if (config.kind === 'invalid') throw new Error(config.error);
+    const entry = manager.getBranch().findLast(entry => entry.type === 'context_edit' ||
+      (entry.type === 'message' && (entry.message.role === 'user' || entry.message.role === 'toolResult')))?.id;
+    return { entry, model: session.model!, percent: config.percent };
+  };
+  const sameBoundary = (current: PolicyBoundary) => policyBoundary !== undefined && policyBoundary.entry === current.entry &&
+    policyBoundary.model === current.model && policyBoundary.percent === current.percent;
+  const thresholdScope = new AsyncLocalStorage<boolean>();
+  const nativeSettings = session.settingsManager;
+  replace(session, 'settingsManager', new Proxy(nativeSettings, {
+    get(target, key) {
+      if (key === 'getCompactionSettings') return (model: Model) => {
+        const settings = target.getCompactionSettings(model);
+        if (!thresholdScope.getStore() || !model) return settings;
+        const config = readSettings(session._cwd);
+        if (config.kind === 'invalid') throw new Error(config.error);
+        return { ...settings, reserveTokens: nativeThresholdReserve(model.contextWindow, config.percent) };
+      };
+      const value = Reflect.get(target, key, target);
+      return typeof value === 'function' ? value.bind(target) : value;
+    },
+  }));
+  const exceeds = session._exceedsCompactionThreshold;
+  replace(session, '_exceedsCompactionThreshold', (model, projection) =>
+    thresholdScope.getStore() === false || sameBoundary(boundary()) ? false : thresholdScope.run(true, () => exceeds.call(session, model, projection)));
+  const checkScope = new AsyncLocalStorage<'pre-input' | 'post-run'>();
+  const checkCompaction = session._checkCompaction;
+  replace(session, '_checkCompaction', (...args) => checkScope.run(args[1] === false ? 'pre-input' : 'post-run', () => thresholdScope.run(true, () => checkCompaction.apply(session, args))));
+
   const agent = session.agent;
   const assertAlive = () => {
     if (binding.lifecycle === 'disposed') throw new Error('Session is disposed.');
@@ -126,7 +165,7 @@ function bind(host: typeof Pi, registry: Registry, session: Session): void {
       return native.call(ownedManager, entry);
     });
   }
-  if (typeof agent.prepareRequest !== 'function' || typeof agent.streamFunction !== 'function') {
+  if (typeof agent.prepareRequest !== 'function' || typeof agent.transformContext !== 'function' || typeof agent.streamFunction !== 'function') {
     process.stderr.write('pi-compact cannot install the request safety boundary.\n');
     process.exit(78);
   }
@@ -138,20 +177,15 @@ function bind(host: typeof Pi, registry: Registry, session: Session): void {
   const ensureModel = () => {
     if (!session.model || String(session.model.api) === 'pi-virtual') unsafe(binding, 'Virtual or missing models are not supported.');
   };
-  const tooLarge = () => {
-    ensureModel();
-    return session._exceedsCompactionThreshold(session.model!, manager.buildSessionProjection());
-  };
   const pendingTooLarge = () => {
     const messages = [
       ...manager.buildSessionProjection().messages,
       ...agent.peekQueuedMessages(),
       ...(binding.ui?.compactionQueuedMessages ?? []).map(item => ({ role: 'user' as const, content: item.text, timestamp: 0 })),
     ];
-    const settings = session.settingsManager.getCompactionSettings(session.model);
     const raw = messages.reduce((sum, message) => sum + host.estimateTokens(message), 0);
     const encoded = host.convertToLlm(messages).reduce((sum, message) => sum + host.estimateTokens(message), 0);
-    return Math.max(raw, encoded) > session.model!.contextWindow - (settings.enabled ? settings.reserveTokens : session.model!.maxTokens);
+    return Math.max(raw, encoded) > session.model!.contextWindow - session.model!.maxTokens;
   };
   const assertAdmission = () => {
     controller.assertIdle();
@@ -161,14 +195,31 @@ function bind(host: typeof Pi, registry: Registry, session: Session): void {
   replace(agent, 'prepareRequest', async (request, signal) => {
     assertAdmission();
     ensureModel();
-    let prepared = await prepare.call(agent, request, signal);
-    if (tooLarge()) {
-      await session._runAutoCompaction('threshold', false);
-      assertAdmission();
-      prepared = await prepare.call(agent, request, signal);
-    }
+    const config = readSettings(session._cwd);
+    if (config.kind === 'invalid') throw new Error(config.error);
+    const prepared = await prepare.call(agent, request, signal);
     assertAdmission();
     return prepared ?? undefined;
+  });
+  const transform = agent.transformContext;
+  replace(agent, 'transformContext', async (messages, signal) => {
+    assertAdmission();
+    signal?.throwIfAborted();
+    const before = snapshotContext(messages);
+    let transformed = await transform.call(agent, messages, signal);
+    assertAdmission();
+    signal?.throwIfAborted();
+    const current = boundary();
+    const tokens = host.convertToLlm(transformed).reduce((sum, message) => sum + host.estimateTokens(message), 0);
+    if (nativeSettings.getCompactionSettings(current.model).enabled && !sameBoundary(current) && (tokens >= thresholdTokens(current.model.contextWindow, current.percent) ||
+      tokens > current.model.contextWindow - current.model.maxTokens)) {
+      const original = manager.buildSessionProjection();
+      await session._runAutoCompaction('threshold', false);
+      assertAdmission();
+      signal?.throwIfAborted();
+      transformed = reconstructContext(before, transformed, original, manager.buildSessionProjection());
+    }
+    return transformed;
   });
   const stream = agent.streamFunction;
   replace(agent, 'streamFunction', (model, context, options) => {
@@ -182,8 +233,8 @@ function bind(host: typeof Pi, registry: Registry, session: Session): void {
         if (controller.state.kind !== 'idle' || controller.state.generation !== generation) throw new Error('Request belongs to a stale compaction generation.');
         ensureModel();
         const tokens = context.messages.reduce((sum, message) => sum + host.estimateTokens(message), 0);
-        if (tooLarge() || tokens > model.contextWindow - model.maxTokens) {
-          controller.block('oversized', 'Pending input cannot fit safely after compaction.');
+        if (tokens > model.contextWindow - model.maxTokens) {
+          controller.block('oversized', 'Prepared request exceeds the model input capacity.');
           assertAdmission();
         }
       }
@@ -208,7 +259,7 @@ function bind(host: typeof Pi, registry: Registry, session: Session): void {
     const execution = registry.execution.getStore();
     if (!execution || binding.execution !== execution) throw new Error('Compaction append has no active operation.');
     controller.assertCurrent(execution.operation);
-    if (execution.committed) throw new Error('Compaction operation already committed.');
+    if (execution.progress.kind === 'committed') throw new Error('Compaction operation already committed.');
     if (!args[0]?.trim() || (args[1] !== null && !manager.getEntry(args[1]))) throw new Error('Invalid native compaction result.');
     const id = append.apply(manager, args);
     try {
@@ -217,19 +268,25 @@ function bind(host: typeof Pi, registry: Registry, session: Session): void {
       controller.block('persistence', String(error));
       throw error;
     }
-    execution.committed = id;
+    execution.progress = { kind: 'committed', id };
     return id;
   });
   const emit = session._emit;
   replace(session, '_emit', function (event) {
+    if (event.type === 'compaction_start') {
+      const execution = registry.execution.getStore();
+      if (!execution || binding.execution !== execution) throw new Error('Compaction start has no active operation.');
+      controller.assertCurrent(execution.operation);
+      execution.progress = { kind: 'started' };
+    }
     if (event.type === 'compaction_end') {
       const execution = registry.execution.getStore();
       if (!execution || binding.execution !== execution || binding.lifecycle === 'disposed') return;
       const state = controller.state;
-      if (event.result && execution.committed && state.kind === 'running' && state.operation === execution.operation) {
+      if (event.result && execution.progress.kind === 'committed' && state.kind === 'running' && state.operation === execution.operation) {
         try {
           controller.assertCurrent(execution.operation);
-          if (tooLarge() || pendingTooLarge()) {
+          if (pendingTooLarge()) {
             controller.block('oversized', 'Pending input cannot be reduced enough to continue.');
           } else controller.succeed(execution.operation);
         } catch (error) {
@@ -243,7 +300,7 @@ function bind(host: typeof Pi, registry: Registry, session: Session): void {
     }
     return emit.call(session, event);
   });
-  const run = async <T>(native: () => Promise<T>, explicit: boolean): Promise<T> => {
+  const run = async <T>(native: () => Promise<T>, explicit: boolean, allowNoWork = false): Promise<T> => {
     ensureModel();
     while (binding.execution) {
       if (!explicit || controller.state.kind !== 'blocked') throw new Error('Native compaction is still finishing.');
@@ -251,11 +308,14 @@ function bind(host: typeof Pi, registry: Registry, session: Session): void {
     }
     const operation = controller.begin(explicit);
     let finish!: () => void;
-    const execution: Execution = { operation, settled: new Promise(resolve => { finish = resolve; }), finish: () => finish() };
+    const execution: Execution = { progress: { kind: 'preparing' }, operation, settled: new Promise(resolve => { finish = resolve; }), finish: () => finish() };
     binding.execution = execution;
     try {
-      const result = await registry.execution.run(execution, native);
-      if (controller.state.kind === 'running' && controller.state.operation === operation) controller.block('failed', 'Native compaction produced no committed checkpoint.');
+      const result = await thresholdScope.run(false, () => registry.execution.run(execution, native));
+      if (controller.state.kind === 'running' && controller.state.operation === operation) {
+        if (allowNoWork && result === false && execution.progress.kind === 'preparing') controller.succeed(operation);
+        else controller.block('failed', 'Native compaction produced no committed checkpoint.');
+      }
       controller.assertIdle();
       const compactEvent = execution.compactEvent;
       const completionEvent = execution.completionEvent;
@@ -282,7 +342,14 @@ function bind(host: typeof Pi, registry: Registry, session: Session): void {
     return run(() => manual.call(session, instructions), explicit);
   });
   const auto = session._runAutoCompaction;
-  replace(session, '_runAutoCompaction', (reason, retry) => run(() => auto.call(session, reason, retry), false));
+  replace(session, '_runAutoCompaction', async (reason, retry) => {
+    assertAdmission();
+    const current = boundary();
+    if (reason === 'threshold' && (checkScope.getStore() === 'pre-input' || sameBoundary(current))) return false;
+    const result = await run(() => auto.call(session, reason, retry), false, reason === 'threshold' && !retry);
+    policyBoundary = current;
+    return result;
+  });
   const summarize = session._runDefaultCompaction;
   replace(session, '_runDefaultCompaction', (...args) => {
     const state = controller.state;
@@ -396,4 +463,22 @@ export function install(host: typeof Pi, pi: Pi.ExtensionAPI): void {
     }
   };
   pi.on('session_start', start);
+  pi.registerCommand('compact-config', {
+    description: 'View or set the project compaction threshold',
+    handler: async (args, ctx) => {
+      try {
+        const parts = args.trim().split(/\s+/);
+        if (args.trim()) {
+          if (parts.length !== 2 || parts[0] !== 'threshold' || !/^[+-]?(?:\d+\.?\d*|\.\d+)(?:e[+-]?\d+)?$/i.test(parts[1])) {
+            throw new Error('Usage: /compact-config [threshold <percent>]');
+          }
+          saveThreshold(ctx.cwd, parseThreshold(Number(parts[1])));
+        }
+        const config = readSettings(ctx.cwd);
+        if (config.kind === 'invalid') throw new Error(config.error);
+        const window = ctx.model?.contextWindow;
+        ctx.ui.notify(`Compaction threshold: ${config.percent}%\nSource: ${config.source} (${config.path})\nModel window: ${window ?? 'unavailable'} tokens\nTrigger: ${window ? thresholdTokens(window, config.percent) : 'unavailable'} tokens`, 'info');
+      } catch (error) { ctx.ui.notify(String(error), 'error'); }
+    },
+  });
 }

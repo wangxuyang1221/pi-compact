@@ -1,0 +1,196 @@
+{
+  "pass": true,
+  "lanes": [
+    {
+      "lane": 1,
+      "logs": [
+        "/Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047/artifacts/P2/lane-1/baseline-7999/events.jsonl",
+        "/Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047/artifacts/P2/lane-1/baseline-8000/events.jsonl",
+        "/Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047/artifacts/P2/lane-1/baseline-8001/events.jsonl",
+        "/Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047/artifacts/P2/lane-1/baseline-8999/events.jsonl",
+        "/Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047/artifacts/P2/lane-1/baseline-9000/events.jsonl",
+        "/Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047/artifacts/P2/lane-1/head-7999/events.jsonl",
+        "/Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047/artifacts/P2/lane-1/head-8000/events.jsonl",
+        "/Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047/artifacts/P2/lane-1/head-8001/events.jsonl",
+        "/Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047/artifacts/P2/lane-1/head-8999/events.jsonl",
+        "/Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047/artifacts/P2/lane-1/head-9000/events.jsonl"
+      ],
+      "budgets": 10,
+      "processes": [
+        98279,
+        98291,
+        98913,
+        98925,
+        99462,
+        99474,
+        210,
+        224,
+        1756,
+        1768,
+        4362,
+        4385,
+        6953,
+        6965,
+        8441,
+        8453,
+        9821,
+        9833,
+        11227,
+        11239
+      ],
+      "networkBlocked": 0,
+      "pass": true
+    },
+    {
+      "lane": 2,
+      "logs": [
+        "/Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047/artifacts/P2/lane-2/events.jsonl"
+      ],
+      "budgets": 1,
+      "processes": [
+        12581,
+        12593
+      ],
+      "networkBlocked": 0,
+      "pass": true
+    },
+    {
+      "lane": 3,
+      "logs": [
+        "/Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047/artifacts/P2/lane-3/events.jsonl"
+      ],
+      "budgets": 1,
+      "processes": [
+        13944,
+        13956
+      ],
+      "networkBlocked": 0,
+      "pass": true
+    },
+    {
+      "lane": 4,
+      "logs": [
+        "/Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047/artifacts/P2/lane-4/configure/events.jsonl",
+        "/Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047/artifacts/P2/lane-4/restart/events.jsonl"
+      ],
+      "budgets": 1,
+      "processes": [
+        15308,
+        15320,
+        16681,
+        16693
+      ],
+      "networkBlocked": 0,
+      "pass": true
+    },
+    {
+      "lane": 5,
+      "logs": [
+        "/Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047/artifacts/P2/lane-5/events.jsonl"
+      ],
+      "budgets": 0,
+      "processes": [
+        18099,
+        18122
+      ],
+      "networkBlocked": 0,
+      "pass": true
+    },
+    {
+      "lane": 6,
+      "logs": [
+        "/Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047/artifacts/P2/lane-6/events.jsonl"
+      ],
+      "budgets": 1,
+      "processes": [
+        20734,
+        20759
+      ],
+      "networkBlocked": 0,
+      "pass": true
+    },
+    {
+      "lane": 7,
+      "logs": [
+        "/Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047/artifacts/P2/lane-7/events.jsonl"
+      ],
+      "budgets": 1,
+      "processes": [
+        22296,
+        22308
+      ],
+      "networkBlocked": 0,
+      "pass": true
+    },
+    {
+      "lane": 8,
+      "logs": [
+        "/Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047/artifacts/P2/lane-8/events.jsonl"
+      ],
+      "budgets": 1,
+      "processes": [
+        23613,
+        23625
+      ],
+      "networkBlocked": 0,
+      "pass": true
+    },
+    {
+      "lane": 9,
+      "logs": [
+        "/Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047/artifacts/P2/lane-9/events.jsonl"
+      ],
+      "budgets": 1,
+      "processes": [
+        24992,
+        24998
+      ],
+      "networkBlocked": 0,
+      "pass": true
+    },
+    {
+      "lane": 10,
+      "logs": [
+        "/Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047/artifacts/P2/lane-10/events.jsonl"
+      ],
+      "budgets": 1,
+      "processes": [
+        56980,
+        56992
+      ],
+      "networkBlocked": 0,
+      "pass": true
+    }
+  ],
+  "cleanupFiles": 497,
+  "source": [
+    {
+      "file": "src/policy.ts",
+      "sha256": "6cef2b94edade4ae747a504f64f6a5a087311d8868cd3428cf800f6cebcea8b2"
+    },
+    {
+      "file": "src/settings.ts",
+      "sha256": "690cb811c458dfe3af512ab025e18d726b0d75ddea8c97e38cd0155a186b96ad"
+    },
+    {
+      "file": "src/index.ts",
+      "sha256": "ca2346f3653f4014ac0726c26bc1da72c63f45c527e04118fecb45ee1db21ee6"
+    },
+    {
+      "file": "src/pi-adapter/session.ts",
+      "sha256": "488a51e1742cb61d567c37c39520fc9dfa91e7539b2008186f322358d1795804"
+    },
+    {
+      "file": "src/pi-adapter/compatibility.ts",
+      "sha256": "d92b22417ee08878950e400a4fafd793df82518e71a40d6b7a6cf1bee835b226"
+    },
+    {
+      "file": "src/pi-adapter/journal.ts",
+      "sha256": "0fab09996308920b0757576769849533e9766ce9d99bdaa6b4ac7bee2ec17a67"
+    },
+    {
+      "file": "src/state.ts",
+      "sha256": "10c7aad13e9da10bf54bba73edf33d61736f75417f8143c10c20538b3cc749ab"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+node:internal/modules/run_main:123
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+1000 !== 1001
+
+    at file:///Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047/scripts/verify-p2-perf.mjs:40:14 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: 1000,
+  expected: 1001,
+  operator: 'strictEqual',
+  diff: 'simple'
+}
+
+Node.js v22.22.2

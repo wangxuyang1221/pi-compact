@@ -1,0 +1,30 @@
+
+> pi-compact@0.1.0 verify:live /Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047
+> node scripts/verify-live.mjs --pr P2
+
+{"lane":1,"status":"FAIL","error":"AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n0 !== 1\n","stack":"AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n0 !== 1\n\n    at 1 (file:///Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047/scripts/verify-p2.mjs:22:98)\n    at async file:///Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047/scripts/verify-p2.mjs:102:9"}
+{"lane":2,"status":"PASS"}
+{"lane":3,"status":"FAIL","error":"AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n+ actual - expected\n\n+ undefined\n- true\n","stack":"AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n+ actual - expected\n\n+ undefined\n- true\n\n    at checkpoint (file:///Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047/scripts/verify-p2.mjs:16:32)\n    at 3 (file:///Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047/scripts/verify-p2.mjs:36:49)\n    at async file:///Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047/scripts/verify-p2.mjs:102:9"}
+{"lane":4,"status":"FAIL","error":"AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n+ actual - expected\n\n+ undefined\n- true\n","stack":"AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n+ actual - expected\n\n+ undefined\n- true\n\n    at checkpoint (file:///Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047/scripts/verify-p2.mjs:16:32)\n    at 4 (file:///Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047/scripts/verify-p2.mjs:44:172)\n    at async file:///Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047/scripts/verify-p2.mjs:102:9"}
+{"lane":5,"status":"PASS"}
+{"lane":6,"status":"PASS"}
+{"lane":7,"status":"PASS"}
+{"lane":8,"status":"PASS"}
+{"lane":9,"status":"FAIL","error":"Error: Timed out waiting for delayed native request","stack":"Error: Timed out waiting for delayed native request\n    at waitFor (file:///Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047/scripts/fixture/runtime.mjs:27:9)\n    at async 9 (file:///Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047/scripts/verify-p2.mjs:81:53)\n    at async file:///Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047/scripts/verify-p2.mjs:102:9"}
+{"lane":10,"status":"FAIL","error":"Error: Timed out waiting for cancel pending","stack":"Error: Timed out waiting for cancel pending\n    at waitFor (file:///Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047/scripts/fixture/runtime.mjs:27:9)\n    at async 10 (file:///Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047/scripts/verify-p2.mjs:90:78)\n    at async file:///Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047/scripts/verify-p2.mjs:102:9"}
+node:internal/modules/run_main:123
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: P2 live lanes
+    at file:///Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047/scripts/verify-p2.mjs:108:1 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
+
+Node.js v22.22.2
+ ELIFECYCLE  Command failed with exit code 1.

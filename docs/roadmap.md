@@ -1,6 +1,6 @@
 # Implementation roadmap
 
-The design is approved. Stage 1 has passed independent acceptance; stages 2 through 6 remain open. Each stage requires tests, evidence from a real Pi runtime, and checks for local processing overhead.
+The design is approved. Stages 1 and 2 have passed independent acceptance; stages 3 through 6 remain open. Each stage requires tests, evidence from a real Pi runtime, and checks for local processing overhead.
 
 ## 1. Establish the extension integration
 
@@ -15,10 +15,10 @@ Accept this stage when one session has one compaction owner, tool batches stay i
 
 Depends on stage 1.
 
-- [ ] Implement the default 90% threshold and recalculate it when the active model changes.
-- [ ] Add `/compact-config` and project-local settings persistence.
-- [ ] Share the execution path between automatic compaction and manual `/compact`.
-- [ ] Preserve cancellation, custom instructions, and waiting without an extension-imposed timeout.
+- [x] Implement the default 90% threshold and recalculate it when the active model changes.
+- [x] Add `/compact-config` and project-local settings persistence.
+- [x] Share the execution path between automatic compaction and manual `/compact`.
+- [x] Preserve cancellation, custom instructions, and waiting without an extension-imposed timeout.
 
 Accept this stage when exact threshold boundaries, configuration persistence, manual invocation, and non-Codex provider behavior pass real TUI checks.
 
@@ -76,4 +76,4 @@ Check local overhead against a measured native baseline. Network completion time
 
 Screenshots and interaction recordings should come from the tested package revision. Temporary processes and listeners must be stopped after verification.
 
-The repository contains the P1 extension and reproducible verification runners. Read the [P1 acceptance report](../artifacts/P1-acceptance/REPORT.md) and [adapter boundaries](p1-adapter.md) for the tested revision and supported behavior. Prototype material remains separate from the development package.
+The repository contains the P1 and P2 extension and reproducible verification runners. Read the [P1 acceptance report](../artifacts/P1-acceptance/REPORT.md) and [adapter boundaries](p1-adapter.md) for the tested revision and supported behavior. The [P2 acceptance report](../artifacts/P2-acceptance/REPORT.md) records percentage policy, hook reconstruction, and measured limits. Prototype material remains separate from the development package.

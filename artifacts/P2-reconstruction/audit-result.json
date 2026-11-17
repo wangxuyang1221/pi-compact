@@ -1,0 +1,2910 @@
+{
+  "head": "50f0b8090c94074159fc9ce311774971ca00eb83",
+  "branch": "t3/fix-p2-reconstruction",
+  "worktree": "/Users/wangxuyang/.t3/worktrees/compact/t3-1ffed212-e1dc3a2046f48779",
+  "scopes": [
+    "/Users/wangxuyang/.t3/worktrees/compact/t3-1ffed212-e1dc3a2046f48779/artifacts/P2-reconstruction",
+    "/Users/wangxuyang/.t3/worktrees/compact/t3-1ffed212-e1dc3a2046f48779/artifacts/P2-fixes/regression-1794817629966",
+    "/Users/wangxuyang/.t3/worktrees/compact/t3-1ffed212-e1dc3a2046f48779/artifacts/P2-fixes/regression-1794818027631",
+    "/Users/wangxuyang/.t3/worktrees/compact/t3-1ffed212-e1dc3a2046f48779/artifacts/P2-fixes/regression-1794818143355",
+    "/Users/wangxuyang/.t3/worktrees/compact/t3-1ffed212-e1dc3a2046f48779/artifacts/P2-fixes/regression-1794818520152",
+    "/Users/wangxuyang/.t3/worktrees/compact/t3-1ffed212-e1dc3a2046f48779/artifacts/P2-fixes/persistence/1794817657750",
+    "/Users/wangxuyang/.t3/worktrees/compact/t3-1ffed212-e1dc3a2046f48779/artifacts/P2-fixes/persistence/1794818049359",
+    "/Users/wangxuyang/.t3/worktrees/compact/t3-1ffed212-e1dc3a2046f48779/artifacts/P2-fixes/persistence/1794818163141",
+    "/Users/wangxuyang/.t3/worktrees/compact/t3-1ffed212-e1dc3a2046f48779/artifacts/P2-fixes/persistence/1794818540938",
+    "/Users/wangxuyang/.t3/worktrees/compact/t3-1ffed212-e1dc3a2046f48779/artifacts/P1-fixes/runs/1794817658901",
+    "/Users/wangxuyang/.t3/worktrees/compact/t3-1ffed212-e1dc3a2046f48779/artifacts/P1-fixes/runs/1794818028794",
+    "/Users/wangxuyang/.t3/worktrees/compact/t3-1ffed212-e1dc3a2046f48779/artifacts/P1-fixes/runs/1794818160501",
+    "/Users/wangxuyang/.t3/worktrees/compact/t3-1ffed212-e1dc3a2046f48779/artifacts/P1-fixes/runs/1794818600106",
+    "/Users/wangxuyang/.t3/worktrees/compact/t3-1ffed212-e1dc3a2046f48779/artifacts/P1-scope/runs/1794817664398",
+    "/Users/wangxuyang/.t3/worktrees/compact/t3-1ffed212-e1dc3a2046f48779/artifacts/P1-scope/runs/1794818035083",
+    "/Users/wangxuyang/.t3/worktrees/compact/t3-1ffed212-e1dc3a2046f48779/artifacts/P1-scope/runs/1794818166158",
+    "/Users/wangxuyang/.t3/worktrees/compact/t3-1ffed212-e1dc3a2046f48779/artifacts/P1-scope/runs/1794818605778",
+    "/Users/wangxuyang/.t3/worktrees/compact/t3-1ffed212-e1dc3a2046f48779/artifacts/P2/lane-2",
+    "/Users/wangxuyang/.t3/worktrees/compact/t3-1ffed212-e1dc3a2046f48779/artifacts/P2/lane-3",
+    "/Users/wangxuyang/.t3/worktrees/compact/t3-1ffed212-e1dc3a2046f48779/artifacts/P2/lane-7",
+    "/Users/wangxuyang/.t3/worktrees/compact/t3-1ffed212-e1dc3a2046f48779/artifacts/P2/attempts/1794818183538-lane-2",
+    "/Users/wangxuyang/.t3/worktrees/compact/t3-1ffed212-e1dc3a2046f48779/artifacts/P2/attempts/1794818185228-lane-3",
+    "/Users/wangxuyang/.t3/worktrees/compact/t3-1ffed212-e1dc3a2046f48779/artifacts/P2/attempts/1794818186890-lane-7",
+    "/Users/wangxuyang/.t3/worktrees/compact/t3-1ffed212-e1dc3a2046f48779/artifacts/P2/attempts/1794818601235-lane-2",
+    "/Users/wangxuyang/.t3/worktrees/compact/t3-1ffed212-e1dc3a2046f48779/artifacts/P2/attempts/1794818602940-lane-3",
+    "/Users/wangxuyang/.t3/worktrees/compact/t3-1ffed212-e1dc3a2046f48779/artifacts/P2/attempts/1794818604703-lane-7"
+  ],
+  "runs": [
+    {
+      "path": "artifacts/P2-reconstruction/original/boundary-1794817717555/context-edit",
+      "events": 17,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/original/boundary-1794817717555/overflow-failure",
+      "events": 12,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/original/boundary-1794818167485/context-edit",
+      "events": 17,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/original/boundary-1794818167485/overflow-failure",
+      "events": 12,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/original/boundary-1794818607149/context-edit",
+      "events": 17,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/original/boundary-1794818607149/overflow-failure",
+      "events": 12,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/original/controls-1794817396221/duplicate",
+      "events": 9,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/original/controls-1794817396221/tool-modify",
+      "events": 9,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/original/probes-1794817281392/duplicate",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/original/probes-1794817281392/manual-empty",
+      "events": 4,
+      "native": 0,
+      "normal": 0
+    },
+    {
+      "path": "artifacts/P2-reconstruction/original/probes-1794817281392/modify",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/original/probes-1794817281392/public-cancel",
+      "events": 10,
+      "native": 0,
+      "normal": 0
+    },
+    {
+      "path": "artifacts/P2-reconstruction/original/probes-1794817281392/remove",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/original/probes-1794817281392/reorder",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/original/probes-1794817281392/system",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/original/probes-1794817281392/tool-modify",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/package-delivery/smoke",
+      "events": 13,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/package-final/smoke",
+      "events": 13,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/package-optimized/smoke",
+      "events": 13,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794817690488/1000-0-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794817690488/1000-0-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794817690488/1000-1-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794817690488/1000-1-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794817690488/1000-2-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794817690488/1000-2-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794817690488/1000-3-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794817690488/1000-3-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794817690488/1000-4-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794817690488/1000-4-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794817690488/10000-0-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794817690488/10000-0-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794817690488/10000-1-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794817690488/10000-1-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794817690488/10000-2-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794817690488/10000-2-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794817690488/10000-3-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794817690488/10000-3-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794817690488/10000-4-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794817690488/10000-4-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794817690488/profile",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794817758347/1000-0-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794817758347/1000-0-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794817758347/1000-1-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794817758347/1000-1-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794817758347/1000-2-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794817758347/1000-2-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794817758347/1000-3-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794817758347/1000-3-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794817758347/1000-4-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794817758347/1000-4-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794817758347/10000-0-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794817758347/10000-0-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794817758347/10000-1-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794817758347/10000-1-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794817758347/10000-2-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794817758347/10000-2-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794817758347/10000-3-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794817758347/10000-3-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794817758347/10000-4-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794817758347/10000-4-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794817916301/1000-0-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794817916301/1000-0-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794817916301/1000-1-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794817916301/1000-1-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794817916301/1000-2-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794817916301/1000-2-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794817916301/1000-3-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794817916301/1000-3-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794817916301/1000-4-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794817916301/1000-4-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794817916301/10000-0-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794817916301/10000-0-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794817916301/10000-1-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794817916301/10000-1-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794817916301/10000-2-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794817916301/10000-2-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794817916301/10000-3-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794817916301/10000-3-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794817916301/10000-4-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794817916301/10000-4-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818011205/1000-0-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818011205/1000-0-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818011205/1000-1-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818011205/1000-1-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818011205/1000-2-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818011205/1000-2-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818011205/1000-3-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818011205/1000-3-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818011205/1000-4-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818011205/1000-4-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818011205/1000-5-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818011205/1000-5-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818011205/1000-6-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818011205/1000-6-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818011205/1000-7-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818011205/1000-7-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818011205/1000-8-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818011205/1000-8-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818011205/1000-9-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818011205/1000-9-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818011205/10000-0-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818011205/10000-0-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818011205/10000-1-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818011205/10000-1-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818011205/10000-2-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818011205/10000-2-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818011205/10000-3-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818011205/10000-3-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818011205/10000-4-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818011205/10000-4-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818011205/10000-5-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818011205/10000-5-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818011205/10000-6-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818011205/10000-6-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818011205/10000-7-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818011205/10000-7-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818011205/10000-8-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818011205/10000-8-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818011205/10000-9-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818011205/10000-9-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818124548/1000-0-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818124548/1000-0-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818124548/1000-1-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818124548/1000-1-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818124548/1000-2-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818124548/1000-2-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818124548/1000-3-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818124548/1000-3-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818124548/1000-4-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818124548/1000-4-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818124548/10000-0-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818124548/10000-0-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818124548/10000-1-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818124548/10000-1-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818124548/10000-2-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818124548/10000-2-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818124548/10000-3-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818124548/10000-3-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818124548/10000-4-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818124548/10000-4-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818124548/profile",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818528817/1000-0-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818528817/1000-0-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818528817/1000-1-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818528817/1000-1-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818528817/1000-2-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818528817/1000-2-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818528817/1000-3-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818528817/1000-3-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818528817/1000-4-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818528817/1000-4-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818528817/10000-0-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818528817/10000-0-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818528817/10000-1-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818528817/10000-1-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818528817/10000-2-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818528817/10000-2-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818528817/10000-3-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818528817/10000-3-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818528817/10000-4-baseline",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/perf/1794818528817/10000-4-head",
+      "events": 10,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794817431592/duplicate",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794817431592/tool-modify",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794817497276/duplicate",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794817497276/tool-modify",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794817527955/clone",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794817527955/clone-duplicate",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794817527955/cross-cut",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794817527955/duplicate",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794817527955/in-place",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794817527955/in-place-array",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794817527955/modify",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794817527955/multi-tool",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794817527955/remove",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794817527955/reorder",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794817527955/retained-delete",
+      "events": 9,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794817527955/same-reference",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794817527955/system",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794817527955/tool-call-modify",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794817527955/tool-capacity",
+      "events": 13,
+      "native": 1,
+      "normal": 0
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794817527955/tool-modify",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794817527955/tool-reorder",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794817628862/clone",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794817628862/clone-duplicate",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794817628862/cross-cut",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794817628862/duplicate",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794817628862/in-place",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794817628862/in-place-array",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794817628862/modify",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794817628862/multi-tool",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794817628862/remove",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794817628862/reorder",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794817628862/retained-delete",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794817628862/same-reference",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794817628862/system",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794817628862/tool-call-modify",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794817628862/tool-capacity",
+      "events": 13,
+      "native": 1,
+      "normal": 0
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794817628862/tool-modify",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794817628862/tool-reorder",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794817861998/clone",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794817861998/clone-duplicate",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794817861998/cross-cut",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794817861998/duplicate",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794817861998/in-place",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794817861998/in-place-array",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794817861998/modify",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794817861998/multi-tool",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794817861998/remove",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794817861998/reorder",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794817861998/retained-delete",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794817861998/same-reference",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794817861998/system",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794817861998/tool-call-modify",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794817861998/tool-capacity",
+      "events": 13,
+      "native": 1,
+      "normal": 0
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794817861998/tool-modify",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794817861998/tool-reorder",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794818122490/clone",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794818122490/clone-duplicate",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794818122490/cross-cut",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794818122490/duplicate",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794818122490/in-place",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794818122490/in-place-array",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794818122490/modify",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794818122490/multi-tool",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794818122490/remove",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794818122490/reorder",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794818122490/retained-delete",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794818122490/same-reference",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794818122490/system",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794818122490/tool-call-modify",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794818122490/tool-capacity",
+      "events": 13,
+      "native": 1,
+      "normal": 0
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794818122490/tool-modify",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794818122490/tool-reorder",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794818480474/modify-and-copy",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794818499100/clone",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794818499100/clone-duplicate",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794818499100/cross-cut",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794818499100/duplicate",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794818499100/in-place",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794818499100/in-place-array",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794818499100/modify",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794818499100/modify-and-copy",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794818499100/multi-tool",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794818499100/remove",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794818499100/reorder",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794818499100/retained-delete",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794818499100/same-reference",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794818499100/system",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794818499100/tool-call-modify",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794818499100/tool-capacity",
+      "events": 13,
+      "native": 1,
+      "normal": 0
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794818499100/tool-modify",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-reconstruction/run-1794818499100/tool-reorder",
+      "events": 16,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794817629966/cancel-retry",
+      "events": 24,
+      "native": 2,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794817629966/context-capacity",
+      "events": 13,
+      "native": 1,
+      "normal": 0
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794817629966/context-change",
+      "events": 20,
+      "native": 1,
+      "normal": 2
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794817629966/corrupt-repair",
+      "events": 8,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794817629966/failure-retry",
+      "events": 24,
+      "native": 2,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794817629966/low-0.1",
+      "events": 20,
+      "native": 1,
+      "normal": 2
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794817629966/low-1",
+      "events": 20,
+      "native": 1,
+      "normal": 2
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794817629966/system-capacity",
+      "events": 13,
+      "native": 1,
+      "normal": 0
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794817629966/system-change",
+      "events": 20,
+      "native": 1,
+      "normal": 2
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794817629966/tools-0.1",
+      "events": 41,
+      "native": 3,
+      "normal": 3
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794817629966/tools-1",
+      "events": 41,
+      "native": 3,
+      "normal": 3
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794818027631/cancel-retry",
+      "events": 24,
+      "native": 2,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794818027631/context-capacity",
+      "events": 13,
+      "native": 1,
+      "normal": 0
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794818027631/context-change",
+      "events": 20,
+      "native": 1,
+      "normal": 2
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794818027631/corrupt-repair",
+      "events": 8,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794818027631/failure-retry",
+      "events": 24,
+      "native": 2,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794818027631/low-0.1",
+      "events": 20,
+      "native": 1,
+      "normal": 2
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794818027631/low-1",
+      "events": 20,
+      "native": 1,
+      "normal": 2
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794818027631/system-capacity",
+      "events": 13,
+      "native": 1,
+      "normal": 0
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794818027631/system-change",
+      "events": 20,
+      "native": 1,
+      "normal": 2
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794818027631/tools-0.1",
+      "events": 41,
+      "native": 3,
+      "normal": 3
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794818027631/tools-1",
+      "events": 41,
+      "native": 3,
+      "normal": 3
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794818143355/cancel-retry",
+      "events": 24,
+      "native": 2,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794818143355/context-capacity",
+      "events": 13,
+      "native": 1,
+      "normal": 0
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794818143355/context-change",
+      "events": 20,
+      "native": 1,
+      "normal": 2
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794818143355/corrupt-repair",
+      "events": 8,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794818143355/failure-retry",
+      "events": 24,
+      "native": 2,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794818143355/low-0.1",
+      "events": 20,
+      "native": 1,
+      "normal": 2
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794818143355/low-1",
+      "events": 20,
+      "native": 1,
+      "normal": 2
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794818143355/system-capacity",
+      "events": 13,
+      "native": 1,
+      "normal": 0
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794818143355/system-change",
+      "events": 20,
+      "native": 1,
+      "normal": 2
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794818143355/tools-0.1",
+      "events": 41,
+      "native": 3,
+      "normal": 3
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794818143355/tools-1",
+      "events": 41,
+      "native": 3,
+      "normal": 3
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794818520152/cancel-retry",
+      "events": 24,
+      "native": 2,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794818520152/context-capacity",
+      "events": 13,
+      "native": 1,
+      "normal": 0
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794818520152/context-change",
+      "events": 20,
+      "native": 1,
+      "normal": 2
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794818520152/corrupt-repair",
+      "events": 8,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794818520152/failure-retry",
+      "events": 24,
+      "native": 2,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794818520152/low-0.1",
+      "events": 20,
+      "native": 1,
+      "normal": 2
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794818520152/low-1",
+      "events": 20,
+      "native": 1,
+      "normal": 2
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794818520152/system-capacity",
+      "events": 13,
+      "native": 1,
+      "normal": 0
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794818520152/system-change",
+      "events": 20,
+      "native": 1,
+      "normal": 2
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794818520152/tools-0.1",
+      "events": 41,
+      "native": 3,
+      "normal": 3
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794818520152/tools-1",
+      "events": 41,
+      "native": 3,
+      "normal": 3
+    },
+    {
+      "path": "artifacts/P2-fixes/persistence/1794817657750",
+      "events": 24,
+      "native": 2,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-fixes/persistence/1794818049359",
+      "events": 24,
+      "native": 2,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-fixes/persistence/1794818163141",
+      "events": 24,
+      "native": 2,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2-fixes/persistence/1794818540938",
+      "events": 24,
+      "native": 2,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794817658901/contender",
+      "events": 1,
+      "native": 0,
+      "normal": 0
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794817658901/disabled-baseline",
+      "events": 9,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794817658901/disabled-head",
+      "events": 4,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794817658901/disabled-overflow",
+      "events": 3,
+      "native": 0,
+      "normal": 0
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794817658901/dispose",
+      "events": 6,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794817658901/owner",
+      "events": 4,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794817658901/retry",
+      "events": 15,
+      "native": 2,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794817658901/shared-manager",
+      "events": 5,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794818028794/contender",
+      "events": 1,
+      "native": 0,
+      "normal": 0
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794818028794/disabled-baseline",
+      "events": 9,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794818028794/disabled-head",
+      "events": 4,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794818028794/disabled-overflow",
+      "events": 3,
+      "native": 0,
+      "normal": 0
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794818028794/dispose",
+      "events": 6,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794818028794/owner",
+      "events": 4,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794818028794/retry",
+      "events": 15,
+      "native": 2,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794818028794/shared-manager",
+      "events": 5,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794818160501/contender",
+      "events": 1,
+      "native": 0,
+      "normal": 0
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794818160501/disabled-baseline",
+      "events": 9,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794818160501/disabled-head",
+      "events": 4,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794818160501/disabled-overflow",
+      "events": 3,
+      "native": 0,
+      "normal": 0
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794818160501/dispose",
+      "events": 6,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794818160501/owner",
+      "events": 4,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794818160501/retry",
+      "events": 15,
+      "native": 2,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794818160501/shared-manager",
+      "events": 5,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794818600106/contender",
+      "events": 1,
+      "native": 0,
+      "normal": 0
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794818600106/disabled-baseline",
+      "events": 9,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794818600106/disabled-head",
+      "events": 4,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794818600106/disabled-overflow",
+      "events": 3,
+      "native": 0,
+      "normal": 0
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794818600106/dispose",
+      "events": 6,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794818600106/owner",
+      "events": 4,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794818600106/retry",
+      "events": 15,
+      "native": 2,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794818600106/shared-manager",
+      "events": 5,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P1-scope/runs/1794817664398/managed-read/baseline",
+      "events": 3,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P1-scope/runs/1794817664398/managed-read/head",
+      "events": 3,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P1-scope/runs/1794817664398/scope/baseline",
+      "events": 16,
+      "native": 0,
+      "normal": 2
+    },
+    {
+      "path": "artifacts/P1-scope/runs/1794817664398/scope/head",
+      "events": 16,
+      "native": 0,
+      "normal": 2
+    },
+    {
+      "path": "artifacts/P1-scope/runs/1794818035083/managed-read/baseline",
+      "events": 3,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P1-scope/runs/1794818035083/managed-read/head",
+      "events": 3,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P1-scope/runs/1794818035083/scope/baseline",
+      "events": 16,
+      "native": 0,
+      "normal": 2
+    },
+    {
+      "path": "artifacts/P1-scope/runs/1794818035083/scope/head",
+      "events": 16,
+      "native": 0,
+      "normal": 2
+    },
+    {
+      "path": "artifacts/P1-scope/runs/1794818166158/managed-read/baseline",
+      "events": 3,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P1-scope/runs/1794818166158/managed-read/head",
+      "events": 3,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P1-scope/runs/1794818166158/scope/baseline",
+      "events": 16,
+      "native": 0,
+      "normal": 2
+    },
+    {
+      "path": "artifacts/P1-scope/runs/1794818166158/scope/head",
+      "events": 16,
+      "native": 0,
+      "normal": 2
+    },
+    {
+      "path": "artifacts/P1-scope/runs/1794818605778/managed-read/baseline",
+      "events": 3,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P1-scope/runs/1794818605778/managed-read/head",
+      "events": 3,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P1-scope/runs/1794818605778/scope/baseline",
+      "events": 16,
+      "native": 0,
+      "normal": 2
+    },
+    {
+      "path": "artifacts/P1-scope/runs/1794818605778/scope/head",
+      "events": 16,
+      "native": 0,
+      "normal": 2
+    },
+    {
+      "path": "artifacts/P2/lane-2",
+      "events": 6,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2/lane-3",
+      "events": 13,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2/lane-7",
+      "events": 10,
+      "native": 1,
+      "normal": 0
+    },
+    {
+      "path": "artifacts/P2/attempts/1794818183538-lane-2",
+      "events": 6,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2/attempts/1794818185228-lane-3",
+      "events": 13,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2/attempts/1794818186890-lane-7",
+      "events": 10,
+      "native": 1,
+      "normal": 0
+    },
+    {
+      "path": "artifacts/P2/attempts/1794818601235-lane-2",
+      "events": 6,
+      "native": 0,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2/attempts/1794818602940-lane-3",
+      "events": 13,
+      "native": 1,
+      "normal": 1
+    },
+    {
+      "path": "artifacts/P2/attempts/1794818604703-lane-7",
+      "events": 10,
+      "native": 1,
+      "normal": 0
+    }
+  ],
+  "pids": [
+    90456,
+    90447,
+    90757,
+    90748,
+    32342,
+    32333,
+    32550,
+    32541,
+    52447,
+    52438,
+    52655,
+    52646,
+    68430,
+    68421,
+    68644,
+    68635,
+    65416,
+    65407,
+    67234,
+    67225,
+    65681,
+    65672,
+    66976,
+    66967,
+    65939,
+    65930,
+    66181,
+    66172,
+    66733,
+    66724,
+    66453,
+    66444,
+    44051,
+    44042,
+    97757,
+    97748,
+    32987,
+    32978,
+    85733,
+    85724,
+    85927,
+    85918,
+    86129,
+    86120,
+    86309,
+    86300,
+    86488,
+    86479,
+    86741,
+    86732,
+    86960,
+    86951,
+    87180,
+    87171,
+    87425,
+    87408,
+    87613,
+    87604,
+    87848,
+    87839,
+    88156,
+    88147,
+    88385,
+    88376,
+    88646,
+    88637,
+    88876,
+    88867,
+    89111,
+    89102,
+    89355,
+    89346,
+    89598,
+    89589,
+    89860,
+    89851,
+    90103,
+    90094,
+    85706,
+    91542,
+    91533,
+    91712,
+    91703,
+    91855,
+    91846,
+    92012,
+    92003,
+    92169,
+    92160,
+    92308,
+    92299,
+    92449,
+    92440,
+    92605,
+    92596,
+    92752,
+    92743,
+    92924,
+    92915,
+    93070,
+    93060,
+    93343,
+    93334,
+    93500,
+    93491,
+    93726,
+    93717,
+    93962,
+    93953,
+    94198,
+    94189,
+    94426,
+    94417,
+    94654,
+    94645,
+    94898,
+    94889,
+    95134,
+    95125,
+    2504,
+    2495,
+    2652,
+    2643,
+    2810,
+    2801,
+    2976,
+    2967,
+    3131,
+    3122,
+    3284,
+    3275,
+    3439,
+    3430,
+    3612,
+    3603,
+    3751,
+    3742,
+    3906,
+    3897,
+    4053,
+    4044,
+    4290,
+    4281,
+    4518,
+    4509,
+    4753,
+    4744,
+    4920,
+    4911,
+    5180,
+    5169,
+    5468,
+    5459,
+    5713,
+    5704,
+    5940,
+    5931,
+    6159,
+    6150,
+    7166,
+    7157,
+    7338,
+    7329,
+    7484,
+    7475,
+    7640,
+    7631,
+    7781,
+    7772,
+    7928,
+    7919,
+    8100,
+    8091,
+    8255,
+    8246,
+    8410,
+    8401,
+    8566,
+    8557,
+    8721,
+    8712,
+    8893,
+    8884,
+    9049,
+    9040,
+    9229,
+    9220,
+    9384,
+    9375,
+    9541,
+    9532,
+    9696,
+    9687,
+    9868,
+    9859,
+    10008,
+    9999,
+    10155,
+    10146,
+    10311,
+    10302,
+    10556,
+    10547,
+    10695,
+    10686,
+    10915,
+    10906,
+    11071,
+    11062,
+    11291,
+    11282,
+    11689,
+    11680,
+    12085,
+    12076,
+    12510,
+    12501,
+    13003,
+    12994,
+    13438,
+    13429,
+    13903,
+    13894,
+    14309,
+    14300,
+    14673,
+    14664,
+    15078,
+    15069,
+    15501,
+    15484,
+    15801,
+    15792,
+    16152,
+    16143,
+    16438,
+    16429,
+    16829,
+    16820,
+    21282,
+    21273,
+    21485,
+    21476,
+    21811,
+    21802,
+    22014,
+    22005,
+    22341,
+    22331,
+    22534,
+    22525,
+    22804,
+    22795,
+    23054,
+    23045,
+    23335,
+    23313,
+    23602,
+    23593,
+    23840,
+    23831,
+    24199,
+    24190,
+    24652,
+    24643,
+    25121,
+    25112,
+    25548,
+    25523,
+    25968,
+    25959,
+    26343,
+    26334,
+    26707,
+    26698,
+    27121,
+    27112,
+    27484,
+    27467,
+    21086,
+    44535,
+    44526,
+    44837,
+    44828,
+    45077,
+    45068,
+    45298,
+    45289,
+    45586,
+    45577,
+    45779,
+    45762,
+    46013,
+    46004,
+    46224,
+    46215,
+    46457,
+    46439,
+    46657,
+    46648,
+    46894,
+    46885,
+    47224,
+    47215,
+    47704,
+    47695,
+    48054,
+    48045,
+    48589,
+    48580,
+    48964,
+    48955,
+    49368,
+    49359,
+    49719,
+    49710,
+    50219,
+    50210,
+    50460,
+    50451,
+    69130,
+    69121,
+    69467,
+    69458,
+    71012,
+    71002,
+    72075,
+    72066,
+    73042,
+    73033,
+    73278,
+    73269,
+    76066,
+    76057,
+    72556,
+    72547,
+    73741,
+    73732,
+    73976,
+    73967,
+    74893,
+    74884,
+    74196,
+    74187,
+    75112,
+    75103,
+    75371,
+    75362,
+    75826,
+    75817,
+    73515,
+    73506,
+    75591,
+    75582,
+    74437,
+    74428,
+    76303,
+    76294,
+    72822,
+    72813,
+    74657,
+    74648,
+    78128,
+    78119,
+    78528,
+    78519,
+    83350,
+    83341,
+    77438,
+    77429,
+    79403,
+    79393,
+    79758,
+    79749,
+    81346,
+    81337,
+    80118,
+    80109,
+    81714,
+    81705,
+    82117,
+    82105,
+    82835,
+    82825,
+    78982,
+    78973,
+    82458,
+    82449,
+    80491,
+    80482,
+    83872,
+    83863,
+    77741,
+    77732,
+    80926,
+    80917,
+    98491,
+    98482,
+    98727,
+    98718,
+    1703,
+    1694,
+    97997,
+    97988,
+    99231,
+    99222,
+    99456,
+    99447,
+    561,
+    552,
+    99674,
+    99665,
+    780,
+    771,
+    999,
+    990,
+    1482,
+    1473,
+    98957,
+    98948,
+    1255,
+    1246,
+    99910,
+    99901,
+    1939,
+    1930,
+    98271,
+    98262,
+    287,
+    274,
+    21254,
+    21245,
+    21761,
+    21752,
+    27637,
+    27628,
+    20731,
+    20722,
+    22853,
+    22844,
+    23384,
+    23375,
+    25385,
+    25376,
+    23921,
+    23912,
+    25887,
+    25878,
+    26262,
+    26253,
+    27170,
+    27161,
+    22322,
+    22305,
+    26652,
+    26643,
+    24387,
+    24378,
+    28056,
+    28047,
+    20984,
+    20975,
+    24906,
+    24897,
+    38328,
+    38319,
+    39503,
+    39494,
+    39757,
+    39748,
+    42491,
+    42482,
+    38829,
+    38820,
+    40215,
+    40206,
+    40437,
+    40428,
+    41357,
+    41348,
+    39284,
+    39275,
+    40658,
+    40649,
+    41576,
+    41567,
+    41815,
+    41806,
+    42272,
+    42263,
+    39975,
+    39966,
+    42053,
+    42041,
+    40899,
+    40890,
+    42732,
+    42723,
+    39065,
+    39056,
+    41119,
+    41109,
+    83270,
+    83260,
+    81942,
+    81927,
+    80757,
+    80748,
+    84005,
+    83996,
+    82567,
+    82558,
+    78210,
+    78201,
+    77515,
+    77506,
+    81474,
+    81461,
+    80219,
+    80210,
+    79533,
+    79524,
+    78813,
+    78804,
+    17408,
+    17399,
+    16252,
+    16243,
+    15127,
+    15118,
+    17770,
+    17761,
+    16780,
+    16771,
+    11869,
+    11860,
+    11147,
+    11138,
+    15703,
+    15694,
+    14390,
+    14388,
+    13556,
+    13547,
+    12612,
+    12603,
+    30763,
+    30754,
+    30191,
+    30182,
+    29705,
+    29696,
+    31188,
+    31179,
+    30393,
+    30384,
+    28561,
+    28552,
+    28294,
+    28285,
+    29972,
+    29963,
+    29422,
+    29413,
+    29137,
+    29128,
+    28844,
+    28835,
+    47833,
+    47822,
+    46456,
+    46438,
+    44996,
+    44987,
+    48706,
+    48697,
+    47060,
+    47051,
+    43236,
+    43227,
+    42952,
+    42943,
+    45820,
+    45811,
+    44256,
+    44246,
+    43814,
+    43805,
+    43504,
+    43495,
+    84531,
+    84522,
+    18187,
+    18178,
+    31670,
+    31661,
+    49450,
+    49441,
+    85254,
+    84830,
+    84879,
+    84899,
+    84777,
+    85197,
+    85188,
+    84925,
+    84915,
+    85374,
+    13333,
+    11697,
+    11715,
+    11928,
+    11409,
+    12920,
+    12911,
+    12112,
+    12103,
+    13821,
+    32118,
+    31102,
+    31117,
+    31197,
+    30977,
+    31845,
+    31836,
+    31270,
+    31261,
+    32272,
+    51977,
+    51227,
+    51250,
+    51256,
+    51221,
+    51802,
+    51793,
+    51311,
+    51302,
+    52239,
+    85417,
+    85423,
+    85381,
+    85387,
+    14228,
+    14318,
+    13945,
+    14057,
+    32309,
+    32315,
+    32280,
+    32286,
+    52397,
+    52420,
+    52316,
+    52324,
+    51284,
+    51275,
+    51670,
+    51661,
+    52110,
+    52098,
+    85878,
+    85869,
+    86583,
+    86574,
+    87276,
+    87267,
+    33065,
+    33056,
+    33456,
+    33447,
+    33671,
+    33662
+  ],
+  "alive": [],
+  "socketsChecked": 357,
+  "listenerCheck": {
+    "status": 1,
+    "stdout": "",
+    "stderr": ""
+  },
+  "networkBlocked": 0,
+  "source": {
+    "src/index.ts": "ca2346f3653f4014ac0726c26bc1da72c63f45c527e04118fecb45ee1db21ee6",
+    "src/pi-adapter/compatibility.ts": "d92b22417ee08878950e400a4fafd793df82518e71a40d6b7a6cf1bee835b226",
+    "src/pi-adapter/journal.ts": "0fab09996308920b0757576769849533e9766ce9d99bdaa6b4ac7bee2ec17a67",
+    "src/pi-adapter/reconstruction.ts": "1f98066ed24c2eb82fd24bab0f03528750160c56a74166e6b46b9e894118b55f",
+    "src/pi-adapter/session.ts": "8c288cd442f24d461acf915194136bccb736329e20d42e74666f426cdb36d531",
+    "src/policy.ts": "6cef2b94edade4ae747a504f64f6a5a087311d8868cd3428cf800f6cebcea8b2",
+    "src/settings.ts": "690cb811c458dfe3af512ab025e18d726b0d75ddea8c97e38cd0155a186b96ad",
+    "src/state.ts": "10c7aad13e9da10bf54bba73edf33d61736f75417f8143c10c20538b3cc749ab",
+    "scripts/fixture/observer.ts": "fc7b7aff11653f903e5c7a52afa6cc6df20359272d4c646f8edba2af9798897a",
+    "scripts/fixture/preload.mjs": "a5a0ad6ddcaecdd0b4832d2adf344d42e0f22eecb8acf030541bf5cb215de95c",
+    "scripts/fixture/relative-socket.mjs": "b0cb816115016f06a754b5fd3bd49bfebd6fb5b453a9225dad10ee53b8e1cfcf",
+    "scripts/fixture/render-screen.py": "132e997e55674c4fd58a140065f4db122cd855834e5d76ec114e8855a17b731d",
+    "scripts/fixture/runtime.mjs": "f1b934226bf13fcdaf5074d595895135c35a045df8986e059d098ade4091c052",
+    "scripts/p2/audit-evidence.mjs": "7bec5730d429bc1656c451d10edf69d92c177cc56104aaea9809a413a0ff73a0",
+    "scripts/p2/common.mjs": "f74998c62c36c12c9ff7ec0647ad344409771c537cf96ddf06d1c5f9f4fd778b",
+    "scripts/p2/config-observer.ts": "61fc71744845bce8903a6f928c1c740f7b860be55890ddfa5dfb4674798fabc9",
+    "scripts/p2/config-trace.mjs": "c01deb957cbf317906a7a7cf152d1f0f7e3a5a4802d63643e0394802183cd510",
+    "scripts/p2/demo.mjs": "88a225fe7f8b8853d271f22bc32fa19c8e6c1c318a452e0f11a67f14a42a5d71",
+    "scripts/p2/hooks.ts": "c563d50b05095207ab2ad75d63a59afbfbc3d376ac29d72bf2d328382c3a05ac",
+    "scripts/p2/observer.ts": "ed77971e6e042003c4391206929bdff5aa4e625d8a7917d5ab3de06cd23f06ea",
+    "scripts/p2/package-smoke.mjs": "b064986fdd8034e839053a7ac7af1ae8a60571c7b9ec0d03318d18b5e67d70c0",
+    "scripts/p2/perf-observer.ts": "cf22fff3f9d59b09f53c5f0663c01e6fefa84276c54664538a8da3c429877dc3",
+    "scripts/p2/persistence-fault.ts": "3b4848d0ff253952ee6f85d3962ee7a4843490df6e5f8a436ec8a6cd16785991",
+    "scripts/p2/reconstruction-hooks.ts": "4008ded4244b6b144f4d2cc897c6e364e89406ce8a5ecc05c3079fcabdc7d6e0",
+    "scripts/p2/render-demo.py": "6519c51976a530157ea1dff203265bd4ae1cbcaa3ca04b818cb9116533f63d69",
+    "scripts/p2/verify-config.mjs": "20eab210201ade20c73bab8ee11f15ffa26a85f135ecdeb8c5f131c896becf12",
+    "scripts/p2/verify-resume.mjs": "a6058a0347d8c080b86de50d5a47c0ef685c146a7a4f2f91c20744b201f8d103",
+    "scripts/probe-preload-ownership.mjs": "69687ad1279d5a91d9d19facd45cbcd82233e0d81fbf006e397990b430e9fdb0",
+    "scripts/regressions/managed-read.ts": "443326c8d137d315289afc933109ff0018e7d2635f94d3d614d23a20456f2577",
+    "scripts/regressions/observer.ts": "431a6c892f559c7cd7973fe354df0cf2eaa793e02024752e79710a783f176729",
+    "scripts/regressions/scope.ts": "1b8c8d247ff0f6ddb41675334dbe6986018048a8105046daf1019b0a3fc408bc",
+    "scripts/verify-live.mjs": "eb6a34e624bc001d6e43eb872d89bff01daebb3e59c8de4e4c5df8371324a7b8",
+    "scripts/verify-p1-fixes.mjs": "217f2301fd98bb39ffb64cda7b2d3bbdb638a68db500940ab313958c4202443d",
+    "scripts/verify-p1-scope.mjs": "070885808a6daf4d0bc14e9fd68987956eb25cd353172ca310fa7d356d552e29",
+    "scripts/verify-p2-config.mjs": "767ccc8b8518064507626d388b6c07fad6f00477597b20a18291f147a245f809",
+    "scripts/verify-p2-fixes.mjs": "629dc862dc34f0a13d9d43aa68fdf2e380ecb8c89147243a9d65e1a8032c72a0",
+    "scripts/verify-p2-perf.mjs": "e4603dc4442be047d8330bc0fa44215234e6c9e035fa356dce72b9b3c4d71e7f",
+    "scripts/verify-p2-persistence.mjs": "7cba947c17c632bbbb008afac2c2c01e3749517e1bf5654bf3fa179ef604af21",
+    "scripts/verify-p2-reconstruction-perf.mjs": "68dc184c8dc6d1c6719bde3e0a157f622eb833a6ee2ca34a97334b1a74f0d875",
+    "scripts/verify-p2-reconstruction.mjs": "c8d964da8196916fd8bf872c0a2f946c9075930fb2956f66f35279a0fbfdef04",
+    "scripts/verify-p2.mjs": "736d0ba91f5472227fe300c6572ee75b5579a3bbfdc1210454e0ef24887fc337",
+    "scripts/verify-perf.mjs": "a102f64c7cbfb210acd948d342d40bcceb027e7a73bf54ad67ad82ccf3cddf56",
+    "tests/adapter.test.ts": "5d2b61ab3e5ba5455f8f34e7c32166f2c893097a1ac309c3e938c862a17744ad",
+    "tests/persistence.test.ts": "2e4dde3d224976f6fb69c0bdd26376891bf287de3b061b79b9bc6cf4faac3203",
+    "tests/policy.test.ts": "9698f4885761083de1b478034262f4d75f18da5ac412c46e67e316083779e607",
+    "tests/reconstruction.test.ts": "f2b7ed6a64892d2460b4ba406def592ccc6aa29aaa8fc636131700a66c2272eb"
+  },
+  "finalPerfSourceMatches": true,
+  "greenSourceMatches": true,
+  "rawFiles": 1916
+}

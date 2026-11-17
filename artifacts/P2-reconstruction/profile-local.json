@@ -1,0 +1,90 @@
+[
+  {
+    "us": 1250,
+    "functionName": "./node_modules/.pnpm/@babel+plugin-transform-react-jsx@7.28.6_@babel+core@7.29.0/node_modules/@babel/plugin-transform-react-jsx/lib/index.js",
+    "scriptId": "260",
+    "url": "file:///Users/wangxuyang/Library/pnpm/store/v11/links/@/jiti/2.7.0/67fd0174259b52361763203280e5014ea27d60640041501abd7e406e7936e616/node_modules/jiti/dist/babel.cjs",
+    "lineNumber": 220,
+    "columnNumber": 8106
+  },
+  {
+    "us": 1166,
+    "functionName": "ownFile",
+    "scriptId": "262",
+    "url": "file:///Users/wangxuyang/.t3/worktrees/compact/t3-1ffed212-e1dc3a2046f48779/src/pi-adapter/session.ts",
+    "lineNumber": 77,
+    "columnNumber": 16
+  },
+  {
+    "us": 1250,
+    "functionName": "",
+    "scriptId": "262",
+    "url": "file:///Users/wangxuyang/.t3/worktrees/compact/t3-1ffed212-e1dc3a2046f48779/src/pi-adapter/session.ts",
+    "lineNumber": 150,
+    "columnNumber": 29
+  },
+  {
+    "us": 1291,
+    "functionName": "estimateContextTokens",
+    "scriptId": "192",
+    "url": "file:///Users/wangxuyang/Library/pnpm/store/v11/links/@earendil-works/pi-coding-agent/1.5.2/643b01c0aa78c8ef11bcca81208b3bcdf7c0b473aa9432569290180e541a3aca/node_modules/@earendil-works/pi-coding-agent/dist/bundle/chunks/chunk-VEJDBY3O.js",
+    "lineNumber": 547,
+    "columnNumber": 1659
+  },
+  {
+    "us": 1250,
+    "functionName": "snapshot",
+    "scriptId": "269",
+    "url": "file:///Users/wangxuyang/.t3/worktrees/compact/t3-1ffed212-e1dc3a2046f48779/src/pi-adapter/reconstruction.ts",
+    "lineNumber": 18,
+    "columnNumber": 19
+  },
+  {
+    "us": 1291,
+    "functionName": "estimateTokens",
+    "scriptId": "192",
+    "url": "file:///Users/wangxuyang/Library/pnpm/store/v11/links/@earendil-works/pi-coding-agent/1.5.2/643b01c0aa78c8ef11bcca81208b3bcdf7c0b473aa9432569290180e541a3aca/node_modules/@earendil-works/pi-coding-agent/dist/bundle/chunks/chunk-VEJDBY3O.js",
+    "lineNumber": 547,
+    "columnNumber": 3683
+  },
+  {
+    "us": 1167,
+    "functionName": "estimateTokens",
+    "scriptId": "192",
+    "url": "file:///Users/wangxuyang/Library/pnpm/store/v11/links/@earendil-works/pi-coding-agent/1.5.2/643b01c0aa78c8ef11bcca81208b3bcdf7c0b473aa9432569290180e541a3aca/node_modules/@earendil-works/pi-coding-agent/dist/bundle/chunks/chunk-VEJDBY3O.js",
+    "lineNumber": 547,
+    "columnNumber": 3683
+  },
+  {
+    "us": 1292,
+    "functionName": "estimateContextTokens",
+    "scriptId": "278",
+    "url": "file:///Users/wangxuyang/Library/pnpm/store/v11/links/@earendil-works/pi-coding-agent/1.5.2/643b01c0aa78c8ef11bcca81208b3bcdf7c0b473aa9432569290180e541a3aca/node_modules/@earendil-works/pi-coding-agent/dist/bundle/chunks/chunk-ZGYS4UTC.js",
+    "lineNumber": 1,
+    "columnNumber": 9813
+  },
+  {
+    "us": 250,
+    "functionName": "estimateTextAndImageContentTokens",
+    "scriptId": "278",
+    "url": "file:///Users/wangxuyang/Library/pnpm/store/v11/links/@earendil-works/pi-coding-agent/1.5.2/643b01c0aa78c8ef11bcca81208b3bcdf7c0b473aa9432569290180e541a3aca/node_modules/@earendil-works/pi-coding-agent/dist/bundle/chunks/chunk-ZGYS4UTC.js",
+    "lineNumber": 1,
+    "columnNumber": 8625
+  },
+  {
+    "us": 1250,
+    "functionName": "transformProviderPayload",
+    "scriptId": "192",
+    "url": "file:///Users/wangxuyang/Library/pnpm/store/v11/links/@earendil-works/pi-coding-agent/1.5.2/643b01c0aa78c8ef11bcca81208b3bcdf7c0b473aa9432569290180e541a3aca/node_modules/@earendil-works/pi-coding-agent/dist/bundle/chunks/chunk-VEJDBY3O.js",
+    "lineNumber": 872,
+    "columnNumber": 17885
+  },
+  {
+    "us": 1250,
+    "functionName": "onPayload",
+    "scriptId": "262",
+    "url": "file:///Users/wangxuyang/.t3/worktrees/compact/t3-1ffed212-e1dc3a2046f48779/src/pi-adapter/session.ts",
+    "lineNumber": 243,
+    "columnNumber": 59
+  }
+]

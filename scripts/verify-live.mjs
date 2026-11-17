@@ -4,6 +4,7 @@ import { join } from 'node:path';
 import { execFileSync } from 'node:child_process';
 import { cli, tui, root, waitFor, provenance } from './fixture/runtime.mjs';
 const flags = process.argv.slice(2);
+if (flags.includes('--pr') && flags[flags.indexOf('--pr') + 1] === 'P2') { await import('./verify-p2.mjs'); process.exit(); }
 const selected = flags.includes('--lane') ? Number(flags[flags.indexOf('--lane') + 1]) : undefined;
 const base = flags.includes('--output') ? join(root, flags[flags.indexOf('--output') + 1]) : join(root, 'artifacts/P1');
 const count = (t, event) => t.log().filter(item => item.event === event).length;

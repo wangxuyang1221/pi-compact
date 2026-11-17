@@ -1,0 +1,52 @@
+[
+  {
+    "path": "/Users/wangxuyang/.t3/worktrees/compact/t3-9c701b7b-bb88350390357c38/artifacts/P2-fixes-independent/probes-1794816139742/duplicate/events.jsonl",
+    "sha256": "2e5565f22f93276482053b623b0f0938ed45759220d11ce1a2b1b26d2c5eeaf6",
+    "side": "old-product",
+    "kind": "duplicate",
+    "hookOld": 2,
+    "actualOld": 0,
+    "calls": [],
+    "outputs": []
+  },
+  {
+    "path": "/Users/wangxuyang/.t3/worktrees/compact/t3-9c701b7b-bb88350390357c38/artifacts/P2-fixes-independent/probes-1794816139742/tool-modify/events.jsonl",
+    "sha256": "42d8ce79e20b2f0c4b5efa1e9fd07a7e1eee5888a84e2faf4d876cc58078d1d5",
+    "side": "old-product",
+    "kind": "tool-modify",
+    "hookOld": 1,
+    "actualOld": 0,
+    "calls": [],
+    "outputs": [
+      "call_independent"
+    ]
+  },
+  {
+    "path": "/Users/wangxuyang/.t3/worktrees/compact/t3-9c701b7b-bb88350390357c38/artifacts/P2-fixes-independent/controls-1794816185633/duplicate/events.jsonl",
+    "sha256": "d70d4f7e2214c3b3c68b86439b0385cf3d5c10f35fa16072cdccdba40d2f5a6b",
+    "side": "native-control",
+    "kind": "duplicate",
+    "hookOld": 2,
+    "actualOld": 2,
+    "calls": [
+      "call_independent"
+    ],
+    "outputs": [
+      "call_independent"
+    ]
+  },
+  {
+    "path": "/Users/wangxuyang/.t3/worktrees/compact/t3-9c701b7b-bb88350390357c38/artifacts/P2-fixes-independent/controls-1794816185633/tool-modify/events.jsonl",
+    "sha256": "1df3daebcfcaa000d360d54ff5ea29b7ec67d28166fc64035b5b6e4cd9a54bb1",
+    "side": "native-control",
+    "kind": "tool-modify",
+    "hookOld": 1,
+    "actualOld": 1,
+    "calls": [
+      "call_independent"
+    ],
+    "outputs": [
+      "call_independent"
+    ]
+  }
+]

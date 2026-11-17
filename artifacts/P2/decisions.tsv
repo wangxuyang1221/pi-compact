@@ -1,0 +1,8 @@
+ts	phase	decision	why	evidence	result
+2026-11-16T00:00:00Z	start	独占实现 P2，沿用已选架构	用户已指定边界，不重启架构或子代理	DATA-SHAPES.md	开始
+2026-11-16T06:55:52.808Z	verification	修正首次系统投影、近期 seed 和 DeepSeek ready 条件	真实 Pi 反证了初版 fixture 假设	attempts/; live-current.log	十 lane 通过
+2026-11-16T06:55:52.809Z	boundary	恢复首请求补充检查并只复用同一 prepare 的投影	实际物理模型 prepareRequest 不检查阈值，额外重建又超预算	installed-agent-session.ts; perf-current.log; src/pi-adapter/session.ts	P1 与 P2 边界通过
+2026-11-16T06:55:52.809Z	perf	报告本地预算和完整 TUI 时间两个结果	不能把 command handler 时间写成可见响应时间	perf-results.json	本地 PASS; TUI p95 672.727ms
+2026-11-16T06:55:52.809Z	artifact	解包普通 loader 验证与当前源码逐字节一致	开发包自身必须运行	package/audit.json	PASS
+2026-11-16T06:55:52.809Z	cleanup	检查 993 个唯一 Pi/pane PID 并清理自身 socket	只停止本任务进程，避免遗留服务	cleanup.json; manual-stop-cleanup.json	PASS
+2026-11-16T06:55:52.809Z	review	直接完成 deslop/no-comments；保留独立验收	本任务明确不再派子代理	self-review.json; REPORT.md	产品提交 046f56d4654959474335490e1e0635c89d481ebc

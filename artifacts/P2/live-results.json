@@ -1,0 +1,42 @@
+[
+  {
+    "lane": 1,
+    "status": "PASS"
+  },
+  {
+    "lane": 2,
+    "status": "PASS"
+  },
+  {
+    "lane": 3,
+    "status": "PASS"
+  },
+  {
+    "lane": 4,
+    "status": "PASS"
+  },
+  {
+    "lane": 5,
+    "status": "PASS"
+  },
+  {
+    "lane": 6,
+    "status": "PASS"
+  },
+  {
+    "lane": 7,
+    "status": "PASS"
+  },
+  {
+    "lane": 8,
+    "status": "PASS"
+  },
+  {
+    "lane": 9,
+    "status": "PASS"
+  },
+  {
+    "lane": 10,
+    "status": "PASS"
+  }
+]

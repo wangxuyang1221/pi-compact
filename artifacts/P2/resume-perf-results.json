@@ -1,0 +1,9 @@
+{
+  "path": "/Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047/artifacts/P2/resume-perf/1794811779046",
+  "count": 30,
+  "min": 18.66058300000003,
+  "median": 20.226790999999935,
+  "p95": 22.32704100000001,
+  "max": 27.641124999999988,
+  "pass": true
+}

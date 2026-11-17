@@ -1,0 +1,5 @@
+{"probe":"scope","variant":"baseline","pass":true}
+{"probe":"scope","variant":"head","pass":true}
+{"probe":"managed-read","variant":"baseline","pass":true}
+{"probe":"managed-read","variant":"head","pass":true}
+/Users/wangxuyang/.t3/worktrees/compact/t3-1ffed212-e1dc3a2046f48779/artifacts/P1-scope/runs/1794818605778

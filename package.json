@@ -7,6 +7,7 @@
     "src",
     "README.md",
     "docs/p1-adapter.md",
+    "docs/p2-policy.md",
     "docs/design.md",
     "docs/roadmap.md",
     "GLOSSARY.md"
@@ -21,6 +22,7 @@
     "typecheck": "tsc --noEmit",
     "test": "tsx --test tests/*.test.ts",
     "verify:live": "node scripts/verify-live.mjs",
+    "verify:p2": "node scripts/verify-p2.mjs",
     "verify:p1-fixes": "node scripts/verify-p1-fixes.mjs",
     "verify:p1-scope": "node scripts/verify-p1-scope.mjs",
     "verify:perf": "node scripts/verify-perf.mjs"

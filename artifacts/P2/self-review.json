@@ -1,0 +1,13 @@
+{
+  "base": "82c33d45ba7b351c9cefbfa2390d651953c80f31",
+  "deslop": "Reviewed policy/settings, scoped settings facade, projection snapshot and fixture diffs. Removed a this-alias lint workaround by moving instrumentation to a named function. No application casts to any or new suppressions.",
+  "noComments": {
+    "addedComments": 0,
+    "suppressions": 0,
+    "restoredComments": 0,
+    "deletedComments": 0,
+    "reruns": 0
+  },
+  "review": "Direct self-review only, as instructed; no Comment Sicko or other child. Independent coordinator acceptance remains pending.",
+  "unit": "# tests 21"
+}

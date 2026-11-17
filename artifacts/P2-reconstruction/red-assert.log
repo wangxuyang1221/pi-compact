@@ -1,0 +1,18 @@
+{"kind":"duplicate","status":"FAIL","error":"AssertionError [ERR_ASSERTION]: preserve added or ambiguous occurrence","stack":"AssertionError [ERR_ASSERTION]: preserve added or ambiguous occurrence\n    at file:///Users/wangxuyang/.t3/worktrees/compact/t3-1ffed212-e1dc3a2046f48779/scripts/verify-p2-reconstruction.mjs:41:91"}
+{"kind":"tool-modify","status":"FAIL","error":"AssertionError [ERR_ASSERTION]: actual transport result must have call call_independent","stack":"AssertionError [ERR_ASSERTION]: actual transport result must have call call_independent\n    at file:///Users/wangxuyang/.t3/worktrees/compact/t3-1ffed212-e1dc3a2046f48779/scripts/verify-p2-reconstruction.mjs:54:9"}
+/Users/wangxuyang/.t3/worktrees/compact/t3-1ffed212-e1dc3a2046f48779/artifacts/P2-reconstruction/run-1794817431592
+node:internal/modules/run_main:123
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: request reconstruction
+    at file:///Users/wangxuyang/.t3/worktrees/compact/t3-1ffed212-e1dc3a2046f48779/scripts/verify-p2-reconstruction.mjs:71:1 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
+
+Node.js v22.22.2

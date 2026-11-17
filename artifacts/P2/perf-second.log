@@ -1,0 +1,14 @@
+{"size":1000,"pairs":5}
+{"size":10000,"pairs":5}
+file:///Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047/scripts/verify-p2-perf.mjs:54
+  const request = events.find(e => e.event === 'normal-request' && e.at > complete.at); assert(request);
+                                                                                   ^
+
+TypeError: Cannot read properties of undefined (reading 'at')
+    at file:///Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047/scripts/verify-p2-perf.mjs:54:84
+    at Array.find (<anonymous>)
+    at file:///Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047/scripts/verify-p2-perf.mjs:54:26
+    at Array.map (<anonymous>)
+    at file:///Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047/scripts/verify-p2-perf.mjs:51:30
+
+Node.js v22.22.2

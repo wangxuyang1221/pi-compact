@@ -1,0 +1,320 @@
+[
+  {
+    "kind": "duplicate",
+    "path": "/Users/wangxuyang/.t3/worktrees/compact/t3-caa833f4-c88341ddaac19837/artifacts/P2-reconstruction-independent/checks/artifacts/P2-reconstruction/run-1794819225758/duplicate",
+    "sha256": "d76e669498eb36dbaea41e919253e16ca55d1f17e42adfbaaf60f1e5722e5f0c",
+    "hookRuns": 1,
+    "hookOld": 2,
+    "actualOld": 2,
+    "current": 1,
+    "summaryIndex": 2,
+    "calls": [],
+    "outputs": [],
+    "normal": 1,
+    "journal": "idle",
+    "checkpoint": "54adb5e0"
+  },
+  {
+    "kind": "tool-modify",
+    "path": "/Users/wangxuyang/.t3/worktrees/compact/t3-caa833f4-c88341ddaac19837/artifacts/P2-reconstruction-independent/checks/artifacts/P2-reconstruction/run-1794819225758/tool-modify",
+    "sha256": "e7fe0c5c197134c9887a5da7f6502afbb808e54c0a169b0395826a2f71b04c4d",
+    "hookRuns": 1,
+    "hookOld": 1,
+    "actualOld": 1,
+    "current": 1,
+    "summaryIndex": 1,
+    "calls": [
+      "call_independent"
+    ],
+    "outputs": [
+      "call_independent"
+    ],
+    "normal": 1,
+    "journal": "idle",
+    "checkpoint": "91fb2d2a"
+  },
+  {
+    "kind": "modify-and-copy",
+    "path": "/Users/wangxuyang/.t3/worktrees/compact/t3-caa833f4-c88341ddaac19837/artifacts/P2-reconstruction-independent/checks/artifacts/P2-reconstruction/run-1794819225758/modify-and-copy",
+    "sha256": "f0793ff6db315025e2b91cd86fe89e42506ce3c19b8b438d2239639e24c01c59",
+    "hookRuns": 1,
+    "hookOld": 1,
+    "actualOld": 1,
+    "current": 1,
+    "summaryIndex": 1,
+    "calls": [
+      "call_independent"
+    ],
+    "outputs": [
+      "call_independent"
+    ],
+    "normal": 1,
+    "journal": "idle",
+    "checkpoint": "415b7b92"
+  },
+  {
+    "kind": "clone",
+    "path": "/Users/wangxuyang/.t3/worktrees/compact/t3-caa833f4-c88341ddaac19837/artifacts/P2-reconstruction-independent/checks/artifacts/P2-reconstruction/run-1794819225758/clone",
+    "sha256": "f1b9b9817058cbcc14f35f1e606f66dca0d3e5ec515d50d6952059bdd8a792cd",
+    "hookRuns": 1,
+    "hookOld": 1,
+    "actualOld": 0,
+    "current": 1,
+    "summaryIndex": 1,
+    "calls": [],
+    "outputs": [],
+    "normal": 1,
+    "journal": "idle",
+    "checkpoint": "659885a4"
+  },
+  {
+    "kind": "clone-duplicate",
+    "path": "/Users/wangxuyang/.t3/worktrees/compact/t3-caa833f4-c88341ddaac19837/artifacts/P2-reconstruction-independent/checks/artifacts/P2-reconstruction/run-1794819225758/clone-duplicate",
+    "sha256": "4aa2b36dc3ff128da1b0ef6936ddab6e3e113b2c7ed27ff7c7ea25251efab56d",
+    "hookRuns": 1,
+    "hookOld": 2,
+    "actualOld": 2,
+    "current": 1,
+    "summaryIndex": 2,
+    "calls": [],
+    "outputs": [],
+    "normal": 1,
+    "journal": "idle",
+    "checkpoint": "3ef05f71"
+  },
+  {
+    "kind": "same-reference",
+    "path": "/Users/wangxuyang/.t3/worktrees/compact/t3-caa833f4-c88341ddaac19837/artifacts/P2-reconstruction-independent/checks/artifacts/P2-reconstruction/run-1794819225758/same-reference",
+    "sha256": "9af67949db13a1100b2a9cc5da7bf3c6ac721219f5a66163bf11e845f4f5598f",
+    "hookRuns": 1,
+    "hookOld": 2,
+    "actualOld": 2,
+    "current": 1,
+    "summaryIndex": 2,
+    "calls": [],
+    "outputs": [],
+    "normal": 1,
+    "journal": "idle",
+    "checkpoint": "184755b5"
+  },
+  {
+    "kind": "in-place",
+    "path": "/Users/wangxuyang/.t3/worktrees/compact/t3-caa833f4-c88341ddaac19837/artifacts/P2-reconstruction-independent/checks/artifacts/P2-reconstruction/run-1794819225758/in-place",
+    "sha256": "9071c79b163639b658b9ed410b27b13a9cf4befc06b38784a027d7d4cae1d207",
+    "hookRuns": 1,
+    "hookOld": 0,
+    "actualOld": 0,
+    "current": 1,
+    "summaryIndex": 1,
+    "calls": [
+      "call_independent"
+    ],
+    "outputs": [
+      "call_independent"
+    ],
+    "normal": 1,
+    "journal": "idle",
+    "checkpoint": "3d1571e5"
+  },
+  {
+    "kind": "in-place-array",
+    "path": "/Users/wangxuyang/.t3/worktrees/compact/t3-caa833f4-c88341ddaac19837/artifacts/P2-reconstruction-independent/checks/artifacts/P2-reconstruction/run-1794819225758/in-place-array",
+    "sha256": "0a6c9a3bd2fc94b28f49475469c34563005d09a9d8871d75d8168102b7450aa0",
+    "hookRuns": 1,
+    "hookOld": 0,
+    "actualOld": 0,
+    "current": 1,
+    "summaryIndex": 1,
+    "calls": [
+      "call_independent"
+    ],
+    "outputs": [
+      "call_independent"
+    ],
+    "normal": 1,
+    "journal": "idle",
+    "checkpoint": "c6a99b44"
+  },
+  {
+    "kind": "multi-tool",
+    "path": "/Users/wangxuyang/.t3/worktrees/compact/t3-caa833f4-c88341ddaac19837/artifacts/P2-reconstruction-independent/checks/artifacts/P2-reconstruction/run-1794819225758/multi-tool",
+    "sha256": "71d4407a9d83b91b30d7db8aa779de3774863dc0ac40b4d4711094967dd4604f",
+    "hookRuns": 1,
+    "hookOld": 1,
+    "actualOld": 1,
+    "current": 1,
+    "summaryIndex": 1,
+    "calls": [
+      "call_independent",
+      "call_beta",
+      "call_gamma"
+    ],
+    "outputs": [
+      "call_gamma",
+      "call_beta",
+      "call_independent"
+    ],
+    "normal": 1,
+    "journal": "idle",
+    "checkpoint": "bb12d868"
+  },
+  {
+    "kind": "tool-call-modify",
+    "path": "/Users/wangxuyang/.t3/worktrees/compact/t3-caa833f4-c88341ddaac19837/artifacts/P2-reconstruction-independent/checks/artifacts/P2-reconstruction/run-1794819225758/tool-call-modify",
+    "sha256": "989155d86738510f8b597381cd91ebc4f2611992707dceb65dbb945af5fc4375",
+    "hookRuns": 1,
+    "hookOld": 1,
+    "actualOld": 1,
+    "current": 1,
+    "summaryIndex": 1,
+    "calls": [
+      "call_independent",
+      "call_beta",
+      "call_gamma"
+    ],
+    "outputs": [
+      "call_gamma",
+      "call_beta",
+      "call_independent"
+    ],
+    "normal": 1,
+    "journal": "idle",
+    "checkpoint": "e252db33"
+  },
+  {
+    "kind": "tool-reorder",
+    "path": "/Users/wangxuyang/.t3/worktrees/compact/t3-caa833f4-c88341ddaac19837/artifacts/P2-reconstruction-independent/checks/artifacts/P2-reconstruction/run-1794819225758/tool-reorder",
+    "sha256": "974a62358feef59745d68a17a4ed7522776e9fe18988c858728344855e0cca29",
+    "hookRuns": 1,
+    "hookOld": 1,
+    "actualOld": 1,
+    "current": 1,
+    "summaryIndex": 1,
+    "calls": [
+      "call_independent",
+      "call_beta",
+      "call_gamma"
+    ],
+    "outputs": [
+      "call_independent",
+      "call_beta",
+      "call_gamma"
+    ],
+    "normal": 1,
+    "journal": "idle",
+    "checkpoint": "e3b39913"
+  },
+  {
+    "kind": "modify",
+    "path": "/Users/wangxuyang/.t3/worktrees/compact/t3-caa833f4-c88341ddaac19837/artifacts/P2-reconstruction-independent/checks/artifacts/P2-reconstruction/run-1794819225758/modify",
+    "sha256": "901ce375a496dd79bde0f276413c4110b28149623d2f9ac54c5693e7f0598355",
+    "hookRuns": 1,
+    "hookOld": 0,
+    "actualOld": 0,
+    "current": 1,
+    "summaryIndex": 1,
+    "calls": [
+      "call_independent"
+    ],
+    "outputs": [
+      "call_independent"
+    ],
+    "normal": 1,
+    "journal": "idle",
+    "checkpoint": "0cb6b7d9"
+  },
+  {
+    "kind": "remove",
+    "path": "/Users/wangxuyang/.t3/worktrees/compact/t3-caa833f4-c88341ddaac19837/artifacts/P2-reconstruction-independent/checks/artifacts/P2-reconstruction/run-1794819225758/remove",
+    "sha256": "70d2b1e61f5c74e27160498e59fe2049fc41307e92b6d8ac8b7b3f8e1a565d35",
+    "hookRuns": 1,
+    "hookOld": 1,
+    "actualOld": 0,
+    "current": 1,
+    "summaryIndex": 1,
+    "calls": [],
+    "outputs": [],
+    "normal": 1,
+    "journal": "idle",
+    "checkpoint": "d2179cf0"
+  },
+  {
+    "kind": "reorder",
+    "path": "/Users/wangxuyang/.t3/worktrees/compact/t3-caa833f4-c88341ddaac19837/artifacts/P2-reconstruction-independent/checks/artifacts/P2-reconstruction/run-1794819225758/reorder",
+    "sha256": "6572484568f58f27ccad368540e65ddea6672367d36ca37debc38fb242587659",
+    "hookRuns": 1,
+    "hookOld": 1,
+    "actualOld": 1,
+    "current": 1,
+    "summaryIndex": 1,
+    "calls": [
+      "call_independent"
+    ],
+    "outputs": [
+      "call_independent"
+    ],
+    "normal": 1,
+    "journal": "idle",
+    "checkpoint": "c236b623"
+  },
+  {
+    "kind": "system",
+    "path": "/Users/wangxuyang/.t3/worktrees/compact/t3-caa833f4-c88341ddaac19837/artifacts/P2-reconstruction-independent/checks/artifacts/P2-reconstruction/run-1794819225758/system",
+    "sha256": "ee0e52013b42a81364af1746b74583f257e9933854c4a917c74fd41553f53d18",
+    "hookRuns": 1,
+    "hookOld": 1,
+    "actualOld": 0,
+    "current": 1,
+    "summaryIndex": 1,
+    "calls": [],
+    "outputs": [],
+    "normal": 1,
+    "journal": "idle",
+    "checkpoint": "eaba847f"
+  },
+  {
+    "kind": "retained-delete",
+    "path": "/Users/wangxuyang/.t3/worktrees/compact/t3-caa833f4-c88341ddaac19837/artifacts/P2-reconstruction-independent/checks/artifacts/P2-reconstruction/run-1794819225758/retained-delete",
+    "sha256": "3b0dfc69c3732a6d54e4ec7bb386d8c08cecf71fd136cd3bd5ea76c1f21bf20d",
+    "hookRuns": 1,
+    "hookOld": 1,
+    "actualOld": 0,
+    "current": 1,
+    "summaryIndex": 1,
+    "calls": [],
+    "outputs": [],
+    "normal": 1,
+    "journal": "idle",
+    "checkpoint": "67b39b35"
+  },
+  {
+    "kind": "cross-cut",
+    "path": "/Users/wangxuyang/.t3/worktrees/compact/t3-caa833f4-c88341ddaac19837/artifacts/P2-reconstruction-independent/checks/artifacts/P2-reconstruction/run-1794819225758/cross-cut",
+    "sha256": "5ae35e25b0aa929bfbbeae6d813651dadca7c7c7fd3234c76f8986e5c64812cf",
+    "hookRuns": 1,
+    "hookOld": 2,
+    "actualOld": 2,
+    "current": 1,
+    "summaryIndex": 2,
+    "calls": [],
+    "outputs": [],
+    "normal": 1,
+    "journal": "idle",
+    "checkpoint": "4a820aa4"
+  },
+  {
+    "kind": "tool-capacity",
+    "path": "/Users/wangxuyang/.t3/worktrees/compact/t3-caa833f4-c88341ddaac19837/artifacts/P2-reconstruction-independent/checks/artifacts/P2-reconstruction/run-1794819225758/tool-capacity",
+    "sha256": "df487803ae39d23c94f8a6142ae9b75818d1c293a26fa801c936dc3fc298f5a9",
+    "hookRuns": 1,
+    "hookOld": 1,
+    "actualOld": 0,
+    "current": 0,
+    "summaryIndex": -1,
+    "calls": [],
+    "outputs": [],
+    "normal": 0,
+    "journal": "blocked",
+    "checkpoint": "14acf8c1"
+  }
+]

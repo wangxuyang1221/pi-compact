@@ -1,0 +1,242 @@
+[
+  {
+    "us": 351373,
+    "functionName": "writeFileUtf8",
+    "scriptId": "0",
+    "url": "",
+    "lineNumber": -1,
+    "columnNumber": -1
+  },
+  {
+    "us": 46415,
+    "functionName": "(garbage collector)",
+    "scriptId": "0",
+    "url": "",
+    "lineNumber": -1,
+    "columnNumber": -1
+  },
+  {
+    "us": 33416,
+    "functionName": "compileSourceTextModule",
+    "scriptId": "70",
+    "url": "node:internal/modules/esm/utils",
+    "lineNumber": 343,
+    "columnNumber": 32
+  },
+  {
+    "us": 25209,
+    "functionName": "",
+    "scriptId": "194",
+    "url": "file:///Users/wangxuyang/Library/pnpm/store/v11/links/@earendil-works/pi-coding-agent/1.5.2/643b01c0aa78c8ef11bcca81208b3bcdf7c0b473aa9432569290180e541a3aca/node_modules/@earendil-works/pi-coding-agent/dist/bundle/chunks/chunk-FF6XOTWB.js",
+    "lineNumber": 0,
+    "columnNumber": 0
+  },
+  {
+    "us": 16292,
+    "functionName": "compileSourceTextModule",
+    "scriptId": "70",
+    "url": "node:internal/modules/esm/utils",
+    "lineNumber": 343,
+    "columnNumber": 32
+  },
+  {
+    "us": 15458,
+    "functionName": "(idle)",
+    "scriptId": "0",
+    "url": "",
+    "lineNumber": -1,
+    "columnNumber": -1
+  },
+  {
+    "us": 14542,
+    "functionName": "globalThis.fetch",
+    "scriptId": "86",
+    "url": "file:///Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047/scripts/fixture/preload.mjs",
+    "lineNumber": 33,
+    "columnNumber": 19
+  },
+  {
+    "us": 13958,
+    "functionName": "compileSourceTextModule",
+    "scriptId": "70",
+    "url": "node:internal/modules/esm/utils",
+    "lineNumber": 343,
+    "columnNumber": 32
+  },
+  {
+    "us": 12166,
+    "functionName": "wrapSafe",
+    "scriptId": "67",
+    "url": "node:internal/modules/cjs/loader",
+    "lineNumber": 1594,
+    "columnNumber": 17
+  },
+  {
+    "us": 10417,
+    "functionName": "setupCli",
+    "scriptId": "191",
+    "url": "file:///Users/wangxuyang/Library/pnpm/store/v11/links/@earendil-works/pi-coding-agent/1.5.2/643b01c0aa78c8ef11bcca81208b3bcdf7c0b473aa9432569290180e541a3aca/node_modules/@earendil-works/pi-coding-agent/dist/bundle/cli-runtime.js",
+    "lineNumber": 2,
+    "columnNumber": 800
+  },
+  {
+    "us": 9750,
+    "functionName": "(program)",
+    "scriptId": "0",
+    "url": "",
+    "lineNumber": -1,
+    "columnNumber": -1
+  },
+  {
+    "us": 8544,
+    "functionName": "appendMessage",
+    "scriptId": "192",
+    "url": "file:///Users/wangxuyang/Library/pnpm/store/v11/links/@earendil-works/pi-coding-agent/1.5.2/643b01c0aa78c8ef11bcca81208b3bcdf7c0b473aa9432569290180e541a3aca/node_modules/@earendil-works/pi-coding-agent/dist/bundle/chunks/chunk-VEJDBY3O.js",
+    "lineNumber": 528,
+    "columnNumber": 314
+  },
+  {
+    "us": 8542,
+    "functionName": "_persist",
+    "scriptId": "192",
+    "url": "file:///Users/wangxuyang/Library/pnpm/store/v11/links/@earendil-works/pi-coding-agent/1.5.2/643b01c0aa78c8ef11bcca81208b3bcdf7c0b473aa9432569290180e541a3aca/node_modules/@earendil-works/pi-coding-agent/dist/bundle/chunks/chunk-VEJDBY3O.js",
+    "lineNumber": 526,
+    "columnNumber": 432
+  },
+  {
+    "us": 8459,
+    "functionName": "compileSourceTextModule",
+    "scriptId": "70",
+    "url": "node:internal/modules/esm/utils",
+    "lineNumber": 343,
+    "columnNumber": 32
+  },
+  {
+    "us": 6834,
+    "functionName": "",
+    "scriptId": "214",
+    "url": "file:///Users/wangxuyang/Library/pnpm/store/v11/links/@earendil-works/pi-coding-agent/1.5.2/643b01c0aa78c8ef11bcca81208b3bcdf7c0b473aa9432569290180e541a3aca/node_modules/@earendil-works/pi-coding-agent/dist/bundle/chunks/chunk-MMDXLZVS.js",
+    "lineNumber": 0,
+    "columnNumber": 0
+  },
+  {
+    "us": 6292,
+    "functionName": "ModuleWrap",
+    "scriptId": "0",
+    "url": "",
+    "lineNumber": -1,
+    "columnNumber": -1
+  },
+  {
+    "us": 5876,
+    "functionName": "",
+    "scriptId": "270",
+    "url": "file:///Users/wangxuyang/.t3/worktrees/compact/t3-3d0d9af3-e77d23d073bf7047/scripts/p2/perf-observer.ts",
+    "lineNumber": 34,
+    "columnNumber": 25
+  },
+  {
+    "us": 5375,
+    "functionName": "writeFileUtf8",
+    "scriptId": "0",
+    "url": "",
+    "lineNumber": -1,
+    "columnNumber": -1
+  },
+  {
+    "us": 5292,
+    "functionName": "",
+    "scriptId": "192",
+    "url": "file:///Users/wangxuyang/Library/pnpm/store/v11/links/@earendil-works/pi-coding-agent/1.5.2/643b01c0aa78c8ef11bcca81208b3bcdf7c0b473aa9432569290180e541a3aca/node_modules/@earendil-works/pi-coding-agent/dist/bundle/chunks/chunk-VEJDBY3O.js",
+    "lineNumber": 870,
+    "columnNumber": 26511
+  },
+  {
+    "us": 5209,
+    "functionName": "isAbsoluteURL",
+    "scriptId": "275",
+    "url": "file:///Users/wangxuyang/Library/pnpm/store/v11/links/@earendil-works/pi-coding-agent/1.5.2/643b01c0aa78c8ef11bcca81208b3bcdf7c0b473aa9432569290180e541a3aca/node_modules/@earendil-works/pi-coding-agent/dist/bundle/chunks/chunk-CF5GWZHW.js",
+    "lineNumber": 1,
+    "columnNumber": 7148
+  },
+  {
+    "us": 5125,
+    "functionName": "getBindingIdentifiers",
+    "scriptId": "260",
+    "url": "file:///Users/wangxuyang/Library/pnpm/store/v11/links/@/jiti/2.7.0/67fd0174259b52361763203280e5014ea27d60640041501abd7e406e7936e616/node_modules/jiti/dist/babel.cjs",
+    "lineNumber": 241,
+    "columnNumber": 308245
+  },
+  {
+    "us": 4833,
+    "functionName": "get",
+    "scriptId": "260",
+    "url": "file:///Users/wangxuyang/Library/pnpm/store/v11/links/@/jiti/2.7.0/67fd0174259b52361763203280e5014ea27d60640041501abd7e406e7936e616/node_modules/jiti/dist/babel.cjs",
+    "lineNumber": 0,
+    "columnNumber": 40061
+  },
+  {
+    "us": 4833,
+    "functionName": "generateId",
+    "scriptId": "192",
+    "url": "file:///Users/wangxuyang/Library/pnpm/store/v11/links/@earendil-works/pi-coding-agent/1.5.2/643b01c0aa78c8ef11bcca81208b3bcdf7c0b473aa9432569290180e541a3aca/node_modules/@earendil-works/pi-coding-agent/dist/bundle/chunks/chunk-VEJDBY3O.js",
+    "lineNumber": 519,
+    "columnNumber": 2109
+  },
+  {
+    "us": 4667,
+    "functionName": "buildParams",
+    "scriptId": "271",
+    "url": "file:///Users/wangxuyang/Library/pnpm/store/v11/links/@earendil-works/pi-coding-agent/1.5.2/643b01c0aa78c8ef11bcca81208b3bcdf7c0b473aa9432569290180e541a3aca/node_modules/@earendil-works/pi-coding-agent/dist/bundle/chunks/openai-responses-BAKFWTGE.js",
+    "lineNumber": 3,
+    "columnNumber": 1335
+  },
+  {
+    "us": 4583,
+    "functionName": "resetScope",
+    "scriptId": "260",
+    "url": "file:///Users/wangxuyang/Library/pnpm/store/v11/links/@/jiti/2.7.0/67fd0174259b52361763203280e5014ea27d60640041501abd7e406e7936e616/node_modules/jiti/dist/babel.cjs",
+    "lineNumber": 241,
+    "columnNumber": 71671
+  },
+  {
+    "us": 4333,
+    "functionName": "downgradeUnsupportedImages",
+    "scriptId": "277",
+    "url": "file:///Users/wangxuyang/Library/pnpm/store/v11/links/@earendil-works/pi-coding-agent/1.5.2/643b01c0aa78c8ef11bcca81208b3bcdf7c0b473aa9432569290180e541a3aca/node_modules/@earendil-works/pi-coding-agent/dist/bundle/chunks/chunk-ZGYS4UTC.js",
+    "lineNumber": 1,
+    "columnNumber": 14179
+  },
+  {
+    "us": 4291,
+    "functionName": "getRegex",
+    "scriptId": "194",
+    "url": "file:///Users/wangxuyang/Library/pnpm/store/v11/links/@earendil-works/pi-coding-agent/1.5.2/643b01c0aa78c8ef11bcca81208b3bcdf7c0b473aa9432569290180e541a3aca/node_modules/@earendil-works/pi-coding-agent/dist/bundle/chunks/chunk-FF6XOTWB.js",
+    "lineNumber": 5,
+    "columnNumber": 12698
+  },
+  {
+    "us": 4166,
+    "functionName": "next",
+    "scriptId": "275",
+    "url": "file:///Users/wangxuyang/Library/pnpm/store/v11/links/@earendil-works/pi-coding-agent/1.5.2/643b01c0aa78c8ef11bcca81208b3bcdf7c0b473aa9432569290180e541a3aca/node_modules/@earendil-works/pi-coding-agent/dist/bundle/chunks/chunk-CF5GWZHW.js",
+    "lineNumber": 4,
+    "columnNumber": 985
+  },
+  {
+    "us": 4083,
+    "functionName": "estimateMessageTokens",
+    "scriptId": "277",
+    "url": "file:///Users/wangxuyang/Library/pnpm/store/v11/links/@earendil-works/pi-coding-agent/1.5.2/643b01c0aa78c8ef11bcca81208b3bcdf7c0b473aa9432569290180e541a3aca/node_modules/@earendil-works/pi-coding-agent/dist/bundle/chunks/chunk-ZGYS4UTC.js",
+    "lineNumber": 1,
+    "columnNumber": 8741
+  },
+  {
+    "us": 4083,
+    "functionName": "projectContextEntry",
+    "scriptId": "192",
+    "url": "file:///Users/wangxuyang/Library/pnpm/store/v11/links/@earendil-works/pi-coding-agent/1.5.2/643b01c0aa78c8ef11bcca81208b3bcdf7c0b473aa9432569290180e541a3aca/node_modules/@earendil-works/pi-coding-agent/dist/bundle/chunks/chunk-VEJDBY3O.js",
+    "lineNumber": 520,
+    "columnNumber": 2632
+  }
+]
