@@ -1,6 +1,6 @@
 # Implementation roadmap
 
-The design is approved. Stages 1 and 2 have passed independent acceptance; stages 3 through 6 remain open. Each stage requires tests, evidence from a real Pi runtime, and checks for local processing overhead.
+The design is approved. Stages 1 through 3 have passed independent acceptance; stages 4 through 6 remain open. Stage 3 remote execution remains limited to isolated fixtures until migration is accepted. Each stage requires tests, evidence from a real Pi runtime, and checks for local processing overhead.
 
 ## 1. Establish the extension integration
 
@@ -26,11 +26,11 @@ Accept this stage when exact threshold boundaries, configuration persistence, ma
 
 Depends on stage 2.
 
-- [ ] Define versioned text and opaque checkpoint representations.
-- [ ] Validate remote completion events, persist checkpoints, and replay compatible context without placeholder-string substitution.
-- [ ] Fall back through Pi's complete native flow after an explicit remote failure.
-- [ ] Reconstruct readable history when fallback follows an existing remote checkpoint.
-- [ ] Preserve the previous state after interrupted writes, malformed responses, cancellation, or failure of both methods.
+- [x] Define versioned text and opaque checkpoint representations.
+- [x] Validate remote completion events, persist checkpoints, and replay compatible context without placeholder-string substitution.
+- [x] Fall back through Pi's complete native flow after an explicit remote failure.
+- [x] Reconstruct readable history when fallback follows an existing remote checkpoint.
+- [x] Preserve the previous state after interrupted writes, malformed responses, cancellation, or failure of both methods.
 
 Accept this stage when repeated remote compaction, continuation, fallback, and disk recovery work without an extra text-summary request on the remote success path.
 
@@ -76,4 +76,4 @@ Check local overhead against a measured native baseline. Network completion time
 
 Screenshots and interaction recordings should come from the tested package revision. Temporary processes and listeners must be stopped after verification.
 
-The repository contains the P1 and P2 extension and reproducible verification runners. Read the [P1 acceptance report](../artifacts/P1-acceptance/REPORT.md) and [adapter boundaries](p1-adapter.md) for the tested revision and supported behavior. The [P2 acceptance report](../artifacts/P2-acceptance/REPORT.md) records percentage policy, hook reconstruction, and measured limits. Prototype material remains separate from the development package.
+The repository contains the P1 through P3 extension and reproducible verification runners. Read the [P1 acceptance report](../artifacts/P1-acceptance/REPORT.md) and [adapter boundaries](p1-adapter.md) for the tested revision and supported behavior. The [P2 acceptance report](../artifacts/P2-acceptance/REPORT.md) records percentage policy, hook reconstruction, and measured limits. The [P3 acceptance report](../artifacts/P3-acceptance/REPORT.md) records checkpoint recovery, native fallback, and the fixture-only remote scope. Prototype material remains separate from the development package.

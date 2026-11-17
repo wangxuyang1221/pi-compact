@@ -1,0 +1,7 @@
+{"kind":"direct-retry","pass":true,"dir":"/Users/wangxuyang/Code/codex/pstack/compact/artifacts/P3-fixes/runs/1794825734547/direct-retry","prior":"b6a309ee"}
+{"kind":"blocked-input","pass":true,"dir":"/Users/wangxuyang/Code/codex/pstack/compact/artifacts/P3-fixes/runs/1794825734547/blocked-input","prior":"67011a90"}
+{"kind":"restart","pass":true,"dir":"/Users/wangxuyang/Code/codex/pstack/compact/artifacts/P3-fixes/runs/1794825734547/restart","prior":"b4c5e13c"}
+{"kind":"kill-idle","pass":true,"dir":"/Users/wangxuyang/Code/codex/pstack/compact/artifacts/P3-fixes/runs/1794825734547/kill-idle","prior":"4d4bb266"}
+{"kind":"small-baseline","pass":true,"dir":"/Users/wangxuyang/Code/codex/pstack/compact/artifacts/P3-fixes/runs/1794825734547/small-baseline"}
+{"kind":"small-head","pass":true,"dir":"/Users/wangxuyang/Code/codex/pstack/compact/artifacts/P3-fixes/runs/1794825734547/small-head"}
+{"kind":"opaque-small","pass":true,"dir":"/Users/wangxuyang/Code/codex/pstack/compact/artifacts/P3-fixes/runs/1794825734547/opaque-small"}

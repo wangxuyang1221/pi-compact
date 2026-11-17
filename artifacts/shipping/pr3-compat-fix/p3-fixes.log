@@ -1,0 +1,7 @@
+{"kind":"direct-retry","pass":true,"dir":"/Users/wangxuyang/.t3/worktrees/compact/fix-shipping-pr1-lock-r-102e22217d8e86d5/artifacts/P3-fixes/runs/1794929440300/direct-retry","prior":"40226e92"}
+{"kind":"blocked-input","pass":true,"dir":"/Users/wangxuyang/.t3/worktrees/compact/fix-shipping-pr1-lock-r-102e22217d8e86d5/artifacts/P3-fixes/runs/1794929440300/blocked-input","prior":"06bf0372"}
+{"kind":"restart","pass":true,"dir":"/Users/wangxuyang/.t3/worktrees/compact/fix-shipping-pr1-lock-r-102e22217d8e86d5/artifacts/P3-fixes/runs/1794929440300/restart","prior":"8776bba4"}
+{"kind":"kill-idle","pass":true,"dir":"/Users/wangxuyang/.t3/worktrees/compact/fix-shipping-pr1-lock-r-102e22217d8e86d5/artifacts/P3-fixes/runs/1794929440300/kill-idle","prior":"9af7da8d"}
+{"kind":"small-baseline","pass":true,"dir":"/Users/wangxuyang/.t3/worktrees/compact/fix-shipping-pr1-lock-r-102e22217d8e86d5/artifacts/P3-fixes/runs/1794929440300/small-baseline"}
+{"kind":"small-head","pass":true,"dir":"/Users/wangxuyang/.t3/worktrees/compact/fix-shipping-pr1-lock-r-102e22217d8e86d5/artifacts/P3-fixes/runs/1794929440300/small-head"}
+{"kind":"opaque-small","pass":true,"dir":"/Users/wangxuyang/.t3/worktrees/compact/fix-shipping-pr1-lock-r-102e22217d8e86d5/artifacts/P3-fixes/runs/1794929440300/opaque-small"}

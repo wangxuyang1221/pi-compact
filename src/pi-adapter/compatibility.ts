@@ -11,8 +11,12 @@ export function checkHost(host: typeof Pi): void {
     if (typeof prototype?.[method] !== 'function') throw new Error(`Unsupported Pi capability: AgentSession.${method}`);
   }
   const manager = host.SessionManager?.prototype as unknown as Record<string, unknown>;
-  for (const method of ['buildSessionContext', '_appendEntry', '_rewriteFile']) {
+  for (const method of ['buildSessionContext', 'buildSessionProjection', 'getBranch', 'setSessionFile', '_appendEntry', '_rewriteFile']) {
     if (typeof manager?.[method] !== 'function') throw new Error(`Unsupported Pi capability: SessionManager.${method}`);
+  }
+  const runtime = host.ModelRuntime?.prototype as unknown as Record<string, unknown>;
+  for (const method of ['getAuth', 'isUsingOAuth', 'streamSimple']) {
+    if (typeof runtime?.[method] !== 'function') throw new Error(`Unsupported Pi capability: ModelRuntime.${method}`);
   }
   const mode = host.InteractiveMode?.prototype as unknown as Record<string, unknown>;
   for (const method of ['handleCompactCommand', 'bindCurrentSessionExtensions', 'flushCompactionQueue']) {

@@ -1,0 +1,267 @@
+{
+  "frames": [
+    {
+      "second": 0,
+      "at": 4.02516700000001,
+      "file": "000.txt"
+    },
+    {
+      "second": 1,
+      "at": 1015.3539170000001,
+      "file": "001.txt"
+    },
+    {
+      "second": 2,
+      "at": 2065.6898340000002,
+      "file": "002.txt"
+    },
+    {
+      "second": 3,
+      "at": 3013.2233340000002,
+      "file": "003.txt"
+    },
+    {
+      "second": 4,
+      "at": 4009.1954170000004,
+      "file": "004.txt"
+    },
+    {
+      "second": 5,
+      "at": 5036.66,
+      "file": "005.txt"
+    },
+    {
+      "second": 6,
+      "at": 6007.636084,
+      "file": "006.txt"
+    },
+    {
+      "second": 7,
+      "at": 7011.921875,
+      "file": "007.txt"
+    },
+    {
+      "second": 8,
+      "at": 8007.334375,
+      "file": "008.txt"
+    },
+    {
+      "second": 9,
+      "at": 9006.066417,
+      "file": "009.txt"
+    },
+    {
+      "second": 10,
+      "at": 10009.113209000001,
+      "file": "010.txt"
+    },
+    {
+      "second": 11,
+      "at": 11033.692084,
+      "file": "011.txt"
+    },
+    {
+      "second": 12,
+      "at": 12009.491834,
+      "file": "012.txt"
+    },
+    {
+      "second": 13,
+      "at": 13014.229209000001,
+      "file": "013.txt"
+    },
+    {
+      "second": 14,
+      "at": 14012.463584000001,
+      "file": "014.txt"
+    },
+    {
+      "second": 15,
+      "at": 15010.968,
+      "file": "015.txt"
+    },
+    {
+      "second": 16,
+      "at": 16054.318667000001,
+      "file": "016.txt"
+    },
+    {
+      "second": 17,
+      "at": 17014.401834,
+      "file": "017.txt"
+    },
+    {
+      "second": 18,
+      "at": 18005.64175,
+      "file": "018.txt"
+    },
+    {
+      "second": 19,
+      "at": 19006.564749999998,
+      "file": "019.txt"
+    },
+    {
+      "second": 20,
+      "at": 20021.165792,
+      "file": "020.txt"
+    },
+    {
+      "second": 21,
+      "at": 21009.092084,
+      "file": "021.txt"
+    },
+    {
+      "second": 22,
+      "at": 22006.077999999998,
+      "file": "022.txt"
+    },
+    {
+      "second": 23,
+      "at": 23010.49625,
+      "file": "023.txt"
+    },
+    {
+      "second": 24,
+      "at": 24008.437209,
+      "file": "024.txt"
+    },
+    {
+      "second": 25,
+      "at": 25006.518208999998,
+      "file": "025.txt"
+    },
+    {
+      "second": 26,
+      "at": 26010.341916999998,
+      "file": "026.txt"
+    },
+    {
+      "second": 27,
+      "at": 27010.501042,
+      "file": "027.txt"
+    },
+    {
+      "second": 28,
+      "at": 28029.709124999998,
+      "file": "028.txt"
+    },
+    {
+      "second": 29,
+      "at": 29012.1265,
+      "file": "029.txt"
+    },
+    {
+      "second": 30,
+      "at": 30013.020084,
+      "file": "030.txt"
+    },
+    {
+      "second": 31,
+      "at": 31011.86175,
+      "file": "031.txt"
+    },
+    {
+      "second": 32,
+      "at": 32009.144374999996,
+      "file": "032.txt"
+    },
+    {
+      "second": 33,
+      "at": 33011.254042,
+      "file": "033.txt"
+    },
+    {
+      "second": 34,
+      "at": 34036.788542,
+      "file": "034.txt"
+    },
+    {
+      "second": 35,
+      "at": 35014.907625,
+      "file": "035.txt"
+    },
+    {
+      "second": 36,
+      "at": 36014.277292,
+      "file": "036.txt"
+    },
+    {
+      "second": 37,
+      "at": 37013.130084,
+      "file": "037.txt"
+    },
+    {
+      "second": 38,
+      "at": 38010.902375,
+      "file": "038.txt"
+    },
+    {
+      "second": 39,
+      "at": 39010.489541999996,
+      "file": "039.txt"
+    }
+  ],
+  "source": {
+    "src/checkpoint.ts": "37952366683a76830c7d61ac5e3ad754e0bc6ce14e29d468551c5a128983aa9a",
+    "src/index.ts": "ca2346f3653f4014ac0726c26bc1da72c63f45c527e04118fecb45ee1db21ee6",
+    "src/policy.ts": "6cef2b94edade4ae747a504f64f6a5a087311d8868cd3428cf800f6cebcea8b2",
+    "src/settings.ts": "690cb811c458dfe3af512ab025e18d726b0d75ddea8c97e38cd0155a186b96ad",
+    "src/state.ts": "10c7aad13e9da10bf54bba73edf33d61736f75417f8143c10c20538b3cc749ab",
+    "src/codex/compact.ts": "b047bb14bb20b3eff6780b074db04f898e9b987df6f7155b70c56c98d0e6ba6a",
+    "src/codex/wire.ts": "1102a310cafed43f811baf500cdb6d8485dfef500ad5c41bd691edaa44bd63b5",
+    "src/pi-adapter/compatibility.ts": "df476f4b0be3eaab3c7725b190218fef769db25dff4c6afa8b2a6a7946898bc7",
+    "src/pi-adapter/journal.ts": "0fab09996308920b0757576769849533e9766ce9d99bdaa6b4ac7bee2ec17a67",
+    "src/pi-adapter/reconstruction.ts": "1f98066ed24c2eb82fd24bab0f03528750160c56a74166e6b46b9e894118b55f",
+    "src/pi-adapter/session.ts": "eab0398cd960f9d675c0c3452795e6024f9013743193741a2acdd93fe96bd40a",
+    "src/pi-adapter/transaction.ts": "1fb6a89da306aceb5b4857cb73d0344128047282d3a753bee71516a05bf25d73",
+    "scripts/probe-preload-ownership.mjs": "69687ad1279d5a91d9d19facd45cbcd82233e0d81fbf006e397990b430e9fdb0",
+    "scripts/verify-live.mjs": "5100145b99eb358ce0ca2865aa00a0f7932297fcd83b33b3488d392d3a4f01e3",
+    "scripts/verify-p1-fixes.mjs": "217f2301fd98bb39ffb64cda7b2d3bbdb638a68db500940ab313958c4202443d",
+    "scripts/verify-p1-scope.mjs": "070885808a6daf4d0bc14e9fd68987956eb25cd353172ca310fa7d356d552e29",
+    "scripts/verify-p2-config.mjs": "767ccc8b8518064507626d388b6c07fad6f00477597b20a18291f147a245f809",
+    "scripts/verify-p2-fixes.mjs": "629dc862dc34f0a13d9d43aa68fdf2e380ecb8c89147243a9d65e1a8032c72a0",
+    "scripts/verify-p2-perf.mjs": "e4603dc4442be047d8330bc0fa44215234e6c9e035fa356dce72b9b3c4d71e7f",
+    "scripts/verify-p2-persistence.mjs": "7cba947c17c632bbbb008afac2c2c01e3749517e1bf5654bf3fa179ef604af21",
+    "scripts/verify-p2-reconstruction-perf.mjs": "68dc184c8dc6d1c6719bde3e0a157f622eb833a6ee2ca34a97334b1a74f0d875",
+    "scripts/verify-p2-reconstruction.mjs": "c8d964da8196916fd8bf872c0a2f946c9075930fb2956f66f35279a0fbfdef04",
+    "scripts/verify-p2.mjs": "736d0ba91f5472227fe300c6572ee75b5579a3bbfdc1210454e0ef24887fc337",
+    "scripts/verify-p3-perf.mjs": "76bcf352a6467849a8b989402e33efa89a22617958c5fc2439c0f9a0f23676a8",
+    "scripts/verify-p3.mjs": "c2a55b31740d324e40ec0a9a302daabf7a759f980848a414fb4f4eea19cba917",
+    "scripts/verify-perf.mjs": "6f7f2bce7643ecd729eafc72d34679d54528bdb6898113f1842d801f12cc9674",
+    "scripts/fixture/observer.ts": "fc7b7aff11653f903e5c7a52afa6cc6df20359272d4c646f8edba2af9798897a",
+    "scripts/fixture/preload.mjs": "a5a0ad6ddcaecdd0b4832d2adf344d42e0f22eecb8acf030541bf5cb215de95c",
+    "scripts/fixture/relative-socket.mjs": "b0cb816115016f06a754b5fd3bd49bfebd6fb5b453a9225dad10ee53b8e1cfcf",
+    "scripts/fixture/render-screen.py": "132e997e55674c4fd58a140065f4db122cd855834e5d76ec114e8855a17b731d",
+    "scripts/fixture/runtime.mjs": "313adc65a5969250776afdd7258914eb0b2a4b8a87f6260881d40c6ddcd094a0",
+    "scripts/p2/audit-evidence.mjs": "7bec5730d429bc1656c451d10edf69d92c177cc56104aaea9809a413a0ff73a0",
+    "scripts/p2/common.mjs": "f74998c62c36c12c9ff7ec0647ad344409771c537cf96ddf06d1c5f9f4fd778b",
+    "scripts/p2/config-observer.ts": "61fc71744845bce8903a6f928c1c740f7b860be55890ddfa5dfb4674798fabc9",
+    "scripts/p2/config-trace.mjs": "c01deb957cbf317906a7a7cf152d1f0f7e3a5a4802d63643e0394802183cd510",
+    "scripts/p2/demo.mjs": "88a225fe7f8b8853d271f22bc32fa19c8e6c1c318a452e0f11a67f14a42a5d71",
+    "scripts/p2/hooks.ts": "c563d50b05095207ab2ad75d63a59afbfbc3d376ac29d72bf2d328382c3a05ac",
+    "scripts/p2/observer.ts": "ed77971e6e042003c4391206929bdff5aa4e625d8a7917d5ab3de06cd23f06ea",
+    "scripts/p2/package-smoke.mjs": "b064986fdd8034e839053a7ac7af1ae8a60571c7b9ec0d03318d18b5e67d70c0",
+    "scripts/p2/perf-observer.ts": "cf22fff3f9d59b09f53c5f0663c01e6fefa84276c54664538a8da3c429877dc3",
+    "scripts/p2/persistence-fault.ts": "3b4848d0ff253952ee6f85d3962ee7a4843490df6e5f8a436ec8a6cd16785991",
+    "scripts/p2/reconstruction-hooks.ts": "4008ded4244b6b144f4d2cc897c6e364e89406ce8a5ecc05c3079fcabdc7d6e0",
+    "scripts/p2/render-demo.py": "6519c51976a530157ea1dff203265bd4ae1cbcaa3ca04b818cb9116533f63d69",
+    "scripts/p2/verify-config.mjs": "20eab210201ade20c73bab8ee11f15ffa26a85f135ecdeb8c5f131c896becf12",
+    "scripts/p2/verify-resume.mjs": "a6058a0347d8c080b86de50d5a47c0ef685c146a7a4f2f91c20744b201f8d103",
+    "scripts/p3/audit.mjs": "ab6a75ab164e5bd06e53f1a2e10eb9fda446a3c1b93bff14e573aa2b37adc927",
+    "scripts/p3/common.mjs": "70e88b4007895467f7c7ca8a1ce1dfc2a4e442e72b5c44ca2ef49d99c1eb6da1",
+    "scripts/p3/demo.mjs": "b8ba6723c2e54aff8fa9dbac29ceca26aa27223835924ed7dc3a2a29c606bcd2",
+    "scripts/p3/edges.mjs": "e6ce49ced7ead5e72758c8d11c29e1b0661080db9283b9f5733bcef113533e87",
+    "scripts/p3/fault-preload.mjs": "6d9ed380c1e539b8d2294d71795149c1c2e30ae95d96ab51e83b50e73fd2a211",
+    "scripts/p3/faults.mjs": "1d36b7392da9bea860279252203aa1a32ef6791037ba8b3ffd06710bef4e5334",
+    "scripts/p3/observer.ts": "271a6395f0a7c5fc990cc59805a3c5e42d2471f322b8a1f98d738099c56bc403",
+    "scripts/p3/package-smoke.mjs": "652de0f6a3b36a2914f297ea3556652ce2629c855921a5d3358d3652f80aca43",
+    "scripts/p3/partial-fault.ts": "f91cf5d230f2e92b5743e3d23013344b5f1892b16c7121590ba17454fd8d182d",
+    "scripts/p3/preload.mjs": "e0f059e9d7f6c5c3a6dfb7cc8c835332acb6e61a067a18186b4957124ad9b0da",
+    "scripts/p3/probe-partial.mjs": "c42adfc59b07e8f2732828e85a5cb08d5f38a637ec0eb20bed48debc69234555",
+    "scripts/p3/recall-preload.mjs": "156ee85114f29b01e1f7d6b557d698636d33ae16ea1eec2cb15980042b4f599a",
+    "scripts/p3/recall.mjs": "06f08992e216f8101dca441a6303b62ab98370c288b89b0f08b4756758bfa764",
+    "scripts/regressions/managed-read.ts": "443326c8d137d315289afc933109ff0018e7d2635f94d3d614d23a20456f2577",
+    "scripts/regressions/observer.ts": "431a6c892f559c7cd7973fe354df0cf2eaa793e02024752e79710a783f176729",
+    "scripts/regressions/scope.ts": "1b8c8d247ff0f6ddb41675334dbe6986018048a8105046daf1019b0a3fc408bc"
+  }
+}

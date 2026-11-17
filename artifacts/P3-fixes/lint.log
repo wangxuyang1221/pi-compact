@@ -1,0 +1,4 @@
+
+> pi-compact@0.1.0 lint /Users/wangxuyang/Code/codex/pstack/compact
+> eslint src tests scripts
+

@@ -1,0 +1,12 @@
+{
+  "scope": "903bad5..working tree product and new modules",
+  "reviewer": "owner gpt-6-astra high; no child agents",
+  "deslop": "Reviewed parsing boundaries, native ownership, comments and assertions. Removed broad reasoning-signature parsing; opaque replay carries a checked source reference.",
+  "noComments": {
+    "addedCommentLines": [],
+    "suppressions": [],
+    "deleted": 0,
+    "restored": 0,
+    "delegation": "Skipped by explicit user instruction. Independent review belongs to coordinator."
+  }
+}

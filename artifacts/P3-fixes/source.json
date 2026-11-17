@@ -1,0 +1,7 @@
+{
+  "src/pi-adapter/session.ts": "cc320ce379aeecc63ec218b451174e449dfa8494f68a5698475e4ba4b9abc7ef",
+  "src/pi-adapter/transaction.ts": "1fb6a89da306aceb5b4857cb73d0344128047282d3a753bee71516a05bf25d73",
+  "scripts/verify-p3-fixes.mjs": "8a6a52af0cdb69c79c5cdafe79f1bd59ad379bc887fef87d98fc5063f2a6b63f",
+  "scripts/p3/recovery-fault.mjs": "b267fc653c570dad4fe9fa27853ef959c617c67626bda098c1f9739bddb2914e",
+  "scripts/p3/recovery-observer.mjs": "8f742a0b6b3a65e1e2d5778d38f8904d702beb23343ea40dc24c3b4e7b275e08"
+}

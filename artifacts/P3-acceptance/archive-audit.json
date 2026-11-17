@@ -1,0 +1,4790 @@
+{
+  "pass": true,
+  "archive": {
+    "path": "artifacts/P3-fixes/evidence.tar.gz",
+    "sha256": "5cd989c91489903f178746917c8eceaa841d319929e53f3e9a031835a4041ad8"
+  },
+  "count": 939,
+  "files": [
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/kill-idle/after-fault.jsonl",
+      "size": 18273,
+      "sha256": "13dfff08d772736bde43d757b3808cf11455881017acc0a474ea7b7f67528196"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/kill-idle/after-retries.png",
+      "size": 35726,
+      "sha256": "b95945fa88c06ecdbc87407627f36217dd116e461fe8ccf25de4752f9d1c038e"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/kill-idle/after-retries.txt",
+      "size": 1568,
+      "sha256": "69f8d9f1914bd1b9957bda662f007ad003f25f1a8e287c43bc16af72fbaa47e0"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/kill-idle/agent/models-store.json",
+      "size": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/kill-idle/agent/models.json",
+      "size": 599,
+      "sha256": "c4b7e041e450b4cabdb9ac7e54e102fda0ec92626d0641dd0959f9e8f1322abb"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/kill-idle/agent/settings.json",
+      "size": 207,
+      "sha256": "431bc20177dc185e01b085bfa3d2aaf6294a9cc60cf92572fcf7da91351aaf28"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/kill-idle/attempts.json",
+      "size": 3064,
+      "sha256": "5dec57442503a1e4ff0323f31518d3e2a03d9262714b21f05063e6e2997fa18a"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/kill-idle/before.jsonl",
+      "size": 16500,
+      "sha256": "e3a0a2459bcf4e8f05c581014c86d78a591ff1e708e49a440db1ae9f9cdbb284"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/kill-idle/cleanup.json",
+      "size": 233,
+      "sha256": "e94cca741bd083d9d49825bb9e89244ae7b927547bb0ced4d5e63dcfba401c11"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/kill-idle/control.json",
+      "size": 32,
+      "sha256": "e212608759503256a2de9dddf04bb02236b7d5054e966d6ff31499f9005fbe0f"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/kill-idle/events.jsonl",
+      "size": 14013,
+      "sha256": "8b1179824a52ca7bcbb4317050fe7dd3bbb888a525a3bc8322ef670d04ee5a10"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/kill-idle/exit-code",
+      "size": 3,
+      "sha256": "d80eae6e96d148b3b2abbbc6760077b66c4ea071f847dab573d507a32c4d99a5"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/kill-idle/first-cleanup.json",
+      "size": 190,
+      "sha256": "42084696b343bc92304ad9d5f784e3d8f38f71989509a5b2483ec4b580c06a63"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/kill-idle/first-events.jsonl",
+      "size": 20038,
+      "sha256": "3ebc0f8e4f2e634a88ef8ba5c0c46d60b753b8f63c3b5336d4915787ea96b83d"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/kill-idle/first-processes.json",
+      "size": 87,
+      "sha256": "e96b213e480bdc226815599df551435df1f0ab612b24cb0fe5e559220575bae5"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/kill-idle/first-raw.ansi",
+      "size": 12688,
+      "sha256": "8ecf12294b4763e647d122b48eac887585782e0b8fbd29ea06a1288ac298cb86"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/kill-idle/input.txt",
+      "size": 5,
+      "sha256": "ef2b40c7970c5f1cb0b1d35f265a3c17761a8fb300089077c2b338621ba71ab2"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/kill-idle/journal-at-fault.json",
+      "size": 69,
+      "sha256": "dab3211df3312a227fb8a91fcbd21f0ad91db56fb5d89bba58727bbbc106aedf"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/kill-idle/outcome.png",
+      "size": 39842,
+      "sha256": "0fdbb3d5e0a4466650b928e75f47a7e04e3041101e5ff1d2b98330ceb1841d4c"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/kill-idle/outcome.txt",
+      "size": 1619,
+      "sha256": "421e376ca7ac729f45388d06c39304fa27953d4d4ac413227499cf6c81231c4a"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/kill-idle/pending-at-fault.json",
+      "size": 2149,
+      "sha256": "a22568cb4572b69bb1688778dfa15422fc6fb72693bc666ca7e0e9fc70e83e0e"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/kill-idle/processes.json",
+      "size": 89,
+      "sha256": "2a718b873815199a350b34cf616801c3cc013727562caf1756a89489b642b28e"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/kill-idle/raw.ansi",
+      "size": 33414,
+      "sha256": "549a9013327fdf81d558f972809341fd9f4719847fbcb77223ec2b9a17488ad3"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/kill-idle/ready.png",
+      "size": 37084,
+      "sha256": "217e32c7fd498c0e21110cc18f7d43115ad40af0e8b207718655442b3c2bf552"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/kill-idle/ready.txt",
+      "size": 3951,
+      "sha256": "67a645af932ab02c4ec68d722f06d2499efbb8f6d9acff5e306a7afbe8c8a9c0"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/kill-idle/run.sh",
+      "size": 3305,
+      "sha256": "31fb690e0e315a0da1750c83b2e186fa073c750b3931df5ee9f36c4ea3e65a51"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/kill-idle/session.jsonl",
+      "size": 20463,
+      "sha256": "60ac6b365a5ecc76884da182d8e324d8c3e2454bceb53582abc8ad3b0c3262c3"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/kill-idle/session.jsonl.pi-compact-state.json",
+      "size": 69,
+      "sha256": "9ae545f603fbf4bbf1acc858e7b31a2935f3d7cf35eea76b276a7f8d0576afc5"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/result.json",
+      "size": 7941,
+      "sha256": "1063459069692adf4bc471ff2cc52b91167e9c8d0bf532d373059a5c75c834fc"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/rollback-fail-direct/after-fault.jsonl",
+      "size": 16581,
+      "sha256": "e4092504d45b359e95f733d167fb9dc3c2ea36c358e96b4e3e78e9755d9f8892"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/rollback-fail-direct/after-retries.png",
+      "size": 30259,
+      "sha256": "cfd1def07255509503cd9cdebf3ff3e30e982d85bd65e75252fa869f84890737"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/rollback-fail-direct/after-retries.txt",
+      "size": 1445,
+      "sha256": "6aa10cc79f995ba5ff48fdcc0270236d87cbd9cf04d9419e274dd198ee63c155"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/rollback-fail-direct/agent/models-store.json",
+      "size": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/rollback-fail-direct/agent/models.json",
+      "size": 599,
+      "sha256": "c4b7e041e450b4cabdb9ac7e54e102fda0ec92626d0641dd0959f9e8f1322abb"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/rollback-fail-direct/agent/settings.json",
+      "size": 310,
+      "sha256": "f5bf072261a608be9a5daf36e90ac93c78a7e10662ef35dbe46bd6ea45b61f5a"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/rollback-fail-direct/attempts.json",
+      "size": 3413,
+      "sha256": "b6af6ea772f66dc0ed8805bfc468e3feeb276eefd66770e9ec538b42c70ad0eb"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/rollback-fail-direct/before.jsonl",
+      "size": 16511,
+      "sha256": "abe865c44feebe21dd6f5bfe11f64b127553916654e26fa26d789f5d798a60ba"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/rollback-fail-direct/cleanup.json",
+      "size": 238,
+      "sha256": "09150000264987b2e6ff2a8a29b1e8fcaa7b0b79bc11b71d00b953a4ebc58fef"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/rollback-fail-direct/control.json",
+      "size": 32,
+      "sha256": "e212608759503256a2de9dddf04bb02236b7d5054e966d6ff31499f9005fbe0f"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/rollback-fail-direct/events.jsonl",
+      "size": 40814,
+      "sha256": "9f72d1a715c2da54d8dd3e8a60dce5c3cc8b0c9d2b257a0cbc1e0f12f231db05"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/rollback-fail-direct/exit-code",
+      "size": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/rollback-fail-direct/input.txt",
+      "size": 5,
+      "sha256": "ef2b40c7970c5f1cb0b1d35f265a3c17761a8fb300089077c2b338621ba71ab2"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/rollback-fail-direct/journal-at-fault.json",
+      "size": 83,
+      "sha256": "bc3e651fdd258a8599c74270e0581b11256f8d5b56f11805de8691f266558d7c"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/rollback-fail-direct/outcome.png",
+      "size": 34744,
+      "sha256": "e172a01b34b81a11b71f5c103ab5a1d7d9ff79c7b37d32c5753e78ff85405442"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/rollback-fail-direct/outcome.txt",
+      "size": 1496,
+      "sha256": "aaa3a6ec1f80ee4b2448efa02b3d9a4f070f11a8f9a7504870e96a9f25e6202e"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/rollback-fail-direct/pending-at-fault.json",
+      "size": 2149,
+      "sha256": "456f2e4799ac6dbb506d4eae45d0fe303dfad501ae8e8cc92b58d1b7c6e816d2"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/rollback-fail-direct/processes.json",
+      "size": 91,
+      "sha256": "3217d54b757a23598054b7f5aca7fd4cf80362a8b48ea19336cd5948d3bb2b3b"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/rollback-fail-direct/raw.ansi",
+      "size": 18212,
+      "sha256": "5fddbe65a939152650f5a350c9348f85122521c6682ccdf79930971ac1931288"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/rollback-fail-direct/ready.png",
+      "size": 17045,
+      "sha256": "5732ccbef092a775d4200197134a029809b6bcc53f4518c79ff39382675de04a"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/rollback-fail-direct/ready.txt",
+      "size": 999,
+      "sha256": "fab1ea89f0e8fbccc732f6f61a7943a771926989c6c430f54211af4a563abd96"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/rollback-fail-direct/run.sh",
+      "size": 3382,
+      "sha256": "38bca471149a66d8e57ae9c3cc754ea44c6f27c57b245ad64aa2ded4e7fb0dbc"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/rollback-fail-direct/session.jsonl",
+      "size": 19477,
+      "sha256": "fcda2e36528bd4b59942bc8cd9297881d54d87e999ee9303d149fd79e316fedf"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/rollback-fail-direct/session.jsonl.pi-compact-state.json",
+      "size": 69,
+      "sha256": "c15a51d11d820babb74a100c679900abd3027d8ecd687453537067c4af5fa78b"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/rollback-fail-input/after-fault.jsonl",
+      "size": 16580,
+      "sha256": "68b672bf5dfa102a674f864e03344a09e4525acb225ef674299aa5b729b25bd5"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/rollback-fail-input/after-retries.png",
+      "size": 53877,
+      "sha256": "7bd70618c2995048e369fb4e0cebaa8dbd437dc60e568cf5ad54b59c5dfc42a9"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/rollback-fail-input/after-retries.txt",
+      "size": 1962,
+      "sha256": "401ea2b010af98c030e1fcfbf69fbaea30d6be1dc4c86da53b87b2aba9b8f37f"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/rollback-fail-input/agent/models-store.json",
+      "size": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/rollback-fail-input/agent/models.json",
+      "size": 599,
+      "sha256": "c4b7e041e450b4cabdb9ac7e54e102fda0ec92626d0641dd0959f9e8f1322abb"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/rollback-fail-input/agent/settings.json",
+      "size": 310,
+      "sha256": "f5bf072261a608be9a5daf36e90ac93c78a7e10662ef35dbe46bd6ea45b61f5a"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/rollback-fail-input/attempts.json",
+      "size": 698,
+      "sha256": "37f55835acf2d113d6629d63b7a6791786a1ce49d894fe7c8141b43287b1df0d"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/rollback-fail-input/before.jsonl",
+      "size": 16510,
+      "sha256": "c4e765e46cbc90c9446b06f5277b2d34902f9a75350efaf8a3d5c03303a27a6b"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/rollback-fail-input/cleanup.json",
+      "size": 224,
+      "sha256": "a2a20aa6e733b166ca43f389d9a1db76212b158a6c1454b34b2abb0fd2aecb20"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/rollback-fail-input/control.json",
+      "size": 32,
+      "sha256": "e212608759503256a2de9dddf04bb02236b7d5054e966d6ff31499f9005fbe0f"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/rollback-fail-input/events.jsonl",
+      "size": 37726,
+      "sha256": "23bcd18825a25cbf4998c5d114418b10ddea9905efb47836ecfa215dbff04da2"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/rollback-fail-input/exit-code",
+      "size": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/rollback-fail-input/input.txt",
+      "size": 5,
+      "sha256": "ef2b40c7970c5f1cb0b1d35f265a3c17761a8fb300089077c2b338621ba71ab2"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/rollback-fail-input/journal-at-fault.json",
+      "size": 83,
+      "sha256": "bc3e651fdd258a8599c74270e0581b11256f8d5b56f11805de8691f266558d7c"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/rollback-fail-input/pending-at-fault.json",
+      "size": 2149,
+      "sha256": "981203d18ae3bdc018047fd1c4d1f2fb13783e495d826962907bc6005c525703"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/rollback-fail-input/processes.json",
+      "size": 87,
+      "sha256": "d4fc80f586dcd38e7bd18aa52e152fc51f5aaa0e1496a4c837956609b7ab0462"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/rollback-fail-input/raw.ansi",
+      "size": 18567,
+      "sha256": "48c698944fb55428eab6409a240d74c1b0965592b392609b0b2d77c4dbfecc7d"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/rollback-fail-input/ready.png",
+      "size": 17230,
+      "sha256": "39013f2810a6502c7ae4c83b4ce8f247a4c0afb341111dfdb1d423a2ae9f5bde"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/rollback-fail-input/ready.txt",
+      "size": 998,
+      "sha256": "f0f6b32fcddf7fcb04bc0bf2d1b0b33e2415953dac309993d36c1a46015f0f90"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/rollback-fail-input/run.sh",
+      "size": 3375,
+      "sha256": "519fa449294fcca9256a99dff729aa1f8ef6564f75b24d47a4a3a6b8367ebdf6"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/rollback-fail-input/session.jsonl",
+      "size": 17670,
+      "sha256": "ceac5d7ac2edb185e38930b43d83968ac4f2be43ecdaf2d26af480239445a36a"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/rollback-fail-input/session.jsonl.pi-compact-pending.json",
+      "size": 2149,
+      "sha256": "981203d18ae3bdc018047fd1c4d1f2fb13783e495d826962907bc6005c525703"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825518176/rollback-fail-input/session.jsonl.pi-compact-state.json",
+      "size": 83,
+      "sha256": "bc3e651fdd258a8599c74270e0581b11256f8d5b56f11805de8691f266558d7c"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/kill-idle/after-fault.jsonl",
+      "size": 18273,
+      "sha256": "5b810e75a4daf08cbc5d715216480f315f095419ad8fdd3213723047434a1133"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/kill-idle/after-retries.png",
+      "size": 35758,
+      "sha256": "68a4ab6dfd863d680cb48c4776539456048ef10fb2f395fe9ea50c1f3e2a8fc7"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/kill-idle/after-retries.txt",
+      "size": 1568,
+      "sha256": "6398753c7ac270de5d9a036dce25b51defdf2bd55f7a9be6c2cdf2c11debcfa0"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/kill-idle/agent/models-store.json",
+      "size": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/kill-idle/agent/models.json",
+      "size": 599,
+      "sha256": "c4b7e041e450b4cabdb9ac7e54e102fda0ec92626d0641dd0959f9e8f1322abb"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/kill-idle/agent/settings.json",
+      "size": 207,
+      "sha256": "431bc20177dc185e01b085bfa3d2aaf6294a9cc60cf92572fcf7da91351aaf28"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/kill-idle/attempts.json",
+      "size": 3064,
+      "sha256": "880636db214d85de1ab3934bba70dff342fd13920d4adf3cb9548421de926c62"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/kill-idle/before.jsonl",
+      "size": 16500,
+      "sha256": "10e14614705501ac7f5102df367cac5d9b2cf8eb4ac4bf2905d35000c04e37e1"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/kill-idle/cleanup.json",
+      "size": 233,
+      "sha256": "70ec9986b5b34fc9144012448b0baa1fa588c1fb632bbfc6d0639fa0cc1326c8"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/kill-idle/control.json",
+      "size": 32,
+      "sha256": "e212608759503256a2de9dddf04bb02236b7d5054e966d6ff31499f9005fbe0f"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/kill-idle/events.jsonl",
+      "size": 14010,
+      "sha256": "1e756f87c6f0cb1220ca5bd951e76189b16ccf245076a57af8232755411ccd3c"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/kill-idle/exit-code",
+      "size": 3,
+      "sha256": "d80eae6e96d148b3b2abbbc6760077b66c4ea071f847dab573d507a32c4d99a5"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/kill-idle/first-cleanup.json",
+      "size": 193,
+      "sha256": "ffee51cf1a5b2761520d87d831df662e920c415764ece048d850023a110e0d08"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/kill-idle/first-events.jsonl",
+      "size": 20044,
+      "sha256": "752e6db4e627acd5ee904df89306203b2c75376450700929090c5bed3f084b0b"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/kill-idle/first-processes.json",
+      "size": 89,
+      "sha256": "b87bb3c70499f811ae3ee0844dae31bfb82cd3ee16bd0228c1bf1ae3d8e0696b"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/kill-idle/first-raw.ansi",
+      "size": 12688,
+      "sha256": "539873e8162b3f6c06da5c4a8fb8a1a1d0732dbfee42b66b5bfcdb6a20c57e1c"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/kill-idle/input.txt",
+      "size": 5,
+      "sha256": "ef2b40c7970c5f1cb0b1d35f265a3c17761a8fb300089077c2b338621ba71ab2"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/kill-idle/journal-at-fault.json",
+      "size": 69,
+      "sha256": "8d0531b483f33b40234dbe2caaf4d65b562d9a9d998533237b4fc9d15bf88588"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/kill-idle/outcome.png",
+      "size": 39872,
+      "sha256": "fda87cc6c5d2812f985fcdfbfffbfa55b4e8f776d02b011d5ba1c9aa08bfd6a9"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/kill-idle/outcome.txt",
+      "size": 1619,
+      "sha256": "cf936a3f357de7aa98a328a6a77d01ddbb3f152501acf257db32b9aea8164aba"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/kill-idle/pending-at-fault.json",
+      "size": 2149,
+      "sha256": "b2fa79feffe61f6980f4a93b0d49618236e5e3093df6d62b055ae7ddf4cad2d9"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/kill-idle/processes.json",
+      "size": 89,
+      "sha256": "bf55bae7a17b0114199dbd1185efdb2c56881519eaa12b530b26dd77c56f9bb2"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/kill-idle/raw.ansi",
+      "size": 34980,
+      "sha256": "bcbb10c2539208565767a33d644952b1a1cd84e516ecb0abca23d37e3c223f5c"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/kill-idle/ready.png",
+      "size": 37115,
+      "sha256": "56f2526df47075d5ba971db75588cc3d4b03c3e88df901effeae00f3b373464f"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/kill-idle/ready.txt",
+      "size": 3951,
+      "sha256": "d87b96f7268ce63f917ed629b5b20c6440e58a0c8ff6f2415bf01ea49ebc7793"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/kill-idle/run.sh",
+      "size": 3305,
+      "sha256": "998cff8071f6c6cb3f102daa639c275484c83b329c0d20f60303a1e586e926e6"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/kill-idle/session.jsonl",
+      "size": 20463,
+      "sha256": "6feee9f90ee2d38ef97bb93a4192f6d694e029df0c41c5d29491114b6b20c183"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/kill-idle/session.jsonl.pi-compact-state.json",
+      "size": 69,
+      "sha256": "9d903c0f02f8bf2199ec24a04778467ab97b904f699bfadf41d949d4610df69c"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/result.json",
+      "size": 4317,
+      "sha256": "ada7144424c90c6f52d9810a48c7ddd6f99c22e0d28165c8634681cb794f3d20"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/rollback-fail-direct/after-fault.jsonl",
+      "size": 16581,
+      "sha256": "ee91f57ecaa07148ee8a22e86c1fcc514440aea3ead11c3fd702e56c38e86d87"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/rollback-fail-direct/agent/models-store.json",
+      "size": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/rollback-fail-direct/agent/models.json",
+      "size": 599,
+      "sha256": "c4b7e041e450b4cabdb9ac7e54e102fda0ec92626d0641dd0959f9e8f1322abb"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/rollback-fail-direct/agent/settings.json",
+      "size": 310,
+      "sha256": "f5bf072261a608be9a5daf36e90ac93c78a7e10662ef35dbe46bd6ea45b61f5a"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/rollback-fail-direct/before.jsonl",
+      "size": 16511,
+      "sha256": "3dfba64de6efb3b3e6a892922d5fc912d29fe508c6a1dc63fdb3dc966e8f08c7"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/rollback-fail-direct/cleanup.json",
+      "size": 231,
+      "sha256": "4e3d1bcea420d726e76aaaf99d17c982c31a34b00711236f8e0e49c017ea4388"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/rollback-fail-direct/control.json",
+      "size": 32,
+      "sha256": "e212608759503256a2de9dddf04bb02236b7d5054e966d6ff31499f9005fbe0f"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/rollback-fail-direct/events.jsonl",
+      "size": 20339,
+      "sha256": "80f6feb488f63a36c86eb5bd6775342841d7d715e460f0b59fb2bf89c2709681"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/rollback-fail-direct/exit-code",
+      "size": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/rollback-fail-direct/input.txt",
+      "size": 5,
+      "sha256": "ef2b40c7970c5f1cb0b1d35f265a3c17761a8fb300089077c2b338621ba71ab2"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/rollback-fail-direct/journal-at-fault.json",
+      "size": 83,
+      "sha256": "bc3e651fdd258a8599c74270e0581b11256f8d5b56f11805de8691f266558d7c"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/rollback-fail-direct/pending-at-fault.json",
+      "size": 2149,
+      "sha256": "1ec212ad81bcf7f280ca35f6b5417f1e7aada40369c2e2ae6c2632845c4fba92"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/rollback-fail-direct/processes.json",
+      "size": 89,
+      "sha256": "fd4830a144bd9d14747bd55e5080fe60f370018e35747781180bcac3d0f2755b"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/rollback-fail-direct/raw.ansi",
+      "size": 13477,
+      "sha256": "4d8091a043c3517079ee5fc69578c7a7e5a2c809e22e2b1a8528cc82945da49b"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/rollback-fail-direct/ready.png",
+      "size": 17162,
+      "sha256": "ce77f565d33a1d670ee72e4adaac3fb539c6df69eb6259064364923c27dee6ce"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/rollback-fail-direct/ready.txt",
+      "size": 999,
+      "sha256": "7ff20de2a1b4bae0bb24f7dfd0325406505f389c8b697b88914c769426a6ff7f"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/rollback-fail-direct/run.sh",
+      "size": 3382,
+      "sha256": "4eb47b0b7e782496cfef61fb8d087b44365204e86c6678c428b2a91c3e7c53c6"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/rollback-fail-direct/session.jsonl",
+      "size": 16581,
+      "sha256": "ee91f57ecaa07148ee8a22e86c1fcc514440aea3ead11c3fd702e56c38e86d87"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/rollback-fail-direct/session.jsonl.pi-compact-pending.json",
+      "size": 2149,
+      "sha256": "1ec212ad81bcf7f280ca35f6b5417f1e7aada40369c2e2ae6c2632845c4fba92"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/rollback-fail-direct/session.jsonl.pi-compact-state.json",
+      "size": 83,
+      "sha256": "bc3e651fdd258a8599c74270e0581b11256f8d5b56f11805de8691f266558d7c"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/rollback-fail-input/after-fault.jsonl",
+      "size": 16580,
+      "sha256": "42fe403c6e69f9e986253aad4437d8c2877dd48a01c3c5a6d71a404514a4fe4c"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/rollback-fail-input/agent/models-store.json",
+      "size": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/rollback-fail-input/agent/models.json",
+      "size": 599,
+      "sha256": "c4b7e041e450b4cabdb9ac7e54e102fda0ec92626d0641dd0959f9e8f1322abb"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/rollback-fail-input/agent/settings.json",
+      "size": 310,
+      "sha256": "f5bf072261a608be9a5daf36e90ac93c78a7e10662ef35dbe46bd6ea45b61f5a"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/rollback-fail-input/before.jsonl",
+      "size": 16510,
+      "sha256": "a340a203328f30313b091face45dea5da33a467f285e558448d3d44f5b060a1b"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/rollback-fail-input/cleanup.json",
+      "size": 231,
+      "sha256": "f6a894f3077fb8ae03aa2a1754dd31e90f90b9ec5e137fc07a2ea0488cc4f310"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/rollback-fail-input/control.json",
+      "size": 32,
+      "sha256": "e212608759503256a2de9dddf04bb02236b7d5054e966d6ff31499f9005fbe0f"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/rollback-fail-input/events.jsonl",
+      "size": 20337,
+      "sha256": "72dc78c3fcd126a590b69b0641e93536a847b5975d83bcbd9231b3c47378f9fd"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/rollback-fail-input/exit-code",
+      "size": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/rollback-fail-input/input.txt",
+      "size": 5,
+      "sha256": "ef2b40c7970c5f1cb0b1d35f265a3c17761a8fb300089077c2b338621ba71ab2"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/rollback-fail-input/journal-at-fault.json",
+      "size": 83,
+      "sha256": "bc3e651fdd258a8599c74270e0581b11256f8d5b56f11805de8691f266558d7c"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/rollback-fail-input/pending-at-fault.json",
+      "size": 2149,
+      "sha256": "dab19ccf9ec4e6c0c3b8ad16e9a31c83caddae58f1f1d1e926b9b2146b60954c"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/rollback-fail-input/processes.json",
+      "size": 89,
+      "sha256": "18f9a97325f424d8cd8d317e989ac94799fa6837e7fdaee640c1064dbb754662"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/rollback-fail-input/raw.ansi",
+      "size": 13470,
+      "sha256": "1cc00b406f331cd0c5238c20215a22e62ba7efd99a022118491f8580222dd0cf"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/rollback-fail-input/ready.png",
+      "size": 17272,
+      "sha256": "9aa564fef46986e3b292bc257434685663acf01b318094949701d11d791a6734"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/rollback-fail-input/ready.txt",
+      "size": 998,
+      "sha256": "e362a10eb9627af19fbb674107dabc0d6ae4b5bc6e91571f5b2acbf54b188c98"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/rollback-fail-input/run.sh",
+      "size": 3375,
+      "sha256": "28c3745e6ff6362d8d1a4987d03849a3f67d411c9a698c52b40484314ea8a524"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/rollback-fail-input/session.jsonl",
+      "size": 16580,
+      "sha256": "42fe403c6e69f9e986253aad4437d8c2877dd48a01c3c5a6d71a404514a4fe4c"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/rollback-fail-input/session.jsonl.pi-compact-pending.json",
+      "size": 2149,
+      "sha256": "dab19ccf9ec4e6c0c3b8ad16e9a31c83caddae58f1f1d1e926b9b2146b60954c"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825572633/rollback-fail-input/session.jsonl.pi-compact-state.json",
+      "size": 83,
+      "sha256": "bc3e651fdd258a8599c74270e0581b11256f8d5b56f11805de8691f266558d7c"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/kill-idle/after-fault.jsonl",
+      "size": 18273,
+      "sha256": "accd1cacd2e3514f6ebec9e23db242563d5c7a9465c2e66426bec2b9caf35fa2"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/kill-idle/after-retries.png",
+      "size": 35683,
+      "sha256": "109fa14863930ec2dd63017bdfc0a248670b7fb1761bd2f576339c3205d8e9eb"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/kill-idle/after-retries.txt",
+      "size": 1568,
+      "sha256": "9ccf611478de43c87335628c1f0d6a6bae0eea2c6e4e654c00c5057b73ba2ad1"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/kill-idle/agent/models-store.json",
+      "size": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/kill-idle/agent/models.json",
+      "size": 599,
+      "sha256": "c4b7e041e450b4cabdb9ac7e54e102fda0ec92626d0641dd0959f9e8f1322abb"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/kill-idle/agent/settings.json",
+      "size": 207,
+      "sha256": "431bc20177dc185e01b085bfa3d2aaf6294a9cc60cf92572fcf7da91351aaf28"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/kill-idle/attempts.json",
+      "size": 3064,
+      "sha256": "fab5d43e914e5dabe4b1c8d38b16826fd6be5342cd4e22ae921a29ab7ab37a27"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/kill-idle/before.jsonl",
+      "size": 16500,
+      "sha256": "7f3b7e3d3ea7632082155d548ce8dad53bc81d118ea6c9fc191387acb83ca076"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/kill-idle/cleanup.json",
+      "size": 233,
+      "sha256": "110096640017a019f8e29522c660545cbf864ffe53f75df7a6908e92cf5dc70f"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/kill-idle/control.json",
+      "size": 32,
+      "sha256": "e212608759503256a2de9dddf04bb02236b7d5054e966d6ff31499f9005fbe0f"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/kill-idle/events.jsonl",
+      "size": 14010,
+      "sha256": "1a301ee634b09aaaeb690ceeb7e32ba5431ca0560862ee01c02904cc817c60ab"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/kill-idle/exit-code",
+      "size": 3,
+      "sha256": "d80eae6e96d148b3b2abbbc6760077b66c4ea071f847dab573d507a32c4d99a5"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/kill-idle/first-cleanup.json",
+      "size": 193,
+      "sha256": "1170d45dfbc36972c76cb352b5cab4eb0808130b0144872f1ab00394ba15d320"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/kill-idle/first-events.jsonl",
+      "size": 20046,
+      "sha256": "28e3eaa06c7493b6cdc5594d77c1eed8354193c21efbba244387c72f26c8bb66"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/kill-idle/first-processes.json",
+      "size": 89,
+      "sha256": "7808a559e8a79fcaf5ab6cc503762e56c1c580b4b7ac0a6fba25b3196cdea85b"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/kill-idle/first-raw.ansi",
+      "size": 12688,
+      "sha256": "f89caa76f3a50539fb50598287b3775684ab7668855f1a05480ac04c9963c532"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/kill-idle/input.txt",
+      "size": 5,
+      "sha256": "ef2b40c7970c5f1cb0b1d35f265a3c17761a8fb300089077c2b338621ba71ab2"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/kill-idle/journal-at-fault.json",
+      "size": 69,
+      "sha256": "e454c3c4008b06826b62448d41489882793705c5299ad1b93100f9575fdd0856"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/kill-idle/outcome.png",
+      "size": 39777,
+      "sha256": "b8a78b5f661e0aec8d452e79da2dcf1594c7590ede8bcf47966de67a1e9b555d"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/kill-idle/outcome.txt",
+      "size": 1619,
+      "sha256": "fecc42a8662817fb29cbdad13f256e99f2808211f97b64fb6df7ea2a058f0d93"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/kill-idle/pending-at-fault.json",
+      "size": 2149,
+      "sha256": "88d83042bc9de15bc30a3112b5f73d307ecec1a2ac262e9bfc55f557338e38ed"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/kill-idle/processes.json",
+      "size": 89,
+      "sha256": "0110980e0f666f9538d0322d8221ae6a215fe1ebb13c09bbdad5b4febb071257"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/kill-idle/raw.ansi",
+      "size": 33414,
+      "sha256": "d554650092d7e1313dca9efde17eb34376cb962e0d4aeb487dd8142781422e3a"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/kill-idle/ready.png",
+      "size": 37047,
+      "sha256": "5264a638f11c261ceef2bbfa25621526ae488741b240f12bd88adfc48516e5d7"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/kill-idle/ready.txt",
+      "size": 3951,
+      "sha256": "c633883e643bc134afadd53356ed80c543cfbe4fa86874e393235888a93dd2b3"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/kill-idle/run.sh",
+      "size": 3305,
+      "sha256": "e19b7b9eece34833c1139c4acdffe6e4b3b9447949f817d9c54de4d33c5ae2ab"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/kill-idle/session.jsonl",
+      "size": 20463,
+      "sha256": "b92c8aeddb17c54fb060191e102a939697824f960b4b4d95aac32f3deb06f139"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/kill-idle/session.jsonl.pi-compact-state.json",
+      "size": 69,
+      "sha256": "dece7aa67b1494c74e9abc6308ec44184ce5241af00d7c6d76e9dafe36e81ee9"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/result.json",
+      "size": 10685,
+      "sha256": "a5b1cd60cb44a8d03726f6476320cc043a2ea869d89aa35520591cdd4f40224b"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/rollback-fail-direct/after-fault.jsonl",
+      "size": 16581,
+      "sha256": "03a9c21e249f6bb2fa083e1261c501aa0fbaa0655355c2482325ec4093b6b1b6"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/rollback-fail-direct/after-retries.png",
+      "size": 30293,
+      "sha256": "dbb56884a133ccb58dd8057aa6191ec999b274e39442e5add16a9a51aa152fa4"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/rollback-fail-direct/after-retries.txt",
+      "size": 1445,
+      "sha256": "637378fb5bc7cd24685a6bf84b63415a8ed8935733a45f9171b51e2e69af9046"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/rollback-fail-direct/agent/models-store.json",
+      "size": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/rollback-fail-direct/agent/models.json",
+      "size": 599,
+      "sha256": "c4b7e041e450b4cabdb9ac7e54e102fda0ec92626d0641dd0959f9e8f1322abb"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/rollback-fail-direct/agent/settings.json",
+      "size": 310,
+      "sha256": "f5bf072261a608be9a5daf36e90ac93c78a7e10662ef35dbe46bd6ea45b61f5a"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/rollback-fail-direct/attempts.json",
+      "size": 3063,
+      "sha256": "16a07c59d49709de420eac6f62a7a92b78ef584b333047f22f2c68710f698898"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/rollback-fail-direct/before.jsonl",
+      "size": 16511,
+      "sha256": "ebb60698d0407814ac8a513f6541e9b044101d9b2aeb5afbef54262ecedd2e36"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/rollback-fail-direct/cleanup.json",
+      "size": 231,
+      "sha256": "8337c5361546161a80deba033b40716c0a8c1cae7dbfb9610f0d7d54b21f967f"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/rollback-fail-direct/control.json",
+      "size": 32,
+      "sha256": "e212608759503256a2de9dddf04bb02236b7d5054e966d6ff31499f9005fbe0f"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/rollback-fail-direct/events.jsonl",
+      "size": 33775,
+      "sha256": "3c965014acd031ea752864a610da5ac03956d4d19dea8d530ddc0c6cf1fb63b4"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/rollback-fail-direct/exit-code",
+      "size": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/rollback-fail-direct/input.txt",
+      "size": 5,
+      "sha256": "ef2b40c7970c5f1cb0b1d35f265a3c17761a8fb300089077c2b338621ba71ab2"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/rollback-fail-direct/journal-at-fault.json",
+      "size": 83,
+      "sha256": "bc3e651fdd258a8599c74270e0581b11256f8d5b56f11805de8691f266558d7c"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/rollback-fail-direct/outcome.png",
+      "size": 34779,
+      "sha256": "6526dfe0b7bdc6c64cda5b3567ad4d33ac86887c43cc3cfbc86beb78cfcdf77e"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/rollback-fail-direct/outcome.txt",
+      "size": 1496,
+      "sha256": "2661d93806e7f8f719f6e344c98cedbab91fd5c783c0bc7d8d0741bf0cc89457"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/rollback-fail-direct/pending-at-fault.json",
+      "size": 2149,
+      "sha256": "158329940214ef62c3f73f37067d23f28125244c58a2d60530a10c03d3513e92"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/rollback-fail-direct/processes.json",
+      "size": 89,
+      "sha256": "17243a765ca5748eaf8700a0409215dcebc02ad8a200c5b50c40378dffc6451f"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/rollback-fail-direct/raw.ansi",
+      "size": 16351,
+      "sha256": "32964e2d1f30b5e03f7b2ce2ccb344d81e7f9ae5ad3fed59f3cadc3f50d82ee2"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/rollback-fail-direct/ready.png",
+      "size": 17079,
+      "sha256": "77f2d5ead8afeb4d46d581e5e91511328a68e548d396cdcd6b881af4ccd13db7"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/rollback-fail-direct/ready.txt",
+      "size": 999,
+      "sha256": "b24a6fb7acb1878cd37b31ba49f7b809a89ad1df3c5afcd6b30fc00496d5a5b3"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/rollback-fail-direct/run.sh",
+      "size": 3382,
+      "sha256": "6bb777fc868597687d62bd22959f28e1480331fefd222582bda62944759b1309"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/rollback-fail-direct/session.jsonl",
+      "size": 19477,
+      "sha256": "c988836e99cc4f570c5777e8e1e4d3dbb85c96723e9d4adf694d16955b7dc1a2"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/rollback-fail-direct/session.jsonl.pi-compact-state.json",
+      "size": 69,
+      "sha256": "dd6a6f55c2d9f66b96442f1bc20ec3a076280efefecc4c5a67febd36c8516ed0"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/rollback-fail-input/after-fault.jsonl",
+      "size": 16580,
+      "sha256": "b68ffe03bc45462ff427a44611e133d488b46b8420c28753d63c80518c6abbd8"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/rollback-fail-input/after-retries.png",
+      "size": 30400,
+      "sha256": "be23dd1755fc94952155af64bdcea07f9899db318d9befddbde553a7a06e7e81"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/rollback-fail-input/after-retries.txt",
+      "size": 1444,
+      "sha256": "95b45e6a75cfa84f6cf78d398a01152914191b4c9631a7a082c6168b995721e6"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/rollback-fail-input/agent/models-store.json",
+      "size": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/rollback-fail-input/agent/models.json",
+      "size": 599,
+      "sha256": "c4b7e041e450b4cabdb9ac7e54e102fda0ec92626d0641dd0959f9e8f1322abb"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/rollback-fail-input/agent/settings.json",
+      "size": 310,
+      "sha256": "f5bf072261a608be9a5daf36e90ac93c78a7e10662ef35dbe46bd6ea45b61f5a"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/rollback-fail-input/attempts.json",
+      "size": 3065,
+      "sha256": "a2391b3eaac32895fd6ad22324ae008e14485453b5c98f629f5e712b2311687a"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/rollback-fail-input/before.jsonl",
+      "size": 16510,
+      "sha256": "284086b8a96d4646e312eb174b72e0ebfbe1b26f294a9b1440bb9bb4493d7ca8"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/rollback-fail-input/cleanup.json",
+      "size": 231,
+      "sha256": "aa974e593c7698828241bc8fff000e41b44c32e51ad05404298e39b237f5ceb4"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/rollback-fail-input/control.json",
+      "size": 32,
+      "sha256": "e212608759503256a2de9dddf04bb02236b7d5054e966d6ff31499f9005fbe0f"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/rollback-fail-input/events.jsonl",
+      "size": 33940,
+      "sha256": "3ebee2f0b7224b82e958ca0ae2cc92ebe2b14ec35127961918ada46d1b9a9981"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/rollback-fail-input/exit-code",
+      "size": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/rollback-fail-input/input.txt",
+      "size": 5,
+      "sha256": "ef2b40c7970c5f1cb0b1d35f265a3c17761a8fb300089077c2b338621ba71ab2"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/rollback-fail-input/journal-at-fault.json",
+      "size": 64,
+      "sha256": "a0075587bd2d810baa58600fc0529d3930e388a9a19cf25f6d86ec75d42456e2"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/rollback-fail-input/outcome.png",
+      "size": 34887,
+      "sha256": "aef3d7b274888f8d9b4002fd87ff02a1ad858065fa807a75a1d5d13724ba1e95"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/rollback-fail-input/outcome.txt",
+      "size": 1495,
+      "sha256": "44af43b12efea08f9baa39426b0c5f4536fb783540842e73e37af1b5ab4c9bea"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/rollback-fail-input/pending-at-fault.json",
+      "size": 2149,
+      "sha256": "a5cb222ae1515f6566f4cff7854fae9ccd38d15471b2fad6f456ade9233e1859"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/rollback-fail-input/processes.json",
+      "size": 89,
+      "sha256": "59b673f5c9b240701364339a4bf2806b8389d69ff18004eb1dd1b8bdac3e5cbb"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/rollback-fail-input/raw.ansi",
+      "size": 18034,
+      "sha256": "81d86e9d27b1bbadda7f81fb0828eef741772a74865095eba83dddb49dd63953"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/rollback-fail-input/ready.png",
+      "size": 17197,
+      "sha256": "8257f4dd92449d1bcf5faa953f5c3dc90521052a9ede85399079a54f06e6b553"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/rollback-fail-input/ready.txt",
+      "size": 998,
+      "sha256": "63b0e8d76f0d23a0caa1ca100eb9917cd08e65fc12e943696f48da98550dabfc"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/rollback-fail-input/run.sh",
+      "size": 3375,
+      "sha256": "d36a6f5d8f64ee554698afe97ceec56ff9a35c6b89544e85c2a026f16a1cb009"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/rollback-fail-input/session.jsonl",
+      "size": 19475,
+      "sha256": "85a3efc8b443ad254c735a66a70b0ecad23dce3502bd1dfb510bb95276dc61bc"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-1794825629574/rollback-fail-input/session.jsonl.pi-compact-state.json",
+      "size": 69,
+      "sha256": "814bf0273b08af71d6f56c71aee1f6a3ddfecf5fde37132f0e68995032ff946f"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-green.log",
+      "size": 2614,
+      "sha256": "4f3a20e3dd4a66443846cb0d64e2a3314fb0aa7928487ded1ab585005a06b967"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-green2.log",
+      "size": 5760,
+      "sha256": "2028eeba3958f1fe6d6dd9cec8cffd405a3420b5558356d8106bf6121f6fcf98"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-preload.mjs",
+      "size": 1372,
+      "sha256": "bd8f1c6a7eb1c53262dfc2357d3f35952980bd6a116dd408d541df5c11391b3f"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-probes-v2.mjs",
+      "size": 3628,
+      "sha256": "5757b352b8a3e613ed11f91756731f8130389a3872e64a306a302cf22589a020"
+    },
+    {
+      "path": "artifacts/P3-fixes/crash-red.log",
+      "size": 4520,
+      "sha256": "b004b34a8558dc53ae99f7528a077a13061d37e05259ea208955e155ea7632a6"
+    },
+    {
+      "path": "artifacts/P3-fixes/lint.log",
+      "size": 97,
+      "sha256": "cfc31fd9a479165b638670143af54c17ac1b37b859702413dc60d525c5e234a8"
+    },
+    {
+      "path": "artifacts/P3-fixes/native-split/baseline/agent/models-store.json",
+      "size": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "path": "artifacts/P3-fixes/native-split/baseline/agent/models.json",
+      "size": 599,
+      "sha256": "c4b7e041e450b4cabdb9ac7e54e102fda0ec92626d0641dd0959f9e8f1322abb"
+    },
+    {
+      "path": "artifacts/P3-fixes/native-split/baseline/agent/settings.json",
+      "size": 310,
+      "sha256": "f5bf072261a608be9a5daf36e90ac93c78a7e10662ef35dbe46bd6ea45b61f5a"
+    },
+    {
+      "path": "artifacts/P3-fixes/native-split/baseline/cleanup.json",
+      "size": 238,
+      "sha256": "9669e4e271bfcf882a27178154b3c7821c1ab77e8c78970244c17c5096f87a89"
+    },
+    {
+      "path": "artifacts/P3-fixes/native-split/baseline/control.json",
+      "size": 32,
+      "sha256": "e212608759503256a2de9dddf04bb02236b7d5054e966d6ff31499f9005fbe0f"
+    },
+    {
+      "path": "artifacts/P3-fixes/native-split/baseline/events.jsonl",
+      "size": 22968,
+      "sha256": "3064278f211e4726274907a85daf1f8ac2a9446793d3fa04a4c3ad9e3140e5ea"
+    },
+    {
+      "path": "artifacts/P3-fixes/native-split/baseline/exit-code",
+      "size": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "artifacts/P3-fixes/native-split/baseline/input.txt",
+      "size": 5,
+      "sha256": "ef2b40c7970c5f1cb0b1d35f265a3c17761a8fb300089077c2b338621ba71ab2"
+    },
+    {
+      "path": "artifacts/P3-fixes/native-split/baseline/outcome.png",
+      "size": 30695,
+      "sha256": "0f51e24b7a7ba8cdfac3ac26639327364cfc9bfa152fc0105a0a03d9d14a94d8"
+    },
+    {
+      "path": "artifacts/P3-fixes/native-split/baseline/outcome.txt",
+      "size": 2120,
+      "sha256": "d43a0b6c20f93cabddbf40cf52ca93620b31f1f8845e2600faf939fe42384b96"
+    },
+    {
+      "path": "artifacts/P3-fixes/native-split/baseline/processes.json",
+      "size": 91,
+      "sha256": "e7b9d2499f1d0243e7e3228d134bd973294928c881179c69508c4bf0cd39a0ac"
+    },
+    {
+      "path": "artifacts/P3-fixes/native-split/baseline/raw.ansi",
+      "size": 13931,
+      "sha256": "78da35c6fd82fdc336422d8cb02bbbd0b8842eaf5802e95d49aa27cc49803858"
+    },
+    {
+      "path": "artifacts/P3-fixes/native-split/baseline/ready.png",
+      "size": 15410,
+      "sha256": "7657e3f94f351dd1b0635177ee83f76f380ff0aef138bb690e6aac2d1f5713d2"
+    },
+    {
+      "path": "artifacts/P3-fixes/native-split/baseline/ready.txt",
+      "size": 980,
+      "sha256": "ce7377d9781a65fc266d3f0e15117236cfc7940c9c4783c59ebd826c6eef7300"
+    },
+    {
+      "path": "artifacts/P3-fixes/native-split/baseline/run.sh",
+      "size": 3243,
+      "sha256": "fbc65e1233d22b1ded24af264e8823379968ba430161e92f2e4ff6d705b880d8"
+    },
+    {
+      "path": "artifacts/P3-fixes/native-split/baseline/session.jsonl",
+      "size": 11080,
+      "sha256": "2f424f2ed14bb98d09f32e9ab8cfe7c7fa6c333cf50f34b36f34c84230724809"
+    },
+    {
+      "path": "artifacts/P3-fixes/native-split/head/agent/models-store.json",
+      "size": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "path": "artifacts/P3-fixes/native-split/head/agent/models.json",
+      "size": 599,
+      "sha256": "c4b7e041e450b4cabdb9ac7e54e102fda0ec92626d0641dd0959f9e8f1322abb"
+    },
+    {
+      "path": "artifacts/P3-fixes/native-split/head/agent/settings.json",
+      "size": 310,
+      "sha256": "f5bf072261a608be9a5daf36e90ac93c78a7e10662ef35dbe46bd6ea45b61f5a"
+    },
+    {
+      "path": "artifacts/P3-fixes/native-split/head/cleanup.json",
+      "size": 238,
+      "sha256": "fe0560cc6e33dd8ba43e08857953b7e127e73904faecb152207c6e6ad6cdf7c5"
+    },
+    {
+      "path": "artifacts/P3-fixes/native-split/head/control.json",
+      "size": 32,
+      "sha256": "e212608759503256a2de9dddf04bb02236b7d5054e966d6ff31499f9005fbe0f"
+    },
+    {
+      "path": "artifacts/P3-fixes/native-split/head/events.jsonl",
+      "size": 25588,
+      "sha256": "b87ebfb31d0712185e6c0099ba65ddc6a2f246d1bdaab7b14b0cac0cbf76ac8e"
+    },
+    {
+      "path": "artifacts/P3-fixes/native-split/head/exit-code",
+      "size": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "artifacts/P3-fixes/native-split/head/input.txt",
+      "size": 5,
+      "sha256": "ef2b40c7970c5f1cb0b1d35f265a3c17761a8fb300089077c2b338621ba71ab2"
+    },
+    {
+      "path": "artifacts/P3-fixes/native-split/head/outcome.png",
+      "size": 30497,
+      "sha256": "766e09eec6c16316e8c11ff84747d1ade0001f3f2c9f1800505599ae51870c02"
+    },
+    {
+      "path": "artifacts/P3-fixes/native-split/head/outcome.txt",
+      "size": 2116,
+      "sha256": "6c8cb2f982faf87829d743749dac8ecc481b5f3ca1c43cf36333271c48dc2790"
+    },
+    {
+      "path": "artifacts/P3-fixes/native-split/head/processes.json",
+      "size": 91,
+      "sha256": "c653f6699e601a7d732d749c8c3dd9a73a952d545f1f4aef943fabd538ad952c"
+    },
+    {
+      "path": "artifacts/P3-fixes/native-split/head/raw.ansi",
+      "size": 13690,
+      "sha256": "7977cc6f1641831a0cd8909cc4197dcf77e37501923c5c4a2b343400c48d984a"
+    },
+    {
+      "path": "artifacts/P3-fixes/native-split/head/ready.png",
+      "size": 15196,
+      "sha256": "2f268cf39a8e688c1553a1c7127d243b1ae8bcaa77bbc00d08f8ba61ac50f9c6"
+    },
+    {
+      "path": "artifacts/P3-fixes/native-split/head/ready.txt",
+      "size": 976,
+      "sha256": "5369ba073f35cc01741e305c075f2017cf0d69ef8b43fc23180dc9269011021c"
+    },
+    {
+      "path": "artifacts/P3-fixes/native-split/head/run.sh",
+      "size": 3279,
+      "sha256": "ccc2fbea93e36679c8a853e0ec9dc17efeecc6662d06bda857cd9f4b0c3d5e4a"
+    },
+    {
+      "path": "artifacts/P3-fixes/native-split/head/session.jsonl",
+      "size": 12162,
+      "sha256": "0199090a4d0f928fb84f72173be29a130f5f10a881cab506df12e24d882a13cf"
+    },
+    {
+      "path": "artifacts/P3-fixes/native-split/head/session.jsonl.pi-compact-state.json",
+      "size": 69,
+      "sha256": "5c22bf1ba2e619bafc3d2c4c6043606f9079e640159a5ecbe93119a1ef844957"
+    },
+    {
+      "path": "artifacts/P3-fixes/native-split/result.json",
+      "size": 16699,
+      "sha256": "012ecf603f836eb8859b8d110c913f9f28c83998e6488b8a062aebd901652c2c"
+    },
+    {
+      "path": "artifacts/P3-fixes/p1-fixes.log",
+      "size": 237,
+      "sha256": "729b37d407de838502023cd8fce324e275e772e5e3188702b7a418726f6b1a1b"
+    },
+    {
+      "path": "artifacts/P3-fixes/p1-scope.log",
+      "size": 292,
+      "sha256": "669ce3858d3114dba90cff75ab15b03aa95b174c8e1c632abf83486729573a7c"
+    },
+    {
+      "path": "artifacts/P3-fixes/p2-fixes.log",
+      "size": 1711,
+      "sha256": "97ee39642572491ad1059ec05db7477b17169f04f52cd5229b54186d4331a727"
+    },
+    {
+      "path": "artifacts/P3-fixes/package-smoke.mjs",
+      "size": 2308,
+      "sha256": "aa2d46b5b65881d9badb00973a34257538c6700e7d43978f98561ae40421a68c"
+    },
+    {
+      "path": "artifacts/P3-fixes/package.log",
+      "size": 205,
+      "sha256": "b8f2b892d8e7bd094781b9f6480690eea503636fda3b2f6fd5c7012882dd8363"
+    },
+    {
+      "path": "artifacts/P3-fixes/prior-faults.log",
+      "size": 730,
+      "sha256": "cb0e2885a32a2600841a3a18eefc9349076611399cf1f7a9c2bc9cf01a77f539"
+    },
+    {
+      "path": "artifacts/P3-fixes/probes.mjs",
+      "size": 1686,
+      "sha256": "8ca43e1d0cba0071657f5b63447c7f4cd88cbdd66e6e9db6c7b385846ffcaee3"
+    },
+    {
+      "path": "artifacts/P3-fixes/regressions.log",
+      "size": 1035,
+      "sha256": "833abc0a4102705e31fad9bcc1d97f1d98990c808c094fd1894b42d712305e12"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/blocked-input/after-fault.jsonl",
+      "size": 16573,
+      "sha256": "5572e254df9bc3039e355146b2458d143463ee62e6daba6f9e897e807d28ed56"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/blocked-input/agent/models-store.json",
+      "size": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/blocked-input/agent/models.json",
+      "size": 599,
+      "sha256": "c4b7e041e450b4cabdb9ac7e54e102fda0ec92626d0641dd0959f9e8f1322abb"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/blocked-input/agent/settings.json",
+      "size": 310,
+      "sha256": "f5bf072261a608be9a5daf36e90ac93c78a7e10662ef35dbe46bd6ea45b61f5a"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/blocked-input/before.jsonl",
+      "size": 16503,
+      "sha256": "16b48da38b9602b2e5b8d3c03339305a6d7967a98957482f9d54073e0b617d27"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/blocked-input/cleanup.json",
+      "size": 231,
+      "sha256": "bab546990a752f4b518982d90230b6f51018735752f75873e406584e3e1bfb08"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/blocked-input/control.json",
+      "size": 32,
+      "sha256": "e212608759503256a2de9dddf04bb02236b7d5054e966d6ff31499f9005fbe0f"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/blocked-input/events.jsonl",
+      "size": 40713,
+      "sha256": "73c9e0c48e20cefd80c9b0f07160d88ac0c32736bb244182907586c8025c69e5"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/blocked-input/exit-code",
+      "size": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/blocked-input/input.txt",
+      "size": 5,
+      "sha256": "ef2b40c7970c5f1cb0b1d35f265a3c17761a8fb300089077c2b338621ba71ab2"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/blocked-input/outcome.png",
+      "size": 34621,
+      "sha256": "f010465aaa3423121bc153907ee54870a48d4f197c346b92a8abfd072b65acb7"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/blocked-input/outcome.txt",
+      "size": 1488,
+      "sha256": "4cefcd746013b4f5b7a470c001c0db7da1baa46e6f5053e1e937a2d9872707cb"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/blocked-input/pending-at-fault.json",
+      "size": 2149,
+      "sha256": "90dc40cbd70861e1765d9cdecfdf8b57aa642a2039dfbe03000d6f6f7cddbd8c"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/blocked-input/processes.json",
+      "size": 89,
+      "sha256": "66368f03395b7ab10a0ae7bb520d001850af36760b002549ddb0ad0f9a7d8c06"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/blocked-input/raw.ansi",
+      "size": 21359,
+      "sha256": "3d4d91923e2307d0cf395e62b6cc53407fee1ff39a33252d595b58544c0ac42c"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/blocked-input/ready.png",
+      "size": 16909,
+      "sha256": "953e31a4f24e2511742e4a385518291a49c01b76ccda94d0087bc210637272fc"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/blocked-input/ready.txt",
+      "size": 991,
+      "sha256": "b957bae592b038a0dab0cee2f3dd1375a015c28f9b02a9c6756e6733e7e7de84"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/blocked-input/run.sh",
+      "size": 3403,
+      "sha256": "d5f8d237abe7b844e6001d29356e3cf0a26c4afa12ee43f8809913b26655cfa2"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/blocked-input/session.jsonl",
+      "size": 19461,
+      "sha256": "db3dd21286cef0762bfd4dbb9e4e9f5ae29772b4ba4e739d56528e305e25503d"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/blocked-input/session.jsonl.pi-compact-state.json",
+      "size": 69,
+      "sha256": "774fdc10bf7cfc9465a24d574176d811915667500bf476f62d1498b438570a28"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/direct-retry/after-fault.jsonl",
+      "size": 16572,
+      "sha256": "74b469e9d6640e01f2029711809d1b90bf9fa9db33a5a85e9e98cb95c77a95b8"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/direct-retry/agent/models-store.json",
+      "size": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/direct-retry/agent/models.json",
+      "size": 599,
+      "sha256": "c4b7e041e450b4cabdb9ac7e54e102fda0ec92626d0641dd0959f9e8f1322abb"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/direct-retry/agent/settings.json",
+      "size": 310,
+      "sha256": "f5bf072261a608be9a5daf36e90ac93c78a7e10662ef35dbe46bd6ea45b61f5a"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/direct-retry/before.jsonl",
+      "size": 16502,
+      "sha256": "fecbfb4b8731dcac45f2ca693cd96309cf4ac18a5229f8db85b03e32db18e1ce"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/direct-retry/cleanup.json",
+      "size": 231,
+      "sha256": "3a25a64de2143f8fc4c7676b6ae8c6b8fd66480be69eae0984bee24461aac712"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/direct-retry/control.json",
+      "size": 32,
+      "sha256": "e212608759503256a2de9dddf04bb02236b7d5054e966d6ff31499f9005fbe0f"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/direct-retry/events.jsonl",
+      "size": 38633,
+      "sha256": "e373dc4999621a04d789636b731f7f2ddf697efc7a8bbbb27dd076aaab6cc4b1"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/direct-retry/exit-code",
+      "size": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/direct-retry/input.txt",
+      "size": 5,
+      "sha256": "ef2b40c7970c5f1cb0b1d35f265a3c17761a8fb300089077c2b338621ba71ab2"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/direct-retry/outcome.png",
+      "size": 34330,
+      "sha256": "c584b5a58f161588e6fb4cd65fc7fcf3bfd288837b6f0815eb97fe61a206975e"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/direct-retry/outcome.txt",
+      "size": 1487,
+      "sha256": "f7f070620f53435ce9d5c9322e461fca65c292338bfc254d93aa5d7e622f081f"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/direct-retry/pending-at-fault.json",
+      "size": 2149,
+      "sha256": "26dad527837743f0e04700b0241ce3b255c7598358c67e851f53eeeb0074b8f0"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/direct-retry/processes.json",
+      "size": 89,
+      "sha256": "cc83cc8d337686ea4e95a526415f659fdbbe6f05f2bf1c7a8a0d715a0c600887"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/direct-retry/raw.ansi",
+      "size": 19542,
+      "sha256": "cde074862b825068151ca7b7feb1c111ec791b8697fd687075fe9de5fe0a9ef5"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/direct-retry/ready.png",
+      "size": 16612,
+      "sha256": "7a7f9a5796992c46ad92afb19672470927dfcc8c331608952d9bb821fbad8d81"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/direct-retry/ready.txt",
+      "size": 990,
+      "sha256": "09ab9f76432bd1faee852f7302bc272c33b67091768f1b8cd4d934a130049fb1"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/direct-retry/run.sh",
+      "size": 3396,
+      "sha256": "a44f209bf640450857dd5728254623b8986c4b94a7181ffa466196ab6137cfa5"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/direct-retry/session.jsonl",
+      "size": 19459,
+      "sha256": "8bc2e90448fe78b0e7bef8cb67aaafc99169e7552b56652c5898c7258b1bced7"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/direct-retry/session.jsonl.pi-compact-state.json",
+      "size": 69,
+      "sha256": "f84e97c6ce91132c22258f158a1456617c9567533b7d672e9f736b2a566347be"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/kill-idle/after-fault.jsonl",
+      "size": 18272,
+      "sha256": "ec387ac000e1d4e7a691075df105847d362ffe009ed5eed1840eefc0325a2d3c"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/kill-idle/agent/models-store.json",
+      "size": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/kill-idle/agent/models.json",
+      "size": 599,
+      "sha256": "c4b7e041e450b4cabdb9ac7e54e102fda0ec92626d0641dd0959f9e8f1322abb"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/kill-idle/agent/settings.json",
+      "size": 207,
+      "sha256": "431bc20177dc185e01b085bfa3d2aaf6294a9cc60cf92572fcf7da91351aaf28"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/kill-idle/before.jsonl",
+      "size": 16499,
+      "sha256": "60dd81fabe3f843aca32a7eb3c9de0fffc7943171ed25a3244f67bac398355d7"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/kill-idle/cleanup.json",
+      "size": 233,
+      "sha256": "2a0edc8a2b42fee45b7a78016b802aa116d34ce9c4d980e876a51de80c1cc464"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/kill-idle/control.json",
+      "size": 32,
+      "sha256": "e212608759503256a2de9dddf04bb02236b7d5054e966d6ff31499f9005fbe0f"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/kill-idle/events.jsonl",
+      "size": 13806,
+      "sha256": "4d72d61f4213e6bc4c987324e6f48ba0f4df0fff2fa1b9b0381e0a7a687a9d99"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/kill-idle/exit-code",
+      "size": 3,
+      "sha256": "d80eae6e96d148b3b2abbbc6760077b66c4ea071f847dab573d507a32c4d99a5"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/kill-idle/first-cleanup.json",
+      "size": 193,
+      "sha256": "0d8f0d3bbddaa4fb3f503b1afebb2ab948afae8807f964ed27ac978708e4a6e6"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/kill-idle/first-events.jsonl",
+      "size": 20138,
+      "sha256": "bd38f07ee3c2c538295cce998187d62b18b5ead2e3ed50a553f26a9247b9b6d1"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/kill-idle/first-processes.json",
+      "size": 89,
+      "sha256": "c01ebceb3fadf2812f84e8087eb0513bc4bed26710d78b6838a068c5e2382298"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/kill-idle/first-raw.ansi",
+      "size": 12972,
+      "sha256": "0afad5b079832a7dce936ea361d3265de4dae3665c05db544340905fcef946a4"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/kill-idle/input.txt",
+      "size": 5,
+      "sha256": "ef2b40c7970c5f1cb0b1d35f265a3c17761a8fb300089077c2b338621ba71ab2"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/kill-idle/outcome.png",
+      "size": 34329,
+      "sha256": "afbe21b716f3041223a632072b75b8232773041b1ae8ed4abd225b204d66c549"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/kill-idle/outcome.txt",
+      "size": 1484,
+      "sha256": "3d5f7b613b91698e8f69d35f803274373ae87dc39a58185839446b91379fc800"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/kill-idle/pending-at-fault.json",
+      "size": 2149,
+      "sha256": "bf20e24b3adfda2425a69df51248138e1e1ff462b31a88d07fdd4d9a1b86c315"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/kill-idle/processes.json",
+      "size": 89,
+      "sha256": "948b97ef94dc909e0c93bdcceb3c934e99feaa29b6bfd8e56f625ee2e47c981f"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/kill-idle/raw.ansi",
+      "size": 30683,
+      "sha256": "9743db796fa8a56d000eee8db5c83714221c4a0827ea76593a4d9e1dd404e2f4"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/kill-idle/ready.png",
+      "size": 36916,
+      "sha256": "3005d1b6fb33af935d8782834fe2487855c34f4138cc50a138c068e591663b91"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/kill-idle/ready.txt",
+      "size": 3950,
+      "sha256": "2c4ef450983ec997912bceebe5e5bbb8b6ffaf9e1c7a45973f363e4211788873"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/kill-idle/run.sh",
+      "size": 3375,
+      "sha256": "6217e28d09192d545ee6c8950ff8e84f18cebdc2e8061d2e6a4bd9c15ada11e6"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/kill-idle/session.jsonl",
+      "size": 19453,
+      "sha256": "1b3e0ec3486f1e48948d38ccefc57ee4638ed92a43e3791651f1cf6d03c710b2"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/kill-idle/session.jsonl.pi-compact-state.json",
+      "size": 69,
+      "sha256": "e0feb53c1076dadb2e8a9d2e233eabcb27c0ac5d3dea5bd1b35a6c89ac42ac0d"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/opaque-small/agent/models-store.json",
+      "size": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/opaque-small/agent/models.json",
+      "size": 599,
+      "sha256": "c4b7e041e450b4cabdb9ac7e54e102fda0ec92626d0641dd0959f9e8f1322abb"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/opaque-small/agent/settings.json",
+      "size": 310,
+      "sha256": "f5bf072261a608be9a5daf36e90ac93c78a7e10662ef35dbe46bd6ea45b61f5a"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/opaque-small/cleanup.json",
+      "size": 231,
+      "sha256": "c01535d4bc240db3ba7fed2829bd57983efac6afd30a2f25fda74ec88ac83349"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/opaque-small/control.json",
+      "size": 37,
+      "sha256": "19527f9b3c609611b41403c3718f21cae164dddb8982a7360f8515fcc6c1e14d"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/opaque-small/events.jsonl",
+      "size": 15710,
+      "sha256": "125097a334b2c81c3b14f309889481c4451fbc8dfcf47d412509d0f2d29d26ba"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/opaque-small/exit-code",
+      "size": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/opaque-small/input.txt",
+      "size": 5,
+      "sha256": "ef2b40c7970c5f1cb0b1d35f265a3c17761a8fb300089077c2b338621ba71ab2"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/opaque-small/processes.json",
+      "size": 89,
+      "sha256": "22e0591d50854d630851bcc350f129768fa6c245f1ca297654eeafdfd65f2ca5"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/opaque-small/raw.ansi",
+      "size": 10978,
+      "sha256": "728c3b49d915c3b7d28bbb92d0d95f35a28c3cd1de6bfe6792bcdd4991fe7470"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/opaque-small/ready.png",
+      "size": 16933,
+      "sha256": "b10d22b5ace92ee3696f53ea411e047e63a93ceaafb8f2f29735f02e55c81ff5"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/opaque-small/ready.txt",
+      "size": 990,
+      "sha256": "b9c8d3f4c538dcfbc168814e4215f486d4ed9310a54220afca87fac897e74941"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/opaque-small/run.sh",
+      "size": 3396,
+      "sha256": "382ae139fbf307a218147ce2be332fce37dd71db1f2bb0f1b81e4affa0819de4"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/opaque-small/session.jsonl",
+      "size": 11521,
+      "sha256": "add0dc906d0f8178461501b0191757099f3668b51faa27ee250f5fb51667dcb3"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/opaque-small/session.jsonl.pi-compact-state.json",
+      "size": 107,
+      "sha256": "79b95df0364254d3698b6472389568e0008795fc2ac95850eee8031b7c9c3904"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/restart/after-fault.jsonl",
+      "size": 16567,
+      "sha256": "5f926e1bfd50c7aa8607a9b3646a62bb43b124f0003c789de8a8fe91386f8408"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/restart/agent/models-store.json",
+      "size": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/restart/agent/models.json",
+      "size": 599,
+      "sha256": "c4b7e041e450b4cabdb9ac7e54e102fda0ec92626d0641dd0959f9e8f1322abb"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/restart/agent/settings.json",
+      "size": 207,
+      "sha256": "431bc20177dc185e01b085bfa3d2aaf6294a9cc60cf92572fcf7da91351aaf28"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/restart/before.jsonl",
+      "size": 16497,
+      "sha256": "389707a08e1b387a53c740e07b6ce0518b229bd438d7e46fe6f6e086c565120a"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/restart/cleanup.json",
+      "size": 231,
+      "sha256": "80e244f82cd84193a0968733185c922f043aae5653ab812cdf0a1816a0ce9b86"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/restart/control.json",
+      "size": 32,
+      "sha256": "e212608759503256a2de9dddf04bb02236b7d5054e966d6ff31499f9005fbe0f"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/restart/events.jsonl",
+      "size": 13806,
+      "sha256": "f6a880ec2d99c78c6e35b29d6853bdf00fa78f67a6846ccde345004f59e89992"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/restart/exit-code",
+      "size": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/restart/first-cleanup.json",
+      "size": 231,
+      "sha256": "3033d5d8ef861de8c04f9143a74de73ccc2935573fff278962b4b59a5bd5f416"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/restart/first-events.jsonl",
+      "size": 29237,
+      "sha256": "90344c01d88b2cf847608872f6812180164fc707d958aa613b84aea7a1d1a7b9"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/restart/first-processes.json",
+      "size": 89,
+      "sha256": "fab2ea5d6ac9a066d29b7ba84df3bee31a80cdee43e650958fea37c76ca7b4e2"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/restart/first-raw.ansi",
+      "size": 17259,
+      "sha256": "c10a51da80565fb860958d073b4dcdb6f63f54a7c7d6ad10216087edf7b540d8"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/restart/input.txt",
+      "size": 5,
+      "sha256": "ef2b40c7970c5f1cb0b1d35f265a3c17761a8fb300089077c2b338621ba71ab2"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/restart/outcome.png",
+      "size": 34238,
+      "sha256": "6b6ef6a0f558193fa0aad12b980c12c2452a321f8e9e252b45e750b2c2d6e6f0"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/restart/outcome.txt",
+      "size": 1482,
+      "sha256": "3f3a010f74da2bdc8b3f4441af9a419fd440fb66d5f09c7f92c7ce8ec0b864ff"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/restart/pending-at-fault.json",
+      "size": 2149,
+      "sha256": "b3f2048eb908b93ddc6b65e3b860658c8d8f6a372bcfaa1055bc8105516d190e"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/restart/processes.json",
+      "size": 89,
+      "sha256": "e54d7b7fe3ace7d22f9ac91f2f70dfc457fe3313c836412fe6ef4495791ba742"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/restart/raw.ansi",
+      "size": 34964,
+      "sha256": "49aa0d88e32094e5c3b5d5b2c4e1b1d49f23cc799b8eeb877192722cd322d7c0"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/restart/ready.png",
+      "size": 36834,
+      "sha256": "6d6481e7dc437497869da1e1c0ca35f06d1478b69b6e6b60b44421384c587533"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/restart/ready.txt",
+      "size": 3948,
+      "sha256": "bed1d444d61a225ba6f248f0af0796b97fdabc9acc093a8bad19377bc2b231a5"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/restart/run.sh",
+      "size": 3361,
+      "sha256": "8cf4b5feb6d068a7ad1545e92110539261010d6ab62346b47b4b9f3fc333beca"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/restart/session.jsonl",
+      "size": 19449,
+      "sha256": "49b4551e59ed9444e1385b2f1d17265adf0098d2369677880cff6813b5471ec5"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/restart/session.jsonl.pi-compact-state.json",
+      "size": 69,
+      "sha256": "a9853c1a0f5668d3ffda5d713533989984809890fa7a14062d827b0ebb7ff615"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/result.json",
+      "size": 48542,
+      "sha256": "f4727c6a03b72637b41b8e6e67f78cff97efc19c4a2e01fe3a3f13e4462f67c6"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/small-baseline/agent/models-store.json",
+      "size": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/small-baseline/agent/models.json",
+      "size": 598,
+      "sha256": "62fd48f7fd86ddebf23e3fa08aae43f03e7d24c81fa31b3d6607fbcdb9a72f18"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/small-baseline/agent/settings.json",
+      "size": 310,
+      "sha256": "f5bf072261a608be9a5daf36e90ac93c78a7e10662ef35dbe46bd6ea45b61f5a"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/small-baseline/cleanup.json",
+      "size": 231,
+      "sha256": "c72a56122f35a3e5ba9353f1f489192fe7e56d6e95fd327830f3ea5da2e66869"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/small-baseline/control.json",
+      "size": 32,
+      "sha256": "e212608759503256a2de9dddf04bb02236b7d5054e966d6ff31499f9005fbe0f"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/small-baseline/events.jsonl",
+      "size": 4774,
+      "sha256": "324142bf5e4d09e24e68329767d69ea0b7809ad4e9b6a9a8a1532ed05c99fb59"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/small-baseline/exit-code",
+      "size": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/small-baseline/input.txt",
+      "size": 5,
+      "sha256": "ef2b40c7970c5f1cb0b1d35f265a3c17761a8fb300089077c2b338621ba71ab2"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/small-baseline/processes.json",
+      "size": 89,
+      "sha256": "2d539d8b187f993fa2277c64d3e4af5b37429080fd6dce22bac8579e4b70633c"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/small-baseline/raw.ansi",
+      "size": 9897,
+      "sha256": "f6168a7d09157ff866e781b3fe8681baae3ac0d2c10d5296a11d5a53e0b19887"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/small-baseline/ready.png",
+      "size": 16775,
+      "sha256": "7c7e02290108344f8d6388327f30096be4e280936b8948b4c20f1d5dd10930ce"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/small-baseline/ready.txt",
+      "size": 992,
+      "sha256": "75c98289da7195a10813b021816a2182e81d0ffbc85c710dc0a7897f097f3f1a"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/small-baseline/run.sh",
+      "size": 3243,
+      "sha256": "a11234ac2ea0f277bde2884cf4d0cb57c2561bd9b3f151171207b43f5867f3cf"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/small-baseline/session.jsonl",
+      "size": 4253,
+      "sha256": "e3b824ce3299fa42f95e4ed9880fa490d45fdc979a8e89be781e6c3714d7eb25"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/small-head/agent/models-store.json",
+      "size": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/small-head/agent/models.json",
+      "size": 598,
+      "sha256": "62fd48f7fd86ddebf23e3fa08aae43f03e7d24c81fa31b3d6607fbcdb9a72f18"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/small-head/agent/settings.json",
+      "size": 310,
+      "sha256": "f5bf072261a608be9a5daf36e90ac93c78a7e10662ef35dbe46bd6ea45b61f5a"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/small-head/cleanup.json",
+      "size": 231,
+      "sha256": "bc837aff3ef4b70adca026b14c7260322a81f79e3ad22be30e09e792eca42476"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/small-head/control.json",
+      "size": 32,
+      "sha256": "e212608759503256a2de9dddf04bb02236b7d5054e966d6ff31499f9005fbe0f"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/small-head/events.jsonl",
+      "size": 5884,
+      "sha256": "41a51f5e63d8846add5d9ee15e027a055e0552e26fbd22555472fe94de19cb5f"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/small-head/exit-code",
+      "size": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/small-head/input.txt",
+      "size": 5,
+      "sha256": "ef2b40c7970c5f1cb0b1d35f265a3c17761a8fb300089077c2b338621ba71ab2"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/small-head/processes.json",
+      "size": 89,
+      "sha256": "d08874da9e881c72edfafadc85352230e4a186298d840f4b52d2c51f072e6429"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/small-head/raw.ansi",
+      "size": 9877,
+      "sha256": "198df46d6dc17c82c9543bb5f3dc43b8e4a5302b0b6ecfa93b2eb38f90cae3fe"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/small-head/ready.png",
+      "size": 16568,
+      "sha256": "be8e12fdba5fba10e6dde49d590c8e90051a9365b167e911814adda5fa0c38da"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/small-head/ready.txt",
+      "size": 988,
+      "sha256": "8a1f14985f9e32ac4263cac9a7b43b6d619c146e3a0f1646bd889e19ce421265"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/small-head/run.sh",
+      "size": 3279,
+      "sha256": "b1a636f5ec3eb04c2582ba498860b14dd1c63f5a3f105fde1248f35e2f02393d"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/small-head/session.jsonl",
+      "size": 4654,
+      "sha256": "8ead1056d51e63b5a6f26dbddbf4e2078a6203773977ae8756a87660a85d68ed"
+    },
+    {
+      "path": "artifacts/P3-fixes/runs/1794825734547/small-head/session.jsonl.pi-compact-state.json",
+      "size": 69,
+      "sha256": "fc1dbc8b8024faa7330fcab9653a96652590c26a9db8aa19a5208da90ed0feb8"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825514495/result.json",
+      "size": 18874,
+      "sha256": "c02b9204d78824d4eec95aaf29fe68bd1018c458d468aac2dfe03f31519c2131"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825514495/small-window-baseline/agent/models-store.json",
+      "size": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825514495/small-window-baseline/agent/models.json",
+      "size": 598,
+      "sha256": "62fd48f7fd86ddebf23e3fa08aae43f03e7d24c81fa31b3d6607fbcdb9a72f18"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825514495/small-window-baseline/agent/settings.json",
+      "size": 310,
+      "sha256": "f5bf072261a608be9a5daf36e90ac93c78a7e10662ef35dbe46bd6ea45b61f5a"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825514495/small-window-baseline/before.jsonl",
+      "size": 2640,
+      "sha256": "d045e3e588e3210078fb99d7e5c6fa73f384a796a12a2e59ffc1930dc6ba915b"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825514495/small-window-baseline/cleanup.json",
+      "size": 238,
+      "sha256": "748c0a15b4903cad1df32f2ce65d5002355da5fe69422d1e577417f96b7d6d32"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825514495/small-window-baseline/control.json",
+      "size": 32,
+      "sha256": "e212608759503256a2de9dddf04bb02236b7d5054e966d6ff31499f9005fbe0f"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825514495/small-window-baseline/events.jsonl",
+      "size": 4803,
+      "sha256": "943679e35d19cef746ea9aa2812145acb3b170452f73f58262054d366a1c97d2"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825514495/small-window-baseline/exit-code",
+      "size": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825514495/small-window-baseline/input.txt",
+      "size": 5,
+      "sha256": "ef2b40c7970c5f1cb0b1d35f265a3c17761a8fb300089077c2b338621ba71ab2"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825514495/small-window-baseline/outcome.png",
+      "size": 35198,
+      "sha256": "61990103636c0920f84607290781bbcea20f0eb0716e2f943d853eedea295d8a"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825514495/small-window-baseline/outcome.txt",
+      "size": 1500,
+      "sha256": "756f75f4b46c9bc6cad3563340fa0fb1604cf52a7cb4be3e39dd191bf8898f90"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825514495/small-window-baseline/processes.json",
+      "size": 91,
+      "sha256": "d4ca2a3cc2031d6531872f8d343009a6f61345de94e9461bf96946c154537069"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825514495/small-window-baseline/raw.ansi",
+      "size": 9937,
+      "sha256": "051b5408b137715fb35f065e5afa4591426dec712983a9d28662e1c8f4082bc1"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825514495/small-window-baseline/ready.png",
+      "size": 16747,
+      "sha256": "b739b664839f0003c41cfaf2ebdc293753652b9d686a641525e0df81690b05a7"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825514495/small-window-baseline/ready.txt",
+      "size": 1000,
+      "sha256": "d746c638166ace06b54691006f68134640c39aa3045cb67813c2ae7ccd3fec70"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825514495/small-window-baseline/run.sh",
+      "size": 3299,
+      "sha256": "32deab5c242ccae8c5e0d1a8ffd39afcdaf6c86b860ec518cff1d91c00c25658"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825514495/small-window-baseline/session.jsonl",
+      "size": 4276,
+      "sha256": "a420c3b90069b3b6616754ac526d9b1dc431d28983ef94fd95b6602156f604b8"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825514495/small-window-head/agent/models-store.json",
+      "size": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825514495/small-window-head/agent/models.json",
+      "size": 598,
+      "sha256": "62fd48f7fd86ddebf23e3fa08aae43f03e7d24c81fa31b3d6607fbcdb9a72f18"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825514495/small-window-head/agent/settings.json",
+      "size": 310,
+      "sha256": "f5bf072261a608be9a5daf36e90ac93c78a7e10662ef35dbe46bd6ea45b61f5a"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825514495/small-window-head/before.jsonl",
+      "size": 2636,
+      "sha256": "87667804e9e16c54681f929045ecab1c7a66d47d6340399ce3af1ef26dd63364"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825514495/small-window-head/cleanup.json",
+      "size": 238,
+      "sha256": "6fb880bf307763fa9c2f4e9fb9b93aea09e072aac18c2d66e8469b046d4905fe"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825514495/small-window-head/control.json",
+      "size": 32,
+      "sha256": "e212608759503256a2de9dddf04bb02236b7d5054e966d6ff31499f9005fbe0f"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825514495/small-window-head/events.jsonl",
+      "size": 1135,
+      "sha256": "f994aff92e8c4ab8c0b3bf302a07524bc739df54ffe1ec2dfadfb7a9d9c2839e"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825514495/small-window-head/exit-code",
+      "size": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825514495/small-window-head/input.txt",
+      "size": 5,
+      "sha256": "ef2b40c7970c5f1cb0b1d35f265a3c17761a8fb300089077c2b338621ba71ab2"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825514495/small-window-head/outcome.png",
+      "size": 36014,
+      "sha256": "615498b2a620373fee2184f336d8db83ee60f74ff08f51a66fcc80b2f650984e"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825514495/small-window-head/outcome.txt",
+      "size": 1390,
+      "sha256": "508766d3b74350d7832288006a3496b6917a36a8822c24208c4420c3ce6cb458"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825514495/small-window-head/processes.json",
+      "size": 91,
+      "sha256": "9863cb8a4d284ef95a9d2cd44c67d649bf9ce0aaa2053a914dbcee438576978b"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825514495/small-window-head/raw.ansi",
+      "size": 8634,
+      "sha256": "c593cbf7f656bac0c4424f2f5533b84924334d3e9cfa00de768854bb8fc270dd"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825514495/small-window-head/ready.png",
+      "size": 16540,
+      "sha256": "d604550754e07276b31e1080fbe4444e9c750710cfe0e6f76ac7ca16cf5b8231"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825514495/small-window-head/ready.txt",
+      "size": 996,
+      "sha256": "2be3bca3a61a554a32d6ff1f1597c5b49b22ae37313b63e317b0c5986348ec1e"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825514495/small-window-head/run.sh",
+      "size": 3335,
+      "sha256": "0e553ec332734ef1344fd37fa404606c58b5f59b0454f7a501d832bab43c97c3"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825514495/small-window-head/session.jsonl",
+      "size": 3767,
+      "sha256": "3bb90d461ad5efab1a9aa02f5ff18833ab06cdf27e621fb35327355aef4cc989"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825514495/small-window-head/session.jsonl.pi-compact-state.json",
+      "size": 107,
+      "sha256": "79b95df0364254d3698b6472389568e0008795fc2ac95850eee8031b7c9c3904"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825569282/result.json",
+      "size": 25516,
+      "sha256": "1baef2a971da12f644d86cc5a50d9d6612310352217f3e1df2b2396f71739921"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825569282/small-window-baseline/agent/models-store.json",
+      "size": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825569282/small-window-baseline/agent/models.json",
+      "size": 598,
+      "sha256": "62fd48f7fd86ddebf23e3fa08aae43f03e7d24c81fa31b3d6607fbcdb9a72f18"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825569282/small-window-baseline/agent/settings.json",
+      "size": 310,
+      "sha256": "f5bf072261a608be9a5daf36e90ac93c78a7e10662ef35dbe46bd6ea45b61f5a"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825569282/small-window-baseline/before.jsonl",
+      "size": 2640,
+      "sha256": "cc7177cc666ebe06eb57a9b705adebf805f11ac92e615ebfca2bcd6723197b73"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825569282/small-window-baseline/cleanup.json",
+      "size": 231,
+      "sha256": "a5ee1289ce07034400787aff54e59d3b8300ae94f652a56c4ac9ed6b11c120bf"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825569282/small-window-baseline/control.json",
+      "size": 32,
+      "sha256": "e212608759503256a2de9dddf04bb02236b7d5054e966d6ff31499f9005fbe0f"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825569282/small-window-baseline/events.jsonl",
+      "size": 4791,
+      "sha256": "62a91fe933d0007a6b8447ee39ea5cea2557331464a9065c46467e68cd6bff6b"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825569282/small-window-baseline/exit-code",
+      "size": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825569282/small-window-baseline/input.txt",
+      "size": 5,
+      "sha256": "ef2b40c7970c5f1cb0b1d35f265a3c17761a8fb300089077c2b338621ba71ab2"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825569282/small-window-baseline/outcome.png",
+      "size": 35401,
+      "sha256": "42f822f17ba301ff3d3db2f246be9e652dd0efaacb61cb255f0ee7c4b858e630"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825569282/small-window-baseline/outcome.txt",
+      "size": 1500,
+      "sha256": "c5cebf353fa8d25b8f5a57dc33dd565611468e9bbf50668ca47db4d79c477548"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825569282/small-window-baseline/processes.json",
+      "size": 89,
+      "sha256": "fb6bb272308d59477a6e8aabbc52e4846cbe6fed6f7098d8fd547fe3f97c977e"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825569282/small-window-baseline/raw.ansi",
+      "size": 9937,
+      "sha256": "569ef52774eec0097a9f409ee73aad47887f2de64e5ff334476d3cbc571f91f5"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825569282/small-window-baseline/ready.png",
+      "size": 16964,
+      "sha256": "1ca994493e25c04fc1da691a0180c9ef27c3ae73ef26df64f760c5ebb80a7fff"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825569282/small-window-baseline/ready.txt",
+      "size": 1000,
+      "sha256": "2e72cee69e5baaf93b21f4fb8268acf2806d041fb1d9660158270ffc67a9cc2a"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825569282/small-window-baseline/run.sh",
+      "size": 3299,
+      "sha256": "22a556c7701c4215eb8bf542f0e31876abdf6ffd95ebd8f13c9a6610b49986bc"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825569282/small-window-baseline/session.jsonl",
+      "size": 4276,
+      "sha256": "723eb93b3a96b72c3a287cfbb34e152ef44ac61cfcc570ce448437e7495c42ea"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825569282/small-window-head/agent/models-store.json",
+      "size": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825569282/small-window-head/agent/models.json",
+      "size": 598,
+      "sha256": "62fd48f7fd86ddebf23e3fa08aae43f03e7d24c81fa31b3d6607fbcdb9a72f18"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825569282/small-window-head/agent/settings.json",
+      "size": 310,
+      "sha256": "f5bf072261a608be9a5daf36e90ac93c78a7e10662ef35dbe46bd6ea45b61f5a"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825569282/small-window-head/before.jsonl",
+      "size": 2636,
+      "sha256": "7888636d677be157717e5efcb91e8393dd772d5f65610d2d17f044116db9a537"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825569282/small-window-head/cleanup.json",
+      "size": 231,
+      "sha256": "01911eb7c32e73b3fd013d62d35dd199a05182a304539fd76c3b9b997662a66b"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825569282/small-window-head/control.json",
+      "size": 32,
+      "sha256": "e212608759503256a2de9dddf04bb02236b7d5054e966d6ff31499f9005fbe0f"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825569282/small-window-head/events.jsonl",
+      "size": 5887,
+      "sha256": "6268cbc67f5898349036dae5032c4a1ea1f02aa283cf75e9f6fe4d37a9523688"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825569282/small-window-head/exit-code",
+      "size": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825569282/small-window-head/input.txt",
+      "size": 5,
+      "sha256": "ef2b40c7970c5f1cb0b1d35f265a3c17761a8fb300089077c2b338621ba71ab2"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825569282/small-window-head/outcome.png",
+      "size": 35206,
+      "sha256": "cd9d0e27d159f7c18930c0ea1ddc57279d57bcd19c86127c96c519c0a8ea032c"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825569282/small-window-head/outcome.txt",
+      "size": 1496,
+      "sha256": "a6e50e95c52faa20f7fed7200f34c025b03016b43a049fd35fbc6de224ce305b"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825569282/small-window-head/processes.json",
+      "size": 89,
+      "sha256": "0fc2056a5cf65195e3507e47054a1d0e77b99cec0709c2ae4af1f4f72c191f75"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825569282/small-window-head/raw.ansi",
+      "size": 9917,
+      "sha256": "e295d7a35b653daf06f9457ebb77a3834dc14108a4dc23015a9a444f6a48071a"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825569282/small-window-head/ready.png",
+      "size": 16758,
+      "sha256": "d49541d7c8623e01abfe16025b43deaee507f1a438b4276e7fc909347da30f18"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825569282/small-window-head/ready.txt",
+      "size": 996,
+      "sha256": "cdf94976880019b729257a3594f883574b1f4f8b3606b0d7ee9083da896f870e"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825569282/small-window-head/run.sh",
+      "size": 3335,
+      "sha256": "3861dad33cb49835600954f729c845a3f49560896ee106b3ca79ea2fc91f84c6"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825569282/small-window-head/session.jsonl",
+      "size": 4677,
+      "sha256": "a58eb8d92bbd9a90ce5fcb598a1348f80a6b74cf5ac9710da54fb1afb4c274db"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-1794825569282/small-window-head/session.jsonl.pi-compact-state.json",
+      "size": 69,
+      "sha256": "51acae36da9e69922764eaeb3692bf6cc9219c2711c8836d7436a909dda9691f"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-green.log",
+      "size": 1459,
+      "sha256": "78eeae425cfe047571c238250a6e3cac1394beae3f1b1247a36a7801202e36e6"
+    },
+    {
+      "path": "artifacts/P3-fixes/small-red.log",
+      "size": 858,
+      "sha256": "d3ac89cd95810d49508bd551d6628c8e9c66125cbac1eacd05d266e4a363655a"
+    },
+    {
+      "path": "artifacts/P3-fixes/split-hook.ts",
+      "size": 1166,
+      "sha256": "e70299982905fddc60093631a9891cc720ece003fde8002a289551a0e47aa661"
+    },
+    {
+      "path": "artifacts/P3-fixes/split.log",
+      "size": 112,
+      "sha256": "eb408df75b78e7007974b54d0afdf4cc3f176365529b5db133828230d2f4da11"
+    },
+    {
+      "path": "artifacts/P3-fixes/split.mjs",
+      "size": 1729,
+      "sha256": "f7edb2a2ac68cd3678f8c57526e3edbbc897f2fb50414c5836bdd37aae48d3b6"
+    },
+    {
+      "path": "artifacts/P3-fixes/typecheck.log",
+      "size": 90,
+      "sha256": "5b2650cc60f43f045e5603582ee6bd651d2dbf488a27258070332474ac5d4899"
+    },
+    {
+      "path": "artifacts/P3-fixes/unit.log",
+      "size": 7473,
+      "sha256": "5c1b280ba3852747f0129a296ec8743927d17e78f879d03447d31adf2d309aa0"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/commit-unlink/agent/models-store.json",
+      "size": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/commit-unlink/agent/models.json",
+      "size": 599,
+      "sha256": "c4b7e041e450b4cabdb9ac7e54e102fda0ec92626d0641dd0959f9e8f1322abb"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/commit-unlink/agent/settings.json",
+      "size": 310,
+      "sha256": "f5bf072261a608be9a5daf36e90ac93c78a7e10662ef35dbe46bd6ea45b61f5a"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/commit-unlink/before-fault.jsonl",
+      "size": 16499,
+      "sha256": "29f5f650f2c1d9253ceae3f1bfdef2321e4ed53096e5000280ddbc68bfdc364e"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/commit-unlink/cleanup.json",
+      "size": 238,
+      "sha256": "53c9857e364458ecd91544fec8effc6532eae9b0ef8ead603a3a9641602b9088"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/commit-unlink/control.json",
+      "size": 32,
+      "sha256": "e212608759503256a2de9dddf04bb02236b7d5054e966d6ff31499f9005fbe0f"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/commit-unlink/events.jsonl",
+      "size": 34058,
+      "sha256": "8186a2f3f7c93b648f3fda0c56ad56d94375b7137539fce42e2adfd3e7254226"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/commit-unlink/exit-code",
+      "size": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/commit-unlink/input.txt",
+      "size": 5,
+      "sha256": "ef2b40c7970c5f1cb0b1d35f265a3c17761a8fb300089077c2b338621ba71ab2"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/commit-unlink/processes.json",
+      "size": 91,
+      "sha256": "dc7996f76550369e6132bdcb82219e53370b3c46f0e67bf31610be56dddc8983"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/commit-unlink/raw.ansi",
+      "size": 20210,
+      "sha256": "f653c5185230c5f0d4c7fa1b34aa64d167f0045d74f3f9b9bf888e88a8072603"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/commit-unlink/ready.png",
+      "size": 16896,
+      "sha256": "af2377fe5b801ad455550bfe4ff486c2a357923a46371cadeba3df3b3216d229"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/commit-unlink/ready.txt",
+      "size": 987,
+      "sha256": "deed0be5e59ecb4314d7c6251886a56c6fe91ec1d4d12ffb8064d1300a37f942"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/commit-unlink/recovered.png",
+      "size": 39629,
+      "sha256": "b5668428d2e8fbc40df48fbdce874153f24671447b00c7bdbd9e159a9c6f1305"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/commit-unlink/recovered.txt",
+      "size": 1592,
+      "sha256": "c550b9f7768f2e928aa3d28d9f4b9abef0f97a7d02cfebc725d0e29c07a35976"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/commit-unlink/run.sh",
+      "size": 3284,
+      "sha256": "51d718d433eaab1fbaec41aa4a1a3bd383d4a624603e017250c04cc2bab23370"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/commit-unlink/session.jsonl",
+      "size": 20434,
+      "sha256": "dc03bccebbe51f4b73415a2c156faf17703db17d3ed7d36ad817259216db4ecb"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/commit-unlink/session.jsonl.pi-compact-state.json",
+      "size": 69,
+      "sha256": "c9db9b36b53971cf1919e93f7578d6b697c4dff518f25eac5bd557daa059b8da"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/fsync/agent/models-store.json",
+      "size": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/fsync/agent/models.json",
+      "size": 599,
+      "sha256": "c4b7e041e450b4cabdb9ac7e54e102fda0ec92626d0641dd0959f9e8f1322abb"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/fsync/agent/settings.json",
+      "size": 310,
+      "sha256": "f5bf072261a608be9a5daf36e90ac93c78a7e10662ef35dbe46bd6ea45b61f5a"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/fsync/before-fault.jsonl",
+      "size": 16491,
+      "sha256": "9f952974f35714dbf73683750b36922a0d3a1a50650b1afbe5394f4d4017b820"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/fsync/cleanup.json",
+      "size": 238,
+      "sha256": "82cd4e6df85999be3fb473a30ab14a5e7375583c5f077cafe8d95e6b3fd1768d"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/fsync/control.json",
+      "size": 32,
+      "sha256": "e212608759503256a2de9dddf04bb02236b7d5054e966d6ff31499f9005fbe0f"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/fsync/events.jsonl",
+      "size": 34045,
+      "sha256": "844ecbbe3ed18bdc69239cf08f2871ab81db3b9c07da2ad2d8e4c63dd8d49fc8"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/fsync/exit-code",
+      "size": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/fsync/input.txt",
+      "size": 5,
+      "sha256": "ef2b40c7970c5f1cb0b1d35f265a3c17761a8fb300089077c2b338621ba71ab2"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/fsync/processes.json",
+      "size": 91,
+      "sha256": "bb7d2c50651d7ba6cbdf0585af18a8220a43186961095f03a48a5c22b6b80c49"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/fsync/raw.ansi",
+      "size": 19797,
+      "sha256": "1629ae96eb534703628acbff4b81321a27ebd149c1b4439c7fb10e97b46108f1"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/fsync/ready.png",
+      "size": 16790,
+      "sha256": "1f1a2fa3b19465e423175f4fd85a83d1ed9c31f595587a93617e0408a02d17c6"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/fsync/ready.txt",
+      "size": 979,
+      "sha256": "6f26e0b2cf5d271ad0c959376283103b6a9f0101be9e7862123398a2ccb3f931"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/fsync/recovered.png",
+      "size": 39299,
+      "sha256": "64d74ae6aa1016d5b88b430a6a69d3984b7c3b512f64706766a552aa1ed3f96e"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/fsync/recovered.txt",
+      "size": 1582,
+      "sha256": "2877eb634f3156ad1997e83b6827cf82a735ccc4fb839b39676e75521cca4d98"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/fsync/run.sh",
+      "size": 3228,
+      "sha256": "ecc6081b96834d732e839505e6dc63b45b92b2b9358c176da6878a59f86d2fac"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/fsync/session.jsonl",
+      "size": 20408,
+      "sha256": "fb6cd457c156b28bf360248eaf3444e2119c058f9815ef5beb693adf849b8395"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/fsync/session.jsonl.pi-compact-state.json",
+      "size": 69,
+      "sha256": "dd50d6c051d654eb596e2788d0cdfc516d0c0b0b992b529bcc63b8810c8d3e9e"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/idle-rename/agent/models-store.json",
+      "size": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/idle-rename/agent/models.json",
+      "size": 599,
+      "sha256": "c4b7e041e450b4cabdb9ac7e54e102fda0ec92626d0641dd0959f9e8f1322abb"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/idle-rename/agent/settings.json",
+      "size": 310,
+      "sha256": "f5bf072261a608be9a5daf36e90ac93c78a7e10662ef35dbe46bd6ea45b61f5a"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/idle-rename/before-fault.jsonl",
+      "size": 16497,
+      "sha256": "86bcdd2ef608a5556cb435ec221f170f511eb026e0ddccd6f10647fc75aeaa57"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/idle-rename/cleanup.json",
+      "size": 238,
+      "sha256": "c313f0030f15593e5c431e646fb333f2c9796860516cdb40fd44c8f3c5b554b4"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/idle-rename/control.json",
+      "size": 32,
+      "sha256": "e212608759503256a2de9dddf04bb02236b7d5054e966d6ff31499f9005fbe0f"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/idle-rename/events.jsonl",
+      "size": 34054,
+      "sha256": "271748a7f528622a71d5ae4fb588156f6aefa6277c8c23ba16624f97fe06e3ee"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/idle-rename/exit-code",
+      "size": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/idle-rename/input.txt",
+      "size": 5,
+      "sha256": "ef2b40c7970c5f1cb0b1d35f265a3c17761a8fb300089077c2b338621ba71ab2"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/idle-rename/processes.json",
+      "size": 91,
+      "sha256": "419e4084b42dd5fc10462e0e6c3476d3222f1a17a3e37b9d5f8e610aab2b4561"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/idle-rename/raw.ansi",
+      "size": 20192,
+      "sha256": "520f35feff0ac352b747de26df67640eba7f576460c4fe0dde2ecdbba80c3def"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/idle-rename/ready.png",
+      "size": 16889,
+      "sha256": "1b75da3c0c6effbc1479264363a77d0358b24ec0ad6d8e5915442224354d1582"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/idle-rename/ready.txt",
+      "size": 985,
+      "sha256": "41d0dd7f5cfae1bbc1331bbe2594b8b51dfa4f7bcf43ebebc0f580b79fed4d6b"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/idle-rename/recovered.png",
+      "size": 39560,
+      "sha256": "8d9728c496121e659587915bbd8a928dcf07908c03dc6a65b70facc1bf73025e"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/idle-rename/recovered.txt",
+      "size": 1591,
+      "sha256": "e7ba9c1369a4bf5a0924f4454421d64a33b09dc05b53f810f164654dd98c197e"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/idle-rename/run.sh",
+      "size": 3270,
+      "sha256": "59aa891afaad832579ccf815fc5eb4ea222e90d3cd8666c016ff629b0f1d0381"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/idle-rename/session.jsonl",
+      "size": 20429,
+      "sha256": "3e4e64cdb7b66988895799537db1d919c7aa734ecbbf815466c1f4694cc62477"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/idle-rename/session.jsonl.pi-compact-state.json",
+      "size": 69,
+      "sha256": "b4892e5185cad64cdb62f9a27673383a5e938ce3f4eaba7e2aabe3d01b5ff75c"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/kill/agent/models-store.json",
+      "size": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/kill/agent/models.json",
+      "size": 599,
+      "sha256": "c4b7e041e450b4cabdb9ac7e54e102fda0ec92626d0641dd0959f9e8f1322abb"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/kill/agent/settings.json",
+      "size": 207,
+      "sha256": "431bc20177dc185e01b085bfa3d2aaf6294a9cc60cf92572fcf7da91351aaf28"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/kill/before-fault.jsonl",
+      "size": 16490,
+      "sha256": "808f60743d7a76d1c2631e4b92dba53293a94aa80a982a8b599dad984a898703"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/kill/cleanup.json",
+      "size": 240,
+      "sha256": "20f4922d97a4e22b0f83603b3d377f6d6d94723360f4cf05abe6524121ba0c43"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/kill/control.json",
+      "size": 32,
+      "sha256": "e212608759503256a2de9dddf04bb02236b7d5054e966d6ff31499f9005fbe0f"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/kill/control.json.fault",
+      "size": 143,
+      "sha256": "4e0f6b1ab06b1a768b3fad27c7937548b10efd7ab242c7460525232029491411"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/kill/events.jsonl",
+      "size": 15926,
+      "sha256": "fe0c69acbe6def408a043f4a2ee74580f95d1108fae62cf9104d9dcbb65646be"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/kill/exit-code",
+      "size": 3,
+      "sha256": "d80eae6e96d148b3b2abbbc6760077b66c4ea071f847dab573d507a32c4d99a5"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/kill/first-cleanup.json",
+      "size": 196,
+      "sha256": "cab2276aefa9492091dc0a55935ec70c32751ecd6660773cd52e90ff15c2fe29"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/kill/first-events.jsonl",
+      "size": 20052,
+      "sha256": "14e1a2bc301c65fd7846a6bb82c6ba9c4e430cf567b6d95b92919b5f22040724"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/kill/first-exit-code",
+      "size": 3,
+      "sha256": "d80eae6e96d148b3b2abbbc6760077b66c4ea071f847dab573d507a32c4d99a5"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/kill/first-raw.ansi",
+      "size": 12574,
+      "sha256": "10166efcfd3eec189d3a3d05b66201b69ad2588bced2dbc09e142c8cac2b2ad4"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/kill/input.txt",
+      "size": 5,
+      "sha256": "ef2b40c7970c5f1cb0b1d35f265a3c17761a8fb300089077c2b338621ba71ab2"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/kill/partial.jsonl",
+      "size": 16560,
+      "sha256": "45631dd95406981388819d578da33426bc8888ed636b9a7d4984007ffd076af9"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/kill/pending-before-recovery.json",
+      "size": 2149,
+      "sha256": "38230a810eec8b706c97757d3cd0973c45f58ddad7a6680feb80b8ac551c45dd"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/kill/processes.json",
+      "size": 91,
+      "sha256": "21a3bdfe8331f655281763a83a59488acebc7f4007aae72025518c450ad4afe1"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/kill/raw.ansi",
+      "size": 33601,
+      "sha256": "7bceb6ba1ed4e79908f29a4bc015a4167f5f018b2b2b6dc3fc2d402f041c67e5"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/kill/ready.png",
+      "size": 37095,
+      "sha256": "4e7200244786d14c3e76c90af67d01244ff4738d80d1a106533302edad73e3be"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/kill/ready.txt",
+      "size": 3941,
+      "sha256": "090ba4ffed3057c90c431201513eba80ca8f75683109651707d7138c8abf72ec"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/kill/recovered.png",
+      "size": 39667,
+      "sha256": "da2fa25c8a53ea04c07406a7f72e73029e538820b249ddc328deb9e019b95693"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/kill/recovered.txt",
+      "size": 1609,
+      "sha256": "05828398a1070e6ea17e04cea307bc710a418cc58dc352401d79b85ce081b2c0"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/kill/run.sh",
+      "size": 3221,
+      "sha256": "28e816fb32c669d010509f56eb1052bd28319273d7bcf2a44fdfe72d83e104e6"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/kill/session.jsonl",
+      "size": 20433,
+      "sha256": "5fe4a9df092723ee69e291ad00eb6befc78cbef35198828b2c75ef5c85b329ab"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/kill/session.jsonl.pi-compact-state.json",
+      "size": 69,
+      "sha256": "a5a1f38a6d388fc563f0f7b6dac3a3ebb3572052c5c03a1d05f6b41e9db3db90"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/partial/agent/models-store.json",
+      "size": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/partial/agent/models.json",
+      "size": 599,
+      "sha256": "c4b7e041e450b4cabdb9ac7e54e102fda0ec92626d0641dd0959f9e8f1322abb"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/partial/agent/settings.json",
+      "size": 310,
+      "sha256": "f5bf072261a608be9a5daf36e90ac93c78a7e10662ef35dbe46bd6ea45b61f5a"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/partial/before-fault.jsonl",
+      "size": 16493,
+      "sha256": "2412dae1513dc7f965253f52557c06fa56badd2dd97250a66e9a838301526d81"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/partial/cleanup.json",
+      "size": 233,
+      "sha256": "0b55c3c50f6ef4cd215dbec0a722ecd77e910a4c87023657fdfcd4e2b01bcc4d"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/partial/control.json",
+      "size": 32,
+      "sha256": "e212608759503256a2de9dddf04bb02236b7d5054e966d6ff31499f9005fbe0f"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/partial/events.jsonl",
+      "size": 34050,
+      "sha256": "faafc37e16762f6378e85dddddbb589cfb849950a19632cdac3005c697e173dc"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/partial/exit-code",
+      "size": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/partial/input.txt",
+      "size": 5,
+      "sha256": "ef2b40c7970c5f1cb0b1d35f265a3c17761a8fb300089077c2b338621ba71ab2"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/partial/processes.json",
+      "size": 89,
+      "sha256": "fc912758304cd83bbe0489375a19a10d719f87ffedc98271b3c635fe01f087d8"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/partial/raw.ansi",
+      "size": 20156,
+      "sha256": "ab0bb071ae27da150e625233098f68f02f898be84cd8b9dfd52bf2ed6e38deae"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/partial/ready.png",
+      "size": 16910,
+      "sha256": "b5e1f7821c3b403e199d4cc51da2728c8519f141c3e3e5b450084edfe7c655bd"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/partial/ready.txt",
+      "size": 981,
+      "sha256": "47bffbf78d08098a1a3fdd762062c1324f18bb13f62f314f7c0940190fca0836"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/partial/recovered.png",
+      "size": 39331,
+      "sha256": "17023d85218cd244a22c6e02c9fede988a200b89f4650d708bbf395239b0c849"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/partial/recovered.txt",
+      "size": 1585,
+      "sha256": "8dd52590f5b99fe7b063a21871f214225fdb009078c81889cea112d22afba80c"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/partial/run.sh",
+      "size": 3242,
+      "sha256": "ad48d147a84802faba54c0aaa516b135a84d045330b4225abcea27ae42fff9b1"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/partial/session.jsonl",
+      "size": 20415,
+      "sha256": "866ea9a6ddb3997e2d75d5256f12916a188e7cc6b6414755fd33b9641825c9b8"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/partial/session.jsonl.pi-compact-state.json",
+      "size": 69,
+      "sha256": "48b8c510ab9c1003bc130300dd560b8d415b556c2c739fe62353f3702f83d0ef"
+    },
+    {
+      "path": "artifacts/P3/faults/1794825750138/result.json",
+      "size": 34677,
+      "sha256": "fa73581693c0ff09078e74ee78d9ef5276960cf3d0904b0d5b742108f1f7fd0d"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/contender/agent/models-store.json",
+      "size": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/contender/agent/models.json",
+      "size": 309,
+      "sha256": "6e8e43b3595b702b42e10b48520dc9029fee73a167ff5275b6bca664a69d0233"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/contender/agent/settings.json",
+      "size": 207,
+      "sha256": "431bc20177dc185e01b085bfa3d2aaf6294a9cc60cf92572fcf7da91351aaf28"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/contender/control.json",
+      "size": 32,
+      "sha256": "e212608759503256a2de9dddf04bb02236b7d5054e966d6ff31499f9005fbe0f"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/contender/events.jsonl",
+      "size": 123,
+      "sha256": "c45555acdf4e8483472b3488c3dd5a431f09733eed33b8f27a3d57a1c4437bfd"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/contender/result.json",
+      "size": 15637,
+      "sha256": "03973176bac6155453c55e50c4e1e58b9770cd548c87633322823b3bdfe359e9"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/contender/stderr.txt",
+      "size": 2315,
+      "sha256": "9a1553e1470e9f1ae8614a1e59c1490de088ac3cc973824e00a12046da70d1f5"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/contender/stdout.jsonl",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/disabled-baseline/agent/models-store.json",
+      "size": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/disabled-baseline/agent/models.json",
+      "size": 309,
+      "sha256": "6e8e43b3595b702b42e10b48520dc9029fee73a167ff5275b6bca664a69d0233"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/disabled-baseline/agent/settings.json",
+      "size": 208,
+      "sha256": "160e6dc7bea1ee3ce8f320efa3979eead6da7f168ce15cfa3caa760285074dc5"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/disabled-baseline/control.json",
+      "size": 32,
+      "sha256": "e212608759503256a2de9dddf04bb02236b7d5054e966d6ff31499f9005fbe0f"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/disabled-baseline/events.jsonl",
+      "size": 13710,
+      "sha256": "aab19556dde0df0fd3d5be8d5d214b8826ab15060da7635635631a0b1cc124c7"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/disabled-baseline/result.json",
+      "size": 30122,
+      "sha256": "b1493bd0e7042e023c042cacbc8d6e763c08d7d99e2f4f65963361223831b0d4"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/disabled-baseline/session.jsonl",
+      "size": 14740,
+      "sha256": "80583969a05aa8c5bd3311cde1ed71dba94619e5b8064b3449c9f53d2c2846cd"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/disabled-baseline/stderr.txt",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/disabled-baseline/stdout.jsonl",
+      "size": 40394,
+      "sha256": "2e16174f563c680b82f397343675f4e259b183a9f754acd94cdf0908d0091efa"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/disabled-head/agent/models-store.json",
+      "size": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/disabled-head/agent/models.json",
+      "size": 309,
+      "sha256": "6e8e43b3595b702b42e10b48520dc9029fee73a167ff5275b6bca664a69d0233"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/disabled-head/agent/settings.json",
+      "size": 208,
+      "sha256": "160e6dc7bea1ee3ce8f320efa3979eead6da7f168ce15cfa3caa760285074dc5"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/disabled-head/control.json",
+      "size": 32,
+      "sha256": "e212608759503256a2de9dddf04bb02236b7d5054e966d6ff31499f9005fbe0f"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/disabled-head/events.jsonl",
+      "size": 12564,
+      "sha256": "bc394ef8dbce63b0d757c761f87d6394c378e9790fc879c7481b6720d390b1c9"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/disabled-head/result.json",
+      "size": 28357,
+      "sha256": "960778cbaaf0c45f40625f42543f6e309194ff3bf473d4d8f30c09f2dae10c83"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/disabled-head/session.jsonl",
+      "size": 13663,
+      "sha256": "9dce36885a3e87ddbb18fb682233689b61b3b1068efcfb2dabddd5008313f4fa"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/disabled-head/stderr.txt",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/disabled-head/stdout.jsonl",
+      "size": 40378,
+      "sha256": "445dc0d77e8476d7de81a31f24d6d99b50ded3cb3ee56e1a519fdbb2e990859a"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/disabled-overflow/agent/models-store.json",
+      "size": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/disabled-overflow/agent/models.json",
+      "size": 309,
+      "sha256": "6e8e43b3595b702b42e10b48520dc9029fee73a167ff5275b6bca664a69d0233"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/disabled-overflow/agent/settings.json",
+      "size": 208,
+      "sha256": "160e6dc7bea1ee3ce8f320efa3979eead6da7f168ce15cfa3caa760285074dc5"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/disabled-overflow/control.json",
+      "size": 32,
+      "sha256": "e212608759503256a2de9dddf04bb02236b7d5054e966d6ff31499f9005fbe0f"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/disabled-overflow/events.jsonl",
+      "size": 246,
+      "sha256": "557be0370adfd34dee49b672064aaceda2ef39664daf22e5b6b230bd82a0b9d0"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/disabled-overflow/result.json",
+      "size": 15829,
+      "sha256": "0a5ccfef811b53a99ada0b4ca551229f36c4a75c4b38f9098a761a9e5222b291"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/disabled-overflow/session.jsonl",
+      "size": 45584,
+      "sha256": "6245adea638b7132cd943147d8ef4ed933002b67cb35b4ca9d0c112dcc703339"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/disabled-overflow/session.jsonl.pi-compact-state.json",
+      "size": 82,
+      "sha256": "d9214d06371e6c98c103c8e6f9e7368f0598abebab948679987f90c0fee5e584"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/disabled-overflow/stderr.txt",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/disabled-overflow/stdout.jsonl",
+      "size": 91009,
+      "sha256": "79f7e939f81057f4e281160b43488059ef6678e53a8718709c1c602f839eff17"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/dispose/agent/models-store.json",
+      "size": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/dispose/agent/models.json",
+      "size": 309,
+      "sha256": "6e8e43b3595b702b42e10b48520dc9029fee73a167ff5275b6bca664a69d0233"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/dispose/agent/settings.json",
+      "size": 207,
+      "sha256": "431bc20177dc185e01b085bfa3d2aaf6294a9cc60cf92572fcf7da91351aaf28"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/dispose/control.json",
+      "size": 32,
+      "sha256": "e212608759503256a2de9dddf04bb02236b7d5054e966d6ff31499f9005fbe0f"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/dispose/cwd/disposed-child/2026-11-16T10-42-41-604Z_01a1e3f3-b343-74b4-b1a6-d7bfb0d57464.jsonl",
+      "size": 701,
+      "sha256": "f548bea186846058afda8ccc6d2edb2c0daa1b5b4345df4b30effb0ee0d91065"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/dispose/events.jsonl",
+      "size": 1322,
+      "sha256": "9b209cbbd3b13ca750f2cfa001c9a68fdd3d91f3590762d4a8413b435c2f8c00"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/dispose/result.json",
+      "size": 17499,
+      "sha256": "26f2d4af2af1d07655e6a6e7e2150be43a539c94d0a307d928fd4361fe7bd80a"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/dispose/session.jsonl",
+      "size": 1668,
+      "sha256": "fec80b14b618bacdd512b7fffc869473d234e2091a7bba80e84c33b92ab7f10b"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/dispose/stderr.txt",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/dispose/stdout.jsonl",
+      "size": 4405,
+      "sha256": "64d95246b052a031f82e4d4da0d9d9135507c277677165f1ba9470cf7b6f6558"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/owner/agent/models-store.json",
+      "size": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/owner/agent/models.json",
+      "size": 309,
+      "sha256": "6e8e43b3595b702b42e10b48520dc9029fee73a167ff5275b6bca664a69d0233"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/owner/agent/settings.json",
+      "size": 310,
+      "sha256": "f5bf072261a608be9a5daf36e90ac93c78a7e10662ef35dbe46bd6ea45b61f5a"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/owner/cleanup.json",
+      "size": 238,
+      "sha256": "d048b7758a619cb9b1fbd984d39e7055330ac0bb34eca66aac48dd2f4e754cb7"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/owner/control.json",
+      "size": 32,
+      "sha256": "e212608759503256a2de9dddf04bb02236b7d5054e966d6ff31499f9005fbe0f"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/owner/events.jsonl",
+      "size": 19585,
+      "sha256": "8427a3cc43b7bd3723b96f1c774c84fd603a347cb2e27ee18f0761d21051f0f2"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/owner/exit-code",
+      "size": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/owner/input.txt",
+      "size": 5,
+      "sha256": "ef2b40c7970c5f1cb0b1d35f265a3c17761a8fb300089077c2b338621ba71ab2"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/owner/owner.png",
+      "size": 69350,
+      "sha256": "b3f233b3d36fc71fdee7eb6e4a496cae2b0b7e55fa5e61e3a0d2517041dc20f3"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/owner/owner.txt",
+      "size": 3585,
+      "sha256": "17b577e9acb112348b5ca06cd7af41055780a5541c49888a37e372d6bae89645"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/owner/processes.json",
+      "size": 91,
+      "sha256": "02b692bbf6ea92a89970f4ada29f51d66237fb077c0df6dbed55c05648c0103f"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/owner/raw.ansi",
+      "size": 33397,
+      "sha256": "f0929a49ee674e5640e575c75e0e45df3b2ff1578fd6460d8468205951eb99c6"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/owner/ready.png",
+      "size": 76929,
+      "sha256": "03792cd276ed6bf689861ae32a8eaeb8865b2765379b73302979a61cf970d215"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/owner/ready.txt",
+      "size": 4215,
+      "sha256": "de498802349e089cabd3e8616eaf4891b05cccf8ff1bd3b03b9ed5739d5b60f8"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/owner/run.sh",
+      "size": 3188,
+      "sha256": "0269efbbd44e24b2058efd8ea0ee749db750e20fa775d5146aa89e43db0866f2"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/owner/session.jsonl",
+      "size": 21134,
+      "sha256": "79782f93cbb456f09d3429143e6a4181f2a8dafa0b3e21f58f08b06d97f0e225"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/result.json",
+      "size": 15688,
+      "sha256": "2c7d0efa5abe73f814056888d15b5c039c50e288881857f5dbe0a0c31268db38"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/retry/agent/models-store.json",
+      "size": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/retry/agent/models.json",
+      "size": 309,
+      "sha256": "6e8e43b3595b702b42e10b48520dc9029fee73a167ff5275b6bca664a69d0233"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/retry/agent/settings.json",
+      "size": 310,
+      "sha256": "f5bf072261a608be9a5daf36e90ac93c78a7e10662ef35dbe46bd6ea45b61f5a"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/retry/cleanup.json",
+      "size": 238,
+      "sha256": "a1f6bef9744bbdb57fbf19e5c655a1b55a9babb372511463def5ec9c1864c98a"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/retry/control.json",
+      "size": 18,
+      "sha256": "ff55c7dc3f0dec09a18a893d115b901909d563cbeba4501d88bf3239119a1853"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/retry/events.jsonl",
+      "size": 41904,
+      "sha256": "9504fc2fc5f513e9cd7ff70f3a7969db66143764ee809e05a5266b8ea09b21c9"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/retry/exit-code",
+      "size": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/retry/input.txt",
+      "size": 5,
+      "sha256": "ef2b40c7970c5f1cb0b1d35f265a3c17761a8fb300089077c2b338621ba71ab2"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/retry/processes.json",
+      "size": 91,
+      "sha256": "d467d085f92a43892c2925bf5f9691bd5d1674c656733433f0dfc2ac66df7059"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/retry/raw.ansi",
+      "size": 39516,
+      "sha256": "0ee67639ab8e0229340bddac4ebaebb8069fe42076b2a04223db997a81a8f136"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/retry/ready.png",
+      "size": 76904,
+      "sha256": "9f35b094c9efdcbe5e0cab50aa94bbbb8a63a8a330bfcb628885b4aeda1c4ab4"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/retry/ready.txt",
+      "size": 4215,
+      "sha256": "d959a8b92c930c9dc8da017ada5a99ff875ca5341558f057e2352b725079a9ce"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/retry/release",
+      "size": 7,
+      "sha256": "a4d451ec23463726f72c43d64c710968f6b602cd653b4de8adee1b556240a829"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/retry/retry.png",
+      "size": 27933,
+      "sha256": "c288c2eb22dbb4193c8513989cc512126fc6e565a024f7d1b0fd0512bbfb032a"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/retry/retry.txt",
+      "size": 1375,
+      "sha256": "6b9732a87d8af0f9853da5b9aa400506310bb7c4211c33030841f424f0930fee"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/retry/run.sh",
+      "size": 3310,
+      "sha256": "aefddaed82945bcbcca454dba2a2898bb00c2670a5ea2d43d2c7b966a7476c72"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/retry/session.jsonl",
+      "size": 21980,
+      "sha256": "01a8821ec1afa5decc2b729084a5229df1fba4151c56d81be52288fe7935d5e1"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/retry/session.jsonl.pi-compact-state.json",
+      "size": 69,
+      "sha256": "3839858ab34b6337abfc5dc08d97966bb1b65f20e9a1f73bfbb479ca847269af"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/shared-manager/agent/models-store.json",
+      "size": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/shared-manager/agent/models.json",
+      "size": 309,
+      "sha256": "6e8e43b3595b702b42e10b48520dc9029fee73a167ff5275b6bca664a69d0233"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/shared-manager/agent/settings.json",
+      "size": 207,
+      "sha256": "431bc20177dc185e01b085bfa3d2aaf6294a9cc60cf92572fcf7da91351aaf28"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/shared-manager/control.json",
+      "size": 32,
+      "sha256": "e212608759503256a2de9dddf04bb02236b7d5054e966d6ff31499f9005fbe0f"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/shared-manager/events.jsonl",
+      "size": 3618,
+      "sha256": "fdaa24c86472ea8cda53b5929fda735ca24e25608949c3b05f2581046b242b56"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/shared-manager/result.json",
+      "size": 19838,
+      "sha256": "061d34b48a02aced3b568fb01302ce1315147d032f6375d279d32c65a60c9d3d"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/shared-manager/session.jsonl",
+      "size": 5046,
+      "sha256": "ace872509c29119d0053c33dc1c4353ea672cb779452ee0a274efcba56cca3d8"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/shared-manager/stderr.txt",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "artifacts/P1-fixes/runs/1794825761218/shared-manager/stdout.jsonl",
+      "size": 4418,
+      "sha256": "90273a6c55fabd820b923449b881cb17c0f1aae1bcdc339dbb9d2c6b36bfd1ee"
+    },
+    {
+      "path": "artifacts/P1-scope/runs/1794825766844/managed-read/baseline/agent/models-store.json",
+      "size": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "path": "artifacts/P1-scope/runs/1794825766844/managed-read/baseline/agent/models.json",
+      "size": 309,
+      "sha256": "6e8e43b3595b702b42e10b48520dc9029fee73a167ff5275b6bca664a69d0233"
+    },
+    {
+      "path": "artifacts/P1-scope/runs/1794825766844/managed-read/baseline/agent/settings.json",
+      "size": 207,
+      "sha256": "431bc20177dc185e01b085bfa3d2aaf6294a9cc60cf92572fcf7da91351aaf28"
+    },
+    {
+      "path": "artifacts/P1-scope/runs/1794825766844/managed-read/baseline/control.json",
+      "size": 32,
+      "sha256": "e212608759503256a2de9dddf04bb02236b7d5054e966d6ff31499f9005fbe0f"
+    },
+    {
+      "path": "artifacts/P1-scope/runs/1794825766844/managed-read/baseline/cwd/sdk-child/2026-11-16T10-42-47-841Z_01a1e3f3-cba0-761f-8209-7afea05d331e.jsonl",
+      "size": 1722,
+      "sha256": "5dd0527fa6b6588f678cb9bc8496744e508dac8d36d375c074c8edfe407f128c"
+    },
+    {
+      "path": "artifacts/P1-scope/runs/1794825766844/managed-read/baseline/events.jsonl",
+      "size": 597,
+      "sha256": "1dc800b0249d75f7df775fde8332c3b155b56d0ad17172d4a84dd1c6f18fa5e6"
+    },
+    {
+      "path": "artifacts/P1-scope/runs/1794825766844/managed-read/baseline/result.json",
+      "size": 16372,
+      "sha256": "3110fd1800baca106d25c545f4b4981c31b6f26b45c9c94b04717d1803a8b5d7"
+    },
+    {
+      "path": "artifacts/P1-scope/runs/1794825766844/managed-read/baseline/stderr.txt",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "artifacts/P1-scope/runs/1794825766844/managed-read/baseline/stdout.jsonl",
+      "size": 230,
+      "sha256": "f80d0f3d3a8129d6551577c6a121e0e5a78732b34c83c3ad58e4499ea987a7c2"
+    },
+    {
+      "path": "artifacts/P1-scope/runs/1794825766844/managed-read/head/agent/models-store.json",
+      "size": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "path": "artifacts/P1-scope/runs/1794825766844/managed-read/head/agent/models.json",
+      "size": 309,
+      "sha256": "6e8e43b3595b702b42e10b48520dc9029fee73a167ff5275b6bca664a69d0233"
+    },
+    {
+      "path": "artifacts/P1-scope/runs/1794825766844/managed-read/head/agent/settings.json",
+      "size": 207,
+      "sha256": "431bc20177dc185e01b085bfa3d2aaf6294a9cc60cf92572fcf7da91351aaf28"
+    },
+    {
+      "path": "artifacts/P1-scope/runs/1794825766844/managed-read/head/control.json",
+      "size": 32,
+      "sha256": "e212608759503256a2de9dddf04bb02236b7d5054e966d6ff31499f9005fbe0f"
+    },
+    {
+      "path": "artifacts/P1-scope/runs/1794825766844/managed-read/head/cwd/sdk-child/2026-11-16T10-42-48-287Z_01a1e3f3-cd5f-775e-bf37-e48fa338df95.jsonl",
+      "size": 1714,
+      "sha256": "4705281bd3bf78005f12636829e14d25772f53fafc5227643eed9a525ff8d5d7"
+    },
+    {
+      "path": "artifacts/P1-scope/runs/1794825766844/managed-read/head/events.jsonl",
+      "size": 665,
+      "sha256": "ec3e5d626b2a8c00b91307118fb7248263b3c7e65ea3ff6f7586bccee9f2ded6"
+    },
+    {
+      "path": "artifacts/P1-scope/runs/1794825766844/managed-read/head/result.json",
+      "size": 16464,
+      "sha256": "fbc62ddc9df85b4c725e798d107c875b4666cc27a3d4bf3181a7bc71b808db38"
+    },
+    {
+      "path": "artifacts/P1-scope/runs/1794825766844/managed-read/head/stderr.txt",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "artifacts/P1-scope/runs/1794825766844/managed-read/head/stdout.jsonl",
+      "size": 226,
+      "sha256": "031f932dde969484574bbba511b2869f8960466c253b31b6c03135869d6bf117"
+    },
+    {
+      "path": "artifacts/P1-scope/runs/1794825766844/result.json",
+      "size": 22118,
+      "sha256": "3cc4cbae13d60cfd58992c73fe1796baee0c7e2adfa40ab06f13df000f55661b"
+    },
+    {
+      "path": "artifacts/P1-scope/runs/1794825766844/scope/baseline/agent/models-store.json",
+      "size": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "path": "artifacts/P1-scope/runs/1794825766844/scope/baseline/agent/models.json",
+      "size": 309,
+      "sha256": "6e8e43b3595b702b42e10b48520dc9029fee73a167ff5275b6bca664a69d0233"
+    },
+    {
+      "path": "artifacts/P1-scope/runs/1794825766844/scope/baseline/agent/settings.json",
+      "size": 207,
+      "sha256": "431bc20177dc185e01b085bfa3d2aaf6294a9cc60cf92572fcf7da91351aaf28"
+    },
+    {
+      "path": "artifacts/P1-scope/runs/1794825766844/scope/baseline/control.json",
+      "size": 32,
+      "sha256": "e212608759503256a2de9dddf04bb02236b7d5054e966d6ff31499f9005fbe0f"
+    },
+    {
+      "path": "artifacts/P1-scope/runs/1794825766844/scope/baseline/cwd/persistent-child/2026-11-16T10-42-47-134Z_01a1e3f3-c8de-7394-abe8-75574dc225a4.jsonl",
+      "size": 1726,
+      "sha256": "dd5a861c619ef7f150ca3cc10cf852f0febb0f468adcfd4b7f1143f2e40b9c8d"
+    },
+    {
+      "path": "artifacts/P1-scope/runs/1794825766844/scope/baseline/events.jsonl",
+      "size": 2708,
+      "sha256": "0542e25c42f41f05967764e268e75915c6928f0886e6863fe6698346659e3dad"
+    },
+    {
+      "path": "artifacts/P1-scope/runs/1794825766844/scope/baseline/result.json",
+      "size": 19423,
+      "sha256": "e656282b4ab19459ff4bcb1da702ca482b977472d8194bbb42a243d1fdc47af8"
+    },
+    {
+      "path": "artifacts/P1-scope/runs/1794825766844/scope/baseline/stderr.txt",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "artifacts/P1-scope/runs/1794825766844/scope/baseline/stdout.jsonl",
+      "size": 223,
+      "sha256": "15f773541f56348b3b96f001fb0f370ef545c026e69237e2df032eb5060d45ff"
+    },
+    {
+      "path": "artifacts/P1-scope/runs/1794825766844/scope/head/agent/models-store.json",
+      "size": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "path": "artifacts/P1-scope/runs/1794825766844/scope/head/agent/models.json",
+      "size": 309,
+      "sha256": "6e8e43b3595b702b42e10b48520dc9029fee73a167ff5275b6bca664a69d0233"
+    },
+    {
+      "path": "artifacts/P1-scope/runs/1794825766844/scope/head/agent/settings.json",
+      "size": 207,
+      "sha256": "431bc20177dc185e01b085bfa3d2aaf6294a9cc60cf92572fcf7da91351aaf28"
+    },
+    {
+      "path": "artifacts/P1-scope/runs/1794825766844/scope/head/control.json",
+      "size": 32,
+      "sha256": "e212608759503256a2de9dddf04bb02236b7d5054e966d6ff31499f9005fbe0f"
+    },
+    {
+      "path": "artifacts/P1-scope/runs/1794825766844/scope/head/cwd/persistent-child/2026-11-16T10-42-47-550Z_01a1e3f3-ca7e-7385-a454-0072109697f8.jsonl",
+      "size": 1718,
+      "sha256": "ccb2a531e78d050be1093f7c7327b55116a270a7f96d44c51f3223dc498c701f"
+    },
+    {
+      "path": "artifacts/P1-scope/runs/1794825766844/scope/head/events.jsonl",
+      "size": 2694,
+      "sha256": "5ff3a156dbc124c143006efc96294f908939effd7d4e8fc13be43e07bd1624df"
+    },
+    {
+      "path": "artifacts/P1-scope/runs/1794825766844/scope/head/result.json",
+      "size": 19408,
+      "sha256": "84ccda35fe5b66041503615c9771f6a3467e60868d9d6cd7ef099627048a0dde"
+    },
+    {
+      "path": "artifacts/P1-scope/runs/1794825766844/scope/head/stderr.txt",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "artifacts/P1-scope/runs/1794825766844/scope/head/stdout.jsonl",
+      "size": 219,
+      "sha256": "bc0cf51a8e8337143ab7b0068d7590271df4f44069d0cfdedefd8f311afc3e4c"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/cancel-retry/agent/models-store.json",
+      "size": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/cancel-retry/agent/models.json",
+      "size": 786,
+      "sha256": "1f4ad02ed50029272f7fabc56ae5dc3f8b3fa8b114d5d0e8bb1260f87b4e6e2f"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/cancel-retry/agent/settings.json",
+      "size": 310,
+      "sha256": "f5bf072261a608be9a5daf36e90ac93c78a7e10662ef35dbe46bd6ea45b61f5a"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/cancel-retry/cancel-retry.png",
+      "size": 30331,
+      "sha256": "90072eae65c066ac5d918106dd303c23232a25747f4cef0a31ed4b432e9590b1"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/cancel-retry/cancel-retry.txt",
+      "size": 1203,
+      "sha256": "3a61778790d0f5cf36b218d6e173a7a1fafd1f4a29077d3a4d6a546af74fac10"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/cancel-retry/cleanup.json",
+      "size": 238,
+      "sha256": "11436c9028126ed37c32c791caa02aa43d77891a03a1cefd2f6685a5df9a2ed7"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/cancel-retry/control.json",
+      "size": 18,
+      "sha256": "ff55c7dc3f0dec09a18a893d115b901909d563cbeba4501d88bf3239119a1853"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/cancel-retry/cwd/.pi/pi-compact.json",
+      "size": 28,
+      "sha256": "bbec68e808186545c970a504699eee271f74bcc80bd464019ab7b3312f9e7fb2"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/cancel-retry/events.jsonl",
+      "size": 14253,
+      "sha256": "a606fdda2be599e63331fd334475e79720ecd5aca978b1747f10be5292041b64"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/cancel-retry/exit-code",
+      "size": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/cancel-retry/input.txt",
+      "size": 5,
+      "sha256": "ef2b40c7970c5f1cb0b1d35f265a3c17761a8fb300089077c2b338621ba71ab2"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/cancel-retry/processes.json",
+      "size": 91,
+      "sha256": "3f4137bf0f7865142befc9410941b67609e1060a497818c907e17bcf6087900c"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/cancel-retry/raw.ansi",
+      "size": 18098,
+      "sha256": "fb2a1c55217b50de0278f4f4cf61162a8190eca221d3c5d45c39ecd86b0bb520"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/cancel-retry/ready.png",
+      "size": 15234,
+      "sha256": "403af5641cd02232edfeca8749f48aa3f3588d5bdb95744563bda69c8e3e2b2a"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/cancel-retry/ready.txt",
+      "size": 996,
+      "sha256": "2ad4dd187264dae92266c6d01592cfd3e88c512309346d0b470a8827fc9cee6f"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/cancel-retry/run.sh",
+      "size": 3339,
+      "sha256": "70d954bdb8cd92195e76b0df6c0571e819754fcd3ef60e06da33ac768e6e692c"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/cancel-retry/session.jsonl",
+      "size": 8080,
+      "sha256": "047cd09a4084502257cb861c9d91f68cab3b1ab3ad317c706a04ce39075f5743"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/cancel-retry/session.jsonl.pi-compact-state.json",
+      "size": 69,
+      "sha256": "d7bf2d697e6ecf1b9f00d09460c33bfc850e8aedcd59498c54f129b744aa3da3"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/context-capacity/agent/models-store.json",
+      "size": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/context-capacity/agent/models.json",
+      "size": 786,
+      "sha256": "1f4ad02ed50029272f7fabc56ae5dc3f8b3fa8b114d5d0e8bb1260f87b4e6e2f"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/context-capacity/agent/settings.json",
+      "size": 310,
+      "sha256": "f5bf072261a608be9a5daf36e90ac93c78a7e10662ef35dbe46bd6ea45b61f5a"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/context-capacity/cleanup.json",
+      "size": 238,
+      "sha256": "4c43e4ff294301eae3f4fd0f4cd66ef2fcd244e7665fc2ba18e0a953dc2bb21d"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/context-capacity/context-capacity.png",
+      "size": 30709,
+      "sha256": "994acc9ed8d02c774c5c6bbcd7edec37ab10effa9e801ba21f1122693e014e75"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/context-capacity/context-capacity.txt",
+      "size": 1265,
+      "sha256": "e06195a647b80b8c4bd9f30ab0487c0a3f1f33396d29e1e7cbe17a591638f6a4"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/context-capacity/control.json",
+      "size": 38,
+      "sha256": "973d93e51664ab3b146df1998ed7fde2265731cea31eb1e2ef4d8b74e1882b42"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/context-capacity/events.jsonl",
+      "size": 6962,
+      "sha256": "f9f98a9f36c18dabdde05178e9807ea89c1fe5192c8558a74303ff0a4e8d2f89"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/context-capacity/exit-code",
+      "size": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/context-capacity/input.txt",
+      "size": 5,
+      "sha256": "ef2b40c7970c5f1cb0b1d35f265a3c17761a8fb300089077c2b338621ba71ab2"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/context-capacity/processes.json",
+      "size": 91,
+      "sha256": "925b3fd9c18ae92c30584eef2792672d193714266fa2e73139fdf95d59c19425"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/context-capacity/raw.ansi",
+      "size": 7402,
+      "sha256": "043d4e35a73f4bd1aceb51df90734512eb57efff3ae9dd30263182345e45b001"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/context-capacity/ready.png",
+      "size": 15261,
+      "sha256": "0cab5059906d199493e033d896824f6f105fc16bc8d9556024e094509750981b"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/context-capacity/ready.txt",
+      "size": 1000,
+      "sha256": "4fcca23947dbdd3119df669df2f3078f2ba8f36c7b8658b491e3312fe631ff9f"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/context-capacity/run.sh",
+      "size": 3367,
+      "sha256": "a06c67a9c8c6162a043d9e7d63ca2a03301806037eec032fb70234f7deceb849"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/context-capacity/session.jsonl",
+      "size": 7289,
+      "sha256": "8346323cb44af4596d7024a642d3a1a87fd5690e1217be748085079386ee56da"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/context-capacity/session.jsonl.pi-compact-state.json",
+      "size": 82,
+      "sha256": "d9214d06371e6c98c103c8e6f9e7368f0598abebab948679987f90c0fee5e584"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/context-change/agent/models-store.json",
+      "size": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/context-change/agent/models.json",
+      "size": 786,
+      "sha256": "1f4ad02ed50029272f7fabc56ae5dc3f8b3fa8b114d5d0e8bb1260f87b4e6e2f"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/context-change/agent/settings.json",
+      "size": 310,
+      "sha256": "f5bf072261a608be9a5daf36e90ac93c78a7e10662ef35dbe46bd6ea45b61f5a"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/context-change/cleanup.json",
+      "size": 238,
+      "sha256": "0d7cbf23f27d15e323fb2a17c609bba7aff5324e5cc0e52b60adae1214343eb6"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/context-change/context-change.png",
+      "size": 29723,
+      "sha256": "81228c636815dbf04979d65427c99bb7f8e78791976d248fdae42c7515b9311e"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/context-change/context-change.txt",
+      "size": 1157,
+      "sha256": "e248533b17879ddc99a03b5ab0c4c534c832b5f5e7d06f24c76b1c17f1db439e"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/context-change/control.json",
+      "size": 38,
+      "sha256": "9f73abc6db7307811c13869241d454673df88e0c320553ec409fb04550e953ad"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/context-change/cwd/.pi/pi-compact.json",
+      "size": 29,
+      "sha256": "61c3b6f41b20ee1cb686f1826f7b352cf3429f735ddf57ca9ce4d20df946ddbb"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/context-change/events.jsonl",
+      "size": 57014,
+      "sha256": "b2420251a64e95457736e8b3f7a05d7f53a8a02692966ce06114a118a2998d65"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/context-change/exit-code",
+      "size": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/context-change/input.txt",
+      "size": 5,
+      "sha256": "ef2b40c7970c5f1cb0b1d35f265a3c17761a8fb300089077c2b338621ba71ab2"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/context-change/processes.json",
+      "size": 91,
+      "sha256": "aad037948c8431f768d939e6e8579c22a7f0c559f0f7648c81720509d8373946"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/context-change/raw.ansi",
+      "size": 12209,
+      "sha256": "b0bb6244c31d31c526a23651cdc1c10996d5fd76ed846f09c6bb9910241e4a2b"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/context-change/ready.png",
+      "size": 15281,
+      "sha256": "0e0eee091299ce7862b0131df0e24346bb3944a4213ba2e4e78ab42c3e2d764f"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/context-change/ready.txt",
+      "size": 998,
+      "sha256": "148ae178118a72a5312cd086d97bd3d4875815eca5fadbde3a8c533828aecb3e"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/context-change/run.sh",
+      "size": 3353,
+      "sha256": "09c9c14dfa07d40632d907c61d50d0c5bb0240934730cd83bf0fdae5bcdd1214"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/context-change/session.jsonl",
+      "size": 8201,
+      "sha256": "918c018a9611a009f7491a2cb7d66088e573ad3c916fd953910a5383a0b6f0ee"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/context-change/session.jsonl.pi-compact-state.json",
+      "size": 69,
+      "sha256": "f0f1d30c3472f9c25a125b761c844038cb29f6f1395c3f5c6a464e3d75614be5"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/corrupt-repair/agent/models-store.json",
+      "size": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/corrupt-repair/agent/models.json",
+      "size": 786,
+      "sha256": "1f4ad02ed50029272f7fabc56ae5dc3f8b3fa8b114d5d0e8bb1260f87b4e6e2f"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/corrupt-repair/agent/settings.json",
+      "size": 310,
+      "sha256": "f5bf072261a608be9a5daf36e90ac93c78a7e10662ef35dbe46bd6ea45b61f5a"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/corrupt-repair/cleanup.json",
+      "size": 238,
+      "sha256": "19dfbac9e89727dccb33f0ab771c598759992aeb0c1ef250d2ad80ef682e2d73"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/corrupt-repair/control.json",
+      "size": 32,
+      "sha256": "e212608759503256a2de9dddf04bb02236b7d5054e966d6ff31499f9005fbe0f"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/corrupt-repair/corrupt-repair.png",
+      "size": 69703,
+      "sha256": "798c8818833115cd636c179d51d21d3645b8167b1e3a0ff5dfbc302cbea02626"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/corrupt-repair/corrupt-repair.txt",
+      "size": 1809,
+      "sha256": "979738be13d206a5f40d396cdd2082df735eb290f261748f2818e95c706090ae"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/corrupt-repair/cwd/.pi/pi-compact.json",
+      "size": 29,
+      "sha256": "c2eb88ea090a562f2016f9cd954800641cf453a51a1adbc56d202f5f9218c61b"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/corrupt-repair/events.jsonl",
+      "size": 5474,
+      "sha256": "58b9844c78bfb5e90ab85b77a8a82a9c6f67c901bdfa4e9e2aad08cd2eec3133"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/corrupt-repair/exit-code",
+      "size": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/corrupt-repair/input.txt",
+      "size": 5,
+      "sha256": "ef2b40c7970c5f1cb0b1d35f265a3c17761a8fb300089077c2b338621ba71ab2"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/corrupt-repair/processes.json",
+      "size": 91,
+      "sha256": "e20931bcdc138cf6e6e7403ab6e413bc7269b795ed14ad6ac17756152081d405"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/corrupt-repair/raw.ansi",
+      "size": 13684,
+      "sha256": "912c22e84305dbe9394af1099f4d77e8495e0040a016c192071cadfa494f2ca1"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/corrupt-repair/ready.png",
+      "size": 15237,
+      "sha256": "1cab346773f3b84aa8ab672c94c975d056a96b10f68fe456fe7acaa303e6b73e"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/corrupt-repair/ready.txt",
+      "size": 998,
+      "sha256": "c1f642b10d59ea59ec35b2fcddbbccde4b076a4d3c20dab029beda32ef45bdf2"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/corrupt-repair/run.sh",
+      "size": 3353,
+      "sha256": "b222065ab8da198db1dadc6149f78814239f0c9bb2f589648c8a7199c8b2b18b"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/corrupt-repair/session.jsonl",
+      "size": 6224,
+      "sha256": "93ddb3f5ef8ea14c6e08307662f8cacf88393fea2aa84de8c480308fb6b68c4e"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/failure-retry/agent/models-store.json",
+      "size": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/failure-retry/agent/models.json",
+      "size": 786,
+      "sha256": "1f4ad02ed50029272f7fabc56ae5dc3f8b3fa8b114d5d0e8bb1260f87b4e6e2f"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/failure-retry/agent/settings.json",
+      "size": 310,
+      "sha256": "f5bf072261a608be9a5daf36e90ac93c78a7e10662ef35dbe46bd6ea45b61f5a"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/failure-retry/cleanup.json",
+      "size": 238,
+      "sha256": "f74468b4558b51d0c5f5dbb4c839180c7de015cf29d5ea71a05ac3612a533f00"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/failure-retry/control.json",
+      "size": 18,
+      "sha256": "ff55c7dc3f0dec09a18a893d115b901909d563cbeba4501d88bf3239119a1853"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/failure-retry/cwd/.pi/pi-compact.json",
+      "size": 28,
+      "sha256": "bbec68e808186545c970a504699eee271f74bcc80bd464019ab7b3312f9e7fb2"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/failure-retry/events.jsonl",
+      "size": 14301,
+      "sha256": "6c2871c970f447ce080b545eb29a16907fa940fd6e2a6b5fef480306c3744b72"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/failure-retry/exit-code",
+      "size": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/failure-retry/failure-retry.png",
+      "size": 32324,
+      "sha256": "fd55cdc6033a660dc1cc90f7d0c2c0691158450b6737f0d9f76d70fe63807914"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/failure-retry/failure-retry.txt",
+      "size": 1258,
+      "sha256": "a9b78b87085627b1cac9829e075eaf979216c91be0c17e0ffa30f1f5a0e1684e"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/failure-retry/input.txt",
+      "size": 5,
+      "sha256": "ef2b40c7970c5f1cb0b1d35f265a3c17761a8fb300089077c2b338621ba71ab2"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/failure-retry/processes.json",
+      "size": 91,
+      "sha256": "636c7729a5a4f2fc27674abcd798548c50f1a396fb8123148cc1da2dd77f57ff"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/failure-retry/raw.ansi",
+      "size": 17588,
+      "sha256": "fc410ca6ebccb6addd95ffa48bf23d7ac5d674e70404a9547601657482a427da"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/failure-retry/ready.png",
+      "size": 15302,
+      "sha256": "57c5b2f2c2db394f458121addb78c7ea9a6d275878aa42dc2fe6b8d555ea7c6e"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/failure-retry/ready.txt",
+      "size": 997,
+      "sha256": "6c8efd25ad53885963612fad695b5c896449265771d6d518d00c751fc24c56f9"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/failure-retry/run.sh",
+      "size": 3346,
+      "sha256": "7c8eb16eec8227877b8346c37dd2eef1ba463e9c30bd140e8bd5574e7813222e"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/failure-retry/session.jsonl",
+      "size": 8133,
+      "sha256": "cda9091d468a30103e45d0b280fffcad4606f4c31a5d5299829cedc815ec7a08"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/failure-retry/session.jsonl.pi-compact-state.json",
+      "size": 69,
+      "sha256": "72530630b8eb0c0638a02c64b65e4a480558fff36982df4da3c7d4be7712cd5e"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/low-0.1/agent/models-store.json",
+      "size": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/low-0.1/agent/models.json",
+      "size": 786,
+      "sha256": "1f4ad02ed50029272f7fabc56ae5dc3f8b3fa8b114d5d0e8bb1260f87b4e6e2f"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/low-0.1/agent/settings.json",
+      "size": 310,
+      "sha256": "f5bf072261a608be9a5daf36e90ac93c78a7e10662ef35dbe46bd6ea45b61f5a"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/low-0.1/cleanup.json",
+      "size": 238,
+      "sha256": "ae490ad95f8a3755a54d65004b17fbbf5251df00aed94099560de196db099db5"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/low-0.1/control.json",
+      "size": 32,
+      "sha256": "e212608759503256a2de9dddf04bb02236b7d5054e966d6ff31499f9005fbe0f"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/low-0.1/cwd/.pi/pi-compact.json",
+      "size": 30,
+      "sha256": "f6e6d7164f75805fcc69ac481a25d0eb300bea31ae98fc6700b2871adcd66aa5"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/low-0.1/events.jsonl",
+      "size": 8713,
+      "sha256": "536d99c616664dc013978c10ba0a88c369f69ab6663ab1a4211301066415aaf2"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/low-0.1/exit-code",
+      "size": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/low-0.1/input.txt",
+      "size": 5,
+      "sha256": "ef2b40c7970c5f1cb0b1d35f265a3c17761a8fb300089077c2b338621ba71ab2"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/low-0.1/low-0.1.png",
+      "size": 29876,
+      "sha256": "eb2c69289d3c19863d1578ca0bc80bd6af7bb483c79f15d0b888b4f158afccff"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/low-0.1/low-0.1.txt",
+      "size": 1150,
+      "sha256": "12b6536c5ab894f81fcada576176437f405d27e71cbfe265b29e8d6ee0f68381"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/low-0.1/processes.json",
+      "size": 91,
+      "sha256": "5ee98c3aeed1fb57c5c04b78f21c58012c4a3bac127459761852c5217207978b"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/low-0.1/raw.ansi",
+      "size": 12167,
+      "sha256": "795580c20a5cb4a3886ce467f48851b218e8ce5f10af663dc163d054839819af"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/low-0.1/ready.png",
+      "size": 15449,
+      "sha256": "bda151af3d7474b3cd3f609c3a032e58897f70fc9e299b0469df83ffa0b302f3"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/low-0.1/ready.txt",
+      "size": 991,
+      "sha256": "b1cbc6ab5aa921b7b021538f1b6cc0ab26667dbbebf666174b79286e701ea030"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/low-0.1/run.sh",
+      "size": 3304,
+      "sha256": "7cc4044d76f2fd2ef3f9113fa449a6629f22c23eb06b185010734872c45aa43d"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/low-0.1/session.jsonl",
+      "size": 8188,
+      "sha256": "971956167fe3a731ef69ad0f4324aba351dc6fa9623b7958ef547986e6fc1b77"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/low-0.1/session.jsonl.pi-compact-state.json",
+      "size": 69,
+      "sha256": "0c8d258a029013ae884a73757961e1cdde23995ebdb155b0b308e2e0ec784390"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/low-1/agent/models-store.json",
+      "size": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/low-1/agent/models.json",
+      "size": 786,
+      "sha256": "1f4ad02ed50029272f7fabc56ae5dc3f8b3fa8b114d5d0e8bb1260f87b4e6e2f"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/low-1/agent/settings.json",
+      "size": 310,
+      "sha256": "f5bf072261a608be9a5daf36e90ac93c78a7e10662ef35dbe46bd6ea45b61f5a"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/low-1/cleanup.json",
+      "size": 238,
+      "sha256": "0c0edbb4a5de716a28d24c328e7af7dcd15e86093f61510f5ddd9102ca73fbf5"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/low-1/control.json",
+      "size": 32,
+      "sha256": "e212608759503256a2de9dddf04bb02236b7d5054e966d6ff31499f9005fbe0f"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/low-1/cwd/.pi/pi-compact.json",
+      "size": 28,
+      "sha256": "bbec68e808186545c970a504699eee271f74bcc80bd464019ab7b3312f9e7fb2"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/low-1/events.jsonl",
+      "size": 8723,
+      "sha256": "4e29b7a798f820c426379c294c01262184ab4d45ddb882b522ce909072960e25"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/low-1/exit-code",
+      "size": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/low-1/input.txt",
+      "size": 5,
+      "sha256": "ef2b40c7970c5f1cb0b1d35f265a3c17761a8fb300089077c2b338621ba71ab2"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/low-1/low-1.png",
+      "size": 29590,
+      "sha256": "6e91c64cc8c63b297fca6d8b1bf75611a74c4680cb608a524ca31bdad63b1d83"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/low-1/low-1.txt",
+      "size": 1148,
+      "sha256": "35af4858c07c37bc48c6f5beb0b2f9160e11bc45722022faaf778def8af58dfc"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/low-1/processes.json",
+      "size": 91,
+      "sha256": "c56431dc8cd48e4c9b174c54c7420d0606dbb8f35ea651c570d1881e0d9e6103"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/low-1/raw.ansi",
+      "size": 12155,
+      "sha256": "e95c0f0bec4368553d9cda1430d52a7cbf959156d30cdc91c344ec1a608b01ef"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/low-1/ready.png",
+      "size": 15142,
+      "sha256": "a1f6b9a503236824045f1f07f3376d026e8578b9c918d8bdb924db8159982b69"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/low-1/ready.txt",
+      "size": 989,
+      "sha256": "7abc6919339dfb3a15c83b24f210cbac077b75e716eb821c4ff4f436309cf718"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/low-1/run.sh",
+      "size": 3290,
+      "sha256": "42684c2484adc20f0e3f1f6659476551c4c4a3846ef4a54d1cb690c56494cce7"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/low-1/session.jsonl",
+      "size": 8182,
+      "sha256": "d8afb2ded24ae15cddde1c05429bc976f5035922d28637deb517f2beb4734cd8"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/low-1/session.jsonl.pi-compact-state.json",
+      "size": 69,
+      "sha256": "5a16dec4ad07e97b142ab932c5e92eedd31898cdbaae8d469a2f3c1875da78ec"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/result.json",
+      "size": 18049,
+      "sha256": "268cf8a675f9551c326c0c170b0a36c8322a1d819db0c2696baa6e5a28a10715"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/system-capacity/agent/models-store.json",
+      "size": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/system-capacity/agent/models.json",
+      "size": 786,
+      "sha256": "1f4ad02ed50029272f7fabc56ae5dc3f8b3fa8b114d5d0e8bb1260f87b4e6e2f"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/system-capacity/agent/settings.json",
+      "size": 310,
+      "sha256": "f5bf072261a608be9a5daf36e90ac93c78a7e10662ef35dbe46bd6ea45b61f5a"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/system-capacity/cleanup.json",
+      "size": 238,
+      "sha256": "f890cbabb185ebd8bac50a757bc6340c814fce5f4a20387533bdf02ed6fae96b"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/system-capacity/control.json",
+      "size": 37,
+      "sha256": "484131395eb3e1202e3a554abbef79ce29c1d88cda4844b7be36437ea10079c9"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/system-capacity/events.jsonl",
+      "size": 6960,
+      "sha256": "a0fcb3b60495c90272485774f4933e705ca5b2e99fa28f2cba7bfc618e7b63ab"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/system-capacity/exit-code",
+      "size": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/system-capacity/input.txt",
+      "size": 5,
+      "sha256": "ef2b40c7970c5f1cb0b1d35f265a3c17761a8fb300089077c2b338621ba71ab2"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/system-capacity/processes.json",
+      "size": 91,
+      "sha256": "f2050864f994ffe5566341f22e9248cf75dfd54015c31baa1d237e048b022c9c"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/system-capacity/raw.ansi",
+      "size": 7398,
+      "sha256": "dc813c571f1a6301586c38133cd9b5fc20aee5a233daf0fd3d2a99adefb381d0"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/system-capacity/ready.png",
+      "size": 15266,
+      "sha256": "ee4ff2012364838a6a117dedc7c76a09d7ea311fbf145ef301efb93702a34e7a"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/system-capacity/ready.txt",
+      "size": 999,
+      "sha256": "8b156467fd9e0b92fc5f0af8f32b379e47e1756fcc814024eddcbf61ebb42616"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/system-capacity/run.sh",
+      "size": 3360,
+      "sha256": "10dacdb034af84614d6c98774a14216cc54dc8579fc959d2f93d910ee3017406"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/system-capacity/session.jsonl",
+      "size": 7286,
+      "sha256": "9bccad1cb1c7db5282cad41828b4673710c64183bf80b9807163bf54f7729f28"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/system-capacity/session.jsonl.pi-compact-state.json",
+      "size": 82,
+      "sha256": "d9214d06371e6c98c103c8e6f9e7368f0598abebab948679987f90c0fee5e584"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/system-capacity/system-capacity.png",
+      "size": 30719,
+      "sha256": "2498f676d3b8c1d93f02b6d40866eec9908c7b208f073cb3ee23428a1ec0fa45"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/system-capacity/system-capacity.txt",
+      "size": 1264,
+      "sha256": "26258a2cb445f125bf6590b20e83685841f683e30e85e4d2e11fb0c58563004c"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/system-change/agent/models-store.json",
+      "size": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/system-change/agent/models.json",
+      "size": 786,
+      "sha256": "1f4ad02ed50029272f7fabc56ae5dc3f8b3fa8b114d5d0e8bb1260f87b4e6e2f"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/system-change/agent/settings.json",
+      "size": 310,
+      "sha256": "f5bf072261a608be9a5daf36e90ac93c78a7e10662ef35dbe46bd6ea45b61f5a"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/system-change/cleanup.json",
+      "size": 238,
+      "sha256": "c0e05174ef3fb34ae01ad39c856fa6ee07ac2de51a9f81b0528e7e0d652a4110"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/system-change/control.json",
+      "size": 37,
+      "sha256": "d1f034af3c71d602b68ca79c0800c7bc6fd893959cbdb32cbc22d7aeadbf7db3"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/system-change/cwd/.pi/pi-compact.json",
+      "size": 29,
+      "sha256": "61c3b6f41b20ee1cb686f1826f7b352cf3429f735ddf57ca9ce4d20df946ddbb"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/system-change/events.jsonl",
+      "size": 52476,
+      "sha256": "5ccbfce7cbab3805e229a86c07693de2a21c46959153b153d98d76fbd532f74d"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/system-change/exit-code",
+      "size": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/system-change/input.txt",
+      "size": 5,
+      "sha256": "ef2b40c7970c5f1cb0b1d35f265a3c17761a8fb300089077c2b338621ba71ab2"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/system-change/processes.json",
+      "size": 91,
+      "sha256": "a36ebba3cec65306df26e7a9a948f6cb85bf3d7fe78076bb44f13aa10d8761c3"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/system-change/raw.ansi",
+      "size": 12203,
+      "sha256": "5a5286deb4e4d795d5d5a8216c8f9a6d5082c138a505a64052bb90d4d682118f"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/system-change/ready.png",
+      "size": 15236,
+      "sha256": "a3559edf95a68b59f129067505cb52089a777c67f85e96bf5576bea1da04e8a1"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/system-change/ready.txt",
+      "size": 997,
+      "sha256": "164eb8537c5f44b1dac9db435f0a793222a98584488d791091020898a8cd1250"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/system-change/run.sh",
+      "size": 3346,
+      "sha256": "617b78c25854e7c6fb7294dd3393f2942f9ebd42ea83645334aab527587d701c"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/system-change/session.jsonl",
+      "size": 8198,
+      "sha256": "8c25fdae867a7552408481a3c2b1784a48a71f0a594d5691165fddd5db341902"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/system-change/session.jsonl.pi-compact-state.json",
+      "size": 69,
+      "sha256": "91dadf0647dbcc4227c4c57133826783c908f86bab3be4c88960c78e48476eff"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/system-change/system-change.png",
+      "size": 29690,
+      "sha256": "8a52383ea2eaf1ac233df06fc85bc382c08c21130498c758552f6e0e957ebc19"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/system-change/system-change.txt",
+      "size": 1156,
+      "sha256": "913de4ab26901bc491213bab5fb0a315720101aa537fc15b37f9d044ba018487"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/tools-0.1/agent/models-store.json",
+      "size": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/tools-0.1/agent/models.json",
+      "size": 786,
+      "sha256": "1f4ad02ed50029272f7fabc56ae5dc3f8b3fa8b114d5d0e8bb1260f87b4e6e2f"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/tools-0.1/agent/settings.json",
+      "size": 310,
+      "sha256": "f5bf072261a608be9a5daf36e90ac93c78a7e10662ef35dbe46bd6ea45b61f5a"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/tools-0.1/cleanup.json",
+      "size": 238,
+      "sha256": "598552612259f6bc5c982182f26774698d73e6aff70af5f0c7b1dc6142e5fd2f"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/tools-0.1/control.json",
+      "size": 31,
+      "sha256": "94a9d6796f03f65d1c0872fea3e1716314946a9a762c16488626edb7c3e1a5ca"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/tools-0.1/cwd/.pi/pi-compact.json",
+      "size": 30,
+      "sha256": "f6e6d7164f75805fcc69ac481a25d0eb300bea31ae98fc6700b2871adcd66aa5"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/tools-0.1/events.jsonl",
+      "size": 26961,
+      "sha256": "61b28e5978b0b900f08b3e8ab675f7ff530ef13723f088a42cf1fd534469afb8"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/tools-0.1/exit-code",
+      "size": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/tools-0.1/input.txt",
+      "size": 5,
+      "sha256": "ef2b40c7970c5f1cb0b1d35f265a3c17761a8fb300089077c2b338621ba71ab2"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/tools-0.1/processes.json",
+      "size": 91,
+      "sha256": "7e42626e190db0e18ecac601bd0c58fe1cf3bb0a1543b57a4fbbe882b8b5e61f"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/tools-0.1/raw.ansi",
+      "size": 39604,
+      "sha256": "21bc94eb1134b2ffbc2c5ec0aa0b0c56f6c670a619c671c3236cb9d3198b72fa"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/tools-0.1/ready.png",
+      "size": 15477,
+      "sha256": "405e9e9da6507dbee07b1eedff6d7a1e00be5ffbaec60a9c912fdf30dc0f1956"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/tools-0.1/ready.txt",
+      "size": 993,
+      "sha256": "95ce22b821f6bbdeafa2fbd5bbae7ecfd6c6c806b71fec784ec0536ee1dd0dbc"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/tools-0.1/run.sh",
+      "size": 3334,
+      "sha256": "ab957191039ff709ebe640f2822ef855736928877c6d72e6532c5c6e217b05a5"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/tools-0.1/session.jsonl",
+      "size": 19213,
+      "sha256": "a1447acf2bf759d01b0a9ee4df79d7a20dcd04c1ed769c9a271147af63a7f269"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/tools-0.1/session.jsonl.pi-compact-state.json",
+      "size": 69,
+      "sha256": "0a2a6dc8300e51adc27bbea8e6a500c5dfe078aca3c7fa897ced6dd89356ab06"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/tools-0.1/tools-0.1.png",
+      "size": 26584,
+      "sha256": "e7d19f5b72f668b22c7a62cc0d0de3c5fb7226ca65209b4f411bc80db4221b46"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/tools-0.1/tools-0.1.txt",
+      "size": 1114,
+      "sha256": "356b08cac3e98d2956f041a4433b08c3f4f7bd5cf3871d111718566c73e072bb"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/tools-1/agent/models-store.json",
+      "size": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/tools-1/agent/models.json",
+      "size": 786,
+      "sha256": "1f4ad02ed50029272f7fabc56ae5dc3f8b3fa8b114d5d0e8bb1260f87b4e6e2f"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/tools-1/agent/settings.json",
+      "size": 310,
+      "sha256": "f5bf072261a608be9a5daf36e90ac93c78a7e10662ef35dbe46bd6ea45b61f5a"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/tools-1/cleanup.json",
+      "size": 238,
+      "sha256": "e3fbed8cd02851feb85fc0ca51efb94ff9132069e2e5709f303593a87894c5d0"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/tools-1/control.json",
+      "size": 31,
+      "sha256": "94a9d6796f03f65d1c0872fea3e1716314946a9a762c16488626edb7c3e1a5ca"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/tools-1/cwd/.pi/pi-compact.json",
+      "size": 28,
+      "sha256": "bbec68e808186545c970a504699eee271f74bcc80bd464019ab7b3312f9e7fb2"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/tools-1/events.jsonl",
+      "size": 26953,
+      "sha256": "f28dfe6caabd78f79da4253ecd7c7f1c8be2ef8435a0e228a92b331e28bce6cc"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/tools-1/exit-code",
+      "size": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/tools-1/input.txt",
+      "size": 5,
+      "sha256": "ef2b40c7970c5f1cb0b1d35f265a3c17761a8fb300089077c2b338621ba71ab2"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/tools-1/processes.json",
+      "size": 91,
+      "sha256": "cfa3b1dfab4426204e24fa42487f50c088bc9eca1ba37efca02323ca8e3e7c69"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/tools-1/raw.ansi",
+      "size": 39586,
+      "sha256": "72be33e31f7242cb9e1bf1241d3979f51fb92216e7ed79c61357aeecaff7dae3"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/tools-1/ready.png",
+      "size": 15195,
+      "sha256": "7332bbd5717270bef5c0077215c5f2415fd2a6753ada15fe0d7214fdc09f6929"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/tools-1/ready.txt",
+      "size": 991,
+      "sha256": "70613a0b9adc50b256f5253054955e2908a9ad8e419da655b98ec793f4b4ce04"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/tools-1/run.sh",
+      "size": 3320,
+      "sha256": "c76b7e3032bb801a89f9e26538137b3e1541f7064b25a994e509ac11135c4624"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/tools-1/session.jsonl",
+      "size": 19207,
+      "sha256": "4d7d916db82abf6939abe633b0bad3ed9b3a039070d534a3bd034cbeb8d992d9"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/tools-1/session.jsonl.pi-compact-state.json",
+      "size": 69,
+      "sha256": "4341a2ca335b8e8b0c164ec71376053f7cee21818fd86e8bd4f81b096b23e4c9"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/tools-1/tools-1.png",
+      "size": 26318,
+      "sha256": "8420ba2010f0e2aeb98b3d77b8318fb0dd2fdc31e38dc6799d35701aa003a235"
+    },
+    {
+      "path": "artifacts/P2-fixes/regression-1794825768349/tools-1/tools-1.txt",
+      "size": 1112,
+      "sha256": "f18a7cf1855f506855a2f45191bd2b91ab5481fbad42f479f15872e332b9e801"
+    },
+    {
+      "path": "artifacts/P3-fixes/package/default/cleanup.json",
+      "size": 238,
+      "sha256": "98a5e4503d0f3c247cc77e156baa66f9d38a6d6cdb35c52a4c0f1f2b174b255f"
+    },
+    {
+      "path": "artifacts/P3-fixes/package/default/control.json",
+      "size": 32,
+      "sha256": "e212608759503256a2de9dddf04bb02236b7d5054e966d6ff31499f9005fbe0f"
+    },
+    {
+      "path": "artifacts/P3-fixes/package/default/events.jsonl",
+      "size": 12922,
+      "sha256": "8d3637def3cf44cca76f77e5e1c070c66f689d72d20612e05a0f37d82619740a"
+    },
+    {
+      "path": "artifacts/P3-fixes/package/default/exit-code",
+      "size": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "artifacts/P3-fixes/package/default/input.txt",
+      "size": 5,
+      "sha256": "ef2b40c7970c5f1cb0b1d35f265a3c17761a8fb300089077c2b338621ba71ab2"
+    },
+    {
+      "path": "artifacts/P3-fixes/package/default/package.png",
+      "size": 33305,
+      "sha256": "56a23c72d4f361e8f070e740eeadaf08e8051ce691693f01114f0b7c04fb3ec1"
+    },
+    {
+      "path": "artifacts/P3-fixes/package/default/package.txt",
+      "size": 1469,
+      "sha256": "15dcb640c73cbaaad82a4d48682fde70110225467e526290b4855b6121e62279"
+    },
+    {
+      "path": "artifacts/P3-fixes/package/default/processes.json",
+      "size": 91,
+      "sha256": "2b88f57ad7889f2be6748aca73882f76673d3606b40c13244361e963353d2236"
+    },
+    {
+      "path": "artifacts/P3-fixes/package/default/raw.ansi",
+      "size": 10024,
+      "sha256": "f47f01b12693b0f6ac115bf430280783ad2b3258353cd6ff73956688e2c97e39"
+    },
+    {
+      "path": "artifacts/P3-fixes/package/default/ready.png",
+      "size": 15469,
+      "sha256": "6e00a442f61ef1413ed42cbb72819e3fe3703efac2c1395806ec0a3b6e3bf872"
+    },
+    {
+      "path": "artifacts/P3-fixes/package/default/ready.txt",
+      "size": 974,
+      "sha256": "771a9c04e4bfa1225f91044d0df388ba6f05a98177d86eeeb694d23e479594e8"
+    },
+    {
+      "path": "artifacts/P3-fixes/package/default/run.sh",
+      "size": 3216,
+      "sha256": "8a55eabac9f345fdf3f9cb1c3bba03aa38ece476fcd3eb87a3fe8e587f074092"
+    },
+    {
+      "path": "artifacts/P3-fixes/package/default/session.jsonl",
+      "size": 11628,
+      "sha256": "e823062382b5d8aa7b3f663e1926920b419705a51d56ba8a12305b97d53266ae"
+    },
+    {
+      "path": "artifacts/P3-fixes/package/default/session.jsonl.pi-compact-state.json",
+      "size": 69,
+      "sha256": "8004ff253badfd1b1491a9e56dd60ffdf84aec6f2227f03b1c68d5168a3a8434"
+    },
+    {
+      "path": "artifacts/P3-fixes/package/default/agent/models-store.json",
+      "size": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "path": "artifacts/P3-fixes/package/default/agent/models.json",
+      "size": 599,
+      "sha256": "c4b7e041e450b4cabdb9ac7e54e102fda0ec92626d0641dd0959f9e8f1322abb"
+    },
+    {
+      "path": "artifacts/P3-fixes/package/default/agent/settings.json",
+      "size": 310,
+      "sha256": "f5bf072261a608be9a5daf36e90ac93c78a7e10662ef35dbe46bd6ea45b61f5a"
+    },
+    {
+      "path": "artifacts/P3-fixes/package/remote/cleanup.json",
+      "size": 238,
+      "sha256": "39795b71271e002115d8d3d544c47fb87eb83377461ffa5307ff2d734868a715"
+    },
+    {
+      "path": "artifacts/P3-fixes/package/remote/control.json",
+      "size": 32,
+      "sha256": "e212608759503256a2de9dddf04bb02236b7d5054e966d6ff31499f9005fbe0f"
+    },
+    {
+      "path": "artifacts/P3-fixes/package/remote/events.jsonl",
+      "size": 14671,
+      "sha256": "d549d6e58f568a7d19aa76dcd9220dcf91f350a4a0af304c0b7e9d0142e49579"
+    },
+    {
+      "path": "artifacts/P3-fixes/package/remote/exit-code",
+      "size": 1,
+      "sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "path": "artifacts/P3-fixes/package/remote/input.txt",
+      "size": 5,
+      "sha256": "ef2b40c7970c5f1cb0b1d35f265a3c17761a8fb300089077c2b338621ba71ab2"
+    },
+    {
+      "path": "artifacts/P3-fixes/package/remote/package.png",
+      "size": 33318,
+      "sha256": "fdffd62779ae83879c13db74c9bf95f04ede3dcc7a69f8ff349a26bb5d99b3e1"
+    },
+    {
+      "path": "artifacts/P3-fixes/package/remote/package.txt",
+      "size": 1468,
+      "sha256": "e52fb40dbd88179f43ca73c062391787d32054a9adc1c7fa6afc5c0b6c75fe29"
+    },
+    {
+      "path": "artifacts/P3-fixes/package/remote/processes.json",
+      "size": 91,
+      "sha256": "fd8fee77ec6b4ed3c9fc3b12c85c55b2aa1245dea5a551f88624b59c42297428"
+    },
+    {
+      "path": "artifacts/P3-fixes/package/remote/raw.ansi",
+      "size": 9802,
+      "sha256": "8321578aade4925191279001033b24f92489b0c580b955e51b7673c1327c35ed"
+    },
+    {
+      "path": "artifacts/P3-fixes/package/remote/ready.png",
+      "size": 15325,
+      "sha256": "2e006bc08681c2d088707bfc1e10e38a0d7eaa0a2a8d68a4fe287ec2b5875d3a"
+    },
+    {
+      "path": "artifacts/P3-fixes/package/remote/ready.txt",
+      "size": 973,
+      "sha256": "5e607996915be17d6e11d1082640590820455fe0b97a978c56b51503914a924a"
+    },
+    {
+      "path": "artifacts/P3-fixes/package/remote/run.sh",
+      "size": 3221,
+      "sha256": "a23a7312553799c25714d7782c904e4eff52b3006970620ccbe6f3c46b551752"
+    },
+    {
+      "path": "artifacts/P3-fixes/package/remote/session.jsonl",
+      "size": 12518,
+      "sha256": "95759a8db9d099f17d5148f578fef8a520beace93218da880f0bd3880caa169d"
+    },
+    {
+      "path": "artifacts/P3-fixes/package/remote/session.jsonl.pi-compact-state.json",
+      "size": 69,
+      "sha256": "400d4d7dda97d6bc2c71bba90d07812ce4be5161f026f9382798e9d533b3629b"
+    },
+    {
+      "path": "artifacts/P3-fixes/package/remote/agent/models-store.json",
+      "size": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "path": "artifacts/P3-fixes/package/remote/agent/models.json",
+      "size": 599,
+      "sha256": "c4b7e041e450b4cabdb9ac7e54e102fda0ec92626d0641dd0959f9e8f1322abb"
+    },
+    {
+      "path": "artifacts/P3-fixes/package/remote/agent/settings.json",
+      "size": 310,
+      "sha256": "f5bf072261a608be9a5daf36e90ac93c78a7e10662ef35dbe46bd6ea45b61f5a"
+    },
+    {
+      "path": "artifacts/P3-fixes/cleanup.json",
+      "size": 4802,
+      "sha256": "2a04cfe5b9937966fa18e9672d3b6574d6cfdc8358f5a222a7cb469a9091a559"
+    },
+    {
+      "path": "artifacts/P3-fixes/source.json",
+      "size": 514,
+      "sha256": "864219e194a538387622dc6276616c745c5aee9a11ea83e69ba977bdee329755"
+    }
+  ],
+  "package": {
+    "sha256": "c2acaed907cc07bcb663602d97d4e286574e4a302584c310cbebdb662e1044f2",
+    "files": [
+      {
+        "path": "package.json",
+        "sha256": "2a1fc936a82c2ecc908a1fce7192f0bcc8da383028a3e3c14e460584e972df58"
+      },
+      {
+        "path": "docs/design.md",
+        "sha256": "fef462b03f0e7c529bc71881e19f44af6e7ea54235b43479837d3cc83153f112"
+      },
+      {
+        "path": "GLOSSARY.md",
+        "sha256": "a9f620330bd2e77901d2766ab65511c3a7b866e099d385ba5977dc9a90715d02"
+      },
+      {
+        "path": "docs/p1-adapter.md",
+        "sha256": "ee0d9f2019d5ca9e3974281dd77f7c46641bd5db954a19f7a2fc534b1a8ea459"
+      },
+      {
+        "path": "docs/p2-policy.md",
+        "sha256": "abe8d853897da29a7c6886e29db1cff90e7b2c5cd2dc9b0ba1bbb844e2895b90"
+      },
+      {
+        "path": "docs/p3-checkpoints.md",
+        "sha256": "c69d6ec5e1693fc8a1072aaabe3b43ba025ad4772e96facefb8f53f30add17be"
+      },
+      {
+        "path": "README.md",
+        "sha256": "a0eee65c315686f953c4a6b9fcd40381b71469f4fd198dfe51cb1ce74b0658d8"
+      },
+      {
+        "path": "docs/roadmap.md",
+        "sha256": "980d86cddac9b72ae5ac27e06b2b2e8c494aeb60b5d90e3234e3663e2b6e5937"
+      },
+      {
+        "path": "src/checkpoint.ts",
+        "sha256": "37952366683a76830c7d61ac5e3ad754e0bc6ce14e29d468551c5a128983aa9a"
+      },
+      {
+        "path": "src/codex/compact.ts",
+        "sha256": "b047bb14bb20b3eff6780b074db04f898e9b987df6f7155b70c56c98d0e6ba6a"
+      },
+      {
+        "path": "src/pi-adapter/compatibility.ts",
+        "sha256": "df476f4b0be3eaab3c7725b190218fef769db25dff4c6afa8b2a6a7946898bc7"
+      },
+      {
+        "path": "src/index.ts",
+        "sha256": "ca2346f3653f4014ac0726c26bc1da72c63f45c527e04118fecb45ee1db21ee6"
+      },
+      {
+        "path": "src/pi-adapter/journal.ts",
+        "sha256": "0fab09996308920b0757576769849533e9766ce9d99bdaa6b4ac7bee2ec17a67"
+      },
+      {
+        "path": "src/policy.ts",
+        "sha256": "6cef2b94edade4ae747a504f64f6a5a087311d8868cd3428cf800f6cebcea8b2"
+      },
+      {
+        "path": "src/pi-adapter/reconstruction.ts",
+        "sha256": "1f98066ed24c2eb82fd24bab0f03528750160c56a74166e6b46b9e894118b55f"
+      },
+      {
+        "path": "src/pi-adapter/session.ts",
+        "sha256": "cc320ce379aeecc63ec218b451174e449dfa8494f68a5698475e4ba4b9abc7ef"
+      },
+      {
+        "path": "src/settings.ts",
+        "sha256": "690cb811c458dfe3af512ab025e18d726b0d75ddea8c97e38cd0155a186b96ad"
+      },
+      {
+        "path": "src/state.ts",
+        "sha256": "10c7aad13e9da10bf54bba73edf33d61736f75417f8143c10c20538b3cc749ab"
+      },
+      {
+        "path": "src/pi-adapter/transaction.ts",
+        "sha256": "1fb6a89da306aceb5b4857cb73d0344128047282d3a753bee71516a05bf25d73"
+      },
+      {
+        "path": "src/codex/wire.ts",
+        "sha256": "1102a310cafed43f811baf500cdb6d8485dfef500ad5c41bd691edaa44bd63b5"
+      }
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "pid": 16745,
+  "observation": "First cleanup audit found a live PID whose fixture had already exited. Read-only ps identified Chrome Aperitif Renderer, parent 82010; no signal was sent.",
+  "priorCleanup": "artifacts/P3/runs/1794821299217/lane-6/cleanup.json",
+  "psCommand": "/Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/157.0.8103.51/Helpers/Google Chrome Helper (Aperitif Renderer).app/Contents/MacOS/Google Chrome Helper (Aperitif Renderer) --type=renderer",
+  "final": "The unrelated Chrome process exited before the next audit. Final aliveOwned and reusedPids are empty."
+}
